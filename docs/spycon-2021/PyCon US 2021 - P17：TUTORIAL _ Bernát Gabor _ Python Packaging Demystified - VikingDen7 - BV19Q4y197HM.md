@@ -1,0 +1,3405 @@
+# PyCon US 2021 - P17：TUTORIAL _ Bernát Gabor _ Python Packaging Demystified - VikingDen7 - BV19Q4y197HM
+
+ So yeah， hi everyone。 I'm Bernard Gabour， and I'll be hosting this tutorial today about。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_1.png)
+
+ the Python packaging ecosystem。 And I want to get out from the start out of the way that。
+
+ the structure of this tutorial is going to be focused on trying to present how the Python。
+
+ packaging ecosystem is built up。 It's not going to be necessarily how to use set up。
+
+ tools or how to use fill it some of the things we'll see later on。 If you want interested。
+
+ on how to use a specific tool in detail， you're probably better off just reading up their。
+
+ documentation and their tutorial section。 This tutorial aims more like to give you the big。
+
+ picture and how the various pieces fit together。 Okay， that being said， we're going to look。
+
+ into some of these specific components and we'll try to use them for a smaller example。
+
+ but generally we're not going to be aiming to just do everything。 Okay。 So that being。
+
+ out of the way。 So the slides will be available on that link on the slide you can see。 You can。
+
+ just look it up and download them for later use。 But the way this presentation will be， structured。
+
+ the slides are going to be kind of like a helper's where as I'm going to present。
+
+ various components， I'm going to demonstrate them live inside the terminal just so you。
+
+ can see more how it would look like in action rather than statically on a slide。 What I'm。
+
+ going to be doing this， I encourage you to follow along。 This is also for generally people。
+
+ tend to understand better if they type them out themselves， learning them themselves rather。
+
+ than seeing， but otherwise it's up to you。 I plan to have two to three sections and we're。
+
+ going to do smaller sections， we're going to do an actual hand sound tutorial where I'm。
+
+ going to ask you to try to do something。 But those are going to be a bit later because。
+
+ first we have to kind of understand how to on what we're building on。 So probably in the。
+
+ first 45 minutes or so I'm going to more like try to give you a picture of the basic building。
+
+ blocks。 So where am I？ I'm a software engineer at Bloomberg。 I work in a team called Data。
+
+ Technologies Quality Control and I mainly focus on the data ingestion at the company。
+
+ and within that also mainly on how we can ensure that the data that we collect is of。
+
+ a good quality， doesn't have outliers as well as the mice properties。 So other than that。
+
+ I'm also an open source contributor。 There you can see my GitHub account or my blog on， there。
+
+ You can find exactly what I do， but for the purpose of this， it's more important。
+
+ than I'm also a member of the Python packaging authority， which in practice just means that。
+
+ I maintain projects which are part of the Python packaging core ecosystem。 So I tend to give。
+
+ my opinion and use the community and interact with the community if you come up with how。
+
+ the Python packaging ecosystem should work and how we can make it better。 Okay。 And beside， this。
+
+ I'm also the parent of two Rocha carriers， you can engineer， you'll be able to see them， here。
+
+ And because the topic itself can tend to be a bit dry， I'll you'll see that I have。
+
+ spread throughout this presentation a few pictures themselves just to get a bit of relief and。
+
+ something more acute than myself throughout this presentation you can see。 Okay。 So just。
+
+ to give you an idea， these are the kind of like the projects I maintain。 Some of these， projects。
+
+ some also the main author， the ones which I am actually put it with a star。 And， yeah。
+
+ let's start then。 Let's dive into it。 Okay。 So the first question or the main topic。
+
+ we're going to try to understand today is how we distribute code within the Python ecosystem。 Okay。
+
+ And generally， I think it's agreed and that's one of the reason Python is so popular。
+
+ that the Python code is easy to read and write。 However， just as much as this tends to be the。
+
+ feedback from within the community， the feedback also is that shipping and running that core。
+
+ is me to other machines is not。 And this is what I try to help you with today。 I want。
+
+ you to be a bit more hopeful and a bit happier and a bit more confident never really try to。
+
+ do packaging and not show the face of this part on this picture。 Okay。 Whenever you have。
+
+ a Python packaging， I'm not going to promise you that the Python package ecosystem is great。
+
+ but I'm going to give you the basic know how to understand where and how and how things。
+
+ should work so you can you know when something breaks where to reach and what could be the， issue。
+
+ Okay。 So the first thing we need to understand is what is the state of the packaging， today。
+
+ So I'm going to focus today mainly from the Python packages and go to this point of， view。
+
+ This is means that we're going to be focusing from a point of view， how can we ship。
+
+ Python code independent of the platform now every platform every operating system has。
+
+ its own packaging ecosystem， which might be a bit more appropriate or less appropriate。
+
+ to do anything on your context。 But this is not the type of ecosystems we're going to， cover today。
+
+ meaning we're not going to be covering your operating system packaging manager or。
+
+ we're not going to be covering Konda。 Okay。 So in order to be able to actually have tried。
+
+ to do this packaging， we need a demo problem， something that we can use to demonstrate the。
+
+ packaging story and the demo problem we're going to be using today is going to be calculating， pi。
+
+ Pi is the ratio of the circle some circumference to its diameter。 And one of the easiest way。
+
+ you can calculate pi is using the Gregley lightning series。 This series basically built。
+
+ on this infinite sum。 And it says that the peak and the calculated sum of all the this。
+
+ series basically every second sum in this series is positive every second one is negative。
+
+ And if you add up this division infinite series and you multiply it by four， you're going to。
+
+ end up with the number P itself。 Okay。 It's not the fastest， but this is one of the simplest。
+
+ way to calculate pi and require around 300 iteration just to get the first two per the。
+
+ similar precision correct。 Okay。 Now here I show you a simple case how this actually， might be。
+
+ For example， here you can see that the it is the simple implementation of it。 For example。
+
+ you can see I just see the sign operator， which I switch every odd time， every， other time。
+
+ And then I just summit up by doing that division。 And in the end， I just multiply， it by four。 Okay。
+
+ We can quickly actually try this code to actually see that it works。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_3.png)
+
+ And I'm just going to quickly do that。 So let me open up here， editor and try to actually。
+
+ wrangle this into the screen。 Let me resize it。 Okay。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_5.png)
+
+ So if I put this in， yeah， just heads up。 Is that big enough for everyone？ And if you。
+
+ have any questions or the answer to that is no， feel free to unmute yourself and speak， up。 Okay。
+
+ So yeah， so this is like the simple code as you can see what we have here。 We also。
+
+ do some import but basically we have this function which takes the number of iteration。
+
+ and returns pi itself。 And inside this main section as we basically just going to be calculating。
+
+ the 300 and 300， 30 iteration of it and then just print it out。 Okay。 So if I do like Python。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_7.png)
+
+ yeah， approximate that pi， you can see it actually prints that information。 Now。
+
+ one more thing I have to like get out generally on the windows operating system。
+
+ the way you would start Python is by using the pi executable if you are in between a terminal。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_9.png)
+
+ Okay。 Now you can also use your editor to run it。 But for the scope of this plantation。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_11.png)
+
+ I use the terminal and you have the pi executable which you can use to run something。 And this is。
+
+ basically kind of like an entry point which allows you to pick and choose your own Python。
+
+ interpreter when you want to， which one you want to run the code with it。 If I just pi。
+
+ you can see my default interpreter is Python 3。965。 If I type something here like pi， be a small pi。
+
+ this actually going to run with Python 3。9。 But I can do other patterns if I want。 So for example。
+
+ if I do here 3。6， then I can run it with 3。6。 Now。
+
+ how this would be different on Linux operating system is usually you have something like 3。9。
+
+ And then you call that on the new windows。 I don't even have this available， but that's how you。
+
+ would do it。 And if you actually like this pi entry point。
+
+ you can actually get used that on windows。
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_13.png)
+
+ too。 You want to just look into the Python launcher and install that one。 And I'm going to。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_15.png)
+
+ put like， so we're asking for a presentation。 So I'll just go here。 Yeah， this one。 So there is。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_17.png)
+
+ this project by Brett Cannon who is one of the Python sharing console members。 And if you use this。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_19.png)
+
+ one， you're basically going to get this pi executable， not just on windows， but also on。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_21.png)
+
+ Linux operating systems， such as my questions。 Oh， okay。 So that's why whenever I type pi， -3。
+
+6 just on Unix type Python 3。6 or similar。 Okay， now this obviously means that you need to have。
+
+ that version of the interpreter installed on the operating system。 But for the point of this。
+
+ demonstration， more often than not， I'll just stick with 3。9。 So all you have 3。9 should be。
+
+ suffice to for you to follow along。 Okay。 So another way I can actually use this code that we just。
+
+ written here is I can actually start the interpreter。 And I can also import it。 You can see I can。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_23.png)
+
+ what will it be approximate and can be a ROC-made P here。 And then I can call this inside the replo。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_25.png)
+
+ as that。 Okay。 Sorry， Lisa， which part of it？ Would you like to make it bigger？
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_27.png)
+
+ Is it the resource studio one or the？ -。
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_29.png)
+
+ Better？ Okay。 So as you can see here， I can also run this code。
+
+ And I run this code also from the interpreter itself， the replo， rather than just running it from。
+
+ the console itself。 Okay。 So I'll just answer that question。 As far as developing this on Conda。
+
+ the lift is going to be kind of similar as， for example， using setup。
+
+ the restore plate or something like that。 The core concept of Python works will not， change。
+
+ You got Conda users the same principles。 So you're going to be able to migrate most of it。
+
+ over one to one。 But obviously， for example， Conda uses a different packaging logic， a different。
+
+ packaging configuration。 But the core of it is similar。 It just might have nuanced to it。
+
+ So you're still going to be useful。 It's more just that you might not be able to replicate everything。
+
+ one to one。 Okay。 And we'll just to give you a bit of a interpreter。 So just so people understand。
+
+ better， some people might， the first question might have is what's the difference between Conda and。
+
+ Python as the Python software foundation maintains it。 And the main difference is， Yeah。
+
+ I'll answer that。 The main difference between Conda and the Python interpreter， as we'll get it。
+
+ from the Python software foundation is that Conda aims， the Python software foundation aims to。
+
+ ship you the Python interpreter itself plus Python packages alongside it。 Now， some of the packages。
+
+ that you might be using， such as tensor for whatnot， might require other binary dependencies。
+
+ And this， binary dependence can be， for example， the video card driver that then will drive the machine learning。
+
+ or whatnot。 And the Python packaging story does not address this you even do not try to ship。
+
+ binaries to we only focus on shipping the Python code itself。 Okay。 And this is the reason why。
+
+ Conda is a bit more generic， but it's a bit more heavyweight。 Conda can actually ship you other。
+
+ executable skill。 For example， it's possible with Conda to install like TIG itself or other。
+
+ binary applications。 The Python story will not address that one。 Okay。 And this is just the case。
+
+ because within the machine learning science where Conda is very popular， it tends to be the case。
+
+ that you have to rely on a lot of binaries while generating the Python story that's less often the。
+
+ case。 Okay。 So， yeah， as a Jack pointed out， what we did here is we import from the P。
+
+ approximate module， the approximate pi function。 And one of the reasons why I didn't name them the。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_31.png)
+
+ same is exactly to point out this difference。 Like here， you see the name of this file is pi。
+
+ approximate。 That is the name of the module。 Or the name of the function is approximate pi。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_33.png)
+
+ Okay。 So those are differences。 And those are going to be important。 And we will get to them。
+
+ just those differences。 And we'll just get to them in a second。 Okay。
+
+ Let me just go back to my slide。
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_35.png)
+
+ Okay。 So if I run this， everything works all right。 So back to the packaging story。
+
+ So how does one make this code available and running someone else， code as we just seen it？ Okay。
+
+ As you may have just seen it， there's two way to run a Python code， that we've written。
+
+ One of the way is more how would say someone who is a Python developer would do。
+
+ it is just start up an interpreter and start using imports and run the functions。
+
+ This is what I call， the developer way of using that code that you've just written。
+
+ Another of the way would be just running， it from the common line or within an idea or whatever。
+
+ when you just literally do say run this， module inside Python run this file in Python。
+
+ that is more like the end user way of using that code。 And within the packaging logic。
+
+ there's a difference between these two。 The first one， when。
+
+ you run this code as you would be a Python developer。
+
+ is called as the library way of using that code。 And the second way when you just virtually point that file to the Python interpreter and just run it。
+
+ that's the application way of running that file。 Okay。 Now。
+
+ there's some differences between these two。 In case of the library way。
+
+ the expectation is that we're going to expose the source that you just。
+
+ written within the Python interpreter， perhaps on another machine， perhaps on your own machine。
+
+ And the user will be able to interact with various sub parts of the code and can decide itself。
+
+ what I want to run， what I don't want to run。 Well。
+
+ in case of the when you just run the entire file， as a whole。
+
+ then there's kind of like an implicit entry point defined。 And only one thing is going， to happen。
+
+ For example， in this case， until I don't change the content of this file， it will always run。
+
+ this logic that I defined it here and nothing else。 Okay。 Now， these two have different。
+
+ needs and requirements。 And as we'll see， the packaging story is going to be different。
+
+ depending of would you like to ship this code to another machine to be used as a library or to be。
+
+ used as an application？ Okay。 So the first thing which is going to be like the application mode。 In。
+
+ case of the application mode， we don't expect the user to understand how Python works。 We don't。
+
+ expect them to do anything advanced。 We basically just want to ship them something and they're just。
+
+ going to run it。 This is something I would not say as simple but always as simple as someone who。
+
+ never used Python should be able to do it。 Just install Python point-to-point interpreter to this。
+
+ file。 And it's going to print out and going to show whatever you want it。
+
+ It might print out in this， case or you might start to entire graphical user interface。 Okay。
+
+ In this case， the user needs a， Python interpreter。 You need to give them all the dependencies。
+
+ Here you may ping to exact versions， just to make sure that the user is running the same dependencies as you're running with。
+
+ the code may be obfuscated because as you said beforehand， it really doesn't matter what is。
+
+ the content of the file。 It just needs to do what is defined inside the code。 No one's going to。
+
+ bat an eye。 For example， if you rename this approximate pi method to x。
+
+ it's going to work just as far， from a common line interface point of view。 Okay。
+
+ From an application point of view。 The only kind， of requirement is that you must define up front an entry point and this is the entry point Python。
+
+ going to run once the user starts to run that file。 Okay。 So in case of the library mode， things。
+
+ are a bit different。 When you want to share a bit of Python code as a library， generally the。
+
+ tradition is that the other machine will have a Python interpreter will be able to pick its own。
+
+ dependencies。 For example， it might want to use in parallel other libraries， other packages。
+
+ So you need to make sure you're much more freely less restrictive with your dependencies。
+
+ because you want to make sure that two packages which use the same library can coexist at the same。
+
+ time。 And then you want to just shift them the code。 But here， importantly， it's important that。
+
+ you shift the code at it is written， because the user might access all the doc strings， all the。
+
+ functions， all the variables， everything from the Python file as they are。 And they can do this。
+
+ by using the imported system。 Generally， standard recommended naming convention is in a single entry。
+
+ point。 When we go later in the second part of this tutorial into how you package a Python application。
+
+ you'll see that generally there is a way。 But within a file point of view， generally， you put your。
+
+ entry point， single entry point within this main section here。 But we'll see later on。
+
+ you there's also a concept that generally entry points which can be run or also put inside the main。
+
+ Python。 But as I said， we'll see this later on more in detail。 Okay。 So first， we'll go with the。
+
+ library packaging。 And this is also work so that the library packaging is， let's say。
+
+ the more complicated。 Once we know， understand this one。
+
+ the application is going to be a bit easier。 Okay。
+
+ So the first thing that we need to like start out with it， what is a library？
+
+ Library is a code that that can be imported and executed from within a Python interpreter。 Okay。
+
+ So the expectation is that you're going to have a Python interpreter。
+
+ and you'll be able to import some code from this library and executed。 The first thing that we need。
+
+ to clarify is what is a Python interpreter to understand this a bit better。 And you'll be able。
+
+ to see that there are multiple types of Python interpreters。 Usually what when people think。
+
+ when you say Python interpreter， what the people think about is the global or the system Python。
+
+ interpreter。 This is the one that you get as installed by operating system package manager。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_37.png)
+
+ For example， in this case， when I do type in in pi， and I can just like do like see the executable。
+
+ You see， this is a system interpreter。 You can see that this installation location is somewhere on my。
+
+ operating system package locations。 So inside the Linux， assuming you don't have any other。
+
+ virtual environments activated， we'll see a bit later what they are。 If you type in Python 3。9。
+
+ this is what would be the system interpreter， what you would get normally。 Okay。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_39.png)
+
+ But obviously there are other types of interpreters and the main type of other types of interpreters。
+
+ are virtual environments。 And virtual environments are basically a way to use the Python system。
+
+ interpreter， but easily from its library dependencies， from its other installations。 Okay。
+
+ And there are two ways to create virtual environment。 Well， there are multiple ways， but for， now。
+
+ there are two main ways how you can create a virtual environment。 One of them is the VM。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_41.png)
+
+ module。 So if I do something like Python， the shm VM， and I do like and this environment that's。
+
+ going to be created is a virtual environment， and this virtual environment will not have the system。
+
+ Python packages available within it。 So what it means， if I do like find the shm people list。
+
+ you'll see that this is what my list system Python contains。 Okay。 But if I do。
+
+ call the Python from within this Python interpreter， you'll see that in this environment。
+
+ I only have people and set up tools。 I don't have all， these operating system packages。
+
+ So in a sense， this virtual environment is a lesson from the system， packages。
+
+ the one that are inside the system level。 Okay。 So one more thing， generally people。
+
+ whenever they use virtual environments， they tend to create the virtual environment as I did here。
+
+ and then they activate it， like they can use the activate ps1。 For example， if you power shell or。
+
+ just activate if you use bash and depending on your interpreter， you might want to use different。
+
+ activators。 And this what it will mean， what this means is going to do is that this kind of like。
+
+ creates another shell in which when I type out Python， this actually will。
+
+ choose the Python interpreter from within that virtual environment。 Okay。 And here you can see。
+
+ that it's actually from that environment by just which I just created it。 But this doesn't have to。
+
+ this is not the only way to use a virtual environment。
+
+ You don't have to activate a virtual environment， use it。 If you， I shouldn't have done that。
+
+ my bad。 So if I go back there， you can see I can also use a virtual environment by just typing the Python interpreter itself。
+
+ And this is basically the same。 Okay。 So from this point to one， the activators within a virtual。
+
+ environment are just the convenience。 So you don't have to type out the full path。 But otherwise。
+
+ they don't offer any other functionality other than making helping you with not have to do type。
+
+ as much。 Does that make sense？ And again， if anyone has any questions， feel free to speak up。
+
+ If you feel I talk too fast， again， feel free to stay up。 The goal of this。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_43.png)
+
+ tutorial is not for me to go to all my slides and finish with 10 minutes to spare。 I'm happy to。
+
+ present last， but make sure that what I do present everyone understands it and is crystal care。
+
+ Okay。 So another way you can create virtual environment is by the virtual AMP module。
+
+ And let me just。
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_45.png)
+
+ do that。 So you can see that I have this virtual AMP and I can also do this like M2。 Okay。
+
+ And let's， just wait a second。 So and as you can see。
+
+ this M2 virtual AMP is basically the same thing。 You get， the Python and it's pretty much the same。
+
+ So the question might arise。 So what are the differences。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_47.png)
+
+ between the VM and the virtual AMP module？ Why would you use VAMB or virtual AMP？ Okay。
+
+ So this is a， quick overview of some of the differences between the virtual AMP and the VM package。
+
+ But to kind of， like go on the highlights of this。
+
+ the main difference is that the virtual AMP is a third party， package。 What does it mean？
+
+ That's a third copy？ RT package means that you have to install it before， you use it。
+
+ While the VM module is a standard library module， meaning that if you install your， Python。
+
+ you should have already access to the VM module。 You don't have to install anything else。
+
+ just Python itself。 But like the virtual AMP after you install Python。
+
+ you also have to install on the， side the virtual AMP module。 Okay。 Now。
+
+ other kind of like benefits for the virtual AMP package might。
+
+ be the virtual AMP package just generally offers a mod back to your API。 And it's also has a， but。
+
+ that's more important if you're going to write some application that manages virtual environments。
+
+ creates virtual environments， that kind of things。 Also， the virtual AMP package has a much better。
+
+ configurability story。 But there are two main differences that kind of like from end user point。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_49.png)
+
+ of view， the big differences between the two packages。
+
+ So let me try to create a virtual environment for， Python 3。6。 Okay。 And I use the clear flag。
+
+ which basically means remove the current existing virtual， environment。 Okay。
+
+ So if I create a virtual environment by using the VM module， you'll see that once it， finishes。
+
+ if I do and scripts， Python， extra dash， and P please， the version of the PIP and setup tools。
+
+ that I get is 18。1 and 4。6。2。 But if I use the virtual AMP package。
+
+ and I do like pretty much the same thing， I can just do clear AMP 2。 Okay。 In this case。
+
+ you'll see that if I do it's PIP placed， you'll see that this one gives me a。
+
+ much newer versions of the Python。 So you can see it gives me PIP setup tools， which is the latest。
+
+ PIP and the latest setup tools， but also gives me the real package too。 So as you can see， the。
+
+ difference is that the virtual AMP package will always give you a mostly up to date version。
+
+ of your seed packages。 And the seed packages are PIP virtual AMP or PIP VLAN setup tools。 Okay。
+
+ So just to give you kind of like a think， Chris mentioned PIP AMP。
+
+ I'm going to tell you that PIP AMP， under the hood uses virtual AMP。 Okay。
+
+ So if you've been using PIP AMP in practice， you've been using。
+
+ virtual AMP just through a different interface。 Okay。 So going back。
+
+ if you create virtual environments， with the virtual AMP package。
+
+ your default seed packages is already going to be up to date by default。 And there。
+
+ one of the other big differences between the two things， and this is something you。
+
+ might have noticed， is that creating a virtual environment with the via module， you can see here。
+
+ like six seconds it took while creating the same virtual environment， virtual AMP took 2。3 seconds。
+
+ As you can see， it's more than a two time performance improvement。
+
+ meaning that the virtual AMP package， is much faster than the VM package。
+
+ And you can see at the subsecond one， it's even faster。
+
+ The point where it's no longer even shows up， it's less than a second。 Okay。 And this is the one。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_51.png)
+
+ of the main ways of brand user point of view。 Virtual AMP is faster because it uses caching to make。
+
+ sure that it can perform the creation of the virtual environment as fast as possible， while the via。
+
+ module is slower。 Okay。 Also， the virtual AMP package will give you more up to date default。
+
+ packages while the VM doesn't。 That's why the case often， if you use the VM package。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_53.png)
+
+ you more often that what either you have to pass in the download package， which then。
+
+ reach out the internet to get the latest dependencies。 I think it's upgrade actually not download。
+
+ If you do this， clear together or not upgrade， can't even do that。 Okay， so you can't， do that。
+
+ So basically， the difference is that the， VM module is going to give you the version of the PIP and setup tools that was available when。
+
+ that interpreter worksheet。 And this is the reason why I could demonstrate this topic better with the。
+
+ Python 3。6。 Because Python 3。6 hasn't been updated for a while。
+
+ which means that the versions of PIP， setup tools that you get with them are very old。 However。
+
+ virtual AMP， because it's upgraded outside， of the life cycle upgrade of the Python interpreter itself。
+
+ it gets more frequent upgrade。 And plus， in the background， it quickly starts in the background。
+
+ It periodically will update your seed packages。 And you can read about this more in depth。
+
+ If you want to find out more about this。
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_55.png)
+
+ the documentation of the virtual AMP， especially on the user guide。 And for example， there's a。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_57.png)
+
+ dedicated section about the wheels here， where you can see how virtual AMP ensures that the。
+
+ version of the PIP and setup tools that you get is mostly up to date。 What does mostly up to date。
+
+ means is means we'll try to give you the latest version of the setup tools PIP and wheels， which。
+
+ you know are not broken。 And the proxy that we use for getting this one is basically， we try to。
+
+ give 28 days after the release of a package。 And only after that start using it。
+
+ so that by that time， we'd expect it in 28 days， if there are any box within that release。
+
+ users would report it， and a fix would have been released。 Okay。 Okay。
+
+ so that's mainly about the difference the virtual。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_59.png)
+
+ AMP module。 And generally， I think the rule of thumb is that if you can use virtual AMP。
+
+ it's faster， it gives you up to date packages。 However， if installing virtual AMP is harder。
+
+ just fall back to the VM module， it just has good otherwise the virtual AMP and the VM package。
+
+ from a Python interpreter point of view， they create the same type of interpreter they should。
+
+ behave equally well。 Okay， so now that doesn't mean that that's the only way of virtual environments。
+
+ And this is kind of like more， I don't think this is ready for day to day usage。
+
+ But this is something， that you might hear about on some blog post and whatnot。
+
+ you just wanted to mention。 There's another， way where people want to create virtual environments where you don't have to activate them to use them。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_61.png)
+
+ In a sense that you can just kind of like rely on wherever folder you are。
+
+ I'm gonna do here a quick， demonstration of that。 There's this application called Pyflow。
+
+ which you can use， which creates， virtual environments， and I just say 3。9。
+
+ which are not using the virtual AMP way of thinking， but。
+
+ instead they're trying to use and just to demonstrate this。
+
+ You can see in the VM case or the virtual， normal virtual AMP case， if you look in the folder。
+
+ these are the files you see， there's an include， there's a lib， VM and scripts files。 Yeah。
+
+ but inside this demo one， if I use it， you can see， that now I have a Py packages folder。
+
+ And this is more in line with how people inside the Node。js。
+
+ world would expect things to behave when your virtual environment is always present in your。
+
+ current working directory under a given name。 In case of the Node。js， this is the not modules。
+
+ within your root folder。 In case of the Pyflow， they try to replicate this by creating these。
+
+ Py packages， my folder， which contains the same way those dependencies。 The main differences in。
+
+ between these two have this interpreter is created and activated。
+
+ and where it stores those packages， that you're going to be installing it。 In case of the VM module。
+
+ your dependencies is going to be， stored inside this lib folder mostly， like this lib。
+
+ while in case of the Pyflow in it， your， dependencies is going to be inside this Py packages folder。
+
+ or your package is going to be installed， inside that folder。 That makes sense？ Yes。
+
+ Pyflow is a third-party thing， and it's not a Py。
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_63.png)
+
+ packaging thing。 Inside this you can actually click on the link。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_65.png)
+
+ You can click on the link and see it， and it has some documentation how to install it。
+
+ It's something to look out for， probably will require a bit more time to be stable， so to say。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_67.png)
+
+ but it's a new way on how we should create and interact with Python environments。
+
+ virtual environments。
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_69.png)
+
+ Okay？ So， in order for us to understand what it means installing the package。
+
+ I think what we need to understand is how does Python know if a library is available in portable？
+
+ Okay， because we say that having a library basically means that once I install it。
+
+ I'm able to import it and use it。 So for us to understand it， how this is possible， we need to。
+
+ understand how can I import something in Python？ And the short answer to this， that it doesn't。
+
+ the Python interpreter doesn't know what is important and what not important。
+
+ but rather it goes on to the mantra。 It's easier to ask for me， it's that permission。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_71.png)
+
+ So when you type in， for example， here， if I have a virtual environment， just go back。 Oh， so， oh。
+
+ there's another one， but doesn't matter。 So if I do type in import setup tools。
+
+ what happens at this point， Python doesn't know when I type in and hit enter there。
+
+ that setup tools is available or not。 Instead， it will try to import it。
+
+ and if it manages to import it， it's going to bring back interpreter and then I have this。
+
+ setup tool subject， which is like a module of which I can use。 However， if I try to import。
+
+ something that's not available， it's going to try to do it and once it sees that it cannot do it。
+
+ it will print an error。 Okay， so the setup tool that we just imported here is actually a module。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_73.png)
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_74.png)
+
+ and it's kind of like a mapping module， meaning that it has a lot of keys and values in it。 Okay。
+
+ and the keys in the setup tools are basically all the functions methods variables defined in it。
+
+ and the values are the actual function variable value variable method。 Okay， so for example。
+
+ you see， I can use the deer function to check all the keys available inside the module， and I see。
+
+ for example， here that setup tools has the， which one I wanted to show， has for example。
+
+ the name key in it。 Okay， and if I do the dot notation to look up that， yeah。
+
+ I see that it contains the value setup tools， or I can see that has the setup。
+
+ which is a function available on it， but modules are composable， meaning that it is possible to。
+
+ have a module within a module。 For example， in this case， you can see that the version。
+
+ it's also a module， and it's available within the setup tools module。 Okay， now。
+
+ a collection of modules is what we call the package， and therefore generally we refer to it。
+
+ as an entire， when you install a package， it may have one or more modules in it。
+
+ but if there are some packages that have a single module in it， and that's perfectly fine。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_76.png)
+
+ Okay， so that's kind of like what happens after you import the things。 Okay， so the。
+
+ important something it means just bringing something into the interpreter。
+
+ which gives you access to， all the functions variables and modules defined within that module。 Okay。
+
+ so just to， there's another， other way how you can import things， and that's the setup， that's the。
+
+ from notation of the imports， and from setup tools import setup is just a syntax you should work to basically these other。
+
+ three lines of code。 Okay， it just basically means import setup tools。
+
+ once the important setup tools， take out the setup name， okay。
+
+ and just delete the actual imported setup tools module， so that in。
+
+ the local namespace you only now have available setup， you no longer have setup tools， self the。
+
+ module itself available。 So this is like a rough equivalent to it。 Okay， so basically we only need。
+
+ to understand import setup tools to understand what happening inside the background， because the。
+
+ from notation can be reduced from that。 Okay， so now the next thing which we need to understand that。
+
+ not all modules that we import are equal。 For example， the sys module that you may import。
+
+ and it even prints it out here is a built-in module， okay， or we have the OS module， or we have the。
+
+ CSV underscore module， or the Pytober module， or the PEP5。7 module。 You'll see here， the sys is a。
+
+ built-in module， the OS is a standard library module， what it means a standard library module。
+
+ about it， a standard library module basically means that， hey， it's something that's available。
+
+ it's shipped by the stand within the Python interpreter itself。
+
+ and the way you can notice this is if you， look at this pet here。
+
+ and maybe the highlight thing is not the best， but here you can see that。
+
+ the actual location where this file is， it's right after this Python 3。9 folder， okay。
+
+ and that means that， it's available right within the Python interpreter itself at the standard library level。
+
+ Then you have， also the standard library dynamic load modules。
+
+ and you can see these are like binary files， and this is just to showcase that it's not only Python files which may be important。
+
+ for example， in this case， we imported， as you can see， an SO file。
+
+ which is kind of the equivalent of the， DLL file on Windows or the PyD file from Windows， okay。
+
+ and then you have the actual third-party， modules。
+
+ and the third-party modules often are available within a side package's pet。
+
+ like here you can see the side package's pet， and within the side package's pet you can have two。
+
+ variants， you have the global side package's pet， and you have the user side package's pet， okay。
+
+ the user is something that you get if you install something with the there's the shooter。
+
+ and the global one if you install something by just doing Python dash and pip install。
+
+ and obviously this here is valid if you use your global system interpreter to install packages。
+
+ if you install some package into a virtual environment Python。
+
+ then things going to be a bit different， we'll go into that just a second。
+
+ but now that we know that we can import， import logic， the execution。
+
+ code can come from multiple locations， it's not a surprise that we'll learn that actually Python。
+
+ has multiple importing systems， and how it works， it has a list of importers registered。
+
+ and it goes， through each of those supporters gives the import value that we want to import it。
+
+ and we'll ask， "Hey， importer， can you materialize this import comment？
+
+" And if the importer can materialize it， it stops and returns， if not。
+
+ goes to the next importer and adds that importer to materialize it， and so on and so on， okay。
+
+ so the system importers or the list of importers that Python uses are。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_78.png)
+
+ is available on the this one， this is Metapat， thing contains it， and you can see here I actually。
+
+ have a few more， and I'm just gonna quickly print this so you can see it， and I write this， code。
+
+ oh， I need one more， spot the mistake I made and typing this up， it doesn't should work， okay。
+
+ it works， so yeah， yes， so just to， answer it， Jorgans， we'll get back to Jorgans question in a bit。
+
+ but just to go through it， so as you can see in this case， we have one， two， three， four， five， six。
+
+ seven importer， register， and whenever I type in import magic。
+
+ Python actually goes to each of these modules。
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_80.png)
+
+ and we'll ask "Hey， can you import to me magic？" First it goes to build the importer。
+
+ then the frozen， import， and then the pet finder， then to this vendor importer。
+
+ then to this six-metapackage， another vendor import under six-metapackage。
+
+ and only after it went to all these importers， it's gonna come back and say this error message to me。
+
+ okay， so the built-in importer is basically。
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_82.png)
+
+ stuff which imports logic from the Python executable itself， okay， so that like the sys module， he。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_84.png)
+
+ actually available in the Python interpreter itself， the code， the machine logic that's run。
+
+ it's available on the Python executable itself， that's why it's a built-in， importer。
+
+ that's why it's a built-in module， okay， then the second type is the frozen important。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_86.png)
+
+ this is something that is not that much used out of the box， but it's a way how a feature。
+
+ provided by the Python interpreter where tools can kind of freeze modules and shift them as that。
+
+ and then these are imported by the freeze-in importer， this is something that for example。
+
+ Py installer is using and we'll see Py installer in the second part of the chapter， but for now。
+
+ just think it is something， it's kind of like the built-in importer with the difference that it。
+
+ doesn't actually pull the logic from the interpreter itself， but rather than external location file。
+
+ and make sure that the code cannot be changed after the import， and then you have the pet finder。
+
+ importer， now 99% of the time you use the pet finder importer， the pet finder importer is basically。
+
+ an importer that's available to load materialized code from the file system itself， okay。
+
+ now the pet finder importer itself is configured from the CSPAT variable， okay。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_88.png)
+
+ and I can do the same thing for this one just to print it out， and yes you see there's quite a few。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_90.png)
+
+ pets on the CSPAT， and you will see some of this in this order here， but just to say it so。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_92.png)
+
+ in this case what we do here is we have a by default the standard library or the default。
+
+ the content of the CSPAT is going to be as follows， first and foremost you're going to be looking。
+
+ in the standard library's zip location this lib python 3。3 zip， and we can see this on the windows。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_94.png)
+
+ machine here too， this is the python 3。0 zip， and this is basically another functionality。
+
+ the pet import is not only able to import from the file system， but it's able to import from zip。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_96.png)
+
+ files on the file system， so in theory it's possible to take all your standard library packages or any。
+
+ of your packages， packages together into a single zip file and put it onto the CSPAT， and it will。
+
+ be discoverable just as much as if it would be available on the file system itself extracted， okay。
+
+ this is the standard library's zip location， then you have the standard library directory itself。
+
+ this is basically if it's not zip， look at the file system itself， and then you have the standard。
+
+ library's C extension which is basically all the dynamic load， which is basically the。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_98.png)
+
+ external， in this case you can see for example this DSL folders。
+
+ and we can just quickly see some of， it， for example you can see that the LZMO packages define their or the SSL packages define this。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_100.png)
+
+ file， so if I do like import SSH， this SSL it's actually much alike from that location， that file。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_102.png)
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_103.png)
+
+ this is kind of like the binary dependencies of the interpreter， and then you have the user side。
+
+ package and the global side packages， okay， now there's just one more thing which some of you might。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_105.png)
+
+ notice， you can see there this empty string at the start of this CSPAT。
+
+ can anyone tell me what this， is the empty PAT mean？ Current directory？ Yes。
+
+ and this is the reason you're right， it means the， Korean directory。
+
+ and this is the reason why earlier when I just started up a Python interpreter。
+
+ this actually worked， because whenever you start a Python interpreter。
+
+ the Python interpreter always， adds the Korean working directory onto the PAT。
+
+ and that's why it works， but if I go here and I do， like import P approximate， and this works now。
+
+ okay， well not what I wanted to do， but let me just start， that up again， so I import the C's。
+
+ and the C's that PAT is not static， it's for me it's possible， to do for example remove that one。
+
+ and if I do the import P approximate， now this is no longer， fun。
+
+ because now I remove the Korean directory from the list of folders the Python is looking to import。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_107.png)
+
+ okay， so yeah， why is an empty string and not a dot？ Probably the answer to that is historical。
+
+ reasons， and it's just whatever whoever created it first used and went with that。
+
+ and then you never can change it for backwards compatibility reasons。 C's。
+
+pad is the environment variable right？ Not really， you can add additional locations to the。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_109.png)
+
+ you can add additional elements to the C's that pay by using the Python PAT environment variables。
+
+ so if you do like， I don't know， a， and then you can do like， pie， there's some site for example。
+
+ let me just show if I can do like export or set， yeah， then I should be able to。
+
+ now that should show up， I think it might check if it's this。 That did not work。
+
+ but basically it's you can configure it on the Python PAT environment variable， okay。
+
+ and you can extend additional PATs onto the C's that PAT by using the environment variable。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_111.png)
+
+ Okay， so with this knowledge now we can actually answer more exactly what is a virtual environment。
+
+ so virtual environment is a Python interpreter that has access to its own site packages。
+
+ basically this allows it to install packages only within itself and not the system interpreter。
+
+ and share success to the host built-ins and standard library， and optionally is easily。
+
+ provided easily a few from the system site package。 For example， if you start up the system Python。
+
+ interpreter， this is what you're going to see， you see you have the standard library PAT， then you。
+
+ have the user and the global site packages inside the virtual environment， the user and global site。
+
+ packages are gone， and instead you have your own site packages available， or if you use the。
+
+ there's the system site packages option， then you still get using and global site packages， but。
+
+ your own site packages will be injected after the standard library PATs， okay。
+
+ So there's just one more complication， we often mean that you have your own site packages。
+
+ this is actually not strictly true， the site packages as a thing is just。
+
+ what is the default value for the purely band the platform variables， because in practice Python。
+
+ actually doesn't have one site packages， it actually every Python interpreter has two site packages。
+
+ and one of the site packages is the purely band other is the PAT clip， now on 99%， or 99， but。
+
+ I would say 80% of the platform these two are set to the same。
+
+ and if I start your Python interpreter。
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_113.png)
+
+ and I can use the Cisco config module to see this， and I do like get PAT pure lib， and I check。
+
+ PAT lib， you'll see that this returns me to the same thing， however， if for I start up a， fedora。
+
+ okay， and a fedora operating system and I need to do a update set lager， I can， wait。
+
+ do I have a Python here， no， I can't do it first and install Python， but you see on fedora。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_115.png)
+
+ there are different one， the actual platform library， it's available on the lib 64， while the。
+
+ platform or the pure lib is available on the lib graphics within your virtual environment。
+
+ you can see it here， and the main difference what it meant to be a difference is that。
+
+ your binary dependencies like dlssos， pydys should go under the pure lib， while you're。
+
+ plateauing under the pydys， but the pure lib should contain pure Python code， which is mostly。
+
+ Python code as a dot pi extension， okay， now as I said， this distinction is there， it's available。
+
+ and this is something that operating system distributions might decide to use。
+
+ such as the case of the， fedora or the ratat operating systems。
+
+ but it might also just choose to bypass like windows。
+
+ macwets generally just sets these two to the same value， even the db and d package distributions。
+
+ do the same thing， just set it to the same value， so you kind of have the impression that you have。
+
+ only one side packages folder， even to in practice， there's two variants of it。 Now the Python。
+
+ importer system is smart， you know， that you add multiple times the same path to it， it will。
+
+ be duplicated， so that's why you don't see the same path happening twice on this this dot path。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_117.png)
+
+ okay， so yeah， this might take a while， I'll just leave it there for now。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_119.png)
+
+ So I hope I did not put you on a sip and we'll have a break in， I want to say 10 minutes。
+
+ but before， we go there， let's get back to the packaging story， okay。
+
+ So now that we know that where， how Python imports a module and where these modules are available on the machine。
+
+ we can answer， what does it mean， install a package， install a library？ Well。
+
+ it basically means that you need， to provision the correct Python files either into this purely work that location。
+
+ and once that is， available， basically the import system will take care of the rest。
+
+ Now for house maintenance， raises， you also generally package some metadata with your application。
+
+ and some entry points。 Entry points are optional， not everything used， but for example。
+
+ people actually have this also， provide you an entry point， these are like either UI or CLI。
+
+ kind of like little excitables that you， can run， and they give you various entry points into your package。
+
+ while beside it， another thing， that you might also see inside once you look into the side package。
+
+ all there is metadata。 The， metadata as you can see here is basically just list what was for example the installer used to。
+
+ install this package， what are the files within that package， any other metadata， for example。
+
+ what are the dependencies of this package。 So installing a package or once a package gets installed。
+
+ it basically means that the installer will take and give you the Python files in this purely work。
+
+ that location， will generate some entry points for you if the library is defining some entry points。
+
+ and also ships you some metadata which describes the package is dependencies。
+
+ it's files that type of， logic。 Okay， and we'll see basically in order to generate a package library。
+
+ this is what we need to， generate， this is what we need to create。
+
+ and there are a few ways that we can do that， but okay。
+
+ so in case of just to circle back to our PI approximation logic。
+
+ the first thing that we'll have is that， hey， I want to import this， import。
+
+ once we import to do that， I have this file， I just want to take， this file。
+
+ put it into the side-side packages folder， and then put some metadata alongside it。
+
+ because I don't have any entry points for now in this package， and if I do this， and I ship these。
+
+ files to someone else's machine， then they'll be able to both install my packages， it no longer。
+
+ wanted， and they'll also be able to use it when they start the interpreter。
+
+ so this is what we'll be， aiming for。 Okay， now obviously this is what the end user gets。
+
+ but you the developer will have， other files for your source tree。
+
+ for example you have the business logic file， this is what you， want to ship to your other machine。
+
+ but then you have test files which don't show up on your install， side packages。
+
+ but you still have it in your source tree， then you have for example license。
+
+ you have other like the readme， other metadata project management files， or your CI configuration。
+
+ files， and you might also have other files which we'll refer to it a bit later， which we call。
+
+ metadata from based on what your packaging tool is able to actually generate a package for your。
+
+ project。 Okay， so basically our goal is that what you have on your own machine while you're。
+
+ developing the library is going to be the top code snippet， and the bottom code snippet is what we。
+
+ want to ship to someone else's machine。 As you can see， we'll move some of the files from our。
+
+ machines to someone else's machine as it is， but we'll also generate some new files， but we'll also。
+
+ not ship some files， okay， and yes， you're going to get your cash in a bit later。 Let's not。
+
+ ruin the punch line yet。 Okay， so just to take a second， so we'll take this is our source tree。
+
+ the development store tree， and we want to ship this package to this target machines。
+
+ and the way this is going to work， we generally don't tend to ship directly to other machines。
+
+ though we could， but in general instead we first stored the package inside some center package store。
+
+ and the reason why we do this is that if our developer machine is gone， something happens to it。
+
+ the target machine is still able to consume this package and install it， okay， so generally the。
+
+ packaging store it kind of like breaks down， I have my local developer search tree。
+
+ I generate a package， I upload that package into the center package store， I download that package。
+
+ and then I install it， onto that machine， okay， so， and this is where we'll take five minutes break。
+
+ just to give you a bit， of a coffee break， and we'll get back in five minutes and continue。
+
+ if anyone has any questions， feel free to shoot it， but yeah。
+
+ otherwise feel free to grab a coffee and be back in five minutes。 [silence]， Thank you。 [silence]。
+
+ [silence]， [silence]， [silence]， [silence]， [silence]， [silence]， [silence]， [silence]， [silence]。
+
+ [silence]， [silence]， [silence]， [silence]， [silence]， [silence]， [silence]， [silence]， Hi。
+
+ I'm back just queshing up on questions。
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_121.png)
+
+ [silence]。
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_123.png)
+
+ [silence]， The reason why I use Windows instead of Linux。
+
+ I think one of the strengths of the Python language is that it， runs everywhere。
+
+ And because of that， I maintain a few projects， as you can see beforehand， like virtual， and cups。
+
+ and the aim of the Python packaging authority is to support all of these platforms。 So for me。
+
+ it's just as important to run something runs on Windows as it's run on Linux。
+
+ So from that point of view， I constantly have to work with all of those， and。
+
+ Windows generally just a bit more stable。 For example， at the moment。
+
+ I also had a federal operating， system which break on me。 So I have to add some point reinstall it。
+
+ but Windows just kind of works。 So I just went with that。 And plus。
+
+ I tend to use nowadays PowerShell as my shell， and I use a。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_125.png)
+
+ also Vastairm， which is like a terminal emulator as my ID or interpreter。
+
+ or the terminal application。
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_127.png)
+
+ which makes it， for me， working on Windows or Linux doesn't make much difference。 So yeah。
+
+ We'll see Poetry a bit later， Ryan。 Probably I want to say in half an hour or so， we will touch。
+
+ on Poetry and then you'll see how it fits into it。 Yeah， Chris。
+
+ I want to say your best chance is to， probably you want to you will need to recreate the virtual environments。
+
+ It's probably an odd， interaction between Vast called people and plug in people itself and virtual and I want to say your。
+
+ issue will be with the people and book tracker， but people and itself， it's not overstaffed。
+
+ So unless you can dig in yourself， it's unlikely you'll have a quick fix on their side。 Yeah。
+
+ But yeah， I mean， people generally， I found it good when you're developing an application。
+
+ find it less optimal for developing libraries。 That's why I personally。
+
+ besides just being a maintain of the virtual project， I tend to use the virtual and itself。
+
+ it gives me a bit more flexibility， a bit more， strength when I'm testing libraries。 Okay。
+
+ we'll start back again。 I think that was around five， minutes。 So swimming， I find my slides。 Okay。
+
+ so just a quick reminder where we left it off。
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_129.png)
+
+ We left it out with basically， yes， that's going to come up later。 We'll go basically。
+
+ how we get our developer source three to a target machine that's important。 Okay。 Now， as we get。
+
+ we're going to use their interim form， this package form that the thing that we're。
+
+ going to ship from one machine to another machine。 And when it comes to the types of these packages。
+
+ you can have two types。 There is a source distribution and there's a wheel。
+
+ Let's start with a source， distribution。 A source distribution is basically what resembles what is on a developer's machine。
+
+ Okay， it basically contains all the files on the developer's source three， minus a few which are。
+
+ optional。 You may include them， but they're not necessarily needed to function as a source。
+
+ distribution。 For example， you're obviously not going to need all your project management files。
+
+ or maintain your price。 For example， your CI configuration， you might include in your source。
+
+ distribution， but it's really not needed。 Or your project management files that you might have。
+
+ it's also again， you might include it， but it's not really needed for the purpose of a source distribution。
+
+ And there's this other， and then it has the business logic， the packaging and tests。 Okay。 Now。
+
+ this is basically， if you look in our project， these are the files， we kind of say that this。
+
+ is part of our source distribution。 But you can see， for example， the CI configuration。
+
+ we excluded it and we might decide to not go ahead with it。 Now， just before we go further。
+
+ Jurgen brought it up that there's such a thing as an egg。 And I'm going to say that eggs is a。
+
+ hardware to say there is such a thing from the Python packaging point of view。 Eggs are the past。
+
+ and they're practically not supported nowadays。 So if you have an egg， you're most likely are。
+
+ working in a legacy environment。 And you might want to look up a tutorial， maybe eight。
+
+ ten years in the， past， but the Python packaging authority as a whole doesn't really support this egg story。
+
+ Eggs has been replaced with the wheel， kind of。 Let's touch onto the wheel。 The wheel is what。
+
+ resembles mostly what we want on the target machine。
+
+ It contains the installed binary file with some， metadata。
+
+ but it doesn't contain the project management files and it maintain your ship files。
+
+ the test files and packaging files。 All these are missing。 Basically， in this project， the only。
+
+ thing that's going to be in the wheel from our source tree is going to be the Python file itself。
+
+ Plus， as you can see， it also contains some metadata alongside it， but none of the other files。
+
+ Okay。 So now when it keeps the difference， what's the difference between having a source。
+
+ distribution as a wheel from a package installation point of view？ And this is the direction the。
+
+ Python packaging ecosystem works。 And this is how I find the best way to think about it。
+
+ We always install， a wheel。 If you give me a source distribution。
+
+ the first thing I'm going to do build a wheel from it。 And on the right of the question。
+
+ should stop files， those dot pi e files be included in a wheel？ And the answer to this is yes。
+
+ And this is mostly when they are used。 The Python stop files are used。
+
+ at runtime by the type checker。 And because they actually need to be present at runtime。
+
+ they need to be within your site packages， platform or platform folder， or the purely folder。
+
+ And because of this， they should be within the wheel also， because their usage is at runtime。 Again。
+
+ it's not going to be used by the interpreter at runtime， but the type checker uses it at runtime。
+
+ or not at runtime， but the type checker pulls it from the Python environment when it is running。
+
+ Okay。 So going from this， so basically generating a package， it means we will have the developer。
+
+ source tree。 We're going to build a package。 We're going to upload this package in the center。
+
+ package store。 Once we generated the package， the consume on the target machine site is going to be。
+
+ we pull this package from the center package store， basically by doing some discovery and download。
+
+ mechanism。 If it is a wheel， we go ahead and install the wheel。 If it is a source distribution。
+
+ then we build the wheel from it。 And then we just follow the same line， install the wheel。
+
+ and on the target machine。 Okay。 So this also answers what's why you should package， ship a wheel。
+
+ If you package or ship a wheel for your library， it means that there's a lot less work。
+
+ to be done on the target machine， because now the target machine doesn't need to build the wheel。
+
+ It can just keep that step and install the wheel straight ahead。 This is the reason why wheels。
+
+ are much faster to install。 There are other benefits that we'll get into this later that you don't need。
+
+ to worry about other binary dependencies， compilers being available on the machines。
+
+ But the primary reason， even for a pure Python project is that if you ship a wheel。
+
+ the installation， will be faster for the user。 Okay。 So then let's start on the first section。
+
+ how we build the package。 Okay。 Building a package to understand how building the package works。
+
+ we first have to kind of like， I'm going to give you a brief introduction into the history。
+
+ just so that you understand， some of this concept， understand why we are in the state where we are。
+
+ And yes， you're again， the Python file should be included in the wheel， because the Python file。
+
+ is used at the time checkers runtime， and it's pulled from the side package's folder。
+
+ so it needs to be available in the wheel。 Because remember， the only thing that shows up inside the。
+
+ side package's folder is what's in the wheel。 If it's not in the wheel， will not be available。
+
+ within the interpreter installation itself on that machine。 Okay。 So now， to going back to the。
+
+ packaging history， the Python packaging started in the year 2000 with the disjutile package。
+
+ and the disjutile package was basically the predecessor to the setup that pie that we have， today。
+
+ It was introduced back then， and it was basically provided the setup that pie file。
+
+ which anyone can write whatever they wanted， and it allowed them to package together Python code。
+
+ Okay。 Now， the configuration is Python code， which made a lot of sense then， because it meant that。
+
+ we did not have yet a good packaging story， so the users could come up with their own packaging。
+
+ story。 You had infinite flexibility by having a Python file， and you could write anything in。
+
+ that Python file。 Then people start to iterate on the disjutile outside of the Python。
+
+ standard library。 And the main one of the reasons of this is that it's much quicker to develop something。
+
+ outside of the standard library， because you can release it tested much more frequent than。
+
+ the Python interpreter release， release life cycle。 And because of this， one setup tools quickly。
+
+ became the de facto standard。 Everyone was kind of expecting that setup tools。
+
+ would kind of just be available on those machines。
+
+ And this is the reason why when we create a virtual， environment， setup tools is available there。
+
+ because everyone was expecting so much that setup tools， is available。
+
+ that it kind of like became part of the standard， and it's always provided by any。
+
+ virtual environment creator。 Now， wheels were introduced much later。 They were introduced in 2014。
+
+ until 2014， whenever you installed a distribution， you basically took a source distribution。
+
+ and you， installed them the source distribution into your target machine。 And obviously。
+
+ this had the downside， that you had to run Python code to install code。
+
+ which wasn't to perform it and also， expose some security reasons for security concerns。
+
+ So that's why in 2014， the wheels were introduced。
+
+ as a way to speed up the Python installation story， and also offer more secure installation。
+
+ of Python packages。 Okay， and then at this point， everything was still basically based on the。
+
+ setup。py and running Python files and Python code during the packaging。 So in 2015， this project。
+
+ was started， which is called fleet， which started to kind of like tour around and play around with。
+
+ can we do a declarative over dynamic type of configuration， rather than define what should。
+
+ happen inside Python code， which where you can write anything， let's allow the users to define。
+
+ their packages declaratively， kind of like configuration files， which is easier to understand。
+
+ especially for new users， and it's harder to get wrong。 Okay。 And then in 2018， Poetry came。
+
+ and Poetry is kind of like the best way I can explain Poetry is Poetry embraces the fact that。
+
+ we should favor configurability or configuration over imperative runtime code running， but Poetry。
+
+ also doesn't want to users to understand multiple things。 It wants to have a single tool that can。
+
+ achieve everything。 And as we see later on， inside the， even in the previous one。
+
+ we saw that you could， broke down the packaging story into generating a package。
+
+ uploading a package， downloading a package， installing a package， and as we'll see。
+
+ the Python packaging authority kind of has its own dedicated， tool for this。
+
+ kind of in line with how the Linux do one thing， but do that one thing very well， philosophy。
+
+ but Poetry is the other side of the things is where I'm going to give you a single。
+
+ tool that can give you everything or the better of the worst。 Okay。 Oh， and by the way。
+
+ all these links， are actually are in the presentation are actually applicable。
+
+ so you can look it up and read more， about them if you're interested。 But other than that。
+
+ how the build used to work is basically， what used to happen。
+
+ let's say before the wheels were a thing， is that in order to， or even recently。
+
+ in order to build Python package， you used to use the Python interpreter， feed it the set of the。
+
+ Python file and then just pass an argument what you wanted to do。 For example， this first one is。
+
+ build the source distribution， or the second line here is this is how you would build a wheel。
+
+ You can see I just called the Python interpreter as the this Python file， and then I just pass the。
+
+ comment what to do。 Now， one of the problems with this is that this actually depends the success of。
+
+ this story depends on the Python interpreter you're actually using。
+
+ If the Python interpreter you're， using did not have some dependency， it would break。
+
+ Because maybe you require set up to 41， but the Python interpreter that you use there only had set up to 40。
+
+0。 This operation would break， and would break with horrible errors。
+
+ cryptic errors that are hard to understand for the user。 And that's why in like 2016 or so。
+
+ we got into how can we improve this， and the solution to improving， this are simple。
+
+ We just visited earlier virtual environments rather than just letting the user。
+
+ use whatever Python they want to do the packaging， we give them a way to actually。
+
+ define their dependencies and then provision these dependencies inside the virtual environment。
+
+ So instead of just typing the top one there in the background what we want is that we create a。
+
+ virtual environment and then we use that virtual environment to install the build dependencies。
+
+ And then we use this virtual environment with the provision build dependencies to actually run。
+
+ the packaging logic。 Okay， now this is what PEP 5 and 7 are standard ideas and it basically。
+
+ introduces the pipe project the tom file。 The pipe project that tom file is the standard way。
+
+ or the not is the dream of the Python packaging authority is where all packaging related。
+
+ configuration would live， especially the standardized parts of the packaging story。
+
+ Part of the PEP 5 and 7 it introduced the file plus it defined that the require section or。
+
+ the requires key within the build system will contain all your build dependencies。 So if you。
+
+ want to depend on a given version of setup per field or you want any other dependencies doing。
+
+ your in your packaging this is where you have to define them。 Okay， and it uses the tom。
+
+ tom file format and mostly because this was is not overly complex was standardized。
+
+ and that's not conflicted with any existing configuration of file。 Okay， so this is the。
+
+ build dependency which is great but as you could see beforehand their kind of like becomes the。
+
+ duality here because they were tuning someone has to create this virtual environment has to。
+
+ install the build dependencies and then invoke the packaging and then the packaging itself is。
+
+ happening inside this virtual environment but now we have a backend and the front end of this。
+
+ operation。 The backend is the part that actually generates。
+
+ that actually generates the package inside that visited virtual environment and there are a few。
+
+ Python build backends setup tools is one of them， plate is another them， trampoline is another them。
+
+ wet reason number them， PDM another hatchling as you can see every day there are more and more。
+
+ build backends and these are Python library packages that are capable of giving some configuration file。
+
+ generate me a Python store distribution and or a wheel and then there's a build frontends。
+
+ the build for frontends are the Python application or tool that is able to read the pipe project。
+
+tom， generate an insulated build dependency provisioning that is related。
+
+ build it is related build dependencies inside that environment and then invoke。
+
+ that backend to actually perform the packaging and build frontends you have the build tool which。
+
+ is like unify CLI for backend but you also have other packages which one and one will create one。
+
+ comment for all of them all those also are function both as a backend and as a front end at the same。
+
+ time for example， we had trampoline medium are a front end and the backend at the same time they。
+
+ take care of both of it they can also provision you do build dependencies but the other also want。
+
+ to build your package okay and pip is also a build frontend in this story so when you type in pip。
+
+ install something pip will be the one which actually going to create your easily build environment。
+
+ and then call your backend to actually build the third distribution or the wheel。
+
+ generally the wheel if you have a third distribution and then the wheel is what actually gets installed。
+
+ okay and talks is also another one we'll talk touch on talks a bit later so now once we have。
+
+ this story done the next story is that okay so how does the backend and the front end communicate。
+
+ each other and as I showed you beforehand historically they communicated by the set of that pile file。
+
+ and then passing any CLI arguments to the set of that pile file now obviously this had some downside。
+
+ meaning that every interpreter every backend needed to actually implement this protocol they。
+
+ needed to generate a set of the file but the set of the pile file just to communicate with the front。
+
+ end and this kind of like man that everyone was basically reducing the packaging story to the set。
+
+ of the pile file and to not have to be burdened by that then path 5 on 7/8 was introduced which。
+
+ basically means that we define the programmatic API for the backend and the front end to communicate。
+
+ each other mainly instead of using this Python set of the type B this wheel we also define a。
+
+ build backend interface this defines like a package and then a function or a method is what you communicate。
+
+ and then when you actually want to perform an operation for example you want to build the wheel。
+
+ you're able to actually call methods on that backend operation to communicate to the backend。
+
+ basically the front end generates this Python file and call this Python file into the easily。
+
+ built environment when it wants to communicate with the build backend meaning set up to restore。
+
+ flip or any of that okay does that make sense questions。
+
+ okay so if no questions then basically path 5 and 7 is just a better interface it replaces the。
+
+ set of the pile invocations with something more standardized and every backend and I've defined。
+
+ their own key under which they are available as a build backend here you can see a few of them。
+
+ each location they actually define their keywords what means for you is that if you use。
+
+ different backends you need to define this different backend inside this build backend key on your。
+
+ pyproject。ton file okay so last resort how to build a package pick your build backend。
+
+ and then use pyproject。ton to specify your build dependencies and your build backend interface。
+
+ okay and then just follow the documentation of the build backend。
+
+ exactly have to configure the backend to do what you want it to do okay now obviously many of these。
+
+ tools actually are also Python applications so you want to install them to be able to use them。
+
+ and to install tools I generally recommend using ppx and to install ppx you can use this package。
+
+ called ppx in ppx and once you install ppx you can just basically use ppx install other dependencies。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_131.png)
+
+ for example in my case we can say that if I was gonna do this so I can use ppx and just do install。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_133.png)
+
+ flip and as you see this will basically install flitt inside easily to build the environment。
+
+ and ton has a question meaning does it make sense to use several build backends for one package or。
+
+ just choose one to like I don't think you should have multiple build backends in the same project。
+
+ that being said there might be a story of picking something one of the simpler backends。
+
+ or something that is a simpler packaging story a simple story and no more complicated for someone。
+
+ there is more complicated in a spirit of like you don't want to use the most power for more。
+
+ come most complicated build backends all the time because that would mean that new people。
+
+ who come to that project might find hard to follow it and understand it okay so。
+
+ so what is the your gonna ask what is the difference between people install user ppx and。
+
+ ppx in ppx or have to install ppx in ppx then the question is ppx in ppx and i can go back to。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_135.png)
+
+ this one it's kind of like a cheat in a sense so the trouble with installing something do you。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_137.png)
+
+ use their side packages is so if you do just buy minism - m people list there's the shooter。
+
+ ppx this might work but the problem is this might break some other packages into your user side。
+
+ packages because remember you have a single user side packages it does mean that if any of the。
+
+ other packages in that environment require a different dependence is a different versions。
+
+ it means that you're gonna conflict with them and you're gonna either break ppx by upgrading。
+
+ another of the user side packages or you're gonna break another package whenever ppx requires a。
+
+ different dependency when something already does okay so this is why generally if you want to install。
+
+ a tool what you want to do like if you want to go totally sure that you're not breaking anything。
+
+ on your machine the best thing is to just create a virtual environment for example you can do。
+
+ virtual amp okay and then you can do like vm scripts pip install bpix okay and this works perfectly。
+
+ fine and then you can be cheeky and now that you have ppix on your machine you can actually。
+
+ use that to install ppx yeah and i can use like this this for okay so this way i installed ppx it。
+
+ does not actually installing ppx as a user side packages i installed ppx inside the insulated。
+
+ build environment and now i can just remove this vm thing if i want it okay and what i showed you。
+
+ here these three lines of first create a virtual environment install ppx in that then use that。
+
+ virtual environment to install ppx and then ppx can manage itself because that's to say like i do ppx。
+
+ list you'll see that ppx actually now also installed by sclord up ppx2 okay so these three steps is。
+
+ basically what ppx in ppx does it basically just generates a virtual environment during the。
+
+ installation in which we and uses that to install ppx which then means that after you did this。
+
+ ppx is now self-contained and manages itself to update to work and the benefit of this is that。
+
+ you install ppx without breaking anything on your machine and you get free upgrade of your ppx because。
+
+ whenever you do ppx upgrade all this will upgrade all your tools and we'll be make sure that it doesn't。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_139.png)
+
+ break anything when you use our side packages okay now obviously as i said you can do it manually。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_141.png)
+
+ create a virtual environment use that to install ppx and then use that virtual environment install。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_143.png)
+
+ ppx or you can just use this comment which does the same thing okay now once you install this now you。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_145.png)
+
+ have you just want to make sure that you put this path into your path environment you don't have to。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_147.png)
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_148.png)
+
+ it's perfectly fine if putting it on the path environment it's not more complicated it's also。
+
+ perfectly fine you can invoke it as a fully qualified path for example here i can do like。
+
+ i'm gonna do it like flip。exe for example you can see。
+
+ so that is fine you can use it as a fully qualified path but if you just want to type it quickly and。
+
+ easily it you want to put that location of that bin folder onto the your path environment variable。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_150.png)
+
+ okay so in the next part we'll actually do some hands-on development so i would like to。
+
+ for you guys to try to package what we had before using a flip and for this i would like to make。
+
+ sure that everyone managed to install a flip by using ppx or any other way and they have flit available。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_152.png)
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_153.png)
+
+ give a few seconds for people to try that out and signal back， so。
+
+ okay so i assume everyone managed if someone did not having issues just type it into the chat。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_155.png)
+
+ and maybe we can all pout each other but i kind of like go ahead and try to see how this would work。
+
+ okay so once you have flit available flit is one of these python packaging backends but as you can see。
+
+ from this health message it is also frontend because it doesn't just package or something it also。
+
+ allows me to build the package which is actually discussed the responsibility of a frontend okay。
+
+ it also allows me to publish it which means it's a more generic tool because it doesn't just。
+
+ deal with the story of the building a package it's also dealing with the story how do i upload that。
+
+ package once i have it it may even install the package okay now we'll use the in it in this case。
+
+ so we'll just do flit in it to create a project here we'll say p approximate that's fine enough for me。
+
+ as a module name auto is all right email is fine it's all right we've had a home page。
+
+ i'll choose an MIT license and that's it and basically what's happened at this point as you might see。
+
+ please generate this piperjig。ton file as you can see inside this piperjig。
+
+ton file it added a few lines， and a section called toolflit。
+
+mehta which leads you to believe that this tool chooses to store。
+
+ its packaging metadata logic its configuration between the piperjig。
+
+ton file itself as we see later on， this is not always the case we had to redo the same thing and in that sense it's very similar。
+
+ to flit but for example setup tools have the setup。g or the setup。py to actually store such。
+
+ configuration values okay so sure once you created this i mean let me just remove these environments。
+
+ so they don't create issues when i try to package here things and i need to remove this。
+
+ actually i'm just gonna， delete some parts i basically don't want any of these deleted okay so i have a cleaner working。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_157.png)
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_158.png)
+
+ directory so i have my as you can see i have my license file i have the python file to create。
+
+ it and start and i have my piperjig。ton file okay so if i do a flit in it oh i already did that。
+
+ my bad so if i do a flit build it even you can see that the tool even complains what i'm missing。
+
+ for example it says cannot package a module without a dot string or empty dot string okay let's。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_160.png)
+
+ add a dot string if it requires one so i just had a dot string my wonderful package tool。
+
+ yeah or my wonderful， the approximator okay i have a dot string i can call again build complain that hey i don't have a。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_162.png)
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_163.png)
+
+ version that i okay so it's a version variable available i go with version 1。0。0 cool。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_165.png)
+
+ and once i did that you can see that it printed some outputs but importantly you can see in the。
+
+ disk folder now i have some wheels okay so let me go to this disk and you can see it created two。
+
+ things it created both a wheel and a tar gz let's have a peek what's inside those files。
+
+ if i peek into the wheel file it is a wheel it's a zip file so you end because it's a zip。
+
+ file i can use a zip tool to actually peek into it so for example here you can see that。
+
+ what is inside is just some metadata and px。py file exactly what you wanted。
+
+ and this is what you're also going to be installing that target side package location now as far as the。
+
+ other files the tar gz files oh not what i wanted this requires a different incantation to show its。
+
+ content but this tar there's tdf it will show it that it contains basically all the files。
+
+ pyproject。com file-by-py-proximate the setup。py and the package info okay so cool i have all those three。
+
+ files both of them seems to contain what i want now that's simple and we already created our first。
+
+ package and now we could upload these packages and some or just somehow give them to another machine。
+
+ and users would be able to use it for example if i do a virtual amp i'm gonna make it actually here。
+
+ at the moment order and i create here a virtual environment i mean this virtual environment i use。
+
+ the scraped p-pack install this wheel so that we'll actually install the wheel and once this is installed。
+
+ it if i start the python interpreter let's see i can actually do the approximate import okay。
+
+ and this file is actually now available inside this virtual environment i just created okay so。
+
+ that's all we need now once we have this view file pp's able to install it pp is also able to install。
+
+ the sword distribution and i can just do that it might actually skip it but you can see here what。
+
+ i was talking beforehand when you try to install the sword distribution the first thing that happened。
+
+ is that it installed build dependencies because the first thing that we do if you give me sword。
+
+ distribution i build the wheel from it and then once i build the wheel it even printed out the。
+
+ wheel it built that's what actually gets installed okay so that's pretty much our first package done。
+
+ and dusted now in practice you would obviously upload this to like ppy oh christen god so basically。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_167.png)
+
+ the version is basically this variable that you need to add。
+
+ inside anywhere inside your module file see there on 0。
+
+0 and at this point now there's one thing that。
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_169.png)
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_170.png)
+
+ you might see for example which might be important interesting is that considered by default the。
+
+ name of this wheel contains p2 p3 now what this means is that this file this wheel will run both on。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_172.png)
+
+ python 2 and python 3 now obviously this is not true because if you look at this。
+
+ type annotation you know that this only works on python 3 so you can see that at the moment we。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_174.png)
+
+ have a bug in our python packaging because this should not work on python 2 the way you specify if。
+
+ something is working only on a given python version is by using the python requires metadata。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_176.png)
+
+ and for to actually see this i need to look up the documentation of flip。
+
+ let me just go because every front end may specify this dependence in a different way。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_178.png)
+
+ so here it goes it just be at this and i do something like python or requires。
+
+ or python wait i think it's config file in this one the config part section here you can see。
+
+ how you can configure various aspects of your package beside what the unit already generated。
+
+ and for example for us what's important is that there was a requires。
+
+ requires python configuration here it's the way now reading the documentation we know that。
+
+ the way you can specify what version of python this more package requires is by using this notation。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_180.png)
+
+ inside the requires python okay so let's do that we're just taking requires python。
+
+ and we're gonna say it requires 3。9 okay and now build again the package okay。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_182.png)
+
+ and now we built again the package and now if i look into this we can see that now it actually。
+
+ generated a wheel which no longer contains the python 2 which is correct because now it。
+
+ dis expresses that hey this python file only works on python 3。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_184.png)
+
+ yep so that's the gist of it now。
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_186.png)
+
+ in this case as you can see i use flit to build a package but flit serves also as a front end。
+
+ of the back end the dedicated front end for building packages is called build okay and i already。
+
+ have installed it so it's gonna complain without letting me install it and this shows you that the。
+
+ build project is actually available on the pyproject。
+
+bill executable okay so if i don't want to use the。
+
+ field build back end to build the wheel and the wheel build the wheel and the service vision。
+
+ we can see that i can also use the pyproject the deal project which is a generic python package。
+
+ builder to specify that hey build the service middle wheel from this folder okay and this as。
+
+ you see it's gonna take a bit longer and the reason why it's gonna take a bit longer is because。
+
+ it actually needs to install flit to be able to do the packaging beforehand when i did when i use。
+
+ flit to build a package i did not need to install flit because i was already invoking flit so flit。
+
+ was already available but in this case that's not the case and there's two runs of this and you can。
+
+ see like successfully install flit core this is one run and there's another one here and the。
+
+ reason why there's two run is because the build front end needs to create separate build environments。
+
+ both for the source solution and the wheel distribution so that's why you see the output of this is twice。
+
+ the advantages of using the pyproject that builds over the built-in flit。build is that the。
+
+ pyproject that builds will always work on any build back end some of the builds back end such。
+
+ as setup tools doesn't provide you a built-in front end to build your packages and in this case。
+
+ you can just the pyproject。build to use make sense？
+
+ okay so it installs flits because it's referenced by the flit yeah so the build front end goes into。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_188.png)
+
+ this pyproject。town file checks this hey i need flit core greater than equal than four less than four。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_190.png)
+
+ and if you check the output of this it's actually that's what it says that collecting flit core。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_192.png)
+
+ less than four greater than equal than two okay and then it uses this build back end。
+
+ python api to communicate it to the back end that hey build me a wheel build my store distribution。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_194.png)
+
+ and that's what it's going to put it inside of this folder okay now one question that your。
+
+ organ has what does the non-anime means and we'll get back to that in a way in a short while you're。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_196.png)
+
+ again okay so once we have this one the next part is gonna be like maybe we want to we are not happy。
+
+ with the performance of our pcalculator let's speed it up okay as i seen beforehand python is able to。
+
+ import not just python files it's able to import binary libraries and this is what the python package。
+
+ provides it's able to take your python file generate ccode and compile the sequel into binary file。
+
+ and then use that module as this ccode and this is a quite a big how should i say this this is a lot。
+
+ of power because now i can get to free performance improvement without doing anything and what happens。
+
+ at this time is that the code i'm going to be running it's no longer going to be imported from。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_198.png)
+
+ a python file but rather from a binary file let's try to do that okay now the first thing。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_200.png)
+
+ that the first thing that we're going to run to it is that flip is not advanced enough to build。
+
+ c extensions it's not aimed at those users need to build c extensions so the first thing we're going。
+
+ to do we're going to move the project configuration to set up tools okay now the reason why i want to do。
+
+ this is also going to show us what are the different tests between flick and setup tools and just show。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_202.png)
+
+ if one of them is more complicated or not that the other okay so， let's try to do this。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_204.png)
+
+ give me a second。
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_206.png)
+
+ do you want to stop？ okay so what do we need to do to move this to setup tools okay so the first thing we need to do is。
+
+ we no longer setup tools no longer contains this configuration in the pyproject。com。
+
+ so we'll need the setup。py file to say this is a setup to the users and this is just going to have。
+
+ a simpler setup we need okay and then we're going to extract out the configuration the static。
+
+ information into setup。cfg file and i actually want to do this but to not to look up every configuration。
+
+ one by one from the documentation i'll cheat here a bit and we'll actually copy over the configuration。
+
+ from a pre-created one repository i'll post that into the chat in case you want to follow along。
+
+ or not that one wrong repository， but i wanted to here to。
+
+ that's the one i wanted to basically go to this is roughly what i need。
+
+ so as you can see the name version it's no longer in our description no longer lives inside the python。
+
+ file itself so now we can remove this we can remove this the version moved inside the setup that you。
+
+ have the description moved into the setup this year we also defined just the read me edit the。
+
+ author also moved to setup。cfg so this no longer is a thing what are the python files。
+
+ move the reuse this thing which means the packages are dynamically fine so means i can remove now。
+
+ this module i think the classifiers also move the setup that's gfg like this is a classifier okay。
+
+ my requires python also moved to the setup that's gfg you can move it over。
+
+ yeah i'll pass it in a second yeah basically there。
+
+ so it does kind of like the end goal here we want to reach and then we just need to do one more thing。
+
+ now we need to this is at this point go here and that's about it i think so at this point if i use。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_208.png)
+
+ let me just remove the distribution okay so there's no nothing in the distribution so now if i use pipe。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_210.png)
+
+ actually oh one more thing we need to change actually we need to share the build system and the build。
+
+ backend because we changed that too so i'll just take these dependencies let me remove。
+
+ site them for now okay so now after doing all the changes this should basically give us the same。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_212.png)
+
+ thing that we had in fleet but what changed that all our configuration now doesn't live inside the。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_214.png)
+
+ setup。py set or doesn't live inside the pipe project the tom but instead it's split up between。
+
+ the setup。py file and the setup。cfg file， if this is a private give me a second to learn make it pop。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_216.png)
+
+ change with the build， okay。
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_218.png)
+
+ okay now it should work the link okay so we moved around some of the configuration from within the。
+
+ source of itself into the setup。cfg and setup。py and change the build backend inside the pipe project。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_220.png)
+
+ the tom but pause this once we run the build packaging comment this actually ends up with the。
+
+ same thing if i look into this folder i have a will file and i have a pie approximate file now。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_222.png)
+
+ the exact content of these files might be a big different because here。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_224.png)
+
+ pprox， towards you see that there are some is egg info files which fleet did not generate。
+
+ and inside the wheel。
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_226.png)
+
+ we have a few other files actually since i actually did not include the。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_228.png)
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_229.png)
+
+ python file what did i mess up here you see in the wheel you don't have any python file actually。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_231.png)
+
+ okay oh yeah line in the differently pprox， if i do my packaging again you will see。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_233.png)
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_234.png)
+
+ that now it should include the file inside it。
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_236.png)
+
+ now setup tools is a bit more verbal it actually brings what is doing online online。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_238.png)
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_239.png)
+
+ so if something's broken you can actually see this output and debug it to see what breaks during。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_241.png)
+
+ the packaging but for example you can see that it actually says i'm copying this file to this folder。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_243.png)
+
+ then i'm creating a torar archive removing that all that kind of things okay and now if i do。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_245.png)
+
+ this wheel you can see now i do have the pprox made pilot part of the wheel so now with this change。
+
+ we basically got the same thing we had before we migrated from flip to setup those okay now。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_247.png)
+
+ now let's actually try to speed up our logic and the way i'm going to do that i'm going to create here。
+
+ via correct submit psi okay the way i the reason why i do this i'm going to take。
+
+ just to show you that both of these working parallel i'm going to take the。
+
+ this python file and also compile it as a， site and application okay and the way i do it and this is something you would look up the documentation。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_249.png)
+
+ of the site and the documentation of the site and file is you just have to specify it in the setup。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_251.png)
+
+ dot file that hey by the way i require you to tightenize this extra file and let me go into。
+
+ setup dot pie and this is something you can do today with the configuration file so you must put。
+
+ it inside the inside the setup dot pie file supposed to have written gas but she put this one in。
+
+ and now we need to add our build dependencies to the site and now i also depend on the site and。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_253.png)
+
+ now if i build let's say just a wheel save time here this will actually in the background go out。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_255.png)
+
+ create the ccode for this application we have and compile it。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_257.png)
+
+ did i mess up the naming？ oh extension needs to be different。
+
+ i bet the site acts which is like the site and extension okay。
+
+ so now we try to run this we see that this should， work better still needs to mess up something。
+
+ here broad side pie doesn't change files oh really good at making typos today。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_259.png)
+
+ spikes。
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_261.png)
+
+ there are times is the lucky charm no oh yeah you can see so if i look into the folder now you see。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_263.png)
+
+ that it actually created the c file and as some of you might be available the python interpreter。
+
+ the one maintained by the python software foundation is actually written in c so if we translate the。
+
+ python to the ccode and compile it and run that allows us to do optimizations which make our code。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_265.png)
+
+ faster so you can see this quite a long c file but you don't have to actually understand it。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_267.png)
+
+ at the end of the day what's happening if you look into the。
+
+ wheel that you generated is just that from that python file it creates this pie defile。
+
+ and this pie defile is something that we can import and run and let me do that let's go back to our demo。
+
+ think and here i'm gonna install， i want it but i'm gonna em trips pip install this let's provide that wheel and now if i start this。
+
+ interpreter and i do import the approach sigh sigh what happened。
+
+ i think so this is a good example i actually see you can always check out what was installed。
+
+ i think i installed it right here so i think the， it could be that setup tools did not install it and i can check by going there and see and see like。
+
+ look it's not actually there so what could be here the case is the setup tool decided that doesn't。
+
+ need to install it so i can do a four-strain install really convinced that hey。
+
+ install it oh wait no i know what it is my bad and it do install not this version the。
+
+ universe of one but now i need to install this version and this is where your guns earlier question。
+
+ came what is that none and any meaning okay and that none and any is basically the abi compatibility。
+
+ thing it basically specifies what python compilation and and nioness is this will。
+
+ compatible with and what platform is compatible with it for example this one states this wheel。
+
+ is good for c python 3。9 and also requires windows 64 bits operating system okay and not。
+
+ and any basically means that it's independent of the python implementation or the platform。
+
+ any is for the platform independent it works on any platform and none means we don't depend on。
+
+ any python implementation and cp 39 means c python 3。9 that clear so if i install this one。
+
+ and i can do a four-strain install just to replace it and now if i do。
+
+ vm scripts python extra and import p， crooks sigh you can see that this actually now imported。
+
+ and see and it's actually backed by this pi d file which is a binary dependency i can also find out。
+
+ what importer was used with the loaded for example in this case it was actually loaded by this extension。
+
+ file loader which is a variant of what's capable of loading this binary files if i would。
+
+ i don't know if i would use the other one which was if i would import p approximate and i would check。
+
+ the loader on this one you see that this actually uses a source file loader okay。
+
+ yes you can see different loaders are used to manifest different back end independently but。
+
+ independent of what i use now both of them are working and i can use for example。
+
+ just to all it is actually works and i can use。
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_269.png)
+
+ oh not the same file approximate pile。
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_271.png)
+
+ and this now is much faster than the previous one now here measuring it might be not as easy so you。
+
+ might use the by me module but basically here's probably around let's say 70 to 80 percent of。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_273.png)
+
+ performance improvement you can get if you just feed it a raw python file with basic type annotations。
+
+ to tighten and what you get back from it okay questions related to that。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_275.png)
+
+ no questions okay so for example here is a bit of benchmarking i did by using the time。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_277.png)
+
+ it module but you can see from 105 millisecond for calculating the million precision or the。
+
+ iteration i managed to shift it down to 70 millisecond now doing this going down to the。
+
+ sea level does have a downside because it does mean that now i have to generate now the。
+
+ wheel that i'm generating it's only valid for my current platform and it will not work on any。
+
+ other platform so if i want our users to not have to build their own wheel on their own machine。
+
+ and in order to do that you need to have a C++ compiler available and the header files for python。
+
+ available i need to ship a wheel for every possible platform and you might say that that's not that。
+
+ hard because you have like windows macro asset Linux whatever but it's a bit more complicated。
+
+ than because it also includes potential future platforms which you're not even aware of for example。
+
+ when apple introduced their new m1 platforms last year those new platform because it's a。
+
+ totally different architecture did mean that none of the mequas previous mequas generated wheels。
+
+ work for that platform okay so there are some downside going down to the binary level but if。
+
+ you can what it does offer also some performance benefit okay now as far as uploading the package。
+
+ we could already see beforehand flit offers just the upload comment which works but generally from a。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_279.png)
+
+ pipeline point of view the tool to be used to install to the pipeline it's basically the。
+
+ twine package and twine be something like that oh let me actually go up one。
+
+ i would just use twine application to hey upload this package okay and if。
+
+ oh sorry i can also first validate it i won't check i think it's called。
+
+ can you check to check my wheel looks all right for the pipeline point of view。
+
+ but after that i can use twine to actually， and you can see it even says a warning that long description is main thing but after then i can just。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_281.png)
+
+ twine to upload it and here you might enter your user name and password to actually go through with it。
+
+ or you might even set up your two-factor authentication or a pike depending on your level of security you。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_283.png)
+
+ wish to have the example documentation on that how to do that on the papi。org website okay so。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_285.png)
+
+ based on that and someone pointed out it flit published yeah but i don't have a flit project。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_287.png)
+
+ anymore so it doesn't work similarly the strength or downside of poetry would be that poetry is the。
+
+ same poetry also if you check the help of it has a lot of comments so you can use poetry itself to。
+
+ build your package to upload your package basically to do anything with your package。
+
+ while if you're using set up tools you would have to use twine you'd have to use the build project to。
+
+ build the one you have to use twine to upload one but those packages are potentially more powerful。
+
+ especially for cextension okay now that doesn't mean that flit or set up tools is not going to be。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_289.png)
+
+ just as strong as someday but we are not the area okay now on the other side actually install packages。
+
+ we need first need to discover and download the package for human discovery which isn't just。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_291.png)
+
+ the papi package as even here was so and you have the search one but what the machine does is not。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_293.png)
+
+ that it actually goes to the papi simple repository api for example to the build project that will。
+
+ close a few here for the build project you can see that i can go to this url and i can see all the。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_295.png)
+
+ packages uploaded to the papi by visiting this web page and this is what the machine check。
+
+ so if the machine doesn't see one of these packages it means that it's not available on this。
+
+ this url what more than that the library doesn't just see this one what it sees is actually。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_297.png)
+
+ it's actually distinct here the html itself and as you can see this html contains much more than。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_299.png)
+
+ just the links to these libraries it also contains these data requires entries so by the front end。
+
+ actually parts of the data requires it's even aware if some of these packages are compatible。
+
+ with a given python version or not okay so this is like what the machine actually does to discover。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_301.png)
+
+ and download the package and therefore it's telling a package that basically just boils down to extracting。
+
+ that wheel copying some files in some location and then just generating the console scripts or。
+
+ the entry points to the application potentially there are other installers available for example。
+
+ one of the reasons why virtual amp can be as fast creating virtual environments is because it has。
+
+ its own real installer within it that's optimized to work on the real virtual amps need to handle okay。
+
+ so yeah then just a bit of a bonus content how would you test your library oh what is this between papi and papi。
+
+ I think just for opagani I would encourage you to like share that one yeah I encourage you to。
+
+ compare your python if you compiled exactly what we had here just check that this is what you pass。
+
+ thing into your setup that by if not you could just download that project and try to make that run。
+
+ that should be correctly configured and should work I even set up for it some actions to validate it。
+
+ so I'm fairly confident it would work or just compare it with the link I posted in the chat。
+
+ to make sure it works correctly and you did not have any differences compared to that。
+
+ now the difference in papi and papi is that papi installs python packages while papi installs python。
+
+ tools in a sense that it creates a virtual environment and installs a tool with all its dependencies。
+
+ into that virtual environment so this indirection of creating a virtual environment is what papi does。
+
+ more than papi okay now as far as testing your library generally how you would test your library。
+
+ you would first create a virtual environment it's kind of like what I was doing while presenting。
+
+ this tutorial is create a virtual environment build your will or store distribution installs your。
+
+ store distribution and then you would install your test dependencies and then run your test suite。
+
+ you can see these are like these four five comments that you kind of like have to keep in your mind。
+
+ and know how to do or better yet just use this cool tool called talks which is basically allows you。
+
+ to define all these type of steps inside the configuration file for example here you can define。
+
+ that i want python 3。9 as my test environment and i'm going to use this isolated build environment。
+
+ which is just basically use everything i was talking about in this tutorial and then define。
+
+ the dependency what is the comment and once you do this talks will be able to you can just install。
+
+ talks and then just type in talks and talks will do automatically all of this setup and run operation。
+
+ okay oh agony you should not run python setup。py build what you should do is you should run。
+
+ papi project that build will and i said before and earlier uh sure not real it's generally not。
+
+ recommended to interact with the build back end directly i don't recommend you to call the setup。py。
+
+ okay like instead of doing python setup。py build you should do papi project that。
+
+ there's this real dot two and use the build tool which knows how to make sure everything is setup and。
+
+ working okay yeah and i recommend generally if you want to test your library just looking to the。
+
+ talks tool it's a great way to define declare inside some configuration file how you should set up run。
+
+ and run for multiple python environments your project project test suite okay now as far as。
+
+ before it always publish both will and the store distribution and the reason for this is that sometimes。
+
+ wheels are banned in various environments for example many enterprise environments don't accept。
+
+ installing wheels because they view it as a security potential security hold or so it's you want to。
+
+ store distribution to be available when a new platform comes along and or that reason you。
+
+ polish your distribution just for the sake of being auditable as far as the test suite and yeah and。
+
+ always ship your test suite with your source distribution so that whenever someone builds a。
+
+ wheel they can use your test suite to validate that their wheel build was correct okay was that。
+
+ any questions if not we'll take five minutes break everyone grab a coffee move your likes a bit。
+
+ and then we'll come back to wrap it up with creating an application。
+
+ so to answer in the break kind of like I'll put to answer your main questions how do you configure。
+
+ that your source distribution ships the test but the wheel does not and the answer is depends on your。
+
+ build back end where tree and flit has the policy that it ships all the files in your source directory。
+
+ so within the source distribution but then it uses custom logic what to ship inside the side packages。
+
+ for the within the wheel as far as setup tools goes setup tools is a bit more complicated。
+
+ because setup tools by default doesn't ship anything and that's way with the setup tools what you do you。
+
+ often have another configuration files which is configuration file which is specific to setup tools。
+
+ only in this manifest that in file and if this manifest that in file where you specify what to。
+
+ include in your store distribution so if you do something like graph for example test。
+
+ that would ship everything in your test folder into the store distribution but would not ship it。
+
+ into the wheel because what shipped into the wheel is governed by this find module or this pie modules。
+
+ here。 Opegani you want to install pipe project that build with pippics and make sure that it's available。
+
+ Oh and the third one actually everything。 There will be an answer。
+
+ I can say it again because we're in the break。 Basically， it is setup tools the manifest。
+
+in file is the what controlling what gets installed into your。
+
+ source distribution or what gets included in your source distribution so if you include stuff。
+
+ by using the manifest。in that only goes into your store distribution what goes into your wheel。
+
+ will be what is defined by the pie modules here or the find logic。 Makes sense？
+
+ So in case of the setup tools and these skills the manifest。in is what。
+
+ configures what goes into the store distribution and this goes both ways if you don't want to include。
+
+ something in your source distribution such as your CI files you would use this manifest。in file to。
+
+ exclude it。 Okay。 So I just had a question in the meantime that。
+
+ does pip install there's this editable work the same if my project is set up to split or set up。
+
+ tools。 Pip install there's this editable as tends to only work for set up tools and these。
+
+ two tools。 Pip install there's this editable it's a non-standard editable install mode and。
+
+ it's not it only works with setup tools。 Now fleet may be able to work around this and generate。
+
+ other mechanism but is not supported by the standard ways of doing this。
+
+ Now we're not too far to make。
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_303.png)
+
+ that reality though because the dream here is there's a pep which introduces editable installs。
+
+ I want to show you like 650 or something。 Let me look that up。 Of 650。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_305.png)
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_306.png)
+
+ Anyway， there's a discussion。 By the way if anyone wants to or not that one there's a discord link too but。
+
+ if anyone has any packaging questions problems that you're running into it your best way or location。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_308.png)
+
+ to ask help is going to be the packaging section within the Python discuss web server。
+
+ And for example here you can see there's a discussion going on for editable installs。
+
+ and this is what will allow all tools to provide editable installs。 So not today but maybe by next。
+
+ year Pip install there's this editable will work the same way for all the backends。
+
+ Yeah just looking trying to find the oh maybe let's start。
+
+ But this is a pep I doesn't have a number， yet which actually tries to come up with a standardized way how to define a。
+
+ editable installs but there's not defined yet。 Yeah when would it end？
+
+ We started a bit later so I was hoping for a 15 minute extension but if you。
+
+ want to if you have to leave feel free to leave I'll personally will try to use an extra of 50。
+
+ minutes just to go to what we have left okay。 Okay is there a reason to still use the Py project at on file where everything is in。
+
+ setup。py。clg yes you can put everything in the in the setup。py and setup。clg this part。
+
+ the build system definition the requires and the build backend must be in the py project。ton file。
+
+ Now you can move everything else out of it into the setup the cfjset。
+
+py but these two must exist here， and there's also a standard which was introduced a few months ago which aims that in wants to。
+
+ provide the standardized ways inside the py project。
+
+ton file so all the backends may use this py project。ton。
+
+ file where they define their build dependencies that kind of stuff that's probably going to take a few。
+
+ years until all the tools adopted but maybe in a year's time it will be possible to actually drop。
+
+ both set of the py and setup。clg and still use setup tools and put everything in the py project。
+
+ton file， that's where we're kind of heading but we're not there yet for today for setup tools still。
+
+ keep using setup。py setup。clg and py project。ton together okay so the math i'm sorry this is so。
+
+ baganios um the question that i have is right now when i try to do pipx install py project build。
+
+ it says it has a version known do i have to put it in the manifest？
+
+ i would have to have a look at it can you reach out to me after the tutorial and we can discuss。
+
+ that okay i just put it in the chat and then we can talk here i'm just going from did have。
+
+ exactly yeah i don't know where it will get back to you after the tutorial because might。
+
+ require a bit more debugging okay okay so going into the creating an application so as i said before。
+
+ this is what you had for the library and this more or less works great but let's see what about。
+
+ an application now as for application we touched on beforehand is an application runs with the latest。
+
+ compatible or library runs with the latest compatible dependencies mostly because it might need to。
+
+ coexist with other libraries that have different version dependencies it need to that's why it。
+
+ tests with the latest compatible dependencies just to make sure that it wasn't broken and need to。
+
+ expose all modern features as they are and needs to be installed actually with an application。
+
+ this is not the case it doesn't need to be installed because it doesn't need to be discoverable the。
+
+ Python important system and it can find to run with a single type set of dependencies doesn't need to。
+
+ run with the latest dependencies and test with the given set of dependencies is totally fine。
+
+ the application needs to expose the need to expose only a single entry point it's not the case that。
+
+ you have to run you have to be able to run any functions within that Python file and ideally。
+
+ should just be as simple for the end user just hey download this file copy this file and execute it。
+
+ okay so one way you can actually ship your application is to treat it as a library and just use the。
+
+ library's console entry points and ui entry points the downside with this is that you need to understand。
+
+ the user that's using your application needs to understand virtual environments to actually make。
+
+ it work and potentially to if something breaks needs to understand virtual environments to fix it。
+
+ it needs to know where those entry points get generated the console and the GUI entry points。
+
+ it needs to know which might require them mangling their own system path which might be a bit of an。
+
+ advanced set functionality and the dependencies in case of if you treat it as a library are not。
+
+ pinned meaning that you might have a different dependency than user that's running and that might。
+
+ not work at a later time now you can still deploy your application as a library if you manage to solve。
+
+ these issues by using another system for example if you build a docker image and you give this。
+
+ docker image to the user then it's perfectly fine to ship your application as a library。
+
+ treat as a library install it as a library and then just this frozen docker image is what's gonna be。
+
+ given to the user and hey just run this docker image okay so the way the python's story around。
+
+ this course is basically zip apps and zip apps is basically this functionality which we could have。
+
+ seen before you we saw that python is able to import files from within a zip file okay and this is what。
+
+ the zip app allows you to basically i can create all the project all the files of my project put it。
+
+ inside a zip app and if i give this zip app to the python application the python or not the python。
+
+ application to the python interpreter the python interpreter can run it because it's just gonna put。
+
+ the location of the zip app onto the sys。pad and after that all the files within the zip file are。
+
+ discoverable okay and a lot of these tools that we're gonna see just in a minute basically leverage。
+
+ this functionality now this is what the virtual m project also does for example if you want to use。
+
+ virtual m without installing it because maybe you don't have rights to install it you can basically。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_310.png)
+
+ just use download this package from virtual m and what you're gonna end up once you download this。
+
+ package is you can put a python interpreter at it and as you can see for example it runs happily。
+
+ ever after and this is like a python's zip application okay now if you look inside this file。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_312.png)
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_313.png)
+
+ this zip application you will see that it basically contains just python files as they would be on the。
+
+ file system they're just put together inside the zip file okay now one important thing is that the。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_315.png)
+
+ zip file always has an entry point the entry point is the main。
+
+py file that you package within the zip。file， so the entry point for this virtual m application is basically the logic that gets executed when this。
+
+ main。py file gets executed so if you want to know what's happening in this main。py file。
+
+ I actually want to maybe let's see compact this and I want to look into this main。py file。
+
+ and you will see here there's a run entry point and then it just starts running from that point on。
+
+ other than that it behaves exactly the same as this file system structure would be extracted to。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_317.png)
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_318.png)
+
+ the file system okay so easy way we just take everything that we have inside our application put。
+
+ it together in a zip file send the zip file to the user and just tell them point your python。
+
+ interpreter as the zip file okay so simple as thing let's try to do this let's try to actually package。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_320.png)
+
+ this I can for example sage I need a folder and I'm gonna create for that make the error。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_322.png)
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_323.png)
+
+ the image is gonna copy the python file into this zip folder。
+
+ and I now I can do something such as similar as this， so I need to specify。
+
+ the folder in which my files are located and this is in the zip folder and then I need to specify。
+
+ the module inside which my entry point lives and then I need to specify。
+
+ a function that gets executed called when I run it something like that okay。
+
+ now it complains that this entry point doesn't exist and for good reason because。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_325.png)
+
+ if I go into this zip folder and I do this bit of a spy I see that there's no running this。
+
+ because this right on the fact that this name section gets run when the file is executed。
+
+ but I can just move that into a run function and if I do now the sleeping oh actually have a dot in here。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_327.png)
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_328.png)
+
+ now it should work and if I do now this zip piezit this actually runs and now the entry point。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_330.png)
+
+ actually runs this run method and I can investigate again this if I just do in zip zip piezit。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_332.png)
+
+ you see that it generates a main file which actually just calls that run method within it。
+
+ yeah if I just do like a look into this main file you see exactly that based on this configuration。
+
+ from here you just generate that main file and then put this zip file onto the pet and just run zip。
+
+ okay now the only kind of like problem with this is that as you say this zip file doesn't contain。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_334.png)
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_335.png)
+
+ its dependencies okay so like what about my dependencies I may have a lot of dependencies。
+
+ which I might also need to ship to the user and the zip up as out of the box doesn't do this but。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_337.png)
+
+ there are these other tools cause pecs and shiv which we're going to see in a moment which do this。
+
+ what they do offer extra besides this packaging logic what zip up does is that they also deal with。
+
+ the your dependencies it's going to look at your application it's going to discover what are my。
+
+ dependencies for example here's the pecs the pecs one and it's going to package your dependencies also。
+
+ into the zip file and this zip file will also then provision at the start of the zip。
+
+ or the python interpreter so that it's able to load this for example here the wheel of files okay。
+
+ you have either the pecs as a solution to this and then you also have shiv as another solution of this。
+
+ and here if you go to for example you can see we'll actually let's give it a quick try to。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_339.png)
+
+ with shiv shiv actually is able to package it's able to。
+
+ they will actually able to package something that you already published so I can specify to the shiv。
+
+ that hey create a zip up file for my for example for the virtual and project and put it into a。
+
+ virtual and the shiv and then here the second virtual means that my entry point is used as an。
+
+ entry point the console entry point called virtual and okay if i run this what actually happens in the。
+
+ background is that now i end off with a virtual and the shiv and this virtual and file is a zip。
+
+ of file i mean i can feed it to a python interpreter and will actually work and run and if i look into。
+
+ the structure of it i can see that it actually took all the dependencies this application had。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_341.png)
+
+ and put it inside the zip up file onto the side packages and all my dependencies even the binary。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_343.png)
+
+ entry point executables are available there okay， so pretty much this it and then it just defines its own environment just some bootstrapping logic。
+
+ it just makes things that whatever you see here it's actually available for important。
+
+ inside this main。py file okay so yeah if you want to just literally have a python file and you just。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_345.png)
+
+ wanted to give it to someone else to run it and you don't want to actually look at it。
+
+ either using pigs and shiv is great to give them this all the dependencies packaged into one single zip。
+
+ file they can just point at it and run it this is fairly simple and easy to use now there's another。
+
+ fact family of installer generation and this is the pie installer pie installer is different in a。
+
+ sense that pie installer doesn't just generate you a zip file but actually and it doesn't just。
+
+ packages your own application but it actually packages your application the python interpreter。
+
+ to get you into a single file that's executable like this is kind of creates literally。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_347.png)
+
+ executable file that you can copy around for example if you go back okay and we have this。
+
+ pure approximate or approximate file this file okay I can do pie installer there's a thing and if I。
+
+ run this pie installer tool you'll see that once it finishes it actually goes out into my file system。
+
+ files my python interpreter files my binary dependencies and puts all them together into a single file。
+
+ and I can check it out inside of this bush and you'll see this pie。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_349.png)
+
+ can be run as an interpreter itself and now this actually doesn't work because here I did not。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_351.png)
+
+ actually have this to run so I need to do something I need to do I did this there's just name。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_353.png)
+
+ just copy it， I need to actually run it so you can say that it works okay so because it's gonna run this pie。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_355.png)
+
+ submit file itself so if I do it again and it regenerates that executable you see that it actually。
+
+ gonna work and now this actually generated an executable I did not work what did I do wrong here。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_357.png)
+
+ it should at least generate。
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_359.png)
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_360.png)
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_361.png)
+
+ hmm thanks a lot but generally the idea is that it will generate you an entry point which you can。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_363.png)
+
+ which you can then just literally give it to our ownership it can you run a pie installer on Linux。
+
+ to create a windows executable short answer no and it's even more complicated than that because what。
+
+ basically how pie installer works is whenever it you invoke it it goes out checks all the python。
+
+ files that you're using discovers all the dependencies both python dependencies and binary dependencies。
+
+ and collects them together into a single package and then it ships a single package。
+
+ and whenever you actually start here I started here like p。approximate。py it's actually on reps。
+
+ all the files this project was using into temporary folder and runs it from there and because it。
+
+ collects the binary dependencies from the platform it's running on to it means that it's only able to。
+
+ run on the same platform where you built it okay if you just want to if you just want to。
+
+ and this makes it fairly easy to run I would say if your friend is total new and doesn't know。
+
+ Python at all I think pie installer is a great way to package your application there are somewhere。
+
+ as kills you might run to it and rough edges but generally it lands you with a single as feasible。
+
+ that you can just give it to someone and it's simple enough that they could just literally run。
+
+ it and it would do what you expect them to do if they know a bit of a python I think the z-paps are。
+
+ a bit more robust they are less rough edges even a running to them with the pie installer but it。
+
+ does mean that now the user has to know how to install python and how to invoke python applications。
+
+ by passing the z-pap application to it okay so my general consensus is that pie installer is a bit。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_365.png)
+
+ stronger in a sense that it makes the barrier of entry lower for the end users but it's be prepared。
+
+ to run into more issues of our using it just how intrusive and how it works because of that while。
+
+ the z-paps are generally much more robust in working and behavior but if something goes wrong it's going。
+
+ to require you more expertize to debug it or use it okay so this is one bonus content just kind of。
+
+ like the English you might be wondering as you see beforehand the virtual amp actually has different。
+
+ versions depending on the python you're using it for example you can see on 3。9 and 2。7 totally。
+
+ different type of python dependencies are needed so one my ask how is capable virtual amp in packaging。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_367.png)
+
+ all your dependencies inside a single zip file because as you might have seen before it's virtual。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_369.png)
+
+ and that pie z this works the same way if I call it python 3。6 or if I call it with python 3。8 okay。
+
+ because both sieve and the pie installer and the zip and the packs they always only drag。
+
+ to the package that is guaranteed to work on the exact interpreter that you build it on not in a。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_371.png)
+
+ different interpreter and this is just kind of like a showcase that how you can reuse some of the。
+
+ power within the python ecosystem how you can make this happen is that the python or the zip。
+
+ application that virtual and ships actually contains multiple versions of multiple dependencies。
+
+ decide the actual source code for example you can see it contains 1。1。3 of imported metadata and， 1。
+
+6。2 of imported metadata and it has the distributions and models that JSON which。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_373.png)
+
+ will write actually look at it and these distributions models pacifies for his python version what is。
+
+ the exact versions of the wheels that actually are used for for example you can see for 2。7。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_375.png)
+
+ a lot more libraries of use and different inversions that from 3。9 okay and the way the way。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_377.png)
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_378.png)
+
+ virtual amp is able to dynamically load the correct version at runtime is that at start up it basically。
+
+ loads this kind of like lookup table which is defined inside the models and distribution of JSON。
+
+ and based on this lookup and the current version of the interpreter it installs custom importers。
+
+ which resolve two different paths depending on the pipe inversions you're running onto it。
+
+ so this way you can actually have multiple versions of the same library packaged into the same zip。
+
+ of application and for this you just need to have a bit of look into the pep 451 and 3。2。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_380.png)
+
+ with the import hooks and how the import system works but if you do that and let me just。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_382.png)
+
+ quickly unzip this you'll see that and we can have a quick look at this before we finish this up。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_384.png)
+
+ you'll see that basically what's happening is that you can register custom importers that are able to。
+
+ find the models and load the models dynamically based on this version information and these are。
+
+ just basically registered and added to the system meta-importor path at the start of it whenever this。
+
+ Python interpreter starts up okay so this is just like a nice way of how you can mix。
+
+ what we learned about the import system earlier in this talk or this tutorial and the meta path。
+
+ and I encourage you if you want to like understand it but you're looking to this it's quite it's a good。
+
+ use case to see how you can mix those and how you can actually create single zip files which are。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_386.png)
+
+ cross-platform compatible potentially okay and after that that was basically all I had to take。
+
+
+
+![](img/759a25f61cc4dcebc6324f15f7d3b776_388.png)
+
+ so I'm happy to answer any questions or issues people around to it so yeah just pick up if you。
+
+ have any questions I'm happy to answer them otherwise thank you very much for your confidence。
+
+ and your time you gave me today in this tutorial I hope this was very useful for you and thank you。
+
+ Thanks for watching。
