@@ -1,0 +1,588 @@
+# PyCon US 2022 - P61：Talk - Nandita Viswanath and Sagar Aryal_ In house to open source  Stitching the - VikingDen7 - BV1f8411Y7cP
+
+ Welcome everyone， you're in room 355 A， B， C。 And we have Nandita， Vyswanath， and Sagar。
+
+
+
+![](img/34317168f3c1eed0d8c15494197d3d54_1.png)
+
+ Ariel。 And they're going to talk about in-house to open source， stitching the past to the。
+
+ future with Python。 Hi everyone， I'm Nandita， I'm a software engineer at Bloomberg。 And I'm Sagar。
+
+ I'm also a software engineer at Bloomberg。 And we're going to be presenting our talk in-house to open source。
+
+ stitching the past to the future， with Python。 So today we're going to be discussing how you can leverage open source software when thinking。
+
+ about migrating away from legacy code。 Our talk is loosely broken up into four sections。
+
+ We're going to start with an introduction。 We'll then move on to identifying our right open source candidate。
+
+ We'll catch up on how you can integrate your open source candidate into your existing， tech stack。
+
+ and then we'll wrap up with some conclusions。 So before we jump into why you should think about open source for migrations from legacy。
+
+ code， let's first understand what legacy code even is。
+
+ Legacy code is typically code that's no longer engineered but is just patched for fixes。
+
+ So it becomes nearly impossible to add new features which makes them great candidates。
+
+ for migrations。 So when you're thinking about migrating software。
+
+ I think open source should be one of the first， things that come to mind。
+
+ And the first reason why is because you already have access to high quality pre-built software。
+
+ Transcents are there's already software within the open source community that can address。
+
+ your needs even if not entirely to an extent large enough that it would take minimal effort。
+
+ for you to go in and tailor it to your specific needs。 Which brings me to the second big advantage。
+
+ customization。 Now since the code is open source， you know what's going on。
+
+ you can maybe just add a， plugin to tailor it to your requirement or go in and modify the code base yourself。
+
+ Another advantage is that in some way you have access to latest innovation。
+
+ As more and more people start adopting that open source software， more people become invested。
+
+ in its growth and development。 So in a way you're always on top of the cutting edge technology。
+
+ And it's not just me saying this we're all at PyCon。
+
+ Surveys have also found that IT leaders think the usage of open source is going to boom over。
+
+ the next couple years。 But even while open source is great。
+
+ there are some things to still keep in mind。 The first is that support and maintenance may not always be available。
+
+ But there are some companies and enterprises that offer maintenance at an additional fee。
+
+ So that's something to keep in mind。 The other thing to keep in mind especially when you're building critical applications。
+
+ is the maturity and the stability of the software。 If there is an issue。
+
+ you might end up relying on someone to fix it or you might have to， step up and fix it yourself。
+
+ So that's an added consideration。 And the last is that usage of open source does not eliminate hardware costs。
+
+ You have to budget for hardware if you want to adopt open source at scale。
+
+ At this point I want to introduce a case study that we're going to be walking through as。
+
+ the talk progresses。 We're going to be trying to migrate an orchestration framework。
+
+ So let's think of a really complex framework that has to use some metadata to decide to。
+
+ schedule some processes and then has to account for process dependencies， monitor events and。
+
+ then finally write some data to a database。 Let's build a little more clarity around that。
+
+ So say we have some metadata based on which we decide we need a scheduler process。
+
+ Our process is that little red circle you see there。
+
+ Triggering that one red circle can actually set off a bunch of other processes or purple。
+
+ circles which can in turn set off another set of processes or orange circles。
+
+ So our red circle is not really done until all of the purple and the orange process is， complete。
+
+ And like I said earlier， what these processes are doing is just writing data and we're looking。
+
+ at data in the range of about 50 million data points。
+
+ But this is when the complexity really kicks in。 We don't want to just schedule and orchestrate one of these red circles。
+
+ We want to do hundreds of such processes and in turn write billions of data points with。
+
+ no room for error。 Now next I'd like to talk to you about how it is that you can actually go about identifying。
+
+ the software that you want to migrate towards。 We're going to go through this in a three phase approach。
+
+ The first being understanding your requirements， identifying what it is that you're actually。
+
+ looking to replace and then researching for a solution that would address these requirements。
+
+ And finally you want to narrow your solution。 You want to narrow down the potential solutions that you've come up with to one final system。
+
+ So in terms of understanding your requirements in our use case， we had to first get rid of。
+
+ all the business logic as well as the specific intricacies that were unique to our problem。
+
+ and try to boil it down to the highest level。 We came up with one sentence that we believe perfectly describes our use case and that is。
+
+ the automated coordination of events and data streams leveraging domain specific metadata。
+
+ to intelligently schedule and trigger processes。 It's a bit of a mouthful but from this we can derive these three keywords that describe。
+
+ the system and that is scheduler， orchestration and dependencies。
+
+ Now we came up with a list of must haves as well as nice to haves。 In terms of the must haves。
+
+ obviously modeling dependencies， that's the first and primary， goal。
+
+ We want processes to be able to trigger other processes。
+
+ We also want to be able to do this for historical runs and obviously we want permissioning since。
+
+ this is going into production。 We want to make sure there's no vulnerabilities。
+
+ This is also another consideration。 Like I mentioned on a production cluster we don't want it to take up all the resources。
+
+ In terms of nice to haves， we did say that a user interface as well as the ability to。
+
+ monitor all these processes would be nice to have， not necessary though。 Parallelization。
+
+ these processes are being run on off peak hours so it wasn't a necessity。
+
+ Now when it came time to research， obviously the first thing everyone does is goes to the， internet。
+
+ You put keywords and you post them into search engines and you try to come up with potential。
+
+ options。 Going about this we eventually landed on Apache's website where most open source systems are。
+
+ We found two systems which closely match what we're looking for。
+
+ The namely Apache NIFI as well as Apache Airflow。 Another way that we were going about doing research was word of mouth。
+
+ You can see conferences like PyCon can give you potential solutions that might fit your， use case。
+
+ As well as networking from which internally at Bloomberg we support ARGO that's another。
+
+ solution that we came across。 We have these three potential options。
+
+ We want to first figure out the evaluation criteria。 How can we narrow it down to a specific system？
+
+ We broadly categorize it into these four different metrics。
+
+ Just being adoption so systems that have more get hub activity are bound to have more， support。
+
+ Your questions will be answered quicker。 Any bugs that come up will be fixed sooner。
+
+ That's a very important one。 Then compatibility。 Does this system meet your technical requirements？
+
+ Does it address the problem that you're trying to solve？ Then of course extendability。
+
+ Once you do integrate an open source system it would be nice for it to eventually evolve。
+
+ into something more。 Then it address other problems that you haven't particularly foreseen until you start using。
+
+ it。 Then finally ease of customization。 No system is a perfect match but if something is flexible and easy to customize for your。
+
+ specific use case that's obviously better。 This is what we ended up categorizing these three systems into。
+
+ Airflow was a very popular Apache project。 It's very actively maintained， very extensible。
+
+ lots of plugins and lots of support for them。 It's very flexible with permission and control and very easy to adapt。
+
+ It's actually pure pipe。 Apache NIFI also a great solution but it didn't match our use case specifically because it's。
+
+ very data pipeline focused。 We do already have the ETL infrastructure。
+
+ That's not the part we're trying to replace。 It didn't exactly match what we were looking for。
+
+ Argo again it was supported internally at Bloomberg so that communication link is even， more direct。
+
+ That's why it adds such a high rating on adoption。
+
+ But it's focused on containerized applications whereas we're looking for more of a bare metal。
+
+ Linux solution。 Again this is very subjective evaluation criteria for our specific use case。
+
+ Not necessarily going to be true everywhere。 Now Apache Airflow like I mentioned it's based around the directed acyclic graph for short。
+
+ It's pure Python like I mentioned。 It didn't support every particular use case that we had but it had a lot of support for。
+
+ plugins and we did find plugins that were very useful。
+
+ And of course a very nice and easy to navigate Web UI。
+
+ Now with that I like to hand it off to my colleague Nanda。 Okay great。
+
+ So now Sagar has helped us pick Airflow and we know Airflow is what we want to migrate。
+
+ to but where do we even start？ We have this huge complex framework that's been working just fine。
+
+ The only issue is that we're not able to iterate and add new features to it。
+
+ It's doing a lot of things it's monitoring for dependencies， it's writing billions of， data points。
+
+ There's so much scope for error。 So before we even move further let's break this down into independent but connected components。
+
+ What are we really dealing with here？ We have a scheduler that uses some metadata to decide which process to kick off。
+
+ We have an orchestration engine possibly that kicks off that first process and monitors。
+
+ it for completion。 And we have a let's say a job management system that monitors the dependent processes that。
+
+ were kicked off。 These are the three independent chunks of this huge framework that we're trying to migrate。
+
+ from。 If we want to move away from all of these three in one big bang there's just a lot more risk。
+
+ and the scope for failure balloons。 Instead we could just start by replacing the easily replaceable components to me that looks。
+
+ like the scheduler and the orchestration engine。 So we can just try removing the scheduler and the orchestration engine out of that framework。
+
+ and replacing that with air flow。 But how？ The scheduler， orchestration engine。
+
+ job management system all worked perfectly together because。
+
+ they were all natively integrated and they were probably built around the same time they。
+
+ were built to be compatible with each other。 But then when we integrate with an open source solution like air flow it's not been built。
+
+ for our specific use case but it still works really great。
+
+ So we need a way to really make air flow and our job management system kind of speak the。
+
+ same language and I think we all know where I'm getting at with this。 We're at PyCon。
+
+ So this is where we want to introduce PyHero， our Python component that's going to help。
+
+ stitch together air flow and our legacy job management system。
+
+ And we have a lot of superheroes out there so why should we think of PyHero？
+
+ There are essentially three superpowers that we're really looking for right？
+
+ We want to be able to integrate easily with our existing code base。
+
+ So it should be easy for us to integrate with something that's not necessarily Python based。
+
+ The second superpower that we want is we need to be able to write this component really， quickly。
+
+ Eventually in the future our job management system is going to go away too and air flow。
+
+ is going to take over everything。 So at that point of time PyHero will unfortunately have to step down。
+
+ So we don't want to invest too much time building out PyHero。 It's eventually just going to go away。
+
+ And the third thing that we're looking for is production quality by hero。
+
+ Even though PyHero is temporary it still has to be production quality because we wanted。
+
+ to run in production we cannot cut corners in terms of its performance。
+
+ So let's now jump into discussing how Python possesses all of these three superpowers starting。
+
+ with how we can use it to integrate with an existing stack。 So let's assume the worst case scenario。
+
+ Our job management system is not Python at all。 It's built in a completely new language。
+
+ Now we need Python to kind of interface with it。 What are the different ways that we can go about this？
+
+ The first is like I said an interface approach where we want to directly use our non-Python。
+
+ components within our Python module。 In this case we have honestly multiple options。
+
+ We can let's if you had like a C or C++ library that you wanted to use you can compile it， into a 。
+
+sor。dll file and then import that within your Python code。
+
+ An alternative would be to use the Python API to expose our C C++ libraries via a Python， interface。
+
+ But both of these will require you to kind of go in and modify your libraries themselves。
+
+ There is another easier non-intrusive approach that you can take。
+
+ Wherein your non-Python components are treated as independent entities in themselves。
+
+ You modularize them and package them as executables and you just invoke them as subprocesses from。
+
+ within your Python script。 So this is where you really have to kind of balance your requirements and you have to。
+
+ make a trade-off。 If you have things within let's say our job management system that we want to reuse even。
+
+ after our migration is complete。 So let's say we had a C++ library that was super powerful that we intend on using even。
+
+ after we fully moved to a flow。 It might make sense to just go with the first approach even if it's going to require more。
+
+ development time。 But in our case we were really looking at completely replacing our job management system。
+
+ in which case it was just easier for us to modularize it and package it as an executable。
+
+ and invoke it as a subprocess。 So now that we've discussed how we can integrate Python with an existing stack let's move on。
+
+ to discussing how Python can help us write production quality code quickly。
+
+ So we've talked about how we want this Pihiro component to be running in production。
+
+ And one of the most important things that that comes with is a when is when something， goes wrong。
+
+ When something goes wrong you don't want to find out let's say hours later or days later。
+
+ you want to know as soon as Pihiro went down in production。
+
+ And to do this we actually found ourselves using a feature of Python that most of us are。
+
+ already aware of。 I learned about it in theory too but this is how we could really see it being used in。
+
+ while writing production quality code。 So we have a decorator that we use within our group that takes in three arguments。
+
+ It takes in a severity， a group and the name of the component。
+
+ And based on these three arguments it creates a ticket and with the appropriate severity。
+
+ level and routes it to the correct group。 So all it does is really just wrap the function code in a try catch block and create a get。
+
+ based on the input parameters and routed when something goes wrong and execution fails。
+
+ But this was great when I was trying to come up with this component quickly because I could。
+
+ just focus on writing the core functionality of my module without worrying about the bells。
+
+ and whistles around alarming because it really just came for free。
+
+ But it's not just sufficient for us to be able to write our code quickly。
+
+ It's also important that we're able to debug this code quickly especially when we're interfacing。
+
+ with a legacy component。 With that I'd like to walk you through an example of a bug that we faced when trying to implement。
+
+ air flow and how the PDB as a super power of Pi here really came in to help and save， us。
+
+ So here we have a screen， the login screen for air flow and as you can see there's an error。
+
+ message at the top。 So the way that we generated this was we tried to sign in using SSO which redirects us to the。
+
+ SSO page and we log in and it redirects us back here。
+
+ Now we knew the credentials were correct so that wasn't the issue at hand but we didn't。
+
+ really have much other information on this page about what's causing this。
+
+ Now the first place anyone really starts to debug is by checking the logs and when we。
+
+ did check the logs this is the only message that really came in with any relevance。
+
+ It was this error message right here。 Now we see that there's some issue with OAuth and we see something about an invalid audience。
+
+ but it's still fairly abstract。 It doesn't give us much information。
+
+ However we do know exactly what line and what file this error is being raised。
+
+ So with PDB let's step into that file and try to figure out what's going on。
+
+ So we went to that file and these are the lines that the error was being thrown from。
+
+ as you can see the log message right there on that fourth line there and we put a break， point。
+
+ Now with this break point we are able to halt execution of the program while trying to log。
+
+ in on the web server itself and we pause execution and from there we're able to observe。
+
+ the variables including these abstract variables like app builder or 。sm。
+
+ Now what we realized by observing these variables live is that these were actually instances。
+
+ of classes that we had defined in the web server config。py。
+
+ So let's dig into this rabbit hole a bit further and see where it leads us。
+
+ After that we put another break point in web server config。py and while the rest of the。
+
+ code is in too important we step through line by line to get to this line。
+
+ This is where the error was really being raised and so that invalid audience makes a bit。
+
+ more sense as you can see the issue is in that key airflow right there。
+
+ Now the great thing about PDB is that while the execution has been paused you can retry。
+
+ code lines of code with that environment and so you could retry other keys until you find。
+
+ the correct one。 Needless to say that is what we did and it helped us solve this issue but an issue that。
+
+ was rather abstract to begin with could be solved in matter of a couple of minutes using， PDB。
+
+ So this really goes to highlight some of the advantages of PDB and first and foremost is。
+
+ that you don't have to rebuild your software every time you put in a new break point you。
+
+ simply have to restart and so that's one of the great powers of Python is that it's much。
+
+ quicker to put in a break point and to then start debugging。
+
+ There's also command line interface which allows for remote debugging。
+
+ The issue that we showed earlier was debugged on a server。
+
+ And then it also comes default with the Python language so you don't have to install it separately。
+
+ or anything like that。 There's two ways that you can invoke it。
+
+ The first one we already showed you in our example is just by adding it into the script。
+
+ directly and the second one is calling it via the command line which is very similar。
+
+ to other debuggers you might have encountered in the past。
+
+ Another aspect of Python that really enables rapid development is how easy it is to customize， it。
+
+ And so I'm going to walk you through one specific use case that we had with air flow to really。
+
+ highlight this point。 And so by default air flow uses SMTP for email。
+
+ And as you can see in the email。py file it's using some SMTP lib which under the hood uses， SMTP。
+
+ Now SMTP wasn't ideal for our use case。 It's not important why but there is an alternative and that's what we're going to try to implement。
+
+ as a plugin in air flow。 So what we did was we copied this email。
+
+py file and we modified it to use the mailx command。
+
+ which is something we already had code for written somewhere else in our tech stack。
+
+ And all it required on air flow side was a simple configuration modification as you can， see here。
+
+ It's air flow utils。mailx and this is actually a file path to the actual plugin that we've， defined。
+
+ And with Python since you can use dynamic importing of libraries air flow doesn't need anything。
+
+ else than this configuration change as well as this file being copied into the correct。
+
+ directory from which it's able to pick it up and on restart seamlessly integrate and use。
+
+ it for emails going forward。 Now that's the function definition that you see there。
+
+ This was simply copied from the other email。py file but that was essentially it。
+
+ And that really goes to highlight how easy it is to integrate your own code into Python， code bases。
+
+ And that's why another major advantage of a pure Python system like air flow for open。
+
+ source migrations。 Great。 So now we've spoke to you about some of the things about Python that make it really easy。
+
+ for rapid development。 So let's go on to how Python makes it easy to create production quality software。
+
+ In the case of any open source system you don't really know the extent to which it's。
+
+ valuable to you until you actually start using it。
+
+ So the best way to actually learn about an open source system is to use it and to do。
+
+ that you have to be able to deploy it into your production system quick。
+
+ In our case we were able to deploy it air flow into our production system in an isolated。
+
+ manner using virtual environments。 And therefore we didn't have to modify any configurations or touch any other part of。
+
+ our production cluster。 All you really need is one isolated file path where all your dependencies。
+
+ even the， language itself， are going to be stored。
+
+ And tomorrow if you don't want to use this system anymore you simply delete that directory。
+
+ and it's gone without leaving a trace。 Now in the case of air flow it's fairly simple since all you。
+
+ the only overhead was really， creating this requirements file which as you can see doesn't have too much extra。
+
+ After that you create an isolated build and it runs on your production cluster and that's， it。
+
+ Another thing that I'd like to highlight is PyTest is what we use for creating unit tests。
+
+ and so in production environment you want to make sure that code changes don't break。
+
+ it and so before any release we're able to use PyTest to determine that previously working。
+
+ behavior hasn't been affected。 Great。 So now we have a half new system and a half old system and we have Python stitching them。
+
+ together but we still want to make sure that this half new system hasn't broken anything。
+
+ So we want to go about， we want to figure out how we can reconcile it。
+
+ With that I'd like to hand it back to my colleague。 Okay great。
+
+ So now we have like Sagar said a half old and half new system up and running it's churning。
+
+ out some data but how do we make sure that our old system and our new system are really。
+
+ doing the same thing。 One level of sanity check could be to just check what processes are kicked off by the。
+
+ old system and the new system and then compare it and see if they tie out。
+
+ But this does leave room for error because if we don't capture a failure correctly or。
+
+ a stalled process correctly in the new system we won't ever catch it。
+
+ And that's when you really have to ask the question what is really the output of your。
+
+ system and like we discussed earlier the output of our system was data and it was columnar。
+
+ data to be more specific。 So the best way for us to ensure that our migration has gone through correctly and that。
+
+ our old system and new system are doing the same thing is to compare the data that was。
+
+ generated from the old system and the new system and make sure that they tie out。
+
+ But we're again looking at the scale of millions of data points here and it can be very intensive。
+
+ to make sure that every one of these million data points tie out correctly。
+
+ But to help with that we have a data reconciliation framework that we use within our team which。
+
+ is built on top of pandas。 And if you want to learn more about that definitely stop by our booth we'd be happy to chat。
+
+ So we used that tool to compare the data that was being produced by our old system and our。
+
+ new system to ensure that there were no differences in terms of the output that was being generated。
+
+ So quickly wrapping up on everything that we discussed so far let's do a quickly count。
+
+ So we started with this complex orchestration framework that we wanted to migrate from。
+
+ We identified keywords and then identified our three options that we could potentially。
+
+ integrate with three open source options。 We brainstormed came up with an evaluation criteria based on which airflow one。
+
+ And then we broke down our existing architecture into independent but connected components to。
+
+ start integrating with airflow。 And instead of integrating everything big bang we first replaced the easily replaceable。
+
+ components which in our case were the scheduler and the orchestration engine。
+
+ But we still needed a way to connect airflow to a job management system and that's where。
+
+ Pihiro stepped in。 And while integrating with existing code with our existing code base we had two options。
+
+ We could either interface directly with the code components and use them within our Python。
+
+ module or we could just invoke them as subprocessors。 And we went with the second approach。
+
+ And then added some test cases like Sagar said using PyTest packaged it with a virtual environment。
+
+ and then came up with this half-world half-new system that was churning out some data。
+
+ But at this point it was important for us to ensure that the data that we were churning。
+
+ out was in fact correct。 And we used a data reconciliation framework built on top of pandas to ensure that correctness。
+
+ Okay， so in conclusion open source is a great option for software migrations。
+
+ But remember integration doesn't have to be a big bang。 Small steps are usually better。
+
+ Now once you have integrated your system don't forget you want to customize， enhance and extend， it。
+
+ And once all of that is said and done don't forget to contribute and give back to the， community。
+
+ On that note Bloomberg has recently opened source I think as early as two days ago。
+
+ A new memory profiler for Python on Linux and this can also help you debug the memory usage。
+
+ of your C extensions as well。 So if you decide to ever integrate with your code base by exposing your C libraries via。
+
+ Python interfaces this could even help with that。 We'd like to thank everyone here for helping us with our talk and helping with all the。
+
+ work that went into this presentation。 Special shout out to our manager， Mihir。
+
+ who is with us here today。
+
+![](img/34317168f3c1eed0d8c15494197d3d54_3.png)
+
+ These are their references and thank you so much for attending our talk。
+
+ We are hiring and please do stop by our booth later。 Thank you。 [APPLAUSE]。
+
