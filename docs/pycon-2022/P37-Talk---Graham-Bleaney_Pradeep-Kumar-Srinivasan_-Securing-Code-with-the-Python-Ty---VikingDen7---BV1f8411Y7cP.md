@@ -1,706 +1,189 @@
 # P37：Talk - Graham Bleaney_Pradeep Kumar Srinivasan_ Securing Code with the Python Ty - VikingDen7 - BV1f8411Y7cP
 
  Hello everyone。 We are ready to start our next session。 I'm very happy to announce that。
-
-
-
 ![](img/4c672171c7959b7ba3c42981c6d41476_1.png)
 
 ![](img/4c672171c7959b7ba3c42981c6d41476_2.png)
 
- we'll have Pradip and Graham talk about how we can use the Python typing system to actually。
+ we'll have Pradip and Graham talk about how we can use the Python typing system to actually。 improve the security of our application。 Yeah， give a big shout out to him and take it away。 Cool。 Thanks。 So today we're going to talk about securing code with the Python type system。 Very briefly。 my name is Graham Bellini。 I'm a security engineer at meta， the artist formerly， known as Facebook。
 
- improve the security of our application。 Yeah， give a big shout out to him and take it away。 Cool。
+ And I focus on all things Python security。 I do security reviews， frameworks。 stack analysis and trainings for the Python security world。 I'm Pradip。 I do work at meta。 I work on the Pyre type checker and the piece of security tool which is run every day in。 Instagram on millions of lines of code to catch security vulnerabilities。 The way this presentation。
 
- Thanks。 So today we're going to talk about securing code with the Python type system。 Very briefly。
+ is going to run， we're going to have a quick introduction and we're going to spend most。 of our time talking about security solutions that types enable。 After that， hopefully you're。 going to be sold on the concept of types being useful for security and you're going to want。 to be adding more or adding types for the first time to your code and we're going to talk about。
 
- my name is Graham Bellini。 I'm a security engineer at meta， the artist formerly， known as Facebook。
+ how you can do that。 Then we're going to finish off with some conclusions。 So to start off。 the introduction， we're going to talk about the concept of security that we focus on at。 meta called shifting left。 The idea is there's this continuum of bug badness， right？ And the。 rightmost side of the continuum is the worst place to be。 It's when a bug is out there and。
 
- And I focus on all things Python security。 I do security reviews， frameworks。
+ it's been exploited。 And that's awful， right？ Things have happened， use days and compromise。 whatever。 We don't want that。 So we want to shift left。 And the next best case scenario。 that's still pretty bad is the bug is never found。 So we don't find it but the bad guys。 don't find it either。 Better than that is when it's found externally by someone who。
 
- stack analysis and trainings for the Python security world。 I'm Pradip。 I do work at meta。
+ reports it to us。 So through a bug bounty program or something like that。 Even better after that。 is we find it ourselves through some kind of manual review。 So we've got a team of security。 engineers， they look at the code， they find the bug and we get it fixed。 Even better than， that。 we're getting into like good scenarios now is when it's found automatically。 So our。
 
- I work on the Pyre type checker and the piece of security tool which is run every day in。
-
- Instagram on millions of lines of code to catch security vulnerabilities。 The way this presentation。
-
- is going to run， we're going to have a quick introduction and we're going to spend most。
-
- of our time talking about security solutions that types enable。 After that， hopefully you're。
-
- going to be sold on the concept of types being useful for security and you're going to want。
-
- to be adding more or adding types for the first time to your code and we're going to talk about。
-
- how you can do that。 Then we're going to finish off with some conclusions。 So to start off。
-
- the introduction， we're going to talk about the concept of security that we focus on at。
-
- meta called shifting left。 The idea is there's this continuum of bug badness， right？ And the。
-
- rightmost side of the continuum is the worst place to be。 It's when a bug is out there and。
-
- it's been exploited。 And that's awful， right？ Things have happened， use days and compromise。
-
- whatever。 We don't want that。 So we want to shift left。 And the next best case scenario。
-
- that's still pretty bad is the bug is never found。 So we don't find it but the bad guys。
-
- don't find it either。 Better than that is when it's found externally by someone who。
-
- reports it to us。 So through a bug bounty program or something like that。 Even better after that。
-
- is we find it ourselves through some kind of manual review。 So we've got a team of security。
-
- engineers， they look at the code， they find the bug and we get it fixed。 Even better than， that。
-
- we're getting into like good scenarios now is when it's found automatically。 So our。
-
- tooling finds the bug and tells us about it and a human doesn't need to be involved to。
-
- find that bug at all。 And then finally our absolute best case scenario is we prevent the， bug。
-
- We just make it impossible for that bug to exist。 And so these sort of middle pieces， here。
-
- The human review aspects were either done by security engineer at the company or。
+ tooling finds the bug and tells us about it and a human doesn't need to be involved to。 find that bug at all。 And then finally our absolute best case scenario is we prevent the， bug。 We just make it impossible for that bug to exist。 And so these sort of middle pieces， here。 The human review aspects were either done by security engineer at the company or。
 
  by like the external bug bounty program。 Those are necessary but they don't scale， right？
 
- You can't run that on billions of lines of code。 And you can't run that on all the changes。
+ You can't run that on billions of lines of code。 And you can't run that on all the changes。 that happen every day too。 So the ideal state for us is always to have all of our bugs either。 being prevented or found automatically。 And now if we shift over and start thinking about。 a sort of a small security team， either your open source project or a company that's not。
 
- that happen every day too。 So the ideal state for us is always to have all of our bugs either。
+ you know tens of thousands of engineers， the only realistic place to be for security is。 in the prevented and found automatically space。 I don't know how many open source projects。 really have like a team of security engineers looking at their code or a you know a robust。 bug bounty program that kind of thing。 So we want to focus a talk on the prevention and。
 
- being prevented or found automatically。 And now if we shift over and start thinking about。
+ the automatic detection side of things。 And the thesis that we're going to present in this。 talk is that type annotations can help continuously prevent and detect vulnerabilities。 So you can。 be in those sort of left two spots where everyone wants to be using type annotations。 And the。 goal is you're going to end up leaving this talk， believing the thesis， and you're going。
 
- a sort of a small security team， either your open source project or a company that's not。
+ to want to adopt types in your project if you don't have them or critically you're going。 to want to improve type annotations in your project if you've already got them。 The way。 this talk is going to go is everything's going to be framed around a sample application。 So。 a simple web server that lets you load photos and look at them。 And it's just set up and contrived。
 
- you know tens of thousands of engineers， the only realistic place to be for security is。
+ such that there are some vulnerabilities in it and there are some ways that you can detect。 those vulnerabilities。 The main two end points we're going to talk about are pictures by。 user and it simply takes a request for a user name， you're looking for Susan's photos。 and you get back a list of Susan's photos。 The other endpoint we're going to talk about。
 
- in the prevented and found automatically space。 I don't know how many open source projects。
+ is picture by ID。 You're going to give it a picture ID for what you want to load and you。 get that ID back。 So now I'm going to hand it off to talk about the first security solution。 that's enabled by types。 Thanks， Graham。 So welcome to the first talk of the morning。 I hope you all had some caffeine because we're going to see a bunch of Python code on the。
 
- really have like a team of security engineers looking at their code or a you know a robust。
+ slides here。 So let's look at the first scenario here。 Let's say our toy website becomes popular。 and celebrities start using it。 One day we might get a complaint from a celebrity saying。 that their pictures have vanished。 Try to load pictures for that celebrity and get a blank， screen。 Looks like an attacker somehow deleted all their pictures。 How could that have happened？
 
- bug bounty program that kind of thing。 So we want to focus a talk on the prevention and。
+ So a legitimate request for pictures looks like this。 You pass in the user name for the。 celebrity and the code for that is basically something that builds a SQL query which selects。 pictures where the user name matches the given user name and you execute that SQL query and。 return it to the user。 Digging into the logs， we see something like this where the attacker。
 
- the automatic detection side of things。 And the thesis that we're going to present in this。
+ passed in a weird user name and if you insert that into our SQL query， we get something， like this。 In SQL， this is actually two commands。 One to select pictures and the other to delete。 pictures for a celebrity。 So this is known as a SQL injection attack where you're injecting。 the SQL into your existing command and thereby the attacker is running arbitrary SQL commands。
 
- talk is that type annotations can help continuously prevent and detect vulnerabilities。 So you can。
+ or deleting or reading data that they're not supposed to。 In this talk， I'll use SQL injection。 as an example because many of you are probably familiar with it but what we see in this section。 will apply to things like shell command injection and other kinds of vulnerabilities。 So SQL injection， has been known for decades now but it's still widespread。
 
- be in those sort of left two spots where everyone wants to be using type annotations。 And the。
+ It's so widespread that the docs， explicitly warn you never， never。 never use Python string concatenation or string interpolation， to insert variables into your query。 not even at gunpoint。 So what they say is don't use。 F-strings like this because it mixes the command with the data and allows the attacker to do。
 
- goal is you're going to end up leaving this talk， believing the thesis， and you're going。
+ mischief。 What you're supposed to do is to separate the command and the data。 So the way。 you do that is that libraries usually have some way for you to substitute parameters into your。 query。 So here it might be a question mark， you pass in the data separately， the library。 guarantees that no matter what data you pass in， the only command that is run is this one。 However。
 
- to want to adopt types in your project if you don't have them or critically you're going。
+ it's frankly more convenient to use the unsafe F-string approach。 New users may not。 have let the docs， they may not know that a parameter substitution approach exists or that。 F-strings are dangerous here。 So the point is it's not much good having a best practice。 if the path of least effort is to do the unsafe thing。 So is there a way library authors can。
 
- to want to improve type annotations in your project if you've already got them。 The way。
+ somehow make the unsafe approach inconvenient？ So one option that you might have heard about。 is a security linter。 You probably heard of tools such as Bandit。 So if you have unsafe。 code like this and you run the linter， it will warn you saying that you're running potentially。 unsafe SQL change your code， which is good。 However， in practice we found that these tools。
 
- this talk is going to go is everything's going to be framed around a sample application。 So。
+ can be inflexible。 So for example， if you have harmless SQL code like this where there's。 no user input going in， all you've done is just extract the query into a local variable。 the linter will warn you about it， which is frustrating for users because this is， this。 should be fine。 Likewise， you might check a flag and then append say another part of the。
 
- a simple web server that lets you load photos and look at them。 And it's just set up and contrived。
+ query to the existing query。 Again， there's no user input going in， but the linter will。 warn you about it， which is annoying for users。 So we wanted something that is user friendly。 so that people trust our tools and keep using it。 So it's not like library authors have no。 way to restrict how their API is used。 For example， if you try to execute a query such。
 
- such that there are some vulnerabilities in it and there are some ways that you can detect。
+ as 42 and you run a type checker， so just Py or MyPy or PyRite， it will warn you right。 away saying that a query must be a string， you can't just pass in an integer。 So you've。 probably heard in the keynote where a type checker is just like a powerful linter that。 runs all over your code and checks that the inputs are always valid here。 How did the type。
 
- those vulnerabilities。 The main two end points we're going to talk about are pictures by。
+ checker know that an integer was invalid？ How did it know that the string was expected？ Well。 the library authors have specified that in the function signature。 So they've said。 query must be of type string。 So this is valid syntax in Python 3。 It essentially has。 no runtime effect， but tools such as type checkers can use it to prevent misuse of this， function。
 
- user and it simply takes a request for a user name， you're looking for Susan's photos。
+ So we wondered if we could use this to prevent SQL injection， for example。 So， let's try that。 If we have the safe parameter substitution approach， the query as we can， see is of type string。 So the type checker is okay with it， which is good。 But then if。 we use the unsafe F string approach， the query is still a string and the type checker。
 
- and you get back a list of Susan's photos。 The other endpoint we're going to talk about。
+ still accepts it， which is not what we want。 We want to accept the first approach and reject。 this unsafe approach。 So the problem here is that the string type is too permissive。 We。 want something that is more discriminating。 So that end we introduced a literal string。 type and recently added to Python。 You can import it from the typing module if you're， on 3。
 
- is picture by ID。 You're going to give it a picture ID for what you want to load and you。
+11 or from typing extensions if you're on earlier versions。 So what that represents。 is any string that is built purely out of literal strings。 So say you have a function。 called expect literal string， for example， if I call it with a pure literal string， the。 type checker sees that this is what we expect。 So it's okay with it。 If I call it with something。
 
- get that ID back。 So now I'm going to hand it off to talk about the first security solution。
+ say if I try to add two little strings together， again， the type checker sees that this is again。 built only out of literal strings。 If you try to pass it in， it's okay with that， which， is good。 However， if you try to use input， the type checker knows that this returns an， arbitrary string。 And if you try to pass that into the function， it complains。 So you can。
 
- that's enabled by types。 Thanks， Graham。 So welcome to the first talk of the morning。
+ probably already imagine how we might use this for SQL injection prevention。 So if you could。 change execute to expect a query that is a literal string， now if we use the safe parameter。 approach， we see that the query is a literal string。 So the type checker accepted。 If we。 use an F string， for example， now we're inserting name into this query name is an arbitrary string。
 
- I hope you all had some caffeine because we're going to see a bunch of Python code on the。
+ which means the entire query is an arbitrary string。 The type checker knows that and it。 complains right away saying that this query was expected to be literal string。 So thanks。 to the literal string type， we can prevent the SQL injection as you're writing the code。 This extends to the earlier examples we saw as well。 So if you simply extract the query。
 
- slides here。 So let's look at the first scenario here。 Let's say our toy website becomes popular。
+ the safe query in a local variable， the type checker sees that it's a type literal string。 it remembers that。 And when you finally pass it into you execute， it's okay with it。 That's。 not a problem at all。 Likewise， if you check a flag and append another little string or use。 string or join where all the inputs are literal strings， the type checker sees that it's a。
 
- and celebrities start using it。 One day we might get a complaint from a celebrity saying。
+ valid input and it's okay with it。 So this is user friendly and people can use it without。 getting in their way。 Overall， the advantage of using type annotations like this is that。 it shifts the burden of security thinking from the library user to the library author。 So we're not depending on the user to have read the docs or kept up on later security。
 
- that their pictures have vanished。 Try to load pictures for that celebrity and get a blank， screen。
+ vulnerabilities。 And by shifting control to the library author， we could prevent a variety。 of command injection vulnerabilities across the ecosystem。 We're not limited to the ones。 that the user knows about。 So I mentioned SQL injection as an example， but this applies。 to things like shell command injection where you have a shell command， you're inserting。
 
- Looks like an attacker somehow deleted all their pictures。 How could that have happened？
+ user input into it， which allows attackers to run arbitrary shell commands or server site。 template injection where you have web application and you're inserting user input unsafely into。 your ginger templates and that leads to arbitrary code execution and so on。 So using the single。 feature， you could prevent this vulnerability across a variety of libraries。 Finally， if。
 
- So a legitimate request for pictures looks like this。 You pass in the user name for the。
+ you want to detect this continuously， you need to use a type checker just like you use。 other linters such as flake。 So people usually set it up in the GitHub CI so that no one。 can check in bad code。 You can also run it in your terminal and IDE so that you get。 this direction as you're writing code。 And finally， a constraint is that type checking。
 
- celebrity and the code for that is basically something that builds a SQL query which selects。
+ is only as useful as a type annotations you add。 If you don't use type annotations， you。 won't be able to get the benefit of this。 Overall， we hope that more library authors。 use literal string type in their sensitive APIs so that programmers like you and me don't。 have to worry as much about command injection。 So we saw one security solution enabled by， types。
 
- pictures where the user name matches the given user name and you execute that SQL query and。
+ Let's look at another scenario here。 So Graham mentioned another API called picture。 by ID where we expect a picture ID and then return the picture corresponding to that ID。 So the code for that is essentially you do JSON loads on the request that you get。 You。 look up the picture ID field and then you go to the pictures directory and look at the。
 
- return it to the user。 Digging into the logs， we see something like this where the attacker。
-
- passed in a weird user name and if you insert that into our SQL query， we get something， like this。
-
- In SQL， this is actually two commands。 One to select pictures and the other to delete。
-
- pictures for a celebrity。 So this is known as a SQL injection attack where you're injecting。
-
- the SQL into your existing command and thereby the attacker is running arbitrary SQL commands。
-
- or deleting or reading data that they're not supposed to。 In this talk， I'll use SQL injection。
-
- as an example because many of you are probably familiar with it but what we see in this section。
-
- will apply to things like shell command injection and other kinds of vulnerabilities。
-
- So SQL injection， has been known for decades now but it's still widespread。
-
- It's so widespread that the docs， explicitly warn you never， never。
-
- never use Python string concatenation or string interpolation， to insert variables into your query。
-
- not even at gunpoint。 So what they say is don't use。
-
- F-strings like this because it mixes the command with the data and allows the attacker to do。
-
- mischief。 What you're supposed to do is to separate the command and the data。 So the way。
-
- you do that is that libraries usually have some way for you to substitute parameters into your。
-
- query。 So here it might be a question mark， you pass in the data separately， the library。
-
- guarantees that no matter what data you pass in， the only command that is run is this one。 However。
-
- it's frankly more convenient to use the unsafe F-string approach。 New users may not。
-
- have let the docs， they may not know that a parameter substitution approach exists or that。
-
- F-strings are dangerous here。 So the point is it's not much good having a best practice。
-
- if the path of least effort is to do the unsafe thing。 So is there a way library authors can。
-
- somehow make the unsafe approach inconvenient？ So one option that you might have heard about。
-
- is a security linter。 You probably heard of tools such as Bandit。 So if you have unsafe。
-
- code like this and you run the linter， it will warn you saying that you're running potentially。
-
- unsafe SQL change your code， which is good。 However， in practice we found that these tools。
-
- can be inflexible。 So for example， if you have harmless SQL code like this where there's。
-
- no user input going in， all you've done is just extract the query into a local variable。
-
- the linter will warn you about it， which is frustrating for users because this is， this。
-
- should be fine。 Likewise， you might check a flag and then append say another part of the。
-
- query to the existing query。 Again， there's no user input going in， but the linter will。
-
- warn you about it， which is annoying for users。 So we wanted something that is user friendly。
-
- so that people trust our tools and keep using it。 So it's not like library authors have no。
-
- way to restrict how their API is used。 For example， if you try to execute a query such。
-
- as 42 and you run a type checker， so just Py or MyPy or PyRite， it will warn you right。
-
- away saying that a query must be a string， you can't just pass in an integer。 So you've。
-
- probably heard in the keynote where a type checker is just like a powerful linter that。
-
- runs all over your code and checks that the inputs are always valid here。 How did the type。
-
- checker know that an integer was invalid？ How did it know that the string was expected？ Well。
-
- the library authors have specified that in the function signature。 So they've said。
-
- query must be of type string。 So this is valid syntax in Python 3。 It essentially has。
-
- no runtime effect， but tools such as type checkers can use it to prevent misuse of this， function。
-
- So we wondered if we could use this to prevent SQL injection， for example。 So， let's try that。
-
- If we have the safe parameter substitution approach， the query as we can， see is of type string。
-
- So the type checker is okay with it， which is good。 But then if。
-
- we use the unsafe F string approach， the query is still a string and the type checker。
-
- still accepts it， which is not what we want。 We want to accept the first approach and reject。
-
- this unsafe approach。 So the problem here is that the string type is too permissive。 We。
-
- want something that is more discriminating。 So that end we introduced a literal string。
-
- type and recently added to Python。 You can import it from the typing module if you're， on 3。
-
-11 or from typing extensions if you're on earlier versions。 So what that represents。
-
- is any string that is built purely out of literal strings。 So say you have a function。
-
- called expect literal string， for example， if I call it with a pure literal string， the。
-
- type checker sees that this is what we expect。 So it's okay with it。 If I call it with something。
-
- say if I try to add two little strings together， again， the type checker sees that this is again。
-
- built only out of literal strings。 If you try to pass it in， it's okay with that， which， is good。
-
- However， if you try to use input， the type checker knows that this returns an， arbitrary string。
-
- And if you try to pass that into the function， it complains。 So you can。
-
- probably already imagine how we might use this for SQL injection prevention。 So if you could。
-
- change execute to expect a query that is a literal string， now if we use the safe parameter。
-
- approach， we see that the query is a literal string。 So the type checker accepted。 If we。
-
- use an F string， for example， now we're inserting name into this query name is an arbitrary string。
-
- which means the entire query is an arbitrary string。 The type checker knows that and it。
-
- complains right away saying that this query was expected to be literal string。 So thanks。
-
- to the literal string type， we can prevent the SQL injection as you're writing the code。
-
- This extends to the earlier examples we saw as well。 So if you simply extract the query。
-
- the safe query in a local variable， the type checker sees that it's a type literal string。
-
- it remembers that。 And when you finally pass it into you execute， it's okay with it。 That's。
-
- not a problem at all。 Likewise， if you check a flag and append another little string or use。
-
- string or join where all the inputs are literal strings， the type checker sees that it's a。
-
- valid input and it's okay with it。 So this is user friendly and people can use it without。
-
- getting in their way。 Overall， the advantage of using type annotations like this is that。
-
- it shifts the burden of security thinking from the library user to the library author。
-
- So we're not depending on the user to have read the docs or kept up on later security。
-
- vulnerabilities。 And by shifting control to the library author， we could prevent a variety。
-
- of command injection vulnerabilities across the ecosystem。 We're not limited to the ones。
-
- that the user knows about。 So I mentioned SQL injection as an example， but this applies。
-
- to things like shell command injection where you have a shell command， you're inserting。
-
- user input into it， which allows attackers to run arbitrary shell commands or server site。
-
- template injection where you have web application and you're inserting user input unsafely into。
-
- your ginger templates and that leads to arbitrary code execution and so on。 So using the single。
-
- feature， you could prevent this vulnerability across a variety of libraries。 Finally， if。
-
- you want to detect this continuously， you need to use a type checker just like you use。
-
- other linters such as flake。 So people usually set it up in the GitHub CI so that no one。
-
- can check in bad code。 You can also run it in your terminal and IDE so that you get。
-
- this direction as you're writing code。 And finally， a constraint is that type checking。
-
- is only as useful as a type annotations you add。 If you don't use type annotations， you。
-
- won't be able to get the benefit of this。 Overall， we hope that more library authors。
-
- use literal string type in their sensitive APIs so that programmers like you and me don't。
-
- have to worry as much about command injection。 So we saw one security solution enabled by， types。
-
- Let's look at another scenario here。 So Graham mentioned another API called picture。
-
- by ID where we expect a picture ID and then return the picture corresponding to that ID。
-
- So the code for that is essentially you do JSON loads on the request that you get。 You。
-
- look up the picture ID field and then you go to the pictures directory and look at the。
-
- file corresponding to that ID。 So here in this case， it might be picture slash one， you read。
-
- the file and return it to the user。 One day though， again， we might find our server passwords。
-
- being spread all over the internet。 So looking at the logs again， we see a viewer request。
-
- like this and apparently if you just run this， all our server passwords could be written to。
+ file corresponding to that ID。 So here in this case， it might be picture slash one， you read。 the file and return it to the user。 One day though， again， we might find our server passwords。 being spread all over the internet。 So looking at the logs again， we see a viewer request。 like this and apparently if you just run this， all our server passwords could be written to。
 
  the user。 They could see any other file on our server essentially。 So how could this work？
 
- Once again， we do JSON loads on our request body。 We look up the picture ID field。 Here。
+ Once again， we do JSON loads on our request body。 We look up the picture ID field。 Here。 it's not an integer。 It's a string like this。 And now when you try to look up this ID under。 the pictures directory， we essentially return our HCPass file。 So the attacker could traverse。 our file system and look up arbitrary files。 So this kind of vulnerability occurs when we。
 
- it's not an integer。 It's a string like this。 And now when you try to look up this ID under。
+ trust that user input matches our expectations， which means that they could do unsafe things。 So the body is just a string。 We assumed that it would be a JSON object。 It would have a。 picture ID field。 It would have a value as an integer。 The user passed in a string and。 then made our code do unsafe things。 So we want to validate that our expectations are， being met。
 
- the pictures directory， we essentially return our HCPass file。 So the attacker could traverse。
+ You've probably seen code that does manual JSON validation。 So very briefly。 it looks something like you write a function called get picture ID。 You can take a string。 use JSON loads。 Check that it's a dictionary。 If it's not a dictionary， when you raise an， error。 you get the field that you care about。 You check that it's an error。 If it's not an， end。
 
- our file system and look up arbitrary files。 So this kind of vulnerability occurs when we。
+ you raise an error and then you finally return it to the user。 So yes， if you write。 all of this boilerplate， you will be able to prevent such an error and raise an error。 when somebody tries to pass in a string。 But as you can imagine， this gets really。 hairy for real-world JSON。 It's inconvenient to have to write all of this boilerplate。 It's。
 
- trust that user input matches our expectations， which means that they could do unsafe things。
+ error prone。 You might miss some cases。 Once again， we see the pattern where the unsafe。 approach of just using JSON loads seem to be much more convenient than the safe approach。 So can type annotations help us prevent vulnerabilities without this inconvenient boilerplate？
 
- So the body is just a string。 We assumed that it would be a JSON object。 It would have a。
+ Not surprisingly， the answer is yes。 Use runtime type validation。 So there are a few libraries that do this。 I'll， use data class JSON as an example。 So you pip install it， import from that library。 So。 we want a picture request that is guaranteed to have a picture ID field that is an integer。
 
- picture ID field。 It would have a value as an integer。 The user passed in a string and。
+ So we say so in just as many words， we say picture request， picture ID colon int。 Once。 you write this， instead of using JSON loads， you just use picture request schema loads。 Now if someone passes in a legitimate request， we get back an object that is guaranteed to。 have picture ID of type int。 But if someone tries the Etsy password string hack， for example。
 
- then made our code do unsafe things。 So we want to validate that our expectations are， being met。
+ you will get a validation error saying picture ID must be an integer。 So with just a couple。 of lines of code， we're able to prevent this vulnerability and keep things convenient。 This。 scales to arbitrary JSON。 This was just like a small example。 Imagine you had JSON like， this。 which you don't need to go into。 It's just something that has nested objects， lists。
 
- You've probably seen code that does manual JSON validation。 So very briefly。
+ optional fields， all kinds of crazy things。 The code to validate that is again just a few。 lines of declarative code that states our intention and validates that JSON matches our。 expectations。 So the benefit of using type annotations here is that we could prevent。 vulnerabilities like external， unvalidated external data without much boilerplate。
 
- it looks something like you write a function called get picture ID。 You can take a string。
+ So type annotation， mean safe code doesn't have to be inconvenient。 It doesn't have to be laborious。 And as we， saw， it scales gracefully to complex JSON。 It also serves a documentation for future users， and developers， which means it's good practice。 And in the real world， Instagram extensively， validates the inputs to its Django HTTP APIs at runtime。
 
- use JSON loads。 Check that it's a dictionary。 If it's not a dictionary， when you raise an， error。
+ So there are thousands of them。 It validates them and which doesn't just help with correctness。 but also helps prevent security， vulnerabilities like the ones we saw。 So these are two examples of how types can help prevent， security vulnerabilities。 Of course。 there are many more can type them out， help there， out。 Or to grab them。 Thanks。
 
- you get the field that you care about。 You check that it's an error。 If it's not an， end。
+ So let's talk about a third kind， a third solution called。 data flow analysis or for some who are more familiar with this from like a security perspective。 also a painful analysis。 We're going back to the idea of the photo。 You know， this is。 Susan's photo that we talked about at the beginning。 And the way that the API is to load， this work。
 
- you raise an error and then you finally return it to the user。 So yes， if you write。
+ you know， Susan's friend is going to be sitting there and her phone is going。 to send a request to this API。 It's going to， we've left this out before， but it's going。 to include like a user ID or something that identifies her。 And she's going to get back。 up a list of Susan's photos。 But from everything we've described so far， when， you know， some。
 
- all of this boilerplate， you will be able to prevent such an error and raise an error。
+ stranger on a train that Susan doesn't know， not her friend goes to load data from this， API。 they'll send a different user ID， but everything else will be the same。 And they're。 also going to get the photos back。 And there's kind of something missing from this， right？
 
- when somebody tries to pass in a string。 But as you can imagine， this gets really。
+ Like a modern application has to have some concept of privacy built in。 Like not everyone。 wants everyone else to be able to see their photos。 So this is the， you know， the simple。 loading code。 And you can see that there's no privacy check right now。 Like you have。 this query that you've seen before， SQL injection is still there。 And it loads data from the。
 
- hairy for real-world JSON。 It's inconvenient to have to write all of this boilerplate。 It's。
+ database and it returns it back to the user。 What we really want is we want some sort of。 like checking function， right？ This is a really contrived one。 But we just want something that。 has this can view operation that says like， hey， can the current user ID view the photos。 that belong to this user， Susan？ So that's what we want our application to have。 And so。
 
- error prone。 You might miss some cases。 Once again， we see the pattern where the unsafe。
+ we're just going to talk about typing。 Let's think about types for a second。 Like the。 stranger sends this request， Susan's friend also sends this request。 They look pretty similar。 Only difference there is these are IDs。 But when we talk about typing， like all the types。 are correct， right？ They're both integer IDs at a type system level。 There's no difference。
 
- approach of just using JSON loads seem to be much more convenient than the safe approach。
+ between these。 So everything we've talked about so far can't help us solve this problem。 And。 the problem we're really trying to solve is like answering this question。 Are we returning。 data to the user without it passing through some kind of privacy check？ One way we could。 try and solve this is through security reviews。 And as we talked about earlier， when we're。
 
- So can type annotations help us prevent vulnerabilities without this inconvenient boilerplate？
+ talking about shifting left security reviews are good defense in depth。 And it's possible， that。 you know， a security review might be the thing that surfaced this issue in our。 application initially and told us like， hey， you need to add some concept to privacy or， whatever。 But it doesn't scale， right？ And when we're constantly making changes， when。
 
- Not surprisingly， the answer is yes。 Use runtime type validation。
+ we're wanting to look at the whole app， security reviews just aren't going to scale up here。 So we want to go back to this concept of like continuous prevention and detection。 So to。 answer this question， we want a tool that can basically detect a data flow， right？ We want。 a tool that can say like data went from database all the way back to user and know that like。
 
- So there are a few libraries that do this。 I'll， use data class JSON as an example。
+ what a privacy check is and know that it didn't go through a privacy check。 The way that we。 do data flow analysis at meta is using a tool called PISA。 So this is free and open source。 that's built on top of the pyrotech checker。 And it tracks data as it goes through the， program。 So you start off and you have some kind of data that you know you care about， right？
 
- So you pip install it， import from that library。 So。
+ So some source of data。 And it tracks it when it's assigned to a variable。 It tracks。 it as you perform an operation to add something to it。 It tracks it as you convert it to a。 string as it runs through different function calls and gets returned by that function as it。 goes through an F string。 Pretty much any transformation， any flow of data through the program。
 
- we want a picture request that is guaranteed to have a picture ID field that is an integer。
+ we want， to track that data as it goes。 And we want to see where it ends up。 Taking this and applying it to， our concept of this application where there's no privacy check right now。 we want the source of， data that we track to be the data from the database。 And the place where we care about it， ending up is where the data is returned to the user。
 
- So we say so in just as many words， we say picture request， picture ID colon int。 Once。
+ And so we apply the data flow analysis tool。 We run。 PISA or there are other tools as well that can do this。 And we kind of want to track that and see it， goes through this list comprehension， gets returned。 And eventually we say， oh， it went where we cared， about like there's a data flow detected。
 
- you write this， instead of using JSON loads， you just use picture request schema loads。
+ And this is an issue。 There's no privacy check in between here。 And also with this tool then when we introduced that privacy check and code we were just talking。 about， we want to， we can tell the tool basically this is what a privacy check looks like。 And oh。 well， also we've updated the code here just to call the privacy check version。 And now when we do。
 
- Now if someone passes in a legitimate request， we get back an object that is guaranteed to。
+ the data flow analysis， similar things happening， right。 we're seeing the tape flow or the data flow， going through that list comprehension and being returned here。 But because we've taught the tool， that this function is doing a privacy check。 it's going to stop propagating the data at that point。 And it's not going to detect it。
 
- have picture ID of type int。 But if someone tries the Etsy password string hack， for example。
+ I've glossed over a bunch of details in depth here because this is， not a long enough talk。 But you can teach a tool to do this。 And now we have a way to differentiate。 between a data flow that's problematic and one that's okay。 Now。 why do type annotations matter here？ Like we've talked about this data flow analysis tool。
 
- you will get a validation error saying picture ID must be an integer。 So with just a couple。
+ Maybe you think that's cool。 It's awesome。 But， like nothing I've told you so far is anything to do with types。 So to kind of demonstrate this， we have， this little piece of code， right？
 
- of lines of code， we're able to prevent this vulnerability and keep things convenient。 This。
+ We're creating our SQL connection and then we're executing a query。 Now。 if we import this Create SQL connection function， it's unambiguous。 Like， you know， I know the。 type checker knows that we're calling the SQL， the Create SQL connection function that we imported。 But what about this execute method？ So you and I probably know there's going to be some SQL。
 
- scales to arbitrary JSON。 This was just like a small example。 Imagine you had JSON like， this。
+ connection class and it's got an execute method。 But， you know， in our application。 there might also be， this task class that also has an execute method。 And the type checker。 you know， from what we've seen， so far or what we're looking at right now。 doesn't know which of those two execute methods would be， called on this connection object。
 
- which you don't need to go into。 It's just something that has nested objects， lists。
+ What we really need is we need to know the type of the connection。 object in order to be able to figure out which method is being called。 And so we need to update。 the signature of Create SQL connection。 And then the type checker is able to infer， okay。 the connection， type is a SQL connection。 And unambiguously。
 
- optional fields， all kinds of crazy things。 The code to validate that is again just a few。
-
- lines of declarative code that states our intention and validates that JSON matches our。
-
- expectations。 So the benefit of using type annotations here is that we could prevent。
-
- vulnerabilities like external， unvalidated external data without much boilerplate。
-
- So type annotation， mean safe code doesn't have to be inconvenient。 It doesn't have to be laborious。
-
- And as we， saw， it scales gracefully to complex JSON。
-
- It also serves a documentation for future users， and developers， which means it's good practice。
-
- And in the real world， Instagram extensively， validates the inputs to its Django HTTP APIs at runtime。
-
- So there are thousands of them。 It validates them and which doesn't just help with correctness。
-
- but also helps prevent security， vulnerabilities like the ones we saw。
-
- So these are two examples of how types can help prevent， security vulnerabilities。 Of course。
-
- there are many more can type them out， help there， out。 Or to grab them。 Thanks。
-
- So let's talk about a third kind， a third solution called。
-
- data flow analysis or for some who are more familiar with this from like a security perspective。
-
- also a painful analysis。 We're going back to the idea of the photo。 You know， this is。
-
- Susan's photo that we talked about at the beginning。 And the way that the API is to load， this work。
-
- you know， Susan's friend is going to be sitting there and her phone is going。
-
- to send a request to this API。 It's going to， we've left this out before， but it's going。
-
- to include like a user ID or something that identifies her。 And she's going to get back。
-
- up a list of Susan's photos。 But from everything we've described so far， when， you know， some。
-
- stranger on a train that Susan doesn't know， not her friend goes to load data from this， API。
-
- they'll send a different user ID， but everything else will be the same。 And they're。
-
- also going to get the photos back。 And there's kind of something missing from this， right？
-
- Like a modern application has to have some concept of privacy built in。 Like not everyone。
-
- wants everyone else to be able to see their photos。 So this is the， you know， the simple。
-
- loading code。 And you can see that there's no privacy check right now。 Like you have。
-
- this query that you've seen before， SQL injection is still there。 And it loads data from the。
-
- database and it returns it back to the user。 What we really want is we want some sort of。
-
- like checking function， right？ This is a really contrived one。 But we just want something that。
-
- has this can view operation that says like， hey， can the current user ID view the photos。
-
- that belong to this user， Susan？ So that's what we want our application to have。 And so。
-
- we're just going to talk about typing。 Let's think about types for a second。 Like the。
-
- stranger sends this request， Susan's friend also sends this request。 They look pretty similar。
-
- Only difference there is these are IDs。 But when we talk about typing， like all the types。
-
- are correct， right？ They're both integer IDs at a type system level。 There's no difference。
-
- between these。 So everything we've talked about so far can't help us solve this problem。 And。
-
- the problem we're really trying to solve is like answering this question。 Are we returning。
-
- data to the user without it passing through some kind of privacy check？ One way we could。
-
- try and solve this is through security reviews。 And as we talked about earlier， when we're。
-
- talking about shifting left security reviews are good defense in depth。 And it's possible， that。
-
- you know， a security review might be the thing that surfaced this issue in our。
-
- application initially and told us like， hey， you need to add some concept to privacy or， whatever。
-
- But it doesn't scale， right？ And when we're constantly making changes， when。
-
- we're wanting to look at the whole app， security reviews just aren't going to scale up here。
-
- So we want to go back to this concept of like continuous prevention and detection。 So to。
-
- answer this question， we want a tool that can basically detect a data flow， right？ We want。
-
- a tool that can say like data went from database all the way back to user and know that like。
-
- what a privacy check is and know that it didn't go through a privacy check。 The way that we。
-
- do data flow analysis at meta is using a tool called PISA。 So this is free and open source。
-
- that's built on top of the pyrotech checker。 And it tracks data as it goes through the， program。
-
- So you start off and you have some kind of data that you know you care about， right？
-
- So some source of data。 And it tracks it when it's assigned to a variable。 It tracks。
-
- it as you perform an operation to add something to it。 It tracks it as you convert it to a。
-
- string as it runs through different function calls and gets returned by that function as it。
-
- goes through an F string。 Pretty much any transformation， any flow of data through the program。
-
- we want， to track that data as it goes。 And we want to see where it ends up。
-
- Taking this and applying it to， our concept of this application where there's no privacy check right now。
-
- we want the source of， data that we track to be the data from the database。
-
- And the place where we care about it， ending up is where the data is returned to the user。
-
- And so we apply the data flow analysis tool。 We run。
-
- PISA or there are other tools as well that can do this。
-
- And we kind of want to track that and see it， goes through this list comprehension， gets returned。
-
- And eventually we say， oh， it went where we cared， about like there's a data flow detected。
-
- And this is an issue。 There's no privacy check in between here。
-
- And also with this tool then when we introduced that privacy check and code we were just talking。
-
- about， we want to， we can tell the tool basically this is what a privacy check looks like。 And oh。
-
- well， also we've updated the code here just to call the privacy check version。 And now when we do。
-
- the data flow analysis， similar things happening， right。
-
- we're seeing the tape flow or the data flow， going through that list comprehension and being returned here。
-
- But because we've taught the tool， that this function is doing a privacy check。
-
- it's going to stop propagating the data at that point。 And it's not going to detect it。
-
- I've glossed over a bunch of details in depth here because this is， not a long enough talk。
-
- But you can teach a tool to do this。 And now we have a way to differentiate。
-
- between a data flow that's problematic and one that's okay。 Now。
-
- why do type annotations matter here？ Like we've talked about this data flow analysis tool。
-
- Maybe you think that's cool。 It's awesome。 But， like nothing I've told you so far is anything to do with types。
-
- So to kind of demonstrate this， we have， this little piece of code， right？
-
- We're creating our SQL connection and then we're executing a query。 Now。
-
- if we import this Create SQL connection function， it's unambiguous。 Like， you know， I know the。
-
- type checker knows that we're calling the SQL， the Create SQL connection function that we imported。
-
- But what about this execute method？ So you and I probably know there's going to be some SQL。
-
- connection class and it's got an execute method。 But， you know， in our application。
-
- there might also be， this task class that also has an execute method。 And the type checker。
-
- you know， from what we've seen， so far or what we're looking at right now。
-
- doesn't know which of those two execute methods would be， called on this connection object。
-
- What we really need is we need to know the type of the connection。
-
- object in order to be able to figure out which method is being called。 And so we need to update。
-
- the signature of Create SQL connection。 And then the type checker is able to infer， okay。
-
- the connection， type is a SQL connection。 And unambiguously。
-
- we're able to say it's the execute method is being called。 So at a really granular level。
-
- this is the kind of thing that makes a type checker and types and Python。
-
- really important to enable data flow analysis。 Because then we can actually figure out which。
-
- method calls are going where。 That's at sort of a granular level， but at a sort of a macro level。
+ we're able to say it's the execute method is being called。 So at a really granular level。 this is the kind of thing that makes a type checker and types and Python。 really important to enable data flow analysis。 Because then we can actually figure out which。 method calls are going where。 That's at sort of a granular level， but at a sort of a macro level。
 
  like running on a whole application， how important are type annotations？
 
- So we took a web server and， it was like fully type-antated and sort of started stripping out type annotations and measured how。
+ So we took a web server and， it was like fully type-antated and sort of started stripping out type annotations and measured how。 many data flows that we cared about that we could detect。 And the effect was pretty dramatic。 So。 on the right side there， you've got like 100% of the data flows we could find when it was fully。 annotated。 And just removing like 20% of annotations sort of randomly across the application made us。
 
- many data flows that we cared about that we could detect。 And the effect was pretty dramatic。 So。
+ able to detect more than 40% fewer data flows。 So at the scale of a whole web application。 like type annotations and having really good type annotations enables complex analysis like。 data flow analysis。 So doing something like this， having a data flow analysis tool gives us this。 continuous detection that we talked about for any kind of vulnerability that can be modeled as a。
 
- on the right side there， you've got like 100% of the data flows we could find when it was fully。
+ data flow。 Now， I talked about a sort of privacy issue here。 but so many security vulnerabilities can， be modified， can be modeled as data flows。 You've got service ed requests forgery， XML external entities， leaking secrets。 format string attacks， the list goes on and on and on。 And in fact。
 
- annotated。 And just removing like 20% of annotations sort of randomly across the application made us。
+ it can find some of the same vulnerabilities that we also talked about preventing earlier in this talk。 As I mentioned， we do this at meta using PISA， a free and open source tool。 It comes configured。 for all your kind of standard web servers like Flash， Kngango。 as well as a bunch of common libraries， that do SQL， shell commands， that kind of thing。
 
- able to detect more than 40% fewer data flows。 So at the scale of a whole web application。
+ So it's able to kind of detect all your common， vulnerabilities on your common web servers。 It's also available to run in your CI through a GitHub， action。 Now。 I don't want to oversell this tool to you without talking about limitations as well。 The first limitation is that data flow analysis tends to be too slow for interactive use cases。
 
- like type annotations and having really good type annotations enables complex analysis like。
+ So Pradeep was talking about type checking with Pyre， and that can run right in your ID。 You type。 an error and almost instantly you're going to see a little red underline that says this is bad。 With something like PISA， you're going to have to run it in your CI and wait a couple minutes to。 get the results。 Next thing is false positives and false negatives do happen。 We're essentially。
 
- data flow analysis。 So doing something like this， having a data flow analysis tool gives us this。
+ trying to simulate an entire program， and it's hard to do that very accurately。 So sometimes you're。 going to miss things and sometimes you might find something that's not actually a flow that you。 care about。 So you'll get results from a tool like PISA right off the bat， but to get really good。 results and get really tuned the way you want it， you need to invest a little bit of effort。
 
- continuous detection that we talked about for any kind of vulnerability that can be modeled as a。
+ And finally， as the graph on the previous slide showed， type coverage is really important。 So。 adding more type coverage is needed to get really good results。 But to sort of hopefully convince you， that this kind of thing can give you really good results。 at meta more than 50% of the vulnerabilities， that our product's QD team finds comes from tools like PISA。
 
- data flow。 Now， I talked about a sort of privacy issue here。
+ So we don't just do it in Python， we do it， in hack and Java and a bunch of other languages。 but this kind of data flow analysis tool finds， more than 50% of the vulnerabilities that we find at meta。 Now， hopefully you're sold on the idea， that there's a lot of different ways that types can add value and make your code more secure。 So let's quickly touch on how you can add types easily。 Instagram provides a really good case study。
 
- but so many security vulnerabilities can， be modified， can be modeled as data flows。
+ Instagram went from no type annotations to having millions of lines of code type annotated。 and there's sort of three different ways that they did it。 One was using MonkeyType。 MonkeyType is。 an open source tool that grabs runtime type information and saves that so that you can add。 it as static type information after the fact。 Two is Pyre and Fur。 So once you've already got。
 
- You've got service ed requests forgery， XML external entities， leaking secrets。
+ some types in your code， Pyre and Fur is able to basically propagate that information through your。 code and use its knowledge of what types are already there to figure out what types aren't。 annotated but can be known to be a certain type。 And finally， manual effort is still required。 You know， Instagram didn't get to all that type coverage just by running tooling。
 
- format string attacks， the list goes on and on and on。 And in fact。
+ Sometimes people had to get in there and write some type annotations as well。 With that。 we're going to finish off with some conclusions。 As a reminder， the thesis of the talk。 was that type annotations can help continuously detect and prevent security vulnerabilities。 If you had to summarize this whole talk in one slide and give you a real roadmap for what you should。
 
- it can find some of the same vulnerabilities that we also talked about preventing earlier in this talk。
+ do when you leave this room， this is it。 The first and easiest thing you can do is enforce types at。 your API layer。 So enforce the data coming into your system is what you expect it to be。 Next。 you want to start making sure you have a type checker running locally and in CI。 So。 something like Pyre but there's also lots of other type checkers you can use。 When you've got。
 
- As I mentioned， we do this at meta using PISA， a free and open source tool。 It comes configured。
+ that going， you want to make sure that either you or your libraries are using literal string。 which helps enforce and prevent injection vulnerabilities。 Then you've got your type coverage。 started。 You've got your type checker running。 You want to start expanding types as much as you。 can in your code base。 Using Pyre and Fur， MonkeyType， manual work。
 
- for all your kind of standard web servers like Flash， Kngango。
+ whatever you've got to do to get， as good type coverage as you can。 And finally。 when you've got to the point， you've got some good， type coverage。 start running PISA and start detecting the sort of more complex data flow based vulnerabilities。 And all of these add up to great layers of defense and depth will help make your application。
 
- as well as a bunch of common libraries， that do SQL， shell commands， that kind of thing。
-
- So it's able to kind of detect all your common， vulnerabilities on your common web servers。
-
- It's also available to run in your CI through a GitHub， action。 Now。
-
- I don't want to oversell this tool to you without talking about limitations as well。
-
- The first limitation is that data flow analysis tends to be too slow for interactive use cases。
-
- So Pradeep was talking about type checking with Pyre， and that can run right in your ID。 You type。
-
- an error and almost instantly you're going to see a little red underline that says this is bad。
-
- With something like PISA， you're going to have to run it in your CI and wait a couple minutes to。
-
- get the results。 Next thing is false positives and false negatives do happen。 We're essentially。
-
- trying to simulate an entire program， and it's hard to do that very accurately。 So sometimes you're。
-
- going to miss things and sometimes you might find something that's not actually a flow that you。
-
- care about。 So you'll get results from a tool like PISA right off the bat， but to get really good。
-
- results and get really tuned the way you want it， you need to invest a little bit of effort。
-
- And finally， as the graph on the previous slide showed， type coverage is really important。 So。
-
- adding more type coverage is needed to get really good results。
-
- But to sort of hopefully convince you， that this kind of thing can give you really good results。
-
- at meta more than 50% of the vulnerabilities， that our product's QD team finds comes from tools like PISA。
-
- So we don't just do it in Python， we do it， in hack and Java and a bunch of other languages。
-
- but this kind of data flow analysis tool finds， more than 50% of the vulnerabilities that we find at meta。
-
- Now， hopefully you're sold on the idea， that there's a lot of different ways that types can add value and make your code more secure。
-
- So let's quickly touch on how you can add types easily。 Instagram provides a really good case study。
-
- Instagram went from no type annotations to having millions of lines of code type annotated。
-
- and there's sort of three different ways that they did it。 One was using MonkeyType。 MonkeyType is。
-
- an open source tool that grabs runtime type information and saves that so that you can add。
-
- it as static type information after the fact。 Two is Pyre and Fur。 So once you've already got。
-
- some types in your code， Pyre and Fur is able to basically propagate that information through your。
-
- code and use its knowledge of what types are already there to figure out what types aren't。
-
- annotated but can be known to be a certain type。 And finally， manual effort is still required。
-
- You know， Instagram didn't get to all that type coverage just by running tooling。
-
- Sometimes people had to get in there and write some type annotations as well。 With that。
-
- we're going to finish off with some conclusions。 As a reminder， the thesis of the talk。
-
- was that type annotations can help continuously detect and prevent security vulnerabilities。
-
- If you had to summarize this whole talk in one slide and give you a real roadmap for what you should。
-
- do when you leave this room， this is it。 The first and easiest thing you can do is enforce types at。
-
- your API layer。 So enforce the data coming into your system is what you expect it to be。 Next。
-
- you want to start making sure you have a type checker running locally and in CI。 So。
-
- something like Pyre but there's also lots of other type checkers you can use。 When you've got。
-
- that going， you want to make sure that either you or your libraries are using literal string。
-
- which helps enforce and prevent injection vulnerabilities。 Then you've got your type coverage。
-
- started。 You've got your type checker running。 You want to start expanding types as much as you。
-
- can in your code base。 Using Pyre and Fur， MonkeyType， manual work。
-
- whatever you've got to do to get， as good type coverage as you can。 And finally。
-
- when you've got to the point， you've got some good， type coverage。
-
- start running PISA and start detecting the sort of more complex data flow based vulnerabilities。
-
- And all of these add up to great layers of defense and depth will help make your application。
-
- a lot more secure。 Thank you to so many people who helped make this talk possible and who helped。
-
- get PEP 675 landed as well。 Here are some resources and that's the end of our talk。
-
- We'll be hanging， out in the hallway afterwards for anyone who wants to ask any questions。
-
- [Applause]。
+ a lot more secure。 Thank you to so many people who helped make this talk possible and who helped。 get PEP 675 landed as well。 Here are some resources and that's the end of our talk。 We'll be hanging， out in the hallway afterwards for anyone who wants to ask any questions。 [Applause]。
 
 ![](img/4c672171c7959b7ba3c42981c6d41476_4.png)
 

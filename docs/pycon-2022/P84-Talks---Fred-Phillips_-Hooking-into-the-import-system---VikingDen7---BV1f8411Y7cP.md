@@ -1,464 +1,121 @@
 # P84：Talks - Fred Phillips_ Hooking into the import system - VikingDen7 - BV1f8411Y7cP
 
  \>\> Hello， everyone。 Let's welcome Fred Phillips to deliver a talk on hooking into the import。
-
-
-
 ![](img/b0ec26acaf9d7147d5b6c6e702b6b378_1.png)
 
- system。 \>\> What do you think？ \>\> Hi， everyone。 Thanks for coming。 My name is Fred。
+ system。 \>\> What do you think？ \>\> Hi， everyone。 Thanks for coming。 My name is Fred。 My pronouns are he and him。 And I'm， engineering team lead at Bloomberg。 So team that I lead is part of the news automation group。 where we basically write software which writes news stories automatically。 So the news automation。
 
- My pronouns are he and him。 And I'm， engineering team lead at Bloomberg。
-
- So team that I lead is part of the news automation group。
-
- where we basically write software which writes news stories automatically。 So the news automation。
-
- group is split into two teams。 Those that are writing code that generates the content。
-
- so writing new stories。 And then those building the platform that runs that code。 So my team。
-
-
-
+ group is split into two teams。 Those that are writing code that generates the content。 so writing new stories。 And then those building the platform that runs that code。 So my team。
 ![](img/b0ec26acaf9d7147d5b6c6e702b6b378_3.png)
 
- fits into that second half。 Our main responsibilities include providing a development platform。
+ fits into that second half。 Our main responsibilities include providing a development platform。 for the content team， to use and a runtime platform which runs their code in a fast and。 reliable way， whilst abstracting as much of the infrastructure as possible。 So one part。 of this is then providing a lightning fast deployment mechanism for the content。 So shipping。
 
- for the content team， to use and a runtime platform which runs their code in a fast and。
+ artifact to real machines or building docker containers is too slow for our use case。 So。 we had to find a new mechanism to do that。 So that's where we use import hooks in our system。 I'm going to tell you a little bit about that。 So in this talk， I will guide you through the。 Python import system and introduce you to ways of using it to solve real problems。 Import hooks。
 
- reliable way， whilst abstracting as much of the infrastructure as possible。 So one part。
+ in my opinion， I kind of excelled them use an undocumented feature of Python。 But the。 import system is very powerful and can open the door to many useful features。 So in this， talk。 I'll show you how a standard import works in Python that loads files from the disk。 and then how Python lets us customize and influence imports。 And most importantly， why。
 
- of this is then providing a lightning fast deployment mechanism for the content。 So shipping。
+ we would want to do this。 So start off with what does import actually do？ So importing。 a module in Python comprises two main steps。 The first is finding and the second is loading。 So finding finds the code， usually from files on disk， and the loading executes that code。 and loads it into the interpreter for you to use。 So by default， there are three finds， available。
 
- artifact to real machines or building docker containers is too slow for our use case。 So。
+ The built-in importer， the frozen importer， and the pathfinder。 So the built-in。 importer is what's used for finding built-in modules such as OS or sys。 So in C Python。 these are mostly written in C。 And such they did not exist as Python files on disk， like。 the module that most people are familiar with。 The frozen importer is a special importer。
 
- we had to find a new mechanism to do that。 So that's where we use import hooks in our system。
+ Its most important use case is to bootstrap the import mechanism or machinery into the。 importer itself， into the interpreter itself。 Because obviously it's difficult to import。 import until import has been imported。 So when the pathfinder is the one which is used。 by everyone every day， so this is what finds Python files on disk and loads them for you。
 
- I'm going to tell you a little bit about that。 So in this talk， I will guide you through the。
+ to implement。 So all you need to do to implement your own finder is to define a class with。 a single method called find spec。 So this method takes the name of the module's first， argument。 the path to the parent module if there is one， and then the target which is。 used to make a more educated guess about what spec to return。 We're not going to cover the。
 
- Python import system and introduce you to ways of using it to solve real problems。 Import hooks。
+ use of targets in this talk and I've yet to find a use case for it myself。 So then you'll。 find there's a stored in this variable called the sys。metaPath。 So this is a list of finders。 which will then have their find spec method called in order that there are in the list。 So if the module you want to provide with your finder are uniquely named， it doesn't。
 
- in my opinion， I kind of excelled them use an undocumented feature of Python。 But the。
+ matter where you put your finder in this list。 But if you want to affect all imports across。 the system， you need to make sure you're putting your finder in the first position。 So that's。 why we're doing this dot insert into the 0th position in the list here。 That would mean。 our finder is always going to be called first。 So when your code imports the module， when。
 
- import system is very powerful and can open the door to many useful features。 So in this， talk。
+ you type import， then your module， Python iterates through this list， calls all the finders until。 one of them returns a module spec。 So that's the specifications for a module。 Or if they。 all return none， a module not found error is raised。 So if you try an imported module。 which doesn't exist， it will try every single finder。 None of them can find it， so it will。
 
- I'll show you how a standard import works in Python that loads files from the disk。
+ just raise you an error。 So once the module has been found， it then needs to be loaded。 So this is a two-step process。 One， the first part creates the module。 So it takes in the。 module spec found by the finder and then returns a module object。 And then the next。 one executes it。 So for loading files from disk， this first creates an empty instance of module。
 
- and then how Python lets us customize and influence imports。 And most importantly， why。
+ and then just uses the exec built-in to load code into it。 The module is then assigned， a name。 so you can reference it in your code。 And a copy is then stored in the sys。modules， dictionary。 This also means that if you import a module again， it won't be loaded again， it。 will just grab whatever's been put in that dictionary already。 So if you try and re-import。
 
- we would want to do this。 So start off with what does import actually do？ So importing。
+ a module， you probably notice that you're not getting the latest code。 So the Python import system allows us to hook into this process at nearly every step and。 inject your own special behavior。 So to start with， we'll go over a toy example of our own， finder。 So this is my implementation of what I call a tracing finder。 Well， we implement。
 
- a module in Python comprises two main steps。 The first is finding and the second is loading。
+ a class called tracing finder。 It inherits from this base class which is provided by。 the import system called meta path finder。 And then we define this one method that we。 talked about before， find spec。 So it takes the name， the path， and the target。 So what。 we want to do is just print out when we're importing things so that the user can just。
 
- So finding finds the code， usually from files on disk， and the loading executes that code。
+ see it on their terminal。 So all we do is we print out looking for name and path and。 then we return none to indicate that we haven't found this module in this finder and to fall。 back to the other finders。 So we insert this in the first position， which means that every。 time import is called， our finder will be called， and then it will fall back to the old finders。
 
- and loads it into the interpreter for you to use。 So by default， there are three finds， available。
+ So then we do an import of date time and then we call date time dot date time dot now。 So。 if we do this， our output will look something like this。 So we do the import and during that。 import， we can see that the code we wrote for our finder is printing out this stuff。 And because date time doesn't have any parents， our path is always none。 But then we can see。
 
- The built-in importer， the frozen importer， and the pathfinder。 So the built-in。
+ that we're printing out the current date time and it's completely unaffected by our own import。 So we can see that we're trying to import date time here and then date time indirectly。 imports math and then underscore date time。 So you can see it's affecting every single。 import that's happening， not just the imports that we're making ourselves in our code。
 
- importer is what's used for finding built-in modules such as OS or sys。 So in C Python。
+ So why do you want to do this？ So this is kind of a trivial example， not really much。 practical application。 So I'm going to go over two import hooks that I've used in my。 work at Bloomberg。 The first one is going to be implementing a block list of modules that。 are not allowed to be imported。 And then we're going to implement a finder and a loader。
 
- these are mostly written in C。 And such they did not exist as Python files on disk， like。
+ which are going to load Python code from a database rather than from files。 So I'm going。 to put snippets of code on the slides。 I hope it's big enough to be legible but also all。 of this code is going to be on GitHub or already is on GitHub。 So at the end there'll。 be a link where you can go and find the full example code of all of this and it all should。
 
- the module that most people are familiar with。 The frozen importer is a special importer。
+ work fine in the latest Python 3 interpreter if you want to have a play around with it。 So we'll start with the block list。 So one of the requirements of the system that my team。 and I develop is running code in a sandbox environment。 So this environment is intended。 to prevent mistakes rather than being a secure against malicious use。 So this means all the。
 
- Its most important use case is to bootstrap the import mechanism or machinery into the。
+ ideas and the code that's being presented here is not intended to be secure or to be。 used to lock down your interpreter or environment against attack。 It's more there to prevent。 escape mistakes from non-expert users。 So one feature that we provide to the users of the。 system is an allow/block list of Python packages and modules that should be used。 So some of。
 
- importer itself， into the interpreter itself。 Because obviously it's difficult to import。
+ the blocked modules could be installed on the system where this is running so we can't。 rely on the libraries just not being there。 So instead we have an import hook that blocks。 the importing of these modules。 So this is really easy to implement using a custom finder。 So we start by defining the classes before。 We make this new class block list finder inheriting。
 
- import until import has been imported。 So when the pathfinder is the one which is used。
+ from this abstract base class to path finder。 In this case we're also going to define the。 done the init function。 So this is going to take a list of strings which represent the。 packages we want to block for our users。 We put that in a member variable so we can access。 it later。 And then we start by defining find spec again。 So it's the same as before。 We。
 
- by everyone every day， so this is what finds Python files on disk and loads them for you。
+ take the full name of the module being imported， the path to the parent and then the target。 So the first thing it's going to do is if the full name is in the list of blocked packages。 if it is， we raise an import error saying we cannot import this as it is blocked。 If it's。 not in the list of blocked packages all we need to do is return none indicating that this。
 
- to implement。 So all you need to do to implement your own finder is to define a class with。
+ finder does not handle this package and then it will then just fall back to the other finders。 again。 So we do exactly the same thing as before。 In the sys。meta path we insert our new。 block list finder。 So for this example we're saying， okay， let's stop people from importing。 socket because for our use case there is no use case for importing socket。 And then our。
 
- a single method called find spec。 So this method takes the name of the module's first， argument。
+ user then says import http。server。 So you see this is not on the list of blocked modules， but http。server tries to import socket。 So then when we do that we get this import error。 So it cannot be imported because it is blocked。 So we found this to be really useful， a very。 useful application of import hooks in our system to help each of non-expert Python users。
 
- the path to the parent module if there is one， and then the target which is。
+ So another example of an import hook is for loading modules from locations other than。 files on disk。 So for example a database。 So this requires us to implement both a finder。 and a loader。 So the finder will be called by the import system to determine what modules。 it can provide from the database。 And then the loader will run the necessary。
 
- used to make a more educated guess about what spec to return。 We're not going to cover the。
+ queries to pull the data from the database and execute the code and load it into a module。 to be returned to whoever called import。 So we'll start with the loader and then we'll。 move on to the finder。 So for a loader we again create another classes based on one。 of these base classes provided by the import library in the standard library。 So for this。
 
- use of targets in this talk and I've yet to find a use case for it myself。 So then you'll。
+ we want to say okay we're going to pass in package name。 So we want to say every package。 which every module is in this specific package we want to say okay we're going to load that。 from a database rather than from files。 And then we're also passing in this database handle。 So for this example I used SQLite 3， DP API 2 connection but it kind of applies to any。
 
- find there's a stored in this variable called the sys。metaPath。 So this is a list of finders。
+ other kind of database connection that you might want to use。 And then we again set these。 as just member variables that we can come back to them later。 So we need to go and implement。 these two functions that we talked about before that create and the exec。 So we'll start with。 the create module。 So this takes this spec variable which is what a finder returns。 And。
 
- which will then have their find spec method called in order that there are in the list。
+ then what we do is we first create a new module。 And to make this example as simple as possible。 we're only going to consider what the name is。 So this creates a brand new empty module。 based on this name。 And then the second bit here is dealing with packages。 So package is。 basically a module which may have sub modules。 So you know if you want to do I say date， date。
 
- So if the module you want to provide with your finder are uniquely named， it doesn't。
+ util is a good example。 So you have date util dot tz date util is your package。 It also。 is a module because it has things on it but you have these sub modules as well。 So what。 we're saying for this example is we're going to provide one package which we can name up。 front you know call like my database code or something。 And we're saying if the module。
 
- matter where you put your finder in this list。 But if you want to affect all imports across。
+ that we're currently importing is exactly the same name as this package as in we're not。 trying to import a sub module at this time。 We set this thing called module dot pack to。 an empty list。 So this is a sort of special variable attached on modules。 And if it is。 a list or an empty list like this it is basically informing the interpreter this is a package。
 
- the system， you need to make sure you're putting your finder in the first position。 So that's。
+ and may have sub packages as well。 And then all we need to do is then return the module。 So for any of these sub modules of this package it will just create a new module with the。 name and return it for the packages it will do this extra special step here and we just， return it。 So then we want to execute this code。 So normally if you're reading from a。
 
- why we're doing this dot insert into the 0th position in the list here。 That would mean。
+ file we do a file open get the code out run exec load it into the module but because we're。 doing a database very differently。 So the first thing we're doing is importing the package， here。 So for this use case we're going to say that the packages are not going to have。 any code or anything that any functions that we want to be able to call in there。 So if。
 
- our finder is always going to be called first。 So when your code imports the module， when。
+ the module name is exactly the package name we're just going to return nothing which means。 that I can import it but it will have no members on it。 That's fine for this。 And then we want。 to actually load this code from the database。 So rather than doing file open we're going。 to get a database cursor and we're going to select the code from a table called code where。
 
- you type import， then your module， Python iterates through this list， calls all the finders until。
+ the name is equal to the name that we passed in which is module。name。 Then all we need to。 do is we got that cursor we don't need to fetch the actual row and then we just exec， it。 I'm not sure if everyone will back and see that but basically we're saying just calling。 the exec built in of the code and we're loading that into this variable called module。dict。
 
- one of them returns a module spec。 So that's the specifications for a module。 Or if they。
+ So this is basically represents the global namespace of your module that you're importing。 So everything that's defined at the global level in your code get loaded into this dictionary。 and that's how you access it after you import it。 So this modifies the module that was passed， in。 So you can see we pass in the module and then we do this exec into here so we don't。
 
- all return none， a module not found error is raised。 So if you try an imported module。
+ return anything from exec module。 It just modifies the thing that was pushed in。 So now we need。 to combine this with a finder to allow clients to call import as normal and then create a。 way for the loader to advertise what packages it can provide by looking at the database。 So。 one way to do this is to add a new method to db loader which I decided to call provides。
 
- which doesn't exist， it will try every single finder。 None of them can find it， so it will。
+ which takes in the name and will turn true or false depending on whether there is some。 code if there's a module of this name in the database。 So this is not a part of the standard。 abstract base class that we're basing these classes on。 This is just a custom bit of custom。 code that we can write to help a function for us to use。 So basically we have a very similar。
 
- just raise you an error。 So once the module has been found， it then needs to be loaded。
+ query but we don't have to access the code so we just select one where code equals the。 name and this will either return a row or return a row。 So I've highlighted the code。 around that but basically all we need to do here is check how many rows are returned。 if it's zero we return false if it's one you return true。 So now we have a db loader class。
 
- So this is a two-step process。 One， the first part creates the module。 So it takes in the。
+ which has these three methods on it。 Create module， exec module and provides。 So now we。 need to combine that with the finder。 So we create a new finder again best based on the。 meta path finder abstract base class and we pass in an instance of this loader that we've。 created to find and we set that again to a member variable。 So now we can have a simple。
 
- module spec found by the finder and then returns a module object。 And then the next。
+ implementation of find spec that first is going to leverage that provides method that。 we implemented before。 We're going to take the full name that was passed in and ask the。 loader are we providing do you provide this a module or of this name。 If that is true we。 then call this useful helper method that's been provided by the import lib which is a。
 
- one executes it。 So for loading files from disk， this first creates an empty instance of module。
+ standard library standard library package that we can use which basically creates this。 module spec that we've been passing around。 So we never really need even need to deal with。 like what this module spec is or what kind of how we actually need to build it because。 this is all taken care of for us。 So what we do is we say okay make a new spec with a。
 
- and then just uses the exec built-in to load code into it。 The module is then assigned， a name。
+ loader assigned to it by of this name and then here's this loader that we passed in and the。 constructor earlier。 And then if this returns false as in the loader does not provide this。 all you need to do is return none to indicate the import system that we don't provide a。 module of this name。 So either this will fall back to the other finders if you have any。
 
- so you can reference it in your code。 And a copy is then stored in the sys。modules， dictionary。
+ that are going to provide this or return a module not found error as we saw before。 And。 that's it basically。 So all in all this is about 30 lines of Python code and we have。 a fully working import hook which is loading code from a database that is totally transparent。 to the caller。 So I've got a little demo of how that works here。 So what we're doing is。
 
- This also means that if you import a module again， it won't be loaded again， it。
+ first we're going to import this code from the disk。 So we have to start by creating a。 new SQLite database。 So we're going to just import the code we just wrote and we're going。 to create this new SQLite database and it's creating a memory here rather than on disk。 And so then we're going to insert some rows。 So I'm just going to insert a single row in。
 
- will just grab whatever's been put in that dictionary already。 So if you try and re-import。
+ this database which is going to be a module called package。mymodule。 So first we're just。 going to create this table called code which has the name and the code in it and then insert， this。 so I'm going to call it my package。mymodule。 And then just create a global function called。 fn which takes an x and multiplies it by 2 and returns that。 So now we have this in our， database。
 
- a module， you probably notice that you're not getting the latest code。
+ So then what we need to do is take these things we imported from our dbload that， we wrote before。 insert those into the sys。metapath。 So we say okay the dbloader is going to provide。 packages from my package and here's our db handle。 You can see here that my package of。 my module is matching the thing we wrote in the database and we're importing fn this function。
 
- So the Python import system allows us to hook into this process at nearly every step and。
+ And then so now we just have this function fn that we can pass， we can call and twice， 21 is 42。 twice is 0。5 is 1 and if we try and import something that doesn't exist， so my。 package does not exist we get a standard module not found error that says that the module does。 not exist。 So we use this as a deployment mechanism。 So we're files on disk and all suitable。 So。
 
- inject your own special behavior。 So to start with， we'll go over a toy example of our own， finder。
+ some examples of why we want to use this is writing to a database is obviously very， very fast。 You can write to a database in sub second。 So in our application we have just。 have a save button you click save it writes to the database and immediately your code is。 available in production。 It's also very useful if you want to maintain multiple versions in。
 
- So this is my implementation of what I call a tracing finder。 Well， we implement。
+ production。 So for this table that we had here we just had the two columns name and code。 But。 we could also have a version in there and then we can come up with a way of making sure。 that we're really importing the version that we'd want。 Whereas if we wanted to do that。 in a sort of standard file based hierarchy you'd either need a separate version， a version。
 
- a class called tracing finder。 It inherits from this base class which is provided by。
-
- the import system called meta path finder。 And then we define this one method that we。
-
- talked about before， find spec。 So it takes the name， the path， and the target。 So what。
-
- we want to do is just print out when we're importing things so that the user can just。
-
- see it on their terminal。 So all we do is we print out looking for name and path and。
-
- then we return none to indicate that we haven't found this module in this finder and to fall。
-
- back to the other finders。 So we insert this in the first position， which means that every。
-
- time import is called， our finder will be called， and then it will fall back to the old finders。
-
- So then we do an import of date time and then we call date time dot date time dot now。 So。
-
- if we do this， our output will look something like this。 So we do the import and during that。
-
- import， we can see that the code we wrote for our finder is printing out this stuff。
-
- And because date time doesn't have any parents， our path is always none。 But then we can see。
-
- that we're printing out the current date time and it's completely unaffected by our own import。
-
- So we can see that we're trying to import date time here and then date time indirectly。
-
- imports math and then underscore date time。 So you can see it's affecting every single。
-
- import that's happening， not just the imports that we're making ourselves in our code。
-
- So why do you want to do this？ So this is kind of a trivial example， not really much。
-
- practical application。 So I'm going to go over two import hooks that I've used in my。
-
- work at Bloomberg。 The first one is going to be implementing a block list of modules that。
-
- are not allowed to be imported。 And then we're going to implement a finder and a loader。
-
- which are going to load Python code from a database rather than from files。 So I'm going。
-
- to put snippets of code on the slides。 I hope it's big enough to be legible but also all。
-
- of this code is going to be on GitHub or already is on GitHub。 So at the end there'll。
-
- be a link where you can go and find the full example code of all of this and it all should。
-
- work fine in the latest Python 3 interpreter if you want to have a play around with it。
-
- So we'll start with the block list。 So one of the requirements of the system that my team。
-
- and I develop is running code in a sandbox environment。 So this environment is intended。
-
- to prevent mistakes rather than being a secure against malicious use。 So this means all the。
-
- ideas and the code that's being presented here is not intended to be secure or to be。
-
- used to lock down your interpreter or environment against attack。 It's more there to prevent。
-
- escape mistakes from non-expert users。 So one feature that we provide to the users of the。
-
- system is an allow/block list of Python packages and modules that should be used。 So some of。
-
- the blocked modules could be installed on the system where this is running so we can't。
-
- rely on the libraries just not being there。 So instead we have an import hook that blocks。
-
- the importing of these modules。 So this is really easy to implement using a custom finder。
-
- So we start by defining the classes before。 We make this new class block list finder inheriting。
-
- from this abstract base class to path finder。 In this case we're also going to define the。
-
- done the init function。 So this is going to take a list of strings which represent the。
-
- packages we want to block for our users。 We put that in a member variable so we can access。
-
- it later。 And then we start by defining find spec again。 So it's the same as before。 We。
-
- take the full name of the module being imported， the path to the parent and then the target。
-
- So the first thing it's going to do is if the full name is in the list of blocked packages。
-
- if it is， we raise an import error saying we cannot import this as it is blocked。 If it's。
-
- not in the list of blocked packages all we need to do is return none indicating that this。
-
- finder does not handle this package and then it will then just fall back to the other finders。
-
- again。 So we do exactly the same thing as before。 In the sys。meta path we insert our new。
-
- block list finder。 So for this example we're saying， okay， let's stop people from importing。
-
- socket because for our use case there is no use case for importing socket。 And then our。
-
- user then says import http。server。 So you see this is not on the list of blocked modules， but http。
-
-server tries to import socket。 So then when we do that we get this import error。
-
- So it cannot be imported because it is blocked。 So we found this to be really useful， a very。
-
- useful application of import hooks in our system to help each of non-expert Python users。
-
- So another example of an import hook is for loading modules from locations other than。
-
- files on disk。 So for example a database。 So this requires us to implement both a finder。
-
- and a loader。 So the finder will be called by the import system to determine what modules。
-
- it can provide from the database。 And then the loader will run the necessary。
-
- queries to pull the data from the database and execute the code and load it into a module。
-
- to be returned to whoever called import。 So we'll start with the loader and then we'll。
-
- move on to the finder。 So for a loader we again create another classes based on one。
-
- of these base classes provided by the import library in the standard library。 So for this。
-
- we want to say okay we're going to pass in package name。 So we want to say every package。
-
- which every module is in this specific package we want to say okay we're going to load that。
-
- from a database rather than from files。 And then we're also passing in this database handle。
-
- So for this example I used SQLite 3， DP API 2 connection but it kind of applies to any。
-
- other kind of database connection that you might want to use。 And then we again set these。
-
- as just member variables that we can come back to them later。 So we need to go and implement。
-
- these two functions that we talked about before that create and the exec。 So we'll start with。
-
- the create module。 So this takes this spec variable which is what a finder returns。 And。
-
- then what we do is we first create a new module。 And to make this example as simple as possible。
-
- we're only going to consider what the name is。 So this creates a brand new empty module。
-
- based on this name。 And then the second bit here is dealing with packages。 So package is。
-
- basically a module which may have sub modules。 So you know if you want to do I say date， date。
-
- util is a good example。 So you have date util dot tz date util is your package。 It also。
-
- is a module because it has things on it but you have these sub modules as well。 So what。
-
- we're saying for this example is we're going to provide one package which we can name up。
-
- front you know call like my database code or something。 And we're saying if the module。
-
- that we're currently importing is exactly the same name as this package as in we're not。
-
- trying to import a sub module at this time。 We set this thing called module dot pack to。
-
- an empty list。 So this is a sort of special variable attached on modules。 And if it is。
-
- a list or an empty list like this it is basically informing the interpreter this is a package。
-
- and may have sub packages as well。 And then all we need to do is then return the module。
-
- So for any of these sub modules of this package it will just create a new module with the。
-
- name and return it for the packages it will do this extra special step here and we just， return it。
-
- So then we want to execute this code。 So normally if you're reading from a。
-
- file we do a file open get the code out run exec load it into the module but because we're。
-
- doing a database very differently。 So the first thing we're doing is importing the package， here。
-
- So for this use case we're going to say that the packages are not going to have。
-
- any code or anything that any functions that we want to be able to call in there。 So if。
-
- the module name is exactly the package name we're just going to return nothing which means。
-
- that I can import it but it will have no members on it。 That's fine for this。 And then we want。
-
- to actually load this code from the database。 So rather than doing file open we're going。
-
- to get a database cursor and we're going to select the code from a table called code where。
-
- the name is equal to the name that we passed in which is module。name。 Then all we need to。
-
- do is we got that cursor we don't need to fetch the actual row and then we just exec， it。
-
- I'm not sure if everyone will back and see that but basically we're saying just calling。
-
- the exec built in of the code and we're loading that into this variable called module。dict。
-
- So this is basically represents the global namespace of your module that you're importing。
-
- So everything that's defined at the global level in your code get loaded into this dictionary。
-
- and that's how you access it after you import it。 So this modifies the module that was passed， in。
-
- So you can see we pass in the module and then we do this exec into here so we don't。
-
- return anything from exec module。 It just modifies the thing that was pushed in。 So now we need。
-
- to combine this with a finder to allow clients to call import as normal and then create a。
-
- way for the loader to advertise what packages it can provide by looking at the database。 So。
-
- one way to do this is to add a new method to db loader which I decided to call provides。
-
- which takes in the name and will turn true or false depending on whether there is some。
-
- code if there's a module of this name in the database。 So this is not a part of the standard。
-
- abstract base class that we're basing these classes on。 This is just a custom bit of custom。
-
- code that we can write to help a function for us to use。 So basically we have a very similar。
-
- query but we don't have to access the code so we just select one where code equals the。
-
- name and this will either return a row or return a row。 So I've highlighted the code。
-
- around that but basically all we need to do here is check how many rows are returned。
-
- if it's zero we return false if it's one you return true。 So now we have a db loader class。
-
- which has these three methods on it。 Create module， exec module and provides。 So now we。
-
- need to combine that with the finder。 So we create a new finder again best based on the。
-
- meta path finder abstract base class and we pass in an instance of this loader that we've。
-
- created to find and we set that again to a member variable。 So now we can have a simple。
-
- implementation of find spec that first is going to leverage that provides method that。
-
- we implemented before。 We're going to take the full name that was passed in and ask the。
-
- loader are we providing do you provide this a module or of this name。 If that is true we。
-
- then call this useful helper method that's been provided by the import lib which is a。
-
- standard library standard library package that we can use which basically creates this。
-
- module spec that we've been passing around。 So we never really need even need to deal with。
-
- like what this module spec is or what kind of how we actually need to build it because。
-
- this is all taken care of for us。 So what we do is we say okay make a new spec with a。
-
- loader assigned to it by of this name and then here's this loader that we passed in and the。
-
- constructor earlier。 And then if this returns false as in the loader does not provide this。
-
- all you need to do is return none to indicate the import system that we don't provide a。
-
- module of this name。 So either this will fall back to the other finders if you have any。
-
- that are going to provide this or return a module not found error as we saw before。 And。
-
- that's it basically。 So all in all this is about 30 lines of Python code and we have。
-
- a fully working import hook which is loading code from a database that is totally transparent。
-
- to the caller。 So I've got a little demo of how that works here。 So what we're doing is。
-
- first we're going to import this code from the disk。 So we have to start by creating a。
-
- new SQLite database。 So we're going to just import the code we just wrote and we're going。
-
- to create this new SQLite database and it's creating a memory here rather than on disk。
-
- And so then we're going to insert some rows。 So I'm just going to insert a single row in。
-
- this database which is going to be a module called package。mymodule。 So first we're just。
-
- going to create this table called code which has the name and the code in it and then insert， this。
-
- so I'm going to call it my package。mymodule。 And then just create a global function called。
-
- fn which takes an x and multiplies it by 2 and returns that。 So now we have this in our， database。
-
- So then what we need to do is take these things we imported from our dbload that， we wrote before。
-
- insert those into the sys。metapath。 So we say okay the dbloader is going to provide。
-
- packages from my package and here's our db handle。 You can see here that my package of。
-
- my module is matching the thing we wrote in the database and we're importing fn this function。
-
- And then so now we just have this function fn that we can pass， we can call and twice， 21 is 42。
-
- twice is 0。5 is 1 and if we try and import something that doesn't exist， so my。
-
- package does not exist we get a standard module not found error that says that the module does。
-
- not exist。 So we use this as a deployment mechanism。 So we're files on disk and all suitable。 So。
-
- some examples of why we want to use this is writing to a database is obviously very， very fast。
-
- You can write to a database in sub second。 So in our application we have just。
-
- have a save button you click save it writes to the database and immediately your code is。
-
- available in production。 It's also very useful if you want to maintain multiple versions in。
-
- production。 So for this table that we had here we just had the two columns name and code。 But。
-
- we could also have a version in there and then we can come up with a way of making sure。
-
- that we're really importing the version that we'd want。 Whereas if we wanted to do that。
-
- in a sort of standard file based hierarchy you'd either need a separate version， a version。
-
- of every single application that you have which doesn't really scale very well or you。
-
- can only if you're just importing files from the system you only get one version。 So that's。
-
-
-
+ of every single application that you have which doesn't really scale very well or you。 can only if you're just importing files from the system you only get one version。 So that's。
 ![](img/b0ec26acaf9d7147d5b6c6e702b6b378_5.png)
 
- it。 Thank you。 I hope that was all very useful and I need to learn something today。 So I'll。
+ it。 Thank you。 I hope that was all very useful and I need to learn something today。 So I'll。 be available outside the room for any questions that you have。 I'll also be on the Bloomberg。 booth at lunchtime if you want to come and see me there。 You can also send me emails if。 you want us F Phillips with 2L7@blimmer。net or F。O。 Phillips on Twitter。 And if you want。
 
- be available outside the room for any questions that you have。 I'll also be on the Bloomberg。
-
- booth at lunchtime if you want to come and see me there。 You can also send me emails if。
-
- you want us F Phillips with 2L7@blimmer。net or F。O。 Phillips on Twitter。 And if you want。
-
- to see any of this code you can go to github。com/fofillips/import-hooks。
-
- So on there I have the three， examples the tracing finder。
-
- the database and also the block list all with working examples， with the full code in there。
-
- So yeah thank you very much for coming。 Thank you Fred for， a great talk。 Thank you。
+ to see any of this code you can go to github。com/fofillips/import-hooks。 So on there I have the three， examples the tracing finder。 the database and also the block list all with working examples， with the full code in there。 So yeah thank you very much for coming。 Thank you Fred for， a great talk。 Thank you。
 

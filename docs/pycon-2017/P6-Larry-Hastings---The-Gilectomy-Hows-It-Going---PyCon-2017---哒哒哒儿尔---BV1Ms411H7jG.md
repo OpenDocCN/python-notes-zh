@@ -9,590 +9,303 @@
  Larry Hastings。
 ![](img/8819b309a1dc896d5dfc43ab416628b0_5.png)
 
- Thank you。 My name is Larry Hastings。 Ladies and gentlemen boys and girls children of all ages。 This is the Golek to me。 How's it going？ PyCon 2017 edition。 I call the talk that because when。
-
- I go to conferences now people walk up to me and say， "Oh Larry， oh you're the guy working on the。 Golek to me。 How's it going？" And I'm like， "Ugh， I'm allowed to speak for 40 minutes about how the。
+ Thank you。 My name is Larry Hastings。 Ladies and gentlemen boys and girls children of all ages。 This is the Golek to me。 How's it going？ PyCon 2017 edition。 I call the talk that because when。 I go to conferences now people walk up to me and say， "Oh Larry， oh you're the guy working on the。 Golek to me。 How's it going？" And I'm like， "Ugh， I'm allowed to speak for 40 minutes about how the。
 
  Golek to me is going and it's， I don't want to answer for 40 minutes。 Every person walks off to me。 at a conference。 So I'm going to do it for everybody at once and now you don't have to ask that question。
-
-
-
 ![](img/8819b309a1dc896d5dfc43ab416628b0_7.png)
 
- You can ask a more specific question。 So about this talk I want to warn you just like last year。 I gave a talk about the Golek to me last year in introductory talk。 This is kind of the same。
+ You can ask a more specific question。 So about this talk I want to warn you just like last year。 I gave a talk about the Golek to me last year in introductory talk。 This is kind of the same。 preface slide。 This talk will be exceedingly technical and it's going to assume that everybody in here。 is comfortable about me talking about multi-threading issues and about CPython internals。
 
- preface slide。 This talk will be exceedingly technical and it's going to assume that everybody in here。 is comfortable about me talking about multi-threading issues and about CPython internals。
+ This year I'm， kind of assuming that you're mildly familiar with like maybe my talk from last year。 So there's a lot， of stuff that I'm not going to explain。 I'm just going to dive right into some of these concepts。 If you want to know more。 you can watch my talk from two years ago， Python's infamous GIL。
 
- This year I'm， kind of assuming that you're mildly familiar with like maybe my talk from last year。 So there's a lot， of stuff that I'm not going to explain。
+ where I explained the GIL itself and then last year's talk where I kind of got started。 the Golek to me removing， oops， typo， removing Python's GIL。 So the goal of the Golek to me。 the Golek to me， I want to run existing multi-threaded Python programs。 So a Python program you could， write today using the threading module。
 
- I'm just going to dive right into some of these concepts。 If you want to know more。 you can watch my talk from two years ago， Python's infamous GIL。
+ I want to run it on multiple cores simultaneously。 I want to， run it with as little。 I want to implement this with as little C API breakage as possible。 It's。 impossible to not break the C API。 There are some guarantees the GIL gives you that I cannot。 guarantee anymore。 But with as little as breakage as possible。
 
- where I explained the GIL itself and then last year's talk where I kind of got started。 the Golek to me removing， oops， typo， removing Python's GIL。 So the goal of the Golek to me。
+ And I want to run it faster than CPython， does with a GIL by wall time。 So this is if you had a stopwatch and you started your program running。 when it finishes and you hit it again， if the program ran faster then I will declare the Golek。 to me a success， which it has never done。 The approach that I'm taking， and again this was most。
 
- the Golek to me， I want to run existing multi-threaded Python programs。 So a Python program you could， write today using the threading module。
+ of the talk last year， Python uses reference counting for tracking the lifetimes of objects。 And I switched that to atomic， that's something that your Intel CPU does for you， where it will。 increment or decrement a number stored in memory in an atomic way such that there are no race。 conditions。 You're guaranteed that after you're done the number has been incremented by one。 And。
 
- I want to run it on multiple cores simultaneously。 I want to， run it with as little。 I want to implement this with as little C API breakage as possible。 It's。
+ it was done in a safe manner。 I added locks to all the internal data structures inside of Python。 objects that are mutable， like Dix and lists， so that those operations are safe。 If you append to。 a list or you add a set an item on a dict that has to be an atomic operation， it has to be safe。 And so those items， those objects lock themselves internally。 I also added a bunch of locks around。
 
- impossible to not break the C API。 There are some guarantees the GIL gives you that I cannot。 guarantee anymore。 But with as little as breakage as possible。
+ a bunch of internal data structures that are used inside of C Python， like free state。 But。 there's two in particular I want to call out。 Ob malloc， which is what we call the small block。 allocator。 This is used for memory allocation for small objects， which is like under 256 bytes or。 something。 I don't remember what the cutoff point is。 But this is used for most of the objects that。
 
- And I want to run it faster than CPython， does with a GIL by wall time。 So this is if you had a stopwatch and you started your program running。
+ are allocated inside of C Python。 And this is very， very finely tuned and it's super fast。 And。 C Python relies on it being fast。 And adding， locking to that in order to make it safe has。 slowed it down a great deal。 Also， there are a bunch of free lists inside of C Python。 It's very。 handy if you're using a bunch of， say， integers or frame objects。 If you allocate a fresh one every。
 
- when it finishes and you hit it again， if the program ran faster then I will declare the Golek。 to me a success， which it has never done。 The approach that I'm taking， and again this was most。
+ time， that's a little slower than just say， oh， the last one that I use， I'm going to put it on the。 list and then reuse it next time I need to free a frame object or an integer or something。 So there。 are a bunch of free lists internally of Python objects that get reused constantly。 And I， of course。 had to put locks around those data structures or make them per thread。 I also disabled the garbage。
 
- of the talk last year， Python uses reference counting for tracking the lifetimes of objects。 And I switched that to atomic， that's something that your Intel CPU does for you， where it will。
+ collector entirely。 I'm just not ready to deal with the garbage collection under the， galectomy。 There's a lot of research。 There are absolutely thread safe， multi-threaded friendly。 garbage collecting algorithms。 That's going to be a lot of work。 And that's not the thing that。 interests me。 What interests me is getting Python to be fast enough that this is useful for somebody。
 
- increment or decrement a number stored in memory in an atomic way such that there are no race。 conditions。 You're guaranteed that after you're done the number has been incremented by one。 And。
+ ever。 So my general approach is I got it working and now I figure out what the slowest thing is。 And I run it on a profiler or I come up with pod experiments and I experiment and I try something。 and I see if I can make it go faster。 If I make it go faster， then I keep it。 If it doesn't go faster， then I don't throw it away。
 
- it was done in a safe manner。 I added locks to all the internal data structures inside of Python。 objects that are mutable， like Dix and lists， so that those operations are safe。 If you append to。
+ I may put it on the back burner and try it again later because sometimes。 you turn a corner and now this technology is going to work again。 Just to give you an idea of how。 crappy this project is， my official benchmark that this is literally all the code I ever run under。 the galectomy is a really bad Fibonacci number generator。 It's a recursive Fibonacci。 So this is。
 
- a list or you add a set an item on a dict that has to be an atomic operation， it has to be safe。 And so those items， those objects lock themselves internally。 I also added a bunch of locks around。
+ exercising an if statement。 It's exercising some math。 It's exercising recursive function calls and。 of course bytecode and a bunch of internal stuff inside of the Python engine。 But this is all I。 ever run。 So I'm running on this on multiple cores simultaneously inside of C Python。 So an overview of what's happened since last year when I gave the galectomy talk。
 
- a bunch of internal data structures that are used inside of C Python， like free state。 But。 there's two in particular I want to call out。 Ob malloc， which is what we call the small block。
+ we start with what， I'm going to call， I'm going to call last June's version of the galectomy。 the atomic version for， using atomic hearing redecker。 I switched to something called buffered reference counts， which was done by about October。 And then I did a bunch of work on OpMALIC and that was done in， about April。
 
- allocator。 This is used for memory allocation for small objects， which is like under 256 bytes or。 something。 I don't remember what the cutoff point is。 But this is used for most of the objects that。
+ And then just this month I did some work that I'm calling no TLS。 TLS， when I say TLS。 what I mean is thread local storage。 This is data that you can store per thread so that each thread。 has its own version of something。 You need that in order to， you can store something there and no。 other thread is going to examine it and so you don't have to lock it in order to talk to it。
 
- are allocated inside of C Python。 And this is very， very finely tuned and it's super fast。 And。 C Python relies on it being fast。 And adding， locking to that in order to make it safe has。
+ So I'm going to go through each of these items and basically what it is and I'll show you how。 much it got faster。 But I want to talk for just a moment about how benchmarking is impossible on。 modern computers。 As Victor talked about in his talk this morning， modern CPUs， like an Intel CPU。 like a Xeon， has a speed step technology where it's constantly adjusting the run， the speed of the。
 
- slowed it down a great deal。 Also， there are a bunch of free lists inside of C Python。 It's very。 handy if you're using a bunch of， say， integers or frame objects。 If you allocate a fresh one every。
+ cores inside of your CPU。 And so this， I have a computer that literally has 56 cores。 It's an。 enormous server。 And this is some of the cores at a particular moment in time how fast they're running。 So you can see I was running a benchmark at the time。 So the ones in the lower right of the fastest。 ones， they're running at 3，100 megahertz。 The slowest ones are running at 1，200 megahertz。
 
- time， that's a little slower than just say， oh， the last one that I use， I'm going to put it on the。 list and then reuse it next time I need to free a frame object or an integer or something。 So there。
+ You really don't know from moment to moment how fast your CPU core is running。 And so it makes。 it almost impossible to do meaningful benchmarks in any meaningful way。 So this is just to give you。 an idea。 Like already my benchmarking is crappy。 They're even crappier because of this。 I haven't。 figured this one out yet。 Victor says， oh yeah， there's a way you can turn it on for Linux。 We'll。
 
- are a bunch of free lists internally of Python objects that get reused constantly。 And I， of course。 had to put locks around those data structures or make them per thread。 I also disabled the garbage。
+ figure it out。 But that's just a proviso to give you the sense of let's look at the benchmarks from。 a sort of a 10，000 foot view。 Let's not get concerned about like 5% of this way or another。 So this is a graph of the speed of the galectomy versus stock C Python。 And again， this is。 I'm talking about different errors。 So I'm going to have update the graph every time I do。
 
- collector entirely。 I'm just not ready to deal with the garbage collection under the， galectomy。 There's a lot of research。 There are absolutely thread safe， multi-threaded friendly。
+ a new thing。 So the red line at the bottom is stock C Python， which was the base revision that。 I started the galectomy against， which was last February。 It was trunk。 So it's what became 3。6。 But， there was a lot of work put in the 3。6 after I branched。 And then the blue line is the galectomy。 The bottom。
 
- garbage collecting algorithms。 That's going to be a lot of work。 And that's not the thing that。 interests me。 What interests me is getting Python to be fast enough that this is useful for somebody。
+ the x-axis is the number of cores I'm using because it's the number of threads that， I'm running。 So C Python， of course， is only， is running multiple threads， but it's only ever。 using one core at the time。 I really should level that threads， not cores。 And then the y-axis， of。 course， is the number of seconds that it took。 So just to drive home， how bad this is。
 
- ever。 So my general approach is I got it working and now I figure out what the slowest thing is。 And I run it on a profiler or I come up with pod experiments and I experiment and I try something。
+ on seven cores， C Python runs in 4。4 seconds。 And the galectomy is running in 83。0 seconds。 It is 18。9 times slower。 As an aside， this is why I got to say I haven't been terribly gracious。 Like a lot of people like， to talk to me and they say， well。 have you heard about this super fast locking mechanism？ That's not。
 
- and I see if I can make it go faster。 If I make it go faster， then I keep it。 If it doesn't go faster， then I don't throw it away。
+ where the war is going to be won。 The difference between 19 times slower is not， oh， you should use。 a slightly faster locking mechanism。 There are major battles to be won here。 Once I get it down。 to the point where it's kind of within shooting range of C Python， then I might be interested in。 more efficient locking mechanism。 Right now， there are more fundamental structural problems inside。
 
- I may put it on the back burner and try it again later because sometimes。 you turn a corner and now this technology is going to work again。 Just to give you an idea of how。
+ the galectomy， enormous nails that need to be hammered down。 And that's where my head is at。 So。 unless you're spending time doing analysis on the galectomy and saying， I found a super slow thing。 did you know about this， Larry， here's a way that you can make it faster。 That would be super。 interesting。 Oh， this is the way that Grand Central does logging。 Not so interesting。
 
- crappy this project is， my official benchmark that this is literally all the code I ever run under。 the galectomy is a really bad Fibonacci number generator。 It's a recursive Fibonacci。 So this is。
+ So let's start with where we were in last June。 Like I mentioned， C Python uses。 incorrect and decker for reference counting。 And I was using atomic anchor and decker just to get。 the galectomy working。 But this was 30% slower off the top， just using two threads。 And they get。 slower and slower。 Each thread that you add is more than is more overhead than the last。 I think。
 
- exercising an if statement。 It's exercising some math。 It's exercising recursive function calls and。 of course bytecode and a bunch of internal stuff inside of the Python engine。 But this is all I。
+ what's going on here， and I don't know for certain， but what I believe is going on here is that the。 cores need to talk to each other。 There's an internal bus that they use to tell each other， "Hey。 I'm doing an atomic increment on this thing。 You need to not look at it right now。"。 There's some internal bus that they're using to communicate with each other。 And the more。
 
- ever run。 So I'm running on this on multiple cores simultaneously inside of C Python。 So an overview of what's happened since last year when I gave the galectomy talk。
-
- we start with what， I'm going to call， I'm going to call last June's version of the galectomy。 the atomic version for， using atomic hearing redecker。
-
- I switched to something called buffered reference counts， which was done by about October。 And then I did a bunch of work on OpMALIC and that was done in， about April。
-
- And then just this month I did some work that I'm calling no TLS。 TLS， when I say TLS。 what I mean is thread local storage。 This is data that you can store per thread so that each thread。
-
- has its own version of something。 You need that in order to， you can store something there and no。 other thread is going to examine it and so you don't have to lock it in order to talk to it。
-
- So I'm going to go through each of these items and basically what it is and I'll show you how。 much it got faster。 But I want to talk for just a moment about how benchmarking is impossible on。
-
- modern computers。 As Victor talked about in his talk this morning， modern CPUs， like an Intel CPU。 like a Xeon， has a speed step technology where it's constantly adjusting the run， the speed of the。
-
- cores inside of your CPU。 And so this， I have a computer that literally has 56 cores。 It's an。 enormous server。 And this is some of the cores at a particular moment in time how fast they're running。
-
- So you can see I was running a benchmark at the time。 So the ones in the lower right of the fastest。 ones， they're running at 3，100 megahertz。 The slowest ones are running at 1，200 megahertz。
-
- You really don't know from moment to moment how fast your CPU core is running。 And so it makes。 it almost impossible to do meaningful benchmarks in any meaningful way。 So this is just to give you。
-
- an idea。 Like already my benchmarking is crappy。 They're even crappier because of this。 I haven't。 figured this one out yet。 Victor says， oh yeah， there's a way you can turn it on for Linux。 We'll。
-
- figure it out。 But that's just a proviso to give you the sense of let's look at the benchmarks from。 a sort of a 10，000 foot view。 Let's not get concerned about like 5% of this way or another。
-
- So this is a graph of the speed of the galectomy versus stock C Python。 And again， this is。 I'm talking about different errors。 So I'm going to have update the graph every time I do。
-
- a new thing。 So the red line at the bottom is stock C Python， which was the base revision that。 I started the galectomy against， which was last February。 It was trunk。 So it's what became 3。6。
-
- But， there was a lot of work put in the 3。6 after I branched。 And then the blue line is the galectomy。 The bottom。
-
- the x-axis is the number of cores I'm using because it's the number of threads that， I'm running。 So C Python， of course， is only， is running multiple threads， but it's only ever。
-
- using one core at the time。 I really should level that threads， not cores。 And then the y-axis， of。 course， is the number of seconds that it took。 So just to drive home， how bad this is。
-
- on seven cores， C Python runs in 4。4 seconds。 And the galectomy is running in 83。0 seconds。 It is 18。9 times slower。 As an aside， this is why I got to say I haven't been terribly gracious。
-
- Like a lot of people like， to talk to me and they say， well。 have you heard about this super fast locking mechanism？ That's not。
-
- where the war is going to be won。 The difference between 19 times slower is not， oh， you should use。 a slightly faster locking mechanism。 There are major battles to be won here。 Once I get it down。
-
- to the point where it's kind of within shooting range of C Python， then I might be interested in。 more efficient locking mechanism。 Right now， there are more fundamental structural problems inside。
-
- the galectomy， enormous nails that need to be hammered down。 And that's where my head is at。 So。 unless you're spending time doing analysis on the galectomy and saying， I found a super slow thing。
-
- did you know about this， Larry， here's a way that you can make it faster。 That would be super。 interesting。 Oh， this is the way that Grand Central does logging。 Not so interesting。
-
- So let's start with where we were in last June。 Like I mentioned， C Python uses。 incorrect and decker for reference counting。 And I was using atomic anchor and decker just to get。
-
- the galectomy working。 But this was 30% slower off the top， just using two threads。 And they get。 slower and slower。 Each thread that you add is more than is more overhead than the last。 I think。
-
- what's going on here， and I don't know for certain， but what I believe is going on here is that the。 cores need to talk to each other。 There's an internal bus that they use to tell each other， "Hey。
-
- I'm doing an atomic increment on this thing。 You need to not look at it right now。"。 There's some internal bus that they're using to communicate with each other。 And the more。
-
- auto -- excuse me， the more atomic anchor and decker that I'm doing， the more。 traffic there is on that bus until we're starting to saturate the bus and people are having to wait。
-
- So getting that work not to be atomic would be a major win。 It turns out -- so first of all。
+ auto -- excuse me， the more atomic anchor and decker that I'm doing， the more。 traffic there is on that bus until we're starting to saturate the bus and people are having to wait。 So getting that work not to be atomic would be a major win。 It turns out -- so first of all。
 ![](img/8819b309a1dc896d5dfc43ab416628b0_9.png)
 
- I spent a lot of time thinking about this problem because I knew this was my hardest problem to solve。 I actually came up with my own technique to solve it， and then I felt terrible because I was like。
+ I spent a lot of time thinking about this problem because I knew this was my hardest problem to solve。 I actually came up with my own technique to solve it， and then I felt terrible because I was like。 "Nobody invents anything new in computer science。 Everything's been done。 You don't want to invent。 something new。 If you do that， you've probably done something wrong because some -- all the good。
 
- "Nobody invents anything new in computer science。 Everything's been done。 You don't want to invent。 something new。 If you do that， you've probably done something wrong because some -- all the good。
+ ideas have already been taken， particularly in multi-core， multi-threading。 It's all the work。 was done only in years ago。 So it turns out there's this book called "The Garbage Collection Handbook。"， the second edition， just updated in the last couple of years。 And they have -- it's mostly about garbage， collection。
 
- ideas have already been taken， particularly in multi-core， multi-threading。 It's all the work。 was done only in years ago。 So it turns out there's this book called "The Garbage Collection Handbook。
+ What technically is called tracing garbage collection， but reference counting also。 counts as garbage collection。 So they have a chapter in the beginning about reference counting。 and then it turns out they have a chapter at the end about reference counting in multi-threaded。 programs。 And there are two things in this rather slim chapter。 One of them was exactly the thing。
 
-"， the second edition， just updated in the last couple of years。 And they have -- it's mostly about garbage， collection。
-
- What technically is called tracing garbage collection， but reference counting also。 counts as garbage collection。 So they have a chapter in the beginning about reference counting。
-
- and then it turns out they have a chapter at the end about reference counting in multi-threaded。 programs。 And there are two things in this rather slim chapter。 One of them was exactly the thing。
-
- that I invented on my own。 The other one is something that's very complicated that I don't think。 we can use called the recycler。 To be honest， I don't understand how the recycler works internally。
-
- I got to sit down and just read this book， but I don't think we can use it。 I think it requires。 like compile time support。 But let's talk about this concept， what the technique is called。
+ that I invented on my own。 The other one is something that's very complicated that I don't think。 we can use called the recycler。 To be honest， I don't understand how the recycler works internally。 I got to sit down and just read this book， but I don't think we can use it。 I think it requires。 like compile time support。 But let's talk about this concept， what the technique is called。
 
  buffered reference counting。 So let's examine our problem。 We have this object O at the top。 We have。
-
 ![](img/8819b309a1dc896d5dfc43ab416628b0_11.png)
 
- three threads that want to talk to object O， and every time they want to talk to it， they want to。 increment the reference count。 And when they're done talking to it， they want to decrement the。
+ three threads that want to talk to object O， and every time they want to talk to it， they want to。 increment the reference count。 And when they're done talking to it， they want to decrement the。 reference count。 So they're all trying to talk to the same area of memory， and that's why I have to。 use the atomic anchor and decker。 We'd like to make it cheaper。 The way you make it cheaper is。
 
- reference count。 So they're all trying to talk to the same area of memory， and that's why I have to。 use the atomic anchor and decker。 We'd like to make it cheaper。 The way you make it cheaper is。
+ let's have only one person talking to the reference count at a time ever in a guaranteed way。 and then， he doesn't have to use the atomic anchor and decker。 How do you do that？ Well。 let's add a separate， thread。 We're going to call the reference count committing thread。 We're going to make a big log。 We have our hands to say this is the memory。
 
- let's have only one person talking to the reference count at a time ever in a guaranteed way。 and then， he doesn't have to use the atomic anchor and decker。 How do you do that？ Well。
+ This is the biggest we'll ever need it to be。 It's a reference count log。 It's like a transaction log for reference count changes。 So now the three threads talk to that instead。 Every time they want to increment the reference。 count on O， they write down O at one with the reference count。 Every time they want to decrement。
 
- let's add a separate， thread。 We're going to call the reference count committing thread。 We're going to make a big log。 We have our hands to say this is the memory。
+ they say， oh， minus one with the reference count。 And then the separate thread sits there spinning。 watching the log， and whenever there's work to do， it goes and doesn't。 Since the reference count。 committing thread is the only thread that ever touches reference counts， he doesn't have to use。 the atomic anchor and decker。 He can just modify the memory directly。 As a matter of fact。
 
- This is the biggest we'll ever need it to be。 It's a reference count log。 It's like a transaction log for reference count changes。
+ it's a good， idea if he's the only thread who ever looks at reference counts。 Because one of the problems of， this technique is going to be now reference counts don't happen in real time。 Now reference counts， you don't know whether they're accurate or not。 There could be reference count changes waiting， in the log that haven't been committed yet。
 
- So now the three threads talk to that instead。 Every time they want to increment the reference。 count on O， they write down O at one with the reference count。 Every time they want to decrement。
+ So this is going to cause some problems。 I'll talk， about it in a minute。 But let's move on。 This solves the problem of atomic anchor and decker。 But all we've really done is change it so that now we have contention around this。 ref count log where that has to be locked and unlocked per thread。 But we can solve that。
 
- they say， oh， minus one with the reference count。 And then the separate thread sits there spinning。 watching the log， and whenever there's work to do， it goes and doesn't。 Since the reference count。
+ Let's have one ref count log per thread。 So now each thread writes this reference count。 log changes to its own local log。 Now there's no content in over the logs。 They just need a lock a little bit between the commit log， the committing thread and the。 individual threads。 But you just take the buffer and pass it off。 That's no big deal。
 
- committing thread is the only thread that ever touches reference counts， he doesn't have to use。 the atomic anchor and decker。 He can just modify the memory directly。 As a matter of fact。
+ This solves all the contention problems。 But now we have an ordering problem。 So let's walk through that。 Let's say that we have three threads。 We really only need two。 threads for this example。 And let's say for the sake of argument we have a list and that's capital。 L。 And it has an object inside of it。 I'm gonna call it O。 It's unnamed in this example。 And。
 
- it's a good， idea if he's the only thread who ever looks at reference counts。 Because one of the problems of， this technique is going to be now reference counts don't happen in real time。
+ list L has the only reference to object O。 That's the only reference that exists。 So O's reference。 count is one。 And all of those changes happened a million years ago。 It's all the dust is all。 settled。 So it's nice and stable right now。 So currently O has a reference count of one。 And that reference is being held by L。 Thread one comes along and says for X and L， print X。
 
- Now reference counts， you don't know whether they're accurate or not。 There could be reference count changes waiting， in the log that haven't been committed yet。
+ that does an increment and a decrement on object O。 And then later thread zero comes along and says。 L got clear。 Blows away everything inside of L。 That says O minus one。 That drops the reference to L， to object O。 So that's gonna kind of look like this。 In the reference count log for thread one， we're gonna have an O plus one， O minus one。
 
- So this is going to cause some problems。 I'll talk， about it in a minute。 But let's move on。 This solves the problem of atomic anchor and decker。
+ And then later in reference count log for thread zero， we're gonna have an O minus one。 The problem is what if we commit the reference count log for zero。 before we commit the reference count log for one。 We're gonna drop the last reference to object O。 The object will be destroyed。 And then we're gonna later commit the reference count changes in thread。
 
- But all we've really done is change it so that now we have contention around this。 ref count log where that has to be locked and unlocked per thread。 But we can solve that。
+ one。 And we're gonna say O plus one。 And now your program is no longer correct because you're touching。 an object that has been destroyed。 Now you might say， well just do those in the opposite order。 The first thing I would say to that is how do you know you were supposed to do them in the。 opposite order？ And the second thing I would say is what if I do this to you？
 
- Let's have one ref count log per thread。 So now each thread writes this reference count。 log changes to its own local log。 Now there's no content in over the logs。
+ Now we have two lists L， L and L2。 We have two objects， O and O2。 We iterate over the the lists in one thread each， and then we clear the other list。 There is no order that you can do process these logs in， where your program will be correct。 Now your program is inevitably incorrect。 So how do we solve that problem？
 
- They just need a lock a little bit between the commit log， the committing thread and the。 individual threads。 But you just take the buffer and pass it off。 That's no big deal。
+ One way might be to write down a timestamp every time we write down。 a reference count change in the log。 That's expensive。 And it may not even be correct。 There's been bugs in the past with what I would use the RDT instruction on Intel， x86。 where that gives you a timestamp counter that's internal to the CPU。 That's very high precision。
 
- This solves all the contention problems。 But now we have an ordering problem。 So let's walk through that。 Let's say that we have three threads。 We really only need two。
+ which is what I would need for this。 But if you have actually two physical CPUs in your computer。 like I have， sometimes they can drift so that the timestamp counters will be different。 And that would be problematic。 That would mean we would commit these things out of order。 So it。 would also be expensive and unsafe。 We can solve this problem， but it takes a stepping back and。
 
- threads for this example。 And let's say for the sake of argument we have a list and that's capital。 L。 And it has an object inside of it。 I'm gonna call it O。 It's unnamed in this example。 And。
+ reexamining the problem itself。 Because it turns out we don't actually need super strong ordering。 of a reference count changes。 We can do something much weaker that is much cheaper and we can。 achieve that very easily。 So let's start with this observation。 Let's talk about two objects。 excuse me。 Let me get this right。 Let's talk about two reference count change events。 These are two。
 
- list L has the only reference to object O。 That's the only reference that exists。 So O's reference。 count is one。 And all of those changes happened a million years ago。 It's all the dust is all。
+ events that we're going to write to the log。 I'm going to talk about reference count change one and。 two。 And one might be an incurrer or a decker。 And two might be an incurrer or a decker。 And the。 question is， can I swap them in time？ Is that harmless？ And it turns out three times out of four。 the answer is yes。 If you have an anchor followed by an anchor， you can swap those that's harmless。
 
- settled。 So it's nice and stable right now。 So currently O has a reference count of one。 And that reference is being held by L。 Thread one comes along and says for X and L， print X。
+ If you have a decker followed by a decker， you can swap those that's harmless。 If you have a decker。 followed by an anchor， you can swap that that's harmless。 Because they can't be talking about the。 same object or if they are， the object is obviously still alive。 Because we did a decker。 we assumed， the program is safe。 If we did a decker and we did an anchor on the same object。
 
- that does an increment and a decrement on object O。 And then later thread zero comes along and says。 L got clear。 Blows away everything inside of L。 That says O minus one。
+ I assume that that， was safe because the object is still alive。 The only one you have to make sure that you keep in the。 same order is if you have an anchor followed by a decker。 If those are talking about the same。 object and there was only one reference to the object and you did that anchor， that keeps it alive。
 
- That drops the reference to L， to object O。 So that's gonna kind of look like this。 In the reference count log for thread one， we're gonna have an O plus one， O minus one。
+ when you do a decker immediately afterwards。 You cannot swap those。 But all this is telling us is。 we need to make sure that any decker that happens after an anchor in time has to happen afterwards。 when we commit it。 And that's a lot cheaper to achieve。 So here's what we do。 We have two separate。 logs per thread。 One for anchors。 One for deckers。
 
- And then later in reference count log for thread zero， we're gonna have an O minus one。 The problem is what if we commit the reference count log for zero。
+ And all we need to do is queue them in such a way， that any time we process a decker log。 we ensure that all the anchors that could have possibly。 happened before at the time are committed first。 I got this working and then I iterated on the。 algorithm and now I have a very safe queuing algorithm that is in constant time for everything。
 
- before we commit the reference count log for one。 We're gonna drop the last reference to object O。 The object will be destroyed。 And then we're gonna later commit the reference count changes in thread。
+ So this is working really well。 As an aside， right here， this was an indispensable tool in working。 on the Galactomy。 This is called UndoDB。 It is a reversible debugger where you can， it behaves。 exactly like GDB。 And what you do is you set a break point and you examine data and you're like。 how the hell did we get in this state？ And so you set a memory watch point and then you run your。
 
- one。 And we're gonna say O plus one。 And now your program is no longer correct because you're touching。 an object that has been destroyed。 Now you might say， well just do those in the opposite order。
+ program backwards and you see when that triggers。 It's like， oh， that memory changed in this way。 Well， how did that get there？ And then you set another break point or a memory watch point or。 something and you run the program backwards some more。 Indispensable for solving these problems。 Because you can get in these situations where it's like， I have no idea how the program got in this。
 
- The first thing I would say to that is how do you know you were supposed to do them in the。 opposite order？ And the second thing I would say is what if I do this to you？
+ state。 Now you can run it backwards and find out。 So I've been。 I used UndoDB a lot in the development， of the reference count manager。 But let's talk about how。 what has happened as a result。 So this， is the old macro in C for performing an ink graph。 This is what adds one to the reference count。 It's very simple and straightforward。
 
- Now we have two lists L， L and L2。 We have two objects， O and O2。 We iterate over the the lists in one thread each， and then we clear the other list。
+ We take the object， we find the reference count inside and we add， one。 It's more complicated now。 So the first thing we do， look at the bottom， I say， PyInkRef is InkRef1。 InkRef1。 what it does is it goes to thread local storage and pulls out this ref log object。 which is where we're storing our reference counts per thread。
 
- There is no order that you can do process these logs in， where your program will be correct。 Now your program is inevitably incorrect。 So how do we solve that problem？
+ And it does an InkRef2 on the object now。 So InkRef2 is implemented like this， where we say。 is there space in the ref log right now for me， to write another pointer？ Oh， there is。 Then I'm going to go ahead and write one。 Oh， there isn't。 Then I need to rotate the logs out。 get fresh， Inkre， and Decker buffers， and now write the log。 And then I have three， which is unsafe。
 
- One way might be to write down a timestamp every time we write down。 a reference count change in the log。 That's expensive。 And it may not even be correct。
+ which just writes the thing directly。 And the reason that I。 have three of these is because you can use， they get progressively faster。 This is the really slow。 version。 But I knew that it was going to be slow。 And so I have this macro。 It says PyRef cache。 You put that at the top of a function， and now it's cached， I've cached the ref log that's for your。
 
- There's been bugs in the past with what I would use the RDT instruction on Intel， x86。 where that gives you a timestamp counter that's internal to the CPU。 That's very high precision。
+ thread as a stack variable。 And now you can just refer to that all the time。 So now you can change。 all your PyInkRef and PyDeckRefs into PyInkRef2 and PyDeckRef2， and they're just faster for free。 If you want to work a little harder， then you can sort of pre-insure that there's room in the ref log。 for all of the thing you're about to do。 If you're about to do five decrefs in a row。
 
- which is what I would need for this。 But if you have actually two physical CPUs in your computer。 like I have， sometimes they can drift so that the timestamp counters will be different。
+ then you don't have to check each time as their space。 You can say， is there space for five。 to decrefs？ And if there is， then we just go。 And if there isn't， then we rotate right then。 That's a little troublesome just because you can't， you have to be right there。 It can't。 you can't recurse into the Python interpreter because that's going to do its own in-graphs and。
 
- And that would be problematic。 That would mean we would commit these things out of order。 So it。 would also be expensive and unsafe。 We can solve this problem， but it takes a stepping back and。
-
- reexamining the problem itself。 Because it turns out we don't actually need super strong ordering。 of a reference count changes。 We can do something much weaker that is much cheaper and we can。
-
- achieve that very easily。 So let's start with this observation。 Let's talk about two objects。 excuse me。 Let me get this right。 Let's talk about two reference count change events。 These are two。
-
- events that we're going to write to the log。 I'm going to talk about reference count change one and。 two。 And one might be an incurrer or a decker。 And two might be an incurrer or a decker。 And the。
-
- question is， can I swap them in time？ Is that harmless？ And it turns out three times out of four。 the answer is yes。 If you have an anchor followed by an anchor， you can swap those that's harmless。
-
- If you have a decker followed by a decker， you can swap those that's harmless。 If you have a decker。 followed by an anchor， you can swap that that's harmless。 Because they can't be talking about the。
-
- same object or if they are， the object is obviously still alive。 Because we did a decker。 we assumed， the program is safe。 If we did a decker and we did an anchor on the same object。
-
- I assume that that， was safe because the object is still alive。 The only one you have to make sure that you keep in the。
-
- same order is if you have an anchor followed by a decker。 If those are talking about the same。 object and there was only one reference to the object and you did that anchor， that keeps it alive。
-
- when you do a decker immediately afterwards。 You cannot swap those。 But all this is telling us is。 we need to make sure that any decker that happens after an anchor in time has to happen afterwards。
-
- when we commit it。 And that's a lot cheaper to achieve。 So here's what we do。 We have two separate。 logs per thread。 One for anchors。 One for deckers。
-
- And all we need to do is queue them in such a way， that any time we process a decker log。 we ensure that all the anchors that could have possibly。
-
- happened before at the time are committed first。 I got this working and then I iterated on the。 algorithm and now I have a very safe queuing algorithm that is in constant time for everything。
-
- So this is working really well。 As an aside， right here， this was an indispensable tool in working。 on the Galactomy。 This is called UndoDB。 It is a reversible debugger where you can， it behaves。
-
- exactly like GDB。 And what you do is you set a break point and you examine data and you're like。 how the hell did we get in this state？ And so you set a memory watch point and then you run your。
-
- program backwards and you see when that triggers。 It's like， oh， that memory changed in this way。 Well， how did that get there？ And then you set another break point or a memory watch point or。
-
- something and you run the program backwards some more。 Indispensable for solving these problems。 Because you can get in these situations where it's like， I have no idea how the program got in this。
-
- state。 Now you can run it backwards and find out。 So I've been。 I used UndoDB a lot in the development， of the reference count manager。 But let's talk about how。
-
- what has happened as a result。 So this， is the old macro in C for performing an ink graph。 This is what adds one to the reference count。 It's very simple and straightforward。
-
- We take the object， we find the reference count inside and we add， one。 It's more complicated now。 So the first thing we do， look at the bottom， I say， PyInkRef is InkRef1。 InkRef1。
-
- what it does is it goes to thread local storage and pulls out this ref log object。 which is where we're storing our reference counts per thread。
-
- And it does an InkRef2 on the object now。 So InkRef2 is implemented like this， where we say。 is there space in the ref log right now for me， to write another pointer？ Oh， there is。
-
- Then I'm going to go ahead and write one。 Oh， there isn't。 Then I need to rotate the logs out。 get fresh， Inkre， and Decker buffers， and now write the log。 And then I have three， which is unsafe。
-
- which just writes the thing directly。 And the reason that I。 have three of these is because you can use， they get progressively faster。 This is the really slow。
-
- version。 But I knew that it was going to be slow。 And so I have this macro。 It says PyRef cache。 You put that at the top of a function， and now it's cached， I've cached the ref log that's for your。
-
- thread as a stack variable。 And now you can just refer to that all the time。 So now you can change。 all your PyInkRef and PyDeckRefs into PyInkRef2 and PyDeckRef2， and they're just faster for free。
-
- If you want to work a little harder， then you can sort of pre-insure that there's room in the ref log。 for all of the thing you're about to do。 If you're about to do five decrefs in a row。
-
- then you don't have to check each time as their space。 You can say， is there space for five。 to decrefs？ And if there is， then we just go。 And if there isn't， then we rotate right then。
-
- That's a little troublesome just because you can't， you have to be right there。 It can't。 you can't recurse into the Python interpreter because that's going to do its own in-graphs and。
-
- decrefs。 So you need to make sure that this is very tightly coupled， but you can occasionally。 use this PyInkRef and PyDeckRef3 by establishing that you're going to have room in the logs。
-
- This isn't actually， it looks like a lot of code is actually pretty fast。 It's really not a big deal。 Like these temporary rows go away。
+ decrefs。 So you need to make sure that this is very tightly coupled， but you can occasionally。 use this PyInkRef and PyDeckRef3 by establishing that you're going to have room in the logs。 This isn't actually， it looks like a lot of code is actually pretty fast。 It's really not a big deal。 Like these temporary rows go away。
 
  All the PyRef pad is really doing is doing a， do you referencing a pointer storing to it and incrementing？
 
- So the other thing that I， that this resulted in， the other problem that this caused。 apart from making in-graph and decref a lot more complicated， is that there are a couple of places。
+ So the other thing that I， that this resulted in， the other problem that this caused。 apart from making in-graph and decref a lot more complicated， is that there are a couple of places。 There's one place I know of for certain where you really need real time reference counts on an object。 And that is weak graphs。 The way that a weak ref is implemented， I'll remind you that you can。
 
- There's one place I know of for certain where you really need real time reference counts on an object。 And that is weak graphs。 The way that a weak ref is implemented， I'll remind you that you can。
+ have an object， let's say object A， and then you have a weak ref object， there's a separate object。 called， we're going to call that B， and B is a weak reference to A。 You can say， hey， B， give me a。 strong reference to A， it's like get weak reference on there， get ref。 And it goes and gives you one。 And the way this implemented inside of。
 
- have an object， let's say object A， and then you have a weak ref object， there's a separate object。 called， we're going to call that B， and B is a weak reference to A。 You can say， hey， B， give me a。
+ see Python is A knows that there are weak graphs pointing to it。 And when A is destroyed。 it calls all of its weak graphs and tells it， hey， A is being destroyed， you're not legal anymore。 And they say， okay， sorry。 But from a technical point of view， B has a pointer， to A。 but it does not have a reference to A。 It does not actually know at any particular time whether。
 
- strong reference to A， it's like get weak reference on there， get ref。 And it goes and gives you one。 And the way this implemented inside of。
+ or not A is alive。 It's relying on the fact that we're running in the gill and A is going to tell。 it， oh， I'm dead now， to be safe。 But under the collection， of course， we don't have the gill。 we don't have that safety。 And so I had no way， because of these buffer reference counts， I didn't。 know in real time whether or not an object was alive or not。 What I wound up solving this problem。
 
- see Python is A knows that there are weak graphs pointing to it。 And when A is destroyed。 it calls all of its weak graphs and tells it， hey， A is being destroyed， you're not legal anymore。
+ with was a secondary reference count that is only used for weak graphs in a couple of these other。 special examples， which is atomically modified。 It's actually not anchored in decor the way that。 it works is you read the value。 If it's negative one， the object is being destroyed and you're done。 If it's not negative one， add one to the value you got and do an atomic test， compare and swap。
 
- And they say， okay， sorry。 But from a technical point of view， B has a pointer， to A。 but it does not have a reference to A。 It does not actually know at any particular time whether。
+ If that succeeds， then you've kept the object alive and you have a reference and you're good。 If you get back a negative one， then you know that the object is being destroyed and you can't。 modify it anymore。 So that solved the problem for weak graphs。 I'm actually also using it for。 something called interned moral strings。 People have said， Larry， you're using too big a hammer。
 
- or not A is alive。 It's relying on the fact that we're running in the gill and A is going to tell。 it， oh， I'm dead now， to be safe。 But under the collection， of course， we don't have the gill。
+ here。 You can solve that in another way。 I'm using it right now。 I haven't worried about it。 because it's kind of a minor implementation detail。 It's not a performance hit thing。 But I got。 interned moral strings using the same technology。 I don't think I need to。 Finally， someone pointed。 out， again， I think it's the same guy actually， Mark Shannon pointed out， I have a problem with。
 
- we don't have that safety。 And so I had no way， because of these buffer reference counts， I didn't。 know in real time whether or not an object was alive or not。 What I wound up solving this problem。
+ resurrecting objects。 If you have a dunderdell method that takes self and writes it to an。 external variable that's doing an ink wrap on the object and that's going to keep the object alive。 Well， guess what？ I'm already -- I don't know that the object's being kept alive。 I don't have a real， time reference count。 I go ahead and delete it and now there are references to delete an object。
 
- with was a secondary reference count that is only used for weak graphs in a couple of these other。 special examples， which is atomically modified。 It's actually not anchored in decor the way that。
+ I have no idea how I'm going to solve that。 He says he has an idea。 I don't believe him。 Anyway。 my advice is don't resurrect objects inside of dunderdell。 That's never been a good。 idea in Python and now it's an even worser idea。 Actually， Jython and IronPython had to solve a。 lot of these problems themselves。 I can always talk to the IronPython and Jython guys and ask them。
 
- it works is you read the value。 If it's negative one， the object is being destroyed and you're done。 If it's not negative one， add one to the value you got and do an atomic test， compare and swap。
+ They said they have a solution that it's terrible， but it works。 So let's look at the graph。 This is what happened as a result of making the reference count manager。 Again。 we have the same two lines。 Red is always going to be Stocksy Python。 Blue is always going to。 be the atomic version as of June。 This new green line， that's what it was like as of October。
 
- If that succeeds， then you've kept the object alive and you have a reference and you're good。 If you get back a negative one， then you know that the object is being destroyed and you can't。
+ It's getting faster。 The next thing that seemed to be slow was the small block allocator。 what I'm going to call obmalic。 What I originally did was I had one big lock for just all of。 obmalic。 You grab that and allocate memory and drop it。 That was super hot right away。 Internally。 obmalic calls these memory classes。 It's a range of bytes that you want to allocate。
 
- modify it anymore。 So that solved the problem for weak graphs。 I'm actually also using it for。 something called interned moral strings。 People have said， Larry， you're using too big a hammer。
+ If you want to allocate zero bytes， that's just illegal。 It always gives you a pointer back to this。 valid。 One to eight bytes is a class and then nine to 16 bytes is a class and 17 to 24 bytes is a class。 So it thinks of those internally as being separate。 What I did is I added per class locking and that， made it faster， but it still wasn't fast enough。
 
- here。 You can solve that in another way。 I'm using it right now。 I haven't worried about it。 because it's kind of a minor implementation detail。 It's not a performance hit thing。 But I got。
+ So I added two stage per class locking。 There was， the fast lock。 which is for the super fast case of we have memory。 We just need to slice it off and， hand it back。 That's got its own super fast lock。 It's actually spin lock。 Then there's a slower。 heavier lock for I need to go and talk to an arena or I need to actually allocate memory or whatever。
 
- interned moral strings using the same technology。 I don't think I need to。 Finally， someone pointed。 out， again， I think it's the same guy actually， Mark Shannon pointed out， I have a problem with。
+ Anything that isn't the super fast thing allocates a second heavier lock。 which doesn't prevent other， threads from doing the faster thing if that actually happens to work for them at the time。 That sped things up。 I also added a per thread free list for generic allocated memory。 on this stored and thread local storage。 That sped things up again。 And finally， around this time。
 
- resurrecting objects。 If you have a dunderdell method that takes self and writes it to an。 external variable that's doing an ink wrap on the object and that's going to keep the object alive。
+ I also went through， I gathered a bunch of statistics when I'm doing。 debugging of the collect me and I turned that on and that slows things down immensely。 And I did a conscientious job of making sure that there was absolutely no overhead from。 statistics when statistics were turned off because I was pretty sloppy about it before。
 
- Well， guess what？ I'm already -- I don't know that the object's being kept alive。 I don't have a real， time reference count。 I go ahead and delete it and now there are references to delete an object。
+ So as a result， it definitely got faster。 The problem is it doesn't show up in the graph。 I don't know what happened here。 When I ran these benchmarks， you can tell this is janky。 you can also tell it's above the green line。 It really should be below。 I guarantee you。 I swear it was faster when I was done， but I don't have the data to show for it。 I'm sorry。
 
- I have no idea how I'm going to solve that。 He says he has an idea。 I don't believe him。 Anyway。 my advice is don't resurrect objects inside of dunderdell。 That's never been a good。
+ I don't know what I did。 But you're going to get used to it。 You're going to be staring at your。 own line。 So that's as of February， I think。 Yeah。 No， that's as of April of this year。 That's。 as far as I took a break for a couple of months。 I was just tired of working on it。 But I came back。 to it。 And the next thing that seemed to be slow was the physical act of pulling things out of。
 
- idea in Python and now it's an even worser idea。 Actually， Jython and IronPython had to solve a。 lot of these problems themselves。 I can always talk to the IronPython and Jython guys and ask them。
+ thread local storage。 So I'm going to show you a little bit of see Python internals here。 The function that actually runs bytecode is this one gigantic function called pi eval_eval_frame。exe。 That's the guy who literally runs bytecode。 So I needed to pull out my thread local storage。 variable in order to look at stuff inside of that。 So at the top of the function， I say。
 
- They said they have a solution that it's terrible， but it works。 So let's look at the graph。 This is what happened as a result of making the reference count manager。 Again。
+ pi thread state equals t state equals pi thread state yet。 That goes to thread local storage。 pulls it out， sticks it in a stack variable。 Then whenever you make a recursive function call。 it calls a function called call function。 Call function needed that t state so it pulled， it out。 And then that recursively calls another function called fast function。 Fast function needed。
 
- we have the same two lines。 Red is always going to be Stocksy Python。 Blue is always going to。 be the atomic version as of June。 This new green line， that's what it was like as of October。
+ that thread state thing。 And then that calls pi eval_frame。exe。 These three functions get called。 every time you make a function call in C Python。 And the Fibonacci benchmark is nothing but recursive。 So I'm making millions of recursive function call all over the place。 And every time I do it。 I'm looking in thread local storage three times。 So I was making 370 million calls to。
 
- It's getting faster。 The next thing that seemed to be slow was the small block allocator。 what I'm going to call obmalic。 What I originally did was I had one big lock for just all of。
+ pi thread get specific。 Which seemed to be at the top -- it wasn't dominating runtime， but it was。 an enormous piece of runtime。 And I wanted to get rid of that。 That's pretty straightforward。 actually。 All I did is I sort of added an external membrane。 I took all the existing functions and。 I added two to the end。 Again， the galactomy， we're not going to merge this。 We're going to do a。
 
- obmalic。 You grab that and allocate memory and drop it。 That was super hot right away。 Internally。 obmalic calls these memory classes。 It's a range of bytes that you want to allocate。
+ proper job if it makes it into C Python。 But just to get it going， I added two to the end of all。 these internal functions， these three function calls。 And I made the externally visible one。 if I'll frame EX， I made that so that it looks up the thread local storage thing and passes it in。 as a parameter。 And now pi eval_frame EX2 takes as a parameter。
 
- If you want to allocate zero bytes， that's just illegal。 It always gives you a pointer back to this。 valid。 One to eight bytes is a class and then nine to 16 bytes is a class and 17 to 24 bytes is a class。
+ Call function 2 takes as a parameter。 Fast function 2 takes as a parameter。 Now we only look at it once and we can do 8 million， recursive function calls。 So we're fine。 That sped things up again。 So this is where we are today。 This black line。 that's what I'm calling the no_tls line。 You'll notice that it is faster still than。
 
- So it thinks of those internally as being separate。 What I did is I added per class locking and that， made it faster， but it still wasn't fast enough。
-
- So I added two stage per class locking。 There was， the fast lock。 which is for the super fast case of we have memory。 We just need to slice it off and， hand it back。
-
- That's got its own super fast lock。 It's actually spin lock。 Then there's a slower。 heavier lock for I need to go and talk to an arena or I need to actually allocate memory or whatever。
-
- Anything that isn't the super fast thing allocates a second heavier lock。 which doesn't prevent other， threads from doing the faster thing if that actually happens to work for them at the time。
-
- That sped things up。 I also added a per thread free list for generic allocated memory。 on this stored and thread local storage。 That sped things up again。 And finally， around this time。
-
- I also went through， I gathered a bunch of statistics when I'm doing。 debugging of the collect me and I turned that on and that slows things down immensely。
-
- And I did a conscientious job of making sure that there was absolutely no overhead from。 statistics when statistics were turned off because I was pretty sloppy about it before。
-
- So as a result， it definitely got faster。 The problem is it doesn't show up in the graph。 I don't know what happened here。 When I ran these benchmarks， you can tell this is janky。
-
- you can also tell it's above the green line。 It really should be below。 I guarantee you。 I swear it was faster when I was done， but I don't have the data to show for it。 I'm sorry。
-
- I don't know what I did。 But you're going to get used to it。 You're going to be staring at your。 own line。 So that's as of February， I think。 Yeah。 No， that's as of April of this year。 That's。
-
- as far as I took a break for a couple of months。 I was just tired of working on it。 But I came back。 to it。 And the next thing that seemed to be slow was the physical act of pulling things out of。
-
- thread local storage。 So I'm going to show you a little bit of see Python internals here。 The function that actually runs bytecode is this one gigantic function called pi eval_eval_frame。
-
-exe。 That's the guy who literally runs bytecode。 So I needed to pull out my thread local storage。 variable in order to look at stuff inside of that。 So at the top of the function， I say。
-
- pi thread state equals t state equals pi thread state yet。 That goes to thread local storage。 pulls it out， sticks it in a stack variable。 Then whenever you make a recursive function call。
-
- it calls a function called call function。 Call function needed that t state so it pulled， it out。 And then that recursively calls another function called fast function。 Fast function needed。
-
- that thread state thing。 And then that calls pi eval_frame。exe。 These three functions get called。 every time you make a function call in C Python。 And the Fibonacci benchmark is nothing but recursive。
-
- So I'm making millions of recursive function call all over the place。 And every time I do it。 I'm looking in thread local storage three times。 So I was making 370 million calls to。
-
- pi thread get specific。 Which seemed to be at the top -- it wasn't dominating runtime， but it was。 an enormous piece of runtime。 And I wanted to get rid of that。 That's pretty straightforward。
-
- actually。 All I did is I sort of added an external membrane。 I took all the existing functions and。 I added two to the end。 Again， the galactomy， we're not going to merge this。 We're going to do a。
-
- proper job if it makes it into C Python。 But just to get it going， I added two to the end of all。 these internal functions， these three function calls。 And I made the externally visible one。
-
- if I'll frame EX， I made that so that it looks up the thread local storage thing and passes it in。 as a parameter。 And now pi eval_frame EX2 takes as a parameter。
-
- Call function 2 takes as a parameter。 Fast function 2 takes as a parameter。 Now we only look at it once and we can do 8 million， recursive function calls。 So we're fine。
-
- That sped things up again。 So this is where we are today。 This black line。 that's what I'm calling the no_tls line。 You'll notice that it is faster still than。
-
- any of the previous lines。 It is getting faster and faster。 Now I want to draw your attention to the， fact this is the CPU time graph。
-
- So this is the collective amount of CPU time I've spent across all。 seven cores at the right side of the graph， as opposed to C Python， which is only using one core。
+ any of the previous lines。 It is getting faster and faster。 Now I want to draw your attention to the， fact this is the CPU time graph。 So this is the collective amount of CPU time I've spent across all。 seven cores at the right side of the graph， as opposed to C Python， which is only using one core。
 
  But what I said at the beginning was I'm actually interested in the wall time。 I'm defining。 successor failure on this in terms of wall time。 So here's the wall time graph。 Guess what？
 
- The black line looks a lot better now， doesn't it？ I'm pretty close。 Again， the benchmarking is so。 terrible。 And the CPU cores are changing frequency。 The ground is shifting up beneath my feet。
+ The black line looks a lot better now， doesn't it？ I'm pretty close。 Again， the benchmarking is so。 terrible。 And the CPU cores are changing frequency。 The ground is shifting up beneath my feet。 I don't， know。 It could be that I'm actually faster。 Probably not。 It could be that I'm slower than that。 That's more likely。 But I'm within striking distance。
 
- I don't， know。 It could be that I'm actually faster。 Probably not。 It could be that I'm slower than that。 That's more likely。 But I'm within striking distance。
+ And I feel like if I find another big thing that's， a problem。 I may actually start to dip below it now。 And then at which point I will say the。 "Glad music success， everybody。" So the next thing that I'm working on， I'm working on。 Ovenalock again。 Because I think it's still dominating runtime。 At one point I switched。
 
- And I feel like if I find another big thing that's， a problem。 I may actually start to dip below it now。 And then at which point I will say the。
+ Ovenalock to using spin locks instead of my few text based locks。 And the few text locks I ran。 under the profiler。 And allocate memory was 20% of runtime。 And free memory was 20% of runtime。 That doesn't show up when I use the few text based locks for some reason。 I don't know。 Maybe cache grind doesn't like me。 But I'm like， if I change that lock out， the runtime doesn't。
 
- "Glad music success， everybody。" So the next thing that I'm working on， I'm working on。 Ovenalock again。 Because I think it's still dominating runtime。 At one point I switched。
+ change significantly。 But the graph changes。 I suspect that maybe it's like， I think it's still。 using the time。 It's just not showing up in the profiler。 So I want to rewrite Ovenalock so that。 there's a central first data structure that's called used pools。 And that's global for the。 entire process。 I want to make that per thread。 And actually， technically， I did make it per thread。
 
- Ovenalock to using spin locks instead of my few text based locks。 And the few text locks I ran。 under the profiler。 And allocate memory was 20% of runtime。 And free memory was 20% of runtime。
+ And now it's not working properly。 And so I run my benchmark。 And instead of using 200 megabytes。 it uses 10 gig before it's done。 And the physical act of allocating and freeing 10 gig worth of。 objects or whatever it is doing underneath itself is slow。 And so the whole program got a lot slower。 Once I figure out what that memory allocation problem is。
 
- That doesn't show up when I use the few text based locks for some reason。 I don't know。 Maybe cache grind doesn't like me。 But I'm like， if I change that lock out， the runtime doesn't。
+ I can make that go away。 But I still， have another experiment or two to try。 I have an idea called private locking。 You start with the。 observation that most objects never leave the thread they were created in。 And so if we create。 a dict and only lives in a single thread and then it's destroyed and never escapes that thread。
 
- change significantly。 But the graph changes。 I suspect that maybe it's like， I think it's still。 using the time。 It's just not showing up in the profiler。 So I want to rewrite Ovenalock so that。
+ then why do we have to lock and release every time we talk to that dict？ It would be cheaper。 to do something else where we knew that it was a per thread object and we didn't have to do all。 that locking。 So I have an idea that essentially， dicks and lists and other objects like that。 are created in this pre-locked model where if another thread wants to talk to it， it has to say。
 
- there's a central first data structure that's called used pools。 And that's global for the。 entire process。 I want to make that per thread。 And actually， technically， I did make it per thread。
+ hey， I actually want to talk to this。 You need to turn into a regular lockable object。 And before。 that， locking and unlocking would be a simple， non-atomic increment and decrement。 I tried it once。 it made it slower。 But like I said， I may turn the corner and I may figure something out。 Maybe。 I botched it the first time。 If I tried again， maybe I'll get it to be faster。
 
- And now it's not working properly。 And so I run my benchmark。 And instead of using 200 megabytes。 it uses 10 gig before it's done。 And the physical act of allocating and freeing 10 gig worth of。
+ The other idea I have， this was implemented for me actually by Thomas Wooders at the sprints last year。 He did something， where he was at work where they store the reference count outside of the object。 So right now， the reference count is stored at the top of the object。 And the reason that this might help the， gallectomy is because of cache lines。
 
- objects or whatever it is doing underneath itself is slow。 And so the whole program got a lot slower。 Once I figure out what that memory allocation problem is。
+ Every time that you change memory， that invalidates that cache， line for all the other cores。 So if you have eight cores in your CPU all looking at the same cache， line， you change that memory。 Suddenly it tells you you have to throw away your memory and get a， fresh copy because it's changed。 And since we're storing the reference count in the object。
 
- I can make that go away。 But I still， have another experiment or two to try。 I have an idea called private locking。 You start with the。
+ that means we're changing the memory on every object and Python at any time we examine it。 including objects that are otherwise immutable， like say， an integer or a string。 So again。 the gallectomy is doing nothing but integers。 And every time it examines the number zero or one or。 two， it's invalidating the cache lines for all the other cores。 If we could get it so that these。
 
- observation that most objects never leave the thread they were created in。 And so if we create。 a dict and only lives in a single thread and then it's destroyed and never escapes that thread。
+ objects were genuinely immutable， then they wouldn't blow away those cache lines。 That would get rid， of contention on this internal bus where the cores are talking to each other。 It would， it actually would be better for copy on write semantics for when you were doing multi-process。 although again， the gallectomy is making so you don't have to go multi-process。 But storing the。
 
- then why do we have to lock and release every time we talk to that dict？ It would be cheaper。 to do something else where we knew that it was a per thread object and we didn't have to do all。
+ reference count outside of the object itself is overhead and it made it slower。 So， but maybe in。 the future， maybe we'll figure out a better way or maybe I just botched it and maybe it'll be faster。 in the future。 It certainly might help with copy on write semantics。 We'll see。 If all else fails。 I have one more huge thing that I can do。 This was suggested to me by multiple。 This wasn't my idea。
 
- that locking。 So I have an idea that essentially， dicks and lists and other objects like that。 are created in this pre-locked model where if another thread wants to talk to it， it has to say。
+ This was Mark Shannon and Wukash both suggested independently。 The idea is。 everybody knows that tracing garbage collection is faster than reference counting if you wanted。 to multi-thread it。 And that's what everybody does these days。 Like Java is a reference。 garbage is tracing， garbage collection， Rust， Go， everybody these days。 All the new languages。
 
- hey， I actually want to talk to this。 You need to turn into a regular lockable object。 And before。 that， locking and unlocking would be a simple， non-atomic increment and decrement。 I tried it once。
+ are all tracing garbage collection。 So， we switched CPython， internal to use tracing。 garbage collection。 This is a more difficult API to get right。 It's going to break the entire。 C API。 But there's a technology inside of PyPy called CPiX。 PyPy of course， you know， is the。 Python that's implemented in Python and it uses a JIT and it uses real tracing garbage collection。
 
- it made it slower。 But like I said， I may turn the corner and I may figure something out。 Maybe。 I botched it the first time。 If I tried again， maybe I'll get it to be faster。
+ It doesn't use reference counts。 So， their object model is very different from CPython。 But a classic problem for PyPy is that it doesn't run the C extensions。 They had an idea where they。 could run C extensions unmodified。 Like you literally could use a compiled shared library and just plug。 it into CPython to PyPy。 But what they would do is simulate the C API and that involves simulating。
 
- The other idea I have， this was implemented for me actually by Thomas Wooders at the sprints last year。 He did something， where he was at work where they store the reference count outside of the object。
+ CPython's object model which involves simulating reference counts in a tracing garbage collection。 environment。 We don't have their problem of their internal representation of an object is very。 different。 So， what they had to do eventually was they had two different objects。 There was the。 actual internal PyPy object of whatever it was。 And then there's the CPiX X representation。 And。
 
- So right now， the reference count is stored at the top of the object。 And the reason that this might help the， gallectomy is because of cache lines。
+ they had a problem keeping them and saying and stuff。 We don't have that problem。 We can just use。 the internal CPython object without the gill。 And CPi extensions can talk to that。 And we would。 just simulate reference counts on top of it。 That would be pretty harmless。 And so， it would be a。 lot simpler for us。 And all we need to do is simulate reference counts。 And we could probably。
 
- Every time that you change memory， that invalidates that cache， line for all the other cores。 So if you have eight cores in your CPU all looking at the same cache， line， you change that memory。
+ get that working。 That would be pretty close。 Again， we can't guarantee no breakages on the， C API。 But we can -- we could actually do some things to mitigate the multi-threadedness of the， galactomy。 And we simulate reference counts。 And we could get away perhaps with running。 CIPython extensions in this galactomy version with tracing garbage collection。
 
- Suddenly it tells you you have to throw away your memory and get a， fresh copy because it's changed。 And since we're storing the reference count in the object。
+ That would be a lot of， work。 I really don't want to do it。 So。 I'm going to try and push this existing approach as far as I， can。 But if I really have to give up。 maybe I can start over and do this。 So， the final thing I want。 to talk about is just this is what we want to see。 This is the graph we actually want to see， right？
 
- that means we're changing the memory on every object and Python at any time we examine it。 including objects that are otherwise immutable， like say， an integer or a string。 So again。
+ I just drew this purple line here。 The idea is you add threads through your program and it's just。 use as multiple cores and doesn't care。 The program doesn't get any slower。 This is what we wish we had， right？ Actually， we have that because that's Jython。 And what I say is that Jython and Iron， Python are actually existence proofs that the galactomy will work because consider。
 
- the gallectomy is doing nothing but integers。 And every time it examines the number zero or one or。 two， it's invalidating the cache lines for all the other cores。 If we could get it so that these。
-
- objects were genuinely immutable， then they wouldn't blow away those cache lines。 That would get rid， of contention on this internal bus where the cores are talking to each other。
-
- It would， it actually would be better for copy on write semantics for when you were doing multi-process。 although again， the gallectomy is making so you don't have to go multi-process。 But storing the。
-
- reference count outside of the object itself is overhead and it made it slower。 So， but maybe in。 the future， maybe we'll figure out a better way or maybe I just botched it and maybe it'll be faster。
-
- in the future。 It certainly might help with copy on write semantics。 We'll see。 If all else fails。 I have one more huge thing that I can do。 This was suggested to me by multiple。 This wasn't my idea。
-
- This was Mark Shannon and Wukash both suggested independently。 The idea is。 everybody knows that tracing garbage collection is faster than reference counting if you wanted。
-
- to multi-thread it。 And that's what everybody does these days。 Like Java is a reference。 garbage is tracing， garbage collection， Rust， Go， everybody these days。 All the new languages。
-
- are all tracing garbage collection。 So， we switched CPython， internal to use tracing。 garbage collection。 This is a more difficult API to get right。 It's going to break the entire。
-
- C API。 But there's a technology inside of PyPy called CPiX。 PyPy of course， you know， is the。 Python that's implemented in Python and it uses a JIT and it uses real tracing garbage collection。
-
- It doesn't use reference counts。 So， their object model is very different from CPython。 But a classic problem for PyPy is that it doesn't run the C extensions。 They had an idea where they。
-
- could run C extensions unmodified。 Like you literally could use a compiled shared library and just plug。 it into CPython to PyPy。 But what they would do is simulate the C API and that involves simulating。
-
- CPython's object model which involves simulating reference counts in a tracing garbage collection。 environment。 We don't have their problem of their internal representation of an object is very。
-
- different。 So， what they had to do eventually was they had two different objects。 There was the。 actual internal PyPy object of whatever it was。 And then there's the CPiX X representation。 And。
-
- they had a problem keeping them and saying and stuff。 We don't have that problem。 We can just use。 the internal CPython object without the gill。 And CPi extensions can talk to that。 And we would。
-
- just simulate reference counts on top of it。 That would be pretty harmless。 And so， it would be a。 lot simpler for us。 And all we need to do is simulate reference counts。 And we could probably。
-
- get that working。 That would be pretty close。 Again， we can't guarantee no breakages on the， C API。 But we can -- we could actually do some things to mitigate the multi-threadedness of the， galactomy。
-
- And we simulate reference counts。 And we could get away perhaps with running。 CIPython extensions in this galactomy version with tracing garbage collection。
-
- That would be a lot of， work。 I really don't want to do it。 So。 I'm going to try and push this existing approach as far as I， can。 But if I really have to give up。
-
- maybe I can start over and do this。 So， the final thing I want。 to talk about is just this is what we want to see。 This is the graph we actually want to see， right？
-
- I just drew this purple line here。 The idea is you add threads through your program and it's just。 use as multiple cores and doesn't care。 The program doesn't get any slower。
-
- This is what we wish we had， right？ Actually， we have that because that's Jython。 And what I say is that Jython and Iron， Python are actually existence proofs that the galactomy will work because consider。
-
- Let's just say that， we have a whole pile of C code。 And it just happens that like one of the piles is a Java interpreter and。
-
- the other one is a CLR runtime。 But it's a big pile of C code essentially。 And at the end of the day， they have a Python interpreter that's running multi-threaded without a go。
+ Let's just say that， we have a whole pile of C code。 And it just happens that like one of the piles is a Java interpreter and。 the other one is a CLR runtime。 But it's a big pile of C code essentially。 And at the end of the day， they have a Python interpreter that's running multi-threaded without a go。
 
  This proves that you can write a， multi-threaded Python interpreter in C without a go。 The question is not， can we write one？ Will it， work？
 
  The question is how much of the C API do I have to break before I can get the Python to work。
 ![](img/8819b309a1dc896d5dfc43ab416628b0_13.png)
 
- while I have a go？ Thank you。 [ Applause ]， Larry Hastings， ladies and gentlemen。 By the way。 I have stickers。 Lunch is happening at the moment。 So if you are wanting to leave for that。
+ while I have a go？ Thank you。 [ Applause ]， Larry Hastings， ladies and gentlemen。 By the way。 I have stickers。 Lunch is happening at the moment。 So if you are wanting to leave for that。 can you please do so， quietly？ If you have questions for Larry。 there are two microphones here in the aisles。 Please line， up。
 
- can you please do so， quietly？ If you have questions for Larry。 there are two microphones here in the aisles。 Please line， up。
+ And please be quiet if you're walking out。 What I say is you can have one of each design of。 the sticker。 We have a question here on my right。 Hi。 Yeah， Larry can hear you。 I can hear you。 Go。 ahead。 So some of this sounded very intel and architecture specific。 Is there a -- I think when。 you think about ARM CPUs or writing Python in other environments， do you expect this approach will。
 
- And please be quiet if you're walking out。 What I say is you can have one of each design of。 the sticker。 We have a question here on my right。 Hi。 Yeah， Larry can hear you。 I can hear you。 Go。
+ be feasible in those places as well？ People in the audience， can you please be quiet， there are。 questions and answers happening and people are still trying to listen。 Okay。 I heard everything。 you said。 Is that your whole question？ The question is， is your approach to this going to be usable。 in other architectures like ARM？ You talked about intel-specific CPU instructions。 Right。 So the。
 
- ahead。 So some of this sounded very intel and architecture specific。 Is there a -- I think when。 you think about ARM CPUs or writing Python in other environments， do you expect this approach will。
+ answer is it should be。 Right now it's not。 Literally， so like I said。 I discovered about -- a friend， of mine told me about a week ago。 did you realize that your cores are changing speed on you？ I said， oh my god no。 So I wanted to test on something that I had handy that I knew was multi-core and I。
 
- be feasible in those places as well？ People in the audience， can you please be quiet， there are。 questions and answers happening and people are still trying to listen。 Okay。 I heard everything。
+ guessed was not going to be sophisticated enough to change the speed on me like that。 So I tried。 compiling the Galactomy on a Raspberry Pi 3， which is 4-core and ARM。 And it didn't work because it's --， first of all， I had one problem and then I fixed it and I had another problem。 And then I said， oh yeah， I can't include this x86 internals header file。
 
- you said。 Is that your whole question？ The question is， is your approach to this going to be usable。 in other architectures like ARM？ You talked about intel-specific CPU instructions。 Right。 So the。
+ That was something that GCC had given me。 And so I like， okay， I can't solve that。 But I -- all of the atomic instructions that I'm using， I talk about intel-specific things。 RDTSA of course is intel-specific。 I'm really only using， that for statistics gathering。 not using that as an implementation base of the Galactomy。
 
- answer is it should be。 Right now it's not。 Literally， so like I said。 I discovered about -- a friend， of mine told me about a week ago。
+ Every modern architecture does have atomic increment and decrement。 Every modern architecture。 has atomic tests and set or compare and swap instructions。 So all of those things should be。 portable。 There will be more platform reliance in the Galactomy because we have to use those。 things and that's not part of the standard C API。 But they're all available。 And so we -- all we。
 
- did you realize that your cores are changing speed on you？ I said， oh my god no。 So I wanted to test on something that I had handy that I knew was multi-core and I。
+ need to do is a little bit more platform hacking in order to get those to work。 Next question。 Okay。 so basically you said that benchmarking is really bad。 Everyone knows this。 So how worried are you that the fib function isn't good enough？ I mean， if you try any different。 function or anything else， that the results would be completely different。 Like how worried are you。
 
- guessed was not going to be sophisticated enough to change the speed on me like that。 So I tried。 compiling the Galactomy on a Raspberry Pi 3， which is 4-core and ARM。
+ about that？ I don't think it'd be a world of difference。 Again， so this is specifically， exercising。 I had a list of all the things it's exercising。 So for example， someone suggested。 an optimization to me。 They said the Fibonacci function itself， looking up the Fibonacci function。 takes a lot of time because we have to do a dict lookup and actually has to look in the module。 So。
 
- And it didn't work because it's --， first of all， I had one problem and then I fixed it and I had another problem。 And then I said， oh yeah， I can't include this x86 internals header file。
+ it's not cached locally。 So it needs to lock and unlock a dict。 And that module dict itself was hot。 And so if we did multiple reader single writer lock on the dict， that would speed it up。 And I。 said， well， on the one hand， I think that's optimizing for my particular benchmark。 Let's not do that。 But on the other hand， that's a generally purpose of that's a helpful optimization for a lot of。
 
- That was something that GCC had given me。 And so I like， okay， I can't solve that。 But I -- all of the atomic instructions that I'm using， I talk about intel-specific things。
+ people。 And it really isn't all that's tailored to my code and it would work on all decks。 And it。 would be fine。 So I think ultimately we're going to merge that and make that benchmark faster。 Of course， we wouldn't see that if we went to a different benchmark。 Like the one that David Beasley， uses when he's timing things and playing with the Gill。
 
- RDTSA of course is intel-specific。 I'm really only using， that for statistics gathering。 not using that as an implementation base of the Galactomy。
+ he uses countdown， which is just a for loop， over 10 million times or something like that。 So at the end of the day， I'm not all that worried， because fundamentally I'm exercising byte code。 I'm exercising function calls。 I'm exercising， dict and list lookups internally。 I'm exercising a little bit of Boolean logic。 I'm exercising， integers， not strings。
 
- Every modern architecture does have atomic increment and decrement。 Every modern architecture。 has atomic tests and set or compare and swap instructions。 So all of those things should be。
+ But all the things that are implemented and see I'm not that worried about。 I'm worried about the internal core byte code engine really of CPython is what I'm worried about。 And one function is as good as another at that point。 So once I'm more confident about the。 galactomy in the approach， then I'd be more interested in running more code through it anyway。
 
- portable。 There will be more platform reliance in the Galactomy because we have to use those。 things and that's not part of the standard C API。 But they're all available。 And so we -- all we。
+ But right now I just have my head down。 It's like if I could make Fibonacci run faster than。 stock CPython， then it becomes much easier to make other things run fast and CPython。 So yes。 eventually I'll run other benchmarks， but not now。 Another question？
 
- need to do is a little bit more platform hacking in order to get those to work。 Next question。 Okay。 so basically you said that benchmarking is really bad。 Everyone knows this。
+ So if I understand your ref count log implementation correctly， it would actually truly make like。 Dell invocations like actually non-deterministic。 I've unfortunately seen a lot of Python code that。 kind of relies on reference counting even though that was never really guaranteed by the actual。 implementation per se。 But if you did go forward with this plan， I could see code breaking because。
 
- So how worried are you that the fib function isn't good enough？ I mean， if you try any different。 function or anything else， that the results would be completely different。 Like how worried are you。
+ they relied on that reference counting implementation。 And I guess what is your like。 Okay。 so you're talking about how do you go forward with that？ You're talking about the fact that。 people rely on， you're not talking about reference counting per se， you're talking about the people。 that rely on the fact that once the last reference to an object is dropped， the object is freed。
 
- about that？ I don't think it'd be a world of difference。 Again， so this is specifically， exercising。 I had a list of all the things it's exercising。 So for example， someone suggested。
+ immediately。 Correct。 Right。 The Python language spec specifically says you're not allowed to rely。 on that。 And none of the other implementations make it happen。 And that's just a fact of life。 That。 is a Python visible side effect of the implementation of the Gill。 And if we ever merged it and became， official Python， then yes， it would go away。 And I'm sorry。
 
- an optimization to me。 They said the Fibonacci function itself， looking up the Fibonacci function。 takes a lot of time because we have to do a dict lookup and actually has to look in the module。 So。
+ So that's why we have things like context， managers。 Context managers explicitly there for this sort of object lifetime management。 Yeah。 can't do anything about it。 Sorry， can't help you。 All right。 Another question。 I thought you were。 going to bring up another topic， which I didn't touch on really quickly。 One side effect， the。
 
- it's not cached locally。 So it needs to lock and unlock a dict。 And that module dict itself was hot。 And so if we did multiple reader single writer lock on the dict， that would speed it up。 And I。
+ original implementation of the reference count manager， of course， it was doing the inkers and。 deckers on this other thread， right？ Which meant that the last decker happened on the other thread。 which meant that the Alex happened on that other thread。 And so now that's two effects。 One。 the Alex happened on a different thread from where the object was originally like where it would。
 
- said， well， on the one hand， I think that's optimizing for my particular benchmark。 Let's not do that。 But on the other hand， that's a generally purpose of that's a helpful optimization for a lot of。
+ have naturally happened。 And two， that meant that the， uh， the， uh， the。 the commit thread had to work， like a pit pony。 It turned out that that just swamped it。 It was spending all this time doing， the Alex and it never got。 it fell behind immediately and never caught up。 So what I wound up doing。
 
- people。 And it really isn't all that's tailored to my code and it would work on all decks。 And it。 would be fine。 So I think ultimately we're going to merge that and make that benchmark faster。
+ internally is when the object reaches a reference count of zero。 I put it on another list and I pass， it back to the last thread that did the last deck ref and then he notices that later and he commits。 it。 So there is another delay built in before the object is destroyed。 So it's even worse。 than you probably thought。 Next question， please。 Just another quick question about benchmarking。
 
- Of course， we wouldn't see that if we went to a different benchmark。 Like the one that David Beasley， uses when he's timing things and playing with the Gill。
+ I don't have a quick question。 There's probably a long answer。 I'm sorry。 I think this， uh， well。 um， assuming that speed step is just for reducing power consumption， is there not a， like。 bios setting， to turn it off？ Yeah。 So I went through my bios and tried to turn off everything and I guess。 I maybe I had a lame bios where I was looking in the wrong spot， but there was literally no big。
 
- he uses countdown， which is just a for loop， over 10 million times or something like that。 So at the end of the day， I'm not all that worried， because fundamentally I'm exercising byte code。
+ flashing set your CPU frequency here thing。 So I turned off AI， uh， turbo boost or something like。 that。 There were about three things that I turned off and it seemed to be a little bit more stable。 than。 And so these benchmarks are actually run with those settings turned on。 But apparently。 Victor said there's literally a Linux kernel setting where you can specify the max frequency。
 
- I'm exercising function calls。 I'm exercising， dict and list lookups internally。 I'm exercising a little bit of Boolean logic。 I'm exercising， integers， not strings。
+ And so if I said， oh yeah， your max frequency is a gigahertz。 And guess what？ Everybody's gonna。 run at a gigahertz because that's like slower than it ever wants to be。 So I'm gonna do that。 once I figure out what that setting is and once I get home and I'm sitting in front of the computer。 again， but I'm in， I'm， like， I said， I'm in， I'm only in so much of a hurry about it because I'm。
 
- But all the things that are implemented and see I'm not that worried about。 I'm worried about the internal core byte code engine really of CPython is what I'm worried about。
+ like， I'm in the， I'm in the neighborhood。 Hey， last question。 Do you have an idea how much you can。 minimize the C API changes from this by the time you're on？ How much I've watched since the。 day of the day？ How much the C API changes will be to write？ Okay， so I kind of answered that。 question in my talk from last year。 The， the answer is that so far I have essentially preserved the。
 
- And one function is as good as another at that point。 So once I'm more confident about the。 galactomy in the approach， then I'd be more interested in running more code through it anyway。
+ existing source code level C API。 So a recompile would get you using all of the new technologies。 underneath。 You didn't have to touch the line of source code。 The problem is that there are。 semantic changes involved。 So there are guarantees that the guild gives you that I don't give you。 Like， and there are， and there are other things happening like the， what he alluded to， which is。
 
- But right now I just have my head down。 It's like if I could make Fibonacci run faster than。 stock CPython， then it becomes much easier to make other things run fast and CPython。 So yes。
+ the instantaneous objects going away being able to rely on that， which you don't have any more。 because of buffer reference counting。 So another example of this， which。 there's literally an example， of this as a good approach to how to do things in the C Python extension documentation。 They say， here's example code。 They say， let's say you have an object you want to lazily instantiate。
 
- eventually I'll run other benchmarks， but not now。 Another question？
+ because it's expensive。 You only want to do it when it's needed。 So you say static， pi object star。 foo equals null。 And then you say inside of the middle of your function， you say， if foo is null。 create foo。 And now we can use foo。 And everybody's happy。 The problem is。 if you call that three times， now you've got three races。 And probably you're going to。
 
- So if I understand your ref count log implementation correctly， it would actually truly make like。 Dell invocations like actually non-deterministic。 I've unfortunately seen a lot of Python code that。
+ allocate memory， uselessly， and you're going to stomp on that value。 And that's。 that used to be safe， because it was protected by the guild。 Literally nobody could interrupt you and， and call into that， again。 But without the guild。 that's no longer safe。 And so I would say， don't do that。 But there's， lots of code that does that。
 
- kind of relies on reference counting even though that was never really guaranteed by the actual。 implementation per se。 But if you did go forward with this plan， I could see code breaking because。
+ And it's a guarantee that the guild gave you that I've taken away。 So。 that's a semantic change of the API that isn't encoded in the actual， like literal， pi， you know。 in graph， pi dec ref， those things haven't changed。 But the semantics around the stuff that you've。 been doing for years have changed。 And so that's why I say， I know I'm going to break C extensions。
 
- they relied on that reference counting implementation。 And I guess what is your like。 Okay。 so you're talking about how do you go forward with that？ You're talking about the fact that。
-
- people rely on， you're not talking about reference counting per se， you're talking about the people。 that rely on the fact that once the last reference to an object is dropped， the object is freed。
-
- immediately。 Correct。 Right。 The Python language spec specifically says you're not allowed to rely。 on that。 And none of the other implementations make it happen。 And that's just a fact of life。 That。
-
- is a Python visible side effect of the implementation of the Gill。 And if we ever merged it and became， official Python， then yes， it would go away。 And I'm sorry。
-
- So that's why we have things like context， managers。 Context managers explicitly there for this sort of object lifetime management。 Yeah。
-
- can't do anything about it。 Sorry， can't help you。 All right。 Another question。 I thought you were。 going to bring up another topic， which I didn't touch on really quickly。 One side effect， the。
-
- original implementation of the reference count manager， of course， it was doing the inkers and。 deckers on this other thread， right？ Which meant that the last decker happened on the other thread。
-
- which meant that the Alex happened on that other thread。 And so now that's two effects。 One。 the Alex happened on a different thread from where the object was originally like where it would。
-
- have naturally happened。 And two， that meant that the， uh， the， uh， the。 the commit thread had to work， like a pit pony。 It turned out that that just swamped it。
-
- It was spending all this time doing， the Alex and it never got。 it fell behind immediately and never caught up。 So what I wound up doing。
-
- internally is when the object reaches a reference count of zero。 I put it on another list and I pass， it back to the last thread that did the last deck ref and then he notices that later and he commits。
-
- it。 So there is another delay built in before the object is destroyed。 So it's even worse。 than you probably thought。 Next question， please。 Just another quick question about benchmarking。
-
- I don't have a quick question。 There's probably a long answer。 I'm sorry。 I think this， uh， well。 um， assuming that speed step is just for reducing power consumption， is there not a， like。
-
- bios setting， to turn it off？ Yeah。 So I went through my bios and tried to turn off everything and I guess。 I maybe I had a lame bios where I was looking in the wrong spot， but there was literally no big。
-
- flashing set your CPU frequency here thing。 So I turned off AI， uh， turbo boost or something like。 that。 There were about three things that I turned off and it seemed to be a little bit more stable。
-
- than。 And so these benchmarks are actually run with those settings turned on。 But apparently。 Victor said there's literally a Linux kernel setting where you can specify the max frequency。
-
- And so if I said， oh yeah， your max frequency is a gigahertz。 And guess what？ Everybody's gonna。 run at a gigahertz because that's like slower than it ever wants to be。 So I'm gonna do that。
-
- once I figure out what that setting is and once I get home and I'm sitting in front of the computer。 again， but I'm in， I'm， like， I said， I'm in， I'm only in so much of a hurry about it because I'm。
-
- like， I'm in the， I'm in the neighborhood。 Hey， last question。 Do you have an idea how much you can。 minimize the C API changes from this by the time you're on？ How much I've watched since the。
-
- day of the day？ How much the C API changes will be to write？ Okay， so I kind of answered that。 question in my talk from last year。 The， the answer is that so far I have essentially preserved the。
-
- existing source code level C API。 So a recompile would get you using all of the new technologies。 underneath。 You didn't have to touch the line of source code。 The problem is that there are。
-
- semantic changes involved。 So there are guarantees that the guild gives you that I don't give you。 Like， and there are， and there are other things happening like the， what he alluded to， which is。
-
- the instantaneous objects going away being able to rely on that， which you don't have any more。 because of buffer reference counting。 So another example of this， which。
-
- there's literally an example， of this as a good approach to how to do things in the C Python extension documentation。 They say， here's example code。 They say， let's say you have an object you want to lazily instantiate。
-
- because it's expensive。 You only want to do it when it's needed。 So you say static， pi object star。 foo equals null。 And then you say inside of the middle of your function， you say， if foo is null。
-
- create foo。 And now we can use foo。 And everybody's happy。 The problem is。 if you call that three times， now you've got three races。 And probably you're going to。
-
- allocate memory， uselessly， and you're going to stomp on that value。 And that's。 that used to be safe， because it was protected by the guild。
-
- Literally nobody could interrupt you and， and call into that， again。 But without the guild。 that's no longer safe。 And so I would say， don't do that。 But there's， lots of code that does that。
-
- And it's a guarantee that the guild gave you that I've taken away。 So。 that's a semantic change of the API that isn't encoded in the actual， like literal， pi， you know。
-
- in graph， pi dec ref， those things haven't changed。 But the semantics around the stuff that you've。 been doing for years have changed。 And so that's why I say， I know I'm going to break C extensions。
-
- because the semantics have changed。 And I can't do anything about them。 I can't， the whole point。 was to break those sorts of things。 And I can't fix that。 As in terms of source code compatibility。
-
- literally， my goal is that you can recompile and you will produce， like you won't get any errors。 and there are no new APIs that you were supposed to call that you didn't。 Your code will continue。
+ because the semantics have changed。 And I can't do anything about them。 I can't， the whole point。 was to break those sorts of things。 And I can't fix that。 As in terms of source code compatibility。 literally， my goal is that you can recompile and you will produce， like you won't get any errors。 and there are no new APIs that you were supposed to call that you didn't。 Your code will continue。
 
  to work。 And there are additional APIs that will make things go faster。 But unchanged。 C APIs should physically compile。 Larry Hastings， everyone。
-
-
-
 ![](img/8819b309a1dc896d5dfc43ab416628b0_15.png)
 
 ![](img/8819b309a1dc896d5dfc43ab416628b0_16.png)

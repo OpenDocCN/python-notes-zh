@@ -3,108 +3,58 @@
  So this is my first lightning talk。
 ![](img/76e7a19348f321f8aa51233af6026bd0_1.png)
 
- I'm just waiting for my slides to show up。 Yeah， there we are。 So my name is Jonathan Biddle。 I lead a team called Developer Acceleration at Wayfair。
+ I'm just waiting for my slides to show up。 Yeah， there we are。 So my name is Jonathan Biddle。 I lead a team called Developer Acceleration at Wayfair。 And today I'm going to talk to you about one of the ways。 that we spread best practices around Python and Python， excellence across the company。
 
- And today I'm going to talk to you about one of the ways。 that we spread best practices around Python and Python， excellence across the company。
-
- So for those of you who aren't familiar with Wayfair。 I'll give you just a really brief idea of what we do。
-
- We are a e-commerce website that focuses on furniture， and home decor。 And we're kind of big a little bit。 We've got 14 million products， 16。4 million customers， which。
+ So for those of you who aren't familiar with Wayfair。 I'll give you just a really brief idea of what we do。 We are a e-commerce website that focuses on furniture， and home decor。 And we're kind of big a little bit。 We've got 14 million products， 16。4 million customers， which。
 
  means we're like 2。4 million products away for literally， having something for everyone。 And we've also got 2，300 people across our various tech teams。 So what about Python at Wayfair？
 
- Well， two years ago， I was given the opportunity to do what I。 think is probably my favorite job ever。 And it was basically to figure out how do we。
+ Well， two years ago， I was given the opportunity to do what I。 think is probably my favorite job ever。 And it was basically to figure out how do we。 make it intuitive and easy for any software team， to use Python to solve their problems。 and reach their business objectives in the form of a Python， platform team at Wayfair。
 
- make it intuitive and easy for any software team， to use Python to solve their problems。 and reach their business objectives in the form of a Python， platform team at Wayfair。
+ One of the things that we thought about early on， is like， OK。 if we're going to get a bunch of people adopting， Python。 how do we make sure they adopt Python the right way？
 
- One of the things that we thought about early on， is like， OK。 if we're going to get a bunch of people adopting， Python。
+ How do we make sure they're using idiomatic Python。 and leading into some of the Pythonic things that may come。 naturally to you if you'd be doing it for a few years。 But out of the gate， our little mystical。 You don't really understand what Pythonic means。 If we're going to have a bunch of people doing this。
 
- how do we make sure they adopt Python the right way？
+ for the first time， it's kind of important， that we have a good story here。 So we could do a lot of training and point people， to good books to read and things like that。 But we were concerned that that wouldn't really， take in the way we really wanted。 So what we came up with is this model called Auxiliary， Engineering。 And what it is。
 
- How do we make sure they're using idiomatic Python。 and leading into some of the Pythonic things that may come。
+ it's kind of like embedded engineering。 We go and we work with the team on something。 But we have two goals。 One， we want that team to be successful。 We want them to reach whatever MVP or goal， that they have to achieve some business outcome。 But we also want to transform the team in some way。 We want to bring in those best practices that。
 
- naturally to you if you'd be doing it for a few years。 But out of the gate， our little mystical。 You don't really understand what Pythonic means。 If we're going to have a bunch of people doing this。
+ come second nature to us。 You can recognize any project that we contribute to because we。 have a little badge and README files for any of these projects， where we've been involved。 So let's talk about what an Occ Times project looks like。 There's some preparation before we even get started。 One thing that's really important。
 
- for the first time， it's kind of important， that we have a good story here。 So we could do a lot of training and point people， to good books to read and things like that。
+ We don't want to force this on anyone。 We don't want to feel like there's。 some group of experts that are going， to come across the company and then say， oh， no， this is how。 you should do it。 We want teams to come to us。 We want them to feel like whatever we're doing is so valuable。 that they'll kind of reach across the company， say， hey， could you come and partner with us on this？
 
- But we were concerned that that wouldn't really， take in the way we really wanted。 So what we came up with is this model called Auxiliary， Engineering。 And what it is。
+ We also make sure that we have really clear goals。 We want the software team。 our Auxiliary Engineer， and the product owner to feel like they are aligned， on a common outcome。 That includes business objectives， but it also might include things like code coverage。 or some bringing in best practice， maybe black or automatic， linting pipelines， things like that。
 
- it's kind of like embedded engineering。 We go and we work with the team on something。 But we have two goals。 One， we want that team to be successful。
+ We also do three month durations。 Now， yes， that conveniently fits into a quarter of time。 Maybe it makes planning easy。 But there's another reason that we do three months。 There's some research that shows that it takes about a bit， over two months to form a new habit。 And that's kind of what we feel like we're doing。 We're going to that team。 We're working with them。
 
- We want them to reach whatever MVP or goal， that they have to achieve some business outcome。 But we also want to transform the team in some way。 We want to bring in those best practices that。
+ And we're helping them build good habits。 And if we were to do this for a few weeks。 maybe we'd choose some of it。 But I have some concerns that once we leave。 they're just going to reach for whatever feels most obvious， to them。 And those habits really aren't going to take。 So we spend a lot of time just reinforcing。
 
- come second nature to us。 You can recognize any project that we contribute to because we。 have a little badge and README files for any of these projects， where we've been involved。
+ and trying to make that what's second nature to us， second nature to the team。 So during a project。 it's very important， very important that we are part of that team。 Not some outsider who's kind of like advising。 If we are in the team。 we are working towards the same goals。 We sit with the team。 We do meetings with the team。
 
- So let's talk about what an Occ Times project looks like。 There's some preparation before we even get started。 One thing that's really important。
+ We want to feel like we are a member of that team， throughout the project。 Also。 we pair on the hard work。 We don't take it on ourselves。 That we absolutely do not want to go and solve， the hardest problem in a project ourselves。 because that robs the team of the ability to learn。
 
- We don't want to force this on anyone。 We don't want to feel like there's。 some group of experts that are going， to come across the company and then say， oh， no， this is how。
+ That robs them of the chance to understand really， why a particular solution was selected。 So it's important that whenever a hard project or a hard part， of the project shows up。 we pair with them。 We make sure that we're passing that knowledge on， to whoever else is involved。 We also focus a lot on feedback。 Feedback is very important to us。
 
- you should do it。 We want teams to come to us。 We want them to feel like whatever we're doing is so valuable。 that they'll kind of reach across the company， say， hey， could you come and partner with us on this？
+ So we do weekly retros with the team， specifically on the Ox-Engine engagement， what's going well。 what's not going well。 We talk about the project。 We also talk about our role in the project。 Is it working？ Is it healthy？ And we want to get really good feedback。 We actually encourage teams to give us critical feedback。 If something's not going right。
 
- We also make sure that we have really clear goals。 We want the software team。 our Auxiliary Engineer， and the product owner to feel like they are aligned， on a common outcome。
+ we want to know that。 We want to address it。 Which leads well into the learning aspect of this。 And it really goes both ways。 It's not like we're bringing a whole bunch of knowledge。 as experts on to the team and taking nothing back ourselves。 We get a lot of really good information from this。 And I say a lot。
 
- That includes business objectives， but it also might include things like code coverage。 or some bringing in best practice， maybe black or automatic， linting pipelines， things like that。
+ It is impossible for us to know what， it's like to learn Python for the first time。 today or what it's like to use our platform for the first time。 But when we're sitting with people。 and we're watching them get confused because some documentation， wasn't clear。 it's extremely obvious。 And we also funnel that into 20% time。
 
- We also do three month durations。 Now， yes， that conveniently fits into a quarter of time。 Maybe it makes planning easy。 But there's another reason that we do three months。
+ So anyone who's doing auxiliary engineering， gets one day a week to just take all of that information。 they got in the course of the week。 Maybe it was something that was unintuitive and address it。 It's completely self-directed。 Just take action。 There's no real process to go through。 Just work on improving the platform。 We follow up six months later with the team。
 
- There's some research that shows that it takes about a bit， over two months to form a new habit。 And that's kind of what we feel like we're doing。 We're going to that team。 We're working with them。
+ Want to make sure that whatever knowledge that we brought in， actually stayed。 And we're seeing that take hold。 And often case， that's what happens。 And actually even gets a little better than that。 We've done this about 10 projects。 A number of them， what we've observed， is not only does that team start to become strong。
 
- And we're helping them build good habits。 And if we were to do this for a few weeks。 maybe we'd choose some of it。 But I have some concerns that once we leave。
+ but the teams adjacent to them start to become strong too。 They start to spread those best practices， that we try to spread。 And the idea of what Pythonics starts， to replicate across the company。 And it's really quite amazing。 There's also a really high demand for this。
 
- they're just going to reach for whatever feels most obvious， to them。 And those habits really aren't going to take。 So we spend a lot of time just reinforcing。
+ It's not like we have to go and find teams to come and--， and they're like， hey， would you。 want to work with us on this？ No， we actually have to turn away people， unfortunately。 every time we go through a planning cycle。 Because there's just not enough engineers on the platform。 team to meet that demand。 So that's a really good indicator that what we're doing。
 
- and trying to make that what's second nature to us， second nature to the team。 So during a project。 it's very important， very important that we are part of that team。
+ is extremely valuable。 It's also led to a ton of platform improvements。 Being with the team。 seeing what was working well， and not working well， makes sure that we are not--， OK。 this is a clap。 I wasn't sure if you would tell me to cut off because of time。 OK。 so we've made a ton of platform improvements， just because there's a lot of good feedback in that process。
 
- Not some outsider who's kind of like advising。 If we are in the team。 we are working towards the same goals。 We sit with the team。 We do meetings with the team。
-
- We want to feel like we are a member of that team， throughout the project。 Also。 we pair on the hard work。 We don't take it on ourselves。
-
- That we absolutely do not want to go and solve， the hardest problem in a project ourselves。 because that robs the team of the ability to learn。
-
- That robs them of the chance to understand really， why a particular solution was selected。 So it's important that whenever a hard project or a hard part， of the project shows up。
-
- we pair with them。 We make sure that we're passing that knowledge on， to whoever else is involved。 We also focus a lot on feedback。 Feedback is very important to us。
-
- So we do weekly retros with the team， specifically on the Ox-Engine engagement， what's going well。 what's not going well。 We talk about the project。 We also talk about our role in the project。
-
- Is it working？ Is it healthy？ And we want to get really good feedback。 We actually encourage teams to give us critical feedback。 If something's not going right。
-
- we want to know that。 We want to address it。 Which leads well into the learning aspect of this。 And it really goes both ways。 It's not like we're bringing a whole bunch of knowledge。
-
- as experts on to the team and taking nothing back ourselves。 We get a lot of really good information from this。 And I say a lot。
-
- It is impossible for us to know what， it's like to learn Python for the first time。 today or what it's like to use our platform for the first time。 But when we're sitting with people。
-
- and we're watching them get confused because some documentation， wasn't clear。 it's extremely obvious。 And we also funnel that into 20% time。
-
- So anyone who's doing auxiliary engineering， gets one day a week to just take all of that information。 they got in the course of the week。 Maybe it was something that was unintuitive and address it。
-
- It's completely self-directed。 Just take action。 There's no real process to go through。 Just work on improving the platform。 We follow up six months later with the team。
-
- Want to make sure that whatever knowledge that we brought in， actually stayed。 And we're seeing that take hold。 And often case， that's what happens。
-
- And actually even gets a little better than that。 We've done this about 10 projects。 A number of them， what we've observed， is not only does that team start to become strong。
-
- but the teams adjacent to them start to become strong too。 They start to spread those best practices， that we try to spread。
-
- And the idea of what Pythonics starts， to replicate across the company。 And it's really quite amazing。 There's also a really high demand for this。
-
- It's not like we have to go and find teams to come and--， and they're like， hey， would you。 want to work with us on this？ No， we actually have to turn away people， unfortunately。
-
- every time we go through a planning cycle。 Because there's just not enough engineers on the platform。 team to meet that demand。 So that's a really good indicator that what we're doing。
-
- is extremely valuable。 It's also led to a ton of platform improvements。 Being with the team。 seeing what was working well， and not working well， makes sure that we are not--， OK。
-
- this is a clap。 I wasn't sure if you would tell me to cut off because of time。 OK。 so we've made a ton of platform improvements， just because there's a lot of good feedback in that process。
-
- So my name is Jonathan Biddle。 I work at Wayfair。 You can find me here。 And if you want to talk to me， we have a recruiting booth， at the Job Fair。 Thank you， Jonathan。
-
- [INAUDIBLE]， OK， well， the next person come and sit up over here， number three。
+ So my name is Jonathan Biddle。 I work at Wayfair。 You can find me here。 And if you want to talk to me， we have a recruiting booth， at the Job Fair。 Thank you， Jonathan。 [INAUDIBLE]， OK， well， the next person come and sit up over here， number three。
 ![](img/76e7a19348f321f8aa51233af6026bd0_3.png)
 
- You know who you are？ Loading Gmail。 So our man really wants to touch this tractor。 You know this thing called the imp of the perverse。 He wants to touch it。 He knows he shouldn't。
-
- But he leans over the velvet ropes， and he just touches the kind of like--， what do you call it？
+ You know who you are？ Loading Gmail。 So our man really wants to touch this tractor。 You know this thing called the imp of the perverse。 He wants to touch it。 He knows he shouldn't。 But he leans over the velvet ropes， and he just touches the kind of like--， what do you call it？
 
  The little arch over the front wheel。 And he-- like a little shiver goes through him。
 ![](img/76e7a19348f321f8aa51233af6026bd0_5.png)
@@ -112,9 +62,6 @@
  And he looks around。 He's the first person in this whole convention， right？
 
  So there's no one around。 There's no security guards。 And he's already transgressed。 So he just goes， OK， well， just unhooks the velvet rope。
-
-
-
 ![](img/76e7a19348f321f8aa51233af6026bd0_7.png)
 
  He lets himself around and gets just a little bit closer， to this tractor， right？
@@ -122,227 +69,124 @@
  He runs his hand across it and walks around the tractor。 It's incredible， right？
 
  This thing is massive。 It's brand new。 Like the tires are like spotless。 Like he feels them。 And he really gets to know this tractor on the way around。 And as he's walking around， he notices。
-
-
-
 ![](img/76e7a19348f321f8aa51233af6026bd0_9.png)
 
  the front door of the cab is open。 So he goes， look， well， there's no one here。 Come on。 And he sort of takes a step， and then he just climbs。
-
-
-
 ![](img/76e7a19348f321f8aa51233af6026bd0_11.png)
 
  into this tractor， sits in it。 And he goes， this feels amazing。 He sat in a few tractors before。 but nothing like this。 It's a very comfortable cabin。 It's full of all the equipment。
-
-
-
 ![](img/76e7a19348f321f8aa51233af6026bd0_13.png)
 
- He's read about it。 He's seen a million pictures of what。 the entire area of this tractor is going to look like。 But being in there is amazing。
+ He's read about it。 He's seen a million pictures of what。 the entire area of this tractor is going to look like。 But being in there is amazing。 And then he sees that the keys are in the ignition。 So he had a little fight with his conscience。 but in the end， he can't resist。 And he leans forwards and he touches the key。 And he goes， come on。
 
- And then he sees that the keys are in the ignition。 So he had a little fight with his conscience。 but in the end， he can't resist。 And he leans forwards and he touches the key。 And he goes， come on。
+ I just want to hear the engine。 I'll just switch it off straight away。 but I just want to hear what it sounds like。 I just want to hear what it sounds like。 So he leans forwards， and he turns the engine on。 The engine roars alive。 Gently， modern， higher。 powerful engines do。 It's not like a bla-bla-bla-bla-bla-bla-bla。 But it goes， oh。
 
- I just want to hear the engine。 I'll just switch it off straight away。 but I just want to hear what it sounds like。 I just want to hear what it sounds like。
+ the power is really evident in this thing。 And then he just loses control。 Like。 he-- he-- he puts his hand on the steering wheel。 He puts his hand on the gear stick。 puts the clutch down。 He puts it in gear， and he takes this tractor。 and he drives it off its podium， out into the convention， hall， through the velvet ropes， crashing。
 
- So he leans forwards， and he turns the engine on。 The engine roars alive。 Gently， modern， higher。 powerful engines do。 It's not like a bla-bla-bla-bla-bla-bla-bla。 But it goes， oh。
+ through dozens of exhibits， amongst several flimsy panels。 He's just going on a mad tractor rampage。 laughing maniacally， at himself。 Like， they call in the police。 They call in the National Guard。 They have to eventually stop this tractor。 They block it with an APC。 They wrestle him out of the cab。 They drag him off to jail。 It's quite a scene。
 
- the power is really evident in this thing。 And then he just loses control。 Like。 he-- he-- he puts his hand on the steering wheel。 He puts his hand on the gear stick。
+ But not as much of a scene as the one， that you're about to cause。 In order to welcome our next speaker， please give Brianna a huge， huge welcome。 [APPLAUSE]。 Thank you。 Hi， everyone。 My name is Brianna Kaplan， and I'm， the founder of CodeRDreams。 We're a 501(c)(3) nonprofit in Chicago。 We serve under-resourced high school students。
 
- puts the clutch down。 He puts it in gear， and he takes this tractor。 and he drives it off its podium， out into the convention， hall， through the velvet ropes， crashing。
+ and teach them computer science so they， can build applications that drive positive change。 in our communities。 So I think we can all agree on two things this morning。 Number one。 this is my dog Piper。 And we can all agree that she is super cute。 But the second thing。 probably more importantly， is that computational thinking is important。 Teachers agree。
 
- through dozens of exhibits， amongst several flimsy panels。 He's just going on a mad tractor rampage。 laughing maniacally， at himself。 Like， they call in the police。 They call in the National Guard。
+ According to a study by EdSurg， 88% of K through 12 teachers。 said that computer science is crucial to preparing students， for the workforce。 And as Pythonese says， we know that STEM education is more。 than just preparing students to become scientists， engineers， or mathematicians。
 
- They have to eventually stop this tractor。 They block it with an APC。 They wrestle him out of the cab。 They drag him off to jail。 It's quite a scene。
+ It's just as important as a liberal arts education。 But the reality is， with the same study。 only 20% of students are actually being reached。 So there's a disconnect between the belief。 that computer science is important and the actual application， of these skills in schools。 So the problems， they can be put into four buckets。 The first two， lack of teachers。
 
- But not as much of a scene as the one， that you're about to cause。 In order to welcome our next speaker， please give Brianna a huge， huge welcome。 [APPLAUSE]。
+ lack of standardized curriculum。 Over half of public school districts in the nation。 report struggling to recruit and retain certified， and effective STEM teachers。 And this figure raises to 90% in districts serving。 large proportions of African-American and Hispanic students。 Number three and number four。
 
- Thank you。 Hi， everyone。 My name is Brianna Kaplan， and I'm， the founder of CodeRDreams。 We're a 501(c)(3) nonprofit in Chicago。 We serve under-resourced high school students。
+ lack of gear and lack of funding。 In Illinois， where I live and where I teach。 it has the most unfair school funding system in the nation。 according to a study released by the Education Trust。 And in this study， individual schools。 were underfunded by $2。4 billion。 So I know you're all asking， what can we do？
 
- and teach them computer science so they， can build applications that drive positive change。 in our communities。 So I think we can all agree on two things this morning。 Number one。
+ We really need your help。 As a community， let's invest in the schools that have the least。 And this is why I started CodeR Dreams。 As I said， CodeR Dreams is a 501(c)(3) nonprofit in Chicago。 Every student cohort that we teach starts with the question， what communities are you a part of。 what makes them great， and beautiful， but also what problems do you see？
 
- this is my dog Piper。 And we can all agree that she is super cute。 But the second thing。 probably more importantly， is that computational thinking is important。 Teachers agree。
+ Our students ideate on applications， they can build that address some of those problems。 And then that's the applications that they， build throughout the year-long program。 They learn everything from ideation， to user experience and design， Python programming。 and the delivery of the product to showcase to their communities。 And coming this fall。
 
- According to a study by EdSurg， 88% of K through 12 teachers。 said that computer science is crucial to preparing students， for the workforce。
+ we'll have three different tracks--， data science， web development， and physical computing--。 offer social good。 So there are a few things that we're doing that we think。 are important and that are different。 So the first is that we think it's。 important to reach students where they are。 Nearly all of low-performing Chicago high schools。
 
- And as Pythonese says， we know that STEM education is more。 than just preparing students to become scientists， engineers， or mathematicians。
+ are on the south side and sit on or border the poorest census， tracks。 However。 the majority of STEM programming， occurs in the city center， which is inaccessible to the majority。 of students who need it the most。 It's really important that we meet the students where they are。 The second is focusing on schools that need it the most。
 
- It's just as important as a liberal arts education。 But the reality is， with the same study。 only 20% of students are actually being reached。 So there's a disconnect between the belief。
+ There's a huge gap between resource versus under-resourced， schools。 So in Chicago， where I live。 I can give two examples。 There is a school up north called Stevenson。 That school has an Olympic-sized pool and espresso bar， two different gyms。 and theater performances。 Versus a school in Waukegan， which typically has 28 students。
 
- that computer science is important and the actual application， of these skills in schools。 So the problems， they can be put into four buckets。 The first two， lack of teachers。
+ to just one computer and their band， plays in the hallway because they don't have enough space。 The third thing that we think is important， is exposing students to all opportunities in tech。 Our students have the opportunity， to take on the roles from product manager to product， designer。 programmer， sales， and marketing。 Something in there will resonate with all students。
 
- lack of standardized curriculum。 Over half of public school districts in the nation。 report struggling to recruit and retain certified， and effective STEM teachers。
+ So let's get together and expose students， to everything within tech。 And lastly。 I think it's important to empower students， to actually create the change that they seek to see。 Our students build applications that， make positive impact on their local communities。 And if you or your company is interested in sponsoring， or donating to 501(c)(3s。
 
- And this figure raises to 90% in districts serving。 large proportions of African-American and Hispanic students。 Number three and number four。
-
- lack of gear and lack of funding。 In Illinois， where I live and where I teach。 it has the most unfair school funding system in the nation。
-
- according to a study released by the Education Trust。 And in this study， individual schools。 were underfunded by $2。4 billion。 So I know you're all asking， what can we do？
-
- We really need your help。 As a community， let's invest in the schools that have the least。 And this is why I started CodeR Dreams。 As I said， CodeR Dreams is a 501(c)(3) nonprofit in Chicago。
-
- Every student cohort that we teach starts with the question， what communities are you a part of。 what makes them great， and beautiful， but also what problems do you see？
-
- Our students ideate on applications， they can build that address some of those problems。 And then that's the applications that they， build throughout the year-long program。
-
- They learn everything from ideation， to user experience and design， Python programming。 and the delivery of the product to showcase to their communities。 And coming this fall。
-
- we'll have three different tracks--， data science， web development， and physical computing--。 offer social good。 So there are a few things that we're doing that we think。
-
- are important and that are different。 So the first is that we think it's。 important to reach students where they are。 Nearly all of low-performing Chicago high schools。
-
- are on the south side and sit on or border the poorest census， tracks。 However。 the majority of STEM programming， occurs in the city center， which is inaccessible to the majority。
-
- of students who need it the most。 It's really important that we meet the students where they are。 The second is focusing on schools that need it the most。
-
- There's a huge gap between resource versus under-resourced， schools。 So in Chicago， where I live。 I can give two examples。 There is a school up north called Stevenson。
-
- That school has an Olympic-sized pool and espresso bar， two different gyms。 and theater performances。 Versus a school in Waukegan， which typically has 28 students。
-
- to just one computer and their band， plays in the hallway because they don't have enough space。 The third thing that we think is important， is exposing students to all opportunities in tech。
-
- Our students have the opportunity， to take on the roles from product manager to product， designer。 programmer， sales， and marketing。 Something in there will resonate with all students。
-
- So let's get together and expose students， to everything within tech。 And lastly。 I think it's important to empower students， to actually create the change that they seek to see。
-
- Our students build applications that， make positive impact on their local communities。 And if you or your company is interested in sponsoring， or donating to 501(c)(3s。
-
- please give me a shout or drop me， a business card。 You can visit our website at coderdreams。org。 And we'd love to talk to you。 Thank you。 [APPLAUSE]， Thank you so much。 Our next-- no， no， no， no。
-
- Our next talk is Daniel。 Please give him a big hand。 Hi。
+ please give me a shout or drop me， a business card。 You can visit our website at coderdreams。org。 And we'd love to talk to you。 Thank you。 [APPLAUSE]， Thank you so much。 Our next-- no， no， no， no。 Our next talk is Daniel。 Please give him a big hand。 Hi。
 ![](img/76e7a19348f321f8aa51233af6026bd0_15.png)
 
  Hello。 Hi。 This isn't nearly as serious， so I apologize in advance。 So I'm from here。 but really from here。
-
 ![](img/76e7a19348f321f8aa51233af6026bd0_17.png)
 
- This is my daughter in addition to liking unicorns。 She also likes Minecraft， and I like Minecraft。 which is--， I thought that might be worthy of study， but apparently。
+ This is my daughter in addition to liking unicorns。 She also likes Minecraft， and I like Minecraft。 which is--， I thought that might be worthy of study， but apparently。 that doesn't actually work as a thing。 But in the mean-- but as a result of the research。 I ran into this， and I like the idea of transforming， your world with the power of Python。
 
- that doesn't actually work as a thing。 But in the mean-- but as a result of the research。 I ran into this， and I like the idea of transforming， your world with the power of Python。
+ That seems like a good idea。 And the way this works in practice。 it's for the Java version of the thing。 And you take the Java version of the program。 you embed it in a server。 It exposes a Java-based plugin framework。 It's built for the Raspberry Pi version of the game。
 
- That seems like a good idea。 And the way this works in practice。 it's for the Java version of the thing。 And you take the Java version of the program。
+ There's a beautiful Python client that some folks from Python。 UK sprinted on and got to work really well。 And it works really well。 doing object content into the game。 So my problem is that this is mostly one way。 You can put stuff in， but what I really want to do， is I want to be able to respond to game events。
 
- you embed it in a server。 It exposes a Java-based plugin framework。 It's built for the Raspberry Pi version of the game。
+ Players move， blocks change。 There's a chicken up here。 You want to do chicken things with it。 And anything else that you have this really rich API that， is actually exposed by the game。 So I figured， well， let's see if we can do this with some， modern Python。 And it turns out there's a thing we can do。 We can write a web socket adapter。
 
- There's a beautiful Python client that some folks from Python。 UK sprinted on and got to work really well。 And it works really well。
+ Use that as the transport。 There's this beautiful library called Trio Web Sockets。 So those folks have been doing a really good job， in getting an asynchronous client that works on that。 We can write something between--， I mean， it's big， it's so washer， I don't know。 And then you could write on that。 So the scope of the implementation is。
 
- doing object content into the game。 So my problem is that this is mostly one way。 You can put stuff in， but what I really want to do， is I want to be able to respond to game events。
+ we have to write this Java website， get plug-in。 I mean， there's others。 but it's like for web things， for web people， and I'm not one of those。 So we need our own。 And what we're really doing is serializing， and deserializing a bunch of these Java API things。 And for the sake of actually making it easy to use， on the same level as my API， we need to Python。
 
- Players move， blocks change。 There's a chicken up here。 You want to do chicken things with it。 And anything else that you have this really rich API that， is actually exposed by the game。
+ module to hide all those details。 So let's say we have something that looks kind of like this。 We register a bunch of callbacks。 We can set blocks。 In this case。 the idea is to respond to a player moving， and sort of put a block behind them。 In other words。 Tron。 So you have some of these that sort of look like this。 You've got the game。
 
- So I figured， well， let's see if we can do this with some， modern Python。 And it turns out there's a thing we can do。 We can write a web socket adapter。
-
- Use that as the transport。 There's this beautiful library called Trio Web Sockets。 So those folks have been doing a really good job， in getting an asynchronous client that works on that。
-
- We can write something between--， I mean， it's big， it's so washer， I don't know。 And then you could write on that。 So the scope of the implementation is。
-
- we have to write this Java website， get plug-in。 I mean， there's others。 but it's like for web things， for web people， and I'm not one of those。 So we need our own。
-
- And what we're really doing is serializing， and deserializing a bunch of these Java API things。 And for the sake of actually making it easy to use， on the same level as my API， we need to Python。
-
- module to hide all those details。 So let's say we have something that looks kind of like this。 We register a bunch of callbacks。 We can set blocks。 In this case。
-
- the idea is to respond to a player moving， and sort of put a block behind them。 In other words。 Tron。 So you have some of these that sort of look like this。 You've got the game。
-
- It talks to the server。 It talks to the Python client。 What's the current state？ This is--。 [LAUGHTER]， Are they software development lifecycle？ This is the proof of concept stage。
-
- So it works。 It actually works。 The Python client can do that and send messages。 The Java thing can send messages to connected clients， and so on。 If this is where your nerd is。
+ It talks to the server。 It talks to the Python client。 What's the current state？ This is--。 [LAUGHTER]， Are they software development lifecycle？ This is the proof of concept stage。 So it works。 It actually works。 The Python client can do that and send messages。 The Java thing can send messages to connected clients， and so on。 If this is where your nerd is。
 
  that's where mine is。 Let's chat。 Thank you very much for your patience。
 ![](img/76e7a19348f321f8aa51233af6026bd0_19.png)
 
- [APPLAUSE]， All right。 That is definitely the first time I've seen the poof of， concept emoji。 poof of concept， my project is the poof， of concept stage。 The next speaker is hi。
+ [APPLAUSE]， All right。 That is definitely the first time I've seen the poof of， concept emoji。 poof of concept， my project is the poof， of concept stage。 The next speaker is hi。 I'm please give him a huge hand。 [APPLAUSE]， Good morning， everyone。 I hope everybody is having a great beginning to the third day， of the conference。
 
- I'm please give him a huge hand。 [APPLAUSE]， Good morning， everyone。 I hope everybody is having a great beginning to the third day， of the conference。
-
- So I'm going to talk quickly about PySlackers， because everybody。 needs more workspaces in their lives。 Slack has an amazing workspace switching interface。
-
- You just switch your interfaces。 And so you should all make use of it， by joining PySlackers。 And I'm going to tell you what that is in just a minute。
+ So I'm going to talk quickly about PySlackers， because everybody。 needs more workspaces in their lives。 Slack has an amazing workspace switching interface。 You just switch your interfaces。 And so you should all make use of it， by joining PySlackers。 And I'm going to tell you what that is in just a minute。
 
 
 
 ![](img/76e7a19348f321f8aa51233af6026bd0_21.png)
 
- That's our logo。 It's a Slack for Python。 It's been around for about three years。 I actually joined in December。 And if anybody here has spoken to me at the conference。
+ That's our logo。 It's a Slack for Python。 It's been around for about three years。 I actually joined in December。 And if anybody here has spoken to me at the conference。 or in any other time， I participate。 Let's put it that way。 So I joined in December and February。 They were looking for new admins。 And I was nominated and made an admin， so there's about 10 of us。
 
- or in any other time， I participate。 Let's put it that way。 So I joined in December and February。 They were looking for new admins。 And I was nominated and made an admin， so there's about 10 of us。
-
- And that was really cool。 And I joined PySlackers， because I do Python and work， every day。 But I don't get the community like this every day。 And I wanted to find one。
-
- And I found it on PySlackers。 And it's amazing。
+ And that was really cool。 And I joined PySlackers， because I do Python and work， every day。 But I don't get the community like this every day。 And I wanted to find one。 And I found it on PySlackers。 And it's amazing。
 ![](img/76e7a19348f321f8aa51233af6026bd0_23.png)
 
- So some information about PySlackers。 We have 21，352 members。 As of 12。30 last night。 I checked a few minutes ago。 We have three more。 79 channels。
+ So some information about PySlackers。 We have 21，352 members。 As of 12。30 last night。 I checked a few minutes ago。 We have three more。 79 channels。 We make them new channels with thoughtfulness。 So we're open to creating new channels。 but we like having a channel used and not just channels， that aren't used。
 
- We make them new channels with thoughtfulness。 So we're open to creating new channels。 but we like having a channel used and not just channels， that aren't used。
+ So if there's a new channel that we need， great。 But if not， use one that's there。 90% of the messages are public。 We tend not to use threading。 Like I said。 Slack has a great workspace switcher， the threading interface。 Not as much。 But 90% of the messages are public， which is great。 But because there's 20，000 of us。
 
- So if there's a new channel that we need， great。 But if not， use one that's there。 90% of the messages are public。 We tend not to use threading。 Like I said。
+ we don't pay for Slack， because， well， that would be kind of insane。 So messages only live for about a week。 So if you're going to join， check things out。 It's amazing。 I'll give you a brief moment to just look at that。 That's a sampling of our channels。 If you want to find me any other time today， and talk about some of them， I'm happy to。
 
- Slack has a great workspace switcher， the threading interface。 Not as much。 But 90% of the messages are public， which is great。 But because there's 20，000 of us。
+ I'm active on more than a few of them。 And that's great。 And I love it。 So I'll leave that up for just a minute。 You can bruise。 And that was 10 seconds， which is plenty。 So join us。 I would love everyone here to join。 I know not a lot of people have heard about it。 even though we have 20，000 users。 So if you haven't heard， come check it out。
 
- we don't pay for Slack， because， well， that would be kind of insane。 So messages only live for about a week。 So if you're going to join， check things out。 It's amazing。
+ We get about 150 new users a week。 Because of this presentation that I'm giving。 I would love to increase that by an order of magnitude， this week， just so I can say， ha， ha。 I did that。 And that's awesome。 In particular， if anybody is between UTC plus 7 and plus 14。 which is also known as minus 10， which I learned last night--。
 
- I'll give you a brief moment to just look at that。 That's a sampling of our channels。 If you want to find me any other time today， and talk about some of them， I'm happy to。
-
- I'm active on more than a few of them。 And that's great。 And I love it。 So I'll leave that up for just a minute。 You can bruise。 And that was 10 seconds， which is plenty。
-
- So join us。 I would love everyone here to join。 I know not a lot of people have heard about it。 even though we have 20，000 users。 So if you haven't heard， come check it out。
-
- We get about 150 new users a week。 Because of this presentation that I'm giving。 I would love to increase that by an order of magnitude， this week， just so I can say， ha， ha。
-
- I did that。 And that's awesome。 In particular， if anybody is between UTC plus 7 and plus 14。 which is also known as minus 10， which I learned last night--。
-
- and that's amazing-- that there are two time zones that， are both plus and minus time zones--。 we don't have as much coverage there。 And we do definitely have users from there。
-
- that are asking for help in their time zone， and things are quiet。 So if you know Python。 if you want to help people， and you're in those time zones， please join。
+ and that's amazing-- that there are two time zones that， are both plus and minus time zones--。 we don't have as much coverage there。 And we do definitely have users from there。 that are asking for help in their time zone， and things are quiet。 So if you know Python。 if you want to help people， and you're in those time zones， please join。
 
  because that would be awesome。 Thank you。 Again， I'm Chaim Kirby。 I'm at Mistop on Pyslikers。 I'm not going to give you an email address。
-
 ![](img/76e7a19348f321f8aa51233af6026bd0_25.png)
 
- because if you want to talk to me， you've got to join。 [APPLAUSE]， Thank you， Chaim。 Felipe。 are you ready to go？ Then you first， your audience must give him a big welcome。
+ because if you want to talk to me， you've got to join。 [APPLAUSE]， Thank you， Chaim。 Felipe。 are you ready to go？ Then you first， your audience must give him a big welcome。 and then he was good。 [APPLAUSE]， Hello。 Good morning， everybody。 So Anthony and I。 we are here to talk about Call of Forge， a community pattern that works for you。
 
- and then he was good。 [APPLAUSE]， Hello。 Good morning， everybody。 So Anthony and I。 we are here to talk about Call of Forge， a community pattern that works for you。
+ And our actual talk is going to be about reinventing the wheel。 Funny thing。 our first title was Beyond the Wheel， and then we realized that a better title would be working。 progress。 So just a little bit about Call of Forge before we go。 We tried to address all the package you need。 It's going to be a one-stop shop for all the platforms--。
 
- And our actual talk is going to be about reinventing the wheel。 Funny thing。 our first title was Beyond the Wheel， and then we realized that a better title would be working。
+ Windows， Mac， Linux， ARM， R8 and 9， and no arch。 So if you have to support multiple platforms with a single tool。 and you need a lot of packages， call it， on the call of Forge， it's a tool for you。 Call of Forge is big， and it's growing more and more， every day， like we have more than 100。000 artifacts， totaling up to more than 450 gigabytes spread over 6，000， feedstocks with more than 1。
 
- progress。 So just a little bit about Call of Forge before we go。 We tried to address all the package you need。 It's going to be a one-stop shop for all the platforms--。
+000 maintainers， taking care of all these packages。 We have so far more than 4，000 pull requests。 and I believe we broke the record and did have for most--， the repository is the most sub-modules。 So but we're here to talk about wheels， and then I would like to introduce you， Condopress。 Condopress is a new tool that converts， condopecages to wheels。
 
- Windows， Mac， Linux， ARM， R8 and 9， and no arch。 So if you have to support multiple platforms with a single tool。 and you need a lot of packages， call it， on the call of Forge， it's a tool for you。
-
- Call of Forge is big， and it's growing more and more， every day， like we have more than 100。000 artifacts， totaling up to more than 450 gigabytes spread over 6，000， feedstocks with more than 1。
-
-000 maintainers， taking care of all these packages。 We have so far more than 4，000 pull requests。 and I believe we broke the record and did have for most--， the repository is the most sub-modules。
-
- So but we're here to talk about wheels， and then I would like to introduce you， Condopress。 Condopress is a new tool that converts， condopecages to wheels。
-
- You can find it on the reorganization， Condopress。 It's a pretty new project。 Condopress tries to address problems mixing people， in Condop， because that usually end up。
-
- with all this ABI incompatibility。 So Oracle starts to fix that。 Some people may want to package with different builds， or newer ABIs than the main elements。 Like。
+ You can find it on the reorganization， Condopress。 It's a pretty new project。 Condopress tries to address problems mixing people， in Condop， because that usually end up。 with all this ABI incompatibility。 So Oracle starts to fix that。 Some people may want to package with different builds， or newer ABIs than the main elements。 Like。
 
  for example， if you want to cancel flow with a different， like say， a little jusillip。 And Condop have a lot of packages that are not on wheels。
-
-
-
 ![](img/76e7a19348f321f8aa51233af6026bd0_27.png)
 
- so maybe we can try to port those over there as well。 Now。 because I'm not crazy enough to speak for the language， and do a demo。
-
- I'm going to head over to Anthony， and he's going to show you。 Everybody。 let's get out of presentation mode here。
-
+ so maybe we can try to port those over there as well。 Now。 because I'm not crazy enough to speak for the language， and do a demo。 I'm going to head over to Anthony， and he's going to show you。 Everybody。 let's get out of presentation mode here。
 ![](img/76e7a19348f321f8aa51233af6026bd0_29.png)
 
- So we're going to go ahead and build up a little Conda index， here with Condopress。 So here what we're doing is we're， going to build a wheel for Python 3。8 using a Conda， forages 3。
-
-8 package。 So we're going to go ahead and run this-- oops， sorry， time。
+ So we're going to go ahead and build up a little Conda index， here with Condopress。 So here what we're doing is we're， going to build a wheel for Python 3。8 using a Conda， forages 3。8 package。 So we're going to go ahead and run this-- oops， sorry， time。
 ![](img/76e7a19348f321f8aa51233af6026bd0_31.png)
 
  --p。
 ![](img/76e7a19348f321f8aa51233af6026bd0_33.png)
 
- And you can see this is actually just taking， the actual Conda forage artifact。 this is the tar ball， and then turning that into a wheel， without doing a lot of extra things。
-
- It's not rebuilding that package。 What it's doing is-- hopefully， assuming。 I'm connected to the internet。 No， I'm not connected to the internet， so the--。
+ And you can see this is actually just taking， the actual Conda forage artifact。 this is the tar ball， and then turning that into a wheel， without doing a lot of extra things。 It's not rebuilding that package。 What it's doing is-- hopefully， assuming。 I'm connected to the internet。 No， I'm not connected to the internet， so the--。
 
 
 
@@ -351,25 +195,20 @@
  oh， no。 Live demos， boo。 That's why I didn't want to do it。 Yeah。
 ![](img/76e7a19348f321f8aa51233af6026bd0_37.png)
 
- [LAUGHTER]， OK， so let's turn off the Wi-Fi。 Let's turn it back on。 This was literally working a couple seconds ago。 Yeah， I will。 I can-- I can actually do that。
-
- And I am going to try hotspotting right now。 [LAUGHTER]， Oh。 but it looks like we might be back on Python。
+ [LAUGHTER]， OK， so let's turn off the Wi-Fi。 Let's turn it back on。 This was literally working a couple seconds ago。 Yeah， I will。 I can-- I can actually do that。 And I am going to try hotspotting right now。 [LAUGHTER]， Oh。 but it looks like we might be back on Python。
 
 ![](img/76e7a19348f321f8aa51233af6026bd0_39.png)
 
  so let's try it again。 And yes， no。 Yes， there we go。
 ![](img/76e7a19348f321f8aa51233af6026bd0_41.png)
 
- We're going。 So right now it's converting--， it's converting these things。 [APPLAUSE]。 What it's doing is it's taking all the metadata out， of those tar balls and repackaging them。
-
- into metadata that wheels understands， moving all the files around such that in a way that。 is meaningful。 Oh， come on， people。 What's going on？ Why is it taking so long？
+ We're going。 So right now it's converting--， it's converting these things。 [APPLAUSE]。 What it's doing is it's taking all the metadata out， of those tar balls and repackaging them。 into metadata that wheels understands， moving all the files around such that in a way that。 is meaningful。 Oh， come on， people。 What's going on？ Why is it taking so long？
 
  So is the internet really that bad here？
 
 ![](img/76e7a19348f321f8aa51233af6026bd0_43.png)
 
  Yes。 OK。 Let's just network here。 And do I need to disconnect-- oh， yeah。 let's connect to my personal one。
-
 ![](img/76e7a19348f321f8aa51233af6026bd0_45.png)
 
  And hopefully this works。 Come on。 Big money。 Duh-duh-duh-duh。
@@ -379,9 +218,6 @@
 ![](img/76e7a19348f321f8aa51233af6026bd0_49.png)
 
  Wow， that took a long time。 So hopefully we're on the right network。 OK， it's going again。 Hopefully this actually works。 And it gets to the next package。 There we go。
-
-
-
 ![](img/76e7a19348f321f8aa51233af6026bd0_51.png)
 
  OK， it looks like it's actually moving now。 So right now， what it's doing is it's。
@@ -390,9 +226,7 @@
  also walking the dependency tree。 So it's going and actually getting the runtime libraries。
 ![](img/76e7a19348f321f8aa51233af6026bd0_55.png)
 
- and taking the artifacts for those runtime libraries， building those。 It's doing-- right now that's what it's doing with libGCC。
-
- You'll see it to open SSL in SQL Lite and end curses。
+ and taking the artifacts for those runtime libraries， building those。 It's doing-- right now that's what it's doing with libGCC。 You'll see it to open SSL in SQL Lite and end curses。
 ![](img/76e7a19348f321f8aa51233af6026bd0_57.png)
 
  and all of the things that term info and TK。
@@ -405,167 +239,101 @@
 ![](img/76e7a19348f321f8aa51233af6026bd0_63.png)
 
  We've got a virtual end down here。 So we can see it's clean。 It's a clean virtual end。 So if you do Python dash dash version--。
-
 ![](img/76e7a19348f321f8aa51233af6026bd0_65.png)
 
  sorry， I don't normally use bash right。 This is this。 But now， because we have these wheels。
 ![](img/76e7a19348f321f8aa51233af6026bd0_67.png)
 
- we can point PIP to the local index directory， where things live， tell it not to go use PyPI。 and then install this Python 3。8 wheel。 It'll install all those packages as normal， resolve them。
-
- And now if we go ahead and we run Python dash version， bam， we have just pip installed Python 3。8 here。 [APPLAUSE]， This works for all packages。 If you want to make-- if you want to see make。
+ we can point PIP to the local index directory， where things live， tell it not to go use PyPI。 and then install this Python 3。8 wheel。 It'll install all those packages as normal， resolve them。 And now if we go ahead and we run Python dash version， bam， we have just pip installed Python 3。8 here。 [APPLAUSE]， This works for all packages。 If you want to make-- if you want to see make。
 
  if you want G dial or other crazy packages--。
 ![](img/76e7a19348f321f8aa51233af6026bd0_69.png)
 
- yeah， this， we're come talk to us。 OK， come on up。 And there we go。 Yeah， we're done。 All right。 thank you very much。 So up next is some regional Python conference announcements。
+ yeah， this， we're come talk to us。 OK， come on up。 And there we go。 Yeah， we're done。 All right。 thank you very much。 So up next is some regional Python conference announcements。 Would you like to like to announce them， Dustin？ Yeah， so in case you didn't know--。 in case you didn't know。 In case you didn't know， there's lots。
 
- Would you like to like to announce them， Dustin？ Yeah， so in case you didn't know--。 in case you didn't know。 In case you didn't know， there's lots。
-
- of regional pikons that happen as well。 Probably one is happening really close to you。 It's a lot smaller than this Python， but it should be a lot of fun as well。
-
- So we're going to do a whole bunch of regional ones。 and they're going to announce their dates starting。
+ of regional pikons that happen as well。 Probably one is happening really close to you。 It's a lot smaller than this Python， but it should be a lot of fun as well。 So we're going to do a whole bunch of regional ones。 and they're going to announce their dates starting。
 
 
 
 ![](img/76e7a19348f321f8aa51233af6026bd0_71.png)
 
- with Python。 All right， so our usual rule for conference announcements， is one slide， one minute。 And we've got to-- it's going to be one slide， one sentence。 OK。
+ with Python。 All right， so our usual rule for conference announcements， is one slide， one minute。 And we've got to-- it's going to be one slide， one sentence。 OK。 and just make it a really good sentence。 Everyone， don't clap between the announcements。 because otherwise it will take forever。 Everyone， please assume your claps are there。
 
- and just make it a really good sentence。 Everyone， don't clap between the announcements。 because otherwise it will take forever。 Everyone， please assume your claps are there。
+ and then go as quickly as you can。 All right， clap all the speakers now in advance。 Clap all the previous speakers。 Clap everyone that's involved in Python in any kind of way。 And regional conferences go。 OK， pikons。 CZ will be on Strava。 We have a piedata track， so if you。 want to do data mining in an actual former coal mine， come to pikons。 CZ。 [LAUGHTER]， [APPLAUSE]。
 
- and then go as quickly as you can。 All right， clap all the speakers now in advance。 Clap all the previous speakers。 Clap everyone that's involved in Python in any kind of way。
+ [INAUDIBLE]， [INAUDIBLE]， [INAUDIBLE]， Hello， so we have to choose one and only one conference。 Don't trust anyone else。 It has to be pale on the new。 We have the Spice Girl coming before that weekend。 It's in June。 We have the Backstreet Boy afterwards。 We have amazing speakers。 Check this schedule。
 
- And regional conferences go。 OK， pikons。 CZ will be on Strava。 We have a piedata track， so if you。 want to do data mining in an actual former coal mine， come to pikons。 CZ。 [LAUGHTER]， [APPLAUSE]。
-
- [INAUDIBLE]， [INAUDIBLE]， [INAUDIBLE]， Hello， so we have to choose one and only one conference。 Don't trust anyone else。 It has to be pale on the new。
-
- We have the Spice Girl coming before that weekend。 It's in June。 We have the Backstreet Boy afterwards。 We have amazing speakers。 Check this schedule。
-
- And all the profit from the conference， I'm going directly to the CPython， core developer sprints。 And oh， yeah， there's also a donut that way， but I think it's not the right audience。 Also。
-
- if you have to choose only one conference， go to Euro Python this year。 It's July 8 to the 14th。 It's in Bayesville。 If you have gone to Euro Python before。
+ And all the profit from the conference， I'm going directly to the CPython， core developer sprints。 And oh， yeah， there's also a donut that way， but I think it's not the right audience。 Also。 if you have to choose only one conference， go to Euro Python this year。 It's July 8 to the 14th。 It's in Bayesville。 If you have gone to Euro Python before。
 
 
 
 ![](img/76e7a19348f321f8aa51233af6026bd0_73.png)
 
- you know it's an amazing conference， you cannot miss it。 If you like Python in Ohio。 PioHio is in this summer， the weather will be nicer， most likely， no promises。 In Columbus， Ohio。
-
- the CFP is open through May 12。 Registration is free， and we're looking for sponsors。 to help keep it free。 I am the very model of Django AUCFP。
+ you know it's an amazing conference， you cannot miss it。 If you like Python in Ohio。 PioHio is in this summer， the weather will be nicer， most likely， no promises。 In Columbus， Ohio。 the CFP is open through May 12。 Registration is free， and we're looking for sponsors。 to help keep it free。 I am the very model of Django AUCFP。
 
 
 
 ![](img/76e7a19348f321f8aa51233af6026bd0_75.png)
 
- I cover top-- that。 I cover top pokes complex， yes， but also elementary。 I'll take your talks on testing and contributing， to open source on data vision， Django。
-
- and converting ASCII into Morse。 About stack automation and on scientific things， of note。 the packages you love to use in engineering anecdote， your teamwork， hacks， disaster plans。
+ I cover top-- that。 I cover top pokes complex， yes， but also elementary。 I'll take your talks on testing and contributing， to open source on data vision， Django。 and converting ASCII into Morse。 About stack automation and on scientific things， of note。 the packages you love to use in engineering anecdote， your teamwork， hacks， disaster plans。
 
  and writing， docs for all that code on what to do， and all your applications overload。 In short。 on topics both complex and also elementary， I am the very model of a Python AUCFP。
-
-
-
 ![](img/76e7a19348f321f8aa51233af6026bd0_77.png)
 
- We are having our first ever Python Africa。 So this is-- I know。 It's the first one。 It's very important。 It is going to be a group of people， from across the continent。
+ We are having our first ever Python Africa。 So this is-- I know。 It's the first one。 It's very important。 It is going to be a group of people， from across the continent。 Africa is a continent。 For those of you who are not aware， the weather is going to be amazing。 It's in Acra Ghana。 It's so much better than the weather here。
 
- Africa is a continent。 For those of you who are not aware， the weather is going to be amazing。 It's in Acra Ghana。 It's so much better than the weather here。
-
- So the CFP is open right now until June 1。 So please come and give a talk。 Thanks。 Well。 Pi Bay is happening on the third weekend of August。 We have two days of workshops， and about six。
-
- talks this year。 And we are taking CFP until the 12。 We're likely going to sell out this year at 800 people。 So please do come get a ticket， and we're。
+ So the CFP is open right now until June 1。 So please come and give a talk。 Thanks。 Well。 Pi Bay is happening on the third weekend of August。 We have two days of workshops， and about six。 talks this year。 And we are taking CFP until the 12。 We're likely going to sell out this year at 800 people。 So please do come get a ticket， and we're。
 
  running a special with discounts this week， for Python members。 Thank you。
 ![](img/76e7a19348f321f8aa51233af6026bd0_79.png)
 
- All right， so we are here for a Python atom。 It's going to happen in Puerto Vallarta， Mexico。 August 29， 31， call for proposals end this month， end of this month。
-
- And we're going to have two tracks， English and Spanish。 And also。 wrapping for Euro-SIPA in 2019 in Bilbao。
+ All right， so we are here for a Python atom。 It's going to happen in Puerto Vallarta， Mexico。 August 29， 31， call for proposals end this month， end of this month。 And we're going to have two tracks， English and Spanish。 And also。 wrapping for Euro-SIPA in 2019 in Bilbao。
 
 ![](img/76e7a19348f321f8aa51233af6026bd0_81.png)
 
- in the vast country in the north of Spain， September 2 to 6， and call for proposals in May 12。 Thank you。 [APPLAUSE]， So is this our slide？ Next。 Next slide。 Do I have to hit it？ Sorry。
+ in the vast country in the north of Spain， September 2 to 6， and call for proposals in May 12。 Thank you。 [APPLAUSE]， So is this our slide？ Next。 Next slide。 Do I have to hit it？ Sorry。 I didn't know。 So OK， both the gold rush and the silver rush。 proved that Colorado had way more hidden beauty than one， could see in their eye。
 
- I didn't know。 So OK， both the gold rush and the silver rush。 proved that Colorado had way more hidden beauty than one， could see in their eye。
+ Our sunsets inspired America， the beautiful。 Our peaks make the picturesque， skyline。 of the American West， and this September we invite you， to Denver， the Mile High City。 the Queen City of the Plains， and the inaugural location of Pi Colorado。 See if P's open 11 more days and tickets， are still selling things。 [APPLAUSE]。
 
- Our sunsets inspired America， the beautiful。 Our peaks make the picturesque， skyline。 of the American West， and this September we invite you， to Denver， the Mile High City。
-
- the Queen City of the Plains， and the inaugural location of Pi Colorado。 See if P's open 11 more days and tickets， are still selling things。 [APPLAUSE]。
-
- [SPEAKING PORTUGUESE]， September， CFE opened。 Japanese and English is available。 Please， please。 please， please， please， please， please， thank you。 [APPLAUSE]， OK， 20 seconds。
-
- I think he notes make a conference memorable， so I want to give a big warm welcome to K。 Lars Lorne。 Andrew Godwin， Mario Mitri， and Michaela Taganasi for， to make the next bike on a Balkan memorable。
+ [SPEAKING PORTUGUESE]， September， CFE opened。 Japanese and English is available。 Please， please。 please， please， please， please， please， thank you。 [APPLAUSE]， OK， 20 seconds。 I think he notes make a conference memorable， so I want to give a big warm welcome to K。 Lars Lorne。 Andrew Godwin， Mario Mitri， and Michaela Taganasi for， to make the next bike on a Balkan memorable。
 
  It's from the third to fifth of October in Belgrade Serbia， just across the pond。 Thank you very much。 [APPLAUSE]。
-
 ![](img/76e7a19348f321f8aa51233af6026bd0_83.png)
 
- You should all come to Pygothum in New York City this， October 4th and 5th。 Our call for proposals is open now through May 12th， anywhere on Earth。
-
- There are going to be 600 people， 60 talks， and a great time。 If you'd like to help us choose our schedule， we have public voting opening shortly。
+ You should all come to Pygothum in New York City this， October 4th and 5th。 Our call for proposals is open now through May 12th， anywhere on Earth。 There are going to be 600 people， 60 talks， and a great time。 If you'd like to help us choose our schedule， we have public voting opening shortly。
 
  after our call for proposals end。 Find out full details at 2019。pagothum。org。
 ![](img/76e7a19348f321f8aa51233af6026bd0_85.png)
 
- You know what I'm going to say， right？ You have to use one and only one conference。 Now。 unless you leave， you're into good food， good weather， and going to the beach。
+ You know what I'm going to say， right？ You have to use one and only one conference。 Now。 unless you leave， you're into good food， good weather， and going to the beach。 What are you doing here？ Coming to Pygothum in Spain。 It's in the tour。 And check out the schedule。 It's going to be published probably in something like a month。
 
- What are you doing here？ Coming to Pygothum in Spain。 It's in the tour。 And check out the schedule。 It's going to be published probably in something like a month。
-
- We're still getting proposals or sending proposals， and maybe you can be a speaker there as well。 Thank you。 [INAUDIBLE]， All right。 This is not mine， but we have Sypi， Lazem， and Bogota。
-
- on October 8th， 10th。
+ We're still getting proposals or sending proposals， and maybe you can be a speaker there as well。 Thank you。 [INAUDIBLE]， All right。 This is not mine， but we have Sypi， Lazem， and Bogota。 on October 8th， 10th。
 ![](img/76e7a19348f321f8aa51233af6026bd0_87.png)
 
- We also have Pygothum in Pygothum in Pygothum in Berlin， coming up October 9th to 11th。 Finally， OK。 North Bay Python in Piedaluma， California， which is just an hour ahead of San Francisco。
+ We also have Pygothum in Pygothum in Pygothum in Berlin， coming up October 9th to 11th。 Finally， OK。 North Bay Python in Piedaluma， California， which is just an hour ahead of San Francisco。 This is our third year running since two-day single track， event in beautiful wine country。 See if people open July 1st。 We run November 1st， 2nd and 3rd。 Thank you。 [APPLAUSE]， Hey。
 
- This is our third year running since two-day single track， event in beautiful wine country。 See if people open July 1st。 We run November 1st， 2nd and 3rd。 Thank you。 [APPLAUSE]， Hey。
+ everybody。 I'm Elaine。 I'd like to invite you all to Pygothum Canada。 It's taking place in November 16th to 19th， because you should all come to Toronto in middle of November。 I hear great things about it。 Our CFP is currently open。 Check it out at PyCon。ca。 I stole this talk from John。 So like he said， you should propose a talk on any topic。
 
- everybody。 I'm Elaine。 I'd like to invite you all to Pygothum Canada。 It's taking place in November 16th to 19th， because you should all come to Toronto in middle of November。
-
- I hear great things about it。 Our CFP is currently open。 Check it out at PyCon。ca。 I stole this talk from John。 So like he said， you should propose a talk on any topic。
-
- that would be of interest to the Python community。 So check out our website。 We have stickers。 Come see me。 We're also looking for volunteers or out。
-
- We're also looking for volunteers who are interested in helping out。 and we're also looking for sponsors。
+ that would be of interest to the Python community。 So check out our website。 We have stickers。 Come see me。 We're also looking for volunteers or out。 We're also looking for volunteers who are interested in helping out。 and we're also looking for sponsors。
 
 ![](img/76e7a19348f321f8aa51233af6026bd0_89.png)
 
- So thank you。 And I just want to also announce that PyCon Columbia。 is taking place in February of next year。 The dates are there， February 7th， 8th， and 9th。
+ So thank you。 And I just want to also announce that PyCon Columbia。 is taking place in February of next year。 The dates are there， February 7th， 8th， and 9th。 And you need questions， please go to the website， and they have a Twitter at the bottom。 Thanks。 Hi。 I'm Irma Kramer， organized Pytexas。 We just had our Pytexas 2019 conference on April 13th。
 
- And you need questions， please go to the website， and they have a Twitter at the bottom。 Thanks。 Hi。 I'm Irma Kramer， organized Pytexas。 We just had our Pytexas 2019 conference on April 13th。
+ It was great。 It was the biggest one yet。 We would love to see you in 2020。 We've got our act together。 We've got our dates May 16th and the 17th。 And Austin。 if you want to help us， you want to find out more about us， go to Pytexas。org。 Or follow us on Twitter。 Pytexas， next year is in Portland during the rainy time。 Please come。
 
- It was great。 It was the biggest one yet。 We would love to see you in 2020。 We've got our act together。 We've got our dates May 16th and the 17th。 And Austin。
+ It is lovely。 Hey， I wanted to talk to you a little bit about PyCon Argentina。 We have a really nice PyCon there。 It's rather bigish。 Last year， it was in Buenos Aires。 We had almost 1，000 attendees。 Next year， it's going to be in Buenos Aires， too。 And with your help。 it's probably going to be bigger， even。 We have a really nice community， a really nice country。
 
- if you want to help us， you want to find out more about us， go to Pytexas。org。 Or follow us on Twitter。 Pytexas， next year is in Portland during the rainy time。 Please come。
-
- It is lovely。 Hey， I wanted to talk to you a little bit about PyCon Argentina。 We have a really nice PyCon there。 It's rather bigish。 Last year， it was in Buenos Aires。
-
- We had almost 1，000 attendees。 Next year， it's going to be in Buenos Aires， too。 And with your help。 it's probably going to be bigger， even。 We have a really nice community， a really nice country。
-
- It's free， so no excuse。 And if you wanted to know Argentina， this is a great excuse to go。 So yeah。 [APPLAUSE]， Hey， everybody。 My name is Andy。 Would you like to see a PyCarolinas？ I would。
-
- There isn't one right now。 This is a call for action。 Please help make me happen。 We have an open space at 10 AM in room 22， to start kicking things off。
+ It's free， so no excuse。 And if you wanted to know Argentina， this is a great excuse to go。 So yeah。 [APPLAUSE]， Hey， everybody。 My name is Andy。 Would you like to see a PyCarolinas？ I would。 There isn't one right now。 This is a call for action。 Please help make me happen。 We have an open space at 10 AM in room 22， to start kicking things off。
 
  You can contact me at automationpanda。com。 Please， I really want this conference。 Thank you。 [APPLAUSE]， All right。 Thank you very much。 Thank you。 I'm not on。 Yo， thank you very much。
-
-
-
 ![](img/76e7a19348f321f8aa51233af6026bd0_91.png)
 
- Thanks to each and every single one of all the speakers， for the regional conferences。 including the ones that， announced not their own conferences， but other people's conferences。
+ Thanks to each and every single one of all the speakers， for the regional conferences。 including the ones that， announced not their own conferences， but other people's conferences。 Thank you to Dustin， my co-host。 Give him a big hand。 He's going to be up on stage next year。 Look how much more attractive he is than I am。 It's going to be so much better for you all。
 
- Thank you to Dustin， my co-host。 Give him a big hand。 He's going to be up on stage next year。 Look how much more attractive he is than I am。 It's going to be so much better for you all。
+ The end of the tractor joke can be found online， or you can ask me afterwards。 But actually。 that's not how it works， is it？ That's not what we do。 What we'll do is we'll do the end of the tractor joke at PyCon， 2020， which is in Pittsburgh。 I'm sure it's going to be great。 And that's a reason you can all look forward to it。
 
- The end of the tractor joke can be found online， or you can ask me afterwards。 But actually。 that's not how it works， is it？ That's not what we do。
+ So just remember where we are in that one。 So yes， thanks to all of our lightning talk speakers。 And thanks to each and every one of you for filling up， this room。 Here is the last day of PyCon。 You've all been beautiful。 I'm so glad you're all here。 I'm so glad they're all here。 Please give a massive， massive， massive round of applause。
 
- What we'll do is we'll do the end of the tractor joke at PyCon， 2020， which is in Pittsburgh。 I'm sure it's going to be great。 And that's a reason you can all look forward to it。
-
- So just remember where we are in that one。 So yes， thanks to all of our lightning talk speakers。 And thanks to each and every one of you for filling up， this room。 Here is the last day of PyCon。
-
- You've all been beautiful。 I'm so glad you're all here。 I'm so glad they're all here。 Please give a massive， massive， massive round of applause。
-
- to all the lightning talk speakers all day。 All the ones that we missed that weren't here。 All the ones that are going to come back next year。 All of you guys are going to propose a talk。
-
- If you've never done a talk before， please do a lightning。 talk and enjoy the rest of the conference。 And now， a word from our sponsors。 (audience chuckles)。
+ to all the lightning talk speakers all day。 All the ones that we missed that weren't here。 All the ones that are going to come back next year。 All of you guys are going to propose a talk。 If you've never done a talk before， please do a lightning。 talk and enjoy the rest of the conference。 And now， a word from our sponsors。 (audience chuckles)。
 

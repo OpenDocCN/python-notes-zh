@@ -1,523 +1,140 @@
 # P59：Talk - Mohammad Athar_ D&D and G  a daring tale of Dungeons and Dragons and also - VikingDen7 - BV1f8411Y7cP
 
  Welcome back。
-
 ![](img/6b3141a37cb667142feb0530e37d42aa_1.png)
 
 ![](img/6b3141a37cb667142feb0530e37d42aa_2.png)
 
- So we have second talk of the day， D and D and G， a dating tale of Dungans and dragons。
+ So we have second talk of the day， D and D and G， a dating tale of Dungans and dragons。 and also crafts by Mo Madata。 Over to you Mo。 Hey everybody， thanks for being patient with me。 It's hard to stand。 I'm usually not this rude。 Let's go ahead and get started。 Yeah。 so since I have mostly spent my career in large corporations and my brain is broken。
 
- and also crafts by Mo Madata。 Over to you Mo。 Hey everybody， thanks for being patient with me。
+ I have to give you an agenda。 And we're just going to really quickly talk about myself。 I do some level setting about where you guys are at。 And then I'm going to very briefly introduce graphs and why they're really cool and why。 they matter。 And then I'm going to talk about a handful of algorithms that I've divided into three。
 
- It's hard to stand。 I'm usually not this rude。 Let's go ahead and get started。 Yeah。
+ different classes。 So yeah， let's go ahead and dive in。 If you want to follow along in this presentation， you can check out my link tree。 It's just a Muhammad-Athar。 And it's got a link to a PDF of the presentation and some other stuff。 I'll be adding to that， so check back occasionally。 So yeah， amongst my many， many interests。
 
- so since I have mostly spent my career in large corporations and my brain is broken。
+ I really think graphs are neat。 Obviously I like Python。 I like drawing and DMing sometimes。 so this is a nice little intersection of all of those。 About you。 hopefully you've got some programming under your belt。 This isn't going to be a real coding heavy presentation。 So that should be all right。 If you don't。
 
- I have to give you an agenda。 And we're just going to really quickly talk about myself。
+ hopefully you're familiar with maps or dictionaries in Python。 Real basic object-oriented stuff。 nothing too hardcore there。 There will be some matrices here。 If you aren't familiar with those。 don't worry。 You can always circle back to them and learn them later or just don't use them and use something。 else because graphs are flexible like that。 So people who are familiar with graphs may recognize this map of the city of Kona'sburg。
 
- I do some level setting about where you guys are at。
+ And that's a classic problem in graph theory that presented a city separated by a river。 and in between the river or in the river there are two land masses。 So that's four land masses connected by seven bridges。 The question was。 can you take a tour of the city and cross each bridge exactly once？
 
- And then I'm going to very briefly introduce graphs and why they're really cool and why。
+ I'd rather motivate graphs by asking you about your friend group。 And if I was to ask you about your friend group， you probably wouldn't tell me like a。 bullet point list of their name and date of birth and height and stuff like that。 You're more likely going to tell me about their， you'll probably tell me a story of something， like。
 
- they matter。 And then I'm going to talk about a handful of algorithms that I've divided into three。
+ oh， this is my friend Alice who I met through a mutual friend Bob at a party thrown。 by Claire where I lost a whole bunch of money to my friend Dan and Ellen。 And what that is is you're describing these people and the relationships you have with。 those people。 And that's what's really exciting about graphs is there are data structure that can codify。
 
- different classes。 So yeah， let's go ahead and dive in。
+ systems as entities and relationships。 And a lot of other data structures purport to do that but graphs treat these relationships。 as first class members and that's where their strength really lies。 And two special relationships that they can encode particularly well are directional relationships。 where for example a friendship type of relationship is too directional。
 
- If you want to follow along in this presentation， you can check out my link tree。
+ If you're friends with someone， you kind of assume they're friends with you but if you're。 following someone say on Twitter or something like that， then they don't necessarily have。 to follow you。 And that's where graphs are really useful as far as encoding directional relationships。 There's also transitive relationships。 And the example I like to use to motivate this is if an ad company made like a viral。
 
- It's just a Muhammad-Athar。 And it's got a link to a PDF of the presentation and some other stuff。
+ video and then paid to put it up on Twitter。 And if you really liked it and you retweeted it but you weren't really in the market for。 their product， that ad campaign is a failure using classic analytics。 But if you dig a little deeper into this， your friend may have seen the video， been in the。 market for that product and bought it。 And so you can use graph analytics to encode those transitive relationships and dig a little。
 
- I'll be adding to that， so check back occasionally。 So yeah， amongst my many， many interests。
+ deeper into the success or failure of any particular ad campaign or other relationships。 This is a more classic illustration of a graph。 It's essentially the more formal definition is that a graph is a collection of nodes and。 edges。 Those are just the fundamental atomic unit in a graph and then edges are pairs of nodes。 that represent a connection between them。 For example， we have the -- where's my cursor？
 
- I really think graphs are neat。 Obviously I like Python。 I like drawing and DMing sometimes。
+ There it is。 Node A， C， B， and D here。 We have edges between them。 We can also have directed edges and that's just in a directed graph and your edges would。 have to be ordered pairs then。 One thing I really want to talk about but couldn't figure out how to wedge into this。 conversation or into this presentation is paths and subgraphs。 They're really useful tools。
 
- so this is a nice little intersection of all of those。 About you。
+ So if you're doing graph analytics， you'll definitely want to be familiar with that。 And a path is just what it sounds like。 It's just a collection of nodes and you get a -- oh。 I lost my cursor。 There it is。 You get a starting node and an ending node and you get a path through other nodes to get。 to that ending node。 And then a subgraph is just a portion of a graph。
 
- hopefully you've got some programming under your belt。
+ And so these will be really useful if you ever do graph analytics more but the last。 little awkward thing that I want to cover is labels which are a way to describe the class。 of a node。 So for example， in this graph， we've got either servers or clients and that's a label。 But you can also add a property to any graph and that's any other information and that's。
 
- This isn't going to be a real coding heavy presentation。 So that should be all right。 If you don't。
+ where the real strength of graphs comes in because you can add a name or a model or the。 amount of free space on a particular machine or the latency between two machines and stuff。 like that and really start doing some really cool analytics and exploit your data a little， further。 As far as applications， they're everywhere。 If you're here。
 
- hopefully you're familiar with maps or dictionaries in Python。 Real basic object-oriented stuff。
+ hopefully you're already excited about that。 But you've probably seen them in， you know， map。 social networks， puzzle solving and state， spaces， disease propagation， communication。 I'm not going to read this。 You guys can read it later。 It's everywhere。 Okay。 so this is PyCon so I'm going to very briefly cover representing graphs in Python。
 
- nothing too hardcore there。 There will be some matrices here。 If you aren't familiar with those。
+ You can use either an adjacency or degree matrix， an edge list， a dictionary or you can use。 packages like network X。 And so when you have a matrix representation。 a matrix is just really a table of numbers。 You let your rows represent the from node and your columns represent the to node。 So for example， you know， we got the number two over here。
 
- don't worry。 You can always circle back to them and learn them later or just don't use them and use something。
+ So that's from a to D and we have two edges from A to D。 So the number in the table represents。 the number of edges。 You'll see that along the diagonal， there's no。 there's all zeros because none of these， nodes connect to themselves。 And one more thing is you'll see that this matrix is symmetric。 For example。
 
- else because graphs are flexible like that。 So people who are familiar with graphs may recognize this map of the city of Kona'sburg。
+ from A to B is one but from B to A is also one because there's one edge from。 A to B and from B to A because this graph is undirected。 Just be careful if you're using directed graphs because the matrix won't be symmetric and certain。 assumptions fall apart。 And that just looks like a list in Python。 If you want to get fancy。
 
- And that's a classic problem in graph theory that presented a city separated by a river。
+ you can use a NumPy array。 You can also just use an edge list which is just pairs。 One thing to note here is that I've got the edge CD in here twice。 Because there are two edges from C to D。 D dictionaries are nice。 They're better for directed graphs。 There's a lot of redundancy in this one because I want to represent the same graph over and。
 
- and in between the river or in the river there are two land masses。
+ over。 But they're also nice because you can use any hashable object as the key to your dictionary。 So depending on how you write up a custom node class， you can just use that object as the。 key and just have a list of the actual nodes。 Or you can make your own custom-made node objects and your own graph objects and throw。 your logic in there。 As much as I love graphs， they aren't great for everything。
 
- So that's four land masses connected by seven bridges。 The question was。
+ If you're exploring graphs and graph databases especially， avoid them if you've got a lot。 of rights if you have a right heavy system。 Or if you're querying large parts of a database。 you lose a lot of the efficiencies that graphs， provide。 So let's go ahead and dive in。 That's right。 Quick disclaimer。 D&D is inherently racist。
 
- can you take a tour of the city and cross each bridge exactly once？
+ This is something that Wizards of the Coast is addressing， but it's baked in there。 So that's something that bothers you。 I've tried very hard to not have representations like that in here。 but I'm not perfect。 So if it does， please let me know because I'm always trying to be better。 It's not inherently violent， but there sometimes tends to be violence in D&D adventures。
 
- I'd rather motivate graphs by asking you about your friend group。
+ So I've also tried to minimize that。 Okay， let's go ahead and get started。 So you meet in the tavern and you want to get a logger because it hails a gross。 The bar is all the way up here， but you're all the way down here。 So you need to get through this very busy bar。 You're like， you know what？ No problem。
 
- And if I was to ask you about your friend group， you probably wouldn't tell me like a。
+ I'm just going to start walking， but you come to a fork in the road。 And so now you're like， oh man。 okay， well， I'm just going to go down a random fork。 I don't know， whichever one。 but that means you end up hitting a dead end， right？ Because you run into this nice， I don't know。 it's like a dog， woman， person。 This is the only picture I didn't draw。
 
- bullet point list of their name and date of birth and height and stuff like that。
+ so I don't know everything in it。 The guy I did credit him in the first one， Noah QH， check him out。 you know， support artists。 So yeah， anyways， you run into this obstacle。 so you end up backtracking to the intersection， and you go down one of the other options in the fork in the road。 And you basically can keep doing that until you get to the bar。 And in the worst case scenario。
 
- You're more likely going to tell me about their， you'll probably tell me a story of something， like。
+ your triple looks something like this。 You start over here。 you come to an intersection and you just make a decision， and if that decision。 leads you to a dead end， then you backtrack and you try another path。 And this is known as depth-first search。 Oh， just kidding， I need to practice more。 First。
 
- oh， this is my friend Alice who I met through a mutual friend Bob at a party thrown。
+ I'm going to tell you about converting maps to graphs。 You can treat the corridors as edges and entities and the intersections as nodes。 And so this is sort of less naturally than a lot of other things， but does naturally turn。 into a graph。 And so you've got your nodes that I've just labeled alphabetically and then dead end nodes。
 
- by Claire where I lost a whole bunch of money to my friend Dan and Ellen。
+ that I've just labeled as an X。 And then you have your edges connecting those nodes。 And you can use depth-first search， which is a nice， simple recursive algorithm that。 is quick to implement， easy to use。 Yaddiata。 Yeah， I can run through this。 Do we have time？ Yeah。 we got time。 Okay。 The way depth-first search runs， it's recursive， right？
 
- And what that is is you're describing these people and the relationships you have with。
+ So you always kind of want to put that end condition there at the beginning。 And then one little gotcha that always threw me off is to make sure you mark your current。 node is visited。 Just the way these algorithms work is they will build lists of unvisited nodes。 And if you don't mark them as visited， you're going to end up going in loops。
 
- those people。 And that's what's really exciting about graphs is there are data structure that can codify。
+ And then you basically just check every node。 If it is the target node， you know。 just recurse into it。 So what that looks like， I wanted to go through just one or two iterations here。 we'll， start at the node down at the bottom that we've marked as visited。 It's not the endpoint。 So we're going to mark it as visited。 And then we're going to check every one of its unvisited neighbors。
 
- systems as entities and relationships。 And a lot of other data structures purport to do that but graphs treat these relationships。
+ right？ And we're going to perform DFS by going basically to the top of this。 And this isn't the endpoint。 So we're not going to return true here。 We are going to mark it as visited。 And then for every one of its neighbors。 we're going to just recurse further in。 And so eventually you end up recursing through the whole thing and getting to the end。
 
- as first class members and that's where their strength really lies。
+ And you can finally order a beer。 Or a non-alcoholic beer if you're under 21 in America。 But as you're ordering your beer， a little street urchin comes up to you and asks you， for help。 And you're like， oh， you know what？ I'm there。 I'm here to answer the call to adventure。 And you get kicked out of the bar for drawing a weapon in the middle of a bar。
 
- And two special relationships that they can encode particularly well are directional relationships。
+ And everybody's just trying to have a good time。 So he leads you to the sewers where there's been trouble。 But it's locked。 So you're like， ah， I got to find a key。 And he's all like， you know what。 don't worry。 I think either Alice or Bob have the key。 It's weird town。 Everyone's names are alphabetically ordered。 So you're like， you know what？ That's fine。
 
- where for example a friendship type of relationship is too directional。
+ I'll just go ask Alice and see if she's got the key。 And Alice is like， I don't have the key。 But maybe you can ask Carmen or Dev。 And you're like， OK， you know what？ That's fine。 But first I got to ask Bob。 And Bob is like， I don't have the key either and my face looks like toast。 So maybe ask Ellen。 And so then you're like， all right， I'm going to add Ellen to my list。
 
- If you're friends with someone， you kind of assume they're friends with you but if you're。
+ But I first got to go see Carmen。 And Carmen is like， I don't have the key either。 Go ask Bob。 And this is where things start running circles。 And you're like， this is ridiculous。 Why am I just going down the list like this， asking people when I have the magic of graphs。 to help me organize this search？ And so if we revisit this search by treating people as nodes。
 
- following someone say on Twitter or something like that， then they don't necessarily have。
+ the edges between each node， represent the relationships between those people。 So this could be relationships like Alice Knows Bob， Alice Follows Bob， or Alice and Bob。 are friends with each other。 Or Alice thinks Bob has the key。 which is the relationship we're going to use。 So let's revisit this problem using-- oh， man。
 
- to follow you。 And that's where graphs are really useful as far as encoding directional relationships。
+ I have 15 minutes left。 Holy cow。 I thought this was a 45-minute presentation。 Dang。 Guys。 breath first search is great。 Do it。 All right。 So one thing。 you want to make sure your mark your nose is visited。 This is actually-- yeah。 you're crossing them off off the top。 So when Carmen finally tells you to go visit Bob， you're like。
 
- There's also transitive relationships。 And the example I like to use to motivate this is if an ad company made like a viral。
+ ha， I already took care， of that。 You're like， I'm not going to be in a trip， dog。 And then what else do you need to know about breath first search？ Oh， this is cool too。 because as you're solving a problem， you can build the graph on the fly。 So that's cool。 You don't have to know everything about the graph as you're solving whatever problem。
 
- video and then paid to put it up on Twitter。 And if you really liked it and you retweeted it but you weren't really in the market for。
+ you're solving。 And that's another thing I really like about graphs is they are more than any other day。 base really open to modifying things on the fly。 That's breath first search。 Breath first search。 Everyone knows it。 Look it up。 So yeah， your mark knows it's visited。 This is another thing。 This is what depth first search would look like along this network。
 
- their product， that ad campaign is a failure using classic analytics。
+ And then this is what breadth first search would look like。 And it's cool。 because you can kind of get to whatever solution in as few as jumps as， possible。 Whereas with depth first search， you kind of have to go to the end of a particular path。 So that's definitely something you want to keep in your back pocket， is breadth first。
 
- But if you dig a little deeper into this， your friend may have seen the video， been in the。
+ search is the way to go for most simple things。 So you get the key。 Are in the sewer， there's a map。 And you're like， you know what？ No problem。 I've already converted maps to graphs。 And I've done breadth first search。 I can get there in two hops。 Easy。 And so you run off and the kids looking at you like you're an idiot。 And he beats you there。
 
- market for that product and bought it。 And so you can use graph analytics to encode those transitive relationships and dig a little。
+ And you're like， what？ And he's like， I know a faster way from a wizard named Dykstra。 Because you didn't think about the path lengths。 And so if you consider the path lengths。 you can get a faster path。 Just because if you go from S to A to B。 you're going to go along this big corridor versus， if you take a little detour from S to A to E。
 
- deeper into the success or failure of any particular ad campaign or other relationships。
+ If you take a detour from S to A to B， you， can take B to E， which is shorter。 And that's a really great algorithm that I'd love to talk you through some time。 But there it is。 This is all in the PowerPoint。 I-- yeah。 If you guys want to know about it。 that's one thing about this is you just want to repeat。
 
- This is a more classic illustration of a graph。 It's essentially the more formal definition is that a graph is a collection of nodes and。
+ it until you mark your targeted note as visited。 It's a little gotcha if you're doing Dykstra。 Don't end too early。 And then you go into the evil guy's lair and you make batman noises。 And you find a-- turns out this guy wasn't really a big bat。 He's just a messenger。 And so now you have a whole list of people-- or a whole bunch of messages that people。
 
- edges。 Those are just the fundamental atomic unit in a graph and then edges are pairs of nodes。
+ have been sending to each other。 And so you say Frank's message and Gina， Gina's message and Hector。 and so on and so， on。 And that's getting real confusing。 So you turn it into a graph。 And now you sort of got a message graph saying like， oh， these people are messaging these， people。 And it doesn't get confusing at all because graphs make the problem a lot more simple。
 
- that represent a connection between them。 For example， we have the -- where's my cursor？
+ to illustrate。 So it looks something like this instead of just a bullet point list。 And so the algorithms you can use here are-- yeah， how do you determine like who's actually。 in charge of this network？ There's a lot of different algorithms for this。 There's sort of two classes is articulation points， which sort of tell you what node or。
 
- There it is。 Node A， C， B， and D here。 We have edges between them。
+ edge you can remove to separate the graph completely from each other， like basically。 turn in two graphs， two separate graphs， or one disconnected graph。 Those are great if you have a point like that。 But those don't always exist。 So another tool you can use is centrality， which is just determining a node's influence。
 
- We can also have directed edges and that's just in a directed graph and your edges would。
+ I'm going to use degree centrality because it's really easy to calculate。 It's literally just counting the degrees per node。 And so you can normalize it by n minus 1。 The number of nodes minus 1。 That's the maximum number of connections any node can have。 And so that ends up looking like this。 And so then you can take out someone that's sort of at the center。
 
- have to be ordered pairs then。 One thing I really want to talk about but couldn't figure out how to wedge into this。
+ a high influence the， person。 There's a lot of other centralities。 Degree centrality is just the most simple one。 You definitely want to look at other ones。 And so you go and you make more batman noises。 And you get a big bag of money and you go to the mayor and they're like。 yes， this is， great。 I can finally fund the town。 But I don't know how to distribute it。
 
- conversation or into this presentation is paths and subgraphs。 They're really useful tools。
+ And this is our town charter。 And we have to fund all these things。 And I don't know where to start。 And so you can use community detection， which is another class of algorithms。 I'm only going to go over primes because I have like zero time。 But basically you take that charter and every entity in the charter， you turn it into its， own node。
 
- So if you're doing graph analytics， you'll definitely want to be familiar with that。
+ So you've got entity 1， 1 is the mayor， 1， 2 is the mayor's aide， et cetera。 And then you connect them by basically saying， oh， are they mentioned in the same section。 of the charter？ And then you can keep connecting them a little more loosely by saying， okay。 if they're mentioned， at all in the charter， that's not as strong a connection， right？
 
- And a path is just what it sounds like。 It's just a collection of nodes and you get a -- oh。
+ So I want to be aware of that。 And I'm going to wait that connection by 2 to just sort of say like。 oh， these entities， are a little more distant from each other， according to the charter。 So then you have a list of edges and their weight。 And I actually， yeah。 I ordered them by their edge weight because you need to for primes。
 
- I lost my cursor。 There it is。 You get a starting node and an ending node and you get a path through other nodes to get。
+ algorithm because you basically take out all the nodes and you start adding or you take。 out all the edges and you start adding edges back to your graph until you get what's known。 as a spanning tree。 And that's what this looks like。 You add an edge and then you add an edge and then you're just going through your ordered。
 
- to that ending node。 And then a subgraph is just a portion of a graph。
+ list of edges ordered by weight。 But if you do that， right。 you may end up getting a loop which is contrary to what a。 tree is because we're trying to get a graph that has the minimum weight while still being。 fully connected。 So we don't actually need this one。
 
- And so these will be really useful if you ever do graph analytics more but the last。
+ We can just remove that and we keep doing this process and we end up connecting the graph。 with what's known as a minimum spanning tree。 And then we can start removing edges to build out the community detection algorithm。 And that is basically just going backwards until the desired number of groups is achieved。 So we're going to take out the edge AF and the edge BF。 And now we have three communities， right？
 
- little awkward thing that I want to cover is labels which are a way to describe the class。
+ And we end up funding the mayor's office and the mayor's aid equally as much as water。 well maintenance roads， animal crossing， fire medical and hazardous magic because graphs。 are not a silver bullet。 So one thing I did want to talk about is your algorithms only work the way they're supposed。 to。 And so if they， you should always ask yourself what kind of results do I expect before running。
 
- of a node。 So for example， in this graph， we've got either servers or clients and that's a label。
+ any algorithm？ And this was， yeah， no， I'm not going to share that anecdote。 That's fine。 Basically you want to know what success and failure looks like before you run an algorithm， right？
 
- But you can also add a property to any graph and that's any other information and that's。
+ And if you don't get results that you expected， check if it's implemented correctly。 Check if there's similar algorithms。 I did mention there's a lot of community detection algorithms out there。 Try it。 And then lastly， redefine what a node or edge is because maybe this arbitrary relationship。 of being in the same paragraph that charter that doesn't really encode any useful information。
 
- where the real strength of graphs comes in because you can add a name or a model or the。
+ right？ So， wow， I made it on time。 I still have time to spare。 Great。 I practiced this like five times and thought I got it。 But， you know。 when you're up here and the lights are shining， time doesn't matter。 But I just wanted to leave you guys with a few little things。 Graphs are great and， oh。
 
- amount of free space on a particular machine or the latency between two machines and stuff。
+ can't cross your arms over the mic。 They're really great because they encode systems as entities and relationships。 If you don't walk away with any other algorithm today， check out breadth for a search。 It's really useful。 You can use it for a lot of different things。 They're also very resilient to on-the-fly changes。
 
- like that and really start doing some really cool analytics and exploit your data a little， further。
-
- As far as applications， they're everywhere。 If you're here。
-
- hopefully you're already excited about that。 But you've probably seen them in， you know， map。
-
- social networks， puzzle solving and state， spaces， disease propagation， communication。
-
- I'm not going to read this。 You guys can read it later。 It's everywhere。 Okay。
-
- so this is PyCon so I'm going to very briefly cover representing graphs in Python。
-
- You can use either an adjacency or degree matrix， an edge list， a dictionary or you can use。
-
- packages like network X。 And so when you have a matrix representation。
-
- a matrix is just really a table of numbers。 You let your rows represent the from node and your columns represent the to node。
-
- So for example， you know， we got the number two over here。
-
- So that's from a to D and we have two edges from A to D。 So the number in the table represents。
-
- the number of edges。 You'll see that along the diagonal， there's no。
-
- there's all zeros because none of these， nodes connect to themselves。
-
- And one more thing is you'll see that this matrix is symmetric。 For example。
-
- from A to B is one but from B to A is also one because there's one edge from。
-
- A to B and from B to A because this graph is undirected。
-
- Just be careful if you're using directed graphs because the matrix won't be symmetric and certain。
-
- assumptions fall apart。 And that just looks like a list in Python。 If you want to get fancy。
-
- you can use a NumPy array。 You can also just use an edge list which is just pairs。
-
- One thing to note here is that I've got the edge CD in here twice。
-
- Because there are two edges from C to D。 D dictionaries are nice。
-
- They're better for directed graphs。 There's a lot of redundancy in this one because I want to represent the same graph over and。
-
- over。 But they're also nice because you can use any hashable object as the key to your dictionary。
-
- So depending on how you write up a custom node class， you can just use that object as the。
-
- key and just have a list of the actual nodes。 Or you can make your own custom-made node objects and your own graph objects and throw。
-
- your logic in there。 As much as I love graphs， they aren't great for everything。
-
- If you're exploring graphs and graph databases especially， avoid them if you've got a lot。
-
- of rights if you have a right heavy system。 Or if you're querying large parts of a database。
-
- you lose a lot of the efficiencies that graphs， provide。 So let's go ahead and dive in。
-
- That's right。 Quick disclaimer。 D&D is inherently racist。
-
- This is something that Wizards of the Coast is addressing， but it's baked in there。
-
- So that's something that bothers you。 I've tried very hard to not have representations like that in here。
-
- but I'm not perfect。 So if it does， please let me know because I'm always trying to be better。
-
- It's not inherently violent， but there sometimes tends to be violence in D&D adventures。
-
- So I've also tried to minimize that。 Okay， let's go ahead and get started。
-
- So you meet in the tavern and you want to get a logger because it hails a gross。
-
- The bar is all the way up here， but you're all the way down here。
-
- So you need to get through this very busy bar。 You're like， you know what？ No problem。
-
- I'm just going to start walking， but you come to a fork in the road。 And so now you're like， oh man。
-
- okay， well， I'm just going to go down a random fork。 I don't know， whichever one。
-
- but that means you end up hitting a dead end， right？ Because you run into this nice， I don't know。
-
- it's like a dog， woman， person。 This is the only picture I didn't draw。
-
- so I don't know everything in it。 The guy I did credit him in the first one， Noah QH， check him out。
-
- you know， support artists。 So yeah， anyways， you run into this obstacle。
-
- so you end up backtracking to the intersection， and you go down one of the other options in the fork in the road。
-
- And you basically can keep doing that until you get to the bar。 And in the worst case scenario。
-
- your triple looks something like this。 You start over here。
-
- you come to an intersection and you just make a decision， and if that decision。
-
- leads you to a dead end， then you backtrack and you try another path。
-
- And this is known as depth-first search。 Oh， just kidding， I need to practice more。 First。
-
- I'm going to tell you about converting maps to graphs。
-
- You can treat the corridors as edges and entities and the intersections as nodes。
-
- And so this is sort of less naturally than a lot of other things， but does naturally turn。
-
- into a graph。 And so you've got your nodes that I've just labeled alphabetically and then dead end nodes。
-
- that I've just labeled as an X。 And then you have your edges connecting those nodes。
-
- And you can use depth-first search， which is a nice， simple recursive algorithm that。
-
- is quick to implement， easy to use。 Yaddiata。 Yeah， I can run through this。 Do we have time？ Yeah。
-
- we got time。 Okay。 The way depth-first search runs， it's recursive， right？
-
- So you always kind of want to put that end condition there at the beginning。
-
- And then one little gotcha that always threw me off is to make sure you mark your current。
-
- node is visited。 Just the way these algorithms work is they will build lists of unvisited nodes。
-
- And if you don't mark them as visited， you're going to end up going in loops。
-
- And then you basically just check every node。 If it is the target node， you know。
-
- just recurse into it。 So what that looks like， I wanted to go through just one or two iterations here。
-
- we'll， start at the node down at the bottom that we've marked as visited。 It's not the endpoint。
-
- So we're going to mark it as visited。 And then we're going to check every one of its unvisited neighbors。
-
- right？ And we're going to perform DFS by going basically to the top of this。
-
- And this isn't the endpoint。 So we're not going to return true here。
-
- We are going to mark it as visited。 And then for every one of its neighbors。
-
- we're going to just recurse further in。 And so eventually you end up recursing through the whole thing and getting to the end。
-
- And you can finally order a beer。 Or a non-alcoholic beer if you're under 21 in America。
-
- But as you're ordering your beer， a little street urchin comes up to you and asks you， for help。
-
- And you're like， oh， you know what？ I'm there。 I'm here to answer the call to adventure。
-
- And you get kicked out of the bar for drawing a weapon in the middle of a bar。
-
- And everybody's just trying to have a good time。 So he leads you to the sewers where there's been trouble。
-
- But it's locked。 So you're like， ah， I got to find a key。 And he's all like， you know what。
-
- don't worry。 I think either Alice or Bob have the key。 It's weird town。
-
- Everyone's names are alphabetically ordered。 So you're like， you know what？ That's fine。
-
- I'll just go ask Alice and see if she's got the key。 And Alice is like， I don't have the key。
-
- But maybe you can ask Carmen or Dev。 And you're like， OK， you know what？ That's fine。
-
- But first I got to ask Bob。 And Bob is like， I don't have the key either and my face looks like toast。
-
- So maybe ask Ellen。 And so then you're like， all right， I'm going to add Ellen to my list。
-
- But I first got to go see Carmen。 And Carmen is like， I don't have the key either。 Go ask Bob。
-
- And this is where things start running circles。 And you're like， this is ridiculous。
-
- Why am I just going down the list like this， asking people when I have the magic of graphs。
-
- to help me organize this search？ And so if we revisit this search by treating people as nodes。
-
- the edges between each node， represent the relationships between those people。
-
- So this could be relationships like Alice Knows Bob， Alice Follows Bob， or Alice and Bob。
-
- are friends with each other。 Or Alice thinks Bob has the key。
-
- which is the relationship we're going to use。 So let's revisit this problem using-- oh， man。
-
- I have 15 minutes left。 Holy cow。 I thought this was a 45-minute presentation。 Dang。 Guys。
-
- breath first search is great。 Do it。 All right。 So one thing。
-
- you want to make sure your mark your nose is visited。 This is actually-- yeah。
-
- you're crossing them off off the top。 So when Carmen finally tells you to go visit Bob， you're like。
-
- ha， I already took care， of that。 You're like， I'm not going to be in a trip， dog。
-
- And then what else do you need to know about breath first search？ Oh， this is cool too。
-
- because as you're solving a problem， you can build the graph on the fly。 So that's cool。
-
- You don't have to know everything about the graph as you're solving whatever problem。
-
- you're solving。 And that's another thing I really like about graphs is they are more than any other day。
-
- base really open to modifying things on the fly。 That's breath first search。 Breath first search。
-
- Everyone knows it。 Look it up。 So yeah， your mark knows it's visited。 This is another thing。
-
- This is what depth first search would look like along this network。
-
- And then this is what breadth first search would look like。 And it's cool。
-
- because you can kind of get to whatever solution in as few as jumps as， possible。
-
- Whereas with depth first search， you kind of have to go to the end of a particular path。
-
- So that's definitely something you want to keep in your back pocket， is breadth first。
-
- search is the way to go for most simple things。 So you get the key。 Are in the sewer， there's a map。
-
- And you're like， you know what？ No problem。 I've already converted maps to graphs。
-
- And I've done breadth first search。 I can get there in two hops。 Easy。
-
- And so you run off and the kids looking at you like you're an idiot。 And he beats you there。
-
- And you're like， what？ And he's like， I know a faster way from a wizard named Dykstra。
-
- Because you didn't think about the path lengths。 And so if you consider the path lengths。
-
- you can get a faster path。 Just because if you go from S to A to B。
-
- you're going to go along this big corridor versus， if you take a little detour from S to A to E。
-
- If you take a detour from S to A to B， you， can take B to E， which is shorter。
-
- And that's a really great algorithm that I'd love to talk you through some time。 But there it is。
-
- This is all in the PowerPoint。 I-- yeah。 If you guys want to know about it。
-
- that's one thing about this is you just want to repeat。
-
- it until you mark your targeted note as visited。 It's a little gotcha if you're doing Dykstra。
-
- Don't end too early。 And then you go into the evil guy's lair and you make batman noises。
-
- And you find a-- turns out this guy wasn't really a big bat。 He's just a messenger。
-
- And so now you have a whole list of people-- or a whole bunch of messages that people。
-
- have been sending to each other。 And so you say Frank's message and Gina， Gina's message and Hector。
-
- and so on and so， on。 And that's getting real confusing。 So you turn it into a graph。
-
- And now you sort of got a message graph saying like， oh， these people are messaging these， people。
-
- And it doesn't get confusing at all because graphs make the problem a lot more simple。
-
- to illustrate。 So it looks something like this instead of just a bullet point list。
-
- And so the algorithms you can use here are-- yeah， how do you determine like who's actually。
-
- in charge of this network？ There's a lot of different algorithms for this。
-
- There's sort of two classes is articulation points， which sort of tell you what node or。
-
- edge you can remove to separate the graph completely from each other， like basically。
-
- turn in two graphs， two separate graphs， or one disconnected graph。
-
- Those are great if you have a point like that。 But those don't always exist。
-
- So another tool you can use is centrality， which is just determining a node's influence。
-
- I'm going to use degree centrality because it's really easy to calculate。
-
- It's literally just counting the degrees per node。 And so you can normalize it by n minus 1。
-
- The number of nodes minus 1。 That's the maximum number of connections any node can have。
-
- And so that ends up looking like this。 And so then you can take out someone that's sort of at the center。
-
- a high influence the， person。 There's a lot of other centralities。
-
- Degree centrality is just the most simple one。 You definitely want to look at other ones。
-
- And so you go and you make more batman noises。 And you get a big bag of money and you go to the mayor and they're like。
-
- yes， this is， great。 I can finally fund the town。 But I don't know how to distribute it。
-
- And this is our town charter。 And we have to fund all these things。 And I don't know where to start。
-
- And so you can use community detection， which is another class of algorithms。
-
- I'm only going to go over primes because I have like zero time。
-
- But basically you take that charter and every entity in the charter， you turn it into its， own node。
-
- So you've got entity 1， 1 is the mayor， 1， 2 is the mayor's aide， et cetera。
-
- And then you connect them by basically saying， oh， are they mentioned in the same section。
-
- of the charter？ And then you can keep connecting them a little more loosely by saying， okay。
-
- if they're mentioned， at all in the charter， that's not as strong a connection， right？
-
- So I want to be aware of that。 And I'm going to wait that connection by 2 to just sort of say like。
-
- oh， these entities， are a little more distant from each other， according to the charter。
-
- So then you have a list of edges and their weight。 And I actually， yeah。
-
- I ordered them by their edge weight because you need to for primes。
-
- algorithm because you basically take out all the nodes and you start adding or you take。
-
- out all the edges and you start adding edges back to your graph until you get what's known。
-
- as a spanning tree。 And that's what this looks like。
-
- You add an edge and then you add an edge and then you're just going through your ordered。
-
- list of edges ordered by weight。 But if you do that， right。
-
- you may end up getting a loop which is contrary to what a。
-
- tree is because we're trying to get a graph that has the minimum weight while still being。
-
- fully connected。 So we don't actually need this one。
-
- We can just remove that and we keep doing this process and we end up connecting the graph。
-
- with what's known as a minimum spanning tree。 And then we can start removing edges to build out the community detection algorithm。
-
- And that is basically just going backwards until the desired number of groups is achieved。
-
- So we're going to take out the edge AF and the edge BF。 And now we have three communities， right？
-
- And we end up funding the mayor's office and the mayor's aid equally as much as water。
-
- well maintenance roads， animal crossing， fire medical and hazardous magic because graphs。
-
- are not a silver bullet。 So one thing I did want to talk about is your algorithms only work the way they're supposed。
-
- to。 And so if they， you should always ask yourself what kind of results do I expect before running。
-
- any algorithm？ And this was， yeah， no， I'm not going to share that anecdote。 That's fine。
-
- Basically you want to know what success and failure looks like before you run an algorithm， right？
-
- And if you don't get results that you expected， check if it's implemented correctly。
-
- Check if there's similar algorithms。 I did mention there's a lot of community detection algorithms out there。
-
- Try it。 And then lastly， redefine what a node or edge is because maybe this arbitrary relationship。
-
- of being in the same paragraph that charter that doesn't really encode any useful information。
-
- right？ So， wow， I made it on time。 I still have time to spare。 Great。
-
- I practiced this like five times and thought I got it。 But， you know。
-
- when you're up here and the lights are shining， time doesn't matter。
-
- But I just wanted to leave you guys with a few little things。 Graphs are great and， oh。
-
- can't cross your arms over the mic。 They're really great because they encode systems as entities and relationships。
-
- If you don't walk away with any other algorithm today， check out breadth for a search。
-
- It's really useful。 You can use it for a lot of different things。
-
- They're also very resilient to on-the-fly changes。
-
- You can add information to your graph or to any node or edge in your database without。
-
- having to update the entire thing without having to， you know， rewrite schemas and stuff。
-
- The sort of three big classes of algorithms， we went through our paths， connections， communities。
-
-
-
+ You can add information to your graph or to any node or edge in your database without。 having to update the entire thing without having to， you know， rewrite schemas and stuff。 The sort of three big classes of algorithms， we went through our paths， connections， communities。
 ![](img/6b3141a37cb667142feb0530e37d42aa_4.png)
 
- There's a lot of different stuff out there。 So， definitely check it out yourself。
-
- Check out my link tree。 It's got my GitHub on there that I thought I could populate between when my plane landed。
-
- last night and now， but I will definitely have it populated later this week with more resources。
-
- for you guys to look through。 Great。 I can't believe I made it with time to spare。 Look at that。
+ There's a lot of different stuff out there。 So， definitely check it out yourself。 Check out my link tree。 It's got my GitHub on there that I thought I could populate between when my plane landed。 last night and now， but I will definitely have it populated later this week with more resources。 for you guys to look through。 Great。 I can't believe I made it with time to spare。 Look at that。
 
  You have five minutes of your life back。
-
 ![](img/6b3141a37cb667142feb0530e37d42aa_6.png)
 
  Thanks for watching。

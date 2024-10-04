@@ -5,1561 +5,830 @@
 
 ![](img/4cded4095a3983c5e6a540db30068996_2.png)
 
- I think we're going to wait maybe another minute or two。 I can turn on my video as well just to get started。 Welcome to the trainer summit。 It's the first。
+ I think we're going to wait maybe another minute or two。 I can turn on my video as well just to get started。 Welcome to the trainer summit。 It's the first。 It's a hatchery。 Super excited。 There's so many people here。 I see some people joining。 I'm super excited to also see some names that I know in this list， participants list。
 
- It's a hatchery。 Super excited。 There's so many people here。 I see some people joining。 I'm super excited to also see some names that I know in this list， participants list。
+ and people I don't know yet。 But I am so excited that this is going on。 Let's see here。 There's some opening remarks to do and some sort of housekeeping remarks as well。 I will go ahead and let Jackie take over and do some of the housekeeping remarks and then。 I have some more。 And then we will get going。 Jackie， are you ready？ Yes， I'm sure。 Awesome。
 
- and people I don't know yet。 But I am so excited that this is going on。 Let's see here。 There's some opening remarks to do and some sort of housekeeping remarks as well。
+ Here you go。 Here's a slide for you。 I hope it's helpful。 Thank you。 Just to make you aware that this session is being recorded so that we could upload parts。 of it if we choose and we will edit that after。 We also want you to be aware that the Python code of conduct is still in play here。 even， though we're virtual。 The guidelines state that everyone abide by the PSF's code of conduct。
 
- I will go ahead and let Jackie take over and do some of the housekeeping remarks and then。 I have some more。 And then we will get going。 Jackie， are you ready？ Yes， I'm sure。 Awesome。
+ not just today， but all the time。 So we want to create an environment where folks feel safe to contribute and speak up。 So we just wanted to let you know there is some information about where to report there。 as far as the email。 So take note of that。 And you can also find the full code of conduct on the Python website if you are all listed。 there。 And I will be quiet in the background as monitor for the PSF。 Thank you。 Awesome。 Thanks。
 
- Here you go。 Here's a slide for you。 I hope it's helpful。 Thank you。 Just to make you aware that this session is being recorded so that we could upload parts。
+ I see more people coming in as well， which is great。 Okay。 so if you have trouble grabbing the code of conduct link there， there's easy way。 to find it if you go to the Python main website under about。 There's a code of conduct link that has a summary of the code of conduct and at the。
 
- of it if we choose and we will edit that after。 We also want you to be aware that the Python code of conduct is still in play here。 even， though we're virtual。 The guidelines state that everyone abide by the PSF's code of conduct。
+ bottom there's that email address。 So really good introduction about myself because this event is not about me。 It's about our awesome speakers and about trainers。 I am welcome and hi from Champaign， or Bana。 Illinois， we're not in Chicago。 I'm a lecturer at the School of Information Sciences at University of Illinois。 or Bana， Champaign。 So I'm teaching faculty in a professional program。
 
- not just today， but all the time。 So we want to create an environment where folks feel safe to contribute and speak up。 So we just wanted to let you know there is some information about where to report there。
+ I've also done some freelance training and I do a lot of informal training in my own。 school as well。 So I teach the semester level。 I do more academia training。 So my research really is about adult professional learning in sort of the data science space。 So if you're research programmers， et cetera。 So I'm really interested in the trainers community。
 
- as far as the email。 So take note of that。 And you can also find the full code of conduct on the Python website if you are all listed。 there。 And I will be quiet in the background as monitor for the PSF。 Thank you。 Awesome。 Thanks。
+ Staying close to industry has always been a professional focus of mine because I'm from。 industry and it's really important to me to keep that connection maintained。 Trainers are everywhere and the more I put together everything for this summit， the more。 excited I was because so many people are involved with training even if you don't have the word。
 
- I see more people coming in as well， which is great。 Okay。 so if you have trouble grabbing the code of conduct link there， there's easy way。
+ trainer in your title or even if you don't identify as an educator necessarily。 Programming in computer science is a lifelong learning skill which means it's also a lifelong。 teaching skill。 And so I think people do it informally and as team leads people do it in so many different。 places and I'm really hoping that this summit can sort of tease some of those things out。
 
- to find it if you go to the Python main website under about。 There's a code of conduct link that has a summary of the code of conduct and at the。
+ and help create connections。 I'm not going to go into goals a little bit later。 So I just love how many people teach Python。 So what is a trainer summit？ This is a Python。 a Python hatchery event。 Training needs to be expanded all over the place。 We've got boot camps。 We've got freelancers。 We've got websites all over the place。 There's certifications now。
 
- bottom there's that email address。 So really good introduction about myself because this event is not about me。 It's about our awesome speakers and about trainers。 I am welcome and hi from Champaign， or Bana。
+ There's informal non-formal organization。 There's informal trainings all over the place。 There's non-profits around training。 There are so many different iterations of how to teach Python。 So there is the existing Python education summit which pro tip happening tomorrow and。 you can still register if you want。 That is happening tomorrow。
 
- Illinois， we're not in Chicago。 I'm a lecturer at the School of Information Sciences at University of Illinois。 or Bana， Champaign。 So I'm teaching faculty in a professional program。
+ I will also be hosting that a little bit earlier in the day。 It is usually really great for like K through 12 college。 So like undergrads。 academia and grad students， libraries， et cetera。 So this is where you have the science。 like education science experts， researchers in， the field practitioners as well。
 
- I've also done some freelance training and I do a lot of informal training in my own。 school as well。 So I teach the semester level。 I do more academia training。
+ But the professional Python training is booming really。 And the topics in the education summit are often not super relevant for the more industry。 oriented education efforts。 So this is a hatchery event。 So this is all very experimental。 We're going to see how it goes。 I think we have some awesome talks and I'm super excited for them。
 
- So my research really is about adult professional learning in sort of the data science space。 So if you're research programmers， et cetera。 So I'm really interested in the trainers community。
+ But we're just going to have to play today。 And depending on how many people stick around for the breakout sessions。 we're going to get， a little bit creative with stuff。 There is a hashtag of pie trainer summit。 which is very long。 I'm sorry。 For this event， if you choose to tweet it， tweet about us。 So what we are here for， we are all here together to learn about this community， to learn from。
 
- Staying close to industry has always been a professional focus of mine because I'm from。 industry and it's really important to me to keep that connection maintained。
+ this community and to connect community members together。 So I work in the more formal education space and education research space。 And I'm really excited to learn more about the hardcore professional development work。 that's happening out there。 But I think that there's also a space for the professional development trainers to learn。
 
- Trainers are everywhere and the more I put together everything for this summit， the more。 excited I was because so many people are involved with training even if you don't have the word。
+ from the more formal education space。 I think there's so much you can learn about from each other and I'm really hoping that。 this event can kind of kickstart making those connections。 So even if you don't necessarily identify as an educator， maybe you will identify a little。 bit as an educator after this and we can help you do your job better。
 
- trainer in your title or even if you don't identify as an educator necessarily。 Programming in computer science is a lifelong learning skill which means it's also a lifelong。
+ I'm sure you're great at your job， but we can all learn from each other。 And I think that's important。 I just want to make those connections happen and streamline those things。 I also really want to explore areas where the Python community， where PSF， where other。 where Python itself can provide more support and guidance and where other trainer training。
 
- teaching skill。 And so I think people do it informally and as team leads people do it in so many different。 places and I'm really hoping that this summit can sort of tease some of those things out。
-
- and help create connections。 I'm not going to go into goals a little bit later。 So I just love how many people teach Python。 So what is a trainer summit？ This is a Python。
-
- a Python hatchery event。 Training needs to be expanded all over the place。 We've got boot camps。 We've got freelancers。 We've got websites all over the place。 There's certifications now。
-
- There's informal non-formal organization。 There's informal trainings all over the place。 There's non-profits around training。 There are so many different iterations of how to teach Python。
-
- So there is the existing Python education summit which pro tip happening tomorrow and。 you can still register if you want。 That is happening tomorrow。
-
- I will also be hosting that a little bit earlier in the day。 It is usually really great for like K through 12 college。 So like undergrads。
-
- academia and grad students， libraries， et cetera。 So this is where you have the science。 like education science experts， researchers in， the field practitioners as well。
-
- But the professional Python training is booming really。 And the topics in the education summit are often not super relevant for the more industry。
-
- oriented education efforts。 So this is a hatchery event。 So this is all very experimental。 We're going to see how it goes。 I think we have some awesome talks and I'm super excited for them。
-
- But we're just going to have to play today。 And depending on how many people stick around for the breakout sessions。 we're going to get， a little bit creative with stuff。 There is a hashtag of pie trainer summit。
-
- which is very long。 I'm sorry。 For this event， if you choose to tweet it， tweet about us。 So what we are here for， we are all here together to learn about this community， to learn from。
-
- this community and to connect community members together。 So I work in the more formal education space and education research space。
-
- And I'm really excited to learn more about the hardcore professional development work。 that's happening out there。 But I think that there's also a space for the professional development trainers to learn。
-
- from the more formal education space。 I think there's so much you can learn about from each other and I'm really hoping that。 this event can kind of kickstart making those connections。
-
- So even if you don't necessarily identify as an educator， maybe you will identify a little。 bit as an educator after this and we can help you do your job better。
-
- I'm sure you're great at your job， but we can all learn from each other。 And I think that's important。 I just want to make those connections happen and streamline those things。
-
- I also really want to explore areas where the Python community， where PSF， where other。 where Python itself can provide more support and guidance and where other trainer training。
-
- might help。 You see like what needs are out there， what expertise is out there。 how can we learn from， each other and help each other help everyone do their best work。
-
- I also really want to discover more about the places where trainers not only are just， working。 are they all freelancers？ Do companies have dedicated training roles internally？
+ might help。 You see like what needs are out there， what expertise is out there。 how can we learn from， each other and help each other help everyone do their best work。 I also really want to discover more about the places where trainers not only are just， working。 are they all freelancers？ Do companies have dedicated training roles internally？
 
  What are the situations when that happens？ Where are trainers surviving， just getting the job done？
 
- And then where are trainers thriving and what conditions allow someone who's working as。 a trainer to really thrive？ So who are trainers？ There's a broad term in this context。
+ And then where are trainers thriving and what conditions allow someone who's working as。 a trainer to really thrive？ So who are trainers？ There's a broad term in this context。 So the definition that I came up with for our particular Python trainer summit context。 is anyone who's providing structured training and education around Python， but more particularly。
 
- So the definition that I came up with for our particular Python trainer summit context。 is anyone who's providing structured training and education around Python， but more particularly。
+ scoping that， tightening the scope down to being outside the formal or graded classroom。 Just because I'm teaching Python on a college campus doesn't mean I'm not necessarily teaching。 it as an instructor of record。 There's lots of workshops that are happening all over the place。 So this can include corporate trainers。 This can include team leads and mentors， content creators。
 
- scoping that， tightening the scope down to being outside the formal or graded classroom。 Just because I'm teaching Python on a college campus doesn't mean I'm not necessarily teaching。
+ boot camp instructors， makerspace， instructors， informal instructors， inside education。 adjacent areas， and academia。 And likely a ton more than I'm totally missing because this is all very new。 So the origin story of this event really came down to the open spaces from last year's， Python。 I remember going to the trainers open space。 I think Trey， you had proposed it。
 
- it as an instructor of record。 There's lots of workshops that are happening all over the place。 So this can include corporate trainers。 This can include team leads and mentors， content creators。
+ And it was amazing and really， really enlightening to learn about how everyone is doing this。 And it's a totally different sort of space and I had worked in because I'm very much。 more focused in the academic space。 And when I was listening to people talk about the questions and needs。 definitely there's， some intersections where the education summit can totally help。
 
- boot camp instructors， makerspace， instructors， informal instructors， inside education。 adjacent areas， and academia。 And likely a ton more than I'm totally missing because this is all very new。
+ But I saw a ton of information needs in the community， but a lot of it really unique to。 people within the trainers community that isn't always represented nicely in the education， summit。 And so information that's not necessarily super relevant for the formal education space。 like making contracts and the business side of it， et cetera。
 
- So the origin story of this event really came down to the open spaces from last year's， Python。 I remember going to the trainers open space。 I think Trey， you had proposed it。
+ So I thought this hatchery program would be perfect to sort of play in this space and。 see how we can help each other and learn from each other。 Goals of this established and share best practices。 Every community has to have some sense of norms。 The Python community is amazing at this。 It is driven very much by our mission and a vision of the PSF。
 
- And it was amazing and really， really enlightening to learn about how everyone is doing this。 And it's a totally different sort of space and I had worked in because I'm very much。
+ by the code of conduct， et cetera。 As this community is starting to grow more informally。 it's important that people start， coming together to establish sort of the common behavioral norms around things。 But also to create connections and share expertise。 I feel very siloed in my own work and I know that I'm not a lot of me who do things that， I do。
 
- more focused in the academic space。 And when I was listening to people talk about the questions and needs。 definitely there's， some intersections where the education summit can totally help。
+ But there's enough of me that I know where to go and get expertise。 And I know that there might be trainers out there feeling the same way。 And so I am hoping that this can foster some connections and mentorship， et cetera。 Also really hoping to inspire newcomers and about the different kinds of training professions。
 
- But I saw a ton of information needs in the community， but a lot of it really unique to。 people within the trainers community that isn't always represented nicely in the education， summit。
+ that are out there and give them a boost because people might be interested in doing the dev， work。 but it may not be super compatible with the hours and things to their schedule， to， their needs。 et cetera。 And so training and education definitely can be a really interesting space。 It definitely was the space that gave me the leg up I needed to sort of get into the space。
 
- And so information that's not necessarily super relevant for the formal education space。 like making contracts and the business side of it， et cetera。
+ The education space was the first one that didn't cut the first technical area in the。 Python community that did not question my credentials。 They saw the skill and let me have opportunities。 And so I think education and training can be an interesting bridge to bring more people。 into our community and help them feel like they have a voice。
 
- So I thought this hatchery program would be perfect to sort of play in this space and。 see how we can help each other and learn from each other。
+ So let's talk about the awesome talks that we have。 We're going to be starting super high level talking about what goes into the business。 side of training。 And dive deep into a few core topics。 so what should our teaching setups look like？ What is it like giving a tutorial at Python and some pro tips in there？
 
- Goals of this established and share best practices。 Every community has to have some sense of norms。 The Python community is amazing at this。 It is driven very much by our mission and a vision of the PSF。
+ And then also dealing with the pandemic right now， a lot of us who are in the education and。 training space are having to transition to teaching online。 Teaching online is different and funky。 I think it's super fun。 I really enjoy teaching online and a lot of experience with it。 but it is different and， you have to be， there's not a lot of sort of easy given things that we do in person that。
 
- by the code of conduct， et cetera。 As this community is starting to grow more informally。 it's important that people start， coming together to establish sort of the common behavioral norms around things。
+ are a little bit harder to translate online。 Okay。 And then we're going to be getting into some breakout groups。 I hope there's things that you all want to talk about and listen and hear about and questions。 you have， depending on how many people stick around towards the end。
 
- But also to create connections and share expertise。 I feel very siloed in my own work and I know that I'm not a lot of me who do things that， I do。
+ We will either do sort of dedicated breakout groups。 Checkout rooms in Zoom are tad funky。 And so no one wants to sit here and wait for like 10 minutes while I sort of point and。 click and do things。 So depending on how many people are in here。 we will adjust what the breakout rooms will， look like for stuff。 It could just be speed networking。
 
- But there's enough of me that I know where to go and get expertise。 And I know that there might be trainers out there feeling the same way。
+ et cetera。 We'll figure it out when we get there。 Okay。 We're going to talk a little bit about Zoom etiquette and then we are going to jam in on。 these talks。 So only speakers should have their video on this is for bandwidth needs。 If you're not here for my face， you're here for the words on the screen。 Please keep yourself muted。
 
- And so I am hoping that this can foster some connections and mentorship， et cetera。 Also really hoping to inspire newcomers and about the different kinds of training professions。
+ I will be checking to see that everyone is muted and if I see you become unmuted， I will。 go ahead and do it for you。 If you're logged in on a phone， Zoom can get funky that way。 Please save your questions for the end and type your questions into the chat box。 If you need。 if you are not in the place where you can type the question fast enough， you。
 
- that are out there and give them a boost because people might be interested in doing the dev， work。 but it may not be super compatible with the hours and things to their schedule， to， their needs。
+ can put in hand and I can give you speaking permissions。 Please wait for me to call on you if that's the case。 If you put your question in the chat。 I will read it out for you。 If you have to bail， throw your question in chat and just say。 "I have to bail，" here's， my question。 All of this is being recorded and I will go up on YouTube as well。
 
- et cetera。 And so training and education definitely can be a really interesting space。 It definitely was the space that gave me the leg up I needed to sort of get into the space。
+ For the sake of the speaker's attention span， please keep off topic。 Once the talks start。 I love the conversations and the introductions and I've been watching。 all of the chats coming in as far as the locations for everyone signing in。 Apologies for those of you who are maybe watching the recording because the time zone just couldn't。
 
- The education space was the first one that didn't cut the first technical area in the。 Python community that did not question my credentials。
+ work for you。 It is super dependent on my availability as well。 Please while the speaker is talking。 please know off topic discussion。 If you have a comment or something about what the speaker is saying。 hit it。 If you have a question that you want them to answer， please hold that for the end。 There should be plenty of time for questions。 I am going to be a pretty big stickler for timing。
 
- They saw the skill and let me have opportunities。 And so I think education and training can be an interesting bridge to bring more people。 into our community and help them feel like they have a voice。
-
- So let's talk about the awesome talks that we have。 We're going to be starting super high level talking about what goes into the business。
-
- side of training。 And dive deep into a few core topics。 so what should our teaching setups look like？ What is it like giving a tutorial at Python and some pro tips in there？
-
- And then also dealing with the pandemic right now， a lot of us who are in the education and。 training space are having to transition to teaching online。 Teaching online is different and funky。
-
- I think it's super fun。 I really enjoy teaching online and a lot of experience with it。 but it is different and， you have to be， there's not a lot of sort of easy given things that we do in person that。
-
- are a little bit harder to translate online。 Okay。 And then we're going to be getting into some breakout groups。
-
- I hope there's things that you all want to talk about and listen and hear about and questions。 you have， depending on how many people stick around towards the end。
-
- We will either do sort of dedicated breakout groups。 Checkout rooms in Zoom are tad funky。 And so no one wants to sit here and wait for like 10 minutes while I sort of point and。
-
- click and do things。 So depending on how many people are in here。 we will adjust what the breakout rooms will， look like for stuff。 It could just be speed networking。
-
- et cetera。 We'll figure it out when we get there。 Okay。 We're going to talk a little bit about Zoom etiquette and then we are going to jam in on。
-
- these talks。 So only speakers should have their video on this is for bandwidth needs。 If you're not here for my face， you're here for the words on the screen。 Please keep yourself muted。
-
- I will be checking to see that everyone is muted and if I see you become unmuted， I will。 go ahead and do it for you。 If you're logged in on a phone， Zoom can get funky that way。
-
- Please save your questions for the end and type your questions into the chat box。 If you need。 if you are not in the place where you can type the question fast enough， you。
-
- can put in hand and I can give you speaking permissions。 Please wait for me to call on you if that's the case。 If you put your question in the chat。
-
- I will read it out for you。 If you have to bail， throw your question in chat and just say。 "I have to bail，" here's， my question。 All of this is being recorded and I will go up on YouTube as well。
-
- For the sake of the speaker's attention span， please keep off topic。 Once the talks start。 I love the conversations and the introductions and I've been watching。
-
- all of the chats coming in as far as the locations for everyone signing in。 Apologies for those of you who are maybe watching the recording because the time zone just couldn't。
-
- work for you。 It is super dependent on my availability as well。 Please while the speaker is talking。 please know off topic discussion。 If you have a comment or something about what the speaker is saying。
-
- hit it。 If you have a question that you want them to answer， please hold that for the end。 There should be plenty of time for questions。 I am going to be a pretty big stickler for timing。
-
- I say this as I'm going to the end of my time。 It's just so that people who are popping in just for a particular talk have the timings。 right on their end。 Awesome。 That is all I have as far as， well， not a pointer。
-
- Here is our schedule。 We will take a quick break， then and then and then break out discussions in the last。 hour。
+ I say this as I'm going to the end of my time。 It's just so that people who are popping in just for a particular talk have the timings。 right on their end。 Awesome。 That is all I have as far as， well， not a pointer。 Here is our schedule。 We will take a quick break， then and then and then break out discussions in the last。 hour。
 
 ![](img/4cded4095a3983c5e6a540db30068996_4.png)
 
- All right。 I am going to go ahead and stop my share。 If you have logistical questions。 go ahead and throw them in the chat and I can answer。 I'm going to get。 There is such a long list。
-
- Thank you， Jackie。 I will let you take it from here。
+ All right。 I am going to go ahead and stop my share。 If you have logistical questions。 go ahead and throw them in the chat and I can answer。 I'm going to get。 There is such a long list。 Thank you， Jackie。 I will let you take it from here。
 ![](img/4cded4095a3983c5e6a540db30068996_6.png)
 
- Thank you so much。 All right。 Let me share that。 Yeah。 That is actually going to work。 Ha。 Technology actually works sometimes。 Excellent。 Hi， everyone。 Thank you。 Thank you。
+ Thank you so much。 All right。 Let me share that。 Yeah。 That is actually going to work。 Ha。 Technology actually works sometimes。 Excellent。 Hi， everyone。 Thank you。 Thank you。 Thank you for organizing this。 This is really exciting， exciting for me。 So I'm going to talk about the business of training and just a few words of introduction。
 
- Thank you for organizing this。 This is really exciting， exciting for me。 So I'm going to talk about the business of training and just a few words of introduction。
+ I am actually a Python trainer， shocking。 No。 I teach Python basically full time。 So every day。 I'm typically in a different city， a different country， different company， teaching Python。 The lack of travel over the last few months and for the next few months has put a bit。 of a kink in that。 So I've been ramping up the amount of teaching I do on WebEx and Zoom。
 
- I am actually a Python trainer， shocking。 No。 I teach Python basically full time。 So every day。 I'm typically in a different city， a different country， different company， teaching Python。
+ which I've been doing， for a few years。 Anyway， I also offer a whole bunch of courses on Python。 data science and Git， not for companies， but for individuals， including weekly Python exercise。 I've got a book coming out。 I mean， it's been out for a year online。 It's being printed theoretically the next two weeks or so for Manning Python workout， which。
 
- The lack of travel over the last few months and for the next few months has put a bit。 of a kink in that。 So I've been ramping up the amount of teaching I do on WebEx and Zoom。
+ has Python exercises。 And basically， I am a full time trainer。 But I wasn't always a full time trainer， so let me give you sort of my evolution in my， career。 So in 1993 or so， I was a web developer。 I worked for HP。 I worked for Time Warner。 And in 1995。 I decided I was going to move to Israel where I am now。 And I decided， well。
 
- which I've been doing， for a few years。 Anyway， I also offer a whole bunch of courses on Python。 data science and Git， not for companies， but for individuals， including weekly Python exercise。
+ if I'm already sort of upending everything in my life， I might as， well try consulting as well。 And what happened was I was doing some programming and some consulting。 And some of my clients came to me and said， you know， instead of you doing the programming， for us。 we preferred if you were to teach us what to do。 And so that was the beginning of my training career。
 
- I've got a book coming out。 I mean， it's been out for a year online。 It's being printed theoretically the next two weeks or so for Manning Python workout， which。
+ I started in about 1996 or so。 And I really didn't know what I was doing other than sort of trying to explain things。 And you know， as with everything at the beginning， you sort of mess around and make mistakes。 And in 2003， then I moved back to the US to work in a PhD。 And those of you who have ever been in grad school know that the stipend they give you。
 
- has Python exercises。 And basically， I am a full time trainer。 But I wasn't always a full time trainer， so let me give you sort of my evolution in my， career。
+ is not quite enough to survive。 Certainly not if you have a family as I did。 So I was doing some consulting on the side。 And that was once again some programming and some training。 And I knew that I liked doing both of them。 But when we returned to Israel， finally。 last international move， returned to Israel in， 2008。
 
- So in 1993 or so， I was a web developer。 I worked for HP。 I worked for Time Warner。 And in 1995。 I decided I was going to move to Israel where I am now。 And I decided， well。
+ I bumped into someone or his car bumped into me。 And he suggested that maybe I could work with a training company and they would just。 sell my training for me。 I was like， ah， that's an interesting idea。 And they started to do this。 And basically what happened was they would-- and I was training in Python at that point。 I was doing a bunch of different things， but mainly Python。
 
- if I'm already sort of upending everything in my life， I might as， well try consulting as well。 And what happened was I was doing some programming and some consulting。
+ And so they would sell about a week per month and then two weeks per month and then the。 whole month and then two months in advance。 And at a certain point， about 2015。 I was booked more or less solid about four to five， months in advance。 At which point I called up the training company and said， you know what， guys， I'm going。
 
- And some of my clients came to me and said， you know， instead of you doing the programming， for us。 we preferred if you were to teach us what to do。 And so that was the beginning of my training career。
-
- I started in about 1996 or so。 And I really didn't know what I was doing other than sort of trying to explain things。 And you know， as with everything at the beginning， you sort of mess around and make mistakes。
-
- And in 2003， then I moved back to the US to work in a PhD。 And those of you who have ever been in grad school know that the stipend they give you。
-
- is not quite enough to survive。 Certainly not if you have a family as I did。 So I was doing some consulting on the side。 And that was once again some programming and some training。
-
- And I knew that I liked doing both of them。 But when we returned to Israel， finally。 last international move， returned to Israel in， 2008。
-
- I bumped into someone or his car bumped into me。 And he suggested that maybe I could work with a training company and they would just。 sell my training for me。 I was like， ah， that's an interesting idea。 And they started to do this。
-
- And basically what happened was they would-- and I was training in Python at that point。 I was doing a bunch of different things， but mainly Python。
-
- And so they would sell about a week per month and then two weeks per month and then the。 whole month and then two months in advance。 And at a certain point， about 2015。
-
- I was booked more or less solid about four to five， months in advance。 At which point I called up the training company and said， you know what， guys， I'm going。
-
- to go back to doing this on my own。 I finished the PhD。 I think I can concentrate on this myself。 And so I have been on my own now， so I guess for about five years or so。 And quite frankly。
-
- I've never been happier。 First of all， I'm earning more than I did before。 certainly more than I did with the， training company。 I'm going to talk about that a little bit。
+ to go back to doing this on my own。 I finished the PhD。 I think I can concentrate on this myself。 And so I have been on my own now， so I guess for about five years or so。 And quite frankly。 I've never been happier。 First of all， I'm earning more than I did before。 certainly more than I did with the， training company。 I'm going to talk about that a little bit。
 
  My pipeline is generally six to 10 months long， meaning if someone calls me and they， say。 can we have Python training？ I say， yes， how does November sound to you？
 
- And they either grown or laugh or if all of those years are some combination。 Nowadays with the coronavirus， companies are a little less sure that what they want to， do。
+ And they either grown or laugh or if all of those years are some combination。 Nowadays with the coronavirus， companies are a little less sure that what they want to， do。 So now I'm only booked like four or five months in advance。 And of course。 their cancellations as well。 But the big thing for me and moving from being a developer to being a trainer was fewer arguments。
 
- So now I'm only booked like four or five months in advance。 And of course。 their cancellations as well。 But the big thing for me and moving from being a developer to being a trainer was fewer arguments。
+ less stress， more satisfaction with my job and before Corona and everything， travel。 So last year in 2019， I was on the US and in Europe and in Israel where I live and in。 India and in China。 And for me， that's a lot of fun。 So how did I do this？ Like。 and how can you do this？ And why should you do this？ Or at least consider doing this。
 
- less stress， more satisfaction with my job and before Corona and everything， travel。 So last year in 2019， I was on the US and in Europe and in Israel where I live and in。
+ So here's the thing。 You have to sort of change your mindset about how you see training。 especially if you're， a freelancer consultant。 A typical consultant thinks of what they do as a service。 I am going to go and talk to my client and they're going to ask me to do things and we're。 going to talk about negotiated and I'll maybe give them an estimate of what's involved。
 
- India and in China。 And for me， that's a lot of fun。 So how did I do this？ Like。 and how can you do this？ And why should you do this？ Or at least consider doing this。
+ And maybe I'll be close and maybe I won't be close and software probably not。 Training is not like that。 Training is a product。 When you go to the supermarket and you want to buy some apples。 you don't go at least in， the supermarkets I go to。 You don't go to the counter then start negotiating over how much the apples cost。 Rather。
 
- So here's the thing。 You have to sort of change your mindset about how you see training。 especially if you're， a freelancer consultant。 A typical consultant thinks of what they do as a service。
+ there's a price。 You take it or you leave it。 Training is very much the same where a company is looking for training。 They will pay your rate for that。 And that's it。 It is a product sometimes known as productized consultant。 The other thing is from their perspective， from the company's perspective， training is。 an investment and they budget it accordingly。 What do I mean by that？
 
- I am going to go and talk to my client and they're going to ask me to do things and we're。 going to talk about negotiated and I'll maybe give them an estimate of what's involved。
+ They basically think of what a business wants to do。 A business wants to earn more and spend less and training helps them to do that。 So training will help them solve new problems， i。e。 earn more。 It'll help them solve old problems faster， i。e。 spend less。 It'll even encourage employees to stay。
 
- And maybe I'll be close and maybe I won't be close and software probably not。 Training is not like that。 Training is a product。 When you go to the supermarket and you want to buy some apples。
+ Employee retention is very expensive。 And if they can give people training that makes them more up on the latest technologies。 or useful technologies， people are more willing to stay。 They'll see it as a nice perk。 In fact。 I was at a company a few years ago where the head of HR got up before I started。 to speak at my course and she said， "You should know everyone。
 
- you don't go at least in， the supermarkets I go to。 You don't go to the counter then start negotiating over how much the apples cost。 Rather。
+ We know that you are going to leave us within the next few years because that's what's。 happened in high tech。 But we're hoping that this course will help you to stay here longer because you'll appreciate。 what we're doing and to leave it and help you in your career after you leave us。"， Amazing。 So companies really want the training to help them。
 
- there's a price。 You take it or you leave it。 Training is very much the same where a company is looking for training。 They will pay your rate for that。 And that's it。 It is a product sometimes known as productized consultant。
-
- The other thing is from their perspective， from the company's perspective， training is。 an investment and they budget it accordingly。 What do I mean by that？
-
- They basically think of what a business wants to do。 A business wants to earn more and spend less and training helps them to do that。
-
- So training will help them solve new problems， i。e。 earn more。 It'll help them solve old problems faster， i。e。 spend less。 It'll even encourage employees to stay。
-
- Employee retention is very expensive。 And if they can give people training that makes them more up on the latest technologies。 or useful technologies， people are more willing to stay。 They'll see it as a nice perk。 In fact。
-
- I was at a company a few years ago where the head of HR got up before I started。 to speak at my course and she said， "You should know everyone。
-
- We know that you are going to leave us within the next few years because that's what's。 happened in high tech。 But we're hoping that this course will help you to stay here longer because you'll appreciate。
-
- what we're doing and to leave it and help you in your career after you leave us。"， Amazing。 So companies really want the training to help them。
-
- They're not doing out of the goodness of their hearts。 They're doing it because they want to help themselves。 That's fine。 Training managers。
-
- That's the term that I use for anyone who's in charge of a training program or at least。 my point of contact。 No company actually calls it a training manager。 That's like my term。
+ They're not doing out of the goodness of their hearts。 They're doing it because they want to help themselves。 That's fine。 Training managers。 That's the term that I use for anyone who's in charge of a training program or at least。 my point of contact。 No company actually calls it a training manager。 That's like my term。
 
  They'll call the chief learning officer。 They'll call it someone working in the talent management department or talent development。 is now very common as a term。 Human resources。 Every company has a slightly different term and a slightly different structure。
 
- But the end of the day， they are investment managers。 They are given a pot of money and told。 "Make our company earn more and spend less through， training。
+ But the end of the day， they are investment managers。 They are given a pot of money and told。 "Make our company earn more and spend less through， training。 They're going to measure your success based on these courses。"。 And so the training managers are always looking around for， "Where can I find a course that。
 
- They're going to measure your success based on these courses。"。 And so the training managers are always looking around for， "Where can I find a course that。
+ will improve my company's efficiency， allow us to earn more and spend less？"。 And they have their pool of traders with whom they work。 But of course。 part of the deal here and what I'm trying to talk about is how you can break。 in or sort of different techniques to do that。 The training manager is your client in the training business。
 
- will improve my company's efficiency， allow us to earn more and spend less？"。 And they have their pool of traders with whom they work。 But of course。
+ It's hard to understand that at first because if you're doing training， you think about。 the students in your course as your clients。 You want to please them。 You want to teach them。 You want to be able to have the course。 That is all true。 None of that is wrong。 But at the end of the day， the training manager is the one who is going to decide whether to。
 
- part of the deal here and what I'm trying to talk about is how you can break。 in or sort of different techniques to do that。 The training manager is your client in the training business。
+ invite you back， who is paying you， who is scheduling things with you and with whom you。 should have a good relationship。 So I've had times teaching online classes sometimes。 The one company I work with a fair amount where we do WebEx classes all the time and。 80% of people just don't show up。 And so I make sure to email the training manager and say， "Listen。
 
- It's hard to understand that at first because if you're doing training， you think about。 the students in your course as your clients。 You want to please them。 You want to teach them。
+ most people didn't， show up。 Why？"， Because I want her to know what's going on and sort of be in the loop of things。 They have to be satisfied。 They have to know that they can rely on me and I can rely on them。 So what does this mean at the end of the day？ It means that if you have a successful course。 then it will be seen as a worthwhile investment。 They look good， right？
 
- You want to be able to have the course。 That is all true。 None of that is wrong。 But at the end of the day， the training manager is the one who is going to decide whether to。
+ The training manager wants to look to their bosses。 So if you have a successful course。 they look good for bringing you in and they will invite。 you back because you're going to make them look good again。 If it was an unsuccessful course。 that was seen as a bad investment。 Now they might not invite you back at all。 More likely。
 
- invite you back， who is paying you， who is scheduling things with you and with whom you。 should have a good relationship。 So I've had times teaching online classes sometimes。
+ at least with the big companies and some of the companies that I've worked， with， they'll say。 "Okay， we understand there was a glitch。 What could we do maybe next time around to fix it？"。 I have one company that I work with where if we do a course for the first time， they。 say we know that it takes a few times the day， right？
 
- The one company I work with a fair amount where we do WebEx classes all the time and。 80% of people just don't show up。 And so I make sure to email the training manager and say， "Listen。
+ So we're going to give you three times to even get the scores on your evaluation to。 something reasonable。 So you always have to be thinking about how can I make the training manager look good。 I'm not saying you should skip on good pedagogy， good teaching， good content。 All that is very important。 But at the end of the day。
 
- most people didn't， show up。 Why？"， Because I want her to know what's going on and sort of be in the loop of things。 They have to be satisfied。 They have to know that they can rely on me and I can rely on them。
+ it's sort of the most important thing to do is make the training， manager happy。 Now one way。 common way to get into the training world， and I would say most people probably， do this。 is to work for a training company。 And there are advantages to doing that。 First of all。 they have contacts。 They don't have to try to find out who are the potential clients and who they have to。
 
- So what does this mean at the end of the day？ It means that if you have a successful course。 then it will be seen as a worthwhile investment。 They look good， right？
+ work for and who's interested in all the different nuances of working with new companies。 They have that。 They're working with hundreds， thousands of different companies。 And those companies know to turn to that training company and many training companies and ask。 basically， "Do you have a course in X？ Do you have a course in Y？"。
 
- The training manager wants to look to their bosses。 So if you have a successful course。 they look good for bringing you in and they will invite。
+ And so the answer is good that if you are teaching something that's popular， you'll。 be able to teach starting right away and maybe in your time as a training company did with， me。 So why not do that？ What's wrong？ Two reasons I'd say。 One is they can be really draconian in terms of non-compete clauses。
 
- you back because you're going to make them look good again。 If it was an unsuccessful course。 that was seen as a bad investment。 Now they might not invite you back at all。 More likely。
+ And virtually every trainer I know eventually says， "I'm tired of working with this training。 company because they take the bulk of the money。 It can be anywhere between 30 and 70% based on what I've seen。"， And I can do this。 Like I teach well， I have the contacts。 I'm going to go and I'm going to start training。 And of course， the training companies know this。
 
- at least with the big companies and some of the companies that I've worked， with， they'll say。 "Okay， we understand there was a glitch。 What could we do maybe next time around to fix it？"。
+ So they sign you a draconian non-compete clause saying， "You're not allowed to do this。 for some amount of time for some number of clients。"。 But if you are willing to sort of try it and I'm not guaranteeing success obviously and， it's hard。 you can do it on your own。 That's what I do。 That's what many other people do。
 
- I have one company that I work with where if we do a course for the first time， they。 say we know that it takes a few times the day， right？
-
- So we're going to give you three times to even get the scores on your evaluation to。 something reasonable。 So you always have to be thinking about how can I make the training manager look good。
-
- I'm not saying you should skip on good pedagogy， good teaching， good content。 All that is very important。 But at the end of the day。
-
- it's sort of the most important thing to do is make the training， manager happy。 Now one way。 common way to get into the training world， and I would say most people probably， do this。
-
- is to work for a training company。 And there are advantages to doing that。 First of all。 they have contacts。 They don't have to try to find out who are the potential clients and who they have to。
-
- work for and who's interested in all the different nuances of working with new companies。 They have that。 They're working with hundreds， thousands of different companies。
-
- And those companies know to turn to that training company and many training companies and ask。 basically， "Do you have a course in X？ Do you have a course in Y？"。
-
- And so the answer is good that if you are teaching something that's popular， you'll。 be able to teach starting right away and maybe in your time as a training company did with， me。
-
- So why not do that？ What's wrong？ Two reasons I'd say。 One is they can be really draconian in terms of non-compete clauses。
-
- And virtually every trainer I know eventually says， "I'm tired of working with this training。 company because they take the bulk of the money。 It can be anywhere between 30 and 70% based on what I've seen。
-
-"， And I can do this。 Like I teach well， I have the contacts。 I'm going to go and I'm going to start training。 And of course， the training companies know this。
-
- So they sign you a draconian non-compete clause saying， "You're not allowed to do this。 for some amount of time for some number of clients。"。
-
- But if you are willing to sort of try it and I'm not guaranteeing success obviously and， it's hard。 you can do it on your own。 That's what I do。 That's what many other people do。
-
- So let's talk about how you would do that。 Approaching companies， proposals。 charging and then turning courses into a high income pipeline。 So the goal of course。
-
- what you really want to get to is where your phone is ringing off， the hook with people saying。 "We'd love to have you train for us。 Please would you come teach us？"， And you can say， "Well。
+ So let's talk about how you would do that。 Approaching companies， proposals。 charging and then turning courses into a high income pipeline。 So the goal of course。 what you really want to get to is where your phone is ringing off， the hook with people saying。 "We'd love to have you train for us。 Please would you come teach us？"， And you can say， "Well。
 
  I don't know if I could fit you in。"， If you train often and well， this will happen。 What？
 
- Companies that have already had you train will invite you to return。 Not everyone， not all the time。 Things change。 But a lot of them will。 People switch jobs until their boss is。
+ Companies that have already had you train will invite you to return。 Not everyone， not all the time。 Things change。 But a lot of them will。 People switch jobs until their boss is。 "I can't tell you how much of a professional advantage， this is。"。 That in high tech people switch jobs all the time。
 
- "I can't tell you how much of a professional advantage， this is。"。 That in high tech people switch jobs all the time。
+ And so a person who was a company A where you talk goes to company B。 And they then。 their boss says， "Hey， we're interested in having a Python course。"， And the person says， "Oh。 you know， when I was a company A before， we had so and so， come and do a Python course。"。 And so they'll bring you in。 All the time whenever a new company calls me， I ask them。
 
- And so a person who was a company A where you talk goes to company B。 And they then。 their boss says， "Hey， we're interested in having a Python course。"， And the person says， "Oh。
-
- you know， when I was a company A before， we had so and so， come and do a Python course。"。 And so they'll bring you in。 All the time whenever a new company calls me， I ask them。
-
- "Where did you hear about me？"， And that's a very， very， very common thing to do。 People talk to their friends and other companies。 Even the training managers talk to each other。
-
- I've definitely gotten referrals from one training manager to another to come in and do training。 And it's far easier if you specialize。 If you just say， "I do training。
+ "Where did you hear about me？"， And that's a very， very， very common thing to do。 People talk to their friends and other companies。 Even the training managers talk to each other。 I've definitely gotten referrals from one training manager to another to come in and do training。 And it's far easier if you specialize。 If you just say， "I do training。
 
  no one's going to want to hire you。"， If you say， "I do training in Python，" better。 And if you can't， I don't do this。 But if you say， "I train in Python network security，" right？
 
- Or Python optimizations， like that。 The thing with specialization is you will have a smaller number of potential clients。 But those clients are really， really going to want your services。
+ Or Python optimizations， like that。 The thing with specialization is you will have a smaller number of potential clients。 But those clients are really， really going to want your services。 And it'll be easier to sell them on your services。 So make yourself special。 Why would they want to hire you？ Maybe it's in these technology。
 
- And it'll be easier to sell them on your services。 So make yourself special。 Why would they want to hire you？ Maybe it's in these technology。
+ Maybe you're active on an open source project you really want to know about。 Maybe you've used it for a long time。 Maybe you've done a term of writing。 Maybe you've done a term of speaking。 And so approaching companies is really hard。 It takes a lot of time。 Like time in terms of the investment of time to do it。
 
- Maybe you're active on an open source project you really want to know about。 Maybe you've used it for a long time。 Maybe you've done a term of writing。
-
- Maybe you've done a term of speaking。 And so approaching companies is really hard。 It takes a lot of time。 Like time in terms of the investment of time to do it。
-
- And it just takes a long time to actually succeed with it。 I'll be honest。 I have not had a lot of success reaching out， cold calling， cold emailing companies and。
-
- asking them what's much， much better。 And again， still takes a long time still hard is to get in sort of the back door。 Talk to people you know who work at a company or all the companies that say， "Hey， what。
+ And it just takes a long time to actually succeed with it。 I'll be honest。 I have not had a lot of success reaching out， cold calling， cold emailing companies and。 asking them what's much， much better。 And again， still takes a long time still hard is to get in sort of the back door。 Talk to people you know who work at a company or all the companies that say， "Hey， what。
 
  sort of training do you do？ What are you interested in？ What sort of bad training have you had？
 
- What opportunities do you think there are？ And if they can introduce you to the training manager。 all the better。"， And that's sort of three way phone calls。
+ What opportunities do you think there are？ And if they can introduce you to the training manager。 all the better。"， And that's sort of three way phone calls。 And it's often a good thing because there's you and the person who knows about technology。 the person who knows about training， but doesn't know the technology。
 
- And it's often a good thing because there's you and the person who knows about technology。 the person who knows about training， but doesn't know the technology。
+ And little by little by little， you will make your way into these companies。 They will start to hear about you。 But it takes time。 There's almost no way that like if you start today， a month from now you'll have training。 it might be。 But it takes a long time to sort of build up the relationships that you need。
 
- And little by little by little， you will make your way into these companies。 They will start to hear about you。 But it takes time。
+ Now once you do manage to get some clients， what are they like？ Well， enterprise clients。 The big companies are the best。 They have huge budgets。 They have huge demand。 They schedule foreign advance。 It's very hard to break in。 And sometimes they'll even say。 "We don't really like working with individuals。"， By the way， they've said this to me。
 
- There's almost no way that like if you start today， a month from now you'll have training。 it might be。 But it takes a long time to sort of build up the relationships that you need。
+ And yet they're working with me。 So obviously these rules are not always iron and clad。 In fact。 they rarely are。 The other thing with enterprise clients is they are very， very， very slow。 Two of my like 4，100 companies that I worked with， they reach out to me。 And they said。 "We want you to do the training for us。"， It was nine months from that initial email to actually doing the training。
 
- Now once you do manage to get some clients， what are they like？ Well， enterprise clients。 The big companies are the best。 They have huge budgets。 They have huge demand。
+ Nine months。 And that was because they reached out to me and they wanted me。 So imagine if you're reaching out to them way harder。 Startups are in many ways easier to get into。 They're smaller。 They're scrappier。 There's less bureaucracy。 You probably even know some CTO or someone there。 It's like small。 Everyone knows each other。
 
- They schedule foreign advance。 It's very hard to break in。 And sometimes they'll even say。 "We don't really like working with individuals。"， By the way， they've said this to me。
+ I'm guessing it's easier。 Or my experience is it's easier to get in there and sort of start to ramp your way up。 It is crucial throughout your career as a trainer to build authority， especially but。 not only at the beginning。 People should know who you are。 People should know that you're an expert in this field。
 
- And yet they're working with me。 So obviously these rules are not always iron and clad。 In fact。 they rarely are。 The other thing with enterprise clients is they are very， very， very slow。
+ Now the funny thing is that people who finally do the hiring， the training managers who have。 the money in the authority， they're never going to read your blog。 But if you blog and if you speak and if you share， someone technical might then sort of。 nudge your information in someone else's way。 And then that will make its way to the training manager。
 
- Two of my like 4，100 companies that I worked with， they reach out to me。 And they said。 "We want you to do the training for us。"， It was nine months from that initial email to actually doing the training。
+ The speaking at conferences， speaking at user groups is a great way to show what a great。 trainer you are because if you really speak well， they'll be like， "Oh， they spoke well， here。 I bet they would do a good job at my company as well。"。 People are bad though at guessing you do training。 So if you do give talks。
 
- Nine months。 And that was because they reached out to me and they wanted me。 So imagine if you're reaching out to them way harder。 Startups are in many ways easier to get into。
-
- They're smaller。 They're scrappier。 There's less bureaucracy。 You probably even know some CTO or someone there。 It's like small。 Everyone knows each other。
-
- I'm guessing it's easier。 Or my experience is it's easier to get in there and sort of start to ramp your way up。 It is crucial throughout your career as a trainer to build authority， especially but。
-
- not only at the beginning。 People should know who you are。 People should know that you're an expert in this field。
-
- Now the funny thing is that people who finally do the hiring， the training managers who have。 the money in the authority， they're never going to read your blog。
-
- But if you blog and if you speak and if you share， someone technical might then sort of。 nudge your information in someone else's way。 And then that will make its way to the training manager。
-
- The speaking at conferences， speaking at user groups is a great way to show what a great。 trainer you are because if you really speak well， they'll be like， "Oh， they spoke well， here。
-
- I bet they would do a good job at my company as well。"。 People are bad though at guessing you do training。 So if you do give talks。
-
- tell them you do training。 They won't guess it。 I know it's like shocking。 but they won't guess it at all。 All right。 Let me speed ahead here a little bit。 Proposals。
-
- Companies will ask you to write proposals。 Some of it is obvious， some of it's not。 You want to say who the audience is。 You want to give a syllabus。
+ tell them you do training。 They won't guess it。 I know it's like shocking。 but they won't guess it at all。 All right。 Let me speed ahead here a little bit。 Proposals。 Companies will ask you to write proposals。 Some of it is obvious， some of it's not。 You want to say who the audience is。 You want to give a syllabus。
 
  You want to say what they need to know in advance。 Very important。 What should the results be？
 
  That's great。 Companies like to know， "Oh， somebody goes to this training。 We'll come out knowing X and Y and Z。"， How many participants maximum will you take？
 
- Super important because if you don't say it and you charge by the day， they'll just stuff。 a room full of people to take advantage of it and that's bad in all possible ways。
+ Super important because if you don't say it and you charge by the day， they'll just stuff。 a room full of people to take advantage of it and that's bad in all possible ways。 That's obviously and cancellation terms。 I remember I was driving to a client to go teach there and I called them on the phone。 and said， "Hi， just wanted to double check that I've parked you。"， They said， "What？
 
- That's obviously and cancellation terms。 I remember I was driving to a client to go teach there and I called them on the phone。 and said， "Hi， just wanted to double check that I've parked you。"， They said， "What？
+ You're coming today？"， So basically I turned around， I came home and I emailed them and said， "Okay。 well you're， going to have to pay a cancellation。 Thank goodness I put that in my proposal because otherwise I would have just lost the。 whole day。"， They also wanted to know how much of the course is hands-on。 Very， very important。 If you say this before they even ask all the better， I say anything greater than 30%。
 
- You're coming today？"， So basically I turned around， I came home and I emailed them and said， "Okay。 well you're， going to have to pay a cancellation。 Thank goodness I put that in my proposal because otherwise I would have just lost the。
+ If you're not doing at least 30% hands-on， then you've probably rethinking it anyway。 But the higher the better， this is really attractive to them。 How people don't do a lot of hands-on stuff is beyond me。 But my experience is that training managers are often surprised or delighted that it's， that hot。
 
- whole day。"， They also wanted to know how much of the course is hands-on。 Very， very important。 If you say this before they even ask all the better， I say anything greater than 30%。
+ One of these big companies will schedule six， even 12 months in advance。 They love it。 One company I work with， I work with the head of training for all over the world。 And I would say。 "Oh， I want to do such and such a date。 How does that work？"， She would say， "Oh， that day。 10 months in advance。 10 months in advance。 The conference rooms are all booked。"。
 
- If you're not doing at least 30% hands-on， then you've probably rethinking it anyway。 But the higher the better， this is really attractive to them。
+ But this is the secret to having a long pipeline because if you work with a few of these big。 companies， they will fill up your time even a year in advance。 And that's great。 You know where you're going to be。 Right now， I have more or less no assuming the virus doesn't totally destroy all of my。 plans。 I don't really know what city， what country， what company I'm planning to be in for the。
 
- How people don't do a lot of hands-on stuff is beyond me。 But my experience is that training managers are often surprised or delighted that it's， that hot。
+ next six to eight months or so。 Pricing is hard。 But they're too basic to type you to a per person or per day。 I prefer to do a per day。 And then I say， "Here's the maximum number of people。 Fill the room。 Go for it。"， If you do a per person， you have to say a minimum， right？ Because if you don't do that。 then they might just bring two people and that's totally not， worth your while。
 
- One of these big companies will schedule six， even 12 months in advance。 They love it。 One company I work with， I work with the head of training for all over the world。 And I would say。
+ And sometimes I'll add on， say， it's per day for up to this number of people and then。 per additional person is higher than that。 How much can you charge？ There is no rule。 The US definitely pays more than other countries by a lot。 And the US， you can even charge like $6。000 a day。 They're places that charge even more than that。
 
- "Oh， I want to do such and such a date。 How does that work？"， She would say， "Oh， that day。 10 months in advance。 10 months in advance。 The conference rooms are all booked。"。
-
- But this is the secret to having a long pipeline because if you work with a few of these big。 companies， they will fill up your time even a year in advance。 And that's great。
-
- You know where you're going to be。 Right now， I have more or less no assuming the virus doesn't totally destroy all of my。 plans。 I don't really know what city， what country， what company I'm planning to be in for the。
-
- next six to eight months or so。 Pricing is hard。 But they're too basic to type you to a per person or per day。 I prefer to do a per day。 And then I say， "Here's the maximum number of people。 Fill the room。
-
- Go for it。"， If you do a per person， you have to say a minimum， right？ Because if you don't do that。 then they might just bring two people and that's totally not， worth your while。
-
- And sometimes I'll add on， say， it's per day for up to this number of people and then。 per additional person is higher than that。 How much can you charge？ There is no rule。
-
- The US definitely pays more than other countries by a lot。 And the US， you can even charge like $6。000 a day。 They're places that charge even more than that。
-
- And does that mean that a four day course can bring in $24，000？ It does。 It does。 Shocking but true。 And you might be saying， "How？ Why would a company pay that？"， It's an investment。 Remember that。
-
- Let's just say a company's engineers make $100，000 a year each， right？
+ And does that mean that a four day course can bring in $24，000？ It does。 It does。 Shocking but true。 And you might be saying， "How？ Why would a company pay that？"， It's an investment。 Remember that。 Let's just say a company's engineers make $100，000 a year each， right？
 
  And you make them 10% more efficient teaching than Python。 So you're now saving the company， right？
 
- $10，000 per engineer。 You have 20 such people in your course and you're effectively saving the company $200。000， a year。 Of course they're going to pay you $24，000 to save them that。
-
- Now obviously it's not measurable in exactly that way。 But that's the basic thinking and that's why they have these budgets and so forth。 Okay。
+ $10，000 per engineer。 You have 20 such people in your course and you're effectively saving the company $200。000， a year。 Of course they're going to pay you $24，000 to save them that。 Now obviously it's not measurable in exactly that way。 But that's the basic thinking and that's why they have these budgets and so forth。 Okay。
 
  Evaluations。 At the end of a course， they're going to say， "What do people think？
 
- Those evaluations are your key too， as I mentioned before， making the training manager happy。 and continuing there。 But it's also your ticket to learning how you can move forward。
+ Those evaluations are your key too， as I mentioned before， making the training manager happy。 and continuing there。 But it's also your ticket to learning how you can move forward。 You want to get a really high score in the evaluation， right？
 
- You want to get a really high score in the evaluation， right？
+ Because that's going to make the training manager very， very happy。 I'll just show you。 There are all sorts of crazy things that happen with evaluation。 Seriously evaluation that I got a few years ago from something that I was doing。 All right。 And I'm not showing this to show off。 This is actually funny。
 
- Because that's going to make the training manager very， very happy。 I'll just show you。 There are all sorts of crazy things that happen with evaluation。
+ So I got like very nice high scores here just so you know。 Evaluation form that the students were given was on a scale from one to nine。 How I got an average score of 9。9 on a score of one to nine is beyond me。 But I'm not complaining。 right？ Someone messed up somewhere。 The training manager was happy and sure enough。
 
- Seriously evaluation that I got a few years ago from something that I was doing。 All right。 And I'm not showing this to show off。 This is actually funny。
+ I've been invited back there many times。 They'll send me email like here is your score。 Here are your scores for the last， I guess this would be like what？ Five years or something。 And they track this。 For them， this is like super， super important。 For me。 it's important that they're happy。 It's a good ego boost as well。
 
- So I got like very nice high scores here just so you know。 Evaluation form that the students were given was on a scale from one to nine。
+ What's really useful though is the written feedback。 Every survey will have written feedback。 You want to know what it says。 Excuse me。 For example。 this feedback on my Python for non-programmed class from just a few weeks， ago。 people said it would be great if we had more about API data， more on JSON。
 
- How I got an average score of 9。9 on a score of one to nine is beyond me。 But I'm not complaining。 right？ Someone messed up somewhere。 The training manager was happy and sure enough。
+ More on working with iOS devices。 I can then go back to this client and say。 I have a course for you about APIs。 I have a course for you that includes JSON。 They'll be like。 how did you know？ Are people have been asking for that？
 
- I've been invited back there many times。 They'll send me email like here is your score。 Here are your scores for the last， I guess this would be like what？ Five years or something。
+ Some of the feedback is also useful and interesting。 Like here， from the same course。 hands on interactive teaching style was not stacked， on a slide。 I get this all the time。 Meaning people are so surprised。 I'm not using slides。 I can't use slides usually。 I don't。 I'm using the fact that I do live coding typing to the Jupyter notebook。
 
- And they track this。 For them， this is like super， super important。 For me。 it's important that they're happy。 It's a good ego boost as well。
+ The fact that just about every course says this means， hey， I'm doing something different。 and special that stands out。 None of you should do this。 All of you should do it。 All of you should do is Jupyter。 But basically， I'm doing something that stands out that makes me special and the company。 will all work with me again。 Some of the comments will be stupid and junk。 For example。
 
- What's really useful though is the written feedback。 Every survey will have written feedback。 You want to know what it says。 Excuse me。 For example。
+ this course was very slow。 Maybe I should have chosen intermediate or advanced since I have 10 plus years of programming。 experience。 Not part of Python for non-programmers did you not understand。 I really was quite puzzled by that。 The thing is， once you know what else people want。 you can upsell them。 You can then go to the client， as I said， and say， hey。
 
- this feedback on my Python for non-programmed class from just a few weeks， ago。 people said it would be great if we had more about API data， more on JSON。
-
- More on working with iOS devices。 I can then go back to this client and say。 I have a course for you about APIs。 I have a course for you that includes JSON。 They'll be like。
-
- how did you know？ Are people have been asking for that？
-
- Some of the feedback is also useful and interesting。 Like here， from the same course。 hands on interactive teaching style was not stacked， on a slide。 I get this all the time。
-
- Meaning people are so surprised。 I'm not using slides。 I can't use slides usually。 I don't。 I'm using the fact that I do live coding typing to the Jupyter notebook。
-
- The fact that just about every course says this means， hey， I'm doing something different。 and special that stands out。 None of you should do this。 All of you should do it。
-
- All of you should do is Jupyter。 But basically， I'm doing something that stands out that makes me special and the company。 will all work with me again。 Some of the comments will be stupid and junk。 For example。
-
- this course was very slow。 Maybe I should have chosen intermediate or advanced since I have 10 plus years of programming。 experience。 Not part of Python for non-programmers did you not understand。
-
- I really was quite puzzled by that。 The thing is， once you know what else people want。 you can upsell them。 You can then go to the client， as I said， and say， hey。
-
- I have a course on X or Y or Z， and they'll be delighted。 delighted that you are solving their problems。 They want to give you their money because they will look good and it'll improve the company。
-
- So what are my best upsells？ Python for non-programmers。 I discovered that many people found my intro Python course was too hard。
+ I have a course on X or Y or Z， and they'll be delighted。 delighted that you are solving their problems。 They want to give you their money because they will look good and it'll improve the company。 So what are my best upsells？ Python for non-programmers。 I discovered that many people found my intro Python course was too hard。
 
  So I went to companies I said， what if I give you something for network and system administrators？
 
- Whoa， what a great idea。 No one does this。 The course fills up every time。 Data science。 Why did I start teaching data science？ Because people， my course。
+ Whoa， what a great idea。 No one does this。 The course fills up every time。 Data science。 Why did I start teaching data science？ Because people， my course。 said when I went around the beginning of the day and said， why， are you here？ They said。 we want to use Python for data science。 I now offer a course in that。 Very popular。
 
- said when I went around the beginning of the day and said， why， are you here？ They said。 we want to use Python for data science。 I now offer a course in that。 Very popular。
-
- Python practice workshop。 Okay， I mentioned earlier weekly Python exercise。 which is an email course。 It's 15 week courses。 The new weeks you get a problem on Tuesday。
-
- You get the solution on Monday。 I went to some of my corporate clients and said。 would you be interested in buying this？ And one of them in particular said， no。
+ Python practice workshop。 Okay， I mentioned earlier weekly Python exercise。 which is an email course。 It's 15 week courses。 The new weeks you get a problem on Tuesday。 You get the solution on Monday。 I went to some of my corporate clients and said。 would you be interested in buying this？ And one of them in particular said， no。
 
  we don't do that sort of thing。 I said， what if I came in and did a day of practice exercises？
 
- That is brilliant。 We definitely want that。 So they basically said no NDS to exactly the same content except they're paying me more。 to come in physically and show the exercises rather than send a V email。 Okay。
+ That is brilliant。 We definitely want that。 So they basically said no NDS to exactly the same content except they're paying me more。 to come in physically and show the exercises rather than send a V email。 Okay。 And then by having conversations with a training manager， you never know what's going to happen。 So at some point I happen to mention to a training manager of a company that I teach， Git， she said。
 
- And then by having conversations with a training manager， you never know what's going to happen。 So at some point I happen to mention to a training manager of a company that I teach， Git， she said。
+ what？ You teach Git。 Why didn't you tell us？ We just signed a contract with someone else to teach Git。 We would have had you do it。 Six months later， they give me a call。 We're really unhappy with whoever was teaching us Git。 We'd love for you to do that。 I'm now teaching it once a month at that company。 You never know where these things will come from。
 
- what？ You teach Git。 Why didn't you tell us？ We just signed a contract with someone else to teach Git。 We would have had you do it。 Six months later， they give me a call。
+ And the communication with the train managers is important。 And of course。 the more courses you have， and the more clients you have， the more easily。 you can fill your calendar out in the future。 Finally。 I've been talking here about the business stuff。 At the end of the day。
 
- We're really unhappy with whoever was teaching us Git。 We'd love for you to do that。 I'm now teaching it once a month at that company。 You never know where these things will come from。
+ you do still need to want to teach。 You want to enjoy it。 You want to be good at it。 You want to be constantly improving at it。 Not everyone is kind of necessarily to teach。 Some people though， they've been doing it for a long time and planning for a long time。 I kid you not。 This is my eighth grade yearbook。 You can， you can laugh at the picture。
 
- And the communication with the train managers is important。 And of course。 the more courses you have， and the more clients you have， the more easily。
+ but look at my goals to be a computer engineer， to write books and to teach。 Crazy but true。 So it seems I have achieved all of my eighth grade goals。 Next I guess it's ninth grade。 I'm very happy to take questions now。 You can also reach out to me online， email， Twitter。 I also have a free weekly newsletter about the business and pedagogy of training at Trainer， Weekly。
 
- you can fill your calendar out in the future。 Finally。 I've been talking here about the business stuff。 At the end of the day。
-
- you do still need to want to teach。 You want to enjoy it。 You want to be good at it。 You want to be constantly improving at it。 Not everyone is kind of necessarily to teach。
-
- Some people though， they've been doing it for a long time and planning for a long time。 I kid you not。 This is my eighth grade yearbook。 You can， you can laugh at the picture。
-
- but look at my goals to be a computer engineer， to write books and to teach。 Crazy but true。 So it seems I have achieved all of my eighth grade goals。 Next I guess it's ninth grade。
-
- I'm very happy to take questions now。 You can also reach out to me online， email， Twitter。 I also have a free weekly newsletter about the business and pedagogy of training at Trainer， Weekly。
-
- And I have a Facebook group for trainers as well。 Not so active lately。 but if people have questions， whatever want to follow up there。
-
- there's a whole community of people who can make an E and maybe chat with you。 I'm open to questions。 I think I have five， eight minutes left for questions。 I have five minutes。
+ And I have a Facebook group for trainers as well。 Not so active lately。 but if people have questions， whatever want to follow up there。 there's a whole community of people who can make an E and maybe chat with you。 I'm open to questions。 I think I have five， eight minutes left for questions。 I have five minutes。
 
  Yeah， so please， nice to hear your question。 If you thank you so much， that was so good。
 ![](img/4cded4095a3983c5e6a540db30068996_8.png)
 
- That is such an amazing synthesis of what you said in open spaces and is so important。 to get out to people。 If you have questions， go ahead and throw them in the chat。
+ That is such an amazing synthesis of what you said in open spaces and is so important。 to get out to people。 If you have questions， go ahead and throw them in the chat。 I'll go ahead and just start from the top。 And I'm also going to read them off for the purposes of the recording as well because。 that's not saved along and will not end up in YouTube。 So when you say hands-on。
 
- I'll go ahead and just start from the top。 And I'm also going to read them off for the purposes of the recording as well because。 that's not saved along and will not end up in YouTube。 So when you say hands-on。
+ what exactly do you mean exercises the students do or live， coding the instructor does？ Oh。 exercises the students do。 For sure， for sure。 I want them。 First of all。 I know as someone who studies things， if you don't actually do it， it's so。 easy to read the book or watch a video and go， "Uh-huh， uh-huh， uh-huh， uh-huh， uh-huh， I get it。"。
 
- what exactly do you mean exercises the students do or live， coding the instructor does？ Oh。 exercises the students do。 For sure， for sure。 I want them。 First of all。
+ And 10 minutes later， not actually， you can't utilize it。 Learning a programming language is like learning a language。 And so you could read as many textbooks on language X that you want until you actually。 try to speak and trip over your tongue。 You won't learn it。 Same thing with Python。
 
- I know as someone who studies things， if you don't actually do it， it's so。 easy to read the book or watch a video and go， "Uh-huh， uh-huh， uh-huh， uh-huh， uh-huh， I get it。"。
+ So I do live code。 And what I do actually with all my exercises is I set it up。 tell everybody what I want them， to do。 They work on it。 preferably peer programming that works so much better。 People learn much more。 Programmers hate it。 I tell this to them in advance。 You will hate it， but you will learn from it。
 
- And 10 minutes later， not actually， you can't utilize it。 Learning a programming language is like learning a language。
+ Those who do it learn more。 And then after they're done， then often。 usually I will just go over myself。 Sometimes I'll ask them to present what they've done before I go over it。 But they have to actually do it。 They have to actually type。 Awesome。 So then from John Silverman。 do you have a preferred number of students in a session？ Yes。 And it varies from country to country。
 
- And so you could read as many textbooks on language X that you want until you actually。 try to speak and trip over your tongue。 You won't learn it。 Same thing with Python。
+ So Israelis tend to be loud， boisterous， asking lots of questions， interrupting all， the time。 By the way， this is a professional trade secret。 If I teach in Israel， like four or five times。 I'm ready for the rest of the world because， I know what they're going to be asking and doing。 So in Israel， I max it out at 16 people。 In Europe and the US， I max it out at 20 people。
 
- So I do live code。 And what I do actually with all my exercises is I set it up。 tell everybody what I want them， to do。 They work on it。
-
- preferably peer programming that works so much better。 People learn much more。 Programmers hate it。 I tell this to them in advance。 You will hate it， but you will learn from it。
-
- Those who do it learn more。 And then after they're done， then often。 usually I will just go over myself。 Sometimes I'll ask them to present what they've done before I go over it。
-
- But they have to actually do it。 They have to actually type。 Awesome。 So then from John Silverman。 do you have a preferred number of students in a session？ Yes。 And it varies from country to country。
-
- So Israelis tend to be loud， boisterous， asking lots of questions， interrupting all， the time。 By the way， this is a professional trade secret。 If I teach in Israel， like four or five times。
-
- I'm ready for the rest of the world because， I know what they're going to be asking and doing。 So in Israel， I max it out at 16 people。 In Europe and the US， I max it out at 20 people。
-
- And in China， I say， " over many you want。"， Because basically people。 the culture is that of you don't ask questions。 And so typically。
-
- it's like pulling teeth to get questions out of people。 And they'll all come up to me after the session is done and that's privately， but certainly。
+ And in China， I say， " over many you want。"， Because basically people。 the culture is that of you don't ask questions。 And so typically。 it's like pulling teeth to get questions out of people。 And they'll all come up to me after the session is done and that's privately， but certainly。
 
  not in the group。 So I don't put that on my website because it is different from country to country。 Awesome。 And then another question， do you have a ballpark for how much to charge for Zoom-based courses？
 
  Is it less than in person and does the class size change？
 
- The class size should not change if you're doing it， I think， like the right way because。 you still want to have a lot of interaction with people。
+ The class size should not change if you're doing it， I think， like the right way because。 you still want to have a lot of interaction with people。 The amount you charge on these sorts of online classes is dicey because on the one hand。 like I've found， one client I've done a ton of online courses for， they like having me， do courses。
 
- The amount you charge on these sorts of online classes is dicey because on the one hand。 like I've found， one client I've done a ton of online courses for， they like having me， do courses。
+ They use WebEx。 I can do a course on WebEx because they're like， "Oh。 we can pay your Israeli rates and， not your American rates。"。 And when I once suggested that I come physically to the US to teach for them and charge American。 rates， they're like， "But we're getting exactly the same thing online。"。
 
- They use WebEx。 I can do a course on WebEx because they're like， "Oh。 we can pay your Israeli rates and， not your American rates。"。
+ But I tried to explain them that's not the same pedagogically， that's way better in person。 This was extremely unconvincing to them。 So I would say try to charge the same amount as you would。 certainly like start with that。 And done well， it can be， I would say， 80% as good。 It's never going to be 100% as good as the real thing， like it's being there in person。
 
- And when I once suggested that I come physically to the US to teach for them and charge American。 rates， they're like， "But we're getting exactly the same thing online。"。
+ It can be close enough and they'll still get value out of it。 The big value that people have besides all coronavirus thing， big value in doing courses。 online is that if a company is spread out geographically。 They save a ton of money。 They don't need to fly people into one place。 So when I do courses for like the US or for Europe on WebEx。
 
- But I tried to explain them that's not the same pedagogically， that's way better in person。 This was extremely unconvincing to them。 So I would say try to charge the same amount as you would。
-
- certainly like start with that。 And done well， it can be， I would say， 80% as good。 It's never going to be 100% as good as the real thing， like it's being there in person。
-
- It can be close enough and they'll still get value out of it。 The big value that people have besides all coronavirus thing， big value in doing courses。
-
- online is that if a company is spread out geographically。 They save a ton of money。 They don't need to fly people into one place。 So when I do courses for like the US or for Europe on WebEx。
-
- everyone's in a different， city。 And so that's the big attraction there， I'd say。 Well。 there's a comment from Carl pointing out that it， different typing speeds for students。
-
- does make timing difficult for things。 And that's definitely something everyone should take into account。 There's a couple more questions。 I think we have time for just these two more questions。
+ everyone's in a different， city。 And so that's the big attraction there， I'd say。 Well。 there's a comment from Carl pointing out that it， different typing speeds for students。 does make timing difficult for things。 And that's definitely something everyone should take into account。 There's a couple more questions。 I think we have time for just these two more questions。
 
  If you have others， you can throw them in chat and maybe you can look at them later on。 and address them later。 How do you get started if you don't know anyone in the corporate world？
 
- You're going to have trouble。 It's going to be hard。 I mean。 what you can try to do is try to make a name for yourself at conferences and。
+ You're going to have trouble。 It's going to be hard。 I mean。 what you can try to do is try to make a name for yourself at conferences and。 meetups and user groups and so forth and try to get sort of noticed that way。 But it will be hard。 It might be that your best bet is to work for a training company and just sort of build。
 
- meetups and user groups and so forth and try to get sort of noticed that way。 But it will be hard。 It might be that your best bet is to work for a training company and just sort of build。
+ up your reputation so that people will start to notice you more。 I'm sorry。 I wish they were easier better。 There are people who do cold emails and calls and they are wildly successful at it。 I'm not one of them。 And I've tried。 Great。 And then the last question。 do you record and offer a course for a flat rate for self-paced， learner？ So。
 
- up your reputation so that people will start to notice you more。 I'm sorry。 I wish they were easier better。 There are people who do cold emails and calls and they are wildly successful at it。
+ I have two part answers to that。 The first part is no。 I don't record my courses when I'm there teaching。 They're in no small part because they will abuse it。 If I let them record me teaching， first of all。 it's not nearly as good。 The whole magic is the interactions。 And so if they record it。
 
- I'm not one of them。 And I've tried。 Great。 And then the last question。 do you record and offer a course for a flat rate for self-paced， learner？ So。
+ it won't be as good and they will then never invite me back。 So I just say no to recording。 But。 but your point about self-paced learners is an interesting one。 So I have a client where I've been teaching there for a few years and their CEO has decided。 we are switching to blended learning and his definition of blended learning is people。
 
- I have two part answers to that。 The first part is no。 I don't record my courses when I'm there teaching。
+ will watch videos and do exercises at their own pace。 And I'll still be there。 But basically。 I'll be there to like answer questions， mentor them， do occasional Q and， A's and deeper topics。 So I end up being like my own TA。 Like they basically buying my video courses。 Have everyone watch them around the table while I'm there。 It's kind of surreal。
 
- They're in no small part because they will abuse it。 If I let them record me teaching， first of all。 it's not nearly as good。 The whole magic is the interactions。 And so if they record it。
+ And what I've learned from that is the self-pacing is actually a big deal that many people then。 want to rewind and pause and try things themselves。 And so I've really been。 it's been quite an eye opener for me to see just how important， it is for some people to have that。 So I don't plan to record my live sessions at any point。
 
- it won't be as good and they will then never invite me back。 So I just say no to recording。 But。 but your point about self-paced learners is an interesting one。
-
- So I have a client where I've been teaching there for a few years and their CEO has decided。 we are switching to blended learning and his definition of blended learning is people。
-
- will watch videos and do exercises at their own pace。 And I'll still be there。 But basically。 I'll be there to like answer questions， mentor them， do occasional Q and， A's and deeper topics。
-
- So I end up being like my own TA。 Like they basically buying my video courses。 Have everyone watch them around the table while I'm there。 It's kind of surreal。
-
- And what I've learned from that is the self-pacing is actually a big deal that many people then。 want to rewind and pause and try things themselves。 And so I've really been。
-
- it's been quite an eye opener for me to see just how important， it is for some people to have that。 So I don't plan to record my live sessions at any point。
-
- But I do see the major advantages of recordings much more than I would have previously。 Wonderful。 Thank you。 All right。 Thank you， everyone。 We are going to think， Reven again， virtual clapping。
-
- They're all those emojis in the chat。 And then we are going to invite Trey Hunter to take over。 I see you there。 Okay。
+ But I do see the major advantages of recordings much more than I would have previously。 Wonderful。 Thank you。 All right。 Thank you， everyone。 We are going to think， Reven again， virtual clapping。 They're all those emojis in the chat。 And then we are going to invite Trey Hunter to take over。 I see you there。 Okay。
 
 ![](img/4cded4095a3983c5e6a540db30068996_10.png)
 
- Things are working there。 Excellent。 It's hard to see my own video on the screen。 So I know。 This is a weird presentation for me because I decided not to use slides and to instead。
+ Things are working there。 Excellent。 It's hard to see my own video on the screen。 So I know。 This is a weird presentation for me because I decided not to use slides and to instead。 try to show my setup， which means I'm going to be sharing my screen。 But unlike usual。 I'm going to explain this when I actually share it here。
 
- try to show my setup， which means I'm going to be sharing my screen。 But unlike usual。 I'm going to explain this when I actually share it here。
+ I'm going to be trying to share most of my screen for a lot of this， which is always。 a nerve-wracking thing because who knows what you're going to see on my computer。 So I'm going to share my whole desktop here。 And what you can see here is I've got some notes over here that are the notes that I'm。 going to talk about。 And I've got my setup。 And I'm going to actually minimize these so they don't distract you。
 
- I'm going to be trying to share most of my screen for a lot of this， which is always。 a nerve-wracking thing because who knows what you're going to see on my computer。
+ Normally my students wouldn't see this。 This is what I see behind the scenes。 What my students would normally see is if I can find my window over here， here it is。 They would see this。 So the setup for what I'm talking about here is how I actually present。 And I'm going to talk about how I present and why I don't recommend other people use。
 
- So I'm going to share my whole desktop here。 And what you can see here is I've got some notes over here that are the notes that I'm。 going to talk about。 And I've got my setup。 And I'm going to actually minimize these so they don't distract you。
+ this exact presentation style。 But in doing this， I want to talk about what it is about my style of presentation that。 I personally like。 And I hope that you can adapt that to your own medium。 whatever it is that you use to， present， whether it's Jupiter notebooks or slides or something else。 So normally my students are seeing my single window of my terminal here。
 
- Normally my students wouldn't see this。 This is what I see behind the scenes。 What my students would normally see is if I can find my window over here， here it is。
+ They see this one terminal window。 And I'm over here seeing a portion of that。 So I see this terminal window， but it's kind of a small version of it。 So you can see if I'm in something called Tmux here， which is a terminal multiplexter。 Right how I'm in the Python REPL， I can do a little split screen。 I'm in another shell here。
 
- They would see this。 So the setup for what I'm talking about here is how I actually present。 And I'm going to talk about how I present and why I don't recommend other people use。
+ I can open up a Vim， which is what I use as my text editor， which is really the only reason。 this whole setup works is I'm usually in my terminal day-to-day。 If you're not in your terminal day-to-day， this is not going to work for you unless maybe。 you shared say a PyCharm window。 So I've got a split screen with my text editor。
 
- this exact presentation style。 But in doing this， I want to talk about what it is about my style of presentation that。 I personally like。 And I hope that you can adapt that to your own medium。
+ We'd be typing some Python code。 We go over here to the REPL。 We execute some Python code。 Maybe we jump into IPython。 Then we pop over here。 We do something else。 I'm doing all that here in this window。 And it is exactly mirrored in this window over here。 So you can see I'm back in the same place in this window。 And that's a nature of the way Tmux works。
 
- whatever it is that you use to， present， whether it's Jupiter notebooks or slides or something else。 So normally my students are seeing my single window of my terminal here。
+ this terminal multiplexer。 So it's basically linking these two windows。 This window on my computer here， which I've got half screen。 And this window over here。 which is full screen。 And what I do when I'm actually setting this up is I have to open up this window and I type。 in a Python REPL， 80， zero times 80 to make sure I'm approximately 80 characters wide。
 
- They see this one terminal window。 And I'm over here seeing a portion of that。 So I see this terminal window， but it's kind of a small version of it。
+ or so so they can see everything on the projector。 I'm assuming this is for a live setup。 For a remote setup， I do something very similar。 But instead what I do is I share just that one window in say Zoom。 Before I show you that， I'm going to show you here。 I'd often have multiple tabs in my terminal in case I do need to go poke into the same。
 
- So you can see if I'm in something called Tmux here， which is a terminal multiplexter。 Right how I'm in the Python REPL， I can do a little split screen。 I'm in another shell here。
+ directory and maybe LS and make some new file while my students are doing exercises。 I'm trying not to distract them here。 So they're working individually on exercises。 I'm writing some code here。 And then back over here， I can pop over and say， "All right， well。 I've just made this， my file here and we can do something with it。"。
 
- I can open up a Vim， which is what I use as my text editor， which is really the only reason。 this whole setup works is I'm usually in my terminal day-to-day。
+ So it's a really nice way for me to have a setup that's completely hidden from my students。 where I've got my speaker notes over here on the left-hand side， my actual code that。 all the students can see on the right-hand side of my screen。 And that's the only thing that they actually see。 So I'm going to stop screen share from a moment and pop over to showing just my terminal。
 
- If you're not in your terminal day-to-day， this is not going to work for you unless maybe。 you shared say a PyCharm window。 So I've got a split screen with my text editor。
+ This is what they would normally see。 So you're seeing just that one terminal window shared。 And I'm over here in a completely different window typing code。 And you're able to see me typing that despite the fact that I'm actually typing in a different。 window on my computer。 So this setup， there's a lot of different ways to do a mirroring-like setup。
 
- We'd be typing some Python code。 We go over here to the REPL。 We execute some Python code。 Maybe we jump into IPython。 Then we pop over here。 We do something else。
+ But it's the important thing for me is it's not a full screen mirror。 It's not a full screen mirror。 I'm mirroring essentially part of my screen using the tool in my case， it's Tmux here。 that does this。 And it allows me to have my speaker notes and my setup here that's screen-sharing。 Now， just like Riven， I don't use slides when I teach。
 
- I'm doing all that here in this window。 And it is exactly mirrored in this window over here。 So you can see I'm back in the same place in this window。 And that's a nature of the way Tmux works。
+ I don't actually have any slides at all when I'm teaching normally。 I'm completely live coding。 which means we're in a Python REPL。 And I might ask people， you know。 what do you think this is going to do？ And I wait for people to shout something out。 And of course。 they're going to say five。 And what do you think this is going to give us？
 
- this terminal multiplexer。 So it's basically linking these two windows。 This window on my computer here， which I've got half screen。 And this window over here。
+ And if they're guessing the Python 2 way of doing things， they're going to guess 2。 If they're guessing the Python 3 way， it's going to be 2。5。 And it's entirely interactive。 So the pros and cons here， the pros of this first of this setup where like Riven， I'm doing。 completely live coding are that I'm able to be in my text editor， in my terminal， in。
 
- which is full screen。 And what I do when I'm actually setting this up is I have to open up this window and I type。 in a Python REPL， 80， zero times 80 to make sure I'm approximately 80 characters wide。
+ pretty much everywhere I'd need to be except for maybe a web browser。 And I'm able to do everything in a very， very interactive fashion。 So when Riven asked， you know。 as asked that question， is it hands-on？ How much of it is hands-on？
 
- or so so they can see everything on the projector。 I'm assuming this is for a live setup。 For a remote setup， I do something very similar。 But instead what I do is I share just that one window in say Zoom。
+ That's a hard question for me to answer because there's hands-on on your computer， or your。 hands are literally on the keyboard。 But there's also hands-on in terms of your hands are sort of on my computer in a sense。 Because if I'm asking the question， what is your guess that this is going to do？
 
- Before I show you that， I'm going to show you here。 I'd often have multiple tabs in my terminal in case I do need to go poke into the same。
+ Some people shout out too， some people shout out 2。5， some people say， you know， maybe。 that's an error or something crazy。 And you know， we're putting out these options of things that might happen。 That's also hands-on。 That's a way of quizzing。 That's a way of doing recall。 And the important part of hands-on is recall because you don't learn by putting information。
 
- directory and maybe LS and make some new file while my students are doing exercises。 I'm trying not to distract them here。 So they're working individually on exercises。
+ into your head。 You learn by trying to take the information out of your head。 And so you can make a really， really hands-on setup by simply avoiding slides and quizzing。 constantly。 Every step of the way， you can ask the question， what do you think this is going to do？
 
- I'm writing some code here。 And then back over here， I can pop over and say， "All right， well。 I've just made this， my file here and we can do something with it。"。
+ Which is a lot better than showing what it's going to do because no information is actually。 really retained。 Well， it's not entirely true。 Information is less well retained when you show what you're going to do。 So I've got a couple of the things I wanted to talk about here in terms of， you know。 the upsides and downsides of not using slides and also how I actually manage the fact that。
 
- So it's a really nice way for me to have a setup that's completely hidden from my students。 where I've got my speaker notes over here on the left-hand side， my actual code that。
+ because I don't have slides， I don't have speaker notes， how the exercises get to my， students， and。 you know， how I tend to act with this particular setup because with a purely， live coding setup。 you have to act really different from with slides。 You've got to be really diligent about。 for example， keeping time。 When you've got slides， you've got a pace that's set up for yourself。
 
- all the students can see on the right-hand side of my screen。 And that's the only thing that they actually see。 So I'm going to stop screen share from a moment and pop over to showing just my terminal。
+ If you don't have slides， you might have that one student in the front row who asks lots。 and lots of questions。 And you've got to make sure that you occasionally say， you know。 we don't have time for this， we've got to move on。 We can maybe ask， you know。 answer that question during an exercise break or something of the， sort。
 
- This is what they would normally see。 So you're seeing just that one terminal window shared。 And I'm over here in a completely different window typing code。
-
- And you're able to see me typing that despite the fact that I'm actually typing in a different。 window on my computer。 So this setup， there's a lot of different ways to do a mirroring-like setup。
-
- But it's the important thing for me is it's not a full screen mirror。 It's not a full screen mirror。 I'm mirroring essentially part of my screen using the tool in my case， it's Tmux here。
-
- that does this。 And it allows me to have my speaker notes and my setup here that's screen-sharing。 Now， just like Riven， I don't use slides when I teach。
-
- I don't actually have any slides at all when I'm teaching normally。 I'm completely live coding。 which means we're in a Python REPL。 And I might ask people， you know。
-
- what do you think this is going to do？ And I wait for people to shout something out。 And of course。 they're going to say five。 And what do you think this is going to give us？
-
- And if they're guessing the Python 2 way of doing things， they're going to guess 2。 If they're guessing the Python 3 way， it's going to be 2。5。 And it's entirely interactive。
-
- So the pros and cons here， the pros of this first of this setup where like Riven， I'm doing。 completely live coding are that I'm able to be in my text editor， in my terminal， in。
-
- pretty much everywhere I'd need to be except for maybe a web browser。 And I'm able to do everything in a very， very interactive fashion。 So when Riven asked， you know。
-
- as asked that question， is it hands-on？ How much of it is hands-on？
-
- That's a hard question for me to answer because there's hands-on on your computer， or your。 hands are literally on the keyboard。 But there's also hands-on in terms of your hands are sort of on my computer in a sense。
-
- Because if I'm asking the question， what is your guess that this is going to do？
-
- Some people shout out too， some people shout out 2。5， some people say， you know， maybe。 that's an error or something crazy。 And you know， we're putting out these options of things that might happen。
-
- That's also hands-on。 That's a way of quizzing。 That's a way of doing recall。 And the important part of hands-on is recall because you don't learn by putting information。
-
- into your head。 You learn by trying to take the information out of your head。 And so you can make a really， really hands-on setup by simply avoiding slides and quizzing。
-
- constantly。 Every step of the way， you can ask the question， what do you think this is going to do？
-
- Which is a lot better than showing what it's going to do because no information is actually。 really retained。 Well， it's not entirely true。 Information is less well retained when you show what you're going to do。
-
- So I've got a couple of the things I wanted to talk about here in terms of， you know。 the upsides and downsides of not using slides and also how I actually manage the fact that。
-
- because I don't have slides， I don't have speaker notes， how the exercises get to my， students， and。 you know， how I tend to act with this particular setup because with a purely， live coding setup。
-
- you have to act really different from with slides。 You've got to be really diligent about。 for example， keeping time。 When you've got slides， you've got a pace that's set up for yourself。
-
- If you don't have slides， you might have that one student in the front row who asks lots。 and lots of questions。 And you've got to make sure that you occasionally say， you know。
-
- we don't have time for this， we've got to move on。 We can maybe ask， you know。 answer that question during an exercise break or something of the， sort。
-
- I do want to try to make this as interactive as possible。 So before I show you some other things。 I want to check the chat and see if anyone actually， has questions already。
-
- Here is one question that I will， I'll read out for you just a hand on the video on the。 recording as well。 How do you screencast to a projector from a different workspace？
+ I do want to try to make this as interactive as possible。 So before I show you some other things。 I want to check the chat and see if anyone actually， has questions already。 Here is one question that I will， I'll read out for you just a hand on the video on the。 recording as well。 How do you screencast to a projector from a different workspace？
 
 
 
 ![](img/4cded4095a3983c5e6a540db30068996_12.png)
 
- I think what tool are you using to make it just to see that one？ Yeah， this is a great question。 So the easy answer to this is that I don't。 And the only reason I say that I don't is that when I plug in a projector。
+ I think what tool are you using to make it just to see that one？ Yeah， this is a great question。 So the easy answer to this is that I don't。 And the only reason I say that I don't is that when I plug in a projector。 right now， I've got a set up where my laptop is plugged into a single monitor。 If I had two monitors plugged in， I would see both monitors。 Or if I had my laptop lit open。
 
- right now， I've got a set up where my laptop is plugged into a single monitor。 If I had two monitors plugged in， I would see both monitors。 Or if I had my laptop lit open。
+ I'd see my laptop and a monitor。 That's how I'm usually， I'm standing at a podium。 I have my laptop open in front of me。 And then that projector is a totally separate screen。 So it's an extension of the current workspace。 Because of that。 I'm able to drag that terminal window onto that workspace。
 
- I'd see my laptop and a monitor。 That's how I'm usually， I'm standing at a podium。 I have my laptop open in front of me。 And then that projector is a totally separate screen。
+ And it's really just an extension of that workspace。 Now the downside is if you change workspace。 you're going to lose that window。 Fortunately， in Ubuntu， I'm in Ubuntu is where I am here。 I don't remember what version of Ubuntu they changed this。 You can actually make it so that when you change， and I think this is in fact the default。
 
- So it's an extension of the current workspace。 Because of that。 I'm able to drag that terminal window onto that workspace。
+ now when you change the workspace that this window is on， that window follows you。 And so the two monitors， I guess monitors is what I do。 The two displays are actually kind of separate workspaces in a sense by the nature of how。 they work。 So in Ubuntu， this works great。 On Mac， I honestly don't know。
 
- And it's really just an extension of that workspace。 Now the downside is if you change workspace。 you're going to lose that window。 Fortunately， in Ubuntu， I'm in Ubuntu is where I am here。
+ Does anyone know if the two workspaces are an extension？ If you switch workspaces on one。 it completely switch workspaces on the other。 I have only accidentally used workspaces。 Okay。 Everything just does strange things。 Yeah。 Chris says should not。 And Naomi says。 I don't think it does。 Should be independent。 Excellent。 Well， if it's independent on Mac as well。
 
- I don't remember what version of Ubuntu they changed this。 You can actually make it so that when you change， and I think this is in fact the default。
+ It's funny。 I feel like it took years for this to happen because I remember back in 2008。 2006 or something， I wish that everything worked like this weird window manager I used to use called Xmonad。 which I wouldn't wish on to anyone now。 And the only reason I really liked it was the workspaces were independent that each monitor。 had a separate workspace。 Now it seems like operating systems are moving more and more in that direction。
 
- now when you change the workspace that this window is on， that window follows you。 And so the two monitors， I guess monitors is what I do。
+ which is really， great for teaching because I can switch what I'm seeing here。 my display to look at my， email， maybe if I'm， you know， need to check my email。 see if a student email made me say， they'd be late。 That's the good excuse for checking my email。 Whereas they continue to see on this monitor over here the correct thing。
 
- The two displays are actually kind of separate workspaces in a sense by the nature of how。 they work。 So in Ubuntu， this works great。 On Mac， I honestly don't know。
+ Those workspaces are independent。 Projectors are often hard to read。 I often use WebEx and live training with students with two monitors。 Yeah。 So。 protectors are hard to read。 Usually what I do is I really make the font size as big as possible there and only show that。 one window。 So I don't see other questions here yet。
 
- Does anyone know if the two workspaces are an extension？ If you switch workspaces on one。 it completely switch workspaces on the other。 I have only accidentally used workspaces。 Okay。
+ I'm going to move back to my notes and talk about a couple of other things I wanted to get， to。 So some downsides of this。 Down sides are， well， if I need to share a web browser， I want to show。 you know， the， Python package index or the Python awesome list or the Python documentation。 Oftentimes I want to drag them， show where the Python documentation something is。
 
- Everything just does strange things。 Yeah。 Chris says should not。 And Naomi says。 I don't think it does。 Should be independent。 Excellent。 Well， if it's independent on Mac as well。
+ I have to drag that onto the other projector and I've got this awkward dance of looking。 up at the projector here。 You know， as you see people do when they're giving a talk and they're not mirrored。 there， are definitely downsides to not being mirrored。 And the fact that really the only thing that's mirrored is T-Mux is my one terminal window， there。
 
- It's funny。 I feel like it took years for this to happen because I remember back in 2008。 2006 or something， I wish that everything worked like this weird window manager I used to use called Xmonad。
-
- which I wouldn't wish on to anyone now。 And the only reason I really liked it was the workspaces were independent that each monitor。 had a separate workspace。 Now it seems like operating systems are moving more and more in that direction。
-
- which is really， great for teaching because I can switch what I'm seeing here。 my display to look at my， email， maybe if I'm， you know， need to check my email。
-
- see if a student email made me say， they'd be late。 That's the good excuse for checking my email。 Whereas they continue to see on this monitor over here the correct thing。
-
- Those workspaces are independent。 Projectors are often hard to read。 I often use WebEx and live training with students with two monitors。 Yeah。 So。
-
- protectors are hard to read。 Usually what I do is I really make the font size as big as possible there and only show that。 one window。 So I don't see other questions here yet。
-
- I'm going to move back to my notes and talk about a couple of other things I wanted to get， to。 So some downsides of this。 Down sides are， well， if I need to share a web browser， I want to show。
-
- you know， the， Python package index or the Python awesome list or the Python documentation。 Oftentimes I want to drag them， show where the Python documentation something is。
-
- I have to drag that onto the other projector and I've got this awkward dance of looking。 up at the projector here。 You know， as you see people do when they're giving a talk and they're not mirrored。
-
- there， are definitely downsides to not being mirrored。 And the fact that really the only thing that's mirrored is T-Mux is my one terminal window， there。
-
- It's the downside is worth it in my particular case though。 If I could mirror portion of my screen。 I would instead I mirror through T-Mux。 Other downsides。
-
- I don't have speaker nuts since I don't have slides。 Because of that。 I'm going to screen share here。 I tend to share， actually I can show you an example of a Python last year。
+ It's the downside is worth it in my particular case though。 If I could mirror portion of my screen。 I would instead I mirror through T-Mux。 Other downsides。 I don't have speaker nuts since I don't have slides。 Because of that。 I'm going to screen share here。 I tend to share， actually I can show you an example of a Python last year。
 
  It's very similar material to， I should have probably shared that full screen or a bigger。
 ![](img/4cded4095a3983c5e6a540db30068996_14.png)
 
 ![](img/4cded4095a3983c5e6a540db30068996_15.png)
 
- window。 But this is the kind of thing I see on half of my screen where I've got essentially my。 script。 I've scripted my entire curriculum。 Now I'm not going to go necessarily in this order。
-
- but I see roughly the thing I plan to， do next。 And I may actually copy paste a portion of code or likely I'm actually。 this is a bad， example。 I'm not going to go into code， so here we're typing it out in a REPL。
+ window。 But this is the kind of thing I see on half of my screen where I've got essentially my。 script。 I've scripted my entire curriculum。 Now I'm not going to go necessarily in this order。 but I see roughly the thing I plan to， do next。 And I may actually copy paste a portion of code or likely I'm actually。 this is a bad， example。 I'm not going to go into code， so here we're typing it out in a REPL。
 
  And I'm asking along the way， what do you think this is going to give us？
 
- A lot of people are going to guess a tuple。 It looks like it's going to give us a tuple if you're new to list comprehension and you。 see it has parentheses， it looks like a tuple， it turns out it's not a tuple。
+ A lot of people are going to guess a tuple。 It looks like it's going to give us a tuple if you're new to list comprehension and you。 see it has parentheses， it looks like a tuple， it turns out it's not a tuple。 What do you think we can do with it？ What could we do with this thing？ Someone says maybe index it。 we can't index it， it turns out。 Well， what else could we try to do？ We could try to get its length。
 
- What do you think we can do with it？ What could we do with this thing？ Someone says maybe index it。 we can't index it， it turns out。 Well， what else could we try to do？ We could try to get its length。
+ we can loop over it。 Loop over， if we loop over again， it doesn't show us anything， it's empty。 So。 constant quizzing is a lot easier。 It feels a lot more natural when you're doing something like live coding。 You really need in my opinion to have a script though。 If you don't have a script。 you need to have it on your head and I don't keep it all in， my head。 Once I get on a roll。
 
- we can loop over it。 Loop over， if we loop over again， it doesn't show us anything， it's empty。 So。 constant quizzing is a lot easier。 It feels a lot more natural when you're doing something like live coding。
+ because I've taught this particular section of curriculum lots and， lots of times。 I can kind of improv it and that's fine。 But if it's a little bit newer section of curriculum。 it's not something I've taught a dozen or， two dozen times， relying on my script。 falling back on my script can be really， really valuable。 The students know I have a script。
 
- You really need in my opinion to have a script though。 If you don't have a script。 you need to have it on your head and I don't keep it all in， my head。 Once I get on a roll。
-
- because I've taught this particular section of curriculum lots and， lots of times。 I can kind of improv it and that's fine。 But if it's a little bit newer section of curriculum。
-
- it's not something I've taught a dozen or， two dozen times， relying on my script。 falling back on my script can be really， really valuable。 The students know I have a script。
-
- they get access to this website。 I tell them not to look at it while I'm typing because it's going to be distracting。 But they don't care that I have a script because we're going off the script all the time。
-
- They're asking questions like， wait， can you do that again？ Why does that work？
+ they get access to this website。 I tell them not to look at it while I'm typing because it's going to be distracting。 But they don't care that I have a script because we're going off the script all the time。 They're asking questions like， wait， can you do that again？ Why does that work？
 
  What if you pass the list constructor does the same thing happen？
 
- So going off the script is something you're able to do when you're live coding。 I found it's really hard to do when you work with slides。
+ So going off the script is something you're able to do when you're live coding。 I found it's really hard to do when you work with slides。 And it's a dance that is almost like you're playing jazz or something where you're going。 based on a script， but you're able to improv off of the script and then come back to the。
 
- And it's a dance that is almost like you're playing jazz or something where you're going。 based on a script， but you're able to improv off of the script and then come back to the。
+ script as needed， which is it's hard to explain things， it's hard to describe things， it's。 hard to do things at times。 But if you're familiar with your own material because you made the material。 it's something， that can be a really natural thing to adapt to an audience as needed。 An example actually this week， this morning stopped teaching a workshop that ended。
 
- script as needed， which is it's hard to explain things， it's hard to describe things， it's。 hard to do things at times。 But if you're familiar with your own material because you made the material。
+ It was over a few days time this last week。 And the students who showed up were a different audience than I expected to be showing up。 based on who the company who was working with actually told me would be showing up。 We should have probably had an entrance exam and I'm going to learn from this in the future。 But because of that， I had to deal with two different groups， kind of a bifurcated audience。
 
- it's something， that can be a really natural thing to adapt to an audience as needed。 An example actually this week， this morning stopped teaching a workshop that ended。
+ And I had to go off my script quite a bit to deal with that fact and I was able to， but。 only because I had a strong script to begin with。 I had something that I could and I had more than enough content to work from。 So I use Sphinx here as my speaker notes equivalent since I don't have slides。 And this is actually where I host my exercises as well。 And I use my own little test framework。
 
- It was over a few days time this last week。 And the students who showed up were a different audience than I expected to be showing up。 based on who the company who was working with actually told me would be showing up。
-
- We should have probably had an entrance exam and I'm going to learn from this in the future。 But because of that， I had to deal with two different groups， kind of a bifurcated audience。
-
- And I had to go off my script quite a bit to deal with that fact and I was able to， but。 only because I had a strong script to begin with。 I had something that I could and I had more than enough content to work from。
-
- So I use Sphinx here as my speaker notes equivalent since I don't have slides。 And this is actually where I host my exercises as well。 And I use my own little test framework。
-
- I really recommend， it doesn't matter where it is， where it's hosted， whether it's hosted。 in a web browser somewhere else， if you can have students self grade through some sort。
-
- of test framework， they at least know does my code work。 Even if it's self grading by literally typing on the rep on the same does it do the expected。
+ I really recommend， it doesn't matter where it is， where it's hosted， whether it's hosted。 in a web browser somewhere else， if you can have students self grade through some sort。 of test framework， they at least know does my code work。 Even if it's self grading by literally typing on the rep on the same does it do the expected。
 
  behavior in a Jupyter notebook。 And then you can have the discussion of what are the different ways to actually solve it。
 ![](img/4cded4095a3983c5e6a540db30068996_17.png)
 
  and why would you solve it in one way versus another。 So question。 how does quizzing work when you have multiple students？
 
- Can imagine some students might not feel comfortable being quizzed or answering allowed。 This is a tricky one。 And I'm always struggling with this， honestly。
+ Can imagine some students might not feel comfortable being quizzed or answering allowed。 This is a tricky one。 And I'm always struggling with this， honestly。 especially in a remote setting because in person， you know， if you've got a room of people。 you can kind of， if I ask a question， I remind， people this is an interactive class。
 
- especially in a remote setting because in person， you know， if you've got a room of people。 you can kind of， if I ask a question， I remind， people this is an interactive class。
+ I can kind of stare down the audience。 Someone's going to shout something out at some point。 Even if it's not the people who I really want to be speaking up， someone's going to shout。 something out。 If you've got multiple students， I like to quiz in a way that makes it very clear that。 I want wrong answers。 The wrong answers are okay。 So for example， if I ask you， I've got。
 
- I can kind of stare down the audience。 Someone's going to shout something out at some point。 Even if it's not the people who I really want to be speaking up， someone's going to shout。
+ let me share my screen again。 I keep going back to the way I would actually be teaching。 If I've got numbers equals one， two， three and four and letters equals ABC， these are。 both intervals。 We can loop over these things。 If we zip together numbers and letters。 what is your guess that might happen here？ What do you think the Python core developers chose to happen？
 
- something out。 If you've got multiple students， I like to quiz in a way that makes it very clear that。 I want wrong answers。 The wrong answers are okay。 So for example， if I ask you， I've got。
+ Well， actually really the answer is it gave us a zip object， but we have to loop over this， thing。 So what are the possible things that could happen here？ Not necessarily what you think will happen。 What could the Python developers could have possibly chosen for this？
 
- let me share my screen again。 I keep going back to the way I would actually be teaching。 If I've got numbers equals one， two， three and four and letters equals ABC， these are。
+ So I'd like to actually see people type in the chat some guesses because I know there's。 multiple dozen of you watching here。 What might happen？ So yeah， it could truncate。 It could stop at the shortest one。 So it could say one， two， three， ABC。 Maybe it could give us an exception because these are at different lengths。 We've got one， two。
 
- both intervals。 We can loop over these things。 If we zip together numbers and letters。 what is your guess that might happen here？ What do you think the Python core developers chose to happen？
+ three， four and ABC。 Yeah， it could give us none。 It could have some kind of value there that's filled in as a default。 One， two， three， one matching up with A， two with B， three with C。 By the way。 I'm assuming at this point people we've seen zip， someone's asked the question。 what happens when they're different lengths。 So maybe it matches up four with none。
 
- Well， actually really the answer is it gave us a zip object， but we have to loop over this， thing。 So what are the possible things that could happen here？ Not necessarily what you think will happen。
+ So loops to the shorter one， it could match up with none。 Maybe some kind of fill value。 Work you give us an exception。 Those are kind of the three things we could maybe think of。 Maybe there's more things you could think of。 And then we look to see what does it do。 Why did the Python core developers choose this implementation？ Then we have a point of discussion。
 
- What could the Python developers could have possibly chosen for this？
+ So if you're quizzing in a way that makes clear that there's no wrong answers， after。 people have put out all the possible answers， then you can ask the question who thinks this。 who thinks this， who thinks this， what are your guesses？
 
- So I'd like to actually see people type in the chat some guesses because I know there's。 multiple dozen of you watching here。 What might happen？ So yeah， it could truncate。
-
- It could stop at the shortest one。 So it could say one， two， three， ABC。 Maybe it could give us an exception because these are at different lengths。 We've got one， two。
-
- three， four and ABC。 Yeah， it could give us none。 It could have some kind of value there that's filled in as a default。 One， two， three， one matching up with A， two with B， three with C。 By the way。
-
- I'm assuming at this point people we've seen zip， someone's asked the question。 what happens when they're different lengths。 So maybe it matches up four with none。
-
- So loops to the shorter one， it could match up with none。 Maybe some kind of fill value。 Work you give us an exception。 Those are kind of the three things we could maybe think of。
-
- Maybe there's more things you could think of。 And then we look to see what does it do。 Why did the Python core developers choose this implementation？ Then we have a point of discussion。
-
- So if you're quizzing in a way that makes clear that there's no wrong answers， after。 people have put out all the possible answers， then you can ask the question who thinks this。
-
- who thinks this， who thinks this， what are your guesses？
-
- And since we've put out all the possible answers， there's not really a wrong answer because we。 were trying to think of the possible ones， then you're just making the guess of which。
-
- of these possible answers might it be？ What did these silly Python core developers。 you ended up choosing some arbitrary implementation， what did they choose to do？
+ And since we've put out all the possible answers， there's not really a wrong answer because we。 were trying to think of the possible ones， then you're just making the guess of which。 of these possible answers might it be？ What did these silly Python core developers。 you ended up choosing some arbitrary implementation， what did they choose to do？
 
  And then we have a discussion of why did they choose to do it that way。 So if we don't see the language as the thing that's most important， it's not the end all。
-
-
-
 ![](img/4cded4095a3983c5e6a540db30068996_19.png)
 
- be all， you know， Python， the fact that the core developers chose a particular implementation。 doesn't mean it's the best one necessarily。 There's some reason they chose that。
+ be all， you know， Python， the fact that the core developers chose a particular implementation。 doesn't mean it's the best one necessarily。 There's some reason they chose that。 And it doesn't mean it's the most intuitive one。 Then there's no wrong answer is kind of the implication there。 And then I would hope people are more comfortable participating in that quiz。 So Mario。
 
- And it doesn't mean it's the most intuitive one。 Then there's no wrong answer is kind of the implication there。 And then I would hope people are more comfortable participating in that quiz。 So Mario。
+ I don't know if that completely answers your question， but that's the approach。 I try to take because this is a really important thing。 If you've got an audience of people and you're quizzing， it's a public setting you're quizzing。 in and it's intimidating to， you know， shout out an answer when you're going to be wrong。
 
- I don't know if that completely answers your question， but that's the approach。 I try to take because this is a really important thing。
+ most of the time because you don't know what you're doing。 That's the whole reason you're participating in the classes。 You don't know what you're doing yet。 Another thing that I try to do， which is related to this， is if we have an exercise， say you've。 got two lists， you want to make another list that has all the elements in this one and。
 
- If you've got an audience of people and you're quizzing， it's a public setting you're quizzing。 in and it's intimidating to， you know， shout out an answer when you're going to be wrong。
+ this one together。 Some people are eventually going to find out you can use the plus operator。 You can catenate two lists together。 A lot of people that are going to try to use， you know。 extend or a lot of people are going， to try to use a pen。 And they might find some things do or don't work。 I like to ask the question for exercises like that。
 
- most of the time because you don't know what you're doing。 That's the whole reason you're participating in the classes。 You don't know what you're doing yet。
+ what did you try to do that didn't work？ You thought it might work。 You tried it and you went， oh。 turns out this doesn't work because then we start with wrong。 answers because we always like to start with right answers。 You finally got the right answer。 That's the thing you're proud of。 You want to shout that out。 And so I ignore those people at first。
 
- Another thing that I try to do， which is related to this， is if we have an exercise， say you've。 got two lists， you want to make another list that has all the elements in this one and。
+ We try to focus on what didn't work that you thought might work and we work our way through。 to something， some things that do work。 Usually there's multiple right answers。 So all of these types of ways of doing things are interactive in a way that you can't accomplish。 with slides。 Not that you shouldn't use slides， but you know。
 
- this one together。 Some people are eventually going to find out you can use the plus operator。 You can catenate two lists together。 A lot of people that are going to try to use， you know。
-
- extend or a lot of people are going， to try to use a pen。 And they might find some things do or don't work。 I like to ask the question for exercises like that。
-
- what did you try to do that didn't work？ You thought it might work。 You tried it and you went， oh。 turns out this doesn't work because then we start with wrong。
-
- answers because we always like to start with right answers。 You finally got the right answer。 That's the thing you're proud of。 You want to shout that out。 And so I ignore those people at first。
-
- We try to focus on what didn't work that you thought might work and we work our way through。 to something， some things that do work。 Usually there's multiple right answers。
-
- So all of these types of ways of doing things are interactive in a way that you can't accomplish。 with slides。 Not that you shouldn't use slides， but you know。
-
- a teaching setup that's based entirely， around slides is going to be missing out on those interactive parts of teaching that。 you get through， you know， group settings or you get when you're working in groups in person。
-
- or as an entire room working collaboratively almost kind of like mob programming where my。 hands are on the computer。 Everyone else is telling me maybe what's the type。
+ a teaching setup that's based entirely， around slides is going to be missing out on those interactive parts of teaching that。 you get through， you know， group settings or you get when you're working in groups in person。 or as an entire room working collaboratively almost kind of like mob programming where my。 hands are on the computer。 Everyone else is telling me maybe what's the type。
 
  There was one more question earlier than that。 It was。 is it advisable to do collaborative line coding with student teaching platforms， like Replit？
 
- I'm going to answer this question because is it advisable is something I don't feel qualified。 to answer to do collage。 So I've heard of the fact that Replit has now collaborative live coding。
-
- I haven't tried it myself。 And the reason is I don't know what would happen。 I'd be a little bit afraid to just give all of my students access to type things in。
+ I'm going to answer this question because is it advisable is something I don't feel qualified。 to answer to do collage。 So I've heard of the fact that Replit has now collaborative live coding。 I haven't tried it myself。 And the reason is I don't know what would happen。 I'd be a little bit afraid to just give all of my students access to type things in。
 
  Now maybe I could have a kind of a social contract where I type things and then I say， you know。 someone says， but what if we do this and I don't quite understand your question？
 
- Could you type it out？ But I feel like that would put my students on the spot where then we're back to we're。 waiting for typing speed。 And there's a lot of people who show up to my classes who do not type very quickly。
+ Could you type it out？ But I feel like that would put my students on the spot where then we're back to we're。 waiting for typing speed。 And there's a lot of people who show up to my classes who do not type very quickly。 At least almost everyone does not type as quickly as I do because I'm on a particular。 ergonomic keyboard that I brought to the podium specifically because I type quickly on it。
 
- At least almost everyone does not type as quickly as I do because I'm on a particular。 ergonomic keyboard that I brought to the podium specifically because I type quickly on it。
+ And I'm in Devorak， which is weird。 And you know， I'm optimizing for my typing speed because I want to get through as much。 material as possible。 And so that really puts my students on the spot there if they're not typing as fast。 as me， which they're almost not。 So almost always not。 I would guess。 So I don't know。 I don't know about Replic。 I would be curious to hear if other people have used that if you feel like you had good。
 
- And I'm in Devorak， which is weird。 And you know， I'm optimizing for my typing speed because I want to get through as much。 material as possible。 And so that really puts my students on the spot there if they're not typing as fast。
+ results。 I've actually considered something kind of like that for the fact that， you know， we've。 all moved to remote world now。 Remote teaching is different。 And some things I do do not work as well。 For example， during exercise sections。 I wander around the room。 I do laps and I wander in between people's shares to let people know as I'm getting close。
 
- as me， which they're almost not。 So almost always not。 I would guess。 So I don't know。 I don't know about Replic。 I would be curious to hear if other people have used that if you feel like you had good。
+ to them， like they kind of start to look at me。 That means they have a question。 They just weren't willing to put up a little sticky notes when I'm teaching to put a sticky。 note up to indicate they had a question。 And so I can't do that remotely。 You know， in person。 I can squat behind someone's computer and we can look at what they're。
 
- results。 I've actually considered something kind of like that for the fact that， you know， we've。 all moved to remote world now。 Remote teaching is different。
+ doing and I can ask them to type certain things or ask them what happened when they try a certain。 thing。 You can't do that remotely because one person has to share everyone else is looking at their。 machine。 That's kind of embarrassing。 Yeah， the sticky is not my idea。 That's from where did I steal that from？ You know， I don't remember who I stole it from originally。
 
- And some things I do do not work as well。 For example， during exercise sections。 I wander around the room。 I do laps and I wander in between people's shares to let people know as I'm getting close。
+ but I've seen it out。 Yeah， the Carpinger software Carpinger uses it。 I think I might have taken it from， you know， it might have been software Carpinger actually。 that I took it from。 If not， it was， I'm blanking on the name， another open source person out there。 Well， a lot of people do the stickies。 I mean， everyone stole it from whoever they stole it from。
 
- to them， like they kind of start to look at me。 That means they have a question。 They just weren't willing to put up a little sticky notes when I'm teaching to put a sticky。
+ whether it was sorry for Carpinger， or somewhere else。 But it's a really great system because I always ask my students， you know， I like stickies。 when we're doing exercises。 Why do I use stickies？ How would you normally ask a question？
 
- note up to indicate they had a question。 And so I can't do that remotely。 You know， in person。 I can squat behind someone's computer and we can look at what they're。
+ Raise your hand。 What is it hard to do？ Well， you raise your hand。 It's hard to type。 And so I want students to use the stickies to passively indicate they've got a question。 It's okay。 Even if it's an unrelated question， I'm going to come over at some point。 My job is to be moving from student to student during exercises， not to be staying in front。
 
- doing and I can ask them to type certain things or ask them what happened when they try a certain。 thing。 You can't do that remotely because one person has to share everyone else is looking at their。
+ of the room， having nothing to do。 So other questions in here， comments and questions in the moment。 I do have some other ideas for things that I try to do to make it fun。 Like in a remote setting。 it's been really hard for me recently to warm up the room。 And so I've been asking people to type in the chat their favorite color in this moment。
 
- machine。 That's kind of embarrassing。 Yeah， the sticky is not my idea。 That's from where did I steal that from？ You know， I don't remember who I stole it from originally。
-
- but I've seen it out。 Yeah， the Carpinger software Carpinger uses it。 I think I might have taken it from， you know， it might have been software Carpinger actually。
-
- that I took it from。 If not， it was， I'm blanking on the name， another open source person out there。 Well， a lot of people do the stickies。 I mean， everyone stole it from whoever they stole it from。
-
- whether it was sorry for Carpinger， or somewhere else。 But it's a really great system because I always ask my students， you know， I like stickies。
-
- when we're doing exercises。 Why do I use stickies？ How would you normally ask a question？
-
- Raise your hand。 What is it hard to do？ Well， you raise your hand。 It's hard to type。 And so I want students to use the stickies to passively indicate they've got a question。 It's okay。
-
- Even if it's an unrelated question， I'm going to come over at some point。 My job is to be moving from student to student during exercises， not to be staying in front。
-
- of the room， having nothing to do。 So other questions in here， comments and questions in the moment。 I do have some other ideas for things that I try to do to make it fun。 Like in a remote setting。
-
- it's been really hard for me recently to warm up the room。 And so I've been asking people to type in the chat their favorite color in this moment。
-
- to say their name out loud。 We all say our name out loud at once。 It sounds ridiculous because there's dozens of people saying their name out loud at once， sometimes。
-
- Just to kind of let people know this is the way we're going to be interacting。 So you've got to type in the chat。 You've got to use your microphone。 Also making really bad jokes。
+ to say their name out loud。 We all say our name out loud at once。 It sounds ridiculous because there's dozens of people saying their name out loud at once， sometimes。 Just to kind of let people know this is the way we're going to be interacting。 So you've got to type in the chat。 You've got to use your microphone。 Also making really bad jokes。
 
  If no one raises their hand， when I say， "Do you think it'll do this， this or this？"， I say。 "Who thinks？"， You know， "Who's totally confused about what I'm asking？
 
- Who doesn't like raising their hand because you're tired after lunch？"。 Just being silly lets other people know it's okay to make mistakes， to be silly， kind of。
+ Who doesn't like raising their hand because you're tired after lunch？"。 Just being silly lets other people know it's okay to make mistakes， to be silly， kind of。 makes people comfortable。 Other questions as we're wrapping up here。 I think that was three minutes。 I don't know if that was three minutes from my talk time or question time。
 
- makes people comfortable。 Other questions as we're wrapping up here。 I think that was three minutes。 I don't know if that was three minutes from my talk time or question time。
+ It was three minutes of talk time。 You still have about five minutes left。 Okay， excellent。 Check my notes from my very strangely impromptu talk that involves no slides， mostly may on。 screen and sharing my screen。 What is the virtual equivalent of a sticky？
 
- It was three minutes of talk time。 You still have about five minutes left。 Okay， excellent。 Check my notes from my very strangely impromptu talk that involves no slides， mostly may on。
+ I'm curious what your answer to that is because I've been trying to figure that out over the。 last few weeks。 It's funny， I have my spiel so down that I've almost said a few times in the last few weeks。 "When you have a question， don't be afraid to put up a sticky。"， There's no stickies remotely。 I've said don't be afraid to say something in the chat， even if you send me a private。
 
- screen and sharing my screen。 What is the virtual equivalent of a sticky？
+ message or if you message if I have a TA to send a private message。 I haven't gotten as much from that。 I mean， there's raising hand and zoom。 Honestly。 I haven't tried raising hand and zoom。 I've thought about it。 but I don't want to move into all the different features of the。
 
- I'm curious what your answer to that is because I've been trying to figure that out over the。 last few weeks。 It's funny， I have my spiel so down that I've almost said a few times in the last few weeks。
+ medium when there's one that seems like it works。 It seems like chat should be able to accomplish everything。 But I'd love to know what you all have been trying as an equivalent of the sticky online。 Have a lunch in certain areas？ Sorry， what was your question？
 
- "When you have a question， don't be afraid to put up a sticky。"， There's no stickies remotely。 I've said don't be afraid to say something in the chat， even if you send me a private。
-
- message or if you message if I have a TA to send a private message。 I haven't gotten as much from that。 I mean， there's raising hand and zoom。 Honestly。
-
- I haven't tried raising hand and zoom。 I've thought about it。 but I don't want to move into all the different features of the。
-
- medium when there's one that seems like it works。 It seems like chat should be able to accomplish everything。 But I'd love to know what you all have been trying as an equivalent of the sticky online。
-
- Have a lunch in certain areas？ Sorry， what was your question？
-
- I think that may have been an accidental immunity。 Yeah， no worries。 That's happened a lot during my teaching the last few weeks where I hear the background。
-
- It sounds like a pet or a child or someone talking to someone else。 It's the world we live in。 Matt used chat and raising hand。 Yeah， I'll have to try raising hand because I feel like the way I've been doing polls。
+ I think that may have been an accidental immunity。 Yeah， no worries。 That's happened a lot during my teaching the last few weeks where I hear the background。 It sounds like a pet or a child or someone talking to someone else。 It's the world we live in。 Matt used chat and raising hand。 Yeah， I'll have to try raising hand because I feel like the way I've been doing polls。
 
  is typing in the chat。 I say， "Do you think it'll be one， two， or three？ What's your guess？"。 I'm typing into the chat or yes or no。 Do you think it'll do this versus that？
 
  Do you think it'll give an error or yes or no？ What's a good class size for an online class？
 
- This is a hard one because it kind of depends on the format。 I usually like much。 much smaller sizes because the smaller it is， the more I'm able to mimic。
+ This is a hard one because it kind of depends on the format。 I usually like much。 much smaller sizes because the smaller it is， the more I'm able to mimic。 the in-person experience and have it being hands-on or one person is willing to screen。 share because only six of the people are going to see that。 However。
 
- the in-person experience and have it being hands-on or one person is willing to screen。 share because only six of the people are going to see that。 However。
+ you can scale up in a really big way remotely that you can't necessarily in person。 because it doesn't take much time to jump into a meeting whereas going across campus in。 a big corporate setting to sit in a room and feel like you shouldn't be on your email。 you should be paying attention。 It depends on the way you look at it。
 
- you can scale up in a really big way remotely that you can't necessarily in person。 because it doesn't take much time to jump into a meeting whereas going across campus in。
+ If people are allowed to zone out a little bit， you can cater towards more people。 You're just going to be delivering a lot less value per person。 I don't know。 I've been struggling with that because I've taught over 100 people recently in some kind。 of weird webinar style settings and I used to only teach for live settings。 At most。
 
- a big corporate setting to sit in a room and feel like you shouldn't be on your email。 you should be paying attention。 It depends on the way you look at it。
+ I would cap it to like eight people。 That has obviously changed in the last month。 I now do more like 30 is my recommendation。 I've even done 60 or 70 recently though and it actually worked out for a couple topics。 surprisingly。 I don't see other questions。 I don't either。 This is awesome。 I teach this stuff too。 I use these practices and I also as part of the Carpentries train on a lot of these practices。
 
- If people are allowed to zone out a little bit， you can cater towards more people。 You're just going to be delivering a lot less value per person。 I don't know。
+ It's so hard to not answer these questions myself。 It's so nice to see other people doing it too。 Right。 Honestly， if you have other answers to these questions， I'd love to see people type them。 in the chat because as Reuben was saying stuff earlier， I was like， "Oh， I just want to plus。 one that but it feels weird to shout out in this medium。"。
 
- I've been struggling with that because I've taught over 100 people recently in some kind。 of weird webinar style settings and I used to only teach for live settings。 At most。
+ We're going to be hearing from Carpentries people later this afternoon and all of their。 instructor training which includes all the pro tips around live coding and things like。 that are all online open access as well。 I can put links into that later on。 All right。 Thank you so much。 I'm going to show you a show of emoji for a thank you。 This has been so awesome。
 
- I would cap it to like eight people。 That has obviously changed in the last month。 I now do more like 30 is my recommendation。 I've even done 60 or 70 recently though and it actually worked out for a couple topics。
+ In my experience， it doesn't really matter the platform you use as long as you're super。 clear about what you want people to do and how to do it。 Right。 Use the platform that you're allowed to。 Yeah。 Eclectation setting is super， super important。 Thanks， Elizabeth。 I'm going to put my email in the chat。 Feel free to email me， folks。
 
- surprisingly。 I don't see other questions。 I don't either。 This is awesome。 I teach this stuff too。 I use these practices and I also as part of the Carpentries train on a lot of these practices。
+ if you have questions for folks who are watching the video。 and recording my emails pretty public if you find it online。 Feel free to share your email。 All the speaker information is up on the trainer summit。 Hatchery page as well。 All right。 Thank you so much。 We are at break time。 So let's take about a 10 minute break。
 
- It's so hard to not answer these questions myself。 It's so nice to see other people doing it too。 Right。 Honestly， if you have other answers to these questions， I'd love to see people type them。
-
- in the chat because as Reuben was saying stuff earlier， I was like， "Oh， I just want to plus。 one that but it feels weird to shout out in this medium。"。
-
- We're going to be hearing from Carpentries people later this afternoon and all of their。 instructor training which includes all the pro tips around live coding and things like。
-
- that are all online open access as well。 I can put links into that later on。 All right。 Thank you so much。 I'm going to show you a show of emoji for a thank you。 This has been so awesome。
-
- In my experience， it doesn't really matter the platform you use as long as you're super。 clear about what you want people to do and how to do it。 Right。
-
- Use the platform that you're allowed to。 Yeah。 Eclectation setting is super， super important。 Thanks， Elizabeth。 I'm going to put my email in the chat。 Feel free to email me， folks。
-
- if you have questions for folks who are watching the video。 and recording my emails pretty public if you find it online。 Feel free to share your email。
-
- All the speaker information is up on the trainer summit。 Hatchery page as well。 All right。 Thank you so much。 We are at break time。 So let's take about a 10 minute break。
-
- I will probably be around and during break time， I'm super happy to answer more of these。 questions as well。 This is part of like， I do trainer training as well。 So like， yes。
-
- I'm super into this。 Coming up in about 10 minutes。 we have Mosheg talking about giving a tutorial at a Python， conference。 Cool。 So thank you so much。
+ I will probably be around and during break time， I'm super happy to answer more of these。 questions as well。 This is part of like， I do trainer training as well。 So like， yes。 I'm super into this。 Coming up in about 10 minutes。 we have Mosheg talking about giving a tutorial at a Python， conference。 Cool。 So thank you so much。
 
  Trey。 Let's take about a 10 minute break。 Get up， walk around， get some water。 All right。
 ![](img/4cded4095a3983c5e6a540db30068996_21.png)
 
  Give whatever hour it is in your time zone。 Do we have any night I will hear tonight？
 
- Possibly if you're in Europe。 Welcome， night I will。 Thank you for joining。 All right。 Mosheg。 you want to take it away？ Yep。 Thank you。 Okay。 Hi， everybody。 My name is Moshe Zatka。
+ Possibly if you're in Europe。 Welcome， night I will。 Thank you for joining。 All right。 Mosheg。 you want to take it away？ Yep。 Thank you。 Okay。 Hi， everybody。 My name is Moshe Zatka。 I'm going to be talking about challenges of giving tutorial at Python。 Co-bodies。com is my website。 which where you can find every single way to contact me， known to humankind。 Okay。 Okay。 Okay。
 
- I'm going to be talking about challenges of giving tutorial at Python。 Co-bodies。com is my website。 which where you can find every single way to contact me， known to humankind。 Okay。 Okay。 Okay。
+ So I first want to start with the College of the Country。 I live in San Francisco Bay Area。 which is the ancestral home of the Muayka， Oloni。 So I'm going to be talking specifically about conference tutorials and I've given them in。 a couple of different conferences and I'm starting to talk about what are the commonalities。 and what are the things I'm encountering。 So obviously we are doing this a resume。
 
- So I first want to start with the College of the Country。 I live in San Francisco Bay Area。 which is the ancestral home of the Muayka， Oloni。 So I'm going to be talking specifically about conference tutorials and I've given them in。
+ but I'm going to focus on like in person conferences。 Like we had and hopefully we'll have once the crisis ends。 Usually it's a day or two before the main docs， depending on how many they have of them。 It usually costs $500 per session and it's around three hours。 So those things are pretty common。
 
- a couple of different conferences and I'm starting to talk about what are the commonalities。 and what are the things I'm encountering。 So obviously we are doing this a resume。
+ That's kind of what I think when I think of a Python conference tutorial。 So obviously I'm sure we all agree the diversity is good。 Right。 We want people of all ethnicities。 races， genders， sexual orientations， religions， etc。 to come in and enjoy whatever materials we have to teach。
 
- but I'm going to focus on like in person conferences。 Like we had and hopefully we'll have once the crisis ends。
+ I say that because for most of this presentation when I say diversity， it will be in a negative。 context。 I first want to acknowledge that I am a big fan of diversity in general。 But some diversity that are not so good and I guess objectively it's good maybe that it's。 the world in diverse but in a classroom settings， they do not work well。
 
- Usually it's a day or two before the main docs， depending on how many they have of them。 It usually costs $500 per session and it's around three hours。 So those things are pretty common。
+ So experience diversity is a problem。 People might be beginners， intermediates and you know。 I have one year of experience。 I have 10 years of experience。 People come from different subspecialties。 This is something true for Python。 We have all kinds of things people use Python for from game development to doing data science。
 
- That's kind of what I think when I think of a Python conference tutorial。 So obviously I'm sure we all agree the diversity is good。 Right。 We want people of all ethnicities。
+ People know all kinds of different things。 People use different infrastructure。 People use all kinds of machines and operating systems and operating system management tools。 And people come into the world with all kinds of goals。 Some people want to get better on the job or some people want to get a job and so on。
 
- races， genders， sexual orientations， religions， etc。 to come in and enjoy whatever materials we have to teach。
+ And these are all things that happen in a conference store because you'll get people， of all kinds。 So I guess the first thing you'll encounter when you give a conference in a Python conference。 a tutorial in a Python conference， is always diversity。 People come with all kinds of operating systems。 The simplest one is Macresten。
 
- I say that because for most of this presentation when I say diversity， it will be in a negative。 context。 I first want to acknowledge that I am a big fan of diversity in general。
+ That's the simplest one or the simple one because different Macresten versions have widely different。 attitudes towards how to put Python there， how to put software there， what kind of sandboxing。 they allow or mandate。 But it is reasonably simple because Apple just builds one version of each operating system。 Because of course you still have versions but you also have differences between home， pro。
 
- But some diversity that are not so good and I guess objectively it's good maybe that it's。 the world in diverse but in a classroom settings， they do not work well。
+ and there's often some other exotic that you can get in the Microsoft website but some。 company made a deal with Microsoft and got a special version。 And also you can have it managed or not。 A lot of Windows operating systems are corporate and they're managed by some central system。 which is again a challenge for all kinds of things that we'd like to do。
 
- So experience diversity is a problem。 People might be beginners， intermediates and you know。 I have one year of experience。 I have 10 years of experience。
+ Linux is the ultimate in all diversity， right？ There's always going to be someone with Gen2。 And of course it's like half a dozen versions of Fedora， versions of Ubuntu， versions of。 Debian and they're all slightly different and people will install them slightly differently。 and the amount of things you can do with Linux is the core insane。 Yeah。
 
- People come from different subspecialties。 This is something true for Python。 We have all kinds of things people use Python for from game development to doing data science。
+ I have nothing Gen2 users except it's an interesting challenge when you try to， install stuff。 right？ And while we teach different things， right。 we sometimes teach about Git or MySQL or whatever。 but the main thing I'm sure many of us are going to be teaching is Python for that you。
 
- People know all kinds of different things。 People use different infrastructure。 People use all kinds of machines and operating systems and operating system management tools。
+ want them to install Python on their laptop。 First you have to tell them to the right version of Python which ideally is not Python 2 because。 you're going to be teaching Python 3。 You can get it on the app store for Microsoft。 For some operating system you can get installers from Python。org that's for Macs and Windows。 less for Linux。 Python will work on Mac and Linux but not really on Windows。
 
- And people come into the world with all kinds of goals。 Some people want to get better on the job or some people want to get a job and so on。
+ Conda4ch will work on all of them but it's kind of weird to install and requires a lot。 of things to kind of get started。 The way to install Conda is kind of weird especially if you want a minimal Conda which。 you probably do。 So there's a lot of different ways to get Python and you're going to have to choose one。 way that all of your students will manage to use。 And that's not a problem with Python， right？
 
- And these are all things that happen in a conference store because you'll get people， of all kinds。 So I guess the first thing you'll encounter when you give a conference in a Python conference。
+ Installing software on more than desktop operating systems is impossible。 I am sure some of you think that it's not impossible but it isn't possible in that if。 you have 25 computers and you download a piece of software from the internet which is not。 Firefox or Chrome， where you have really big teams to fix that， it will fail to install。
 
- a tutorial in a Python conference， is always diversity。 People come with all kinds of operating systems。 The simplest one is Macresten。
+ on five of those and after an hour it will still fail to install on one。 Python does not have the big teams that Firefox and Chrome have to work on all the installation。 issues。 So it's going to be hard and some of them fail and you'll have to work around that。 Once you've gotten Python to work， you probably want the students to start pip installing and。
 
- That's the simplest one or the simple one because different Macresten versions have widely different。 attitudes towards how to put Python there， how to put software there， what kind of sandboxing。
+ for almost all lessons you want them to install something even if it's for iteration in Python。 you might want to have them pip install more territory because it's a cool package that。 will show you something。 So we want them to set a virtual inf。 Unless you're in Konda which is kind of it's already in environment and really doesn't play。
 
- they allow or mandate。 But it is reasonably simple because Apple just builds one version of each operating system。 Because of course you still have versions but you also have differences between home， pro。
+ well with virtual inf some Konda and also how you set up the virtual inflection in different。 slightly per hour of Python installer。 For example， as you see in the comments。 depending on how you still Python and Windows， you might。 just tell them to use Python or you might have to tell them to use and explicitly to。
 
- and there's often some other exotic that you can get in the Microsoft website but some。 company made a deal with Microsoft and got a special version。
+ Python which will be different。 So okay but now we've got in a virtual environment which is great。 right？ So now you want to be pip install。 So you tell them to activate the virtual environment and pip install your requirements file。 And that works great。 So this is no binary wheel for one package for Linux。 It's fine。 Take a deep breath and you explain how to install Python binary package build dependencies which。
 
- And also you can have it managed or not。 A lot of Windows operating systems are corporate and they're managed by some central system。 which is again a challenge for all kinds of things that we'd like to do。
+ are slightly different between Ubuntu and Fintra。 And again。 no first agenda to use but I don't want to even think about how to give those。 instructions for gentle people but fine， I'll figure it out， we'll do that。 Another package doesn't have a Windows wheel。 You take a deep breath。
 
- Linux is the ultimate in all diversity， right？ There's always going to be someone with Gen2。 And of course it's like half a dozen versions of Fedora， versions of Ubuntu， versions of。
+ you figure out how to install the free version of Visual Studio。 which is kind of hard to find because Microsoft of course wants to send you their full version。 of Visual Studio but you found it and you give them the link and you install it。 Again。 remember that installing software on a modern virtual operating system is impossible。
 
- Debian and they're all slightly different and people will install them slightly differently。 and the amount of things you can do with Linux is the core insane。 Yeah。
+ but maybe they lucked out。 Okay， so you're good。 You got the free version of Visual Studio。 The package has the Linux and Windows binary wheels but does not have the microstend wheel。 You take another deep breath， you explain how to install Xcode， you explain how to click。 yes on the Yula。 The person who says that their company doesn't let them click on the Yula because it's a company。
 
- I have nothing Gen2 users except it's an interesting challenge when you try to， install stuff。 right？ And while we teach different things， right。
+ laptop。 Just take a deep breath and hope for the best。 But finally you got all the requirements installed。 And another deep breath。 And now when do you want？ Of course you want to send them the instructions beforehand。 Right。 it takes a long time to set things up。 Right， so you send them the instructions beforehand。
 
- we sometimes teach about Git or MySQL or whatever。 but the main thing I'm sure many of us are going to be teaching is Python for that you。
+ You write a really thorough email。 You test it on all big three operating systems with like half a dozen variants。 Yes， I'm sorry。 I've gotten this frustration several times。 Now you're going to have to listen to that。 So you said the instructions beforehand with like a solely researched email。 It's like two pages and clearly spelled out the decision tree。
 
- want them to install Python on their laptop。 First you have to tell them to the right version of Python which ideally is not Python 2 because。 you're going to be teaching Python 3。 You can get it on the app store for Microsoft。
+ Less than half the class will open the email to read that。 Now the one person that however the class did open it， opened it on Windows 10 home without， SP1。 Your twists and fills to build。 And if you ever saw the debugging visual studio windows 10 home without SP1 not building twists。 it's fun。 It's even more fun over email where you don't even get to play around with things or see。
 
- For some operating system you can get installers from Python。org that's for Macs and Windows。 less for Linux。 Python will work on Mac and Linux but not really on Windows。
+ the error messages。 But you're going to have to do it anyway because they have paid $500 for the class and they。 expect you to help them。 And they send you an email and you can't really ignore that。 Of course your first guess doesn't work because what are the chances that you'll guess correctly？
 
- Conda4ch will work on all of them but it's kind of weird to install and requires a lot。 of things to kind of get started。 The way to install Conda is kind of weird especially if you want a minimal Conda which。
+ What is the build problem？ Now the person who， and I'm going to be gendered here because in my experience this is always。 a guy。 This is a guy who paid $500。 He's upset that you sent him instructions that didn't work。 Now you made him do extra work which still didn't work。 So he's now made it to you。 Okay so now you're starting to get emotional about it。 Your second guess didn't work。
 
- you probably do。 So there's a lot of different ways to get Python and you're going to have to choose one。 way that all of your students will manage to use。 And that's not a problem with Python， right？
+ Now all the obvious answers are gone because if they were you already fixed it。 So you spent two hours on Google。 The guy who paid you $500 already has cost you two extra hours of work and now he's like。 super medit you。 So maybe not do that。 Maybe just installing class。 Now you can ask a volunteer to TA and help but you're getting paid for the tutorial。
 
- Installing software on more than desktop operating systems is impossible。 I am sure some of you think that it's not impossible but it isn't possible in that if。
-
- you have 25 computers and you download a piece of software from the internet which is not。 Firefox or Chrome， where you have really big teams to fix that， it will fail to install。
-
- on five of those and after an hour it will still fail to install on one。 Python does not have the big teams that Firefox and Chrome have to work on all the installation。
-
- issues。 So it's going to be hard and some of them fail and you'll have to work around that。 Once you've gotten Python to work， you probably want the students to start pip installing and。
-
- for almost all lessons you want them to install something even if it's for iteration in Python。 you might want to have them pip install more territory because it's a cool package that。
-
- will show you something。 So we want them to set a virtual inf。 Unless you're in Konda which is kind of it's already in environment and really doesn't play。
-
- well with virtual inf some Konda and also how you set up the virtual inflection in different。 slightly per hour of Python installer。 For example， as you see in the comments。
-
- depending on how you still Python and Windows， you might。 just tell them to use Python or you might have to tell them to use and explicitly to。
-
- Python which will be different。 So okay but now we've got in a virtual environment which is great。 right？ So now you want to be pip install。 So you tell them to activate the virtual environment and pip install your requirements file。
-
- And that works great。 So this is no binary wheel for one package for Linux。 It's fine。 Take a deep breath and you explain how to install Python binary package build dependencies which。
-
- are slightly different between Ubuntu and Fintra。 And again。 no first agenda to use but I don't want to even think about how to give those。
-
- instructions for gentle people but fine， I'll figure it out， we'll do that。 Another package doesn't have a Windows wheel。 You take a deep breath。
-
- you figure out how to install the free version of Visual Studio。 which is kind of hard to find because Microsoft of course wants to send you their full version。
-
- of Visual Studio but you found it and you give them the link and you install it。 Again。 remember that installing software on a modern virtual operating system is impossible。
-
- but maybe they lucked out。 Okay， so you're good。 You got the free version of Visual Studio。 The package has the Linux and Windows binary wheels but does not have the microstend wheel。
-
- You take another deep breath， you explain how to install Xcode， you explain how to click。 yes on the Yula。 The person who says that their company doesn't let them click on the Yula because it's a company。
-
- laptop。 Just take a deep breath and hope for the best。 But finally you got all the requirements installed。 And another deep breath。
-
- And now when do you want？ Of course you want to send them the instructions beforehand。 Right。 it takes a long time to set things up。 Right， so you send them the instructions beforehand。
-
- You write a really thorough email。 You test it on all big three operating systems with like half a dozen variants。 Yes， I'm sorry。 I've gotten this frustration several times。
-
- Now you're going to have to listen to that。 So you said the instructions beforehand with like a solely researched email。 It's like two pages and clearly spelled out the decision tree。
-
- Less than half the class will open the email to read that。 Now the one person that however the class did open it， opened it on Windows 10 home without， SP1。
-
- Your twists and fills to build。 And if you ever saw the debugging visual studio windows 10 home without SP1 not building twists。 it's fun。 It's even more fun over email where you don't even get to play around with things or see。
-
- the error messages。 But you're going to have to do it anyway because they have paid $500 for the class and they。 expect you to help them。 And they send you an email and you can't really ignore that。
-
- Of course your first guess doesn't work because what are the chances that you'll guess correctly？
-
- What is the build problem？ Now the person who， and I'm going to be gendered here because in my experience this is always。 a guy。 This is a guy who paid $500。 He's upset that you sent him instructions that didn't work。
-
- Now you made him do extra work which still didn't work。 So he's now made it to you。 Okay so now you're starting to get emotional about it。 Your second guess didn't work。
-
- Now all the obvious answers are gone because if they were you already fixed it。 So you spent two hours on Google。 The guy who paid you $500 already has cost you two extra hours of work and now he's like。
-
- super medit you。 So maybe not do that。 Maybe just installing class。 Now you can ask a volunteer to TA and help but you're getting paid for the tutorial。
-
- And the volunteer isn't and that kind of feels icky。 On the other hand $1。000 you get which is usually is a， you know， again it can be 1200。
-
- but usually that's around how much you get。 Those go really fast if you pay TA even reasonable wage for like the skill they bring to the。 table。 And honestly debugging we just did home without SP1。
+ And the volunteer isn't and that kind of feels icky。 On the other hand $1。000 you get which is usually is a， you know， again it can be 1200。 but usually that's around how much you get。 Those go really fast if you pay TA even reasonable wage for like the skill they bring to the。 table。 And honestly debugging we just did home without SP1。
 
  Not building increases is not much more fun in person。 Right？
 
- At least now you get to see the error message directly but that's not the huge improvement。 So it also takes time。 Someone is missing class。 Now they're medit they're missing class because the instructions weren't properly researched。
+ At least now you get to see the error message directly but that's not the huge improvement。 So it also takes time。 Someone is missing class。 Now they're medit they're missing class because the instructions weren't properly researched。 So you're saying I know we are like you know living in the modern era。 Let's just use Docker。 Now you have two problems。 You can't install Docker because installing Docker on a modern operating system is impossible。
 
- So you're saying I know we are like you know living in the modern era。 Let's just use Docker。 Now you have two problems。 You can't install Docker because installing Docker on a modern operating system is impossible。
+ just like installing any piece of software on a modern operating system。 Plus now you have to figure out how to use Docker and how to teach everybody to use Docker。 with the instructions。 Right？ So you say okay virtual box at least now they'll get a window and I'll send them the VM。 Now you have three problems which is virtual box how to use a VM and installing virtual。
 
- just like installing any piece of software on a modern operating system。 Plus now you have to figure out how to use Docker and how to teach everybody to use Docker。
-
- with the instructions。 Right？ So you say okay virtual box at least now they'll get a window and I'll send them the VM。 Now you have three problems which is virtual box how to use a VM and installing virtual。
-
- box in the first place。 Plus you get to download one gigabyte image over conference Wi-Fi。 Yes。 If you want to use Kubernetes remember that conference Wi-Fi is the worst of the first。
-
- day of the conference because they haven't had time to debug it。 And now you're going to have everybody who tries to connect to a remote machine fail。
+ box in the first place。 Plus you get to download one gigabyte image over conference Wi-Fi。 Yes。 If you want to use Kubernetes remember that conference Wi-Fi is the worst of the first。 day of the conference because they haven't had time to debug it。 And now you're going to have everybody who tries to connect to a remote machine fail。
 
  that plus probably they have a really interesting firewall settings and that doesn't work as。 well as you might hope。 So these are just the machines of instructions。 Right？
 
- This is just to get them to a environment that can work。 Now you're teaching humans。 They all have you know human stuff right like names but you have three hours right like。
+ This is just to get them to a environment that can work。 Now you're teaching humans。 They all have you know human stuff right like names but you have three hours right like。 spending even 20 or 30 minutes just to know people's names that are known like what do。 they do what do they know is way too long you don't have time to know that。
 
- spending even 20 or 30 minutes just to know people's names that are known like what do。 they do what do they know is way too long you don't have time to know that。
+ So you basically teach them as anonymous blogs right because you don't really have time for。 anything better。 Everyone is an intermediate because everyone had like more than five minutes learning Python。 less than 20 years learning Python and it all that range is basically intermediate。 So like you can say the tutorial hits intermediate it doesn't really distinguish from the person。
 
- So you basically teach them as anonymous blogs right because you don't really have time for。 anything better。 Everyone is an intermediate because everyone had like more than five minutes learning Python。
+ still struggling with lists to the person who's not sure they're expert because they don't。 know how multiple inheritance works。 So they come with all levels of knowledge。 They come with all levels of experience right and this is not just levels right like they。 know different things right。 Some of them are really comfortable with operational stuff installing stuff and installing stuff。
 
- less than 20 years learning Python and it all that range is basically intermediate。 So like you can say the tutorial hits intermediate it doesn't really distinguish from the person。
+ debugging stuff some of them are really comfortable with debugging logic issues some of them are。 really comfortable debugging algorithms are coming up with algorithm and some of them。 are not sorry so you have people who are really comfortable and really uncorfable at。 different multiple or similar things right you can be amazing at ops and really not good。
 
- still struggling with lists to the person who's not sure they're expert because they don't。 know how multiple inheritance works。 So they come with all levels of knowledge。
+ at algorithms or really good algorithms and really bad at ops but you're going to have。 to teach them all more or less the same thing and people come to your tutorial for different。 outcomes right not everybody some people are like oh you know MySQL looks like an interesting。 technology I don't know if I have any use for it but I want to play around with it so。
 
- They come with all levels of experience right and this is not just levels right like they。 know different things right。 Some of them are really comfortable with operational stuff installing stuff and installing stuff。
+ I can you know kind of decide whether it's good or not some people you know taking your。 Python for MySQL tutorial because right now their job is like installing MySQL and they're。 going to have to write everything to use MySQL as a database right that's a different goal。 from like you know I want to play with MySQL around some people are learning interview skills。
 
- debugging stuff some of them are really comfortable with debugging logic issues some of them are。 really comfortable debugging algorithms are coming up with algorithm and some of them。
+ right these are getting simply like they want to be able to get a job which requires them。 to do Python and MySQL thing that's a different kind of skill that they're going to be looking。 at something else right something people are looking to build a portfolio again that's。 slightly different outcome and they're going to be looking for something else from your。
 
- are not sorry so you have people who are really comfortable and really uncorfable at。 different multiple or similar things right you can be amazing at ops and really not good。
+ tutorial and some people are there because as a job perk they got you can choose whatever。 two tutorials in Python your toys in the most interesting you know it's a job paid for me。 I'm gonna sit here and you have all these kinds of people and more and again you have。 to teach them something that is more or less the same now you have different sub specialties。
 
- at algorithms or really good algorithms and really bad at ops but you're going to have。 to teach them all more or less the same thing and people come to your tutorial for different。
+ right Python caters to a lot of different people and even if you're giving like a specific。 tutorial like you give how to get better iterations tutorial right or whatever this is relevant。 to all these sub specialties right but you have so you have a data scientist a site reliability。 engineer and a web developer all sitting in tutorial they'll all be comfortable with different。
 
- outcomes right not everybody some people are like oh you know MySQL looks like an interesting。 technology I don't know if I have any use for it but I want to play around with it so。
+ examples right they all won't relate it all to you know the site reliability engineer doesn't。 even know what pandas is much less wise interesting and finally there's an economics right which。 is you know you might be giving a tutorial at Python conference just out of the goodness。 of your heart but there's still the money aspects to that so again I want to kind of remind you。
 
- I can you know kind of decide whether it's good or not some people you know taking your。 Python for MySQL tutorial because right now their job is like installing MySQL and they're。
+ the price student's pay is five hundred dollars again around you get paid one thousand dollars。 the investment is at minimum actually coming in and giving the tutorial technically it's。 three hours usually it kills your full work day right you can't really do anything before。 the tutorial because you're kind of prepping you can't do anything after the tutorial because。
 
- going to have to write everything to use MySQL as a database right that's a different goal。 from like you know I want to play with MySQL around some people are learning interview skills。
+ you're kind of tired you often have to travel an extra day right so you actually kill like。 you know often around a full eight hour day right if you count your days and hours then。 there's another investment you have to prep right if you have a tutorial pre-written then。 that works well if you recycle them from because you work often as a trainer often you want。
 
- right these are getting simply like they want to be able to get a job which requires them。 to do Python and MySQL thing that's a different kind of skill that they're going to be looking。
+ to customize it so it's a very least you probably want to give like a practice talk if you're。 really good you might be able to cut down three hours two hours on communications beforehand。 before you even started with the challenges right you probably want to send out something。 to your students and know what to expect plastic installation instructions so on and then just。
 
- at something else right something people are looking to build a portfolio again that's。 slightly different outcome and they're going to be looking for something else from your。
+ making the tutorial often requires you know quite a bit of writing and research right if。 you want to teach people what is the best way to solve a problem you need to check different。 ways to solve it and how they work so basically you get fifty dollars and possibly even less。 an hour and what you give is like it experience it's not so great right because this is the。
 
- tutorial and some people are there because as a job perk they got you can choose whatever。 two tutorials in Python your toys in the most interesting you know it's a job paid for me。
+ first time you might be giving this tutorial right so my summary is that in my experience。 and the reason I'm kind of doing it less and less as time goes on the cost really a lot。 of money for the students I don't feel like they're giving the students what they could。 get at other venues for the same amount of investment and there's one shot right like you。
 
- I'm gonna sit here and you have all these kinds of people and more and again you have。 to teach them something that is more or less the same now you have different sub specialties。
+ know if at those three hours you didn't get some point across you don't have any chance。 to redo it it's not like a multi-day scenario where you or even a multi kind of sessions。 and we have a chance to kind of make up for stuff so I guess that was like a static session。 of telling and I think I have a few minutes for questions right you absolutely do we have。
 
- right Python caters to a lot of different people and even if you're giving like a specific。 tutorial like you give how to get better iterations tutorial right or whatever this is relevant。
+ actually about five ten minutes before the next speaker so I love the sort of collective。 screaming in the chat because you know that this is this is how community this is why。 community is important to have other people that can just sort of emote and relate to。 these experiences because together building up this corpus of expertise to solving these。
 
- to all these sub specialties right but you have so you have a data scientist a site reliability。 engineer and a web developer all sitting in tutorial they'll all be comfortable with different。
+ problems and alternatives is how we can all do better at this because it's hard it's also。 I'm realizing very nice to have like you guys are hard almost impossible problems but they're。 tangible impossible problems which is at these days this day and age right now it's nice。 to have a tangible problem。 Alright so what questions are there and go ahead and put them in the chat and I'll read。
 
- examples right they all won't relate it all to you know the site reliability engineer doesn't。 even know what pandas is much less wise interesting and finally there's an economics right which。
+ them off for you。 And I think at the end if there's extra time we'll do like a more collective emoji screaming。 I have a question， maybe I can start with。 Yeah it was going to be have you found any cloud services that's usually my go to is。 sort of like trying to do in super unpredictable places trying to use a cloud service to start。 off with as sort of。 So those two challenges with cloud services right one is like I said。
 
- is you know you might be giving a tutorial at Python conference just out of the goodness。 of your heart but there's still the money aspects to that so again I want to kind of remind you。
+ quarter first Wi-Fi， especially on the first day can be really spotty。 They didn't have time to debug it so any problems is like you know now you're facing， into them。 Plus a lot of the people in the tutorial next door trying to download the one gigabyte virtual。 box image。 So Wi-Fi is not great。 The other problem is that it kind of depends on what you're trying to teach right if you're。
 
- the price student's pay is five hundred dollars again around you get paid one thousand dollars。 the investment is at minimum actually coming in and giving the tutorial technically it's。
+ trying to teach say Python for MySQL or like how to build Python or Docker or stuff like， that。 A lot of these like you know， repulate and and Jupyter notebook as a service don't work。 as well as you might hope。 So it sometimes is a reasonable thing。 I really wish like you know we could have something like AWS spinning up machines really。
 
- three hours usually it kills your full work day right you can't really do anything before。 the tutorial because you're kind of prepping you can't do anything after the tutorial because。
+ really easily and really easy for SSH but I've never managed to get something like that to。 the level like of reliability where I felt like I could do that。 I remember that one tutorial that I gave with glyph。 We got a suggestion for Microsoft to use their notebook service and we just decided we have。
 
- you're kind of tired you often have to travel an extra day right so you actually kill like。 you know often around a full eight hour day right if you count your days and hours then。
+ no idea how reliable it is that we don't have time to really measure that。 So yeah。 I know like I said browsers are the only thing you can actually reliably install。 on a modern operating system。 So using the browser sounds like a good idea。 I have not done that and I have I'm kind of wary。 Yes， you can bring your own server。
 
- there's another investment you have to prep right if you have a tutorial pre-written then。 that works well if you recycle them from because you work often as a trainer often you want。
+ That seems like you know， also a challenge， I guess， I'll bring my server my my my my wife。 I set up and you know debug everybody's connections and tell them to connect to that。 And it's again， it seems scary， right？ Like， you know。 I'm not relying on on hardware that kind of I custom have to carry in and， if it's something wrong。
 
- to customize it so it's a very least you probably want to give like a practice talk if you're。 really good you might be able to cut down three hours two hours on communications beforehand。
+ I don't have any any any recourse。 So that also seems a little scary to me， honestly。 So do you have any advice for someone who is wanting to propose their own Python tutorial。 and it's their first experience with it for how to you know， rationally approach the installation。 directions for their tutorial。 So like I said， I honestly think like the combination of the two approaches is the best。
 
- before you even started with the challenges right you probably want to send out something。 to your students and know what to expect plastic installation instructions so on and then just。
+ I've seen。 Send instructions beforehand， at least you'll get to deal with half the class offline。 And possibly like， you know， give people concrete advice on like what operating systems you're。 seeing better support and really suggest installing stuff。 Like I said， it is a big challenge。 right？ I don't have a great answer。 If you do give it from with with someone else， right？
 
- making the tutorial often requires you know quite a bit of writing and research right if。 you want to teach people what is the best way to solve a problem you need to check different。
+ Like the best experience I've had， which felt the least it kills or it does cut down on。 how much money you get is if you do it with a co-presenter， then you can switch off the。 Aang and that kind of helps a lot。 Right？ So if you do have a co-presenter。 the co-presenter is usually equally kind of experienced with， a lot of the things。
 
- ways to solve it and how they work so basically you get fifty dollars and possibly even less。 an hour and what you give is like it experience it's not so great right because this is the。
+ So they can help students get over some humps。 Again。 still assume that two students won't be able to do that。 One advice I've seen working because it kind of works on the fact that P squared is less。 than P is that if you tell students to pair up， it solves some of the kind of like human。
 
- first time you might be giving this tutorial right so my summary is that in my experience。 and the reason I'm kind of doing it less and less as time goes on the cost really a lot。
+ challenges plus it means that at least as long as one laptop is halfway approachable， then。 you can actually get that。 So now only kind of ideally。 there's only like three laptops left that you couldn't get， Python to install on。 Then， then， yes。 by the way， guys， I do I do bring USB keys。 They help。 They help more than zero。
 
- of money for the students I don't feel like they're giving the students what they could。 get at other venues for the same amount of investment and there's one shot right like you。
-
- know if at those three hours you didn't get some point across you don't have any chance。 to redo it it's not like a multi-day scenario where you or even a multi kind of sessions。
-
- and we have a chance to kind of make up for stuff so I guess that was like a static session。 of telling and I think I have a few minutes for questions right you absolutely do we have。
-
- actually about five ten minutes before the next speaker so I love the sort of collective。 screaming in the chat because you know that this is this is how community this is why。
-
- community is important to have other people that can just sort of emote and relate to。 these experiences because together building up this corpus of expertise to solving these。
-
- problems and alternatives is how we can all do better at this because it's hard it's also。 I'm realizing very nice to have like you guys are hard almost impossible problems but they're。
-
- tangible impossible problems which is at these days this day and age right now it's nice。 to have a tangible problem。 Alright so what questions are there and go ahead and put them in the chat and I'll read。
-
- them off for you。 And I think at the end if there's extra time we'll do like a more collective emoji screaming。 I have a question， maybe I can start with。 Yeah it was going to be have you found any cloud services that's usually my go to is。
-
- sort of like trying to do in super unpredictable places trying to use a cloud service to start。 off with as sort of。 So those two challenges with cloud services right one is like I said。
-
- quarter first Wi-Fi， especially on the first day can be really spotty。 They didn't have time to debug it so any problems is like you know now you're facing， into them。
-
- Plus a lot of the people in the tutorial next door trying to download the one gigabyte virtual。 box image。 So Wi-Fi is not great。 The other problem is that it kind of depends on what you're trying to teach right if you're。
-
- trying to teach say Python for MySQL or like how to build Python or Docker or stuff like， that。 A lot of these like you know， repulate and and Jupyter notebook as a service don't work。
-
- as well as you might hope。 So it sometimes is a reasonable thing。 I really wish like you know we could have something like AWS spinning up machines really。
-
- really easily and really easy for SSH but I've never managed to get something like that to。 the level like of reliability where I felt like I could do that。
-
- I remember that one tutorial that I gave with glyph。 We got a suggestion for Microsoft to use their notebook service and we just decided we have。
-
- no idea how reliable it is that we don't have time to really measure that。 So yeah。 I know like I said browsers are the only thing you can actually reliably install。
-
- on a modern operating system。 So using the browser sounds like a good idea。 I have not done that and I have I'm kind of wary。 Yes， you can bring your own server。
-
- That seems like you know， also a challenge， I guess， I'll bring my server my my my my wife。 I set up and you know debug everybody's connections and tell them to connect to that。
-
- And it's again， it seems scary， right？ Like， you know。 I'm not relying on on hardware that kind of I custom have to carry in and， if it's something wrong。
-
- I don't have any any any recourse。 So that also seems a little scary to me， honestly。 So do you have any advice for someone who is wanting to propose their own Python tutorial。
-
- and it's their first experience with it for how to you know， rationally approach the installation。 directions for their tutorial。 So like I said， I honestly think like the combination of the two approaches is the best。
-
- I've seen。 Send instructions beforehand， at least you'll get to deal with half the class offline。 And possibly like， you know， give people concrete advice on like what operating systems you're。
-
- seeing better support and really suggest installing stuff。 Like I said， it is a big challenge。 right？ I don't have a great answer。 If you do give it from with with someone else， right？
-
- Like the best experience I've had， which felt the least it kills or it does cut down on。 how much money you get is if you do it with a co-presenter， then you can switch off the。
-
- Aang and that kind of helps a lot。 Right？ So if you do have a co-presenter。 the co-presenter is usually equally kind of experienced with， a lot of the things。
-
- So they can help students get over some humps。 Again。 still assume that two students won't be able to do that。
-
- One advice I've seen working because it kind of works on the fact that P squared is less。 than P is that if you tell students to pair up， it solves some of the kind of like human。
-
- challenges plus it means that at least as long as one laptop is halfway approachable， then。 you can actually get that。 So now only kind of ideally。
-
- there's only like three laptops left that you couldn't get， Python to install on。 Then， then， yes。 by the way， guys， I do I do bring USB keys。 They help。 They help more than zero。
-
- They don't help like again 100%。 I think maybe the best attitude is to just have pair programming for the on hands for。 the hands on stuff。 That at least will make sure that as long as you've installed it to more than half of。
-
- the laptops， then you've solved the problem。 By the way， Stuart， so warning students。 there's no help。 I found that like again， people will， you know， will come in。
+ They don't help like again 100%。 I think maybe the best attitude is to just have pair programming for the on hands for。 the hands on stuff。 That at least will make sure that as long as you've installed it to more than half of。 the laptops， then you've solved the problem。 By the way， Stuart， so warning students。 there's no help。 I found that like again， people will， you know， will come in。
 
  They've not read any of the instructions。 If you tell them no help after they get the $500。 you get really angry people。 You might be able to deal with it， right？
 
- But I'm more conflict-averse than usual， and even I'm afraid to do that。 I wouldn't suggest it for everyone。 Is there anything on the PSF or Python organizer side that could make this easier like warnings。
+ But I'm more conflict-averse than usual， and even I'm afraid to do that。 I wouldn't suggest it for everyone。 Is there anything on the PSF or Python organizer side that could make this easier like warnings。 or sort of in the in the in the in the Python communications with attendees that might sort。 of allow more flexibility or forgiveness to instructors？
 
- or sort of in the in the in the in the Python communications with attendees that might sort。 of allow more flexibility or forgiveness to instructors？
+ I've not seen I've not seen like like usually the lessons structure communicate directly。 with the students， which is kind of nice。 So to Denise's question on the virtually in the toughest day prior。 the biggest challenge， is that often I'm not physically impressed day prior to the tutorial and quite possibly。 many of the students won't be right。 Python obviously moves around this year。 If it happened。
 
- I've not seen I've not seen like like usually the lessons structure communicate directly。 with the students， which is kind of nice。 So to Denise's question on the virtually in the toughest day prior。
+ it would have happened in Pittsburgh。 People travel from all over the US and sometimes for other countries。 often not a day before。 So I thought of doing that again， like if you think of doing that again。 you should probably， think of that as like extra work you have to do for those thousand dollars right now。 You have a day less to kind of do whatever else you do。 Yeah， I've tried off。
 
- the biggest challenge， is that often I'm not physically impressed day prior to the tutorial and quite possibly。 many of the students won't be right。 Python obviously moves around this year。 If it happened。
+ I haven't tried office hours， so that's my my my be something that works。 I'm sorry。 don't have great solutions for everybody。 I do have a lot of experience with solutions that don't work。 No problem。 All right， we probably have time for like one or two more questions。 Has anyone recorded an install video and hosted on？ I do this for my own class。
 
- it would have happened in Pittsburgh。 People travel from all over the US and sometimes for other countries。 often not a day before。 So I thought of doing that again， like if you think of doing that again。
+ but it's not a tutorial and it works pretty well。 Okay， I don't know if you've done that。 It's sort of hard because updating videos is hard。 So like for example。 when jet brains updates PyCharm four days before the semester starts。 that entire video that I prepped two weeks beforehand is now garbage。
 
- you should probably， think of that as like extra work you have to do for those thousand dollars right now。 You have a day less to kind of do whatever else you do。 Yeah， I've tried off。
+ So videos are often the worst way to do your do documentation。 If it's something solid and stable。 you can do a video。 It's just so deeply hard to update to update videos。 All right。 Okay。 thank you all for attending and letting me vent for everyone。 Let's do it first off a show of applause emoji first， and then we can do a show of collective。
 
- I haven't tried office hours， so that's my my my be something that works。 I'm sorry。 don't have great solutions for everybody。 I do have a lot of experience with solutions that don't work。
-
- No problem。 All right， we probably have time for like one or two more questions。 Has anyone recorded an install video and hosted on？ I do this for my own class。
-
- but it's not a tutorial and it works pretty well。 Okay， I don't know if you've done that。 It's sort of hard because updating videos is hard。 So like for example。
-
- when jet brains updates PyCharm four days before the semester starts。 that entire video that I prepped two weeks beforehand is now garbage。
-
- So videos are often the worst way to do your do documentation。 If it's something solid and stable。 you can do a video。 It's just so deeply hard to update to update videos。 All right。 Okay。
-
- thank you all for attending and letting me vent for everyone。 Let's do it first off a show of applause emoji first， and then we can do a show of collective。
-
- screaming again， just nice to have an outlet and some solidarity and we know this is all， hard。 And I love that like we can have new trainers and new instructors coming in with like reasonable。
-
- expectations for like it's not going to be great or perfect。 You got to。
+ screaming again， just nice to have an outlet and some solidarity and we know this is all， hard。 And I love that like we can have new trainers and new instructors coming in with like reasonable。 expectations for like it's not going to be great or perfect。 You got to。
 ![](img/4cded4095a3983c5e6a540db30068996_23.png)
 
- Thank you so much for presenting。 Next up we have Karen word and Carrie Jordan。 I think I saw you both earlier。 If you want to go ahead and so think much you have to see here。
-
- We just don't know。 There we go。
+ Thank you so much for presenting。 Next up we have Karen word and Carrie Jordan。 I think I saw you both earlier。 If you want to go ahead and so think much you have to see here。 We just don't know。 There we go。
 ![](img/4cded4095a3983c5e6a540db30068996_25.png)
 
- Well that was a really cool virtual background。 So Karen is going to share her screen。 She'll drive our slides today。 Perfect。 So thanks so much everyone for inviting us。
+ Well that was a really cool virtual background。 So Karen is going to share her screen。 She'll drive our slides today。 Perfect。 So thanks so much everyone for inviting us。 My name is Carrie Jordan and I'm the acting or sorry， I'm not acting anymore。 I'm the executive director。 I'm so used to saying that it's been a full week now。
 
- My name is Carrie Jordan and I'm the acting or sorry， I'm not acting anymore。 I'm the executive director。 I'm so used to saying that it's been a full week now。
+ I'm executive director for the Carpentries and I'm here with Karen word who is our director。 of instructor training and we're going to discuss how we're taking our workshops online。 for the Carpentries and hopefully provide some concrete tips that you can use immediately。 to teach Python and hopefully teach Python online。
 
- I'm executive director for the Carpentries and I'm here with Karen word who is our director。 of instructor training and we're going to discuss how we're taking our workshops online。
+ And so if you want to go to the next slide Karen and what I'm going to do is kind of。 introduce the Carpentries and then I'll pass it off to Karen。 All right。 So the Carpentries is a physically sponsored 501(c)(3) nonprofit based it's a part of community。 initiatives which is a physically sponsored project based in California and we're formed。
 
- for the Carpentries and hopefully provide some concrete tips that you can use immediately。 to teach Python and hopefully teach Python online。
+ to teach foundational computation skills to data scientists researchers librarians worldwide。 through short impactful workshops。 And the model that we follow which I'm sure Karen will talk a little bit about in her presentation。 is to train the trainer where we certify volunteer instructors within the communities that they're。 trying to reach。 All of our course material is open source in the public domain and it's free to use and。
 
- And so if you want to go to the next slide Karen and what I'm going to do is kind of。 introduce the Carpentries and then I'll pass it off to Karen。 All right。
+ to contribute to。 So in this way we're able to scale beyond our organization and build regional self-sustaining。 learning and support communities。 So as you can see in this brief overview the Carpentries project includes three lesson。 programs software carpentry data carpentry and library carpentry。 We run about 1700 workshops a year in over 46 countries and we've trained more than 1600。
 
- So the Carpentries is a physically sponsored 501(c)(3) nonprofit based it's a part of community。 initiatives which is a physically sponsored project based in California and we're formed。
+ instructors。 So think about starting with Karen at the top who trains our trainers and then our trainers。 teach our instructors et cetera et cetera。 We've reached about over 38。000 learners through this train the trainer model and what Karen。 is going to do is talk about how we are moving our workshops to the online format and hopefully。
 
- to teach foundational computation skills to data scientists researchers librarians worldwide。 through short impactful workshops。 And the model that we follow which I'm sure Karen will talk a little bit about in her presentation。
+ provide some tips to help you all in teaching。 Take it away Karen。 Thank you Carrie。 Yeah。 so sorry I'm trying to keep clicking different places and then I'm switching Carrie's， slides。 Alright， there we go。 So some of you may be familiar with the Carpentries already。 If you're not I want to give you a short introduction to some of the basic ingredients that go。
 
- is to train the trainer where we certify volunteer instructors within the communities that they're。 trying to reach。 All of our course material is open source in the public domain and it's free to use and。
-
- to contribute to。 So in this way we're able to scale beyond our organization and build regional self-sustaining。 learning and support communities。 So as you can see in this brief overview the Carpentries project includes three lesson。
-
- programs software carpentry data carpentry and library carpentry。 We run about 1700 workshops a year in over 46 countries and we've trained more than 1600。
-
- instructors。 So think about starting with Karen at the top who trains our trainers and then our trainers。 teach our instructors et cetera et cetera。 We've reached about over 38。
-
-000 learners through this train the trainer model and what Karen。 is going to do is talk about how we are moving our workshops to the online format and hopefully。
-
- provide some tips to help you all in teaching。 Take it away Karen。 Thank you Carrie。 Yeah。 so sorry I'm trying to keep clicking different places and then I'm switching Carrie's， slides。
-
- Alright， there we go。 So some of you may be familiar with the Carpentries already。 If you're not I want to give you a short introduction to some of the basic ingredients that go。
-
- into a Carpentries workshop。 We have a very sort of established and trying to true method that we use for teaching in-person。 workshops and the challenge now is to move that online。
-
- So our in-person workshops feature participatory live coding which has already been talked about。 a little bit today。 Instructors teach slowly explaining as they type learners enter the commands as the instructors。
+ into a Carpentries workshop。 We have a very sort of established and trying to true method that we use for teaching in-person。 workshops and the challenge now is to move that online。 So our in-person workshops feature participatory live coding which has already been talked about。 a little bit today。 Instructors teach slowly explaining as they type learners enter the commands as the instructors。
 
  type them and reach out for help as needed。 It's possible because we have an instructional team that includes helpers and co-instructors。 who are available to provide help as needed。 We use colored sticky notes that can be placed on the computer screen to indicate when they。
 
- need help during a workshop and an instructor can also call for those to be put up at various。 different points and responses challenges and things like that and helpers attend to those。
+ need help during a workshop and an instructor can also call for those to be put up at various。 different points and responses challenges and things like that and helpers attend to those。 The advice is needed， the instructional team shares the work and broadens the perspective。 on problem solving so they learn from each other in addition to helping people in the， room。
 
- The advice is needed， the instructional team shares the work and broadens the perspective。 on problem solving so they learn from each other in addition to helping people in the， room。
+ So everybody learns in that context。 We have a collaboratively developed curricula。 We have many different curricula including some Python curricula and many others as well。 If these work jobs improve over time through the contributions from our instructor communities。 we are novice focused in our instruction。 And again these work jobs have evolved around teaching in a classroom。
 
- So everybody learns in that context。 We have a collaboratively developed curricula。 We have many different curricula including some Python curricula and many others as well。
+ So they have been very honed to teaching in this in-person setting。 The last thing that's important that we have both online and in-person with the Carpentries。 is a robust code of conduct。 And that's a really important part to any workshop in our opinion。 So this is a really difficult model to translate online and honestly in the past when we've。
 
- If these work jobs improve over time through the contributions from our instructor communities。 we are novice focused in our instruction。 And again these work jobs have evolved around teaching in a classroom。
-
- So they have been very honed to teaching in this in-person setting。 The last thing that's important that we have both online and in-person with the Carpentries。
-
- is a robust code of conduct。 And that's a really important part to any workshop in our opinion。 So this is a really difficult model to translate online and honestly in the past when we've。
-
- had interest from our community in trying to host online workshops or advice， generally。 then don't do it， we have our teaching model， we know that it works， it's going to take。
-
- a lot of work for us to reinvent that model in another setting。 Well。 now the time has come for us to invest that effort into translating this model into。
+ had interest from our community in trying to host online workshops or advice， generally。 then don't do it， we have our teaching model， we know that it works， it's going to take。 a lot of work for us to reinvent that model in another setting。 Well。 now the time has come for us to invest that effort into translating this model into。
 
  another setting。 So how do you take all these ingredients and what's the best we can do in translating this？
 
- Something that goes on in an in-person classroom into functionally a Zoom meeting。 So we'll start by identifying the challenges。 One of the biggest things that we've heard from our community as a problem is limited。
+ Something that goes on in an in-person classroom into functionally a Zoom meeting。 So we'll start by identifying the challenges。 One of the biggest things that we've heard from our community as a problem is limited。 screen space。 You might have an extra monitor， you might have two extra monitors。 Not all of your learners are necessarily going to have more than just a tiny little laptop， screen。
 
- screen space。 You might have an extra monitor， you might have two extra monitors。 Not all of your learners are necessarily going to have more than just a tiny little laptop， screen。
+ So if you're sharing your screen， that's now occupying space on their screen， then they， also。 if you're going to be live coding， need a coding window open next to that。 And heaven forbid you should ask them to participate in another window， they're going。 to be juggling windows with notes and all kinds of other things。
 
- So if you're sharing your screen， that's now occupying space on their screen， then they， also。 if you're going to be live coding， need a coding window open next to that。
+ So being intentional about that is a challenge。 Teaching online is just not。 it doesn't have some of those ingredients that people rely， on in person naturally as humans。 You can't see people's faces。 It's really difficult to read the room and to see what's going on out there。 We don't have sticky notes。 I'll talk a little bit about what our solutions are。
 
- And heaven forbid you should ask them to participate in another window， they're going。 to be juggling windows with notes and all kinds of other things。
+ I was glad to see that came up earlier today。 And just raising hands。 there isn't one clear way of doing that unless you create one。 Those side conversations that we rely on to provide help and to have coordination among。 helpers and co-instructors， they need dedicated channels now。
 
- So being intentional about that is a challenge。 Teaching online is just not。 it doesn't have some of those ingredients that people rely， on in person naturally as humans。
+ They can't just have a little chat on the side。 Helpers can't take over a learner's computer。 Now。 most of the time that's okay。 We don't actually want helpers to be doing everything for a learner。 We want the learners to do their typing， but there are times when you need to solve a problem。 And the fact that you can't take over someone's computer actually turns out to be a major。
 
- You can't see people's faces。 It's really difficult to read the room and to see what's going on out there。 We don't have sticky notes。 I'll talk a little bit about what our solutions are。
-
- I was glad to see that came up earlier today。 And just raising hands。 there isn't one clear way of doing that unless you create one。
-
- Those side conversations that we rely on to provide help and to have coordination among。 helpers and co-instructors， they need dedicated channels now。
-
- They can't just have a little chat on the side。 Helpers can't take over a learner's computer。 Now。 most of the time that's okay。 We don't actually want helpers to be doing everything for a learner。
-
- We want the learners to do their typing， but there are times when you need to solve a problem。 And the fact that you can't take over someone's computer actually turns out to be a major。
-
- barrier to that person's progress。 Yes， there are technically maybe ways of doing this。 but our understanding is that that， doesn't work so well in a workshop setting。
-
- And carpentries tend to be social events。 People come away feeling like they're part of a community and they report that as being。 an important part of their motivation and their happiness with the workshop。
+ barrier to that person's progress。 Yes， there are technically maybe ways of doing this。 but our understanding is that that， doesn't work so well in a workshop setting。 And carpentries tend to be social events。 People come away feeling like they're part of a community and they report that as being。 an important part of their motivation and their happiness with the workshop。
 
  And it's not something that just easily happens online。 You have to create opportunities for that socialization。 So， what are we going to do with this？
 
- There are so many different ways that you can actually teach a workshop online and not。 all of them are fully synchronous。 So， we sat down and considered the many。
+ There are so many different ways that you can actually teach a workshop online and not。 all of them are fully synchronous。 So， we sat down and considered the many。 many different opportunities that were in front， of us and determined that at least for now we really had to stay close to home。 We have our curriculum。 We have our teaching methods。 We can't change everything all at once。 So。
 
- many different opportunities that were in front， of us and determined that at least for now we really had to stay close to home。 We have our curriculum。 We have our teaching methods。 We can't change everything all at once。 So。
+ we're going to be making recommendations for now for live synchronous training。 We carpentries workshops are typically two-day events， which could be， for example， split。 over four half days， but we don't recommend getting too crazy with it。 We use Zoom in the carpentries， but any video conferencing platform that's used by a community。
 
- we're going to be making recommendations for now for live synchronous training。 We carpentries workshops are typically two-day events， which could be， for example， split。
+ will probably do。 We're trying to be minimalist in demanding unfamiliar technology at adoption。 Again， this is going to be challenging enough as it is without asking our community to adopt。 a whole bunch of new tools at the same time。 And we want it to be as similar as possible to the in-person workshops that we're currently。 doing。 One of the vital components of that in-person workshop that is even more important now is。
 
- over four half days， but we don't recommend getting too crazy with it。 We use Zoom in the carpentries， but any video conferencing platform that's used by a community。
+ that instructional team。 Right？ In-person workshop， there's a lot of things that are going on。 Things tend to kind of just work。 But in an online workshop。 that team becomes vitally important and having everyone on the。 team have a role and know what that role is and know how they're going to communicate。
 
- will probably do。 We're trying to be minimalist in demanding unfamiliar technology at adoption。 Again， this is going to be challenging enough as it is without asking our community to adopt。
+ about their role becomes really super important。 So one of the roles is instructor。 And that's great。 And that person ideally should only be teaching and not have to worry about all these different。 communications channels in chat and so on and so forth。 It's really difficult to attend to these things while you're teaching。
 
- a whole bunch of new tools at the same time。 And we want it to be as similar as possible to the in-person workshops that we're currently。 doing。 One of the vital components of that in-person workshop that is even more important now is。
-
- that instructional team。 Right？ In-person workshop， there's a lot of things that are going on。 Things tend to kind of just work。 But in an online workshop。
-
- that team becomes vitally important and having everyone on the。 team have a role and know what that role is and know how they're going to communicate。
-
- about their role becomes really super important。 So one of the roles is instructor。 And that's great。 And that person ideally should only be teaching and not have to worry about all these different。
-
- communications channels in chat and so on and so forth。 It's really difficult to attend to these things while you're teaching。
-
- So if you have an instructional team that can support you in that， it's really helpful。 Some of those instructional support roles might include someone who's designated to provide。
-
- technical help in particular， watching for technical hang-ups in the chat， providing。 help by whatever route you've decided with your instructional team is the best way to。
+ So if you have an instructional team that can support you in that， it's really helpful。 Some of those instructional support roles might include someone who's designated to provide。 technical help in particular， watching for technical hang-ups in the chat， providing。 help by whatever route you've decided with your instructional team is the best way to。
 
  provide that help。 So if you manage breakout rooms， are you using breakout rooms to provide help？
 
- Having somebody who's at the controls using the host feature in Zoom to create those breakouts。 invite people to those breakouts is really helpful。 Again。
+ Having somebody who's at the controls using the host feature in Zoom to create those breakouts。 invite people to those breakouts is really helpful。 Again。 not having the instructor responsible necessarily for managing that and having a。 facilitator on hand。 Somebody to watch for questions。
 
- not having the instructor responsible necessarily for managing that and having a。 facilitator on hand。 Somebody to watch for questions。
+ Somebody who's designated to step in if the instructor's Zoom connection fails。 Somebody to manage those co-host roles in Zoom where you can manage muting and other kinds。 of things on the slide。 Particularly with regard to that instructional team。 at this time for Carpentries workshops， we're not recommending that brand new instructors try to serve as primary instructors in an online。
 
- Somebody who's designated to step in if the instructor's Zoom connection fails。 Somebody to manage those co-host roles in Zoom where you can manage muting and other kinds。
+ workshop yet。 New instructors have a tendency to prepare。 Every heavily on content and prepare for every possible question that they might get about。 their content， they want to be really， really sure that they know their stuff that they're。 supposed to be teaching。 And that's great。 And that works in a regular Carpentries workshop when we kind of have this system that just。
 
- of things on the slide。 Particularly with regard to that instructional team。 at this time for Carpentries workshops， we're not recommending that brand new instructors try to serve as primary instructors in an online。
+ kind of takes care of it。 And you don't have to worry so much about planning how you're going to teach。 With an online workshop， there are so many different dimensions to planning， how you're。 going to teach and explaining how you're going to be teaching that we don't want to burden。 new instructors with both preparing content and preparing how to teach。
 
- workshop yet。 New instructors have a tendency to prepare。 Every heavily on content and prepare for every possible question that they might get about。
+ So we're suggesting we're having new instructors join。 We are still having new instructors join workshops， but we're providing them with a。 supporting instructor role now such that they have an opportunity to participate just in。 that how does the workshop run as part of the instructional team without having to worry。
 
- their content， they want to be really， really sure that they know their stuff that they're。 supposed to be teaching。 And that's great。 And that works in a regular Carpentries workshop when we kind of have this system that just。
+ so much about preparing their content。 And they can teach maybe small sections if they're adventurous。 but it allows them to observe， and learn a little bit about the mechanics of teaching these workshops and decide how。 they want to do it before they're faced with preparing both things at the same time。 So earlier it came up that there are so many ways of thinking about sticky notes and thinking。
 
- kind of takes care of it。 And you don't have to worry so much about planning how you're going to teach。 With an online workshop， there are so many different dimensions to planning， how you're。
+ about hands。 This was an instructor training staff meeting at the Carpentries earlier this week and how。 many different ways can you raise a hand and zoom。 Well， you've got this little hand icon。 There's the blue one that is just very blemising on some interfaces as far as I can tell。 I've never had a room full of people who are all able to find their hands。
 
- going to teach and explaining how you're going to be teaching that we don't want to burden。 new instructors with both preparing content and preparing how to teach。
+ They're these little emoji things that you can， it's kind of like a hand。 It's a hand clapping thing。 You can， some people just put up their hand and wave it around and wait for you to call。 on them which can be hard especially if you're the instructor and you can only see like four。 windows at a time because you're screen sharing。 And some people type hand in the chat。
 
- So we're suggesting we're having new instructors join。 We are still having new instructors join workshops， but we're providing them with a。
+ I prefer to use the chat for this。 Whatever you choose。 you've got to teach your learners how to use that feature and when。 to use it and those sorts of things。 So you really do need to set aside time in a workshop to talk about these things and train。 your learners and how to do it。 You also need to be intentional about your communications channel。
 
- supporting instructor role now such that they have an opportunity to participate just in。 that how does the workshop run as part of the instructional team without having to worry。
+ That zoom chat， you know， Elizabeth said at the beginning， it's great that everybody's。 saying hi from California and hi from New York and hi from wherever you are and that's， one。 But when it comes down to business， you've got to keep that chat clean because you're probably。 you might be taking hands there。 You might be taking questions there and it's really easy for things to get buried。
 
- so much about preparing their content。 And they can teach maybe small sections if they're adventurous。 but it allows them to observe， and learn a little bit about the mechanics of teaching these workshops and decide how。
+ So that one needs to be pretty quiet but there's a lot of other communication that needs to， happen。 Right。 So think you need to put effort into figuring out how the other communications are going。 to happen。 Are you going to be using breakout rooms？ How are they going to be used？
 
- they want to do it before they're faced with preparing both things at the same time。 So earlier it came up that there are so many ways of thinking about sticky notes and thinking。
+ Where are people going to socialize and plan？ And what in particular are the instructors and helpers going to use to communicate with。 each other？ And that's one that you've got to also think through notifications because probably an。 instructor is going to turn their notifications off。 What are you going to do if you need to get their attention in the middle of an instructional。
 
- about hands。 This was an instructor training staff meeting at the Carpentries earlier this week and how。 many different ways can you raise a hand and zoom。 Well， you've got this little hand icon。
+ session？ So these are all things。 I don't have all the answers here。 There are many different kinds of answers here but being intentional and putting effort。 into planning them is the key。 Trouble shooting。 Thank you， Bocia， for setting me up so nicely here。 I don't have to convince you that there are many different ways you're going to have to。
 
- There's the blue one that is just very blemising on some interfaces as far as I can tell。 I've never had a room full of people who are all able to find their hands。
+ trouble shooting a workshop。 We do suggest setting up an installation or to party prior to a workshop。 It's true that oftentimes people won't go to those。 I've heard of many different ways of trying to sweet talk or strong-arm people into attending。 these things。 We don't like strong-arm people in the carpentry。
 
- They're these little emoji things that you can， it's kind of like a hand。 It's a hand clapping thing。 You can， some people just put up their hand and wave it around and wait for you to call。
+ But finding ways of trying to get people to come when you can。 We also suggest considering a cloud-based option that's ready to hand out specifically。 and only to people who really have unresolved problems that makes it a little easier if you're。 not expecting everybody in your workshop to use these。
 
- on them which can be hard especially if you're the instructor and you can only see like four。 windows at a time because you're screen sharing。 And some people type hand in the chat。
+ We do like people to use their own machines when they can。 We will be setting up these instances for carpentry workshops。 Keep an eye on our blog in the next few days。 We should be seeing some news come out with regard to our workshops there。 And then also just having a general list of backup solutions for anything that might fail。
 
- I prefer to use the chat for this。 Whatever you choose。 you've got to teach your learners how to use that feature and when。
+ Or if you're teaching for someone else for a host institution， if someone there has suggestions。 for fallback options for you to use。 Sticky notes， these came up earlier。 Again。 the question of what should I use instead of sticky notes？ So there's a hand， right？
 
- to use it and those sorts of things。 So you really do need to set aside time in a workshop to talk about these things and train。 your learners and how to do it。 You also need to be intentional about your communications channel。
+ And you can raise hands。 But that's not the same thing as saying I need help or I'm done with this task or I'm。 good or you know， there are many different things that you can use sticky notes for。 And you can also， we ask our instructors to use other kinds of formative assessment。 It's what we call it when you ask questions or pull over answers or those kinds of things。
 
- That zoom chat， you know， Elizabeth said at the beginning， it's great that everybody's。 saying hi from California and hi from New York and hi from wherever you are and that's， one。
+ And so that nonverbal feedback and zoom can be used for this。 At the time of our meeting。 when I took the picture， we didn't have little X's and the， check marks enabled。 We've now turned those on for our zoom room。 So you can do like little X and check mark things on the windows in zoom。 If you can get that to work for all your learners， that might be a good substitute for sticky。
 
- But when it comes down to business， you've got to keep that chat clean because you're probably。 you might be taking hands there。 You might be taking questions there and it's really easy for things to get buried。
+ notes。 Also， zoom does also have a polling feature which we now have activated on more rooms and。 seems to work pretty well。 So you can put it together a poll for that or there's dozens of other polling platforms。 out there that you can use whichever one you like。 You can have people type type done when they're done with a task and the chat feedback。
 
- So that one needs to be pretty quiet but there's a lot of other communication that needs to， happen。 Right。 So think you need to put effort into figuring out how the other communications are going。
+ That can get a little hard to track when you have a particularly large class。 It's particularly difficult to figure out who hasn't answered。 So you can see who has answered but that's one of those situations where you're not necessarily。 going to know that you've heard from everyone。 And if you're using a chat that has emojis。
 
- to happen。 Are you going to be using breakout rooms？ How are they going to be used？
+ I haven't been able to type any of the emojis， in to zoom because my zoom won't do emojis。 But if you have a chat that will do emojis， you're good for that。 Finally， well， not finally。 There's a couple more things here。 But if you like to use a collaborative notes document。 the main thing to keep in mind for， that is screen real estate。
 
- Where are people going to socialize and plan？ And what in particular are the instructors and helpers going to use to communicate with。 each other？ And that's one that you've got to also think through notifications because probably an。
+ So there's lots of different tools you might use for note taking。 Just be clear about how and when you want them to switch over to using it in the event that。 they have to move things around on their screen to get there。 Recording。 Recording a workshop can be really helpful especially for people who might fall behind。 However。
 
- instructor is going to turn their notifications off。 What are you going to do if you need to get their attention in the middle of an instructional。
+ it has really important implications for privacy especially if you're going to。 be posting that recording somewhere where other people can access it which presumably。 is part of the reason why you're recording。 So at this time we're not recommending recording for Carpentries workshops。 Our staff are kind of looking at the various implications and thinking about this a little。
 
- session？ So these are all things。 I don't have all the answers here。 There are many different kinds of answers here but being intentional and putting effort。
+ bit more。 So it's potentially a valuable tool but certainly if you do record a workshop。 let people know， that you're recording and expect that it's going to change the behavior of learners in。 your room people may not be as happy about having their cameras on for example and they。 may feel a little bit more reluctant to ask questions。
 
- into planning them is the key。 Trouble shooting。 Thank you， Bocia， for setting me up so nicely here。 I don't have to convince you that there are many different ways you're going to have to。
+ Feedback is really important in all of our Carpentries workshops。 We ask our instructors to use those sticky notes in a second way which is to have people。 right on them at the breaks and give them positive and negative feedback。 This is really valuable not only for learning about the things you're doing wrong but learning。
 
- trouble shooting a workshop。 We do suggest setting up an installation or to party prior to a workshop。 It's true that oftentimes people won't go to those。
+ about the things you're doing right。 And having something to support your motivation for continuing to teach。 This is a sticky note that I keep by my desk to remind me on tough days about why we do。 all these things that we do。 So in this case again we don't have the real sticky notes but tools like Google Forms work。 well for this。 We have a minute card template that we have set up at the Carpentries that you can always。
 
- I've heard of many different ways of trying to sweet talk or strong-arm people into attending。 these things。 We don't like strong-arm people in the carpentry。
+ copy and use and people can add their positive and negative feedback there anonymously so。 that you can respond to that。 And feedback is also going to be really important for us。 We're launching into an enormous sort of assessment strategy around this online training because。 we know that the optimal scenario is really likely to be quite different from what we're。
 
- But finding ways of trying to get people to come when you can。 We also suggest considering a cloud-based option that's ready to hand out specifically。
+ suggesting initially。 And we want to hear about it as we learn more about how these workshops are working online。 And think about how we can collect that information。 aggregate that information and turn that information， into revised recommendations。 So we're working on ways to develop those best practices。
 
- and only to people who really have unresolved problems that makes it a little easier if you're。 not expecting everybody in your workshop to use these。
-
- We do like people to use their own machines when they can。 We will be setting up these instances for carpentry workshops。
-
- Keep an eye on our blog in the next few days。 We should be seeing some news come out with regard to our workshops there。 And then also just having a general list of backup solutions for anything that might fail。
-
- Or if you're teaching for someone else for a host institution， if someone there has suggestions。 for fallback options for you to use。 Sticky notes， these came up earlier。 Again。
-
- the question of what should I use instead of sticky notes？ So there's a hand， right？
-
- And you can raise hands。 But that's not the same thing as saying I need help or I'm done with this task or I'm。 good or you know， there are many different things that you can use sticky notes for。
-
- And you can also， we ask our instructors to use other kinds of formative assessment。 It's what we call it when you ask questions or pull over answers or those kinds of things。
-
- And so that nonverbal feedback and zoom can be used for this。 At the time of our meeting。 when I took the picture， we didn't have little X's and the， check marks enabled。
-
- We've now turned those on for our zoom room。 So you can do like little X and check mark things on the windows in zoom。 If you can get that to work for all your learners， that might be a good substitute for sticky。
-
- notes。 Also， zoom does also have a polling feature which we now have activated on more rooms and。 seems to work pretty well。 So you can put it together a poll for that or there's dozens of other polling platforms。
-
- out there that you can use whichever one you like。 You can have people type type done when they're done with a task and the chat feedback。
-
- That can get a little hard to track when you have a particularly large class。 It's particularly difficult to figure out who hasn't answered。
-
- So you can see who has answered but that's one of those situations where you're not necessarily。 going to know that you've heard from everyone。 And if you're using a chat that has emojis。
-
- I haven't been able to type any of the emojis， in to zoom because my zoom won't do emojis。 But if you have a chat that will do emojis， you're good for that。 Finally， well， not finally。
-
- There's a couple more things here。 But if you like to use a collaborative notes document。 the main thing to keep in mind for， that is screen real estate。
-
- So there's lots of different tools you might use for note taking。 Just be clear about how and when you want them to switch over to using it in the event that。
-
- they have to move things around on their screen to get there。 Recording。 Recording a workshop can be really helpful especially for people who might fall behind。 However。
-
- it has really important implications for privacy especially if you're going to。 be posting that recording somewhere where other people can access it which presumably。
-
- is part of the reason why you're recording。 So at this time we're not recommending recording for Carpentries workshops。 Our staff are kind of looking at the various implications and thinking about this a little。
-
- bit more。 So it's potentially a valuable tool but certainly if you do record a workshop。 let people know， that you're recording and expect that it's going to change the behavior of learners in。
-
- your room people may not be as happy about having their cameras on for example and they。 may feel a little bit more reluctant to ask questions。
-
- Feedback is really important in all of our Carpentries workshops。 We ask our instructors to use those sticky notes in a second way which is to have people。
-
- right on them at the breaks and give them positive and negative feedback。 This is really valuable not only for learning about the things you're doing wrong but learning。
-
- about the things you're doing right。 And having something to support your motivation for continuing to teach。 This is a sticky note that I keep by my desk to remind me on tough days about why we do。
-
- all these things that we do。 So in this case again we don't have the real sticky notes but tools like Google Forms work。 well for this。 We have a minute card template that we have set up at the Carpentries that you can always。
-
- copy and use and people can add their positive and negative feedback there anonymously so。 that you can respond to that。 And feedback is also going to be really important for us。
-
- We're launching into an enormous sort of assessment strategy around this online training because。 we know that the optimal scenario is really likely to be quite different from what we're。
-
- suggesting initially。 And we want to hear about it as we learn more about how these workshops are working online。 And think about how we can collect that information。
-
- aggregate that information and turn that information， into revised recommendations。 So we're working on ways to develop those best practices。
-
- We're going to be listening both in and beyond our community and if you have experiences。 to share we'd really love to hear about it。 So that's what I have。
-
- I would love to take questions or talk more about anything that you'd like to talk about。
+ We're going to be listening both in and beyond our community and if you have experiences。 to share we'd really love to hear about it。 So that's what I have。 I would love to take questions or talk more about anything that you'd like to talk about。
 ![](img/4cded4095a3983c5e6a540db30068996_27.png)
 
  Thank you， Karen。 We actually do have a couple of questions so I'll go ahead and start the moderation of。 the questions。 The first one is from Dan。 How do Carpentries instructors sign up for online beta teaching lessons？
 
  That is a really good question。 So with regard to beta teaching lessons you're talking about our lessons beyond our core。 collection， is that Dan， are you there to clarify your question？
 
- I think it's probably like the online pilots。 This online teaching workshop。 since all of our workshops are online right now， it's going。
+ I think it's probably like the online pilots。 This online teaching workshop。 since all of our workshops are online right now， it's going。 to be just like signing up for regular workshops except that they're going to be online。 Our instructor selection process is going to be a little bit different because we are。
 
- to be just like signing up for regular workshops except that they're going to be online。 Our instructor selection process is going to be a little bit different because we are。
+ assigning a larger instructional team to those workshops。 But our sign up process will not change。 Perfect。 Thank you。 That answered his question。 And the second question we have is from Matt。 Do you recommend learners have their cameras on during instruction？ You know。 I would say that from an instructor's standpoint， that's something that you want， to think about。
 
- assigning a larger instructional team to those workshops。 But our sign up process will not change。 Perfect。 Thank you。 That answered his question。 And the second question we have is from Matt。
+ how important that is to you。 Personally， I do find it really valuable when people have their cameras on。 But it's a sensitive thing right now as everyone stuck at home and sometimes， you know， those。 virtual Zoom backgrounds don't necessarily work for everyone。 So I definitely wouldn't require that people have them on whether you want to ask people。
 
- Do you recommend learners have their cameras on during instruction？ You know。 I would say that from an instructor's standpoint， that's something that you want， to think about。
+ to have them on。 I would say is sort of an instructor's discretion thing。 If you feel like it's valuable to you， I think it's okay to ask。 But also make it clear that it is optional。 And I'll just add on to that。 Just from an accessibility perspective as well。 We know that the video does pull on the bandwidth。
 
- how important that is to you。 Personally， I do find it really valuable when people have their cameras on。 But it's a sensitive thing right now as everyone stuck at home and sometimes， you know， those。
+ And so for individuals who are attending workshops from， you know， communities with low internet。 access and internet speeds or lack of access to the internet in general， having them asking。 them to keep their their camera on may present issues there as well。 We have about four minutes。 What other questions can we answer？ There is one more in from Bridget。 Oh， thank you。
 
- virtual Zoom backgrounds don't necessarily work for everyone。 So I definitely wouldn't require that people have them on whether you want to ask people。
+ So Bridget asked， I found that sitting and starting at a screen all day， somehow way more。 exhausting than sitting in in in person live meetings for adapting and all day training。 Do you have recommendations on how to adjust to avoid screen burnouts？ That's a great question。 Yeah， that's a， I mean， this is a problem in person workshops， to some extent。
 
- to have them on。 I would say is sort of an instructor's discretion thing。 If you feel like it's valuable to you， I think it's okay to ask。
+ Also staring at the protector all day isn't always that great。 But I personally， you know。 it's how you use the breakout rooms。 I think it is kind of key。 Breakouts work really well。 They're a really nice socialization option。 And they， but they're also good for like exercises。 especially if you have enough help to kind， of send out into into breakout rooms。
 
- But also make it clear that it is optional。 And I'll just add on to that。 Just from an accessibility perspective as well。 We know that the video does pull on the bandwidth。
+ So it's still staring at a screen， but talking to other humans and having a little bit of， time。 I love the mindfulness yoga breaks。 If that's you， you do you， that sounds awesome。 I do， you know。 have taking breaks， scheduling your breaks， letting people know what the。 schedule is and sticking to your schedule。 That's critical in all workshops and especially critical now。
 
- And so for individuals who are attending workshops from， you know， communities with low internet。 access and internet speeds or lack of access to the internet in general， having them asking。
+ If anyone has other suggestions， put them in the chat。 There are lots of great ways of coping with these。 I love paper based activities。 Sure。 If you can。 if you need to tell people that they got to have the paper handy， but if they're， at home。 then probably they can find them。 And yes， ask the people with pets to show them to the camera。
 
- them to keep their their camera on may present issues there as well。 We have about four minutes。 What other questions can we answer？ There is one more in from Bridget。 Oh， thank you。
+ That's a really good tip。 So I'm going to pop in here and say that probably to this room。 a lot of the carpentries is new， to a lot of people。 It's super not to me。 I've worked with the carpentries for years。 And I loved helping to work on this。 like the pilot stuff as well。 One thing that I love about the carpentries is that all of our instructor materials and。
 
- So Bridget asked， I found that sitting and starting at a screen all day， somehow way more。 exhausting than sitting in in in person live meetings for adapting and all day training。
+ training materials for how to do this stuff is available open access for free online。 There are so many amazing questions about live coding and all carpentries workshops， as。 you mentioned， are entirely live coding。 And I was wondering if you could highlight some of the resources and training materials。 that people could use if they want to brush up or get some pro tips on incorporating live， coding。
 
- Do you have recommendations on how to adjust to avoid screen burnouts？ That's a great question。 Yeah， that's a， I mean， this is a problem in person workshops， to some extent。
+ Sorry， could you repeat the question？ What cool resources are there for people who want to learn more about live coding that。 are hosted by？ Yeah， so we've got our instructor for training curriculum that's openly available and I。 will post a link to that in the chat shortly。 We've got some positive。 some sort of good and bad example videos built into that that， are kind of fun to watch。
 
- Also staring at the protector all day isn't always that great。 But I personally， you know。 it's how you use the breakout rooms。 I think it is kind of key。 Breakouts work really well。
+ I'd really like to get a good and bad example video going for online training also。 And am I missing anything？ We did release， we have a series of blog posts。 So if you are not subscribed to the carpentries blog， now will be a great time to do that because。 we've had community members from all over who are volunteering to teach workshops online。
 
- They're a really nice socialization option。 And they， but they're also good for like exercises。 especially if you have enough help to kind， of send out into into breakout rooms。
+ and they're sharing best practices。 And so now is a great time to subscribe to our blog and even our newsletter so you can。 see what's happening。 And then I want to make sure we get Kendra's question in before we run out of time。 Kendra asks， is there a plan for some group meetings after a few sites have our first。 online workshops？ So yes， that's the one I was trying to get in the chat。 I'm going to post a link。
 
- So it's still staring at a screen， but talking to other humans and having a little bit of， time。 I love the mindfulness yoga breaks。 If that's you， you do you， that sounds awesome。 I do， you know。
+ Well， yeah， so we have， we always have pre and post discussion opportunities for our instructors。 and we're， and those we call those community discussion meetings on Zoom。 We have this regularly and we're now going to be sort of expecting and hoping more people。 will come and talk about online trainings there。 We will probably also have some themed discussions where we really particularly invite people。
 
- have taking breaks， scheduling your breaks， letting people know what the。 schedule is and sticking to your schedule。 That's critical in all workshops and especially critical now。
+ to come and talk about online training issues there。 So that's where to look for that and we will be， I'm talking about these on our blog as， well。 Awesome。 And this will be our last question from Maryl。 Do you， this is a great question。 Do you plan to continue with online workshops in a post COVID-19 world？ That depends。 You know。
 
- If anyone has other suggestions， put them in the chat。 There are lots of great ways of coping with these。 I love paper based activities。 Sure。 If you can。
-
- if you need to tell people that they got to have the paper handy， but if they're， at home。 then probably they can find them。 And yes， ask the people with pets to show them to the camera。
-
- That's a really good tip。 So I'm going to pop in here and say that probably to this room。 a lot of the carpentries is new， to a lot of people。 It's super not to me。
-
- I've worked with the carpentries for years。 And I loved helping to work on this。 like the pilot stuff as well。 One thing that I love about the carpentries is that all of our instructor materials and。
-
- training materials for how to do this stuff is available open access for free online。 There are so many amazing questions about live coding and all carpentries workshops， as。
-
- you mentioned， are entirely live coding。 And I was wondering if you could highlight some of the resources and training materials。 that people could use if they want to brush up or get some pro tips on incorporating live， coding。
-
- Sorry， could you repeat the question？ What cool resources are there for people who want to learn more about live coding that。 are hosted by？ Yeah， so we've got our instructor for training curriculum that's openly available and I。
-
- will post a link to that in the chat shortly。 We've got some positive。 some sort of good and bad example videos built into that that， are kind of fun to watch。
-
- I'd really like to get a good and bad example video going for online training also。 And am I missing anything？ We did release， we have a series of blog posts。
-
- So if you are not subscribed to the carpentries blog， now will be a great time to do that because。 we've had community members from all over who are volunteering to teach workshops online。
-
- and they're sharing best practices。 And so now is a great time to subscribe to our blog and even our newsletter so you can。 see what's happening。 And then I want to make sure we get Kendra's question in before we run out of time。
-
- Kendra asks， is there a plan for some group meetings after a few sites have our first。 online workshops？ So yes， that's the one I was trying to get in the chat。 I'm going to post a link。
-
- Well， yeah， so we have， we always have pre and post discussion opportunities for our instructors。 and we're， and those we call those community discussion meetings on Zoom。
-
- We have this regularly and we're now going to be sort of expecting and hoping more people。 will come and talk about online trainings there。 We will probably also have some themed discussions where we really particularly invite people。
-
- to come and talk about online training issues there。 So that's where to look for that and we will be， I'm talking about these on our blog as， well。
-
- Awesome。 And this will be our last question from Maryl。 Do you， this is a great question。 Do you plan to continue with online workshops in a post COVID-19 world？ That depends。 You know。
-
- we're reworking our entire infrastructure to do these so in theory it's possible。 But this is very early in the process。 So how they go， how this fits in， how it， how it， what。
-
- how these new processes work with， their in-person， you know， when we pivot back。 there's going to be a lot of questions to， answer there。 So not sure yet。 And I will。
+ we're reworking our entire infrastructure to do these so in theory it's possible。 But this is very early in the process。 So how they go， how this fits in， how it， how it， what。 how these new processes work with， their in-person， you know， when we pivot back。 there's going to be a lot of questions to， answer there。 So not sure yet。 And I will。
 
  I'll sneak it in really quickly。 Do you have resources available in other languages？
 
- We actually do have several lessons that have been translated in Spanish。 And we actually have lessons that were translated in Korean and Japanese as well。
+ We actually do have several lessons that have been translated in Spanish。 And we actually have lessons that were translated in Korean and Japanese as well。 But in terms of the instructor training or the resources that we're working on right， now， Karen。 do you have， are you able to answer that question？
 
- But in terms of the instructor training or the resources that we're working on right， now， Karen。 do you have， are you able to answer that question？
+ Do we have resources available in other languages？ So yes， we have our， we're。 we run instructor trainings in Spanish from time to time are， that that translation。 Some of these translation efforts have been moved into closed platforms。 So if you're interested in being involved in our Spanish speaking community， I can， I。
 
- Do we have resources available in other languages？ So yes， we have our， we're。 we run instructor trainings in Spanish from time to time are， that that translation。
+ can put you in touch with the people who are involved in that at the moment。 That's the best way。 You have a couple of lessons that have been translated and， and our instructor training。 Yes。 team at Carpentries。org is a great way to， to contact about that。 Yeah， Dan。 that would be a great question to， to send to them afterwards。 Thank you so much。
 
- Some of these translation efforts have been moved into closed platforms。 So if you're interested in being involved in our Spanish speaking community， I can， I。
-
- can put you in touch with the people who are involved in that at the moment。 That's the best way。 You have a couple of lessons that have been translated and， and our instructor training。 Yes。
-
- team at Carpentries。org is a great way to， to contact about that。 Yeah， Dan。 that would be a great question to， to send to them afterwards。 Thank you so much。
-
- Karen and Carrie for presenting about this。 I love how it's sort of surrounding a lot。 I feel like so many of the questions we had in earlier talks or sort of represented in。
-
- the work that this group is doing。 Can we get a nice round of emoji applause。 emoji is able applause in the chat to thank， them for speaking and also nice round for all of our speakers as well。
+ Karen and Carrie for presenting about this。 I love how it's sort of surrounding a lot。 I feel like so many of the questions we had in earlier talks or sort of represented in。 the work that this group is doing。 Can we get a nice round of emoji applause。 emoji is able applause in the chat to thank， them for speaking and also nice round for all of our speakers as well。
 
  This has gone so smoothly。 I'm sorry。
 ![](img/4cded4095a3983c5e6a540db30068996_29.png)

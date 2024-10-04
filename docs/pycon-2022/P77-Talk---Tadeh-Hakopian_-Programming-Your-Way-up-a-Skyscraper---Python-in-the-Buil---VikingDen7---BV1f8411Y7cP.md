@@ -1,685 +1,183 @@
 # P77：Talk - Tadeh Hakopian_ Programming Your Way up a Skyscraper   Python in the Buil - VikingDen7 - BV1f8411Y7cP
 
  Hello and welcome。
-
 ![](img/9bc27498caebbe4a1cec728f064dce63_1.png)
 
 ![](img/9bc27498caebbe4a1cec728f064dce63_2.png)
 
- Our next presentation is about to start and for this presentation we have Tadehakopian。
+ Our next presentation is about to start and for this presentation we have Tadehakopian。 who is going to be talking about programming your way up Skype scrapper Python in the， B-word。 Help me welcome Tadeh with a round of applause。 By the way if you guys want to get a preview of the presentation before I get started。 if you want to keep catch up， I have the QR code and the tiny URL at PyARC and I'll have。
 
- who is going to be talking about programming your way up Skype scrapper Python in the， B-word。
+ it again at the end。 Let's get started。 A little bit about me， Tadehakopian， the program， manager。 background architecture， and an architecture engineering construction using， data， VR workflows。 teaching people about all these things， low code， Python coding for， a couple of years now。 In my experience one thing that was a big deal to me is that Python， makes it possible。
 
- Help me welcome Tadeh with a round of applause。 By the way if you guys want to get a preview of the presentation before I get started。
+ This is a showcase of how Python can support architects and design， in a lot of different ways。 As we talk about these examples and I go over them， consider， how you use your build space。 your environment around you， how you interact with it， and。 consider what it takes to get there as far as the design intent and making the concept。
 
- if you want to keep catch up， I have the QR code and the tiny URL at PyARC and I'll have。
+ into reality and the challenges they're in。 We get architects and architects。 People think architecture is a crowd of systems， pattern， languages， what have you。 That's a big part of it。 There's a lot of people who have a， CS architecture background。 But there's also architecture。 These examples are floor plans。 They have a common ground。
 
- it again at the end。 Let's get started。 A little bit about me， Tadehakopian， the program， manager。
+ The reason there's so much jargon shared between them is that。 there was a source material from the 60s and 70s from a guy called Christopher Alexander。 who was a traditional architect who talked about design patterns。 He's like a pattern， language。 He's like， you know， you can repeatedly use a pattern for designing a building， floor， plan。
 
- background architecture， and an architecture engineering construction using， data， VR workflows。
+ using windows in a certain arrangement。 That makes sense for a small building， for。 a apartment block， for a city。 And you can just scale this up。 And some computer science。 students picked up on this in the 70s。 And said， hey， this is a great idea。 So they borrowed。 a lot of his concepts and created the idea of design patterns， which is where you get。
 
- teaching people about all these things， low code， Python coding for， a couple of years now。
+ all these ideas of architecture into computer science。 There's actually a lot of shared knowledge。 between two groups as a lot of crossover appeal。 So there's already a lot in common。 And talk。 about architecture。 This is what people usually think about what architects do。 They think。 about a guy drawing on a board， coming up with ideas， being artistic， which is a big， part of it。
 
- In my experience one thing that was a big deal to me is that Python， makes it possible。
+ But these days， that would be more of a design sketch。 Whereas back in the， day。 they would just spend all day drawing。 They only need to do like 20 drawing sheets。 to get the whole building across a couple of sides， a couple of plans， and you're good， to go。 These days need a couple thousand drawings to get anything done。 So we moved on from this。
 
- This is a showcase of how Python can support architects and design， in a lot of different ways。
+ to something like this。 This is kind of how we work today。 It's not just a two-dimensional， image。 Our buildings are fully 3D realized。 And not just in the plain 3D geometry。 It includes。 the elevation of buildings， the geometry， every single account of the doors， windows， cross。 square footage， volumes of the walls， so forth。 So a lot of data is embedded into how we work。
 
- As we talk about these examples and I go over them， consider， how you use your build space。
+ today。 So it's not just an image or an example。 It's the real data。 And now that we have this。 data-rich format， we can have an easier time accessing it。 It was before it was literally。 just sketching and drawing and just not very useful data。 And this system for reference。 is called building information modeling。 It takes the design intent， geometry and data。
 
- your environment around you， how you interact with it， and。
+ and put it together into a common data environment where we can have access to all this at once。 and not have to have different ways of storing the information。 And it's just basically a。 relational database。 All you saw there is just tables connecting to each other。 And this。 is how it works in the world today。 We use some software。 I'll just use the one that's。
 
- consider what it takes to get there as far as the design intent and making the concept。
+ very common just as a reference in this world of building information modeling， BIM， Revit。 It's like billions of people use it。 So there's other ones， but we'll just use this as reference。 today， which itself has the 3D modeling capability and databases， which can give you something。 like an elevation。 It'll just create drawings。 You probably， if you had been in a building。
 
- into reality and the challenges they're in。 We get architects and architects。
+ of any kind that's either been renovated or built around up in the last 10 years， that's。 probably how they put it together。 So it's a lot more data-rich and accessible than it's。 ever been before。 But in order to access that， we need some special tools。 And this。 plaid-looking thing here is called Dynamo。 It's a low-code solution that connects the。
 
- People think architecture is a crowd of systems， pattern， languages， what have you。
+ data and geometry from these BIM solutions so we can manipulate it and get some custom。 workflows out of it。 And it's as simple as this。 You might have seen something like this， before。 Node-grad， for example， is the one that's pretty popular out there。 It's just。 a graph of nodes connecting each other with wires。 And it's basically your inputs， process， outputs。
 
- That's a big part of it。 There's a lot of people who have a， CS architecture background。
+ low-code or no-code solutions。 And that's what Dynamo looks like。 And you can。 use it to connect to the Revit API。 And you could do anything like do arithmetic operations。 You could put two numbers together and get a result。 But you can go further with it。 You。 can actually use it for working with geometry。 So you can draw a line in your model， select。
 
- But there's also architecture。 These examples are floor plans。 They have a common ground。
+ it here and actually figure out things like how do any points I need on the line， especially。 something like this with a curve。 You can just put the integers in there as a slider。 have a code block， space amount， and you get a result and you can input that in your model。 Which is really neat because you don't have to like sit there and try to figure out yourself。
 
- The reason there's so much jargon shared between them is that。
+ and draw it out or it takes forever。 So this is a really cool automation technology。 It's。 visual on spot and you can see the results。 And we go further with it。 I can create something。 like a floor plan。 I say a rectangular floor plan and I left there like 30 feet and 60 feet。 And I just tie in my XYZ coordinates for four corners。 And on the bottom there I have my。
 
- there was a source material from the 60s and 70s from a guy called Christopher Alexander。
+ different kinds of materials。 Curtain wall and levels， how many levels I want and a concrete。 slab at six inches。 I connect the dots on that rectangular corded set to create my shape and。 then I embed the types of equipment I want on there and materials to get some output of。 floors and walls and levels。 And we go from this geometry preview to this result。 That's。
 
- who was a traditional architect who talked about design patterns。 He's like a pattern， language。
+ about 70 stories of a tower。 So we just built our skyscraper in like two seconds。 It's that， quick。 If I did that manually it would take me an hour maybe two。 So it's pretty cool。 results you can do with Dynamo。 And you can also do some unconventional things。 You can。 take these kind of coblocks， you can just come up with a wavy pattern on your wall。 It could。
 
- He's like， you know， you can repeatedly use a pattern for designing a building， floor， plan。
+ put some art on it。 If you want to do something a little unique and again you can be played。 all of it。 And you don't have to be an expert in coding to use it。 And also you can just。 preview geometry。 You want to play around with， connect things， you know just see how things。 play out。 Which is really neat if you're kind of into that whole touchy feely kind of molding。
 
- using windows in a certain arrangement。 That makes sense for a small building， for。
+ clay idea which a lot of designers are。 Not too comfortable with just visual textual code。 But you might be asking this is all cool。 Great。 What was happening with Python？ Somebody， there。 It also has a Python script node。 Within it。 This was my kind of gateway into the world。 Python years ago。 But I was really wanting to use it but I had no way using it。 It works。
 
- a apartment block， for a city。 And you can just scale this up。 And some computer science。
+ You can do anything with Python from those parts but Dynamo did have one。 It has a little。 IDE in it。 You just import the runtime。 You import the geometry library that comes with。 Dynamo software。 And you have an input node。 So you have to have a wire coming in。 And you。 have an output node。 It's a little different from your typical Python script。 Otherwise。
 
- students picked up on this in the 70s。 And said， hey， this is a great idea。 So they borrowed。
+ very similar concept。 And what's great about it， you don't have to use the API。 You don't。 have to know anything about the SDK。 You could just use this Python script plus the Dynamo。 script to get things into your database。 And that API for Revit is a beast。 It's not user， friendly。 And it's nice to get around it。 So instead of using all that， you can just。
 
- a lot of his concepts and created the idea of design patterns， which is where you get。
+ run it with a Python script in Dynamo。 And it uses iron Python or seed Python at this point。 as for implementation。 So I can give you an example。 We can just do a loop to make a bunch。 of stuff。 And in this case， this happens all the time。 It's a keystroke。 You can get things。 into your model real quick， whatever you're trying to build。 So even with a low-code script。
 
- all these ideas of architecture into computer science。 There's actually a lot of shared knowledge。
+ it will take me a little bit of time to create a loop。 Because I'm saying， okay， how can。 I get some coordinates going on？ There's an example of a little script we have here。 where we just import our runtime environments， the geometry。 And then also want to write into。 Revit。 So I have to import the Revit stuff in here。 And all I'm doing is saying， whatever。
 
- between two groups as a lot of crossover appeal。 So there's already a lot in common。 And talk。
+ family I want to put in there， family being just the object you want to put in there， create。 some coordinates。 X， Y， Z， Z， Z， Z， Z， Z， Z， and give me an output list。 So it's a X range。 at 0 to 100 feet in 20 foot increments， destined the for loop for Y and that X range， same thing。 0 to 120。 And then Z in that range。 So I get my X， Y， Zs at however many intervals and。
 
- about architecture。 This is what people usually think about what architects do。 They think。
+ however many steps。 And then I spit out a value of point by coordinates and X， Y， Z。 And I say。 okay， the column is going to be the family instance times the， at the point。 by coordinates and then append a column to that。 That's it。 So that's the entirety of， the effort。 So I could take something like that， put it into the ID for the script and， I push out all that。
 
- about a guy drawing on a board， coming up with ideas， being artistic， which is a big， part of it。
+ So I get without using a bunch of like nodes and wires and all that。 I have the entire geometry listed right there in front of me。 Which is really neat because。 I can handle this off to just about anybody， if they don't know anything about coding or， Python。 just change those numbers。 They're good enough。 It's like， yes， just use the numbers。
 
- But these days， that would be more of a design sketch。 Whereas back in the， day。
+ change them and you can figure out the rest there。 So that's really easy to read。 It's。 compact and it's just nice because you can take that and actually push that into your， model。 And recently I've done this where I had to do this exact same thing like I don't， know， 6，000 times。 And I did not want to manually do that 6，000 times or any other way。 This is， just a quick like。
 
- they would just spend all day drawing。 They only need to do like 20 drawing sheets。
+ as long as you know your range， it will spit out everything pretty cleanly。 So it's kind of things you can do here with some basic scripting and examples that we。 can't easily attain even with those low code nodes。 And you can take it further。 You can。 put everything in the script。 If you know what you want， you can just assign say with and。
 
- to get the whole building across a couple of sides， a couple of plans， and you're good， to go。
+ length parameters and have an origin point， have an axis and tell to turn the axis and。 you get this cool twisting tower effect。 So this skyscraper I had before， which is like。 what are semi levels。 If I were to use those nodes that will string， that will take a minute。 But I can use this to just say twist it and twist it does。 And you can have a lot of fun， with this。
 
- These days need a couple thousand drawings to get anything done。 So we moved on from this。
+ And again， it's pretty easy to read。 There's nothing really crazy about that。 They can get longer of course， but these are just compact examples。 This is an example of。 just very easy accessible use of Python in the design world。 And you can take it further。 You can use examples of how you can do something as complicated as having these array of steel。
 
- to something like this。 This is kind of how we work today。 It's not just a two-dimensional， image。
+ curters and beams aligned in a weird way。 You can use the script to help you to create。 that as well。 Otherwise， it would be a bit of an effort。 Some of our software is not very。 friendly to change。 So this is great to have something like this between the low code solution。 and the code solution to create geometry that we can use for some cool projects。 And you can。
 
- Our buildings are fully 3D realized。 And not just in the plain 3D geometry。 It includes。
+ take it even further。 This example here， I don't have to link it。 It's this whole sample。 of how you make a train station canopy with these kind of tools very quickly。 So you can。 manipulate all the diamond shapes you see here without having to spend literally like， a month。 a month， not the old fashioned way。 So these are kind of possibilities we have。
 
- the elevation of buildings， the geometry， every single account of the doors， windows， cross。
+ now with Python and all these other solutions that we didn't have even ten years ago。 And。 that encouraged me to make my own course about it。 This was a couple years ago and that I。 made my own course。 I learned about it。 I studied it and I created my own course about。 how you can do all this stuff in with Python， with Dynamo in this environment。 So I can show。
 
- square footage， volumes of the walls， so forth。 So a lot of data is embedded into how we work。
+ other people in design industry how they can use it for all sorts of different purposes。 And of course， like anything else with code， you do have to debug it。 That's what happens。 when things don't work when you have errors and warnings， get those yell boxes。 So you're。 not free from errors and all that。 It's part of the reality of any coding。 But it's a pretty。
 
- today。 So it's not just an image or an example。 It's the real data。 And now that we have this。
+ fun learning experience with this because you see your results。 Either you have some crazy。 shapes that shouldn't happen or you have way too many objects or not enough。 So it's。 kind of fun to see those results pop up from you。 It's very encouraging。 It's a very good。 experience for first-term learners。 And you might ask， what about other things？ What。
 
- data-rich format， we can have an easier time accessing it。 It was before it was literally。
+ about drawings？ Well， here's the thing。 Everything we just saw was just the Dynamo solution which。 comes with the right software。 There's a whole community working with Python to create their。 own solutions。 This， for example， is called Pyrebit。 It's a rapid application prototyping， solution。 The idea here is that you can， if you really want to， you can skip all that。
 
- just sketching and drawing and just not very useful data。 And this system for reference。
+ stuff with low code and Dynamo just have this sit on top of the software and you instead。 have to worry about C# and the SDK and all that。 You just run with this Pyrebit solution。 which is built on another open source solution called a Python wrapper。 So the whole community。 out there， nobody really wants to use the SDK for Rebit。 That's how badly you want to。
 
- is called building information modeling。 It takes the design intent， geometry and data。
+ get around is。 It's very painful。 So everybody just kind of made their own solutions。 So Pyrebit。 was on project， the RPW， the Python wrapper was another project and they just put their。 heads together and made this。 And what's cool is there's a whole tool bar that does a lot。 of automation for you out of the box and you can make your own tools。 And people have been。
 
- and put it together into a common data environment where we can have access to all this at once。
+ doing this using these solutions for a couple of years now。 It's been great because you。 can take like inside of your software。 You don't have to use the low code environments。 directly there。 You can share it with your coworkers as an application。 It's all kind。 of prepackage and batteries included for you。 And， you know， it looks like this。 That's。
 
- and not have to have different ways of storing the information。 And it's just basically a。
+ the monstrous API nobody wants to use。 You still have to learn how to use it。 A fun， story。 This website here is actually another open source project called Rebit API docs that。 somebody else made because the API documentation that the developers released was really bad。 So this guy basically put it online and the developers then use it themselves to get out。
 
- relational database。 All you saw there is just tables connecting to each other。 And this。
+ their own documentation for different versions of the software。 So that's an open source solution。 to figure out all the code samples。 And then you can use it。 It's kind of hard to read。 That's Python based， not C# that you can use to create your own applications to do cool。 things like edit unconventional shapes or weird shapes and things you can't do out of the。
 
- is how it works in the world today。 We use some software。 I'll just use the one that's。
+ box or you have to spend a lot of money on a third party solution。 So now you can just。 directly edit with Python into the model which is great。 And if I say I created it， it works。 I can share with anybody else all for free。 And we also， stepping out of all this other。 BIM software， we have Blender， the very popular software general modeling。 There's a lot of。
 
- very common just as a reference in this world of building information modeling， BIM， Revit。
-
- It's like billions of people use it。 So there's other ones， but we'll just use this as reference。
-
- today， which itself has the 3D modeling capability and databases， which can give you something。
-
- like an elevation。 It'll just create drawings。 You probably， if you had been in a building。
-
- of any kind that's either been renovated or built around up in the last 10 years， that's。
-
- probably how they put it together。 So it's a lot more data-rich and accessible than it's。
-
- ever been before。 But in order to access that， we need some special tools。 And this。
-
- plaid-looking thing here is called Dynamo。 It's a low-code solution that connects the。
-
- data and geometry from these BIM solutions so we can manipulate it and get some custom。
-
- workflows out of it。 And it's as simple as this。 You might have seen something like this， before。
-
- Node-grad， for example， is the one that's pretty popular out there。 It's just。
-
- a graph of nodes connecting each other with wires。 And it's basically your inputs， process， outputs。
-
- low-code or no-code solutions。 And that's what Dynamo looks like。 And you can。
-
- use it to connect to the Revit API。 And you could do anything like do arithmetic operations。
-
- You could put two numbers together and get a result。 But you can go further with it。 You。
-
- can actually use it for working with geometry。 So you can draw a line in your model， select。
-
- it here and actually figure out things like how do any points I need on the line， especially。
-
- something like this with a curve。 You can just put the integers in there as a slider。
-
- have a code block， space amount， and you get a result and you can input that in your model。
-
- Which is really neat because you don't have to like sit there and try to figure out yourself。
-
- and draw it out or it takes forever。 So this is a really cool automation technology。 It's。
-
- visual on spot and you can see the results。 And we go further with it。 I can create something。
-
- like a floor plan。 I say a rectangular floor plan and I left there like 30 feet and 60 feet。
-
- And I just tie in my XYZ coordinates for four corners。 And on the bottom there I have my。
-
- different kinds of materials。 Curtain wall and levels， how many levels I want and a concrete。
-
- slab at six inches。 I connect the dots on that rectangular corded set to create my shape and。
-
- then I embed the types of equipment I want on there and materials to get some output of。
-
- floors and walls and levels。 And we go from this geometry preview to this result。 That's。
-
- about 70 stories of a tower。 So we just built our skyscraper in like two seconds。 It's that， quick。
-
- If I did that manually it would take me an hour maybe two。 So it's pretty cool。
-
- results you can do with Dynamo。 And you can also do some unconventional things。 You can。
-
- take these kind of coblocks， you can just come up with a wavy pattern on your wall。 It could。
-
- put some art on it。 If you want to do something a little unique and again you can be played。
-
- all of it。 And you don't have to be an expert in coding to use it。 And also you can just。
-
- preview geometry。 You want to play around with， connect things， you know just see how things。
-
- play out。 Which is really neat if you're kind of into that whole touchy feely kind of molding。
-
- clay idea which a lot of designers are。 Not too comfortable with just visual textual code。
-
- But you might be asking this is all cool。 Great。 What was happening with Python？ Somebody， there。
-
- It also has a Python script node。 Within it。 This was my kind of gateway into the world。
-
- Python years ago。 But I was really wanting to use it but I had no way using it。 It works。
-
- You can do anything with Python from those parts but Dynamo did have one。 It has a little。
-
- IDE in it。 You just import the runtime。 You import the geometry library that comes with。
-
- Dynamo software。 And you have an input node。 So you have to have a wire coming in。 And you。
-
- have an output node。 It's a little different from your typical Python script。 Otherwise。
-
- very similar concept。 And what's great about it， you don't have to use the API。 You don't。
-
- have to know anything about the SDK。 You could just use this Python script plus the Dynamo。
-
- script to get things into your database。 And that API for Revit is a beast。 It's not user， friendly。
-
- And it's nice to get around it。 So instead of using all that， you can just。
-
- run it with a Python script in Dynamo。 And it uses iron Python or seed Python at this point。
-
- as for implementation。 So I can give you an example。 We can just do a loop to make a bunch。
-
- of stuff。 And in this case， this happens all the time。 It's a keystroke。 You can get things。
-
- into your model real quick， whatever you're trying to build。 So even with a low-code script。
-
- it will take me a little bit of time to create a loop。 Because I'm saying， okay， how can。
-
- I get some coordinates going on？ There's an example of a little script we have here。
-
- where we just import our runtime environments， the geometry。 And then also want to write into。
-
- Revit。 So I have to import the Revit stuff in here。 And all I'm doing is saying， whatever。
-
- family I want to put in there， family being just the object you want to put in there， create。
-
- some coordinates。 X， Y， Z， Z， Z， Z， Z， Z， Z， and give me an output list。 So it's a X range。
-
- at 0 to 100 feet in 20 foot increments， destined the for loop for Y and that X range， same thing。
-
- 0 to 120。 And then Z in that range。 So I get my X， Y， Zs at however many intervals and。
-
- however many steps。 And then I spit out a value of point by coordinates and X， Y， Z。 And I say。
-
- okay， the column is going to be the family instance times the， at the point。
-
- by coordinates and then append a column to that。 That's it。 So that's the entirety of， the effort。
-
- So I could take something like that， put it into the ID for the script and， I push out all that。
-
- So I get without using a bunch of like nodes and wires and all that。
-
- I have the entire geometry listed right there in front of me。 Which is really neat because。
-
- I can handle this off to just about anybody， if they don't know anything about coding or， Python。
-
- just change those numbers。 They're good enough。 It's like， yes， just use the numbers。
-
- change them and you can figure out the rest there。 So that's really easy to read。 It's。
-
- compact and it's just nice because you can take that and actually push that into your， model。
-
- And recently I've done this where I had to do this exact same thing like I don't， know， 6，000 times。
-
- And I did not want to manually do that 6，000 times or any other way。 This is， just a quick like。
-
- as long as you know your range， it will spit out everything pretty cleanly。
-
- So it's kind of things you can do here with some basic scripting and examples that we。
-
- can't easily attain even with those low code nodes。 And you can take it further。 You can。
-
- put everything in the script。 If you know what you want， you can just assign say with and。
-
- length parameters and have an origin point， have an axis and tell to turn the axis and。
-
- you get this cool twisting tower effect。 So this skyscraper I had before， which is like。
-
- what are semi levels。 If I were to use those nodes that will string， that will take a minute。
-
- But I can use this to just say twist it and twist it does。 And you can have a lot of fun， with this。
-
- And again， it's pretty easy to read。 There's nothing really crazy about that。
-
- They can get longer of course， but these are just compact examples。 This is an example of。
-
- just very easy accessible use of Python in the design world。 And you can take it further。
-
- You can use examples of how you can do something as complicated as having these array of steel。
-
- curters and beams aligned in a weird way。 You can use the script to help you to create。
-
- that as well。 Otherwise， it would be a bit of an effort。 Some of our software is not very。
-
- friendly to change。 So this is great to have something like this between the low code solution。
-
- and the code solution to create geometry that we can use for some cool projects。 And you can。
-
- take it even further。 This example here， I don't have to link it。 It's this whole sample。
-
- of how you make a train station canopy with these kind of tools very quickly。 So you can。
-
- manipulate all the diamond shapes you see here without having to spend literally like， a month。
-
- a month， not the old fashioned way。 So these are kind of possibilities we have。
-
- now with Python and all these other solutions that we didn't have even ten years ago。 And。
-
- that encouraged me to make my own course about it。 This was a couple years ago and that I。
-
- made my own course。 I learned about it。 I studied it and I created my own course about。
-
- how you can do all this stuff in with Python， with Dynamo in this environment。 So I can show。
-
- other people in design industry how they can use it for all sorts of different purposes。
-
- And of course， like anything else with code， you do have to debug it。 That's what happens。
-
- when things don't work when you have errors and warnings， get those yell boxes。 So you're。
-
- not free from errors and all that。 It's part of the reality of any coding。 But it's a pretty。
-
- fun learning experience with this because you see your results。 Either you have some crazy。
-
- shapes that shouldn't happen or you have way too many objects or not enough。 So it's。
-
- kind of fun to see those results pop up from you。 It's very encouraging。 It's a very good。
-
- experience for first-term learners。 And you might ask， what about other things？ What。
-
- about drawings？ Well， here's the thing。 Everything we just saw was just the Dynamo solution which。
-
- comes with the right software。 There's a whole community working with Python to create their。
-
- own solutions。 This， for example， is called Pyrebit。 It's a rapid application prototyping， solution。
-
- The idea here is that you can， if you really want to， you can skip all that。
-
- stuff with low code and Dynamo just have this sit on top of the software and you instead。
-
- have to worry about C# and the SDK and all that。 You just run with this Pyrebit solution。
-
- which is built on another open source solution called a Python wrapper。 So the whole community。
-
- out there， nobody really wants to use the SDK for Rebit。 That's how badly you want to。
-
- get around is。 It's very painful。 So everybody just kind of made their own solutions。 So Pyrebit。
-
- was on project， the RPW， the Python wrapper was another project and they just put their。
-
- heads together and made this。 And what's cool is there's a whole tool bar that does a lot。
-
- of automation for you out of the box and you can make your own tools。 And people have been。
-
- doing this using these solutions for a couple of years now。 It's been great because you。
-
- can take like inside of your software。 You don't have to use the low code environments。
-
- directly there。 You can share it with your coworkers as an application。 It's all kind。
-
- of prepackage and batteries included for you。 And， you know， it looks like this。 That's。
-
- the monstrous API nobody wants to use。 You still have to learn how to use it。 A fun， story。
-
- This website here is actually another open source project called Rebit API docs that。
-
- somebody else made because the API documentation that the developers released was really bad。
-
- So this guy basically put it online and the developers then use it themselves to get out。
-
- their own documentation for different versions of the software。 So that's an open source solution。
-
- to figure out all the code samples。 And then you can use it。 It's kind of hard to read。
-
- That's Python based， not C# that you can use to create your own applications to do cool。
-
- things like edit unconventional shapes or weird shapes and things you can't do out of the。
-
- box or you have to spend a lot of money on a third party solution。 So now you can just。
-
- directly edit with Python into the model which is great。 And if I say I created it， it works。
-
- I can share with anybody else all for free。 And we also， stepping out of all this other。
-
- BIM software， we have Blender， the very popular software general modeling。 There's a lot of。
-
- cool things。 And everybody， it's like one of the most popular three modeling software， out there。
-
- You can use it for animation， industrial design， you need it。 And it's written in C and。
-
-
-
+ cool things。 And everybody， it's like one of the most popular three modeling software， out there。 You can use it for animation， industrial design， you need it。 And it's written in C and。
 ![](img/9bc27498caebbe4a1cec728f064dce63_4.png)
 
 ![](img/9bc27498caebbe4a1cec728f064dce63_5.png)
 
- C++ but has a lot of support for Python with scripting。 And this image has nothing to do。
+ C++ but has a lot of support for Python with scripting。 And this image has nothing to do。 with my talk。 I just thought it was really cool。 It's kind of what you can do in Blender。 It's like animations and shading。 It's really cool。 It's a really awesome software。 It's。 pretty user friendly too。 And it's open source。 Totally free。 Just grab it。 And the way it。
 
- with my talk。 I just thought it was really cool。 It's kind of what you can do in Blender。
+ works is these things called meshes to primitive meshes to create geometry。 It's pretty easy。 to play around with。 As you see at the bottom there， it too has a low code solution。 So it's。 game -- these kind of solutions are pretty popular。 You can use a low code， you can use。 Python scripting， you can use keystrokes in UI。 It's a pretty easy to play around with。
 
- It's like animations and shading。 It's really cool。 It's a really awesome software。 It's。
+ But you can't use them immediately for architecture design。 That's where the Blender Brimad comes。 in。 It's an open source software that was like， hey， it's really cool if we just use。 Blender to model our building information modeling。 Right now Blender just meshes and。 geometries doesn't do the whole database side of things。 But if we took the geometry and。
 
- pretty user friendly too。 And it's open source。 Totally free。 Just grab it。 And the way it。
+ meshes and push to the database。 So this is the middleman here that can quickly take。 your model ideas into a software and continue working on the database side。 And that's what。 happens when you have the geometry and meshes from a Blender solution and scale it up for。 a building。 And all you're doing here is just taking those meshes， making those shapes。
 
- works is these things called meshes to primitive meshes to create geometry。 It's pretty easy。
+ the shapes that have solids， the solids and become loaded with walls and doors， architectural。 helmets。 And then you can at the end see that section of a floor plan and they can put on， a sheet。 Very， very fast， very cool。 This is kind of like everybody's dream。 So just。 quickly do something in the software。 And I think this is kind of where things are going。
 
- to play around with。 As you see at the bottom there， it too has a low code solution。 So it's。
+ They don't want to eat it to get to their awesome ideas。 A lot of architects and people。 in engineering construction， they have to eat it to get to anything nice and this cuts。 out a lot of that。 And what's really cool is you can combine Blender bin head in with， the IFC。 IFC is like the JSON of the BIM world。 It's an industry foundation classes。 So it's。
 
- game -- these kind of solutions are pretty popular。 You can use a low code， you can use。
+ like a non-proprietary。 And you can use that to then take the Blender stuff， use this IFC。 format to then through Blender into these other softwares。 Then you can then load as an。 exchangeable file。 Then you can start editing those in your proprietary BIM software， which。 is there's a bunch of them。 Not just Revit， there's a whole gang of them。 And you can do。
 
- Python scripting， you can use keystrokes in UI。 It's a pretty easy to play around with。
+ cool stuff like this。 You can take your ideas as a giant mesh or a series of meshes， create。 generative options of a loft of a tower like this where the base is a bigger shape and the。 top is a smaller shape。 You loft that up so the top and bottom connect。 You give it a。 twist and before you know it you get architecture。 And this is a amazingly fast way of doing it。
 
- But you can't use them immediately for architecture design。 That's where the Blender Brimad comes。
+ on Blender。 They can push it to your other software and work with it。 It's very cool， stuff。 But we're not done yet。 There's also this cool ladybug。 And this is what's cool。 about ladybug tools。 It's for climate and weather analysis。 We're increasingly concerned。 about how the built environment of any kind is using energy。 It's good for comfort。 And。
 
- in。 It's an open source software that was like， hey， it's really cool if we just use。
+ so there's been a whole spread of solutions and one of them is ladybug。 And it works。 with just about any popular geometry engine。 It's all written in Python。 You just pip install。 LBT dash ladybug if you want to try it out。 It's all free。 And what it does is stuff， like this。 It can help you do solar path analysis。 A big old arch tube thing like at the top， there。
 
- Blender to model our building information modeling。 Right now Blender just meshes and。
+ That's just every position the sun would travel throughout the year。 And it gives a， latitude。 So you can just study a building and figure out what the solar properties were。 What it looks like when the sun pops in through your window。 What parts of the room they give。 time a year are getting sunlight。 What are it？ What's a good way to make it a comfortable， space。
 
- geometries doesn't do the whole database side of things。 But if we took the geometry and。
+ Not too much heat。 Not too cold。 So you have to run the heater。 You know， just， make it efficient。 These are the kind of tools and solutions coming around to help people。 study that and make a better design， a better building， a lower energy building that has。 a better carbon footprint for the environment。 And this is just an example of running in。
 
- meshes and push to the database。 So this is the middleman here that can quickly take。
+ that dynamo local platform。 But it's a lot of other things。 So that's what's nice about， it。 It's very versatile。 And it has its friend， honeybee。 Which also does similar things。 In。 this case it does visualization for data energy analysis。 So you can figure out， you know。 size and lows throughout the year， throughout the day， 24 hour period， a six month period， whatever。
 
- your model ideas into a software and continue working on the database side。 And that's what。
+ It gives you some visualizations。 They have a whole tool set here。 Now you can。 do this all with the tool sets。 They can also do some cool stuff with generative design and。 option areas that they call it。 Where you can just， you know， use the AI machine learning。 tools to your advantage to figure out every possible scenario。 Like different sizes of， your room。
 
- happens when you have the geometry and meshes from a Blender solution and scale it up for。
+ windows， alignments， what have you， get a bunch of different results and help。 you kind of determine what is a better set of parameters you can use to move forward with。 and narrow down your selection。 So you don't have to do that manually。 These are the kind。 of tools people are using right now for just working on buildings and structures and making。
 
- a building。 And all you're doing here is just taking those meshes， making those shapes。
+ sure we have really sound ideas and sounds design solutions。 And again， all done through。 tools that you would use from either built on Python or from Python libraries。 And that's。 what's great about the future is just going a direction where Python is going to be a great。 exchange of data between all these different sets。 So you can feed data from all sorts of。
 
- the shapes that have solids， the solids and become loaded with walls and doors， architectural。
+ different model formats and databases， SQL， integrate them through open exchanges to Python。 And then for Python， use your different libraries like pandas， we're going to have you to get。 some analysis out of it so that it's not stuck。 That's been kind of the issue with the world。 I'm in in the built environment。 Things get stuck in one place or another。 They look great。
 
- helmets。 And then you can at the end see that section of a floor plan and they can put on， a sheet。
+ until you want to extract data。 But this is one way to at least that data is to do these。 open standards， accessible coding solutions for people at every stage and use Python to。 create some data analysis。 And the future will be more data science because there's more。 interest in how you can use data and things like machine learning to help us understand。
 
- Very， very fast， very cool。 This is kind of like everybody's dream。 So just。
+ what's going on in our buildings。 They're very complex。 You only see the facade but there's。 a whole engine of stuff happening in the hood that needs to be studied building something。 depending on how you look at the reference。 It was like 20-25% of our carbon friction。 comes from buildings。 So how do we better design buildings that have a lower carbon impact？ IoT。
 
- quickly do something in the software。 And I think this is kind of where things are going。
+ Things like a micro-prathon that can help us develop IoT solutions and digital twin。 solutions to help us monitor our buildings。 Just about everything is moving in a direction。 of visual twins for structures small and big。 Everything in the building industry is also。 10 years behind the times。 If everything was already IoT kicking off 10 years ago as a， big wave。
 
- They don't want to eat it to get to their awesome ideas。 A lot of architects and people。
+ this watch is an IoT device of my heart。 So we try to see how can we do something。 like that for the entire structure and get some real good data of a reason to much energy。 Spaces people aren't going to because it's inconvenient。 Maybe this room。 Some applications。 Of course， I saw the demo this morning by Peter Wang of all the cool stuff， we do with Python。
 
- in engineering construction， they have to eat it to get to anything nice and this cuts。
+ PyScript with WebAssembly and Michael。 There you go。 There's also the， cool custom applications。 I mentioned Pyrebit would have you earlier。 If you don't want。 to buy a real or a bus solution because you don't need it or you don't know what to do。 with the other tools out there， you can at least try to make your own tools or a lot。
 
- out a lot of that。 And what's really cool is you can combine Blender bin head in with， the IFC。
+ more compact or use somebody else's tool set to the point and direct solutions for what， you want。 This is all the fields that Python can feed into。 Shout out to all the open source maintainers out there。 Everything I just talked about， here was an open source project。 Dynamo。 even though it's based on a corporate， from， ourselves as an open source。 I could make my own copy。
 
- IFC is like the JSON of the BIM world。 It's an industry foundation classes。 So it's。
+ they're great team。 I didn't， show you grass over this time。 but that's a similar looking thing by another corporate， sponsor。 Blender， of course。 completely open source。 One of the best examples open source。 Pyre Revit and all the other tools I showed you。 These guys are great。 I would not be able。
 
- like a non-proprietary。 And you can use that to then take the Blender stuff， use this IFC。
+ to speak to you guys today if it wasn't for these kind of tools。 I always like to show。 my appreciation。 Of course， the Python software foundation they're all sent to。 Programners should be fun。 That's why I picked Python。 JavaScript's great。 C#'s great。 They're。 all great， but Python really made me enjoy what I'm doing with architecture and design。
 
- format to then through Blender into these other softwares。 Then you can then load as an。
+ They feel like I was hitting a wall of pain， trying to figure out how to debug something。 It was way more accessible。 That's why I like this program language。 I just prepared Python makes it possible。 This is the beauty of Python。 It does so many things。 great。 You find interest in any of these things， any of the solutions I showed you today。 Consider。
 
- exchangeable file。 Then you can start editing those in your proprietary BIM software， which。
+ getting involved in any of these things。 Those tools are very interesting in any of these。 things that can reach out to me about them。 Really， at the end， they want more people to。 be aware of what Python could do。 Not just in its traditional features， but also the， built world。 I think if we all kind of put eyes on what we could do for the built environment， with automation。
 
- is there's a bunch of them。 Not just Revit， there's a whole gang of them。 And you can do。
+ coding， data， it would be a better built environment。 At this point。 it's like every eyeballs and uses their intuition to design。 If we had more robust processes and。 better tools， we get a better version of the future。 It's kind of spreading where it's。 like to get more involvement in Python。 This is all the resources for all the stuff I showed。
 
- cool stuff like this。 You can take your ideas as a giant mesh or a series of meshes， create。
+ you today。 On the right is all the links to the different repos and learning libraries。 for the different software。 I left there a special thanks to all the contributors。 He。 did that for the API site。 It's on for Pyrebit， Deon， D'Mon， for BlenderBim， stuff like Valadybug。 Dynamo team and Grasshopper team at their companies。 I always give a shout-out to them because I'm。
 
- generative options of a loft of a tower like this where the base is a bigger shape and the。
+ really dependent on them。 Thanks to them。 Thank you so much， guys， for attending my talk。 I really appreciate it。 I got the QR code right there if you want to tell that link。 I guess。 it will be in the video。 If you want to reach out， it's not hard to find。 That's it。 I can。 open up questions or I can hear down the hall。 Thank you。 [Applause]， [Music]。
 
- top is a smaller shape。 You loft that up so the top and bottom connect。 You give it a。
+ Does anyone have any questions that would like to otherwise we can meet the speaker here。 later and he can answer any questions any doubt that you have about the presentation？
 
- twist and before you know it you get architecture。 And this is a amazingly fast way of doing it。
-
- on Blender。 They can push it to your other software and work with it。 It's very cool， stuff。
-
- But we're not done yet。 There's also this cool ladybug。 And this is what's cool。
-
- about ladybug tools。 It's for climate and weather analysis。 We're increasingly concerned。
-
- about how the built environment of any kind is using energy。 It's good for comfort。 And。
-
- so there's been a whole spread of solutions and one of them is ladybug。 And it works。
-
- with just about any popular geometry engine。 It's all written in Python。 You just pip install。
-
- LBT dash ladybug if you want to try it out。 It's all free。 And what it does is stuff， like this。
-
- It can help you do solar path analysis。 A big old arch tube thing like at the top， there。
-
- That's just every position the sun would travel throughout the year。 And it gives a， latitude。
-
- So you can just study a building and figure out what the solar properties were。
-
- What it looks like when the sun pops in through your window。 What parts of the room they give。
-
- time a year are getting sunlight。 What are it？ What's a good way to make it a comfortable， space。
-
- Not too much heat。 Not too cold。 So you have to run the heater。 You know， just， make it efficient。
-
- These are the kind of tools and solutions coming around to help people。
-
- study that and make a better design， a better building， a lower energy building that has。
-
- a better carbon footprint for the environment。 And this is just an example of running in。
-
- that dynamo local platform。 But it's a lot of other things。 So that's what's nice about， it。
-
- It's very versatile。 And it has its friend， honeybee。 Which also does similar things。 In。
-
- this case it does visualization for data energy analysis。 So you can figure out， you know。
-
- size and lows throughout the year， throughout the day， 24 hour period， a six month period， whatever。
-
- It gives you some visualizations。 They have a whole tool set here。 Now you can。
-
- do this all with the tool sets。 They can also do some cool stuff with generative design and。
-
- option areas that they call it。 Where you can just， you know， use the AI machine learning。
-
- tools to your advantage to figure out every possible scenario。 Like different sizes of， your room。
-
- windows， alignments， what have you， get a bunch of different results and help。
-
- you kind of determine what is a better set of parameters you can use to move forward with。
-
- and narrow down your selection。 So you don't have to do that manually。 These are the kind。
-
- of tools people are using right now for just working on buildings and structures and making。
-
- sure we have really sound ideas and sounds design solutions。 And again， all done through。
-
- tools that you would use from either built on Python or from Python libraries。 And that's。
-
- what's great about the future is just going a direction where Python is going to be a great。
-
- exchange of data between all these different sets。 So you can feed data from all sorts of。
-
- different model formats and databases， SQL， integrate them through open exchanges to Python。
-
- And then for Python， use your different libraries like pandas， we're going to have you to get。
-
- some analysis out of it so that it's not stuck。 That's been kind of the issue with the world。
-
- I'm in in the built environment。 Things get stuck in one place or another。 They look great。
-
- until you want to extract data。 But this is one way to at least that data is to do these。
-
- open standards， accessible coding solutions for people at every stage and use Python to。
-
- create some data analysis。 And the future will be more data science because there's more。
-
- interest in how you can use data and things like machine learning to help us understand。
-
- what's going on in our buildings。 They're very complex。 You only see the facade but there's。
-
- a whole engine of stuff happening in the hood that needs to be studied building something。
-
- depending on how you look at the reference。 It was like 20-25% of our carbon friction。
-
- comes from buildings。 So how do we better design buildings that have a lower carbon impact？ IoT。
-
- Things like a micro-prathon that can help us develop IoT solutions and digital twin。
-
- solutions to help us monitor our buildings。 Just about everything is moving in a direction。
-
- of visual twins for structures small and big。 Everything in the building industry is also。
-
- 10 years behind the times。 If everything was already IoT kicking off 10 years ago as a， big wave。
-
- this watch is an IoT device of my heart。 So we try to see how can we do something。
-
- like that for the entire structure and get some real good data of a reason to much energy。
-
- Spaces people aren't going to because it's inconvenient。 Maybe this room。 Some applications。
-
- Of course， I saw the demo this morning by Peter Wang of all the cool stuff， we do with Python。
-
- PyScript with WebAssembly and Michael。 There you go。 There's also the， cool custom applications。
-
- I mentioned Pyrebit would have you earlier。 If you don't want。
-
- to buy a real or a bus solution because you don't need it or you don't know what to do。
-
- with the other tools out there， you can at least try to make your own tools or a lot。
-
- more compact or use somebody else's tool set to the point and direct solutions for what， you want。
-
- This is all the fields that Python can feed into。 Shout out to all the open source maintainers out there。
-
- Everything I just talked about， here was an open source project。 Dynamo。
-
- even though it's based on a corporate， from， ourselves as an open source。 I could make my own copy。
-
- they're great team。 I didn't， show you grass over this time。
-
- but that's a similar looking thing by another corporate， sponsor。 Blender， of course。
-
- completely open source。 One of the best examples open source。
-
- Pyre Revit and all the other tools I showed you。 These guys are great。 I would not be able。
-
- to speak to you guys today if it wasn't for these kind of tools。 I always like to show。
-
- my appreciation。 Of course， the Python software foundation they're all sent to。
-
- Programners should be fun。 That's why I picked Python。 JavaScript's great。 C#'s great。 They're。
-
- all great， but Python really made me enjoy what I'm doing with architecture and design。
-
- They feel like I was hitting a wall of pain， trying to figure out how to debug something。
-
- It was way more accessible。 That's why I like this program language。
-
- I just prepared Python makes it possible。 This is the beauty of Python。 It does so many things。
-
- great。 You find interest in any of these things， any of the solutions I showed you today。 Consider。
-
- getting involved in any of these things。 Those tools are very interesting in any of these。
-
- things that can reach out to me about them。 Really， at the end， they want more people to。
-
- be aware of what Python could do。 Not just in its traditional features， but also the， built world。
-
- I think if we all kind of put eyes on what we could do for the built environment， with automation。
-
- coding， data， it would be a better built environment。 At this point。
-
- it's like every eyeballs and uses their intuition to design。 If we had more robust processes and。
-
- better tools， we get a better version of the future。 It's kind of spreading where it's。
-
- like to get more involvement in Python。 This is all the resources for all the stuff I showed。
-
- you today。 On the right is all the links to the different repos and learning libraries。
-
- for the different software。 I left there a special thanks to all the contributors。 He。
-
- did that for the API site。 It's on for Pyrebit， Deon， D'Mon， for BlenderBim， stuff like Valadybug。
-
- Dynamo team and Grasshopper team at their companies。 I always give a shout-out to them because I'm。
-
- really dependent on them。 Thanks to them。 Thank you so much， guys， for attending my talk。
-
- I really appreciate it。 I got the QR code right there if you want to tell that link。 I guess。
-
- it will be in the video。 If you want to reach out， it's not hard to find。 That's it。 I can。
-
- open up questions or I can hear down the hall。 Thank you。 [Applause]， [Music]。
-
- Does anyone have any questions that would like to otherwise we can meet the speaker here。
-
- later and he can answer any questions any doubt that you have about the presentation？
-
- You want to mic？ Give me a sec。 I just wanted to ask you where you think computing for design architecture is going to go because。
-
- Revit and all the many of the open source tools that you mentioned are hitting Revit， which。
-
- is a proprietary infrastructure。 You also mentioned IFC， which is the open standard for buildings。
-
- I was wondering what you think about IFC or which direction is going to go。 We remain。
+ You want to mic？ Give me a sec。 I just wanted to ask you where you think computing for design architecture is going to go because。 Revit and all the many of the open source tools that you mentioned are hitting Revit， which。 is a proprietary infrastructure。 You also mentioned IFC， which is the open standard for buildings。 I was wondering what you think about IFC or which direction is going to go。 We remain。
 
  proprietary or do you think this will go fully open source？
 
- My hopes and dreams will go very open source。 The point where the proprietary software is， optional。
+ My hopes and dreams will go very open source。 The point where the proprietary software is， optional。 You can use it。 Maybe it will give you the better version of the workflows。 You。 can use the IFC and all that to get your work done at a pretty high level。 I think the way I would say is the more interest and uses of these open source solutions people。
 
- You can use it。 Maybe it will give you the better version of the workflows。 You。
+ are pursuing at the grassroots level。 The more the proprietary software solutions have。 to respond to that。 They have to lose the customer demand。 They fight each other all the time。 always different companies that are like the locky end to their thing and that's like。 okay you have to use this。 Even between the different bin solutions from the companies。
 
- can use the IFC and all that to get your work done at a pretty high level。
+ they don't like to share anyway。 You are locked into their format。 If we had something like， an IFC。 like a real robust one， which people are getting towards and people want more of。 that would accelerate it。 I think it's totally possible but it's got to be like people have。 to be aware of the companies they work at who access the software， who work on these。
 
- I think the way I would say is the more interest and uses of these open source solutions people。
+ kind of solutions that they do want more of that open source that are locked in to a vendor。 I think it's just a matter of spreading the word， spreading the knowledge and the more， you spread。 Just show these examples of what's possible。 It's pretty accessible。 The more。 it will gain traction。 It's a matter of grassroots movement in that direction。 I do really think。
 
- are pursuing at the grassroots level。 The more the proprietary software solutions have。
+ that so long as the people want it， the users want it， the vendors will respond and make。 a lot more IFC friendly。 I'm not sure if it will be IFC as like we call it a desktop。 version of it versus the web。 That's more I'm not sure what would all be going through。 the web because everything's easier on the web exchanges。 It's a little more open there。
 
- to respond to that。 They have to lose the customer demand。 They fight each other all the time。
+ versus like exporting a file， manipulating that。 It's a little moral fashion。 A lot of， friction。 So it might be a marriage between the IFC solutions。 I believe there is an IFC。js， that it can help。 So it might move in different directions but I think it will move eventually。 in the direction of a better version of IFC if the people want it。 I'm optimistic。 Any。
 
- always different companies that are like the locky end to their thing and that's like。
-
- okay you have to use this。 Even between the different bin solutions from the companies。
-
- they don't like to share anyway。 You are locked into their format。 If we had something like， an IFC。
-
- like a real robust one， which people are getting towards and people want more of。
-
- that would accelerate it。 I think it's totally possible but it's got to be like people have。
-
- to be aware of the companies they work at who access the software， who work on these。
-
- kind of solutions that they do want more of that open source that are locked in to a vendor。
-
- I think it's just a matter of spreading the word， spreading the knowledge and the more， you spread。
-
- Just show these examples of what's possible。 It's pretty accessible。 The more。
-
- it will gain traction。 It's a matter of grassroots movement in that direction。 I do really think。
-
- that so long as the people want it， the users want it， the vendors will respond and make。
-
- a lot more IFC friendly。 I'm not sure if it will be IFC as like we call it a desktop。
-
- version of it versus the web。 That's more I'm not sure what would all be going through。
-
- the web because everything's easier on the web exchanges。 It's a little more open there。
-
- versus like exporting a file， manipulating that。 It's a little moral fashion。 A lot of， friction。
-
- So it might be a marriage between the IFC solutions。 I believe there is an IFC。js， that it can help。
-
- So it might move in different directions but I think it will move eventually。
-
- in the direction of a better version of IFC if the people want it。 I'm optimistic。 Any。
-
- other questions please。 Today we will be more than glad to continue this discussion。 I'm。
-
- sorry we ran out of time but as I said he will be more than glad to continue this discussion。
-
-
-
+ other questions please。 Today we will be more than glad to continue this discussion。 I'm。 sorry we ran out of time but as I said he will be more than glad to continue this discussion。
 ![](img/9bc27498caebbe4a1cec728f064dce63_7.png)
 
  and thank you， Tadeh， for the great presentation。 Thank you。
-
-
-
 ![](img/9bc27498caebbe4a1cec728f064dce63_9.png)
