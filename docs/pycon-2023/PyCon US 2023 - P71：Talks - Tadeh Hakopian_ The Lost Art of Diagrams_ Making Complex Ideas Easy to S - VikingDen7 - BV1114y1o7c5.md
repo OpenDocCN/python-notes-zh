@@ -46,7 +46,6 @@
 ![](img/07248a8e694d2e7273dfcb815020bced_26.png)
 
  [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]。 [ Pause ]。
-
 ![](img/07248a8e694d2e7273dfcb815020bced_28.png)
 
  [ Pause ]。

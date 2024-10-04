@@ -4,27 +4,17 @@
 ![](img/3553459ded9d1d92e37e80eb6c1f4b37_1.png)
 
  [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]。 [MUSIC PLAYING]， [MUSIC PLAYING]。
-
 ![](img/3553459ded9d1d92e37e80eb6c1f4b37_3.png)
 
- [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]。 [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]。
-
- [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]。 [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]。
+ [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]。 [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]。 [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]。 [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]。
 
  [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]。 [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]。
-
-
-
 ![](img/3553459ded9d1d92e37e80eb6c1f4b37_5.png)
 
- [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]。 [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]。
-
- [MUSIC PLAYING]， [MUSIC PLAYING]。
+ [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]。 [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]。 [MUSIC PLAYING]， [MUSIC PLAYING]。
 ![](img/3553459ded9d1d92e37e80eb6c1f4b37_7.png)
 
- [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]。 [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]。
-
- [MUSIC PLAYING]， (audience chatter)， (audience chatter)， (audience chatter)， (audience chatter)。 the， and， and， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]。
+ [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]。 [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]， [MUSIC PLAYING]。 [MUSIC PLAYING]， (audience chatter)， (audience chatter)， (audience chatter)， (audience chatter)。 the， and， and， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]。
 
  [inaudible]， [inaudible]。
 ![](img/3553459ded9d1d92e37e80eb6c1f4b37_9.png)
@@ -33,7 +23,6 @@
 ![](img/3553459ded9d1d92e37e80eb6c1f4b37_11.png)
 
  [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]。 [inaudible]， [inaudible]。
-
 ![](img/3553459ded9d1d92e37e80eb6c1f4b37_13.png)
 
 ![](img/3553459ded9d1d92e37e80eb6c1f4b37_14.png)
@@ -87,7 +76,6 @@
 ![](img/3553459ded9d1d92e37e80eb6c1f4b37_45.png)
 
  [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]。 [inaudible]。
-
 ![](img/3553459ded9d1d92e37e80eb6c1f4b37_47.png)
 
 ![](img/3553459ded9d1d92e37e80eb6c1f4b37_48.png)

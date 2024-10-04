@@ -6,9 +6,7 @@
  [ Pause ]， [ Pause ]。
 ![](img/e51a549fc40cd7270ffb9fb6a33681ca_3.png)
 
- [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]。 [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]。
-
- [ Pause ]， [ Pause ]。
+ [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]。 [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]。 [ Pause ]， [ Pause ]。
 ![](img/e51a549fc40cd7270ffb9fb6a33681ca_5.png)
 
  [ Pause ]。
@@ -17,9 +15,7 @@
  [ Pause ]， [ Pause ]。
 ![](img/e51a549fc40cd7270ffb9fb6a33681ca_9.png)
 
- [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]。 [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]。
-
- [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]。 [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]。
+ [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]。 [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]。 [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]。 [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]。
 
  [ Pause ]。
 ![](img/e51a549fc40cd7270ffb9fb6a33681ca_11.png)

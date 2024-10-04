@@ -5,30 +5,21 @@
  That's the top of the soul。
 ![](img/a01318be044a77dbab847aabbb7738d0_1.png)
 
- [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]。 [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]。
+ [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]。 [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]。 [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]。 [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]。
 
- [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]。 [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]。
-
- [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]。 [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]。
-
- [inaudible]。
+ [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]。 [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]。 [inaudible]。
 ![](img/a01318be044a77dbab847aabbb7738d0_3.png)
 
  [inaudible]， [inaudible]。
 ![](img/a01318be044a77dbab847aabbb7738d0_5.png)
 
  [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]。 [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]。
-
-
-
 ![](img/a01318be044a77dbab847aabbb7738d0_7.png)
 
  [inaudible]， [inaudible]。
 ![](img/a01318be044a77dbab847aabbb7738d0_9.png)
 
- [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]。 [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]。
-
- [inaudible]， [inaudible]， [inaudible]， [inaudible]。
+ [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]。 [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]。 [inaudible]， [inaudible]， [inaudible]， [inaudible]。
 ![](img/a01318be044a77dbab847aabbb7738d0_11.png)
 
 ![](img/a01318be044a77dbab847aabbb7738d0_12.png)

@@ -6,9 +6,7 @@
  [ Pause ]。
 ![](img/191ff6ca223d79a7b3ded62ebb51fe32_3.png)
 
- [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]。 [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]。
-
- [ Pause ]， [ Pause ]， [ Pause ]。
+ [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]。 [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]。 [ Pause ]， [ Pause ]， [ Pause ]。
 ![](img/191ff6ca223d79a7b3ded62ebb51fe32_5.png)
 
  [ Pause ]。
@@ -16,9 +14,7 @@
 
 ![](img/191ff6ca223d79a7b3ded62ebb51fe32_8.png)
 
- [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]。 [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]。
-
- [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]。
+ [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]。 [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]。 [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]。
 ![](img/191ff6ca223d79a7b3ded62ebb51fe32_10.png)
 
 ![](img/191ff6ca223d79a7b3ded62ebb51fe32_11.png)
@@ -81,7 +77,4 @@
 ![](img/191ff6ca223d79a7b3ded62ebb51fe32_49.png)
 
  [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]。 [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]， [ Pause ]。
-
-
-
 ![](img/191ff6ca223d79a7b3ded62ebb51fe32_51.png)

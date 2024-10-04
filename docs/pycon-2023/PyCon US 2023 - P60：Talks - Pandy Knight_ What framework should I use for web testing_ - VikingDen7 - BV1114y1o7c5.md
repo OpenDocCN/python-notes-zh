@@ -39,9 +39,7 @@
  [inaudible]， [inaudible]。
 ![](img/b0b175fadcba1f54fbf3d525f9ae27c1_25.png)
 
- [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]。 [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]。
-
- [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]。 [inaudible]， [inaudible]， [inaudible]， [inaudible]。
+ [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]。 [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]。 [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]， [inaudible]。 [inaudible]， [inaudible]， [inaudible]， [inaudible]。
 
 
 

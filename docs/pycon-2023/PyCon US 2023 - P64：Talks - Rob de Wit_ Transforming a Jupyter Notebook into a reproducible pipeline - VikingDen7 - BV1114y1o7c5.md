@@ -12,20 +12,12 @@
  We're going to be talking about the work that we're doing。
 ![](img/2da2f72586acd14c2593d79594fec4b7_7.png)
 
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
-
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
-
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
-
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
+ We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
 
  We're going to be talking about the work that we're doing。
 ![](img/2da2f72586acd14c2593d79594fec4b7_9.png)
 
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
-
- We're going to be talking about the work that we're doing。
+ We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
 ![](img/2da2f72586acd14c2593d79594fec4b7_11.png)
 
 ![](img/2da2f72586acd14c2593d79594fec4b7_12.png)
@@ -34,42 +26,18 @@
 ![](img/2da2f72586acd14c2593d79594fec4b7_14.png)
 
  We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
-
-
-
 ![](img/2da2f72586acd14c2593d79594fec4b7_16.png)
 
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
+ We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
 
  We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
-
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
-
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
-
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
-
-
-
 ![](img/2da2f72586acd14c2593d79594fec4b7_18.png)
 
 ![](img/2da2f72586acd14c2593d79594fec4b7_19.png)
 
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
+ We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
 
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
-
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
-
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
-
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
-
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
-
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
-
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
+ We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
 
  We're going to be talking about the work that we're doing。
 ![](img/2da2f72586acd14c2593d79594fec4b7_21.png)
@@ -79,51 +47,20 @@
  We're going to be talking about the work that we're doing。
 ![](img/2da2f72586acd14c2593d79594fec4b7_24.png)
 
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
-
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
-
-
-
+ We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
 ![](img/2da2f72586acd14c2593d79594fec4b7_26.png)
 
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
+ We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
 
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
+ We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
 
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
-
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
-
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
-
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
-
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
-
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
-
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
-
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
-
-
-
+ We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
 ![](img/2da2f72586acd14c2593d79594fec4b7_28.png)
 
  We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
-
-
-
 ![](img/2da2f72586acd14c2593d79594fec4b7_30.png)
 
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
-
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
-
- We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
-
- We're going to be talking about the work that we're doing。
+ We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。 We're going to be talking about the work that we're doing。
 ![](img/2da2f72586acd14c2593d79594fec4b7_32.png)
 
 ![](img/2da2f72586acd14c2593d79594fec4b7_33.png)
