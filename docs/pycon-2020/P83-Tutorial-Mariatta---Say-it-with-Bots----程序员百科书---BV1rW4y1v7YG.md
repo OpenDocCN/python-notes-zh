@@ -1,0 +1,1449 @@
+# P83：Tutorial Mariatta - Say it with Bots! - 程序员百科书 - BV1rW4y1v7YG
+
+ >> Hello， everyone。
+
+![](img/3c3588b77123e82a29264958f5086ce4_1.png)
+
+![](img/3c3588b77123e82a29264958f5086ce4_2.png)
+
+![](img/3c3588b77123e82a29264958f5086ce4_3.png)
+
+ Thanks for joining me。 Thanks for joining me in this tutorial。
+
+ I am presenting a tutorial that's been prepared for PiconUS in Pittsburgh。 In this tutorial。
+
+ we'll be building a GitHub bot together。 I will show you several concepts like what our GitHub API is available。
+
+ I will walk you through the steps of building a GitHub app。 The bot that we will be building。
+
+ it's the bot that we will say thanks to the maintainer， who installed your bot。
+
+ It will also say thanks to new contributors who made pull requests to your repository。
+
+ We will be building this bot using Python 3。7 using the GitHub library and using the AI。
+
+ HTTP web framework。 I will start with a little bit of introduction about myself。
+
+ My name is Marietta and I live in Vancouver， Canada。
+
+ I work as back-end engineer at Zapier and in my free time， I'm involved in the Python community。
+
+ I help buy ladies locally and globally。 I help with the PyCasket conference and I contribute to open source。
+
+ Now， when you contribute to open source too much， in the end， they might just give you。
+
+ commit right to the project。 That's how I became a Python core developer。
+
+ That's also how I became a core maintainer of the GitHub library that we will be using， today。
+
+ If at any time you have more questions about this or if you found a tutorial is not clear。
+
+ any aspects of the tutorial， maybe you found typos in the documentation， feel free to leave。
+
+ me feedback。 My email is marietta@python。org。 I'm also on Twitter as marietta and you can open a pull request to help fix issues with。
+
+ the documentation。 If you appreciate my work， if you learned something out of this and you like to show your appreciation。
+
+ I can be sponsored through GitHub。 And as well， I really would like。
+
+ since I did not give this tutorial live， I do not know， how many people are taking this tutorial。
+
+ So if you do take this tutorial and you learned something out of this， you built something， cool。
+
+ I'd love to hear about it。 So please do share it with me either through Twitter。
+
+ send me an email or you can even open， up an issue， just letting me know of your progress。 Alright。
+
+ I thought I would start by sharing my screen。 I will share you the materials we will use in this tutorial。
+
+ In fact， one second， I want to share my browser。
+
+![](img/3c3588b77123e82a29264958f5086ce4_5.png)
+
+ Alright， so basically we will go through this documentation that I wrote just for this， tutorial。
+
+ You can go to github-app。tutorial。readthedogs。io and I have the link here。
+
+ This takes you to the tutorial。 Okay， I will start with introducing what our GitHub bots。
+
+ why would you want to build one， and then I will give a brief introduction of what GitHub hub library is about and why。
+
+ I recommend using it for building your GitHub bots。
+
+ I will share some resources related to this tutorial， like basically links to documentations。
+
+ and additional learnings。 And then we'll start by using GitHub to make API calls to GitHub on the command line。
+
+ And after that， we will be building a GitHub app together。 I will show the steps。
+
+ One step at a time， I will show you how to create the app on GitHub。
+
+ I will show how to deploy your code to Heroku and all the details。
+
+ And then we will be building a webhook event handle that is to react to events that occurred。
+
+ on GitHub so your bot will automatically respond to it。 And that will be done。 Yeah。
+
+ let's get started。 Before starting with this tutorial， because we will be using Python 3。7。
+
+ make sure you， do have Python 3。7。 I provided a link to very in-depth tutorial of how to install Python in a real Python guide。
+
+
+
+![](img/3c3588b77123e82a29264958f5086ce4_7.png)
+
+ So if you have trouble with installation， go check this out。
+
+ So just make sure that you do have Python 3。7。 So if you type in Python 3。7 in your 3。0。
+
+ it should work like that。
+
+![](img/3c3588b77123e82a29264958f5086ce4_9.png)
+
+ And you will need a GitHub account。 That's where we will be creating the app。
+
+ And make sure you are able to log in to GitHub。 Since we will be deploying this to Heroku。
+
+ you will need a Heroku account as well。 And because we are just testing and playing with this。
+
+ you should be able to work with， just the free， free dyno on Heroku。
+
+ So you shouldn't need to pay for anything。 And then another useful thing is the Heroku 2 belt。
+
+ which will be useful for like it has， a CLI to Heroku。 It can be useful for debugging later。
+
+ Like you can view the logs using the CLI， the Heroku logs using the CLI。
+
+ So make sure you have those set up。 Now about GitHub bots。 What are they？
+
+ These are applications that runs automation on GitHub using GitHub web hooks and APIs。
+
+ You can do a lot of things with GitHub bots。 It can automatically respond to users。
+
+ It can automatically apply labels， close these issues， create issues。
+
+ And it can even automatically multiple requests。 The GitHub APIs are often extensive。
+
+ And I truly recommend you look into it and start automating your workflow。
+
+ So why would you even want to use bots？ If you're maintainer。
+
+ you can do all of this by yourselves by going to GitHub。 Because you're a person。
+
+ you're not on GitHub 24/7。 So sometimes it's nice if you can automatically reply to your contributors so they can receive。
+
+ prompt response instead of waiting until you're back。 Yeah。
+
+ I can show you briefly of some of the bots that we have in CPython project。
+
+ If you rely on automation a lot， we even have four different bots to help us。 Here。
+
+ let me show you the CPython repository。 Basically the four bots help us with many things。
+
+ So one of the bots is a bot called the Knights who says need。
+
+ Whenever somebody opens a pull request on GitHub， it will check if they have signed the CLA。
+
+ So it will automatically apply whether the CLA signed or not signed label。
+
+ So this red label is automatically applied as well as the different states here。
+
+ You see the awaiting code review。 That means the PR is nearly opened。
+
+ it's been reviewed but it has not been reviewed by a， core developer。 So it's likely that。
+
+ So if it's a new pull request made by a core developer， it will automatically apply the。
+
+ awaiting code review label， meaning it's waiting for other core developers to look into it。
+
+ If the PR is made by someone who is not a core developer， it will be automatically applied。
+
+ with the awaiting review label。 It means anyone can leave a review， not just core developers。
+
+ So those are examples and I can't even show some more examples。 Like we have another bot called Ms。
+
+ Islington。 So Ms。 Islington is a bot。 It automatically creates pull requests and it automatically merge the pull requests in。
+
+ the end。 So it's done automatically so we don't have to do so many things as the meetings。
+
+ So that's that。 Yeah， as you can see there are lots of possibilities。
+
+ I think you should look into your own workflow in your workplace or if you're maintaining an。
+
+ open source project。 The identify what other things you can automate and build your own bots。
+
+ Now get it up。 What is KIDIAP top？ KIDIAP is Python library。
+
+ It actually works with Python 36 and up。 But in this tutorial we'll use a little feature in Python 37。
+
+ So that's why I ask you to install Python 37。 It is an async library for working with KIDIAP APIs。
+
+ It supports three other web frameworks like a IOHTP framework and a tornado and HTTPX。
+
+ I think that is one more framework that I do not remember on top of my head。 Anyway。
+
+ it is an open source project。 You can install it with PIP。
+
+ And the nice thing about KIDIAP is that it abstracts out many details that you need in。
+
+ order to work with KIDIAP APIs。 For example， when you make API calls to GitHub。
+
+ you need to provide things like API tokens。 You need to pass in a certain request headers。
+
+ And if you were to build that， say， using the request library， I provided some example。
+
+ like how you would do this with the request library。
+
+ You need to create the request headers as in the user agent headers。 That is required by GitHub。
+
+ You need to pass in the authorization in a header that is token plus your OAuth token， there。
+
+ You need to specify the accept header。 And then when you make an API call。
+
+ you need to construct the URLs like API GitHub。com and， the API endpoint。
+
+ And then you make the request。 So there's a lot of details like that with KIDIAP。
+
+ Those are abstract away。 So you notice here just by passing in the token， when it makes API calls。
+
+ KIDIAP constructs， those headers for you。 Additionally。
+
+ you do not need to provide a full URL to the GitHub's API。 And it really simplifies things。
+
+ Like you do not need to care about the API endpoint。 However， by default， it uses the API KIDIAP。
+
+com URL。 However， there is a way for， if you're using a GitHub enterprise， there is a way for you。
+
+ to specify a different API endpoint other than the default API KIDIAP。com。
+
+ Check out the KIDIAP documentation on how to do that。
+
+ So as we will go through more detailed examples on how to do this later on in the GitHub API。
+
+ using command line section。 KIDIAP also helps with handling webhook events from GitHub。
+
+ It provides a way for you to define the routes so you can define individual routes to handle。
+
+ various events that come from GitHub。 We will cover this again in detail later on in the responding to webhook events section。
+
+ KIDIAP also helps verify that webhook delivery headers。 And it also verifies the webhook sequence。
+
+ So you do not need to do this on your own。 It's taken care of。
+
+ So all you need to do is read the payload from GitHub and do your logic there。
+
+ So you do not need to check for the secret yourself。 And starting in version 4。1。
+
+ which was just released。 For this tutorial， it was released yesterday。
+
+ I made this functionality for within GitHub that can help you work with GitHub apps authentication。
+
+ things like obtaining the JSON web token。 Yeah， there are a few I can show you。
+
+ Actually I can show the documentation about it quickly。 GitHub。
+
+ So there is a GitHub GitHub apps module。 That contains utility things like how to obtain an installation access token and how。
+
+ to obtain the GWT for working with GitHub apps。 So that's where I need to fix this type of。 Yeah。
+
+ and since version 4。0， KIDIAP provides support for working with GitHub actions。 However。
+
+ we will not cover actions in this tutorial。 So in case that's something you're interested in。
+
+ check out the documentation again。
+
+![](img/3c3588b77123e82a29264958f5086ce4_11.png)
+
+ If you follow through this utility you can use for working with GitHub actions。
+
+
+
+![](img/3c3588b77123e82a29264958f5086ce4_13.png)
+
+ So yeah， we'll be using GitHub throughout this tutorial。 All right。 Next。
+
+ so I have provided some links and for more detailed documentation of the end which。
+
+ we will use to create virtual environment。 There are additional links for GitHub APIs that we will be used throughout this tutorial。
+
+ So you can read in more details there。 We will be using GIDIAP library as I mentioned。
+
+ I provided links to the GIDIAP documentation and source code and how to install it。
+
+ There are additional documentation here。 If you want to learn more about AIH TTP。
+
+ documentation and source code is linked there。 We also last year Andrew Swadloff and I gave a tutorial specifically about AIH TTP。
+
+ So if you'd like to learn more about it， that's where you can go to。
+
+ And also we will use some F strings in this tutorial。
+
+ So that's an example of how you can build an F string。
+
+ And GitHub and AIH TTP are all using libraries in Python。
+
+ So you can learn more about AIH TTP in this blog post。
+
+ And if you want to learn more about Python on your hero queue， that's the URL for it。 So yeah。
+
+ there are more details here， but we will not go into details。
+
+
+
+![](img/3c3588b77123e82a29264958f5086ce4_15.png)
+
+ That's a learning you can do yourself。 Okay， let's start writing some code。
+
+ Let's start by installing GIDIAP and AIH TTP。 So let's go to my terminal。
+
+ I'm going to start by creating a directory to go to。 Okay。 And directory。 I do have a tutorial。 And。
+
+ So， sorry。 What are our next steps？ Okay， install it。 So first create a virtual environment。 You do。
+
+ I'm just going to use the end。 I thought 3。7-m， the end。 Up to date。 All right， now we're in a VN。
+
+ Let's install the AIH2TP and GitHub。 We're in GitHub and AIH2TP。
+
+
+
+![](img/3c3588b77123e82a29264958f5086ce4_17.png)
+
+ Ah， I do it please。 Now， I should see your HTTP GitHub 410。 That's what we get。
+
+
+
+![](img/3c3588b77123e82a29264958f5086ce4_19.png)
+
+ What's next？ Let's create a GitHub personal access token。 Go to that URL。 If you go to GitHub。
+
+ I logged in。 If you go to settings and develop the settings， there's no access token。 So。
+
+ create a new token。 Give it a good name。 So， just call it something that can remind you what this token was created for。
+
+ So， you can say it with a tutorial or anything else that can help you。 Remember what it is for。
+
+ We need the repo scope。 Check the repo and click generate。 So。
+
+ it generates a really long string like this。 This is the only time you will see it。 So， keep it。
+
+ save it， copy it， save it。 And keep it somewhere， save。 And， yeah， if you forget， if you lost it。
+
+ I guess you'll have to delete it。 And generate a new token。 So， I'm going to save it。 Okay。 So。
+
+ don't share this with anyone else， except yourself。 And， by the way。
+
+ I will be deleting this token after this tutorial。 So， don't try using it after the recording。 Yeah。
+
+ Let's save it in a directory somewhere。 So， one second。 So， just for right now。
+
+ I'm just going to create a file。 So， I'm going to create a file。 So， I'm going to create a file。 So。
+
+ I'm going to create a file。 So， I'm going to create a file。 And， I'm going to save it。 Now。
+
+ save it as environment variable。
+
+![](img/3c3588b77123e82a29264958f5086ce4_21.png)
+
+![](img/3c3588b77123e82a29264958f5086ce4_22.png)
+
+ Okay。 Export gh。eco。long string。
+
+![](img/3c3588b77123e82a29264958f5086ce4_24.png)
+
+ So， it's there。 Well done。 I'm using a Mac。 That's why I use that。 So， I'm going to create a file。
+
+ And， I'm going to create a file。 And， I'm going to create a file。 And， I'm going to create a file。
+
+ And， I'm going to create a file。 A simple async。io line。 So， import the async。io library。 And， then。
+
+ I have something called async。dev。 Main。 Going to set my file。 Enter a query。 And， okay。
+
+ Let's do that。 So， if it's an async。 Python 7 code。 And， let's just make sure it's running。 So。
+
+ for me， if I click on here， it should just。 I should see a hello word。 Let's see what's going on。
+
+ And， I'm just going to make sure that it's running。 And， I'm just going to create a file。
+
+ Sorry about this。 Okay。
+
+![](img/3c3588b77123e82a29264958f5086ce4_26.png)
+
+ So， let's do it in command line。 So， if I run that code。
+
+
+
+![](img/3c3588b77123e82a29264958f5086ce4_28.png)
+
+ I see a hello word。 So， that's how I know my code is working。 Okay。
+
+ We need to import the GitHub and aio HTTP libraries。 So， let's add those。 And， for。
+
+ let's instantiate the GitHub API。 So， that using the code there。 So， instead of hello word。 And。
+
+ instantiating the GitHub API。 And， I'm going to give it the。 So， in the old token there。
+
+ that's basically the GitHub token that I generated earlier。 And， I save。 And。
+
+ then I'm getting it from the environment variable。 So， that's that。 Now。
+
+ what we're going to do here is we're going to。 Using the API， we're going to create。
+
+ An issue in my repository。 So， if you look at GitHub's。
+
+ Documentation on how to create an issue using their API。
+
+ It says here is basically make post request。 To this URL， repos， owner that。
+
+ Owner and repo that will be the， your， the repository where you want to create it to。 Slash issues。
+
+ And， pass in this。 This parameter。 So， basically the title is a required parameter。 So。
+
+ basically you can create it。 And， this JSON data title。 So， required body is optional。 And。
+
+ you can specify the assignments。 So， in GitHub。 It， so when it says post to that URL。 In GitHub。
+
+ it looks like this。 You use the GitHub that the GitHub API that we instantiated for real。
+
+ Make a post request to that URL。 So， that's repos， owner and repo name slash issues。 And。
+
+ then pass in the data like that。 So， let's copy it。 And， what the code like that。 So。
+
+ this is how your code would look like。 I'm pretty sure my code looks the same。 And， let's run that。
+
+ Nothing happens。 So， I'm going to go ahead and complete it。 However， if we go to my repository。
+
+ We are。 It's relationship。 There is an issue that got opened。 We got a problem。
+
+ That's basically what we said here。 The title is， we got a problem。 And。
+
+ the description is more emoting。 So， it works。 So。
+
+ we just use GitHub API to create an issue without even going to GitHub。 So。
+
+ we just use GitHub API to create an issue。 Now， all right。 So， here's an exercise for you。
+
+ Why don't you leave an additional comment to the same issue that we just created here。 So。
+
+ we have an issue， but now we want to leave a comment here using the API。
+
+ The GitHub documentation for that says， make a post request to this URL repo/owner repo name/issues/issue number/comments。
+
+ So， if you want to pause here and maybe take some time yourself to try this on your own。
+
+ you can pause here。 So， in fact， let me pause my recording。
+
+
+
+![](img/3c3588b77123e82a29264958f5086ce4_30.png)
+
+ So， if you want to take a break， try all of this by yourself first。
+
+ and then I will continue with this solution。 I will show you how I did that。 So， all right。
+
+
+
+![](img/3c3588b77123e82a29264958f5086ce4_32.png)
+
+ Welcome back。 So， I mentioned about， I hope you had chance to practice and give that simple exercise yourself。
+
+ But， yeah， let me share how I would do it right now。 I'm going to share my screen。 All right。 So。
+
+ going to copy this URL， and I would adjust the code as follows。 So， owner is myself。
+
+ repo is strange relationship and issue， issue number and comments。
+
+ Leave the rest without the trailing slash。 This is the issue that I wanted to leave comment on。
+
+ Issue number two， 77。 So， let's add that to 77。 And input is just a body。 All right。
+
+ And save and run it。 And there you go。 Pretty simple。 I hope you were able to do that yourself。
+
+ Let's take a look at another exercise here。 That is， let's close the issue that that were created。
+
+ So， this is a little bit something different。 Okay。 I did an issue。 So。
+
+ this is the API that this is the documentation that we will take a look at。
+
+ You can add it in the issue using this endpoint。 It says patch to this URL。
+
+ And in here you can pass in the state that can be either open or close。 So。
+
+ closing an issue is a matter of calling the patch on this URL and passing the state as close。 So。
+
+ let's do that。 So， that's the URL and instead of GH post， we'll call GH Touch without any work。
+
+ Actually， yes， we need to pass in the data。 The state is closed。 And that's the only thing we need。
+
+ So， if you save that and run it。 And now the issue has been closed。
+
+ Got another exercise that I think would be interesting for you to try。 Here。
+
+ adding a reaction for an issue。 So， basically。 All right。 To add the reaction。
+
+ there is a special URL you make a post to the slash reactions URL。
+
+ And you pass in the content and the reaction type。 So， you click that again。
+
+ You will see the different types of reaction， like plus one， minus one， love and everything。
+
+ You need to pass in a certain accept header to the API call。 So。
+
+ how does this look like with Gidget Hub library？ So， basically。 Okay。 So， in Gidget Hub。
+
+ you can see easily as in the accept header by as the argument like this， except equal to 77。
+
+ basically whatever Gidget Hub tells you。 So， copy， paste that accept， put it there。 And again。
+
+ the URL is reactions。 And the data that we need to pass is content。 And let's say。 Let's try love。
+
+ So， what happens if we run that？ And then we can make the mistake in， oh， it's not a patch。
+
+ but a post。
+
+![](img/3c3588b77123e82a29264958f5086ce4_34.png)
+
+ All right。
+
+![](img/3c3588b77123e82a29264958f5086ce4_36.png)
+
+ Oh， I guess because the issue has been closed。 Let's try on this open issue to 76。
+
+
+
+![](img/3c3588b77123e82a29264958f5086ce4_38.png)
+
+ All right。 Yes。 So， we cannot leave reaction on a closed issue。
+
+
+
+![](img/3c3588b77123e82a29264958f5086ce4_40.png)
+
+ So， that probably makes sense。 Yeah。 Now you can see the love emoji on the issue。 All right。 So。
+
+ we've completed that section。 Basically， now you all have some experience making API calls to Gidget Hub。
+
+ And I hope you understand how to read the documentation and find information there。 So。
+
+ let's go to the next section about now。 We're going to start building a Gidget Hub app。
+
+ In the previous example， I've shown you how to interact with Gidget Hub by performing actions。
+
+ You make API calls， you make requests to Gidget Hub。 And again。
+
+ we're doing it locally on your own machine。 So， it's not actually a bot。
+
+ It doesn't respond to anything， right？ So， we're manually running the code。 So。
+
+ now let's learn about webhooks and what how will this help us build the bot。 So。
+
+ a little bit of more information about webhook events。 When an event is triggered in Gidget Hub。
+
+ Gidget Hub can notify you about the event by sending， you post requests along with a payload。
+
+ Some example events that Gidget Hub can send you are issues related events。 So。
+
+ whenever there is an issue that got assigned or unsigned， an issue was labeled and labeled。
+
+ issue opened， issue edited， closed， reopened and so on。 There are pull requests related events。 So。
+
+ somebody opens a pull request or edit it， close it or review the request reviews on those pull requests。
+
+ And that is the status checks events。
+
+![](img/3c3588b77123e82a29264958f5086ce4_42.png)
+
+ So， whenever there is， this is basically one of those CI status updates。
+
+ You can see the complete list of the events that Gidget Hub provides。
+
+
+
+![](img/3c3588b77123e82a29264958f5086ce4_44.png)
+
+ So， I mentioned there are issues and issue comments events and pull requests events。
+
+ And you can click on them to get even more detailed of examples of like what are the payloads that will get sent for those particular events。
+
+ Okay。 Now， since Gidget Hub needs to send you a post request for these webhooks。
+
+ so it can't send these events， it cannot make post request to your personal laptop。 So。
+
+ we need to create a web service that is open on the internet。 And this is the。
+
+ this web service is basically what will become our Gidget Hub app。 So。
+
+ there are lots of options for your hosting， unlike for your hosting options。
+
+ You can definitely deploy this on your platform of choice。 But for this tutorial， I will use Heroku。
+
+ Heroku is basically what we use for CPython's GitHub bots。 Now。
+
+ let's talk about the authentication with the Gidget Hub app。 So， in the previous section。
+
+ I've shown you how to get a personal access token for running out of scripts。
+
+ And that token is basically how GitHub knows who you are， who's making this call。 And that's。
+
+ that's how it knows that this API call is to be associated with your account。 Now。
+
+ a GitHub app has a slightly different mechanism for authentication。 So。
+
+ your GitHub app can actually be installed in various repositories。
+
+ It can be installed by multiple people if you allow it。 So， now the question is how to identify。
+
+ how to identify users of the GitHub app。 How can we let GitHub know who's making these API calls？
+
+ And like if we were using the allowed tokens before， does that mean that， you know。
+
+ we need to ask for access tokens？ From， from people who have installed your app。 So， that seems。
+
+ that seems not fairly secure and not very practical。 So， so it has a different mechanism。
+
+ What happens is that when you install a GitHub app。
+
+ that installation got assigned an installation ID。 So。
+
+ when you receive webhook events for your GitHub app。
+
+ it will include that installation ID in the part of the payload。 Now。
+
+ you can use the installation ID from the webhook to create an installation access token。
+
+ And once you get the access token， you can use the token to make API calls。
+
+ similar to how you use a personal access token。 So。
+
+ it's a little bit complicated and you can do more reading on that documentation so it's to better understand the process。
+
+ So， the question now is that how do we get this installation access token？
+
+ That documentation actually explains more details。 The basic process is as follows。
+
+ You will be creating JSON web token using the GitHub app ID and the private key。
+
+ You will then pass in that JSON web token and installation ID to GitHub and GitHub will give you back the installation access token。
+
+ So， I briefly mentioned this in the beginning of the tutorial before we started that。
+
+ GitHub provides the utilities to do this。 So， if I open the documentation again。
+
+ this is how you would discover this basically what you will use to get the installation access token。
+
+ All right， let's get started。 In these sections， we'll do some setup。
+
+ We will need to create a web service in Horroco。 We will need to create a report of our code base and we will need to create a GitHub app。
+
+ So， there is a lot of setup that's taking place and we will be switching from one browser to another。
+
+ From one side to another。 So， all right， let's start by creating the web service。
+
+ Let's follow these steps one by one。 To help speed up this process。
+
+ I created like a boilerplate web service code base that you can use。
+
+ And you can basically just fork this。 Let's go to click whoops did I。 Second。 All right。
+
+ that's the URL。 I'll fix the documentation。 So， it can be linked properly。 So， basically。
+
+ you can fork this if you want and then clone it。 Since I have a copy myself。
+
+ I'm just going to clone it locally。
+
+![](img/3c3588b77123e82a29264958f5086ce4_46.png)
+
+ Let's see。 So， I'm going to clone repo。
+
+![](img/3c3588b77123e82a29264958f5086ce4_48.png)
+
+ All right。 I have fork and clone repo。 Yeah， I guess let's go over the file structures there。
+
+ You will notice several files。 The proc file。 Let me actually open that so you can see the code base。
+
+ Yes， this window。 It comes with several files。 The proc file is basically a specific file that is needed for Heroku。
+
+ This is basically telling Heroku how to start a web service。 With me requirements。 So。
+
+ this is also another file that's needed by Heroku。 Heroku needs to know that this is a Python。
+
+ Python， Python code base。 It needs to know what dependencies are needed by your code。
+
+ And it will actually look up the contents in the requirements。
+
+txt file and install it for your web service。 So， I included the requirements here。 So。
+
+ we need AI or HTTP。 We need GitHub， PyJWT， cryptography and cache tools。 I've gone over those。 Okay。
+
+ let's talk about runtime。txt。 This is also a Heroku specific file。 So， again。
+
+ if you're using something else， you might not need the exact same file。 So。
+
+ this file tells Heroku that you want to run Python 376。 And not some other Python versions。 So。
+
+ Heroku will install Python 376 for you for your web service。 All right， main。py。
+
+ That's the other code that we need to go through。 We will be working on this file mostly。 So。
+
+ I'll start from the bottom。 This is the main function。 Basically。
+
+ it tells us -- this is how we tell Python how to start the web service。
+
+ This is an AI or HTTP web application。 I'm going to have to set the port。 So。
+
+ I don't think we need to make any changes here。 Okay， I'll tell you about the webhook。 So。
+
+ this is basically the event handler。 What we have here is that we will create the /webhook URL in our web service。
+
+ And when we receive requests into -- and we're telling this。
+
+ we're going to accept post requests to this URL。 And we will receive that。
+
+ This is basically the logic for handling the webhook。
+
+ This is where we will read this GitHub app secret。 When we instantiate GitHub API。
+
+ the secret -- it will use this secret and validate against the incoming webhook from GitHub。 So。
+
+ yeah， I think this -- I have to say there， I guess。 We can try running it locally first。
+
+
+
+![](img/3c3588b77123e82a29264958f5086ce4_50.png)
+
+ Now， I'm in a new repo。 I'm going to the activity， activity。 My previous session。
+
+ start a new virtual end。 Okay。 So， we can install the requirements。 What am I missing？ Oh。
+
+ I need to go to the collector folder one second。 Okay。 Let's run "PAPINSTALL" again。
+
+
+
+![](img/3c3588b77123e82a29264958f5086ce4_52.png)
+
+ Now， we're going to run it locally， which is basically the same command as what's in the proc file。
+
+
+
+![](img/3c3588b77123e82a29264958f5086ce4_54.png)
+
+ It's running。
+
+![](img/3c3588b77123e82a29264958f5086ce4_56.png)
+
+ There it is。 Hello， that's that。 Cool。 So， it's working。 So， I recommend that you try it。
+
+ Make sure it's running。 Okay。 I'm already logged in。 Create new app。 This is my mariara's。
+
+ And by the way， you can rename this later even after you created it。 So， yeah， keep that in mind。
+
+ All right。 And I'm going to connect to my GitHub account， basically。 I'm going to choose。 So。
+
+ basically， I want to connect the boilerplate repo that I have to。 To Heroku。
+
+ so it can automatically deploy any changes that I committed to this repo gets automatically deployed。
+
+ So， it just keeps it， makes it simple。 Connect。 And I'm going to say wait for a C8 to pass。
+
+ And enable automatically deploy。 Okay。 Going to see if it's been deployed。 Actually。
+
+ I'm going to click deploy right now。 All right。 So， it's been deployed。 So， I got a URL here。
+
+ And if I go there。 And now it says hello， which is the same thing as I said。
+
+ with the same result locally。 So， that's great。 Okay。 And yeah， if you have the to belt。
+
+ Heroku to belt， you can do， you can check the locks。
+
+
+
+![](img/3c3588b77123e82a29264958f5086ce4_58.png)
+
+ You can review your locks in the terminal。 So， the app name。 So， Heroku locks， locks， dash A。
+
+
+
+![](img/3c3588b77123e82a29264958f5086ce4_60.png)
+
+ And my app name is。
+
+![](img/3c3588b77123e82a29264958f5086ce4_62.png)
+
+ Kind of long。 So， there you go。
+
+![](img/3c3588b77123e82a29264958f5086ce4_64.png)
+
+ You can see the running lock of your web service。 Okay。 I'm going to quit there。 Okay。 What's next？
+
+ Okay。 We're going to create a GitHub app。 So， go there。 Settings app。 And again， you can go here。
+
+ If you lost the link somehow， go to your profile settings。 Developer settings。
+
+ And new click on the new GitHub app。 Okay。 Sorry。 I got this one second。 Okay。 All right。
+
+ Let's create a bot。 We'll go with。 Say it with bot。 So， let's see。 What do we need？
+
+ The important things are the web hook URL。 That is basically。 Your， your Heroku apps URL。
+
+ And slash web hook。 And the secret。 And this is， it says it optional。
+
+ but GitHub actually requires this field。 So， type in some secret that will be a secret between the GitHub app and your web service。
+
+ So， this is to protect you from so that you will not run or you will not handle any events or any other request from any other sources。
+
+ but only if it comes from， from GitHub and only if the secret matches。 So， if you have a， you know。
+
+ like a password generator app， you can use it to generate some random string， but for simplicity。
+
+ I'm just going to do it。 I'm just going to type hello here just to make it simple hello。
+
+ And what do we need？ I think we just need issues and pull request permissions to read and write permissions。
+
+ Okay。 Issues make that free and write pull request makes that click and write。 What else do we need？
+
+ Subscribe to events， take the issues and pull requests。 So let's do that。 Subscribe to events。
+
+ take the issues and pull requests。 And for now， I'm going to allow this to be installed by myself。
+
+ But if you've developed your GitHub app and you're happy with it， you want people to start using it。
+
+ So， at that time， you can change it to any account。 But for now。
+
+ just for myself and you'll make your app for yourself。 Okay， that's， let's put。 All right。 Okay。
+
+ now we got an app。 And notice we got a client ID client secret。 These are all important things。
+
+ And it helps us to generate a private key。 Yes， to do this。
+
+ And then we will use this private key later for， you know， a little bit。 So。
+
+ click that and click generally。 And okay， I'm going to show how the private key file looks like。 So。
+
+ it's gonna copy it here so you can all see it。 What's going on？ No， I do not want to。
+
+ So this is how the private key file looks like。 What do we do next？ All right。
+
+ now we need to set up the environment variables。 Remember that in our previous tutorial。
+
+ when we work with the GitHub using the GitHub APIs in the command line， I asked you to store those。
+
+ So， we're going to go to the， the odd secret of token as an environment variable。
+
+ So that is how it will work in with Heroku as well。
+
+ So you definitely should not commit your secret into your code base。 So。
+
+ we're going to be stored as an environment variable within Heroku。 So I'll show you how to do that。
+
+ So first， let's go through the this the environment variables that we need to set the first is GitHub app ID。
+
+ And you go to Heroku settings file， settings tab。 There is a place here where you can reveal config bars。
+
+ Click that。 And this is how you will define it。 So we want the GitHub app ID and just copy whatever you see in your apps ID。
+
+ And click add and we'll go through everything else as well。
+
+ So the GitHub secret is the webhook secret。 So that is basically the hello just now。
+
+ Another private key。 All right。 So the private key。 And that is the content。
+
+ Basically this big text here just select all and copy。 And paste it here like that。 Okay。 Okay。
+
+ we got a website is running。 We got the config files。
+
+ So now we can really start working on the bots。 So that's done。 Okay， let's go to the next section。
+
+ So the first webhook events that we want to implement is to thank the maintainer for installing it。
+
+ So when whenever somebody first install your GitHub app， it has the same event。
+
+ So when you receive it， you can do nothing。 You can ignore the event or you can be nice and just say thanks。
+
+ Thanks。 Thanks to the maintainers。 Thanks for installing me。
+
+ Looking forward to work with your something like that。 So。 Okay。
+
+ Now we've learned in the previous section， I've shown you how to create and close an issue。
+
+ So saying thanks to the maintainer is really just a matter of opening an issue which we know how to do。
+
+ So the trick here is that we need to find out what is where is the report that we want to leave this to open the issue。
+
+ Right。 And previously， we had it hard coded in the script。
+
+ It was pointing hard coded to my my own personal repository。
+
+ So now we need to figure out where was this app installed。 And how can we。
+
+ how can we grab that information。 So， if you look at your hubs event documentation。
+
+ there is an installation event。 There， and it's triggered whenever somebody installs or uninstalls。
+
+ When somebody installs， you will see the created text value。 And if somebody uninstall。
+
+ you will see the deleted value there。 So， here's， here's how this is basically what the data that GitHub will send you。
+
+ It starts with the， it has the key say action that tells you that the installation was deleted。
+
+ There is installation ID。 And if you look closer， there is even the center。 Let's see。
+
+ I think we just need the installation ID。 And， there is an app ID that we will need。 Okay。
+
+ And this is， this is the part that we will need later on。
+
+ The repository is the full name is basically what will tell us like where that repository is。
+
+ And that's where you will open the issue。 All right。 Now let's go back to our code。 In main。py。
+
+ I've created this router here。 Basically， registered a router based。
+
+ So here is where I will tell the web service。 This is the logic that we will have。
+
+ we want to execute when we receive the installation created event。
+
+ So whenever somebody installed your GitHub app， it will be redirected here。
+
+ And this is where we will implement our logic。 So just look at the parameters here。
+
+ The event is the payload from GitHub。 That is basically that big JSON data。
+
+ GH is an instance of the GitHub API that we have initial， we have initial， initialize。
+
+ And so that's GH with an instance of GitHub API as shown here。 Now， now we have to fill in the rest。
+
+ So， again， let's go back to the previous examples where we know how to。
+
+ we know how to open an issue on GitHub。 And I will copy paste our previous code。
+
+ So it's something like this。 And we will start to accept and basically make a post request to the URL and without。
+
+ and basically it's just issues without number， we're opening a number of opening a new issue。 And。
+
+ and we need the title and body in the data。 So， title。 Thanks for installing me。 Body。
+
+ You're the best。 But we don't actually want it on， on this hard coded repo name。
+
+ So we will actually access， we will use the data from， from the payload。 So。
+
+ if the repo for name is in the repositories and for name。
+
+ So the way we will access that is all of the portfolio name。 Data。 We posted to us。 The first one。
+
+ And then make that into an after。 All right。 Now。 All right。 Okay。
+
+ Now let's go back to the notion of GitHub apps。 So we don't。 In this case。
+
+ we don't want to use the personal access token。 So what we'll do is we will use the access token。
+
+ the installation access program。 And the code to do that is， is you can copy it from here。
+
+ basically just call the， the get installation access and pass in the GitHub API and the installation ID。
+
+ And installation ID was something we obtained from the web。 So， um， token。 Yes。 That。 Oops。
+
+ I did not copy the right one。 Hold on。 And installation access token。 Yes。 That。
+
+ Now that we have it， when we call the post， we will pass in that token。 Yes。
+
+ Installation access to just like that， just by passing in the token parameters。 So I've done that。
+
+ Okay。 Now something cool。 We want to say， we want to say， we want to say thanks to the person。
+
+ We want to figure out who installed it。 And。 In fact， GitHub also tells you。
+
+ gives you that information。 If you look at the payload examples here。
+
+ There is the sender and the login name。 So it means that it was。
+
+ it was user octocat who installed your GitHub app。 So if you want to adjust your code to say。
+
+ you know， in the body and the username。 So basically。 Yes， even data。 Sender。 I forgot。
+
+ So just pass that into the body or in the title or something。 However you like。 All right。 So。 Yeah。
+
+ So actually， okay。 Yeah。 So in fact， because it's possible for you to receive more than one installations。
+
+ When they choose to install your GitHub app， they can choose multiple repos at the same time。
+
+ So yes， this will be a list which you can look through。 So actually。 Yeah。
+
+ it will be better if we actually。 Look through that。 Okay。 Let's adjust the code。 So for repo in。
+
+ And。 So。 The whole name is the repo for named。 All right。 That should do it。 And because。 Right。
+
+ because our bot。 Say it has gone through and created those issues。 It can be。
+
+ Consider less spamming。 So it would be great if the bot just close the issue right away。 So help。
+
+ you know， help the maintainer to clean up。 So how do we do that？ So when we。 Yeah。
+
+ so when we make that， that API call， we received the response back。
+
+ There are a lot of information that get returned in that response。
+
+
+
+![](img/3c3588b77123e82a29264958f5086ce4_66.png)
+
+ So let's check that out。
+
+![](img/3c3588b77123e82a29264958f5086ce4_68.png)
+
+ Check out the。 Example response that you will get of the installation。 Oh， no， sorry。
+
+ The response for them for when you create that。 Issue。 It is a list。 And。
+
+ It returns you the issue number that was opened。 So you can access the data like that。 So actually。
+
+ I don't think this is the right。 End point。 Oh， but I need you create an issue。
+
+ This is this is the API call。 So the response here is。 The number is returned in the。
+
+ In the number key。 All right。 And the issue URL is also there。 Let's take a look。 All right。 Yes。
+
+ So this is also the API。 This is the issue endpoint。 Okay。
+
+ So we know before from before how to close an issue is basically a patch。
+
+ To the issues URL and passing in the state close and the end。
+
+ This is basically the exact same thing。 The only thing we're changing is that。
+
+ We're going to use the installation access to。 Yes， it is。 It should be more like this。 So issue。
+
+ Your address is basically a response。 You are all。 And then we're going to close it by doing。
+
+ G H patch。 To the issue URL。 And passing the data。 State is closed。 And don't forget the old token。
+
+ There you go。 All right。 So let's。 Commit。 All right。 Let's commit this file。 Deploy it to Heroku。
+
+ So thanks to the maintainer。 Commit and push。 Now let's go to Heroku。 Actually， let's see。
+
+ Let's see in the lot。 It fits。 It's building。 Okay。 Let's see if I can make sure it gets deployed。
+
+ Okay。 I'm going to start the deploy。 So here you can see the logs getting updated。 Okay。 Okay。
+
+ Deploy。 And if we go back here， this should give me。 This still works。 Okay。 All right。
+
+ Let's see what happens。 Let's try it out。 Let's install that app。 So go back to the GitHub app。
+
+ Your GitHub app setting。 Click install app。 It's just a tutorial。
+
+ I'm just going to install it in my strange relationship repo。 So just under one。 Click install。
+
+ And it seems to be installed。 Now let's check the web hooks。 So go back to your GitHub apps list。
+
+ Go to the GitHub app。 Go to advanced。 Okay。 Something's wrong。 What am I？ This arrow 404。 Okay。
+
+ Let's figure out what's going on。 It's saying this URL is 404。 Okay。 Maybe I did not deploy it。
+
+ Already not committed correctly。 GitHub app for the plate。 Yes。 One second。
+
+ I have to say thanks to the maintainer and I have the web hook。 Yeah。
+
+ That's actually go to the GitHub。 Well， there's no one I want。 Okay。 I got to say thanks。
+
+ What's going on here？ I believe。 I should not include it。 Right。 Okay。 That's my mistake。
+
+ Sorry about that。 Go back to the settings of this and。 Yes。 Okay。 All right。 So there was an error。
+
+ Okay。 This is actually a good example now。 So there was an error with delivering our web hook。
+
+ Now do we need to like reinstall the app again in order to receive it？ Well， you don't have to。
+
+ And I click advance and you can see all the failed deliveries here。 Right。
+
+ And you don't have to reinstall it。 All you need to do is basically。 Try to do it。 And now it works。
+
+ So we can go through each of this one one by one。 And this is basically the installation that we are looking for the installation。
+
+ Web for events that we wanted。 So let's read the label that。 Now it's success。
+
+
+
+![](img/3c3588b77123e82a29264958f5086ce4_70.png)
+
+ And let's also read the label。 This again。 Let's see。
+
+
+
+![](img/3c3588b77123e82a29264958f5086ce4_72.png)
+
+ Oh， something's wrong here。 This has 500 errors。
+
+![](img/3c3588b77123e82a29264958f5086ce4_74.png)
+
+ Okay。 Let's see。 Let's take a look at the love now。
+
+
+
+![](img/3c3588b77123e82a29264958f5086ce4_76.png)
+
+ Oh， I did not pass in。 Sorry。 Oh。 Yes。 Actually。 Okay。 What do we need from here？
+
+ I will fix the documentation。 It's。 Look at。 You have documentation。 Oops。 Okay。
+
+ So basically installation ID and app ID and private key。 All right。 Yes。 So one second。
+
+ Installation ID。 We have it。 We need an ID， which is something we got from the。 And what about。 See。
+
+ I did this other environment。 We defined earlier and private key。 Yes。 Sure。 No typos。
+
+ It's private key。 All right。 Let's commit that。 It's been committed and now let's deploy it。 Okay。
+
+ All right。 Let's go back to our GitHub apps。
+
+![](img/3c3588b77123e82a29264958f5086ce4_78.png)
+
+ Like book settings and try to read the label this again。
+
+
+
+![](img/3c3588b77123e82a29264958f5086ce4_80.png)
+
+ Okay。 It's successful。 It's passed。 Let's see if we actually create the issue that says thank you。
+
+ All right。 So there you go。 So this was open and close。 So there's an issue created by the bot。
+
+ My bot。 And I'm going to go back to the top。 So there you go。 All right。 So we did all of this。
+
+ And let's see。 All right。 So we're going to go back to the top。
+
+ And I mentioned how what happens if you have errors in your， webhooks。
+
+ I'll show you how you can just read the little of the webhook。 It's that like help to uninstall it。
+
+ Install it again。 So now that you know that the next exercise is。
+
+ And you can just read the little of the requests。 So if somebody open a pull request。
+
+ And if they have not done it before， so they're new to the， organization。
+
+ we want to say thanks for your first pull request。 So I've shared some links here on details of。
+
+ And there is an example of the。 The pull request even table。 So， yeah。
+
+ perhaps you can take another break time here。 If you want to。
+
+ Like if you've been watching and you're itching to try this on， your for yourself。
+
+ So I'm going to pause my recording right now。 Take a break and。 Yeah， try try the dog。
+
+ Try this exercise on your own and come back and then。 I will show you this。 The solution on this。
+
+ Hello again。 Welcome back。 Yeah， let me share my screen again。 All right。
+
+ so I hope you you had chance to do this。 But if not， that's fine。 So yeah。
+
+ let's write out this code。 So we want to。 We want to thank a contributor when they open the pull request。
+
+ So how do we do that？ First， we're going to take a look at the pull request event， documentation。
+
+ Okay。 So we want to open it。 So we also need to figure out what is the peer number。
+
+ So we can respond to their pull request。 So if we look at the payload example。
+
+ For when we receive the， okay， this is deployment status。 Actually one second。 Okay。
+
+ So this is an example of this is the documentation for the， pull request。
+
+ And here is the webhook payload。 So you will receive from GitHub the action name。
+
+ That is whether it was opened or closed， the pull request number。 And what else are important here。
+
+ We should have as well。 Who created the pull request if you scroll all the way down。 Right。
+
+ The sender again， we've seen a similar structure before。 Send a login。 And another important。
+
+ Important info out of this。 Is that is this often association value that is sent alongside the。
+
+ work of data。 There are various。 I think for possible value。 Possible values here。
+
+ Owner means the owner of the， the report， the owner of the organization。 And there are other。
+
+ Here I wrote in the documentation here。 So if the， if that value is member。
+
+ it means they are a member of the， organization。 For example， if they are a maintainer of that repo。
+
+ the contributor means they have contributed to that repository， before。
+
+ meaning they have open a pull request。 It was accepted。 And then they become a contributor。 Now。
+
+ if it's none， it means they， this is there for the time opening the， pull request there。
+
+ So with that information， with that information， you can find out。
+
+ whether this is someone new or whether this is experienced， contributed to your repo。
+
+ So those are the important details。 So how do we write a code for this？ Yeah。
+
+ So let's start by subscribing to the pull request。 So we have open event。
+
+ So basically let's just copy this code there。 That we know that we will need to make an API call。
+
+ Right。 So something like。 Now we need a URL。 So commenting up on the pull request is you will be using the same。
+
+ API as commenting on an issue， which we have done before。
+
+ But I'm going to just check the documentation again。
+
+ So it's basically post to this URL to the owner repo slash issues。
+
+ slash the issue number that will be the peer number and comments。
+
+ And let's see if we get any of those here。 Okay。 So basically the pull request issue URL will give you part of the。
+
+ part of the， the URL that you need。 So I guess we just need to pass in to add in slash comments there。
+
+ So let's， let's do that。 Okay。 So we will use you。 Well， is it and data。 Okay。
+
+ so we need to do that。 And then the actual URL we need is。 So we're going to say。
+
+ So we're going to say。 Thanks。 And the author and that is basically。 Okay， I'm going to do it here。
+
+ Yes。 And the login。 So name。 And again， we need to pass in the installation access to them。
+
+ So just going to copy from the previous step。 All right。
+
+ So that will leave the comments saying thank you for the PR。 Thanks for the。 What else do we want？
+
+ Okay。 Yes。 So we want to， we want to say that thanks only。 So we need to access the data as。
+
+ Who request and also authentication。 So。 Also association。 So。 Yes。 And。 So。 Yeah。 So if。
+
+ There is value to it。 It's not done。 It means。 Right。 And otherwise if it's empty。
+
+ That means it is a first time country。 And I would even say。 For your first contribution。
+
+ And so if it's a seasoned contributor， I'm going to say。 Well， come back。 Sander。 Whoops。 Oh。
+
+ I call it username instead of center。 So that's just it。 Oh， yes， I did provide a link。
+
+ To the solution。 So。 Oh， okay。 Okay， I got that wrong。 So we actually need it。 It is。
+
+ it is a string that says done。 So。 That's fine。 Yeah。 So if this is not like that。
+
+ It means they are a first time contributor。 And for everything else， we're going to say。 Well。
+
+ let's print that out。 Yeah。 So let's do it。 So let's commit this。 And pull request。 Create it。
+
+ And push。 Yeah。 Deploy。 Okay。 So now。 So I create a pull request。 And boom。 Okay。 So that's it。
+
+ Okay。 So basically， if there is new， new comments on issues that is still open。
+
+ we want to automatically give a thumbs up reaction。 So we've done a single thing before。
+
+ So it's about the same thing。 So let's look at。 Okay。 Issue。
+
+ And we're going to let a new comment to the issue。 Okay。 So。
+
+ That means we want to subscribe to the issue command created。 Let's do that。
+
+ So those are the same thing。 All right。 Issue comment created。 And what do we want to do？
+
+ We want to create a reaction。 So make a post to the issue slash comments， comment ID and reactions。
+
+ Oh， comment ID。 So we need。
+
+![](img/3c3588b77123e82a29264958f5086ce4_82.png)
+
+ Let's see if it is passed in to the payload。
+
+![](img/3c3588b77123e82a29264958f5086ce4_84.png)
+
+ Is this issue comment created？ Issue URL。 Okay。 Here is。 I believe this is the。 No。
+
+ that's not the URL we need。 So what do you need again？ Slash comments， last comment ID。 Okay。
+
+ Let's see if we got a comment ID。 Okay。 There you go。 We've got a comment and the ID。 Okay。 So。
+
+ And then ID is。 Check that again。 So comment ID。 Oops。 And the URL we need。 Yes。 Basically。
+
+ Is it your role？ Issue。 And。 Oh， actually we've used the comments。 Is issue comment zero。
+
+ That gives us the slash comments。 And then we need to comment ID and reactions。 Okay。 So。
+
+ And it is a。 Content。 Okay。 So get up。 And then we need to comment。 You will slash。 Comment ID。
+
+ Comment ID。 And。 And again， we need to pass in。 And the data is。 Content and reaction type。 Oops。
+
+ And。 Don't forget to put this into F string。 Okay。 We don't even need。 Okay。
+
+ Do we need to use a name？ Yeah。 Because we want。 We want about just live reactions。 If it's you。
+
+ for example， just for fun。 So it will not give heart to somebody else on the if it's your own comment。
+
+ So。 Okay。 So in that case， we want to check。 Send a login。 Okay。 So。 If。 If you send in。 Yes。
+
+ Myself。 Then I will automatically keep a heart。 Yes。 Commit this。 To my。 That。 Okay。 Okay。
+
+ Decro it again。 Okay。 Okay。 Okay。 Okay。 All right。 All right。 It's done。
+
+ So let's go to my report again。 Okay。 So if it works properly， if I say。 I should。 Immediately。
+
+ Nope。 It does not do anything。 Okay。 Let's， let's debug this together。 Pull request。 Oh， yes。
+
+ So silly。 Yes。 Yes。 Okay。 Of course， even with。 So when I created this app earlier。
+
+ I believe I did not。 Yes。 I need to take the issue comment。 Events。 Otherwise， nothing happened。
+
+ So yes。 So take that。 And say。 To the。 To the。 You have settings。 Advanced。 Actually。
+
+ I think I need to actually leave another comment here。 Nothing happened。
+
+ Let's check out the webhooks。 Okay。 There's an error here。 Five hundred。
+
+ So let's see what's going on。 Check the logs again。 Excuse me。 It actually returns。 Not found。 Okay。
+
+ So let's take a look here。 What is the problem here？ Going to do some debugging。
+
+ Let's see what is the problem。 And。 I forgot about the error。 So I don't think I need to debug。
+
+ So that accept。 There you go。 This should work。 All right。 Let's get that deployed again。 And。
+
+ All right。 Let's do it。 Okay。 It seems like it's still not working。 Okay。 Okay。 Okay。 Okay。 Oh。
+
+ this should be a comment。 Comments， you are instead of issues。 Okay。 All right。 Okay。 So I believe。
+
+ See。 Okay。 All right。 Okay。 What did I do？ Comments。 What is this issue？ Oh， gosh。
+
+ I'm making so many titles。 I'm gonna do one comment。 You are all right。 I've got this。
+
+
+
+![](img/3c3588b77123e82a29264958f5086ce4_86.png)
+
+ Okay。
+
+![](img/3c3588b77123e82a29264958f5086ce4_88.png)
+
+ Okay。 Okay。
+
+![](img/3c3588b77123e82a29264958f5086ce4_90.png)
+
+ Okay。 Okay。 Okay。 All right。 It's going to work now。
+
+
+
+![](img/3c3588b77123e82a29264958f5086ce4_92.png)
+
+ Oh， it's going on。 Okay。 Okay。 Okay。 Okay。 Yes。 Okay。 Okay。
+
+
+
+![](img/3c3588b77123e82a29264958f5086ce4_94.png)
+
+ Okay。
+
+![](img/3c3588b77123e82a29264958f5086ce4_96.png)
+
+ All right。 Okay。 There you go。 There is the heart。 All right。 That works。 Yeah。 Okay。
+
+ Shall we go to the next thing？ That's labeled the pull request。
+
+ So whenever somebody opens a pull request， have it automatically labeled something like pending review or something。
+
+ Okay。 All right。 So the API call is added an issue。 And in here。
+
+ So you call a patch to that issue and put in a label like an array of strings。 So we have。
+
+ we scroll back up。 We already have that handler for when a PR was opened。 And now。
+
+ I guess what we want to do is add another。 Add more to it saying。 Okay。 Patch the issue。
+
+ We got this URL。 Okay。 Let's think of the URL a little bit later。 And the data is。 And。
+
+ And a ray of strings。 So。 Needs for example。 And。 Don't forget the last。 Again， that is。
+
+ that is the most complicated part of this。 Figuring out the response。
+
+ Figuring out what how to construct the URL。 So if we go back。 To here， I have an example of。
+
+ So this was an example of the earlier request open event that my bot has received。 So in there。
+
+ There is the。 So that's what we need。 So basically， the。 In sure you are here。 That's what。
+
+ That's basically what we needed in the API call。 Issues and issue number。
+
+ So actually just a call request and issue your is all we need。 Which we already got it from before。
+
+ So let's just commit that。 And。 Okay。 While it's being deployed。 Let's go back。
+
+ And create another beer。 And I want to create a board request。 So let me wait until。
+
+ The old has been finished。 Okay， starting。 Create a core request。 And then。 Oh， I did I okay。
+
+ I made a mistake here not adding the await。 Okay。 Let's build it again。 Okay。 Okay。 Let's just。
+
+ Create another pull request。 I'm going to read a little bit again anyway。 Still good。
+
+ And I can see already。 The label was added。 The bot。 The comment and it adds the needs review label。
+
+ So that's that's that。 Yeah， so that's I think that's the end of our tutorial。
+
+ So we went through a lot of things。 We built a GitHub app from scratch。 A working GitHub bot。
+
+ So if you were able to follow along。 And if you have your own GitHub bot working at this point。
+
+ congratulations。 It's it's awesome。 I know。 I'm sorry。
+
+ I made lots of mistakes here that makes this longer than it needs to be。 But I guess the lesson is。
+
+ In in your real development time。 You'll probably be writing more unit tests instead of keeping deploying it like what I did。
+
+ I'm going to talk about the web。 I'm going to talk about the web。 I'm going to talk about the web。
+
+ I'm going to talk about the web。 I'm going to talk about the web。 I'm going to talk about the web。
+
+ I'm going to talk about the web。 I'm going to talk about the web。 I'm going to talk about the web。
+
+ I'm going to talk about the web。 I'm going to talk about the web。 I'm going to talk about the web。
+
+ I'm going to talk about the web。 I'm going to talk about the web。 I'm going to talk about the web。
+
+ I'm going to talk about the web。 I'm going to talk about the web。 I'm going to talk about the web。
+
+ I'm going to talk about the web。 I'm going to talk about the web。 I'm going to talk about the web。
+
+ I'm going to talk about the web。 I'm going to talk about the web。 I'm going to talk about the web。
+
+ I'm going to talk about the web。 I'm going to talk about the web。 I'm going to talk about the web。
+
+ I'm going to talk about the web。 I'm going to talk about the web。 I'm going to talk about the web。
+
+ I'm going to talk about the web。 I'm going to talk about the web。 I'm going to talk about the web。
+
+ I'm going to talk about the web。 I'm going to talk about the web。 I'm going to talk about the web。
+
+ I'm going to talk about the web。 I'm going to talk about the web。 I'm going to talk about the web。
+
+ I'm going to talk about the web。 I'm going to talk about the web。 I'm going to talk about the web。
+
+ I'm going to talk about the web。 I'm going to talk about the web。 I'm going to talk about the web。
+
+ I'm going to talk about the web。 I'm going to talk about the web。 I'm going to talk about the web。
+
+ I'm going to talk about the web。 I'm going to talk about the web。 I'm going to talk about the web。
+
+ I'm going to talk about the web。 I'm going to talk about the web。 I'm going to talk about the web。
+
+ I'm going to talk about the web。 I'm going to talk about the web。 I'm going to talk about the web。
+
+ I'm going to talk about the web。 I'm going to talk about the web。 I'm going to talk about the web。
+
+ I'm going to talk about the web。 I'm going to talk about the web。 I'm going to talk about the web。
+
+ I'm going to talk about the web。 I'm going to talk about the web。 I'm going to talk about the web。
+
+ I'm going to talk about the web。 I'm going to talk about the web。 I'm going to talk about the web。
+
+ I'm going to talk about the web。 I'm going to talk about the web。 I'm going to talk about the web。
+
+ I'm going to talk about the web。 I'm going to talk about the web。 I'm going to talk about the web。
+
+ I'm going to talk about the web。 I'm going to talk about the web。 I'm going to talk about the web。
+
+
+
+![](img/3c3588b77123e82a29264958f5086ce4_98.png)
+
+ I love you。

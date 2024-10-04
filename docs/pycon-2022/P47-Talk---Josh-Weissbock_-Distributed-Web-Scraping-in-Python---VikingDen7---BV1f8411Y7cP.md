@@ -1,0 +1,513 @@
+# P47：Talk - Josh Weissbock_ Distributed Web Scraping in Python - VikingDen7 - BV1f8411Y7cP
+
+ So yeah， I'm here today to talk about distributed webscraping。
+
+
+
+![](img/d0fd66aaacea9ae07aa87bfadc637056_1.png)
+
+ It's my first PyCon since 2015 in Montreal。 First time I've been selected to actually speak at PyCon。
+
+ So I'm pretty excited about that。 Today I'm going to be talking about distributed webscraping with Python and some lessons I've。
+
+ learned along the way。 So like I said， the goal of this presentation is to motivate you on when and why and how。
+
+ you should use distributed webscrapers and how you can build one if you need to。
+
+ So I'll give you an introduction to distributed webscraping。
+
+ I'll set the stage when you'd actually want to use one。
+
+ I'll kind of walk through you my journey of how I came to actually needing to build one。
+
+ what it finally looks like and then a bunch of tips and tricks and management and Python。
+
+ packages and some cool stuff I found that will help you if you want to build distributed， scrapers。
+
+ So quick introduction to myself so you know that I have some validity of what I'm talking， about。
+
+ My name is Josh。 I'm a Canadian。 I live in Colorado right now。
+
+ I'm actually moving back to Canada this summer。 I've been using Python for about 14 years now。
+
+ back in 2。5 when I was in university。 I did my undergrad West Coast Canada and I did my masters in the East Coast in Ottawa where。
+
+ I did machine learning， natural language processing and artificial intelligence。
+
+ I use Python all through that。 Right now I'm employed with Department of Defense here in the West where I use data science。
+
+ and data engineering primarily in the airspace domain。
+
+ I've consulted multiple times for professional sports teams and leagues in a data science。
+
+ data analytics type role building pipelines， doing data science， doing analysis， providing。
+
+ analysis to decision makers。 And of course I want to give a shout out to Statistics of the Borders。
+
+ Someone I've been volunteering with for last actually just this year is my first time I'm。
+
+ my first job。 They're a great organization to if you want to get back to community and do some data。
+
+ type work。 So if you've ever done data science you've probably seen these five stages of data science。
+
+ of the project or program。 You need to collect your data， you need to store your data。
+
+ you need to clean your data， prepare your data。 And after 80% of that work is done you can finally actually build your models and do the。
+
+ work you need to do and analyze it。 This is where this talk is focused on is the first few steps here in this process。
+
+ 80% of my work is just in that first stage of collecting data。
+
+ Most of my responsibilities come from collecting large amount data on pipelines that run overnight。
+
+ I need to ensure that the data is collected and it's up to date so I can provide the rest。
+
+ of my team and they can do the actual analysis on it。
+
+ So that's really where this talk is focused on and where I'm motivated to come from。
+
+ So what is web scraping？ What is a distributed web scraping？
+
+ We need to talk about that and make sure on the same page。
+
+ Work scraping is the act of extracting data usually from a website。
+
+ You're taking some information from it， processing it and storing it。
+
+ When you move to distributed we're applying where we're spreading this work over large。
+
+ number of computers。 This typically means we're looking at large amounts of data。
+
+ Typically we're requesting around 25，000 pages at one time。
+
+ That's usually the volume that I work at。 So giving a quick brief before I jump into the journey of how I got there。
+
+ this is generally， what I would present to you as a mental model of a distributed web scraper looks like。
+
+ You have your main controller， consumer， which generates the jobs， sends it to a bunch of。
+
+ different nodes。 They do their work and they send it back to the consumer which then stores and do the。
+
+ final processing of the data。 So to show you how I got there I'm going to walk through my journey of web scraping throughout。
+
+ the last decade。 Just at the stage， like I said， you're looking at 25，000 pages。
+
+ So the intent is you're using a situation where you want to collect a lot of data source。
+
+ where the layout is going to be the same。 It's going to be the same website。
+
+ You want to do it as quickly and efficiently as possible and ensure you have the fidelity。
+
+ of the data。 So for example， say you want to make a good reads competitor and you need book data。
+
+ your， intent would be to scrape book data off of Amazon。
+
+ If you're going to be requesting a whole bunch of book information from their individual， pages。
+
+ you're going to be working with the same templates and you're going to be extracting。
+
+ the same information， page numbers， prices， titles， authors， et cetera。
+
+ This is the place where a distributed web scraper would typically jump where you would。
+
+ want to use one。 So my first start at the very first place is what you've probably done if you've ever。
+
+ worked with the tutorial in web scraping and Python。 You create a simple script。
+
+ it requests the resource and then it stores the results。
+
+
+
+![](img/d0fd66aaacea9ae07aa87bfadc637056_3.png)
+
+ Python makes that really easy。
+
+![](img/d0fd66aaacea9ae07aa87bfadc637056_5.png)
+
+ Python makes that really easy with the request library or URL lib or URL lib2。
+
+ You can easily request websites。 You can then pass them to something like beautiful soup。
+
+ There's other alternatives like lxml。 They make it easy to process that page and store it。
+
+ You then have to decide how you want to store it， whether you want to store it to a CSV file。
+
+ you have a database， a text file or just output it to the screen。 So doing this once， super easy。
+
+ You can make a script， run it， get your data。 That's good。 So from here。
+
+ when I was working with that base case of collecting a whole bunch of books， from Amazon。
+
+ I didn't want to collect one book， I wanted to collect 25，000 books。
+
+ So I moved it to an iterative approach。 I now have two phases in my scraping job。
+
+ The first phase would be to collect all the pages I would need to scrape from that could。
+
+ be going through a search or an index and then I would need to scrape each of those individual。
+
+ pages。 This has done the exact same way as a single request but just looped over and over and over。
+
+ and over and over， repeating until you're completed。 However， like I said。
+
+ once I started working with the volume of 25，000 pages， a number of， issues quickly arose。
+
+ This was very slow。 There was a lot of idling while you're waiting for your networks to just return the websites。
+
+ Say even if it's one second page times by 25，000， that's a lot of time。
+
+ The second issue was bot detection。 Websites would quickly detect me as being a bot。
+
+ If they see the same script requesting resources over and over and over and over and over really。
+
+ fast， it picks it up as being suspicious。 At this stage， I didn't have any tracking tools。
+
+ I didn't know if I was requesting websites twice。 Same thing。 When things failed。
+
+ which will happen a lot when you're working with networks， I had to。
+
+ start the script from scratch and you're basically starting at zero。 Of course。
+
+ as I've been working with this over the last decade， the internet's changed， too。 Around 2010， 2012。
+
+ 2014， you had a lot of pages that were static HTML。 Nowadays。
+
+ you're using a lot more dynamic websites built up JavaScript， so if you're。
+
+ using something like request， you're not going to get that dynamically generated HTML。
+
+ Then I had to address these issues with my next approach。 When this。
+
+ I introduced a number of different advanced improvements or intermediate improvements。
+
+ to help myself。 I'd introduce a middle proxy layer in order to help replicate my actions as if a human。
+
+ were making all these requests。 It would randomly pick a proxy at random。
+
+ feed it through that proxy， so every time the website。
+
+ would see the request coming from a different IP。 I started adding headers to my request。
+
+ The base requests package in Python doesn't add any headers to it。
+
+ Website sees a request come in with no headers of what browser type it's looking at。
+
+ It often detects it as being a bot。 You're not just adding header， but adding random headers。
+
+ Every time it looked like a different browser was going to website。 For example。
+
+ all of us here at the conference going to the Python website were all probably。
+
+ going to be on the same IP， but it's going to look as if a whole bunch of different browsers。
+
+ are viewing it because it is a whole bunch of different browsers for everyone's devices。
+
+ One thing I found helpful was adding delays between my requests。
+
+ One you don't want to hammer a website indeed awesome。 But you also want to add random delays。
+
+ so it's not a consistent amount of time between， every request。 Dealing with the JavaScript issue。
+
+ I started moving off of a beautiful soup and request， and go to Selenium。
+
+ Selenium is typically used for testing， but it's great for dynamically generating content。
+
+ in the next track that each HTML。 I also added try until succeed methods。 Like I said。
+
+ networks are tricky。 They can often fail， and I'm sure you've gone to a website before and it didn't load。
+
+ but then you refresh and load it again。 Before in the previous iteration。
+
+ these would cause the scripts to fail。 So we started adding wrappers to my functions that would simply just keep retrying the request。
+
+ until it's succeeded。 You only tried two or three times， so you don't want to loop forever。
+
+ And I started adding some basic tracking to my scripts themselves。
+
+ So we know what URLs we need to collect from and what we've already succeeded in collecting。
+
+ Of course， this introduced more issues。 This was even slower。
+
+ Once you're slowing down your requests， you're going to add time。
+
+ Once you're dealing with dynamically generated JavaScript that has to load， you're going to。
+
+ be even slower。 You don't have wasted resources。 When you have all those proxies sitting there doing nothing。
+
+ so for example， if you have， five proxies and you're rotating randomly， every time。
+
+ 80% of them are doing nothing。 If you're spinning these up on， say， AWS or DigitalOcean。
+
+ they're sitting there and， you're paying for resources to do nothing。 At this point。
+
+ my progress tracking and restarting was really weak。
+
+ There were still issues that popped up again which really inspired the distributed scraper。
+
+ This is around the time when I started thinking about distributed scraping。
+
+ So the intent was to address all these previous issues that we've just discussed。
+
+ I want to have multiples working on scraping jobs at the same time。
+
+ I still wanted to retain that two-phase approach in generating URLs and processing them。
+
+ And this is what came up to my mental model。 We'll break it down a bit more。
+
+ but as I first introduced it， you have a controller which， generates your list of work。
+
+ It's going to feed those into a work queue。 Each year's scraping nodes can then start working off that queue。
+
+ They can individually scrape and then they'll return results back to the results queue which。
+
+ can then be consumed and saved and stored for how you need in the future。
+
+ I should add that there's five in this picture but you can have as many nodes as you want。
+
+ So breaking that down a bit more detailed， you have the first phase which is your controller。
+
+ The controller does the same work that I first mentioned in generating your list of URLs。
+
+ It goes through your search index or an index page and generates your list of URLs and stores。
+
+
+
+![](img/d0fd66aaacea9ae07aa87bfadc637056_7.png)
+
+ into a work queue。
+
+![](img/d0fd66aaacea9ae07aa87bfadc637056_9.png)
+
+ These work queues offer some cool tools such as ensuring no duplicates。
+
+ I'll talk about them a little bit more。 Once it's done collecting all the results。
+
+ it actually publishes them to the work queue， so that way the nodes can start working。
+
+ The scraping node is basically a smaller version of the previous iteration of the scraper that。
+
+ we talked about before。 It pulls a URL from that work queue and start scraping with the same techniques we've introduced。
+
+ before。 It requests the page， it parses the page and returns the results。
+
+ We're turning it back to the result queue for the final stage。
+
+ One cool side effect of introducing all these nodes with these queues is that you can add。
+
+ and destroy queues mid-job。 If you need to add more queues because you want to speed it up。
+
+ you can spin up more， nodes。 They can start pulling from the queue without any disruptions and start adding to the result。
+
+ queue without disruption。 Same thing because of the cool things that queues can give you。
+
+ If you destroy a node， even if it's mid-job， you won't lose that progress and you'll be。
+
+ able to re-request that resource。 So once the scraper is done， you send it back to the controller。
+
+ which doesn't have to be， in the same place as the first phase and it stores into result queue。
+
+ This queue keeps track of where you've progressed and allows you to keep track of your total。
+
+ progress。 So right away， this speeds up your scraping much faster。
+
+ So when I first started doing this， I was working at the volume of about 15，000 pages。
+
+ I always said 25 earlier， but five years ago， about 15，000 pages。
+
+ That would take me about 26 hours with the second iteration before the distributed scraper。
+
+ When I went up to a distributed scraper using about 8 or 10 nodes， that would reduce it。
+
+ down to four or five hours。 That's still a lot of time because you're still looking at a lot of resources。
+
+ but something， you can run overnight without any issues。 You're now no longer wasting resources。
+
+ so instead of having proxies in there doing nothing。
+
+ you can actually employ all the proxies to do something to help you with overall job。
+
+ With the introduction of queues， we're improving our fidelity of the process。
+
+ We're ensuring that all the work has been done and again， the results from all the resources。
+
+ And of course， you can automate the whole process。
+
+ If you employ a distributed scraper on a platform such as AWS， Azure， Lino， DigitalOcean， they。
+
+ all have their own APIs， so you can automate almost this entire process。 Of course。
+
+ the disadvantages with distributed scraper is now there's much higher cost。 Again。
+
+ these platforms are fairly cheap， so you're not talking large dollars， but there。
+
+ is still a cost to actually employ each of these nodes。
+
+ Read-a-play ability of code has been a bit tricky， but I have a few ideas on that and。
+
+ I'll talk about that in a minute。 And the other one is assumption of trust。
+
+ So you're assuming that this entire system is a closed system。
+
+ You assume that all your nodes are only talking with your queues and you're assuming that。
+
+ no data is being introduced from another source that could either be malicious or just be not。
+
+ useful。 So that is generally a distributed scraper in general， but I want to talk about a few other。
+
+ more specific technical things on these different phases。
+
+ The first is that the introduction of queues made that distributed scraping job really easy。
+
+ to manage。 Cues themselves are often useful dispatch methods， so you can ensure that the resources。
+
+ are being spread out across the different nodes， whether you want fair or round robin。
+
+ You get ACK methods， so you can guarantee that your resource has been sent to a scraping。
+
+ node and then you acknowledge and confirm that results have been sent back before deleting。
+
+ anything。 So you have that acknowledgement before you to ensure that you've completed the job。
+
+ They can also be wrapped。 You're also sending messages across them。
+
+ so typically you're sending them as text。 So you can wrap them in JSON and make it easy to send across and use it with any type of。
+
+ platform or language or tool。 These message brokers， again， are really agnostic。
+
+ so you're not stuck to any specific one。 I typically use RabbitMQ or Redis in my own work。
+
+ My day job is using Kafka a lot， but， again， you're not stuck in the so you can use what。
+
+ you're used to， whether it's AWS data streams， Azure vent hubs or SQL or no SQL databases。
+
+ Python offers a lot of really useful and easy packages for you to actually start working。
+
+ with these queues。 Pika and Puka are the ones that I've used most。
+
+ I haven't used Celery in this context， but I've used it for offloading jobs off websites。
+
+ It's very easy to manage your queues。 And one thing I've really found tricky over the last few years was code management。
+
+ So as you employ your scraping code to each of the nodes， eventually something's going。
+
+ to happen that's going to break it。 Either there'll be an exception that you didn't think of， say。
+
+ for example， you pulled， a birthday off of a website and they said that person was born on the 13th month。
+
+ the， 45th day and the year 1045。 That can easily break your Python code if you don't have any exceptions to it。
+
+ So， or for example， if resources doesn't exist or it throws weird errors or even commonly。
+
+ at the website just changes， the layout changes and your code no longer works， you need to。
+
+ manage that code onto the scraping node itself。 The couple options I've looked at over the years was containers which work。
+
+ I am not a fan of them personally in this context， partly because I'm not super comfortable。
+
+ with them， but also I find on the nodes themselves， for myself， they're often a bunch of servers。
+
+ So I have a lot of bash scripts that I have outside of the container context that I also。
+
+ need to manage。 One thing I like is a VCS hook。 Every time you start up your scraping node。
+
+ it just pulls the latest version of the code， off of a repo。
+
+ I've looked into serverless computing such as AWS Lambda， but again， a lot of the time。
+
+ in scraping is sitting there waiting for resources。 So when you're using that。
+
+ you're paying for Lambda when you're not actually using it。
+
+ The other thing I'm using is manual deployment of images。 I'll create a node FTP into it。
+
+ update the code， shut down it， create a new image of it。
+
+ and deploy all the nodes off that new image。 It's not ideal。
+
+ but it ends up being lazy and going to that approach。
+
+ So I do want to highlight a couple of useful Python packages that are useful in scraping。
+
+ both in the distributed scraper and in non-distributed scraping， request beautiful soups， lenium。
+
+ or your go-tos。 If you've ever done a tutorial， you'll have seen them。
+
+ So I won't go too much into them。 Click is really awesome。
+
+ Comes in a lot of other packages so you might already have installed。
+
+ It makes it really easy for you to create command line arguments for your scripts。 Retry back off。
+
+ Retry and back off retry are two different packages that make it easy。
+
+ They're essentially function wrappers that handle the retrying of failed functions。 So for example。
+
+ if you request a website and it gives you a 404 error because it doesn't， exist。
+
+ it would retry it and you can give a number of parameters such as the number of。
+
+ retimes you want to try before you give up。 You can add back off so you exponentially slow down your request between every time。
+
+ So that's a really useful package。 Request cache is a really great one for development。
+
+ Request is the package to request a resource on website， but request cache actually caches。
+
+ that result。 So every time when you're developing and you're testing and you're building a script for。
+
+ the first time， you don't have to re-grab it new every single request。
+
+ You can just grab it at your cache and it helps you up your development time。
+
+ And fake user agent was a really good one that I found recently。
+
+ I learned about it from one of the Python podcasts， I just can't remember which one。 But it。
+
+ so what I mentioned earlier before introducing random headers for your requests。
+
+ it uses a real world database and it gives you a random header that's based on distribution。
+
+ of what they actually see in real life。 So instead of just adding a random header。
+
+ you're adding something that you're likely， to see or the server is likely to see in real time。
+
+ So just some other considerations， partly for myself， as far as you think about， you definitely。
+
+ want to add。 Full automation， I haven't fully gotten there yet to fully creating this。
+
+ partly because， I'm lazy and busy just managing these servers。
+
+ processes and getting my team working。 But you can fully automate them。
+
+ something I want to investigate more into。 Alerts are something that you definitely need on all of your web scraping scripts。
+
+ whether， it's an SMS or an email。 You need to， it makes your life so much easier if you can be aware as soon as it happens。
+
+ if there's a failure。 So for example， there's a network issue or you got a 503 error because you got banned。
+
+ or because the website no longer exists or the page doesn't exist or the layout changed。
+
+ And also for completions and success， you also want to know when it's succeeded so you。
+
+ can actually go back and continue the next phase of whatever you're working on。 And of course。
+
+ all the previous things I've talked about still need to be addressed。
+
+ So I kind of went a little bit quicker than I hope， but yeah， same conclusions。
+
+ Python itself makes scraping really easy。 Large jobs require a lot of work to ensure the fidelity and ensure that you can actually。
+
+ scrape all the resources， especially in a reasonable amount of time。
+
+ Distributed web scraping is a approach you can use to improve your fidelity and speed。
+
+ up the time to actually request all these resources。 However。
+
+ it does come at the cost of a higher actual resource cost。 So thank you for that。
+
+ I don't believe we're doing Q&A， but I'm here all weekend。 So if you ever see me this weekend。
+
+ just come up and chat。 So thank you。 [APPLAUSE]， [BLANK_AUDIO]， [ Silence ]。
+
+
+
+![](img/d0fd66aaacea9ae07aa87bfadc637056_11.png)
