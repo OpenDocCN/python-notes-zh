@@ -1,1169 +1,595 @@
-# PyCon US 2023 - P24：Talks - Calvin Hendryx-Parker_ Too Big for DAG Factories_ - VikingDen7 - BV1114y1o7c5
+# P24：Talks - Calvin Hendryx-Parker_ Too Big for DAG Factories_ - VikingDen7 - BV1114y1o7c5
 
- I'm ready。 Let's do it。 The afternoon， our next compared to his calendar。
-
- and we're going to be watching the audience。 I think they forgot to do it。
+ I'm ready。 Let's do it。 The afternoon， our next compared to his calendar。 and we're going to be watching the audience。 I think they forgot to do it。
 
  I'll be through in the morning。 I mean， one of the pilots is this patient。
-
-
-
 ![](img/d9de50a092a012a03dc8cefabb905d2d_1.png)
 
- I'm going to take a 360 picture and it'll be all in the morning。
+ I'm going to take a 360 picture and it'll be all in the morning。 I want you to be able to see things up。 That's just for you， right？ One， two， three。
 
- I want you to be able to see things up。 That's just for you， right？ One， two， three。
+ I've been in the conversation with them。 I've been in this office。 I've been on some。 They've been very nice for having you here at the moment。 This is my first time in the night。
 
- I've been in the conversation with them。 I've been in this office。 I've been on some。
+ I've been in the night， but I don't feel afraid。 The first time I actually get the right talk is my first time。 I just got a new scholarship。 I was going to teach you how to do this for a few years。
 
- They've been very nice for having you here at the moment。 This is my first time in the night。
+ I'm going to teach you how to do this on Earth。 I've been taught a little bit in the evening since I've been taught a little bit。 I think we can often work on this。 I just want to tell you what the question is。
 
- I've been in the night， but I don't feel afraid。 The first time I actually get the right talk is my first time。
+ I think we can't actually study with Europe and the area of Wales。 Therefore。 I want to know why this is going to be a little bit of an alternative。
 
- I just got a new scholarship。 I was going to teach you how to do this for a few years。
+ But there was a talk related to me， and I think there's a talk from a couple of times ago to the research。 I've talked about this a little bit about it。 I don't want to get paid， but this talk。
 
- I'm going to teach you how to do this on Earth。 I've been taught a little bit in the evening since I've been taught a little bit。
+ why this is here， is because you mean you're looking for a particular one tool for you。 a different page for your specific piece of this， or you make a big space for this field to go into the least。
 
- I think we can often work on this。 I just want to tell you what the question is。
-
- I think we can't actually study with Europe and the area of Wales。 Therefore。
-
- I want to know why this is going to be a little bit of an alternative。
-
- But there was a talk related to me， and I think there's a talk from a couple of times ago to the research。
-
- I've talked about this a little bit about it。 I don't want to get paid， but this talk。
-
- why this is here， is because you mean you're looking for a particular one tool for you。
-
- a different page for your specific piece of this， or you make a big space for this field to go into the least。
-
- It's a collateral point running to the least probable split for the world。 I think it's the least。
-
- or it's the thousands of dollars。 I'm saying that it's going to work for you a long way。
+ It's a collateral point running to the least probable split for the world。 I think it's the least。 or it's the thousands of dollars。 I'm saying that it's going to work for you a long way。
 
  but you're going to get a lot of money。 I mean， 2000 dollars。 I think it's going to work for you。
-
-
-
 ![](img/d9de50a092a012a03dc8cefabb905d2d_3.png)
 
- So， that's what you guys are still in here。 One thing I wanted to talk about is the talk。
+ So， that's what you guys are still in here。 One thing I wanted to talk about is the talk。 which is the beginning presentation， and the beginning presentation。 So， in this case。
 
- which is the beginning presentation， and the beginning presentation。 So， in this case。
+ it's going to work for you， because you can see the beginning presentation。 and the bottom of the path and the bottom of the step。
 
- it's going to work for you， because you can see the beginning presentation。
+ and then you'll get to the beginning presentation。 Right there， the beginning of myself。 and the bottom of the page is going to work for you， in the world。
 
- and the bottom of the path and the bottom of the step。
+ because that's a particular thing to do。 And it's going to work for you for a case。 It's a great way to keep up with it， and it's going to work for you for a whole couple of years。
 
- and then you'll get to the beginning presentation。 Right there， the beginning of myself。
+ And that's the beginning of it。 So， I've got a particular really， really great thing to do。 I've got a really great place to go。 I've got a couple of people who are running， the next project。
 
- and the bottom of the page is going to work for you， in the world。
+ and they're going to be doing， the things that they need to do。 and they're going to be doing the things that they need to do。
 
- because that's a particular thing to do。 And it's going to work for you for a case。
+ And those guys are going to have to be done， with that type of offer， which centers for a case。 And that's what you're going to be providing to the outside。 So， it's very big。
 
- It's a great way to keep up with it， and it's going to work for you for a whole couple of years。
+ and it's going to work for you。 And so， the final part of the process comes with， honest。 and honest， and honest， and the things that you're going to be doing to people。 So。
 
- And that's the beginning of it。 So， I've got a particular really， really great thing to do。
+ the beginning of it， really， very deeply， and it's going to work for you。 I've got a couple of things that you can do。 And so， it's going to work for you。
 
- I've got a really great place to go。 I've got a couple of people who are running， the next project。
+ And you can also put in those really， a couple of things that you can do。 And you can also put in those really， a couple of things that you can do。
 
- and they're going to be doing， the things that they need to do。
+ And you can also put in those really， a couple of things that you can do。 And you can also put in those really， a couple of things that you can do。
 
- and they're going to be doing the things that they need to do。
+ And you can also put in those really， a couple of things that you can do to people。 And you can also put in those really， a couple of things that you can do to people。
 
- And those guys are going to have to be done， with that type of offer， which centers for a case。
+ And you can also put in those very， very， very， very， very， very， very， very， very， very， very。 very， very， very， very， useful user interface。 And you can also use your interface。
 
- And that's what you're going to be providing to the outside。 So， it's very big。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- and it's going to work for you。 And so， the final part of the process comes with， honest。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- and honest， and honest， and the things that you're going to be doing to people。 So。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- the beginning of it， really， very deeply， and it's going to work for you。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- I've got a couple of things that you can do。 And so， it's going to work for you。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also put in those really， a couple of things that you can do。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also put in those really， a couple of things that you can do。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also put in those really， a couple of things that you can do。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also put in those really， a couple of things that you can do。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also put in those really， a couple of things that you can do to people。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also put in those really， a couple of things that you can do to people。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also put in those very， very， very， very， very， very， very， very， very， very， very。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- very， very， very， very， useful user interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
  And you can also use your interface。
-
 ![](img/d9de50a092a012a03dc8cefabb905d2d_5.png)
 
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
  And you can also use your interface。
-
 ![](img/d9de50a092a012a03dc8cefabb905d2d_7.png)
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
 ![](img/d9de50a092a012a03dc8cefabb905d2d_9.png)
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
 ![](img/d9de50a092a012a03dc8cefabb905d2d_11.png)
 
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
  And you can also use your interface。 And you can also use your interface。
-
-
-
 ![](img/d9de50a092a012a03dc8cefabb905d2d_13.png)
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
 
 
 ![](img/d9de50a092a012a03dc8cefabb905d2d_15.png)
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can also use your interface。 And you can also use your interface。 And you can also use your interface。 And you can also use your interface。
 
- And you can also use your interface。 And you can also use your interface。
+ And you can use your interface。 And you can use your interface。 And you can use your interface。 And you can use your interface。 And you can use your interface。 And you can use your interface。
 
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can also use your interface。 And you can also use your interface。
-
- And you can use your interface。 And you can use your interface。 And you can use your interface。
-
- And you can use your interface。 And you can use your interface。 And you can use your interface。
-
- And you can use your interface。 And you can use your interface。 And you can use your interface。
-
- You can use your interface。 [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]。
+ And you can use your interface。 And you can use your interface。 And you can use your interface。 You can use your interface。 [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]。
 
  [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？
 
- Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole。
-
- ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]。
+ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole。 ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]。
 
  [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？
 
- Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole。
-
- ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]。
+ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole。 ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]。
 
  [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]。
-
-
-
 ![](img/d9de50a092a012a03dc8cefabb905d2d_17.png)
 
  [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？
 
- Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole。
-
- ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]。
+ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole。 ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]。
 
  [？ Ole， ？]， [？ Ole， ？]， [？ Ole， ？]。

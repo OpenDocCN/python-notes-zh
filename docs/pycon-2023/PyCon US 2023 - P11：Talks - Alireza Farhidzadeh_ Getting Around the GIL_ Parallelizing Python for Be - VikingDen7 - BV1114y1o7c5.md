@@ -1,4 +1,4 @@
-# PyCon US 2023 - P11：Talks - Alireza Farhidzadeh_ Getting Around the GIL_ Parallelizing Python for Be - VikingDen7 - BV1114y1o7c5
+# P11：Talks - Alireza Farhidzadeh_ Getting Around the GIL_ Parallelizing Python for Be - VikingDen7 - BV1114y1o7c5
 
  Okay， we're going to go ahead and get started with our first talk in the afternoon walk。
 ![](img/c95f90d1b3c7566277a9cfccc9209ab2_1.png)

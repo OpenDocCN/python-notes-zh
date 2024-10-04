@@ -1,25 +1,19 @@
-# PyCon US 2023 - P51：Talks - Mark Shannon_ How we are making CPython faster. Past, present and future - VikingDen7 - BV1114y1o7c5
+# P51：Talks - Mark Shannon_ How we are making CPython faster. Past, present and future - VikingDen7 - BV1114y1o7c5
 
 ![](img/ef54c28d141e08b704c3533d9ca1df2d_0.png)
 
 这不是一个很好的时间，你知道吗，可能的次数越多，对呀，所以只是一部分，我的工作必须达到，那是件事，哈哈哈，目标。
-
-
-
 ![](img/ef54c28d141e08b704c3533d9ca1df2d_2.png)
 
 ![](img/ef54c28d141e08b704c3533d9ca1df2d_3.png)
 
 从来没有，马上就要，只是不要给，第一个，我去叫其他人，一张印刷品，所以你。
-
 ![](img/ef54c28d141e08b704c3533d9ca1df2d_5.png)
 
 你在看这个。
-
 ![](img/ef54c28d141e08b704c3533d9ca1df2d_7.png)
 
 没关系的，我们不必，那是个问题，这是一个点，我们得到了，如何。
-
 ![](img/ef54c28d141e08b704c3533d9ca1df2d_9.png)
 
 ![](img/ef54c28d141e08b704c3533d9ca1df2d_10.png)

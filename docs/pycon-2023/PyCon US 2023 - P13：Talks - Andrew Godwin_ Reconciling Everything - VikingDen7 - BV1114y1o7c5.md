@@ -1,4 +1,4 @@
-# PyCon US 2023 - P13：Talks - Andrew Godwin_ Reconciling Everything - VikingDen7 - BV1114y1o7c5
+# P13：Talks - Andrew Godwin_ Reconciling Everything - VikingDen7 - BV1114y1o7c5
 
  [ Inaudible ]。
 ![](img/ec3e0337aa373d8803a09fe04620c099_1.png)

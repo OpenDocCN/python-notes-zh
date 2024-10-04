@@ -4,3 +4,4 @@
 +   [PyCon 2020 会议笔记](docs/pycon-2020/README.md)
 +   [PyCon 2021 会议笔记](docs/pycon-2021/README.md)
 +   [PyCon 2022 会议笔记](docs/pycon-2022/README.md)
++   [PyCon 2023 会议笔记](docs/pycon-2023/README.md)

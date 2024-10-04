@@ -1,4 +1,4 @@
-# PyCon US 2023 - P10：Talks - Al Sweigart_ An Overview of the Python Code Tool Landscape 2023 - VikingDen7 - BV1114y1o7c5
+# P10：Talks - Al Sweigart_ An Overview of the Python Code Tool Landscape 2023 - VikingDen7 - BV1114y1o7c5
 
  Right here first， the player's helping to continue to touch the flight。 The interviewer calls on the old view， typing for the flight。
 ![](img/a07ae698bae1d8acb63b27d3fd265ee8_1.png)

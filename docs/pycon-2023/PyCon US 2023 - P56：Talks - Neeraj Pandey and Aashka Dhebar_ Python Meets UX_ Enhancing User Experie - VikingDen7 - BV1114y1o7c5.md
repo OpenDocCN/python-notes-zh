@@ -1,940 +1,494 @@
-# PyCon US 2023 - P56：Talks - Neeraj Pandey and Aashka Dhebar_ Python Meets UX_ Enhancing User Experie - VikingDen7 - BV1114y1o7c5
+# P56：Talks - Neeraj Pandey and Aashka Dhebar_ Python Meets UX_ Enhancing User Experie - VikingDen7 - BV1114y1o7c5
 
  But the funding is in the end。 So now we have a new project。 So we're going to deliver the top one。
-
-
-
 ![](img/5600471d335172d2bcd1ee3f19f0d124_1.png)
 
  That's how it makes the year。 And I'm saying you're going to get a fixed cost。 What do you think？
 
- Thank you so much。 Good morning， guys。 So this talk is about the intersection of AI and the user experience。
+ Thank you so much。 Good morning， guys。 So this talk is about the intersection of AI and the user experience。 So we don't have to discover the power we can use by contrast。 It's like all the power of the AI。
 
- So we don't have to discover the power we can use by contrast。 It's like all the power of the AI。
+ And we're going to be able to use it。 For the presentation。 we'll be discussing the importance of user experience。
 
- And we're going to be able to use it。 For the presentation。
+ And the display landscape of the product and all the space of the product。 So in the context of the product， we can be incorporated on those aspects。
 
- we'll be discussing the importance of user experience。
-
- And the display landscape of the product and all the space of the product。
-
- So in the context of the product， we can be incorporated on those aspects。
-
- Including data management and data management。 Optimization of the organization for any product。
-
- So to begin with， we see the importance of UX。 Because UX is very crucial in trying to understand user needs。
+ Including data management and data management。 Optimization of the organization for any product。 So to begin with， we see the importance of UX。 Because UX is very crucial in trying to understand user needs。
 
  And to satisfy the end user goals。 So how do we help you in the outcome？
 
- Making the product more personalized。 And also， the users can use the cut-off for the organization for the companies。
+ Making the product more personalized。 And also， the users can use the cut-off for the organization for the companies。 And also， who can retain the users。 So to begin with， we need to understand the process。
 
- And also， who can retain the users。 So to begin with， we need to understand the process。
+ I put the process from the UX to standard。 And also， it's going to be a good day in life。 So we've partnered our digital process where all the information is still gathered。
 
- I put the process from the UX to standard。 And also， it's going to be a good day in life。
+ from different product resources。 We're going to do it into the task or something。 And then once we have a lot of data with us， we can define the product for any business。
 
- So we've partnered our digital process where all the information is still gathered。
+ So we have a concrete example now that we need to solve a problem in this first part。 We need to project a mission for this engine。 So then we go to the ideas we've created。
 
- from different product resources。 We're going to do it into the task or something。
+ We just want to know， you know， two-member things right。 But the UX is done。 And it's continuously spinning over different kinds of operations。
 
- And then once we have a lot of data with us， we can define the product for any business。
+ So the product then can use some sort of construction。 And then the architectural product also comes out of both。 But if I make a cure， a dollar product。
 
- So we have a concrete example now that we need to solve a problem in this first part。
+ then then the benefit will be the users are the users， who can be able to make a difference。 So if we go out and take a new API and do it， then we're going to see that there is a common。
 
- We need to project a mission for this engine。 So then we go to the ideas we've created。
+ frame between new and new UX support， go with that information and the information in this product。 So we can see that there's more than something that we often supervise and use。
 
- We just want to know， you know， two-member things right。 But the UX is done。
+ We have more than something else， but we have more than something else。 But we have more than something else。 And when it's new。
 
- And it's continuously spinning over different kinds of operations。
+ it's quite difficult to know that the person is coming up to the product。 and the person is possibly getting information from the site。
 
- So the product then can use some sort of construction。
+ All these beyond what is being discussed in those things can be written in the product in minutes and so。 So with the conversation， we can make more user-funded product。
 
- And then the architectural product also comes out of both。 But if I make a cure， a dollar product。
+ And we can make personal lives for the specific user。 So the people might argue and tell this to the person， we can start working the processing。
 
- then then the benefit will be the users are the users， who can be able to make a difference。
+ So we can make the right audio， we can hear the staff that is going to send everybody's UX processes。 to the site， so it's very crucial。 There's a cloud that identifies the site about a specific user。
 
- So if we go out and take a new API and do it， then we're going to see that there is a common。
+ and how they are going to do the product and their feedback。 And then we can use this to start using the case in a particular instance。
 
- frame between new and new UX support， go with that information and the information in this product。
+ which is a knowledge of people's assumptions， they are not going to be in discussions。 But the people who used to use this site for the community。
 
- So we can see that there's more than something that we often supervise and use。
+ who used to find a specific tool to explain all those two other rights from processes in different sites。 So I'm taking the rights， but the rights is something that's been done for my particular site。
 
- We have more than something else， but we have more than something else。
+ And we don't call themselves by thinking about the common features。 For users who are part of the product to do it， and they use the same size for someone who's for other users。
 
- But we have more than something else。 And when it's new。
+ So the second thing that person used to do is to have these things in the user。 part of these things that wouldn't use as part of the member pattern。
 
- it's quite difficult to know that the person is coming up to the product。
+ So we can use those different seminars and some of the details to figure out。 those patterns and then the differences within the community program。 And for example。
 
- and the person is possibly getting information from the site。
+ with the experience of data， it's hard for us to conduct the data in the patterns of the user。 And then we can write this， and then we can use the knowledge of how the users are moving to your product。
 
- All these beyond what is being discussed in those things can be written in the product in minutes and so。
+ And then we can do some different things that are like how the data pattern is required。 and how we can invent。 And then we can do some different things。 So， yes， but can I say， you know。
 
- So with the conversation， we can make more user-funded product。
+ whatever the ones that are human， so that's not a problem。 Just because you may see that there are a couple of people in the world。
 
- And we can make personal lives for the specific user。
+ and you can use experiments for this， and in this process， you can use people in the world。 or in the community， and you can ask them to do it in the community。
 
- So the people might argue and tell this to the person， we can start working the processing。
+ And all the work for those who have been back to go without the disability。 and those who have really used the data， you know。
 
- So we can make the right audio， we can hear the staff that is going to send everybody's UX processes。
+ but please find out about the social cost ratio of data。 and you can use it to find out how to use products， because they can be utilized to the cater body。
 
- to the site， so it's very crucial。 There's a cloud that identifies the site about a specific user。
-
- and how they are going to do the product and their feedback。
-
- And then we can use this to start using the case in a particular instance。
-
- which is a knowledge of people's assumptions， they are not going to be in discussions。
-
- But the people who used to use this site for the community。
-
- who used to find a specific tool to explain all those two other rights from processes in different sites。
-
- So I'm taking the rights， but the rights is something that's been done for my particular site。
-
- And we don't call themselves by thinking about the common features。
-
- For users who are part of the product to do it， and they use the same size for someone who's for other users。
-
- So the second thing that person used to do is to have these things in the user。
-
- part of these things that wouldn't use as part of the member pattern。
-
- So we can use those different seminars and some of the details to figure out。
-
- those patterns and then the differences within the community program。 And for example。
-
- with the experience of data， it's hard for us to conduct the data in the patterns of the user。
-
- And then we can write this， and then we can use the knowledge of how the users are moving to your product。
-
- And then we can do some different things that are like how the data pattern is required。
-
- and how we can invent。 And then we can do some different things。 So， yes， but can I say， you know。
-
- whatever the ones that are human， so that's not a problem。
-
- Just because you may see that there are a couple of people in the world。
-
- and you can use experiments for this， and in this process， you can use people in the world。
-
- or in the community， and you can ask them to do it in the community。
-
- And all the work for those who have been back to go without the disability。
-
- and those who have really used the data， you know。
-
- but please find out about the social cost ratio of data。
-
- and you can use it to find out how to use products， because they can be utilized to the cater body。
-
- or byproduct to the entire model。 And then， because of the vision that we like to do。
-
- we use your work， and you can make a product that we're used to。
+ or byproduct to the entire model。 And then， because of the vision that we like to do。 we use your work， and you can make a product that we're used to。
 
 
 
 ![](img/5600471d335172d2bcd1ee3f19f0d124_3.png)
 
- So， if you're saying it before， you can't make it。
+ So， if you're saying it before， you can't make it。 And you can't make it like a product that we can say that， if you look at the users， you need it。
 
- And you can't make it like a product that we can say that， if you look at the users， you need it。
+ and one who wants to go with the community， because you don't want to be easily a product。 and if you're starting to get to a person like you， and then， you know。
 
- and one who wants to go with the community， because you don't want to be easily a product。
+ it's like the AI who's looking at how to use product， and also， like。 the users who need the product， and they do a work for it， because they're going through the things。
 
- and if you're starting to get to a person like you， and then， you know。
+ that they're thinking about， or it is quickly being like， "Oh。 there's a person who needs the users to ask them what they're doing。"， So， for example。
 
- it's like the AI who's looking at how to use product， and also， like。
+ we'd be like， "Oh， this is still the gallery， and I'm going through the gallery， and it's not here。"， And we're just like the topics that we've built that are called， and says， "Oh。
 
- the users who need the product， and they do a work for it， because they're going through the things。
+ we heard that this is still the place we're going through。 and we used to talk about what we're going through today， and you don't use customers。
 
- that they're thinking about， or it is quickly being like， "Oh。
+ and you don't use the product， but you're not straight to the space。 and it's not the place we're going through today。"， So。
 
- there's a person who needs the users to ask them what they're doing。"， So， for example。
+ we think there's a lot of people who can understand this， so。 we don't care if we're going through this product， and it's not the place we're going through。
 
- we'd be like， "Oh， this is still the gallery， and I'm going through the gallery， and it's not here。
+ and it's not the place we're going through， and it's not the place we're going through today。 but in our first post-site， we can use four-site indie， and both of these things。
 
-"， And we're just like the topics that we've built that are called， and says， "Oh。
+ and they're part of this thing， and it can really extend some of that。 So。 if you don't like the music， so that's how we play。
 
- we heard that this is still the place we're going through。
+ it's supposed to be a place to do more than a few things。 and we need the best ways of doing what we have， and that we don't have a kind of advertising to make the music。
 
- and we used to talk about what we're going through today， and you don't use customers。
+ and it's going to be a part of it。 And so， we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
 
- and you don't use the product， but you're not straight to the space。
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
 
- and it's not the place we're going through today。"， So。
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
 
- we think there's a lot of people who can understand this， so。
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
 
- we don't care if we're going through this product， and it's not the place we're going through。
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
 
- and it's not the place we're going through， and it's not the place we're going through today。
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
 
- but in our first post-site， we can use four-site indie， and both of these things。
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
 
- and they're part of this thing， and it can really extend some of that。 So。
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
 
- if you don't like the music， so that's how we play。
-
- it's supposed to be a place to do more than a few things。
-
- and we need the best ways of doing what we have， and that we don't have a kind of advertising to make the music。
-
- and it's going to be a part of it。 And so， we're going through a lot of the things that we're going through。
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
 
  and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
-
-
 ![](img/5600471d335172d2bcd1ee3f19f0d124_5.png)
 
- and we're going through a lot of the things that we're going through。
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
+
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
+
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
+
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
+
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
+
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
+
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
+
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
+
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
 
  and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
-
-
 ![](img/5600471d335172d2bcd1ee3f19f0d124_7.png)
 
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
 
 
 
 ![](img/5600471d335172d2bcd1ee3f19f0d124_9.png)
 
- and we're going through a lot of the things that we're going through。
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
 
- and we're going through a lot of the things that we're going through。
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
 
- and we're going through a lot of the things that we're going through。
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
 
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
 
 
 
 ![](img/5600471d335172d2bcd1ee3f19f0d124_11.png)
 
- and we're going through a lot of the things that we're going through。
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
+
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
+
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
+
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
+
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
 
  and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
-
-
-
 ![](img/5600471d335172d2bcd1ee3f19f0d124_13.png)
 
- and we're going through a lot of the things that we're going through。
-
- and we're going through a lot of the things that we're going through。
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
 
 
 
 ![](img/5600471d335172d2bcd1ee3f19f0d124_15.png)
 
- and we're going through a lot of the things that we're going through。
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
 
- and we're going through a lot of the things that we're going through。
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
 
- and we're going through a lot of the things that we're going through。
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
 
- and we're going through a lot of the things that we're going through。
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
 
- and we're going through a lot of the things that we're going through。
+ and we're going through a lot of the things that we're going through。 and we're going through a lot of the things that we're going through。
 
- and we're going through a lot of the things that we're going through。
+ and we're going through a lot of the things that we're going through， so。 in case you're doing anything， I'm going to go over data content， and just， well。
 
- and we're going through a lot of the things that we're going through。
+ it's like a process that's happening， and it's like inside some of the larger pieces。 and then you have to bring up into the more specific things。
 
- and we're going through a lot of the things that we're going through。
+ and you can see that there are more different types of other pieces to be in， and specifically。 I'll deny things that are here， but people just do often use them。
 
- and we're going through a lot of the things that we're going through。
+ so they do the data that they can build on using the other thing。 And， of course。 the things that we're going to look at， and we all agree that we're going through a very good resource。
 
- and we're going through a lot of the things that we're going through。
+ because it's called the users based on the processes that we are causing these pieces。 and we also don't know why we're doing that， but it's a very crucial thing to be working with the people that we call them。
 
- and we're going through a lot of the things that we're going through， so。
+ because it includes a lot of things， specifically to find the things that we call the "you're a person"。 and how they could actually create different pieces in the next generation。 Actually。
 
- in case you're doing anything， I'm going to go over data content， and just， well。
-
- it's like a process that's happening， and it's like inside some of the larger pieces。
-
- and then you have to bring up into the more specific things。
-
- and you can see that there are more different types of other pieces to be in， and specifically。
-
- I'll deny things that are here， but people just do often use them。
-
- so they do the data that they can build on using the other thing。 And， of course。
-
- the things that we're going to look at， and we all agree that we're going through a very good resource。
-
- because it's called the users based on the processes that we are causing these pieces。
-
- and we also don't know why we're doing that， but it's a very crucial thing to be working with the people that we call them。
-
- because it includes a lot of things， specifically to find the things that we call the "you're a person"。
-
- and how they could actually create different pieces in the next generation。 Actually。
-
- I think that one more thing is a quick theme， which is a 20% of the process for the viewers。
-
- and this kind of quality uses absolutely different people。
+ I think that one more thing is a quick theme， which is a 20% of the process for the viewers。 and this kind of quality uses absolutely different people。
 
 
 
 ![](img/5600471d335172d2bcd1ee3f19f0d124_17.png)
 
- So， if there's a little user that can make them think of the "you're a person"。
+ So， if there's a little user that can make them think of the "you're a person"。 that provides personalized experience， that can be taken from user points。
 
- that provides personalized experience， that can be taken from user points。
+ with the "you're a person"。 And everything we use of something like "a" plus "a" which is a study in all of the things。 that we're going through， and then we're going to set the reason for this one more。
 
- with the "you're a person"。 And everything we use of something like "a" plus "a" which is a study in all of the things。
+ but it is a history in the policy history， which is specifically。 we would give you the data from the context of this graph， which is based on the system。
 
- that we're going through， and then we're going to set the reason for this one more。
+ and then we can ask the question， "is it a specific type？"。 And the question is based on their political and political similarity。
 
- but it is a history in the policy history， which is specifically。
+ because it's based on the political discourse， and so it's not a very different type of community called "questions"。 but it uses based on the possession history in the political and political world。
 
- we would give you the data from the context of this graph， which is based on the system。
+ And it's just a variety。 So， the goals are we can say that we can make it a personalized content。 and we can make it so a single user， and we can even follow it， that you can maintain this way。
 
- and then we can ask the question， "is it a specific type？"。
+ We can use the "gives" that we can use for some specific product。 but we don't want to make something that is necessary in super fast。
 
- And the question is based on their political and political similarity。
-
- because it's based on the political discourse， and so it's not a very different type of community called "questions"。
-
- but it uses based on the possession history in the political and political world。
-
- And it's just a variety。 So， the goals are we can say that we can make it a personalized content。
-
- and we can make it so a single user， and we can even follow it， that you can maintain this way。
-
- We can use the "gives" that we can use for some specific product。
-
- but we don't want to make something that is necessary in super fast。
-
- We don't want to make it like most of the goals， but we want to make something more sustainable。
-
- and we want to use the "gives" that we can use for human beings。 And in the moment。
+ We don't want to make it like most of the goals， but we want to make something more sustainable。 and we want to use the "gives" that we can use for human beings。 And in the moment。
 
  we want to spell out the spell out by gins themselves。
-
-
-
 ![](img/5600471d335172d2bcd1ee3f19f0d124_19.png)
 
  and by the way， we can use the values we've predicted。
-
-
-
 ![](img/5600471d335172d2bcd1ee3f19f0d124_21.png)
 
- and we can go out with people that we thought are the "gives" on the other side。
+ and we can go out with people that we thought are the "gives" on the other side。 which is how we identified it， and we couldn't use it for the problem。
 
- which is how we identified it， and we couldn't use it for the problem。
+ and the problem is that people are used to being placed in it。 And it also helps， like。 in a political environment， it's how it's about some sort of product。
 
- and the problem is that people are used to being placed in it。 And it also helps， like。
+ And the most important thing here is that you can use it for the problem。 because this is something you must have used to make， like。
 
- in a political environment， it's how it's about some sort of product。
+ a "gives" that we're using for the problem， and you can use it for one by one。 and then you can put in the "gives" that we've done for one by one。
 
- And the most important thing here is that you can use it for the problem。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one by one， and then you can use it for one by one by one。
 
- because this is something you must have used to make， like。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- a "gives" that we're using for the problem， and you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can put in the "gives" that we've done for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can use it for one by one by one， and then you can use it for one by one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you have an example of something。 that you can use in the right， which you can use for one by one。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， so instead of the site， you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can use it for one by one， and then you can use it for one by one。
-
- and then you can use it for one by one， and then you can use it for one by one。
-
- and then you can use it for one by one， and then you can use it for one by one。
-
- and then you can use it for one by one， and then you have an example of something。
-
- that you can use in the right， which you can use for one by one。
-
- and then you can use it for one by one， so instead of the site， you can use it for one by one。
-
- and then you can use it for one by one， and then you can use it for one by one。
-
- and then you can use it for one by one， and then you can use it for one by one。
-
- and then you can use it for one by one， and then you can use it for one by one。
-
- and then you can use it for one by one， and then you can use it for one by one。
-
- and then you can use it for one by one， and then you can use it for one by one。
-
- and then you can use it for one by one， and then you can use it for one by one。
-
- and then you can use it for one by one， and then you can use it for one by one。
-
- and then you can use it for one by one， and then you can use it for one by one。
-
- and then you can use it for one by one， and then you can use it for one by one。
-
- and then you can use it for one by one， and then you can use it for one by one。
-
- and then you can use it for one by one， and then you can use it for one by one。
-
- and then you can use it for one by one， and then you can use it for one by one。
-
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
 
 
 ![](img/5600471d335172d2bcd1ee3f19f0d124_23.png)
 
- and then you can use it for one by one， and then you can use it for one by one。
-
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
 
 
 ![](img/5600471d335172d2bcd1ee3f19f0d124_25.png)
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then you can use it for one by one。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and then you can use it for one by one， and then you can use it for one by one。 and then you can use it for one by one， and then the last thing is the dimension management。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ We're going to be using further and more， and we figured out where to work at the police law。 specifically playing games， but it's not a game site， but it's Christmas。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and we know it's not a specific playlist， but we're going to be going out， like。 through our own own plans， so we make sure that I think that， we can do the thing。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ and we don't go into struggles， because， for example， if you're working with a bank。 that is not a thing， we don't go into struggles， because， for example。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ if you're working with a bank， that is a thing， and you go to school and you can use one by one。 and you can use one by one， and you can use something in the school。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ You're more likely to go to a school where you can spend more， just together， so。 if you're using stuff， I'll just get a lot of stuff in the bank。 So。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ if these communities are expensive， you know， this must be fine to you all， and more， but， you know。 like， the more countries I've been together， but I do think that， so， what you're doing is， like。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ you're going across the same D。E。R。 and the D。E。R。 and the D。E。R。 are not important， but， basically。 our vision finally called the report， which means that， you know， it's not important。 I think。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ just think， and， you think， it's a， you know， the statement I just mentioned， and， you know。 that you're probably， I don't want to just， uh， any more， I don't want to， but， you know。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ using a couple of thousand pieces， and， you know， you can， you know， it's a strange piece， and。 you need to call it down， you don't， which， uh， the use of the report， to the E。E。R。 and， you know。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ that you， like， the key is， you know， that the， uh， the principle of the， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is， uh。
 
- and then you can use it for one by one， and then you can use it for one by one。
+ the principle of the E。E。R。 is， uh， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
- and then you can use it for one by one， and then you can use it for one by one。
-
- and then you can use it for one by one， and then you can use it for one by one。
-
- and then you can use it for one by one， and then you can use it for one by one。
-
- and then you can use it for one by one， and then you can use it for one by one。
-
- and then you can use it for one by one， and then you can use it for one by one。
-
- and then you can use it for one by one， and then you can use it for one by one。
-
- and then you can use it for one by one， and then you can use it for one by one。
-
- and then you can use it for one by one， and then you can use it for one by one。
-
- and then you can use it for one by one， and then you can use it for one by one。
-
- and then you can use it for one by one， and then the last thing is the dimension management。
-
- We're going to be using further and more， and we figured out where to work at the police law。
-
- specifically playing games， but it's not a game site， but it's Christmas。
-
- and we know it's not a specific playlist， but we're going to be going out， like。
-
- through our own own plans， so we make sure that I think that， we can do the thing。
-
- and we don't go into struggles， because， for example， if you're working with a bank。
-
- that is not a thing， we don't go into struggles， because， for example。
-
- if you're working with a bank， that is a thing， and you go to school and you can use one by one。
-
- and you can use one by one， and you can use something in the school。
-
- You're more likely to go to a school where you can spend more， just together， so。
-
- if you're using stuff， I'll just get a lot of stuff in the bank。 So。
-
- if these communities are expensive， you know， this must be fine to you all， and more， but， you know。
-
- like， the more countries I've been together， but I do think that， so， what you're doing is， like。
-
- you're going across the same D。E。R。 and the D。E。R。 and the D。E。R。 are not important， but， basically。
-
- our vision finally called the report， which means that， you know， it's not important。 I think。
-
- just think， and， you think， it's a， you know， the statement I just mentioned， and， you know。
-
- that you're probably， I don't want to just， uh， any more， I don't want to， but， you know。
-
- using a couple of thousand pieces， and， you know， you can， you know， it's a strange piece， and。
-
- you need to call it down， you don't， which， uh， the use of the report， to the E。E。R。 and， you know。
-
- that you， like， the key is， you know， that the， uh， the principle of the， the principle of the E。E。
-
-R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is， uh。
-
- the principle of the E。E。R。 is， uh， the principle of the E。E。R。 is not a， the principle of the E。E。
-
-R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
  the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
-
-
 ![](img/5600471d335172d2bcd1ee3f19f0d124_27.png)
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。
 
 ![](img/5600471d335172d2bcd1ee3f19f0d124_29.png)
 
- is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+ is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。 the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
 
 E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。
-
-
-
 ![](img/5600471d335172d2bcd1ee3f19f0d124_31.png)
 
- is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
+ is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。 the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。 the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
 
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
+E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。 the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。 the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
 
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
+E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。 the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。
+E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。 the principle of the E。E。R。
 
 ![](img/5600471d335172d2bcd1ee3f19f0d124_33.png)
 
- is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
+ is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。 the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。 the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
 
 E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。
-
-
-
 ![](img/5600471d335172d2bcd1ee3f19f0d124_35.png)
 
  is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
-
-
 ![](img/5600471d335172d2bcd1ee3f19f0d124_37.png)
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。
 
 ![](img/5600471d335172d2bcd1ee3f19f0d124_39.png)
 
- is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
+ is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。 the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。 the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
 
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
+E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。 the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。 the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
 
 E。R。 is not a。
-
 ![](img/5600471d335172d2bcd1ee3f19f0d124_41.png)
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。
 
 ![](img/5600471d335172d2bcd1ee3f19f0d124_43.png)
 
- is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
+ is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。 the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。 the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
 
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a。
+E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。 the principle of the E。E。R。 is not a。
 
 ![](img/5600471d335172d2bcd1ee3f19f0d124_45.png)
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
 
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。
+ the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。
 
 ![](img/5600471d335172d2bcd1ee3f19f0d124_47.png)
 
- is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
+ is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。 the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。 the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
 
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
+E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。 the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。 the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
 
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
+E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。 the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
 
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。 the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
 
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
+E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。 the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
 
 E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-
- the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。
-
-E。R。 is not a， the principle of the E。E。R。 is not a， the principle of the E。E。R。 is not a。
-

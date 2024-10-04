@@ -1,4 +1,4 @@
-# PyCon US 2023 - P52：Talks - Michał Gałka_ Creating USB gadgets with Python - VikingDen7 - BV1114y1o7c5
+# P52：Talks - Michał Gałka_ Creating USB gadgets with Python - VikingDen7 - BV1114y1o7c5
 
 ![](img/358a308132f48196621faaf04ab90054_0.png)
 
@@ -15,13 +15,11 @@
 ![](img/358a308132f48196621faaf04ab90054_6.png)
 
 是的先生，嗯嗯，啊，是的是的，真的是。
-
 ![](img/358a308132f48196621faaf04ab90054_8.png)
 
 ![](img/358a308132f48196621faaf04ab90054_9.png)
 
 对对对，有点。
-
 ![](img/358a308132f48196621faaf04ab90054_11.png)
 
 ![](img/358a308132f48196621faaf04ab90054_12.png)

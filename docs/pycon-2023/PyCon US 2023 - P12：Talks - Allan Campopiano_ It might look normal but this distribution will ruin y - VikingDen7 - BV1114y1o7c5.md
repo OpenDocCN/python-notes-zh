@@ -1,4 +1,4 @@
-# PyCon US 2023 - P12：Talks - Allan Campopiano_ It might look normal but this distribution will ruin y - VikingDen7 - BV1114y1o7c5
+# P12：Talks - Allan Campopiano_ It might look normal but this distribution will ruin y - VikingDen7 - BV1114y1o7c5
 
  That's it。 Next talk here is by all of you。 I'm both familiar。 I'm a little bit more mobile。 but this is。
 ![](img/a0d404a817790118019e464aa8e1cbe9_1.png)
