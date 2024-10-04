@@ -1,6 +1,6 @@
 # P70：Talk - Paul Vincent Craven_ Harvest the power of the GPU for awesome special eff - VikingDen7 - BV1f8411Y7cP
 
- >> Hello， everyone。 Welcome back。 We have a next talk。 Harvest the power of GPU for awesome。
+ \>\> Hello， everyone。 Welcome back。 We have a next talk。 Harvest the power of GPU for awesome。
 
 
 
@@ -8,7 +8,7 @@
 
 ![](img/8d33afc8d53ce2b99144b287cee71e89_2.png)
 
- special effects by Paul Vincent Craven。 Over to you， Paul。 >> Thank you。 Hi， I'm Paul Craven。
+ special effects by Paul Vincent Craven。 Over to you， Paul。 \>\> Thank you。 Hi， I'm Paul Craven。
 
  And if you would like to copy， paste any code samples。
 

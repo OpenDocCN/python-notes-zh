@@ -1,6 +1,6 @@
 # P6：Ned Batchelder - Big-O How Code Slows as Data Grows - PyCon 2018 - 哒哒哒儿尔 - BV1Ms411H7Hn
 
- >> Good afternoon， everybody， and welcome to the final talk here of this Python。
+ \>\> Good afternoon， everybody， and welcome to the final talk here of this Python。
 
  I'm especially honored here to have a fellow Ned here。 So it's not often。
 
@@ -14,7 +14,7 @@
 
 ![](img/6cde5d5d991ebe38049e6e258c259295_1.png)
 
- [ Applause ]， >> Hi， everyone。
+ [ Applause ]， \>\> Hi， everyone。
 
 ![](img/6cde5d5d991ebe38049e6e258c259295_3.png)
 

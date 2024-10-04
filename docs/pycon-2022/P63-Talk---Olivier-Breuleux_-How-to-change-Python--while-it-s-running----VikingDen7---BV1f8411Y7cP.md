@@ -8,7 +8,7 @@
 
 ![](img/9cf0e3ffc376b5a53f99c3d6be1cad31_2.png)
 
- to change Python while it's running。 [Applause]， >> Probably。 >> Hi everyone。
+ to change Python while it's running。 [Applause]， \>\> Probably。 \>\> Hi everyone。
 
  Today I am going to show you how to change Python while it is running。 In other words。
 

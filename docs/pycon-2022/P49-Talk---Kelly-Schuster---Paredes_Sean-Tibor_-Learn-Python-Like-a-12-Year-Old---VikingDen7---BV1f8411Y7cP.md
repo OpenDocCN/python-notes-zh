@@ -1,6 +1,6 @@
 # P49：Talk - Kelly Schuster - Paredes_Sean Tibor_ Learn Python Like a 12 Year Old - VikingDen7 - BV1f8411Y7cP
 
- >> All right。 Hi everyone。 Welcome。 Today we're going to be talking about learning Python。
+ \>\> All right。 Hi everyone。 Welcome。 Today we're going to be talking about learning Python。
 
 
 
@@ -14,17 +14,17 @@
 
  you learn faster and easier and all of those great things。 So we're glad you're here too。
 
- >> But first， we really need to take a selfie。 So if you get bored and you start looking。
+ \>\> But first， we really need to take a selfie。 So if you get bored and you start looking。
 
  at your phone， you can go search us up and tag us and like our photos。 Everyone wave。
 
- >> Everyone smile。 Nice。 All right。 So， Kelly。 >> So I'm Kelly Schuster-Paredes and I'm a teacher who codes。
+ \>\> Everyone smile。 Nice。 All right。 So， Kelly。 \>\> So I'm Kelly Schuster-Paredes and I'm a teacher who codes。
 
  I work as a computer science， teacher at Pinecrest School in Fort Lauderdale， Florida。
 
  And I am the co-host with Sean here， for Teaching Python。
 
- >> And I'm Sean Tiber and I am now a senior， cloud engineer at Mondowee's International。
+ \>\> And I'm Sean Tiber and I am now a senior， cloud engineer at Mondowee's International。
 
  We make cookies。 Not the kind that go in your， browser。
 
@@ -32,7 +32,7 @@
 
  co-host of Teaching Python。 But before this， Kelly and I work together teaching middle school。
 
- computer science to over 1，000 students。 >> Okay。 So why should you believe us？ Besides。
+ computer science to over 1，000 students。 \>\> Okay。 So why should you believe us？ Besides。
 
  the fact that I've been with middle school students for about 20 something years， please。
 
@@ -42,13 +42,13 @@
 
  Sean kept saying no， we can do better。 So we've actually taught our courses 50 times plus。
 
- and then more than 1，000 kids in a little bit of three years。 >> Yeah。
+ and then more than 1，000 kids in a little bit of three years。 \>\> Yeah。
 
  And this is now the way that kids learn is the way we learn ourselves。 So we've。
 
  been learning from our students to be able to learn better。 And it really does work。 It's。
 
- really effective。 >> And just a side note， I've only been coding for four years。 >> So today。
+ really effective。 \>\> And just a side note， I've only been coding for four years。 \>\> So today。
 
  what we'd like for you to take away as an outcome is we want you to get a。
 
@@ -64,7 +64,7 @@
 
  bit different than a 12 year olds。 We hope， even though you may feel like you're 12 on， the inside。
 
- right？ >> I feel like you're 12 on the inside。 >> All the time， all the time。
+ right？ \>\> I feel like you're 12 on the inside。 \>\> All the time， all the time。
 
  A 12 year old's brain has a lot of neural plasticity naturally。 It just happens。
 
@@ -86,13 +86,13 @@
 
  you can bring back to your learning and will help you learn in a much more interesting。
 
- fun and effective way。 >> So first and foremost， kids are curious， super curious。
+ fun and effective way。 \>\> So first and foremost， kids are curious， super curious。
 
  I love teaching middle school because every single day there's a why but， how but can I？
 
  But why did you do that？ And what can I do more？ And it's this constant。
 
- curiosity that keeps them in this learning phase。 >> And as adults， as you know， we get。
+ curiosity that keeps them in this learning phase。 \>\> And as adults， as you know， we get。
 
  entrenched and when we talk about curiosity， we think in a very narrow way。 Like I'm very。
 
@@ -100,7 +100,7 @@
 
  talking about the ways that we think about the things that are happening around us and。
 
- always asking questions and trying to understand。 >> So it's really important to keep in mind。
+ always asking questions and trying to understand。 \>\> So it's really important to keep in mind。
 
  that as a 12 year old and us any learner， the mind is a muscle。 And just like going to。
 
@@ -114,13 +114,13 @@
 
  It helps us to stimulate more learning。 It builds purpose in our life and satisfaction。
 
- in what we're doing。 >> So I always tell my parents， your brain is getting older。 You're。
+ in what we're doing。 \>\> So I always tell my parents， your brain is getting older。 You're。
 
  going to start forgetting things。 So you need to maintain this curiosity as you get older。
 
  in order to help prevent this cognitive decline in your brain and the function。
 
- >> And something that's really important too is using all of your senses to learn， right？
+ \>\> And something that's really important too is using all of your senses to learn， right？
 
  We as programmers and coders， we tend to use a lot of visual cues， right？ We were looking。
 
@@ -134,11 +134,11 @@
 
  gets me in trouble because you can't drink coffee at 8 o'clock at night and live to tell， the tale。
 
- Then you're up until midnight or later。 >> Sometimes you need it as a teacher。 >> That's true。
+ Then you're up until midnight or later。 \>\> Sometimes you need it as a teacher。 \>\> That's true。
 
  It's important to engage all of your senses。 How am I feeling？ What does。
 
- this learning experience feel like？ Not just what can I see？ >> In Python， as we're learning Python。
+ this learning experience feel like？ Not just what can I see？ \>\> In Python， as we're learning Python。
 
  the way to hack this is to really question everything。 Ask yourself， "How does this work？
 

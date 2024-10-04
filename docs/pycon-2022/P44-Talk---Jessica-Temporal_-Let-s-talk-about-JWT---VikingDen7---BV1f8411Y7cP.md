@@ -436,7 +436,7 @@ decode pass along the token pass along the key。 Well， in this case。
 
  but please come forward and ask Jessica directly， if you have any questions or just by the--。
 
- >> A zero booth。 We own the line 600。 Thank you。 >> Thank you。 >> See you。 [APPLAUSE]， [APPLAUSE]。
+ \>\> A zero booth。 We own the line 600。 Thank you。 \>\> Thank you。 \>\> See you。 [APPLAUSE]， [APPLAUSE]。
 
 
 

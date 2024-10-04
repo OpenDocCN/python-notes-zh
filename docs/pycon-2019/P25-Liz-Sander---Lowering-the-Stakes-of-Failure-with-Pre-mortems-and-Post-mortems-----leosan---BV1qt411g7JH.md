@@ -1,6 +1,6 @@
 # P25：Liz Sander - Lowering the Stakes of Failure with Pre-mortems and Post-mortems - - leosan - BV1qt411g7JH
 
- >> Good afternoon， everybody， and welcome to this session of PyCon 2019。 Next speaker is Liz Sander。
+ \>\> Good afternoon， everybody， and welcome to this session of PyCon 2019。 Next speaker is Liz Sander。
 
  and she will be talking about lowering the stakes of failure。
 
@@ -8,7 +8,7 @@
 
 ![](img/e3f74a907a7572efd82624d723220506_1.png)
 
- with premortems and post-mortems。 Thank you very much。 Make it feel welcome。 [ Applause ]， >> Hi。
+ with premortems and post-mortems。 Thank you very much。 Make it feel welcome。 [ Applause ]， \>\> Hi。
 
  everyone。 So failure， it's scary for all of us。 But it can look really different depending on what you do。
 

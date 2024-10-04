@@ -448,15 +448,15 @@
 
  And if you have any questions， I'd love to take them。
 
- I think we have a minute or you want to take it offline。 >> Actually。
+ I think we have a minute or you want to take it offline。 \>\> Actually。
 
  we're on sorry for the confusion。 We can't take questions in the room due to COVID restrictions。
 
- but， feel free to come to the front and ask them。 >> Awesome。 So we're going to take it offline。
+ but， feel free to come to the front and ask them。 \>\> Awesome。 So we're going to take it offline。
 
  So I'd like to thank you all for joining me today。 It was awesome。
 
  It's so great to finally do live presentations and live talks and， seeing all of your faces here。
 
- It's actually wars my heart， so I'm very excited。 And thank you so much for joining。 >> [APPLAUSE]。
+ It's actually wars my heart， so I'm very excited。 And thank you so much for joining。 \>\> [APPLAUSE]。
 

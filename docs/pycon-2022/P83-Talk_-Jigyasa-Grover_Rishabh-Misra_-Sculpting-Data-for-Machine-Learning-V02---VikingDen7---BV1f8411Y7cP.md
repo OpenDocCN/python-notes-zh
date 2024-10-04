@@ -1,6 +1,6 @@
 # P83：Talk_ Jigyasa Grover_Rishabh Misra_ Sculpting Data for Machine Learning V02 - VikingDen7 - BV1f8411Y7cP
 
- >> Hi， everyone。 We'll start off with our next talks。 We have Jigess， our grower， and。
+ \>\> Hi， everyone。 We'll start off with our next talks。 We have Jigess， our grower， and。
 
 
 
@@ -12,9 +12,9 @@
 
  A's during or after the session， but if you would like to ask questions to the speakers。
 
- feel free to meet them in the hallway。 Yep， that's pretty much it。 Over to you guys。 >> Thank you。
+ feel free to meet them in the hallway。 Yep， that's pretty much it。 Over to you guys。 \>\> Thank you。
 
- >> Hey， everyone。 I'm Jigess， our grower， and I work as a machine learning engineer in。
+ \>\> Hey， everyone。 I'm Jigess， our grower， and I work as a machine learning engineer in。
 
  the Performance Ads ranking team at Twitter。 And my co-presenter， Richard Mishra， he works。
 

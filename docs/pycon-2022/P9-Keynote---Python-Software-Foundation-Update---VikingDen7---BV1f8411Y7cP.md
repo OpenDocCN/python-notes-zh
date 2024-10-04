@@ -1,6 +1,6 @@
 # P9：Keynote - Python Software Foundation Update - VikingDen7 - BV1f8411Y7cP
 
- >> And now let's welcome Thomas Waters to the stage to kick off our PSF update。
+ \>\> And now let's welcome Thomas Waters to the stage to kick off our PSF update。
 
 
 
@@ -8,7 +8,7 @@
 
 ![](img/41771c61b3cbee41c0cc78b4bd253286_2.png)
 
- >> So some of you may have seen me this morning on stage for the steering council。 This is not that。
+ \>\> So some of you may have seen me this morning on stage for the steering council。 This is not that。
 
  This is a different hat。 I'm also the vice chair of the board of directors of the PSF。
 

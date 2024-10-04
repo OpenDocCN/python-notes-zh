@@ -1,12 +1,12 @@
 # P84：Talks - Fred Phillips_ Hooking into the import system - VikingDen7 - BV1f8411Y7cP
 
- >> Hello， everyone。 Let's welcome Fred Phillips to deliver a talk on hooking into the import。
+ \>\> Hello， everyone。 Let's welcome Fred Phillips to deliver a talk on hooking into the import。
 
 
 
 ![](img/b0ec26acaf9d7147d5b6c6e702b6b378_1.png)
 
- system。 >> What do you think？ >> Hi， everyone。 Thanks for coming。 My name is Fred。
+ system。 \>\> What do you think？ \>\> Hi， everyone。 Thanks for coming。 My name is Fred。
 
  My pronouns are he and him。 And I'm， engineering team lead at Bloomberg。
 

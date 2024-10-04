@@ -8,7 +8,7 @@
 
 ![](img/d9b78ecadbf81eb9828e4c03279b0041_2.png)
 
- [applause]， >> Thank you。 So， eight things that happen at the dot attribute access and descriptors。
+ [applause]， \>\> Thank you。 So， eight things that happen at the dot attribute access and descriptors。
 
  Kind of interesting， this talk is kind of coming full circle back to a conversation that。
 

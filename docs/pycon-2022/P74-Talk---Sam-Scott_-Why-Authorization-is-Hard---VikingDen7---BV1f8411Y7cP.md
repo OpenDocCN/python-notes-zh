@@ -1,12 +1,12 @@
 # P74：Talk - Sam Scott_ Why Authorization is Hard - VikingDen7 - BV1f8411Y7cP
 
- >> Our next talk is about to start。
+ \>\> Our next talk is about to start。
 
 ![](img/7d2460332f12e9adc53684e71c4115a7_1.png)
 
- Sam Scott， the co-founder and CTO of OSO will talk about why authorization is hard。 >> Thank you。
+ Sam Scott， the co-founder and CTO of OSO will talk about why authorization is hard。 \>\> Thank you。
 
- Sam。 >> Well， thanks very much， everyone。 So to start with。
+ Sam。 \>\> Well， thanks very much， everyone。 So to start with。
 
  I actually have an announcement which is I will not be giving that talk。 Sorry about that。
 

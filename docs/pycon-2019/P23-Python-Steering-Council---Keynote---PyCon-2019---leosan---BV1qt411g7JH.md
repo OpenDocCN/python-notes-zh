@@ -1,6 +1,6 @@
 # P23：Python Steering Council - Keynote - PyCon 2019 - leosan - BV1qt411g7JH
 
- >> Good morning， everybody。
+ \>\> Good morning， everybody。
 
 ![](img/02819c899e753ce75ab6f573ce3712a0_1.png)
 
@@ -124,15 +124,15 @@ us/os to find out what's on the， Board right now and head over to the board to
 
  the executive director of the， PSF。 And we're going to do introductions of the panel members shortly。
 
- So go ahead and welcome to the stage。 [ Applause ]， >> Where's carol？ >> I don't know。
+ So go ahead and welcome to the stage。 [ Applause ]， \>\> Where's carol？ \>\> I don't know。
 
- >> You're here with that script。
+ \>\> You're here with that script。
 
 ![](img/02819c899e753ce75ab6f573ce3712a0_11.png)
 
- >> I know。 >> Thank you。 >> Good morning， picon。 Thanks so much for joining us。
+ \>\> I know。 \>\> Thank you。 \>\> Good morning， picon。 Thanks so much for joining us。
 
- >> Welcome to our panel with picon steering council。 My name is eva。
+ \>\> Welcome to our panel with picon steering council。 My name is eva。
 
  the executive director of the python software， Foundation which is the nonprofit behind python。
 
@@ -158,7 +158,7 @@ us/os to find out what's on the， Board right now and head over to the board to
 
  You can tell us what you'd like to do。 So we have a great opportunity to be able to build a new project。
 
- Let's start with you。 >> Okay。 Well， thanks。 So I work at lincoln and i'm on the python foundation team。
+ Let's start with you。 \>\> Okay。 Well， thanks。 So I work at lincoln and i'm on the python foundation team。
 
  Many of my teammates are here。 Which is awesome。 We do a lot of python。
 
@@ -186,9 +186,9 @@ us/os to find out what's on the， Board right now and head over to the board to
 
  i wouldn't have the life i have， Without python。 So i'm amazingly grateful for that。
 
- >> That's a great story。 Many of us are in the same boat。 How about you？
+ \>\> That's a great story。 Many of us are in the same boat。 How about you？
 
- >> I'm a div manager for the python extension at micsoft。 I get to do that most of the time。
+ \>\> I'm a div manager for the python extension at micsoft。 I get to do that most of the time。
 
  But any spare time i get work glutes to make you spend on python， It's all about the。
 
@@ -224,7 +224,7 @@ us/os to find out what's on the， Board right now and head over to the board to
 
  I basically learned how to program， honestly， from these， People and have just become great friends。
 
- And that's why i keep coming back year after year。 >> Yeah， the community is a great aspect。 Carol。
+ And that's why i keep coming back year after year。 \>\> Yeah， the community is a great aspect。 Carol。
 
  how about you？ I'm Carol Willing。 Thank you all for being here。 I -- back in 2016。
 
@@ -320,7 +320,7 @@ us/os to find out what's on the， Board right now and head over to the board to
 
  The way you think and have it do what you meant is kind of amazing， And a lot of fun。
 
- >> We are all very grateful to have your experiences and， Backgrounds part of our community。
+ \>\> We are all very grateful to have your experiences and， Backgrounds part of our community。
 
  We don't know that you've experienced being both bead。
 
@@ -328,11 +328,11 @@ us/os to find out what's on the， Board right now and head over to the board to
 
  Tell us how do you think governance has changed and will， Continue to change。
 
- >> I'm sorry i did not hear the full question。 >> Now that you've experienced bead being bead Fl and also part。
+ \>\> I'm sorry i did not hear the full question。 \>\> Now that you've experienced bead being bead Fl and also part。
 
  Of the steering council committee how do you think that the。
 
- Governance has changed and will continue to change of python？ >> Okay。 Yeah。
+ Governance has changed and will continue to change of python？ \>\> Okay。 Yeah。
 
  So while i was bead Fl sort of the way it fell to me and i think。
 
@@ -444,9 +444,9 @@ us/os to find out what's on the， Board right now and head over to the board to
 
  Cases also research opportunities as well so maybe。
 
- Potentially some funding down the road so i think it's a good， Thing。 >> Absolutely。
+ Potentially some funding down the road so i think it's a good， Thing。 \>\> Absolutely。
 
- >> Brett you've managed a lot of， Core of infrastructure work so i'll ask you about pep 5-8-1。
+ \>\> Brett you've managed a lot of， Core of infrastructure work so i'll ask you about pep 5-8-1。
 
  Pep 5-8-1 authored by marietta outlines the steps needed to。
 
@@ -456,7 +456,7 @@ us/os to find out what's on the， Board right now and head over to the board to
 
  Can you tell us all a little bit about what was discussed and what， The next steps are？
 
- >> Sure so pep 5-8-1 as before what a week， Ago two weeks ago outlined the rationale of the idea of。
+ \>\> Sure so pep 5-8-1 as before what a week， Ago two weeks ago outlined the rationale of the idea of。
 
  Moving our issue tracker from bug step python and org over to。
 
@@ -570,15 +570,15 @@ us/os to find out what's on the， Board right now and head over to the board to
 
  Yeah i think that's one of the next big areas of improvement coming， Down the pipeline。
 
- >> Continuing improvements is going to， Be something we need to concentrate on and i know that's。
+ \>\> Continuing improvements is going to， Be something we need to concentrate on and i know that's。
 
  Packaging somebody is happening first day of sprints as well so i'm。
 
- Sure other ideas will come out of that。 >> As one of the authors of pep one and the entire pep process。
+ Sure other ideas will come out of that。 \>\> As one of the authors of pep one and the entire pep process。
 
  Is it is can you tell us how the pep process has changed with the， New governance model？
 
- >> Sure so you know peps the idea of， Peps kind of came out of guido in my time at cnr。i。
+ \>\> Sure so you know peps the idea of， Peps kind of came out of guido in my time at cnr。i。
 
  Because cnr。i ran the itf so we were sort of familiar with。
 
@@ -892,7 +892,7 @@ org/2 which obviously， Slash 2。7 which is not the version you're all going t
 
  There's not a lot missing that i -- not a lot of things that i'm， Missing from it。 That's my take。
 
- >> I'm similar， Barry。 The language itself， i don't think it's missing a lot。
+ \>\> I'm similar， Barry。 The language itself， i don't think it's missing a lot。
 
  The thing i'm most jealous of from another ecosystem is。
 
@@ -916,11 +916,11 @@ org/2 which obviously， Slash 2。7 which is not the version you're all going t
 
  But it just requires folks to sit down and do the design work。
 
- >> I think we have time for one more question before we wrap this up。 Anonymous posted。
+ \>\> I think we have time for one more question before we wrap this up。 Anonymous posted。
 
  we hear a lot about burnout of core developers。 What does the council have any plans to improve this？
 
- Is there anything that the community can do also？ >> I think we're starting。 So yeah。
+ Is there anything that the community can do also？ \>\> I think we're starting。 So yeah。
 
  so in terms of specific plans， I think in general it's to。
 
@@ -940,9 +940,9 @@ org/2 which obviously， Slash 2。7 which is not the version you're all going t
 
  Negative feedback really doesn't help anyone。 And it just adds to the negativity and just the burnout rate。
 
- So honestly， just be nice online and that would help immensely。 [ Applause ]， >> And carol。
+ So honestly， just be nice online and that would help immensely。 [ Applause ]， \>\> And carol。
 
- you have something to add。 >> Yeah， I had a few more things。
+ you have something to add。 \>\> Yeah， I had a few more things。
 
  Going back to where I said Python is the people's programming， Language。 We are all people。
 
@@ -974,7 +974,7 @@ org/2 which obviously， Slash 2。7 which is not the version you're all going t
 
  Thank you to everybody that contributes to python and uses， Python。 And thank you all。 Yeah。
 
- [ Applause ]， Nick， you want to add something？ >> I'll add one last one for this one。
+ [ Applause ]， Nick， you want to add something？ \>\> I'll add one last one for this one。
 
  We are actively working with the python software foundation to look。
 
@@ -982,11 +982,11 @@ org/2 which obviously， Slash 2。7 which is not the version you're all going t
 
  To help core development。 So the psf fundraiser is currently running and that is a。
 
- Concrete way to help as well。 >> Python。us/psf。 That's really good。 Find that fundraiser。
+ Concrete way to help as well。 \>\> Python。us/psf。 That's really good。 Find that fundraiser。
 
  That's a great note to end this on。 Thank you all so much for joining us this morning。
 
- Enjoy the rest of the pikon。 >> Thank you。 [ Applause ]， >> All right。 Why don't you stand up。
+ Enjoy the rest of the pikon。 \>\> Thank you。 [ Applause ]， \>\> All right。 Why don't you stand up。
 
  Another round of applause for Eva and the steering council。 [ Applause ]， All right。
 

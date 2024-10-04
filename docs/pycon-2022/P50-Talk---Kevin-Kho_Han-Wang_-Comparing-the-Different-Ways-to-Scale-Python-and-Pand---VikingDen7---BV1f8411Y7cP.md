@@ -1,12 +1,12 @@
 # P50：Talk - Kevin Kho_Han Wang_ Comparing the Different Ways to Scale Python and Pand - VikingDen7 - BV1f8411Y7cP
 
- >> Everyone， how are you doing today？
+ \>\> Everyone， how are you doing today？
 
 ![](img/7a0a16a9552ae890dfb1d9cc57f2ba2c_1.png)
 
 ![](img/7a0a16a9552ae890dfb1d9cc57f2ba2c_2.png)
 
- >> Good。 >> Okay。 So we can get started with our next talk。
+ \>\> Good。 \>\> Okay。 So we can get started with our next talk。
 
  We have comparing the different ways to scale Python and Pandas code。
 
@@ -16,7 +16,7 @@
 
  you can feel free to catch them at the hallway or anywhere outside。 All right？ Over to you。
 
- >> Thank you。 >> Hey， everyone。 Welcome to different ways to scale Python and Pandas code。
+ \>\> Thank you。 \>\> Hey， everyone。 Welcome to different ways to scale Python and Pandas code。
 
  We're very happy to be here in an in-person conference。
 

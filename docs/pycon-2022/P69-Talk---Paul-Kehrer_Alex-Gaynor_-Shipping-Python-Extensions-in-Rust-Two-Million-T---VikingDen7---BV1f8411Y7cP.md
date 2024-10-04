@@ -1,6 +1,6 @@
 # P69：Talk - Paul Kehrer_Alex Gaynor_ Shipping Python Extensions in Rust Two Million T - VikingDen7 - BV1f8411Y7cP
 
- >> Good afternoon everybody。
+ \>\> Good afternoon everybody。
 
 ![](img/fabc68ceb83500e75a0be261b8a2e468_1.png)
 
@@ -10,7 +10,7 @@
 
  We have Paul Carrer and Alex Gainer here are going to tell us about shipping a Rust Python。
 
- extension many， million times a day。 So take it away。 >> All right。 Thank you very much everybody。
+ extension many， million times a day。 So take it away。 \>\> All right。 Thank you very much everybody。
 
  So welcome everyone。 It's nice and intimidating to see you all in one room again。
 

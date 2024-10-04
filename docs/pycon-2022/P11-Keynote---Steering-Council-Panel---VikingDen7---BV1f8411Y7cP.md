@@ -18,13 +18,13 @@
 
  So we're just going to give them a moment to get everything hooked up and then we'll get， started。
 
- >>， >>， >>， >>， >>， >>， >>， >>。
+ \>\>， \>\>， \>\>， \>\>， \>\>， \>\>， \>\>， \>\>。
 
 ![](img/175c2853e461acd8a351a8e44cb0f609_3.png)
 
- >>， >>， >>， >>， >>， >>， >>， >> >>， >> >>， >>， >>， >>， >>， >>， >> >>， >> >>， >> >> >>， >> >> >>。
+ \>\>， \>\>， \>\>， \>\>， \>\>， \>\>， \>\>， \>\> \>\>， \>\> \>\>， \>\>， \>\>， \>\>， \>\>， \>\>， \>\> \>\>， \>\> \>\>， \>\> \>\> \>\>， \>\> \>\> \>\>。
 
- >> >> >>， >> >> >> >> >>， >> >> >> >> >>， >> >> >> >> >> >>， >> >> >> >> >> >>， >> >> >> >>。
+ \>\> \>\> \>\>， \>\> \>\> \>\> \>\> \>\>， \>\> \>\> \>\> \>\> \>\>， \>\> \>\> \>\> \>\> \>\> \>\>， \>\> \>\> \>\> \>\> \>\> \>\>， \>\> \>\> \>\> \>\>。
 
  welcome to the probably most boring keynote of the conference， at least my part。 Pablo。
 
@@ -184,9 +184,9 @@
 
  still ironing out last couple of things， but the bots and the workflows have all been updated。
 
- >> That's a funny thing。 We did this slide before we knew that the configuration was actually， done。
+ \>\> That's a funny thing。 We did this slide before we knew that the configuration was actually， done。
 
- We assumed it was going to happen。 >> We were never quite sure。 Other news from the last year。
+ We assumed it was going to happen。 \>\> We were never quite sure。 Other news from the last year。
 
  we hired a developer in residence。 This is something that the steering council has been working on since 2019。
 
@@ -200,7 +200,7 @@
 
  hire a developer in residence to work on CPython。 A full-time core developer。
 
- >> Lukas is a long-term core developer。 Really， he managed over 3。8， 3。9 and he gave a very。
+ \>\> Lukas is a long-term core developer。 Really， he managed over 3。8， 3。9 and he gave a very。
 
  uncontroversial keynote on Friday， which I was in agreement with just for the record。
 
@@ -638,7 +638,7 @@
 
  these kinds of things and how can the three council have some and the community to advance。
 
- this work if this is what the community wants。 >> Bernard asked what happened to HPI。
+ this work if this is what the community wants。 \>\> Bernard asked what happened to HPI。
 
  any other initiative to address this problem？ Now， first of all。
 
@@ -660,7 +660,7 @@
 
  them is a lot of work。 So this is something that's just going to take a very long time。
 
- >> So anonymous asked， what does the steering-cals think of the process of attracting new contributors。
+ \>\> So anonymous asked， what does the steering-cals think of the process of attracting new contributors。
 
  in general and specifically for minority groups？ Well， we think it's super important。 How we're。
 

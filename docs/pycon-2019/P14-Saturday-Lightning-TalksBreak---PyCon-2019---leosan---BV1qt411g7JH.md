@@ -1,6 +1,6 @@
 # P14：Saturday Lightning TalksBreak - PyCon 2019 - leosan - BV1qt411g7JH
 
- >> One， two。 One， two。 One， two。 One， two。 Check。 >> Welcome， everyone。 Come close to the front。
+ \>\> One， two。 One， two。 One， two。 One， two。 Check。 \>\> Welcome， everyone。 Come close to the front。
 
  All the speakers will appreciate that。
 
@@ -152,7 +152,7 @@
 
  No time to delay from one line talk to the very next one。 Please， give it a big hand for Andrew。
 
- [ Applause ]， >> How do you all -- my name is Andy Knight。 I work at Precision Lender in， Kerry。
+ [ Applause ]， \>\> How do you all -- my name is Andy Knight。 I work at Precision Lender in， Kerry。
 
  North Carolina。 And today I'm going to give you three quick tips for。
 
@@ -232,15 +232,15 @@
 
 ![](img/720222ec55797394c92f825632ab9fbc_25.png)
 
- >> If anybody is interested in bringing a regional conference to the Carolinas， please let me know。
+ \>\> If anybody is interested in bringing a regional conference to the Carolinas， please let me know。
 
 
 
 ![](img/720222ec55797394c92f825632ab9fbc_27.png)
 
- because we're trying to start that。 Thank you。 >> All right。 Next speaker is David。 Here he goes。
+ because we're trying to start that。 Thank you。 \>\> All right。 Next speaker is David。 Here he goes。
 
- >> Hey， so I have --， >> Wait。 Give a big hand。 >> Hey， I'm David。
+ \>\> Hey， so I have --， \>\> Wait。 Give a big hand。 \>\> Hey， I'm David。
 
  I'm singing Wolf Boy on Mastodon and I have one weird trick for you to make it。
 
@@ -266,7 +266,7 @@
 
 ![](img/720222ec55797394c92f825632ab9fbc_31.png)
 
- >> Thank you very much。 In case anyone is still here in the morning， we didn't get through all。
+ \>\> Thank you very much。 In case anyone is still here in the morning， we didn't get through all。
 
  the lightning talk speakers from this morning。 So as a result， we had a bit of a scheduling snafu。
 
@@ -280,7 +280,7 @@
 
  really sorry about that。 Steve， are you ready to talk？ So give Steve a big， big， big， big， big， big。
 
- big， talk。 [ Applause ]， >> Okay。 XDB is a database， file based， similar to BerkeleyDB or whatever。
+ big， talk。 [ Applause ]， \>\> Okay。 XDB is a database， file based， similar to BerkeleyDB or whatever。
 
  In process， you're using a， C library， so your program is doing the lookups。
 
@@ -414,13 +414,13 @@
 
  this is the slide to take a picture of and I， want to share with you all of you a wonderful day。
 
- [ Applause ]， >> Great。 Thank you so much。 I'm so glad we finally got to the end of that。
+ [ Applause ]， \>\> Great。 Thank you so much。 I'm so glad we finally got to the end of that。
 
  It's so nice when you get a， long story and you finally get kind of closure at the end。
 
- I enjoy that sort of thing。 [ Applause ]， >> Please give Brian a hand for his next talk。
+ I enjoy that sort of thing。 [ Applause ]， \>\> Please give Brian a hand for his next talk。
 
- [ Applause ]， >> Hi， Gary。 My name is Brian Skyn。 I'm a chemical engineer by day and I dabble quite a bit in Python on the。
+ [ Applause ]， \>\> Hi， Gary。 My name is Brian Skyn。 I'm a chemical engineer by day and I dabble quite a bit in Python on the。
 
  side。 And for the lightning talk， what I want to do is give a quick。
 

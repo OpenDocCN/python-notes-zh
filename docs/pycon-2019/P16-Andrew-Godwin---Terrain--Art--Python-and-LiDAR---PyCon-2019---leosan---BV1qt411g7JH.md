@@ -12,7 +12,7 @@
 
 ![](img/ab03978769ea60d7b625f6c7cb817961_3.png)
 
- [ Applause ]， >> Good morning everybody and welcome to my wonderful talk about terrain。
+ [ Applause ]， \>\> Good morning everybody and welcome to my wonderful talk about terrain。
 
  A quick introduction， I'm Andrew Godwin。 I'm perhaps most well-known for my work on Django。
 

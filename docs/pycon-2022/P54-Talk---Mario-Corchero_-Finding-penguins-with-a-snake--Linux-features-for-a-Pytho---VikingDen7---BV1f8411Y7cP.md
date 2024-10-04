@@ -1,6 +1,6 @@
 # P54：Talk - Mario Corchero_ Finding penguins with a snake  Linux features for a Pytho - VikingDen7 - BV1f8411Y7cP
 
- >> Thank you。
+ \>\> Thank you。
 
 ![](img/0870c5fab9e6528463b84ff932c421ce_1.png)
 

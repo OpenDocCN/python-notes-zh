@@ -1,6 +1,6 @@
 # P38：Talk - Jeremiah Paige_ Intro to Introspection - VikingDen7 - BV1f8411Y7cP
 
- >> Hello， everyone。 Let us give a warm welcome to Mr。 Jeremiah， who is going to speak on。
+ \>\> Hello， everyone。 Let us give a warm welcome to Mr。 Jeremiah， who is going to speak on。
 
 
 
@@ -8,7 +8,7 @@
 
 ![](img/2ab6e816597749c43b9dfc25876e6523_2.png)
 
- introduction to introspection。 [ Applause ]， >> Good afternoon。 Thank you， everyone。
+ introduction to introspection。 [ Applause ]， \>\> Good afternoon。 Thank you， everyone。
 
  for coming out to this final talk of a very long， PyCon day。 I am Jeremiah Page。
 

@@ -508,15 +508,15 @@ A would still be 42 or not be 42。 But that gets broken。 So mostly we solve t
 
  during the conference or get in touch with me。 Thank you。
 
- >> We've got about three minutes for questions。 So if you have questions， you can go up to the。
+ \>\> We've got about three minutes for questions。 So if you have questions， you can go up to the。
 
  audience microphones there。 Please keep your questions short and directed at the speaker。
 
- If you have longer questions， you can grab them the hallway。 >> Yeah。
+ If you have longer questions， you can grab them the hallway。 \>\> Yeah。
 
  So what is the difference from and benefit of sub-interpreters versus multi-processing？
 
- We didn't really talk about that。 >> Multi-processing， there are a variety of。
+ We didn't really talk about that。 \>\> Multi-processing， there are a variety of。
 
  aspects to it that put more load on the system， various system level resources that in a single。
 
@@ -530,31 +530,31 @@ A would still be 42 or not be 42。 But that gets broken。 So mostly we solve t
 
  of multi-processing。 You get a lot of the benefits of threading but a lot of the isolation from。
 
- multi-processing。 >> The other Python interpreters you mentioned， Python， all of those。
+ multi-processing。 \>\> The other Python interpreters you mentioned， Python， all of those。
 
  The ones that don't have a gill， can you explain some basics about why they， don't？
 
- >> Jython and I are both built on other runtimes。 Those runtimes don't have a gill。 That's。
+ \>\> Jython and I are both built on other runtimes。 Those runtimes don't have a gill。 That's。
 
- most of it。 >> They may have some gill-like equivalent inside them that protects their state。
+ most of it。 \>\> They may have some gill-like equivalent inside them that protects their state。
 
- >> Maybe。 >> But the JVM and for Iron Python， like the CLR， don't really。 >> Great。 Thanks。
+ \>\> Maybe。 \>\> But the JVM and for Iron Python， like the CLR， don't really。 \>\> Great。 Thanks。
 
- >> So the g in gill stands for global。 With this proposal it won't really be， global anymore。
+ \>\> So the g in gill stands for global。 With this proposal it won't really be， global anymore。
 
- >> It won't be process global。 It will be interpreter global though。 Yeah， we。
+ \>\> It won't be process global。 It will be interpreter global though。 Yeah， we。
 
- thought maybe calling it "lil" or something。 >> Okay。 Thank you。 >> Cool。 Thanks for the PEP and。
+ thought maybe calling it "lil" or something。 \>\> Okay。 Thank you。 \>\> Cool。 Thanks for the PEP and。
 
  all the work you're doing on gill is Python。 Will there be any support in CPython for atomic。
 
  variables or persistent data structures in something like Java， util concurrent in CPython in the。
 
- library in the future？ >> I don't think there are really any serious plans for， well， I don't know。
+ library in the future？ \>\> I don't think there are really any serious plans for， well， I don't know。
 
- I'm not aware of anything like that。 >> Okay。 >> Everybody has all sorts of ideas。
+ I'm not aware of anything like that。 \>\> Okay。 \>\> Everybody has all sorts of ideas。
 
- We're always talking about stuff。 >> Cool。 >> Thank you。 >> All right。 >> Absolutely。
+ We're always talking about stuff。 \>\> Cool。 \>\> Thank you。 \>\> All right。 \>\> Absolutely。
 
  Please give another round of applause to Eric。 Thank you。
 

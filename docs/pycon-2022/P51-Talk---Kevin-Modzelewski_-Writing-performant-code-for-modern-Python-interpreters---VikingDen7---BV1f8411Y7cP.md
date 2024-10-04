@@ -10,7 +10,7 @@
 
  performance code for modern Python interpreters and he will take the questions at the end of the talk。
 
- >> Hi， everyone。 I condensed the title of the talk a little bit。
+ \>\> Hi， everyone。 I condensed the title of the talk a little bit。
 
  So it's now how to write fast modern Python code。 And my name is Kevin， Motszelski。
 

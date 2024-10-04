@@ -1,6 +1,6 @@
 # P27：Talk - Brendan Collins_ Who Said Wrangling Geospatial Data at Scale was Easy_ - VikingDen7 - BV1f8411Y7cP
 
- >> Hello， everyone。 Let's welcome Brandon Collins to deliver a talk on who said ranking。
+ \>\> Hello， everyone。 Let's welcome Brandon Collins to deliver a talk on who said ranking。
 
 
 

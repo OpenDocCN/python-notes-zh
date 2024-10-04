@@ -1,6 +1,6 @@
 # P28：Talk - Bruce Eckel_ Making Data Classes Work for You - VikingDen7 - BV1f8411Y7cP
 
- >> Your ladies and gentlemen， we'll have Mr。 Bruce Ecker giving a presentation on making。
+ \>\> Your ladies and gentlemen， we'll have Mr。 Bruce Ecker giving a presentation on making。
 
 
 
@@ -8,7 +8,7 @@
 
 ![](img/cb0c8f5012f543e01ce8fb0120c60edd_2.png)
 
- data classes work for you。 >> Okay。 All right。 Sounds like it's working。
+ data classes work for you。 \>\> Okay。 All right。 Sounds like it's working。
 
  So all of the -- this is really examples。 And all the examples are on the GitHub repo。
 

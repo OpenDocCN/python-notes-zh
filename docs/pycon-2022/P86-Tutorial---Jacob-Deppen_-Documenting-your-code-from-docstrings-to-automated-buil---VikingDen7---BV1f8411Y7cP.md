@@ -776,7 +776,7 @@
 
  the next slide。 the next slide。 Any other questions for this launch？
 
- >> We'll come back to it when it's done doing this thing。
+ \>\> We'll come back to it when it's done doing this thing。
 
  There's a library called -- I'm going to run through these tools。
 

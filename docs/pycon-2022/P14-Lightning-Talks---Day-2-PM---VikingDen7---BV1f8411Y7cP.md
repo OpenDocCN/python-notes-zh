@@ -1,18 +1,18 @@
 # P14：Lightning Talks - Day 2 PM - VikingDen7 - BV1f8411Y7cP
 
- >> Welcome to the end of day two。
+ \>\> Welcome to the end of day two。
 
 ![](img/7166498fe6a53e554ff5f6b4e42bc599_1.png)
 
 ![](img/7166498fe6a53e554ff5f6b4e42bc599_2.png)
 
- >> Yes， welcome。 >> Let's kick it off with some lightning talks， shall we？ >> We shall， we shall。
+ \>\> Yes， welcome。 \>\> Let's kick it off with some lightning talks， shall we？ \>\> We shall， we shall。
 
  As a reminder， each of our speakers will get five minutes。 When we get down to around 20 seconds。
 
  we'll start with our small claps。 One， then two， and then we'll go into a full clap to let our lovely speakers know they are at time。
 
- Let's go ahead and start with our first speaker， Christian。 >> Hello。 Can you hear me？ Yeah， cool。
+ Let's go ahead and start with our first speaker， Christian。 \>\> Hello。 Can you hear me？ Yeah， cool。
 
  Okay， so I will do some light coding， so everything will explode， but let's see。 Hola， Bonjour。
 
@@ -556,7 +556,7 @@
 
 ![](img/7166498fe6a53e554ff5f6b4e42bc599_20.png)
 
- [applause]， >> Thank you， Larry。 I think I understand correlate now， it is magic。 Cool。
+ [applause]， \>\> Thank you， Larry。 I think I understand correlate now， it is magic。 Cool。
 
  Thanks for the talk and next we have Rich。
 
@@ -564,7 +564,7 @@
 
  Give us a talk on the importance of effective， concise communication。 Give it up for Rich。
 
- [applause]， >> Hello everyone。 I'm Rich Taggart and I'm a software developer。
+ [applause]， \>\> Hello everyone。 I'm Rich Taggart and I'm a software developer。
 
  If I had to describe myself in one word， I would probably say that I'm a skier。
 
@@ -854,11 +854,11 @@
 
 ![](img/7166498fe6a53e554ff5f6b4e42bc599_32.png)
 
- And that is all I have。 So thank you。 [APPLAUSE]， >> I'm a philosopher， Liam。 And also。
+ And that is all I have。 So thank you。 [APPLAUSE]， \>\> I'm a philosopher， Liam。 And also。
 
  what William didn't say was he was the person that implemented a lot of this， for PIPI。
 
- So let's give him another round of applause for that as well。 [APPLAUSE]， >> All right。
+ So let's give him another round of applause for that as well。 [APPLAUSE]， \>\> All right。
 
 
 
@@ -866,7 +866,7 @@
 
  Next up， we have Alexa with generating recipes of varying quality with GTP too。
 
- Give it away for Alexa。 [APPLAUSE]， >> Hi， I'm Alexa。
+ Give it away for Alexa。 [APPLAUSE]， \>\> Hi， I'm Alexa。
 
  And today I want to talk to you about generating recipes with deep learning and Python。
 

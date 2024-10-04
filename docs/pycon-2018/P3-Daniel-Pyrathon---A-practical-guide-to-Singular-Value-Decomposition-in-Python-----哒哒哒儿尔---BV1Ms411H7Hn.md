@@ -1,6 +1,6 @@
 # P3：Daniel Pyrathon - A practical guide to Singular Value Decomposition in Python - - 哒哒哒儿尔 - BV1Ms411H7Hn
 
- >> Hey， everyone。 Welcome to the talk on a practical guide to singular value decomposition。
+ \>\> Hey， everyone。 Welcome to the talk on a practical guide to singular value decomposition。
 
 
 
@@ -566,15 +566,15 @@
 
 ![](img/b4a69341a859a00d91aa4b3530a041cf_15.png)
 
- much。 [ Applause ]， >> Hey， if you guys have questions， there's a mic up front。
+ much。 [ Applause ]， \>\> Hey， if you guys have questions， there's a mic up front。
 
- We can probably take three。 >> Hi。 I was wondering how resilient SVD is against the curse of dimensionality？
+ We can probably take three。 \>\> Hi。 I was wondering how resilient SVD is against the curse of dimensionality？
 
- >> Yes， that's great。 So， yeah， I did try -- I wanted to cover Pearson in this example。
+ \>\> Yes， that's great。 So， yeah， I did try -- I wanted to cover Pearson in this example。
 
  but I found cosine similarity just a very， very simple and more visual way to actually。
 
- show this difference。 But， yeah， you could use -- and you could also use Pearson。 >> So。
+ show this difference。 But， yeah， you could use -- and you could also use Pearson。 \>\> So。
 
  I was wondering， if you're launching a new product and you basically have a very。
 
@@ -582,7 +582,7 @@
 
  actually feasible， right？ If in your example of the three by four， you only have two ratings。
 
- then it's not going to be that helpful。 >> Yeah， that's a great question。 So。
+ then it's not going to be that helpful。 \>\> Yeah， that's a great question。 So。
 
  SVD is luckily a very parallelizable algorithm。 And， in fact。
 
@@ -596,17 +596,17 @@
 
  more accurate under some aspects， ALS is a very parallelizable algorithm that will also。
 
- work at scale。 Did I answer your question？ >> So， are you basically saying that if in the three by four you had only two of those。
+ work at scale。 Did I answer your question？ \>\> So， are you basically saying that if in the three by four you had only two of those。
 
- squares populated， ALS will be a better algorithm than SVD？ >> Oh， no， no。 So。
+ squares populated， ALS will be a better algorithm than SVD？ \>\> Oh， no， no。 So。
 
  I just said that as your data -- so， sorry， is your question like the。
 
  more latent features -- the more latent features you generate， the more computation？
 
- >> I'm saying if -- like， what happens if you want to train your SVD in that three by。
+ \>\> I'm saying if -- like， what happens if you want to train your SVD in that three by。
 
- four and you only have two things that are popularly？ >> Oh， yeah， of course。 Good question。 So。
+ four and you only have two things that are popularly？ \>\> Oh， yeah， of course。 Good question。 So。
 
  it's still going to work， but the results， are going to be really bad。 So。
 
@@ -616,7 +616,7 @@
 
  metric to actually find the error between the reconstruction of the original matrix with。
 
- your -- so， the more ratings you have， the more accurate it's going to be。 >> Actually。
+ your -- so， the more ratings you have， the more accurate it's going to be。 \>\> Actually。
 
  we are running out of time now。 Let's just take the questions outside。 Is that， okay？
 

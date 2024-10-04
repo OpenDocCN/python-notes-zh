@@ -1,6 +1,6 @@
 # P5：Alvaro Leiva Geisse - Systemd why you should care as a Python developer - PyCon - 哒哒哒儿尔 - BV1Ms411H7Hn
 
- >> Afternoon everybody。 Welcome to our last set of sessions here on this third day of PyCon。
+ \>\> Afternoon everybody。 Welcome to our last set of sessions here on this third day of PyCon。
 
  Today we're going to， this afternoon we're going to start off with a talk on system D。
 
@@ -10,9 +10,9 @@
 
 ![](img/c90a92fa1d2f34ba1a999222b1943e92_1.png)
 
- [ Applause ]， >> And， sorry， one thing we will not have time to take questions as part of the session。
+ [ Applause ]， \>\> And， sorry， one thing we will not have time to take questions as part of the session。
 
- but if you do have questions you can catch Avaro afterwards outside。 Thanks。 >> Hello。 Okay。
+ but if you do have questions you can catch Avaro afterwards outside。 Thanks。 \>\> Hello。 Okay。
 
  let's start。 My friend over here already said I'm Avaro。
 

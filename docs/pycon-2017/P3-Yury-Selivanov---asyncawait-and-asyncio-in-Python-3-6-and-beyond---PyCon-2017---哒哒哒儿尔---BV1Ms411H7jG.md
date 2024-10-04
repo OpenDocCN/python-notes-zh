@@ -1,6 +1,6 @@
 # P3：Yury Selivanov   asyncawait and asyncio in Python 3 6 and beyond   PyCon 2017 - 哒哒哒儿尔 - BV1Ms411H7jG
 
- >> Good afternoon， everybody。 And welcome to this session of PyCon 2017。 Before we get started。
+ \>\> Good afternoon， everybody。 And welcome to this session of PyCon 2017。 Before we get started。
 
  I would like to encourage everyone with a device that is capable of， making noise。
 
@@ -18,7 +18,7 @@
 
 ![](img/bb2821bda2722c62fd564607bdde3cfb_3.png)
 
- Please make him welcome。 [ Applause ]， >> Hi， I'm Yuri Salivanov。 I'm from Toronto， Canada。
+ Please make him welcome。 [ Applause ]， \>\> Hi， I'm Yuri Salivanov。 I'm from Toronto， Canada。
 
  Today we're going to talk about async await and async IO in Python 36 and beyond。
 
@@ -436,7 +436,7 @@ io and async。io is that the， language itself originally was designed to be a
 
  async and the wait expression from C# but we added so much， more to make it useful。
 
- >> I was wondering， I guess， kind of two questions。 One。
+ \>\> I was wondering， I guess， kind of two questions。 One。
 
  why isn't UV loop the standard loop if it's so much faster than the async。io one？ And then also。
 
@@ -446,9 +446,9 @@ io and async。io is that the， language itself originally was designed to be a
 
  Are there any efforts to improve the usability there as well？
 
- >> The first question is why you will loop is faster？ >> Or why isn't it the async。io default loop？
+ \>\> The first question is why you will loop is faster？ \>\> Or why isn't it the async。io default loop？
 
- >> You will loop uses libv。 Libv is the low level library。 Original developed for null。js。
+ \>\> You will loop uses libv。 Libv is the low level library。 Original developed for null。js。
 
  It's a large dependency。 It's a big library。 It's a lot of code。
 
@@ -490,11 +490,11 @@ io application which spawns a lot of services， subprocesses。
 
  extra or something like that， prototyping those things so that you guys can start using。
 
- them and give us some feedback before this lends to Python 3。7。 >> I'm curious about the Py03。
+ them and give us some feedback before this lends to Python 3。7。 \>\> I'm curious about the Py03。
 
  Is it more about putting some Python in your roster， putting some rust in your Python or。
 
- just simplifying them both？ What's sort of the use case of the actual Py03， Py03 library？ >> Yes。
+ just simplifying them both？ What's sort of the use case of the actual Py03， Py03 library？ \>\> Yes。
 
  the use case is the first enable this integration because we have C Python rust binding。
 
@@ -512,13 +512,13 @@ io can be a bridge here。 The other thing is performance because yes， you can
 
  So the idea is to make it easier to reuse existing rust code in Python。 In an asynchronous way。
 
- >> Thank you。 We have time for one or two more questions if anyone has any。 Thank you very much。
+ \>\> Thank you。 We have time for one or two more questions if anyone has any。 Thank you very much。
 
  Yuri。
 
 ![](img/bb2821bda2722c62fd564607bdde3cfb_25.png)
 
- >> Thank you。 [ Applause ]。
+ \>\> Thank you。 [ Applause ]。
 
 ![](img/bb2821bda2722c62fd564607bdde3cfb_27.png)
 

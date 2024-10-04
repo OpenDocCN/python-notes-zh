@@ -1,6 +1,6 @@
 # P10：Mario Corchero - Effortless Logging A deep dive into the logging module - PyCon - 哒哒哒儿尔 - BV1Ms411H7Hn
 
- >> Hey， everyone。 Welcome to the talk on Evers Fertless Logging， a deep dive into the。
+ \>\> Hey， everyone。 Welcome to the talk on Evers Fertless Logging， a deep dive into the。
 
 
 
@@ -12,7 +12,7 @@
 
 ![](img/8e833d21fd81c1421b1c4f15a832d831_3.png)
 
- [ Applause ]， >> Hello， everyone。 My name is Mario Gorchiro。
+ [ Applause ]， \>\> Hello， everyone。 My name is Mario Gorchiro。
 
  and I'm here today to speak about logging。 Well， that's my guinea pig。
 

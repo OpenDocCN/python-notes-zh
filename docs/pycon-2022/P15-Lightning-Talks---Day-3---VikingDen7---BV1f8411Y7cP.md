@@ -1,6 +1,6 @@
 # P15：Lightning Talks - Day 3 - VikingDen7 - BV1f8411Y7cP
 
- >> Hey， everybody。 Good morning。 It's 8 a。m。 And what does that mean？ Do you know what。
+ \>\> Hey， everybody。 Good morning。 It's 8 a。m。 And what does that mean？ Do you know what。
 
 
 
@@ -8,9 +8,9 @@
 
 ![](img/81685ba2cde9e59d0e4c1c3f0714159b_2.png)
 
- that means？ >> I don't know。 What does it mean， Dustin？
+ that means？ \>\> I don't know。 What does it mean， Dustin？
 
- >> I think it means we should start lightning， dogs。 Okay。 So first up， we have Pandy。 Who's。
+ \>\> I think it means we should start lightning， dogs。 Okay。 So first up， we have Pandy。 Who's。
 
 
 
@@ -110,13 +110,13 @@
 
 ![](img/81685ba2cde9e59d0e4c1c3f0714159b_8.png)
 
- [ Applause ]， >> Excellent。 Thank you so much。 Up next we have Shreya。
+ [ Applause ]， \>\> Excellent。 Thank you so much。 Up next we have Shreya。
 
 
 
 ![](img/81685ba2cde9e59d0e4c1c3f0714159b_10.png)
 
- >> Thank you。 Hi everyone。 I'm Shreya and I'm a product manager at Microsoft。 Today。
+ \>\> Thank you。 Hi everyone。 I'm Shreya and I'm a product manager at Microsoft。 Today。
 
  I'm going to talk to you all about computational thinking and the potential effects of incorporating。
 

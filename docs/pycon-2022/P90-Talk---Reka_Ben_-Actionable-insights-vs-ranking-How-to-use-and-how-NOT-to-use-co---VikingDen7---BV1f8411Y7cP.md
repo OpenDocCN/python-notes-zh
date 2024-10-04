@@ -1,6 +1,6 @@
 # P90：Talk - Reka_Ben_ Actionable insights vs ranking How to use and how NOT to use co - VikingDen7 - BV1f8411Y7cP
 
- >> Good morning。 Thank you for picking this as your first talk， not counting the keynote。
+ \>\> Good morning。 Thank you for picking this as your first talk， not counting the keynote。
 
 
 
@@ -26,7 +26,7 @@
 
  a little bit about how to introduce some objectivity into your code reviews in certain situations。
 
- >> So for that， we are going to introduce some metrics， then try to show how you can。
+ \>\> So for that， we are going to introduce some metrics， then try to show how you can。
 
  gain insights from those metrics。 And we think it's very important to talk about the pitfalls。
 
@@ -36,7 +36,7 @@
 
  of the reasons why we are so interested in this topic。 And in the years before joining， sorcery。
 
- I worked at fintech APIs。 >> And I said I'm Ben。 And for joining sorcery。
+ I worked at fintech APIs。 \>\> And I said I'm Ben。 And for joining sorcery。
 
  I worked -- I did a PhD in material science and then worked as a data analyst and data。
 

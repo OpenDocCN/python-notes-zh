@@ -1,6 +1,6 @@
 # P13：vigneshwer dhinakaran - Pumping up Python modules using Rust - PyCon 2018 - 哒哒哒儿尔 - BV1Ms411H7Hn
 
- >> Hey， folks。 Let's have another round of applause for our next speaker。
+ \>\> Hey， folks。 Let's have another round of applause for our next speaker。
 
 
 
@@ -8,7 +8,7 @@
 
 ![](img/2c020a0457087f9701147634d5d18300_2.png)
 
- >> Okay。 So hello and thank you all for coming today。 It's a pleasure to be here and I'm super。
+ \>\> Okay。 So hello and thank you all for coming today。 It's a pleasure to be here and I'm super。
 
  thrilled to have this opportunity to speak to you all today about two of my most favorite。
 

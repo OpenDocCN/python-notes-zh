@@ -1,6 +1,6 @@
 # P7：Alex Gaynor - Learning From Failure Post Mortems - PyCon 2018 - 哒哒哒儿尔 - BV1Ms411H7Hn
 
- >> Good afternoon everyone。 Welcome back to our second to last session here。
+ \>\> Good afternoon everyone。 Welcome back to our second to last session here。
 
  Our next speaker does not need any introduction， so I won't spend any time on introducing Alex here。
 
@@ -14,7 +14,7 @@
 
 ![](img/2ec76999d2a8a028352490253a8363d0_3.png)
 
- >> Thank you， Ned， and thank you to all of you， for coming out to listen to this talk。
+ \>\> Thank you， Ned， and thank you to all of you， for coming out to listen to this talk。
 
  Like Ned said， I'm Alex， and this talk is going to be about。
 
@@ -690,13 +690,13 @@ complexsystems。fail website details many of them in a way that will hopefully 
 
  hopefully everybody knows this by now。 But a question is something you don't already know the answer to。
 
- Mike's are there and maybe there。 [Applause]， >> Thank you so much for the lesson on post mortems。
+ Mike's are there and maybe there。 [Applause]， \>\> Thank you so much for the lesson on post mortems。
 
  I'm sure a lot of us have worked in different dev shops that are very blameful in post mortems。
 
  Do you have any advice on how to help transition a culture from a blameful mindset to a blameless mindset？
 
- >> Yeah。 It's definitely hard。 Once people learn the lesson that if I say I did something wrong。
+ \>\> Yeah。 It's definitely hard。 Once people learn the lesson that if I say I did something wrong。
 
  I'll get blamed for it。 It takes an awful lot of work to undo that lesson。
 
@@ -708,13 +708,13 @@ complexsystems。fail website details many of them in a way that will hopefully 
 
  I believe that's one of those things that really has to start with leadership。
 
- demonstrating it for everyone。 >> You may have mentioned this earlier in your presentation。
+ demonstrating it for everyone。 \>\> You may have mentioned this earlier in your presentation。
 
  but do you have recommendations from your experience on whether or not it's helpful to you？
 
  It's helpful or not helpful to have executive representation in a post mortem or explicitly keep it to people who were involved in an incident。
 
- >> I think it can be helpful to have executives in the room。
+ \>\> I think it can be helpful to have executives in the room。
 
  but it's critical that you have the team members who are on the sharp end in the room。 Generally。
 

@@ -590,9 +590,9 @@
 
  to hire deep learning people。 All right。 And I'm going to open it up for questions。 Thank， you。
 
- [ Applause ]， >> We have time for about five minutes of questions。
+ [ Applause ]， \>\> We have time for about five minutes of questions。
 
- So use the mics on both the sides。 >> I also post a link to my slides。 >> Hi。
+ So use the mics on both the sides。 \>\> I also post a link to my slides。 \>\> Hi。
 
  So I am a social scientist working in education。 And so I guess I'm going to go， opposite。
 
@@ -602,7 +602,7 @@
 
  being told at the end of like a deep learning model that doesn't help us as much。 Can you。
 
- think of some applications of deep learning within maybe the social science sphere？ >> Yeah。
+ think of some applications of deep learning within maybe the social science sphere？ \>\> Yeah。
 
  I can think of some bad ones。 So my big worry particularly in social science。
 
@@ -620,11 +620,11 @@
 
  at what's written on the board in the classroom I guess and you want to get that information。
 
- into a way that's machine readable I think that could be a good application。 >> Okay。 Thank you。
+ into a way that's machine readable I think that could be a good application。 \>\> Okay。 Thank you。
 
- >> I think you could probably come out with better ones than I could。
+ \>\> I think you could probably come out with better ones than I could。
 
- >> So given enough time and data are there any reasons why you wouldn't want to try all。
+ \>\> So given enough time and data are there any reasons why you wouldn't want to try all。
 
  of these for example or are there certain situations or context where you would really。
 
@@ -634,13 +634,13 @@
 
  common to do all of them and then squish them into a single ensemble。 So yeah， no reason， not to。
 
- >> Great talk。 I really enjoyed it。 I guess one question that comes to mind is it seems。
+ \>\> Great talk。 I really enjoyed it。 I guess one question that comes to mind is it seems。
 
  like there's a paradigm where there's those who have the resources and those who don't。
 
  So I guess could you comment on that and what should plebs like me do and I don't have the。
 
- resources。 >> Well I'm glad you asked that。 So there are a couple of places where you can get access。
+ resources。 \>\> Well I'm glad you asked that。 So there are a couple of places where you can get access。
 
  to say large public datasets and a compute environment that's GPU enabled and that's， good。
 
@@ -656,7 +656,7 @@
 
  a game playing robot that's not on my capability list。 I have no good answers other than we're。
 
- trying to help。 >> Hi， Cass Stor， Simon and Schuster。 I'm curious。
+ trying to help。 \>\> Hi， Cass Stor， Simon and Schuster。 I'm curious。
 
  do you have any good resources on interpreting， and validating models。
 
@@ -664,7 +664,7 @@
 
  can easily run a regression model but you might be using the wrong model in that case， right？
 
- >> Yeah， absolutely。 I have actually written a series of notebooks that are hosted on Kaggle。
+ \>\> Yeah， absolutely。 I have actually written a series of notebooks that are hosted on Kaggle。
 
  that goes through it's in R。 If you're going to be doing a lot of regression， consider。
 
@@ -672,11 +672,11 @@
 
  particular that I am happy about。 So I'll tweet out a link to those and I am our seat。
 
- catman on Twitter。 >> That'd be great。 Thank you。 >> One problem where we use a deep neural net to solve this problem but it turned out。
+ catman on Twitter。 \>\> That'd be great。 Thank you。 \>\> One problem where we use a deep neural net to solve this problem but it turned out。
 
  that actually all we really needed was regression。 And where would you start？ Should you start。
 
- with a regression or would you start with your list and start at the bottom and work， up？ >> Yeah。
+ with a regression or would you start with your list and start at the bottom and work， up？ \>\> Yeah。
 
  I generally only use distance-based methods if I'm in a real-time crunch。 My use。
 
@@ -686,13 +686,13 @@
 
  as concerned with interpretability， I might do random forests regression and then deep， learning。
 
- But every problem is different， right？ >> Sure， yeah。
+ But every problem is different， right？ \>\> Sure， yeah。
 
- But it encouraged me in our problem we started in the wrong place。 >> Yeah。
+ But it encouraged me in our problem we started in the wrong place。 \>\> Yeah。
 
  don't start with deep learning。 Also in your personal learning journey， please。
 
- put deep learning after regressive。 It will make me happy。 >> I got one question。
+ put deep learning after regressive。 It will make me happy。 \>\> I got one question。
 
  One of the issues that I see a lot is the issue dealing with extrapolation。
 
@@ -712,7 +712,7 @@
 
  suggest to take when you want at least you have a reasonable expectation of what the。
 
- value should be but not necessarily a data point there for the model to train on？ >> I mean。
+ value should be but not necessarily a data point there for the model to train on？ \>\> I mean。
 
  if you have strong， high priority reason to believe that given X you get Y， out。
 
@@ -722,7 +722,7 @@
 
  here that I just don't have access to and I believe that these are its qualities。
 
- >> So we are going to have to wrap up questions here but I am sure you are willing to answer。
+ \>\> So we are going to have to wrap up questions here but I am sure you are willing to answer。
 
  some questions out in the hall if you have any other further questions。 Let's say thank。
 

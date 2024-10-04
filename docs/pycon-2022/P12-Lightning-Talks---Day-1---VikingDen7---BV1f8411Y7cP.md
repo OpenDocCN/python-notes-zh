@@ -264,7 +264,7 @@
 
  So， welcome， Seth。 Seth's going to give us a talk on the future of Trustors in Python。
 
- Give it away for Seth。 >> Hi， everybody。 So today I'm going to talk about Trustors and what that's going to look like in the future hopefully in Python。
+ Give it away for Seth。 \>\> Hi， everybody。 So today I'm going to talk about Trustors and what that's going to look like in the future hopefully in Python。
 
  So I'm Seth Larson。 I'm maintainer of your lib3 requests and some other packages。
 

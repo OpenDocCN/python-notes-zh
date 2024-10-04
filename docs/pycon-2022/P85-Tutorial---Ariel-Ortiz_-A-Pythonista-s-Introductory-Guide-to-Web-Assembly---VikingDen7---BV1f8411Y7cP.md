@@ -1698,11 +1698,11 @@ watt file that we need to translate。 Okay。 You can think of this being sort 
 
  [BLANK_AUDIO]， [BLANK_AUDIO]， Great， okay。 [BLANK_AUDIO]， [BLANK_AUDIO]， [BLANK_AUDIO]。
 
- [BLANK_AUDIO]， [BLANK_AUDIO]， [BLANK_AUDIO]， Can I take a picture of you？ >> Yeah。
+ [BLANK_AUDIO]， [BLANK_AUDIO]， [BLANK_AUDIO]， Can I take a picture of you？ \>\> Yeah。
 
- >> Everybody okay？ Just wait for the camera， let's do one here and then over here， okay？ So waving。
+ \>\> Everybody okay？ Just wait for the camera， let's do one here and then over here， okay？ So waving。
 
- yay， thank you。 Over here， okay， wave， yes， thank you。 Excuse me？ >> Don't be so filthy。 >> Yeah。
+ yay， thank you。 Over here， okay， wave， yes， thank you。 Excuse me？ \>\> Don't be so filthy。 \>\> Yeah。
 
  sure， it's a good idea。 Let's see how many can fit here。 Okay， just wait for the photo。 Okay。
 
@@ -2374,15 +2374,15 @@ mool instruction in WebAssembly text form， okay？ It's actually contained wit
 
  and over the list you do the join and just tell it。
 
- I use this string to separate these individual lines， but for some reason， the --， >> [INAUDIBLE]。
+ I use this string to separate these individual lines， but for some reason， the --， \>\> [INAUDIBLE]。
 
- >> Yes， but in other object-oriented languages， I don't remember， for example。
+ \>\> Yes， but in other object-oriented languages， I don't remember， for example。
 
  JavaScript has a join， but if it does， typically is the method is associated to the list。
 
- and the argument is the string that is going to be used to --， >> [INAUDIBLE]。
+ and the argument is the string that is going to be used to --， \>\> [INAUDIBLE]。
 
- >> I think it wasn't really that difficult to do it the other way around。
+ \>\> I think it wasn't really that difficult to do it the other way around。
 
  but for some reason they decided， I really don't know if it was a widow who decided to do it this way。
 
@@ -2428,9 +2428,9 @@ mool instruction in WebAssembly text form， okay？ It's actually contained wit
 
  Especially when we're doing the development， it's very useful for debugging purposes and see if we did everything correctly。
 
- okay？ So this is why we're creating these two files， yes？ >> [inaudible]。
+ okay？ So this is why we're creating these two files， yes？ \>\> [inaudible]。
 
- >> You need to use special tools to actually do that， okay？ So just for example。
+ \>\> You need to use special tools to actually do that， okay？ So just for example。
 
  I mean if you want to look at it now， I'm currently still here at the WAT directory。
 
@@ -2980,7 +2980,7 @@ mool instruction in WebAssembly text form， okay？ It's actually contained wit
 
  So most of the time it should make sense to make it work that way， but if it doesn't。
 
- you'll get a validation error， okay？ So just mention that。 So， yes？ >> [INAUDIBLE]， >> Yeah。
+ you'll get a validation error， okay？ So just mention that。 So， yes？ \>\> [INAUDIBLE]， \>\> Yeah。
 
  in this case， you need to use div_s because for integers， you can have two interpretations。
 

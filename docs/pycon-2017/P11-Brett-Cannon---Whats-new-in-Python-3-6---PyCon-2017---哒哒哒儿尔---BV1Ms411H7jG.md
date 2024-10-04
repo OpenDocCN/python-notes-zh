@@ -1,6 +1,6 @@
 # P11：Brett Cannon   Whats new in Python 3 6   PyCon 2017 - 哒哒哒儿尔 - BV1Ms411H7jG
 
- >> Ladies and gentlemen， Python 3 has been released for many years and after every year。
+ \>\> Ladies and gentlemen， Python 3 has been released for many years and after every year。
 
  they have a new version being released。 So this year， we welcome 3。6。
 
@@ -14,7 +14,7 @@
 
 ![](img/cacb898a89c411fd6f7537986de224f6_3.png)
 
- We're going to be in Python 3。6。 [ Applause ]， >> Well， thank you for the warm intro， everyone。 So。
+ We're going to be in Python 3。6。 [ Applause ]， \>\> Well， thank you for the warm intro， everyone。 So。
 
  yes， my name is Brad Cannon。 I work at Microsoft on the Azure Data Science Tools team。
 

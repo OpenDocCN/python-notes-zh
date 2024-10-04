@@ -1,6 +1,6 @@
 # P17：Talk - Aaron Stephens_ Python for Threat Intelligence - VikingDen7 - BV1f8411Y7cP
 
- >> Our next talk is Python for Threat Intelligence。
+ \>\> Our next talk is Python for Threat Intelligence。
 
 
 
@@ -8,7 +8,7 @@
 
 ![](img/8edaa77d1bdfb9d80bbdb5c6512d42b5_2.png)
 
- Everyone please welcome Aaron Stevens。 >> Hi， everyone。 Thanks for coming。
+ Everyone please welcome Aaron Stevens。 \>\> Hi， everyone。 Thanks for coming。
 
  My name is Aaron and this is Python for Threat Intelligence。 A little bit of background。
 

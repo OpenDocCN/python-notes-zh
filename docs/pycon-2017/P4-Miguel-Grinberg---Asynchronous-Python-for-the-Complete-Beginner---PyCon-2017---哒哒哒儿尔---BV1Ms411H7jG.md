@@ -560,31 +560,31 @@
 
  It looks like I did good time， right？ So just going to be time for questions。 Looks like。 Thank you。
 
- [Applause]， >> Thank you， Miguel。 Are there any questions？ Yes， we have one here。
+ [Applause]， \>\> Thank you， Miguel。 Are there any questions？ Yes， we have one here。
 
- >> So my question is， is it possible to schedule a new schedule？ Are there any questions？ Yes。
+ \>\> So my question is， is it possible to schedule a new schedule？ Are there any questions？ Yes。
 
- we have one here。 >> So my question is， is it possible to schedule asynchronous operation from multiple threads？
+ we have one here。 \>\> So my question is， is it possible to schedule asynchronous operation from multiple threads？
 
- >> You can run a loop。 You can run multiple loops， right， in different threads。
+ \>\> You can run a loop。 You can run multiple loops， right， in different threads。
 
- >> So each loop is per thread， right？ >> Correct。 >> They don't go together in the same bucket and then get to the end。
+ \>\> So each loop is per thread， right？ \>\> Correct。 \>\> They don't go together in the same bucket and then get to the end。
 
- >> Then you have to use normal threading synchronization mechanisms if you need， you know。
+ \>\> Then you have to use normal threading synchronization mechanisms if you need， you know。
 
  the thread， tasks that are running under one loop to somehow coordinate with the other。
 
- It gets pretty nasty， to be honest。 >> So pretty much it gets affiliated to that thread。
+ It gets pretty nasty， to be honest。 \>\> So pretty much it gets affiliated to that thread。
 
- >> That's correct。 >> That's correct。 >> Yes。 Yes。
+ \>\> That's correct。 \>\> That's correct。 \>\> Yes。 Yes。
 
- because most of the times you have only one thread。 So yes。 >> All right。 Thank you。 >> Yep。 >> Hi。
+ because most of the times you have only one thread。 So yes。 \>\> All right。 Thank you。 \>\> Yep。 \>\> Hi。
 
  Miguel。 Thank you for that talk。 I was hoping if you can give me some help trying to conceptualize this in like a stack frame。
 
  all this magic that happens not necessarily just with async but generators and everything。
 
- in general。 How do you--， >> Well， the generators， they're a Python feature， right？
+ in general。 How do you--， \>\> Well， the generators， they're a Python feature， right？
 
  They already support the， you know， saving the context when the generator function calls。
 
@@ -600,17 +600,17 @@
 
  it does a little bit more work and returns another-- you know， another value and another result。
 
- >> Okay。 >> Does that make sense？ >> One additional question。 >> Yes。
+ \>\> Okay。 \>\> Does that make sense？ \>\> One additional question。 \>\> Yes。
 
- >> In an architecture where you spawned off multiple processes of the async workers in， say。
+ \>\> In an architecture where you spawned off multiple processes of the async workers in， say。
 
  for a server， how do you， like， the socket binding， how would that work across the different。
 
- processes？ >> It's only one thread that will have a really large number of connections。
+ processes？ \>\> It's only one thread that will have a really large number of connections。
 
- >> But if I have the same port that has to go through multiple processes and each of。
+ \>\> But if I have the same port that has to go through multiple processes and each of。
 
- them have a single thread of async。 >> There are multiple ways to do it。 So for example。
+ them have a single thread of async。 \>\> There are multiple ways to do it。 So for example。
 
  you can have a something like NGINX， a reverse proxy in front。
 
@@ -618,13 +618,13 @@
 
  Four ports， say。 And then NGINX， you know， consolidates that and then reverse proxy into all these backend。
 
- async processes。 That will be one way。 >> Thank you。 >> Does that make sense？
+ async processes。 That will be one way。 \>\> Thank you。 \>\> Does that make sense？
 
- >> How much more imprecise is an async sleep command than time。sleep？ >> More。
+ \>\> How much more imprecise is an async sleep command than time。sleep？ \>\> More。
 
- >> Could it be like seconds more or are we talking about a couple of milliseconds？
+ \>\> Could it be like seconds more or are we talking about a couple of milliseconds？
 
- >> This is all cooperative， right？ So really your task depends on how the other tasks that are running at the same time behave。
+ \>\> This is all cooperative， right？ So really your task depends on how the other tasks that are running at the same time behave。
 
  If you have a rogue task that， you know， that's a lot of computation and doesn't return。
 
@@ -638,7 +638,7 @@
 
  You need to make sure that all the tasks are well designed for async。
 
- >> We have time for one more short question。 >> So I guess my question is related to the one that gentlemen asked previously。
+ \>\> We have time for one more short question。 \>\> So I guess my question is related to the one that gentlemen asked previously。
 
  So actually in JavaScript， one of the issues is we used to leave， say， for 10 seconds。
 
@@ -646,9 +646,9 @@
 
  they have the same issue when I want to sleep a certain callback for， 10 seconds。
 
- it's still at least 10 seconds。 Is that right？ >> It depends on which--， >> Yeah。
+ it's still at least 10 seconds。 Is that right？ \>\> It depends on which--， \>\> Yeah。
 
- it depends on the other items in the queue。 >> So as I said before。
+ it depends on the other items in the queue。 \>\> So as I said before。
 
  the sleep function is going to be implemented by the async framework， that you use。
 
@@ -660,15 +660,15 @@
 
  So it depends on all the tasks being nice to each other。 If you don't have that。
 
- then this doesn't work。 >> Well， I guess in JavaScript， at least。
+ then this doesn't work。 \>\> Well， I guess in JavaScript， at least。
 
- the guarantee that we will be at least 10 seconds。 >> Yeah， and you get a guarantee of that sort。
+ the guarantee that we will be at least 10 seconds。 \>\> Yeah， and you get a guarantee of that sort。
 
  But exact times are heavily dependent on how the tasks return to the loop。
 
- >> I think this feels like a discussion that could be continued out in the whole way。
+ \>\> I think this feels like a discussion that could be continued out in the whole way。
 
- Many thanks to Miguel。 >> Thank you。
+ Many thanks to Miguel。 \>\> Thank you。
 
 ![](img/62383f7126bcb8bb684fec52bf6e98ce_32.png)
 

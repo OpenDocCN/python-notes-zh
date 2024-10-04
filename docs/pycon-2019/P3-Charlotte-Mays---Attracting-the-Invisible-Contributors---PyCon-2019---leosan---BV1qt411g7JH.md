@@ -8,7 +8,7 @@
 
  Today we're going to be hearing about attracting the invisible contributors with Charlotte， Mays。
 
- >> Thank you。 So before I start， I want to give a little bit of context to this talk。
+ \>\> Thank you。 So before I start， I want to give a little bit of context to this talk。
 
  I am one of the co-organizers of my local Pilates group and in that context I spend。
 

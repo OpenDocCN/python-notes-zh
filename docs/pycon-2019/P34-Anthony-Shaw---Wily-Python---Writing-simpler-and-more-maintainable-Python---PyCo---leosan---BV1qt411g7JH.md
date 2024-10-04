@@ -550,19 +550,19 @@ com that I wrote to explain this。 If you want to check out my website， it's 
 
  for questions。 So thank you very much。 Anyone that has questions， please come to this microphone。
 
- There's actually a microphone back there too。 So go to any microphone。 >> What is Wiley？
+ There's actually a microphone back there too。 So go to any microphone。 \>\> What is Wiley？
 
- How do you get it？ Is that a product or？ >> It's a package on PIPI。
+ How do you get it？ Is that a product or？ \>\> It's a package on PIPI。
 
- So just pip install Wiley and you can run it on the command line。 >> Awesome。 Thank you。 >> Hi。
+ So just pip install Wiley and you can run it on the command line。 \>\> Awesome。 Thank you。 \>\> Hi。
 
  The equation for the Halsted thing。 I can't remember what it's called。 There was。
 
- a constant in there。 There's like 171。 What was that？ >> I've got no idea。
+ a constant in there。 There's like 171。 What was that？ \>\> I've got no idea。
 
- >> The examples that you showed with Wiley， they seem to operate on a single file。 Is。
+ \>\> The examples that you showed with Wiley， they seem to operate on a single file。 Is。
 
- it possible to run it for an entire project？ >> Yeah。 I toyed with this。 But yes， is the answer。
+ it possible to run it for an entire project？ \>\> Yeah。 I toyed with this。 But yes， is the answer。
 
  You typically give it the path to， your whole project。 And if you want to run a report on a folder。
 
@@ -570,11 +570,11 @@ com that I wrote to explain this。 If you want to check out my website， it's 
 
  It's designed， for big applications。 But I just used it for a tiny sample。 Otherwise。
 
- it would take too， long to compile。 Thank you。 >> Great talk。 I love everything。
+ it would take too， long to compile。 Thank you。 \>\> Great talk。 I love everything。
 
  I agree with everything you're saying。 How do you get， team buy in？
 
- >> I think if you look at the times when people have to make changes and they appreciate that。
+ \>\> I think if you look at the times when people have to make changes and they appreciate that。
 
  complexity makes it harder to make change。 If you pin them down then and see， see， this。
 
@@ -586,7 +586,7 @@ com that I wrote to explain this。 If you want to check out my website， it's 
 
  doesn't compile or however you measure that for multiple sprints， that's a really hard， sell。
 
- So it needs to be a small piece of work。 >> Cool。 Thank you。 >> Cool。 >> Okay。 Thank you。 Thank you。
+ So it needs to be a small piece of work。 \>\> Cool。 Thank you。 \>\> Cool。 \>\> Okay。 Thank you。 Thank you。
 
  Thank you。 Thank you。 Thank you。 Thank you。 Thank you。
 

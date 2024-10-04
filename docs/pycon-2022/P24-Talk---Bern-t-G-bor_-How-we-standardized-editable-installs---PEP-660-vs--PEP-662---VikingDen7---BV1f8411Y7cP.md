@@ -6,7 +6,7 @@
 
 ![](img/fe5ebb76be2e750214cfa81dada8e8fe_1.png)
 
- PEP662。 [applause]， >> Thank you， thank you all。 Let me start with saying that I appreciate your presence here。
+ PEP662。 [applause]， \>\> Thank you， thank you all。 Let me start with saying that I appreciate your presence here。
 
  I know that this is not a light topic for anyone as Peter put it this morning。
 

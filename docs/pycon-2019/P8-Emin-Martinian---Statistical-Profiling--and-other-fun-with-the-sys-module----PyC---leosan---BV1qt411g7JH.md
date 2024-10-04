@@ -748,7 +748,7 @@ set switch interval will tell the interpreter look please don't switch away from
 
  of hits on like request。get or whatever versus that number of hits suggesting that those particular。
 
- function calls are slow or need improvement。 >> Let me rephrase what I think you're asking。
+ function calls are slow or need improvement。 \>\> Let me rephrase what I think you're asking。
 
  I think what you're saying is what if you have something like request。get which is not。
 
@@ -766,13 +766,13 @@ set switch interval will tell the interpreter look please don't switch away from
 
  is a slow function。 Does that answer your question or does that get at what you're saying？
 
- >> Sort of， yeah。 It was more how do you request that get was just an obvious example but really what I'm。
+ \>\> Sort of， yeah。 It was more how do you request that get was just an obvious example but really what I'm。
 
  getting at is how based on what you're seeing from a statistical profiler what clues do you。
 
  have that can help you differentiate that a function called actually needs improvement。
 
- versus that it's just used a lot in the program。 >> So that's a good question。
+ versus that it's just used a lot in the program。 \>\> So that's a good question。
 
  So it's not so much a statistical versus deterministic profile question。
 
@@ -786,13 +786,13 @@ set switch interval will tell the interpreter look please don't switch away from
 
  that up the better your program will be or you can look for what functions seem to be taking。
 
- a lot more time than I expect and you can use that to drive what you look at。 >> Thank you。
+ a lot more time than I expect and you can use that to drive what you look at。 \>\> Thank you。
 
- >> Maybe on this side。 >> Yeah。 >> Have you any experience with running a statistical profile or inside a Docker pod？
+ \>\> Maybe on this side。 \>\> Yeah。 \>\> Have you any experience with running a statistical profile or inside a Docker pod？
 
- >> Inside of what？ >> Docker。 >> Docker。 >> Kubernetes。
+ \>\> Inside of what？ \>\> Docker。 \>\> Docker。 \>\> Kubernetes。
 
- >> So it should work just fine and so statistical profiler should work just fine in Docker or。
+ \>\> So it should work just fine and so statistical profiler should work just fine in Docker or。
 
  Kubernetes because it's running inside the Python interpreter and it's just telling you。
 
@@ -800,15 +800,15 @@ set switch interval will tell the interpreter look please don't switch away from
 
  Does that answer your question or did you mean something different that I misunderstood？
 
- >> I was wondering if the fact that you're really faking that you're on a process， you're。
+ \>\> I was wondering if the fact that you're really faking that you're on a process， you're。
 
  on one processor but you're really sharing a processor does that change your statistics？
 
- >> It won't change your statistics。 If for some reason your particular Docker process gets shoved to the slide while other。
+ \>\> It won't change your statistics。 If for some reason your particular Docker process gets shoved to the slide while other。
 
  things run then that could be an issue of course。 But that's not really a problem you can solve with the profiles。
 
- Back to this side？ >> I'm just going on the same note。 First of all， great talk。
+ Back to this side？ \>\> I'm just going on the same note。 First of all， great talk。
 
  This is really educational。 Also in terms of messing with things such as context watching。
 
@@ -816,7 +816,7 @@ set switch interval will tell the interpreter look please don't switch away from
 
  Would it， if it's running on a virtual machine or with the hypervisors and stuff involved。
 
- like it's not safe to go against that， right？ >> Good question。
+ like it's not safe to go against that， right？ \>\> Good question。
 
  The set switch interval is only going to protect you from a context switch happening。
 
@@ -830,7 +830,7 @@ set switch interval will tell the interpreter look please don't switch away from
 
  There's other ways you can try and check if those stack frames are live or stale。
 
- But that's one simple example。 Back to the side。 >> Hi。 Thank you for the talk。 Two questions。
+ But that's one simple example。 Back to the side。 \>\> Hi。 Thank you for the talk。 Two questions。
 
  First， have you had a chance to measure the performance implications， say with a 100 millisecond。
 
@@ -840,7 +840,7 @@ set switch interval will tell the interpreter look please don't switch away from
 
  function A was cold。 So the counter for the function A should also be incremented。
 
- And that might address one of the first questions there was。 >> Excellent question。
+ And that might address one of the first questions there was。 \>\> Excellent question。
 
  I'm glad you asked that。 So let me answer this。 So let me take that in order。
 

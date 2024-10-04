@@ -9,7 +9,7 @@
 
 ![](img/5243fa82c8418d4a9230f5750f6730c5_4.png)
 
- >> [APPLAUSE]， >> Well， thank you everyone， this as many of you will have guessed is a follow up to my 2010。 Several years ago， PyCon talk， the mighty dictionary in which I tried to explain the operation benefits。 but dangers of a hash table to a PyCon audience。 A lot has happened since then。 None of which tempted me to do a follow up talk。 Until Python 3。6。
+ \>\> [APPLAUSE]， \>\> Well， thank you everyone， this as many of you will have guessed is a follow up to my 2010。 Several years ago， PyCon talk， the mighty dictionary in which I tried to explain the operation benefits。 but dangers of a hash table to a PyCon audience。 A lot has happened since then。 None of which tempted me to do a follow up talk。 Until Python 3。6。
 
  which Raymond Hettinger has famously said is the first version he specifically said， 3。6。1。 that's a better language than 2。7。 So it's clearly time that we talk about where the dictionary has gone in the last several years。 I chose， it turns out in retrospect， an interesting moment to do the original mighty dictionary talk February of right at the beginning of 2010。 Right before， months before 2。7 went final and came out。
 
@@ -221,7 +221,7 @@
 
  But if you look on stack overflow， order isn't something that people are going to stumble across。 It's something they already expect dictionaries to have。 The human mind， naturally， by its nature。 expects dictionaries to have order。 If you've ever taught Python， this is always a stumbling block。 Raymond thinks the guarantee might be almost inevitable， but Beasley says this is permanent。
 
- and I agree with him。 I say 3。6 is brought about dictionaries for humans。 [Applause]。 I don't think they're ever rolling this one back because the normal programmer who doesn't even know about hash tables has always expected them to be ordered。 and will write code that depends on it。 I end with the wish slightly modified that I ended my last talk with。 May your hashes be unique。 Your keys rarely collide， and your dictionaries be forever ordered。
+ and I agree with him。 I say 3。6 is brought about dictionaries for humans。 [Applause]。 I don't think they're ever rolling this one back because the normal programmer who doesn't even know about hash tables has always expected them to be ordered。 and will write code that depends on it。 I end with the wish slightly modified that I ended my last talk with。 May your hashes be unique。 Your keys rarely collide， and your dictionaries be foreve[r ordered。
 
  Thank you very much。
 ![](img/5243fa82c8418d4a9230f5750f6730c5_6.png)

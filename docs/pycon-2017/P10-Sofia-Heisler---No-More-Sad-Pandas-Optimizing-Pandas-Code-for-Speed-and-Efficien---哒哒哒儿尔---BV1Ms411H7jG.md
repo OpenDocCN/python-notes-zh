@@ -1,6 +1,6 @@
 # P10：Sofia Heisler   No More Sad Pandas Optimizing Pandas Code for Speed and Efficien - 哒哒哒儿尔 - BV1Ms411H7jG
 
- >> Good afternoon everybody。
+ \>\> Good afternoon everybody。
 
 ![](img/344784ece4961f2de8d0773170a4c965_1.png)
 
@@ -18,7 +18,7 @@
 
 ![](img/344784ece4961f2de8d0773170a4c965_4.png)
 
- Thank you。 >> Thank you everybody and welcome。 My name is Sophia Heisler。
+ Thank you。 \>\> Thank you everybody and welcome。 My name is Sophia Heisler。
 
  I am the lead data scientist at a startup called， Upside。
 
@@ -34,7 +34,7 @@
 
  that runs all of the code and the inputs we will be talking， about。
 
- >> I have put this link on the bottom right-hand corner， over here。
+ \>\> I have put this link on the bottom right-hand corner， over here。
 
  If during the presentation you say you really want to download， it because it is gotten small。
 
@@ -596,7 +596,7 @@
 
  We are a fantastic small travel startup located in Washington， D。C。 and if you are interested。
 
- come talk to me。 Thank you very much。 [Applause]， >> Thank you， Sophia。
+ come talk to me。 Thank you very much。 [Applause]， \>\> Thank you， Sophia。
 
  Does anyone have any questions？ If you do， there are microphones in the aisles。
 
@@ -604,7 +604,7 @@
 
  and tuple unpacking。 It seems like if you just put four lines of just do the computation。
 
- you could have avoided， a complete round trip into Python land。 >> You know， that's a fair point。
+ you could have avoided， a complete round trip into Python land。 \>\> You know， that's a fair point。
 
  I actually did try doing that and it actually does not improve performance。
 
@@ -614,9 +614,9 @@
 
  But for the purposes of that function， doing it one way or another didn't make a difference。
 
- So I left it as it was。 >> Thank you。 >> For your improvement for your scytheon。
+ So I left it as it was。 \>\> Thank you。 \>\> For your improvement for your scytheon。
 
- did you test that with the vectorization to， see if there was further improvement？ >> So not quite。
+ did you test that with the vectorization to， see if there was further improvement？ \>\> So not quite。
 
  Because once -- well， so if you were to run it on vectors， a lot of the actual benefits。
 
@@ -626,11 +626,11 @@
 
  And it will still be way faster。 The combining the two doesn't actually give you much of a boost in performance in that。
 
- case。 >> Thank you。 So this isn't exactly related to scytheon or pandas， but you're using lambdas。
+ case。 \>\> Thank you。 So this isn't exactly related to scytheon or pandas， but you're using lambdas。
 
  And I know -- I remember way back， West McKinney's advice was not to use lambdas in apply。
 
- Is that changed or --， >> So that is a great question。
+ Is that changed or --， \>\> So that is a great question。
 
  I don't know if I've ever heard not to use lambdas in apply。
 
@@ -640,33 +640,33 @@
 
  If I were not applying it to a row， if I were just doing it on a single series， I could do。
 
- without it。 >> Do you know if that's faster？ >> That's a great question。 I don't think it would be。
+ without it。 \>\> Do you know if that's faster？ \>\> That's a great question。 I don't think it would be。
 
- but I haven't tested it， so I don't know。 >> All right。 Thank you。 >> Last question。
+ but I haven't tested it， so I don't know。 \>\> All right。 Thank you。 \>\> Last question。
 
- >> So we use group by to group our regression models today。
+ \>\> So we use group by to group our regression models today。
 
  And I found that if you do like over more than four columns， it just is increasingly。
 
  not performant at all。 Do you have any suggestions of other ways to do that that would be more performant？
 
- >> For specifically group by -- you know， off the top of my head， I would guess that。
+ \>\> For specifically group by -- you know， off the top of my head， I would guess that。
 
  maybe dealing with some of the data types and looking at the way that your data types。
 
  of the things that you're grouping by might affect it。 But the honest answer is no。
 
- I don't actually know。 >> Okay。 >> Okay。
+ I don't actually know。 \>\> Okay。 \>\> Okay。
 
 ![](img/344784ece4961f2de8d0773170a4c965_30.png)
 
- That's all we have time for。 Please again， thanks， Sophia。 >> Thank you。
+ That's all we have time for。 Please again， thanks， Sophia。 \>\> Thank you。
 
 
 
 ![](img/344784ece4961f2de8d0773170a4c965_32.png)
 
- [ Applause ]， >> Thank you very much。 [BLANK_AUDIO]。
+ [ Applause ]， \>\> Thank you very much。 [BLANK_AUDIO]。
 
 
 

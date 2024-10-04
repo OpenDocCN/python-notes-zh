@@ -1,18 +1,18 @@
 # P11：Pieter Hooimeijer - Types Deeper Static Analysis and you - PyCon 2018 - 哒哒哒儿尔 - BV1Ms411H7Hn
 
- >> Hello everyone。
+ \>\> Hello everyone。
 
 ![](img/d10160d6f0349309f46ae833710c063c_1.png)
 
  Hi。 So welcome to the talk on types， deep static analysis and you。
 
- Please welcome Peter who will be presenting this awesome topic。 >> Thank you。 How's my audio？ Yeah？
+ Please welcome Peter who will be presenting this awesome topic。 \>\> Thank you。 How's my audio？ Yeah？
 
 
 
 ![](img/d10160d6f0349309f46ae833710c063c_3.png)
 
- >> [inaudible]， >> Got it。 All right。 How's my audio now？ Not just the front row。 Yeah。 All right。
+ \>\> [inaudible]， \>\> Got it。 All right。 How's my audio now？ Not just the front row。 Yeah。 All right。
 
  So my slides are going to be a little stretched， but mostly followable。 So that's a plus。
 

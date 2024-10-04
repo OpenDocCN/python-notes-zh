@@ -640,8 +640,8 @@
 
 ![](img/9453570b8809d4c68f1e6b4f3398cf1c_17.png)
 
- >> So， all right。 Thank you， Bidan。 You have any questions for him？ You can， yes， thank you。
+ \>\> So， all right。 Thank you， Bidan。 You have any questions for him？ You can， yes， thank you。
 
- >> [APPLAUSE]， [APPLAUSE]。
+ \>\> [APPLAUSE]， [APPLAUSE]。
 
 ![](img/9453570b8809d4c68f1e6b4f3398cf1c_19.png)

@@ -360,7 +360,7 @@ user name and， things like that。 That's what it's referring to。
 
  do something when we have a certain ticket type。 That is the dream。 [ Laughter ]。
 
- >> So now that we have started building this automation server， and all of its end points。
+ \>\> So now that we have started building this automation server， and all of its end points。
 
  we need to kind of start thinking， about how is it going to scale？ What is the future of it？
 
@@ -580,7 +580,7 @@ user name and， things like that。 That's what it's referring to。
 
 ![](img/319d1e6087b2c053b83ae1cfd1cb65d7_27.png)
 
- So yeah。 >> So when you actually go to build one of these things and get。
+ So yeah。 \>\> So when you actually go to build one of these things and get。
 
  it deployed to really support a team， first thing you're going。
 

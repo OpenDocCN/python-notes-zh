@@ -1,12 +1,12 @@
 # P4：Barry_Warsaw_-_Get_your_resources_faster_with_importlibresources_-_PyCon_2018 - 哒哒哒儿尔 - BV1Ms411H7Hn
 
- >> All right。 If you're going to go ahead and get started， this is Barry Warsaw。 Let's。
+ \>\> All right。 If you're going to go ahead and get started， this is Barry Warsaw。 Let's。
 
  give him a round of applause。
 
 ![](img/ecc9b04739c400ddd2bccbcab3f01b61_1.png)
 
- >> Microphone。 Hey， check one two。 Is it working？ Okay， great。 Awesome。 >> Okay。 So， yeah。
+ \>\> Microphone。 Hey， check one two。 Is it working？ Okay， great。 Awesome。 \>\> Okay。 So， yeah。
 
  Barry Warsaw， I work at LinkedIn on the Python Foundation team。
 
@@ -502,7 +502,7 @@
 
  planned to add that support？ No， no。 It works off a sys path。 Whatever's on sys path。
 
- >> So I was thinking about a resource path for a minute and I'm wondering how to deal with。
+ \>\> So I was thinking about a resource path for a minute and I'm wondering how to deal with。
 
  the pickles you could get in with that on say if you're running on a read-only file system。
 
@@ -510,7 +510,7 @@
 
  and race in per day file or something else where it would want to be unpacking one of。
 
- those resources that needs a concrete path。 >> Yeah。 So it just uses Python's temp file， library。
+ those resources that needs a concrete path。 \>\> Yeah。 So it just uses Python's temp file， library。
 
  So， you know， that supports setting the temp and the various environment variables。
 
@@ -518,11 +518,11 @@
 
  a temp file， then well， yeah， it probably won't work。 You'll probably get an exception。
 
- >> Thank you。 >> Hey， Barry。 Thanks for the talk。 You mentioned earlier on that there。
+ \>\> Thank you。 \>\> Hey， Barry。 Thanks for the talk。 You mentioned earlier on that there。
 
  was sort of 25 to 50% speed up in some CLIs。 I was wondering if you experimented that with。
 
- a mercurially and seen if you could make the CLI a bit more competitive with Git？ >> No， I haven't。
+ a mercurially and seen if you could make the CLI a bit more competitive with Git？ \>\> No， I haven't。
 
  And I personally won't。 I'm certainly happy to help the mercurial folks。
 
@@ -538,9 +538,9 @@
 
  path is set up。 And so just getting rid of that。 And also getting rid of your dunder。
 
- file usage because that also is really terrible。 >> Thank you。 Sure。 >> All right。
+ file usage because that also is really terrible。 \>\> Thank you。 Sure。 \>\> All right。
 
- Let's give Barry one last round of applause。 [ Applause ]， >> Yay。 [ Applause ]。
+ Let's give Barry one last round of applause。 [ Applause ]， \>\> Yay。 [ Applause ]。
 
 
 

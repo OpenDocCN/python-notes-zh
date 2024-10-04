@@ -1,6 +1,6 @@
 # P31：Talk - Christopher Ariza_ Employing NumPy's NPY Format for Faster Than Parquet D - VikingDen7 - BV1f8411Y7cP
 
- >> Good morning， everyone。 I welcome all of you to this second day of PyConUS 2022。
+ \>\> Good morning， everyone。 I welcome all of you to this second day of PyConUS 2022。
 
 
 

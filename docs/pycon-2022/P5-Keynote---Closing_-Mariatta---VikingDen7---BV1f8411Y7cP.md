@@ -1,6 +1,6 @@
 # P5：Keynote - Closing_ Mariatta - VikingDen7 - BV1f8411Y7cP
 
- >> We have near the end of PyCon US 2022， but we still have a few things left for you。
+ \>\> We have near the end of PyCon US 2022， but we still have a few things left for you。
 
 
 
@@ -282,7 +282,7 @@ us/ sprints and stick around right after this， where we will have our sprint r
 
  If you want to come by， you can。 I don't know if there is an organized thing but we will be doing。
 
- that。 Thank you。 [Applause]， >> Hi there。 My name is Christopher。
+ that。 Thank you。 [Applause]， \>\> Hi there。 My name is Christopher。
 
  I am working with the pants build project。 We will be sprinting on both pants。
 
@@ -300,7 +300,7 @@ us/ sprints and stick around right after this， where we will have our sprint r
 
  core contributors who are happy to help you do that。 Come find us tomorrow。
 
- We will be there sometime probably before 9 o'clock。 [Applause]， >> Hello everyone。
+ We will be there sometime probably before 9 o'clock。 [Applause]， \>\> Hello everyone。
 
  My name is Patrick。 I am going to be sprinting on sub-bank。 It is a library based on the classes。
 
@@ -310,13 +310,13 @@ us/ sprints and stick around right after this， where we will have our sprint r
 
  flask and other frameworks。 If you want to work on that， come and join us。 I also have stickers。
 
- Thank you。 [Applause]， >> Hi。 It seems every word counts。 I am reading this from my phone。
+ Thank you。 [Applause]， \>\> Hi。 It seems every word counts。 I am reading this from my phone。
 
  including this sentence。 I work on Samgrav tool for searching through code。
 
  If you want to write a linter rule， we can write it as a， semia rule in 5-10 minutes tomorrow。
 
- You can share with others。 Join us tomorrow。 [Applause]， >> Hey everybody。
+ You can share with others。 Join us tomorrow。 [Applause]， \>\> Hey everybody。
 
  Nick Reineke with the national renewable energy laboratory。
 
@@ -332,7 +332,7 @@ us/ sprints and stick around right after this， where we will have our sprint r
 
  We are going to be doing this for everybody。 There should be stuff for everybody。 Docs。
 
- new features， testing。 We would love to see you there。 [Applause]， >> Hello。 My name is Eric Mathis。
+ new features， testing。 We would love to see you there。 [Applause]， \>\> Hello。 My name is Eric Mathis。
 
  I will be working on a project called Django simple deploy。
 
@@ -348,7 +348,7 @@ us/ sprints and stick around right after this， where we will have our sprint r
 
  I am happy to show you a quick， demo and tell you what I am working on and either accept， it。
 
- [Applause]， >> Hello。 We are going to sprint on Pyre。
+ [Applause]， \>\> Hello。 We are going to sprint on Pyre。
 
  The sprint aims to focus essentially to improve， Pyre。
 
@@ -360,7 +360,7 @@ us/ sprints and stick around right after this， where we will have our sprint r
 
  there is a lot of things that， Are happening or contribute to CPython upstream and for the。
 
- Wasm work。 >> We are also happy to answer questions。 Thank you。 [Applause]， >> Hi， everyone。
+ Wasm work。 \>\> We are also happy to answer questions。 Thank you。 [Applause]， \>\> Hi， everyone。
 
  My name is Zach。 I am a PSF fellow and I am a testing library called， Hypothesis。
 
@@ -376,7 +376,7 @@ us/ sprints and stick around right after this， where we will have our sprint r
 
  I also have gorgeous little enamel， Pins。 If you would like some gorgeous dragon flymerch。
 
- come see me and， I look forward to sprinting with you tomorrow。 [Applause]， >> Hi， everybody。
+ come see me and， I look forward to sprinting with you tomorrow。 [Applause]， \>\> Hi， everybody。
 
  I am Eric and I am with the Pygenitor project。 Pygenitor is a project that has a collection of data cleaning。
 
@@ -398,7 +398,7 @@ us/ sprints and stick around right after this， where we will have our sprint r
 
  It is especially suited for people who like myself， Handle lots of data。 Come check us out。
 
- Thank you。 [Applause]， >> Hi， everybody。 I am Matt Wysniski。 I am one of the maintainers of memory。
+ Thank you。 [Applause]， \>\> Hi， everybody。 I am Matt Wysniski。 I am one of the maintainers of memory。
 
  which is a， Profiler that tracks memory usage of a python application。
 
@@ -416,7 +416,7 @@ us/ sprints and stick around right after this， where we will have our sprint r
 
  I am sure I can， Help you get set up with a build environment and you can， Start hacking on it too。
 
- Thanks。 [Applause]， >> Hello， everybody。 I will be sprinting on cloud coast odian tomorrow。
+ Thanks。 [Applause]， \>\> Hello， everybody。 I will be sprinting on cloud coast odian tomorrow。
 
  It is a rules engine for evaluating your cloud resources。
 
@@ -426,7 +426,7 @@ us/ sprints and stick around right after this， where we will have our sprint r
 
  make any sorts of contributions you， Are interested in， please come by and say aye to us。
 
- [Applause]， >> Hello， everyone。 My name is catney and I will be sprinting on circuit python。
+ [Applause]， \>\> Hello， everyone。 My name is catney and I will be sprinting on circuit python。
 
  Circuit python is a version of python that runs on micro， Controllers。
 
@@ -438,7 +438,7 @@ us/ sprints and stick around right after this， where we will have our sprint r
 
  So stop by if you want to learn more about circuit python or， If you want to contribute。
 
- we are happy to facilitate both。 Thank you。 [Applause]， >> Hello， my name is darata。
+ we are happy to facilitate both。 Thank you。 [Applause]， \>\> Hello， my name is darata。
 
  I am from the Macgava Institute for Brain Research at MIT and。
 
@@ -450,7 +450,7 @@ us/ sprints and stick around right after this， where we will have our sprint r
 
  that supports schedule jobs and probably some as in bio， new implementations。
 
- If you can help me with this， that would be also great。 Thank you。 [Applause]， >> Hello。
+ If you can help me with this， that would be also great。 Thank you。 [Applause]， \>\> Hello。
 
  my name is Lauren。 I work with meta and we are working on cinder。
 
@@ -458,13 +458,13 @@ us/ sprints and stick around right after this， where we will have our sprint r
 
  we will be sprinting on trying to upstream some of that work。 Thank you。 [Applause]。
 
- >> Thank you everybody。 Thanks to all the maintainers。 Sounds like there are some great projects。
+ \>\> Thank you everybody。 Thanks to all the maintainers。 Sounds like there are some great projects。
 
  I am really excited to see so many contributors sitting in the， audience still。
 
  I have a great rest of your night and see you all bright and， early tomorrow。 Right？ Right here。
 
- [Applause]， >> Thank you to the PSF and all the organizers。
+ [Applause]， \>\> Thank you to the PSF and all the organizers。
 
 
 

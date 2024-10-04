@@ -1,6 +1,6 @@
 # P17：Jonas Neubert - What is a PLC and how do I talk Python to it - PyCon 2019 - leosan - BV1qt411g7JH
 
- >> Hello， everybody。 So just a quick announcement before we start。
+ \>\> Hello， everybody。 So just a quick announcement before we start。
 
  this room has occupancy only for as many as。
 
@@ -16,7 +16,7 @@
 
  So the next talk is what does the PLC and how do I talk to it with Python？ And speakers。
 
- John's new board， please welcome。 >> Thank you。 I'm going to start with a quick story about myself and why I'm giving this talk。
+ John's new board， please welcome。 \>\> Thank you。 I'm going to start with a quick story about myself and why I'm giving this talk。
 
  Back at the turn of the century， I was in high school and I managed to talk myself into。
 

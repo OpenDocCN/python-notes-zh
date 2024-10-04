@@ -1,6 +1,6 @@
 # P28：Lauren Schaefer - Does remote work really work - PyCon 2019 - leosan - BV1qt411g7JH
 
- >> Hey， everyone。
+ \>\> Hey， everyone。
 
 ![](img/5d6828ade1a1a5ae516656ab4e3a3d84_1.png)
 
@@ -12,7 +12,7 @@
 
 ![](img/5d6828ade1a1a5ae516656ab4e3a3d84_4.png)
 
- >> Hey， welcome， everyone。 I want to begin by asking you to think about a time that you were fabulously。
+ \>\> Hey， welcome， everyone。 I want to begin by asking you to think about a time that you were fabulously。
 
  productive。 I mean， you were in the zone。 Maybe you were sitting at your desk， at your office。
 

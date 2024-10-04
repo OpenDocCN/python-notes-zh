@@ -1,6 +1,6 @@
 # P71：Talk - Peacock_ Getting Started with Statically Typed Programming in Python 3.10 - VikingDen7 - BV1f8411Y7cP
 
- >> Hello。 Good afternoon， everyone。 Now we will have a talk on getting started with statically。
+ \>\> Hello。 Good afternoon， everyone。 Now we will have a talk on getting started with statically。
 
 
 
@@ -12,7 +12,7 @@
 
  Q and A here。 The speaker will be happy to take your questions in the hallway。 Thank， you。
 
- >> Thank you。 It is first time speaking for being on site in Python， so our first song， is not just。
+ \>\> Thank you。 It is first time speaking for being on site in Python， so our first song， is not just。
 
  My talk is getting started with statically typed programming in Python 3。0。0。
 
@@ -26,7 +26,7 @@
 
  me as a client， listening to classical music， skiing， I got it。 I'm 20 years old。 This is。
 
- my first trip。 So it's the status。 Thank you。 >> Okay。 My last comment is there。
+ my first trip。 So it's the status。 Thank you。 \>\> Okay。 My last comment is there。
 
  My company is CMS code。 First time since 2020。 There is， my boss。
 
@@ -46,7 +46,7 @@
 
  is what I'm most drawn to say。 And then， Gen X and user-defined types。
 
- >> It is best practice in include。 And last update overview and background compatibility， for 3。9。
+ \>\> It is best practice in include。 And last update overview and background compatibility， for 3。9。
 
  Last topic， overviews new features on 3。10。 And one topic about 3。11。 Okay。 This， is my motivation。
 

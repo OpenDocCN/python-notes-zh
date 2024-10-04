@@ -1,12 +1,12 @@
 # P12：Carl Meyer - Type-checked Python in the real world - PyCon 2018 - 哒哒哒儿尔 - BV1Ms411H7Hn
 
- >> Hey， folks。 Let's all give a round of applause for Carl Meyer， who is here to talk to us about。
+ \>\> Hey， folks。 Let's all give a round of applause for Carl Meyer， who is here to talk to us about。
 
 
 
 ![](img/1f03046b5c09b70a9f1c359837752b68_1.png)
 
- type check Python in the real world。 [ Applause ]， >> Thank you， Rami。
+ type check Python in the real world。 [ Applause ]， \>\> Thank you， Rami。
 
  Welcome to the final session of talks at PyCon 2018。 I hope that。
 

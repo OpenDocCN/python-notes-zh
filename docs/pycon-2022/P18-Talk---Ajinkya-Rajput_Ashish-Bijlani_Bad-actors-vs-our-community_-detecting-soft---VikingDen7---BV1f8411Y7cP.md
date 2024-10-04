@@ -1,6 +1,6 @@
 # P18：Talk - Ajinkya Rajput_Ashish Bijlani_Bad actors vs our community_ detecting soft - VikingDen7 - BV1f8411Y7cP
 
- >> Hello， everyone。 Welcome to our next talk， Bad Actors versus our community， detecting。
+ \>\> Hello， everyone。 Welcome to our next talk， Bad Actors versus our community， detecting。
 
 
 
@@ -262,9 +262,9 @@
 
  So the home page is non-existent。 It looks like。 And， we can check that later。
 
- Let me -- What's that？ >> Pip audit。 >> Pip audit。 All right。 >> Pip audit。 >> Okay。 >> One page。
+ Let me -- What's that？ \>\> Pip audit。 \>\> Pip audit。 All right。 \>\> Pip audit。 \>\> Okay。 \>\> One page。
 
- >> Pip。 >> All right。 So the author is a trail of bits。 32 days old。 Read me。 >> Repos found。
+ \>\> Pip。 \>\> All right。 So the author is a trail of bits。 32 days old。 Read me。 \>\> Repos found。
 
  Home page also points to the same repo。 No CV is found。 And three risks。
 

@@ -868,7 +868,7 @@
 
  excited to go to it。 But not as excited as I saw you all are to hear this lurking talk。
 
- [ Laughter ]， >> Take it right， sir。 All right。 Hi， my name is Michael Ropler。
+ [ Laughter ]， \>\> Take it right， sir。 All right。 Hi， my name is Michael Ropler。
 
  I am a local to Cleveland， Ohio。 And I wanted to tell you about -- well。
 

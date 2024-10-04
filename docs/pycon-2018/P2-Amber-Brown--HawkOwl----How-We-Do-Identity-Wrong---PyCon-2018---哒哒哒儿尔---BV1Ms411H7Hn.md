@@ -1,10 +1,10 @@
 # P2：Amber Brown (HawkOwl) - How We Do Identity Wrong - PyCon 2018 - 哒哒哒儿尔 - BV1Ms411H7Hn
 
- >> Hey folks。
+ \>\> Hey folks。
 
 ![](img/d45b30615b68404326f0ac6141e80b26_1.png)
 
- >> Hello。 >> Hey everyone。
+ \>\> Hello。 \>\> Hey everyone。
 
 ![](img/d45b30615b68404326f0ac6141e80b26_3.png)
 
@@ -12,7 +12,7 @@
 
  late can fit in the edges。 Also， let's all welcome Amber Brown who's talking about how we do identity wrong。
 
- >> Hello。 Can you hear me okay？ All good？ Great。 So I am Amber Brown， computer al team lover。
+ \>\> Hello。 Can you hear me okay？ All good？ Great。 So I am Amber Brown， computer al team lover。
 
  On the angry bird website you can find me at at hokey al。
 
@@ -26,7 +26,7 @@
 
 ![](img/d45b30615b68404326f0ac6141e80b26_7.png)
 
- >> The identity of a person is the characteristics they have that distinguish them from others。
+ \>\> The identity of a person is the characteristics they have that distinguish them from others。
 
  This is composed of internal and external attributes。
 

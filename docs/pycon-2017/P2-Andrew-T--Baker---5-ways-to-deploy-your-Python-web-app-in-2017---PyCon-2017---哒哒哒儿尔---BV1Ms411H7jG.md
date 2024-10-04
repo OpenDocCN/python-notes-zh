@@ -716,15 +716,15 @@ app is the right path to get our application started。 So I'm going， to stick
 
  in the Expo Hall all day tomorrow if you want to ask some questions。 Thank you。 [Applause]。
 
- >> Catch him up the booth with questions。 >> Cool。 >> Very good。 >> Yeah， thank you。
+ \>\> Catch him up the booth with questions。 \>\> Cool。 \>\> Very good。 \>\> Yeah， thank you。
 
- >> Five demos successful。 Not a single error。
+ \>\> Five demos successful。 Not a single error。
 
 ![](img/3af7feeef4580813d521a21bcafafe0c_66.png)
 
- >> You and I are both surprised。 >> I think I'm pretty surprised。 Very good。 >> Thank you。
+ \>\> You and I are both surprised。 \>\> I think I'm pretty surprised。 Very good。 \>\> Thank you。
 
- >> Great synopsis。 >> The entire DevOps stream the last five years。 >> Yeah， yeah。
+ \>\> Great synopsis。 \>\> The entire DevOps stream the last five years。 \>\> Yeah， yeah。
 
  It was fun charting it。 And like I said， hey， Adrian。 Oh， hey。 Thank you。 Thanks。 Yeah， please do。
 
