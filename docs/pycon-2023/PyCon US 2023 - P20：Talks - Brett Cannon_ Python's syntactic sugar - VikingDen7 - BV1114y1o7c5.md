@@ -1,0 +1,31 @@
+# PyCon US 2023 - P20：Talks - Brett Cannon_ Python's syntactic sugar - VikingDen7 - BV1114y1o7c5
+
+ [inaudible]， [PAUSE]。
+
+![](img/6b0adf760684da4f41732b95905a2534_1.png)
+
+ [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]。
+
+ [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]。
+
+ [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]。
+
+ [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]。
+
+ [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]。
+
+ [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]。
+
+ [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]。
+
+ [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]。
+
+ [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]。
+
+ [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]， [PAUSE]。
+
+
+
+![](img/6b0adf760684da4f41732b95905a2534_3.png)
+
+![](img/6b0adf760684da4f41732b95905a2534_4.png)
