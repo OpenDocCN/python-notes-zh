@@ -1,4 +1,4 @@
-# PyCon 2017（油管点击上万合集） - P13：Kelsey Hightower - Keynote - Pycon 2017 - 哒哒哒儿尔 - BV1Ms411H7jG
+# P13：Kelsey Hightower - Keynote - Pycon 2017 - 哒哒哒儿尔 - BV1Ms411H7jG
 
  Welcome back for our final plenary session of PyCon 2017。 The candle has burned low。
 

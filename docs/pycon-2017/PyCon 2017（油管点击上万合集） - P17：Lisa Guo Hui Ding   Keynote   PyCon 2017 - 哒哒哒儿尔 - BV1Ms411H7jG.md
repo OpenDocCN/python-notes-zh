@@ -1,4 +1,4 @@
-# PyCon 2017（油管点击上万合集） - P17：Lisa Guo Hui Ding   Keynote   PyCon 2017 - 哒哒哒儿尔 - BV1Ms411H7jG
+# P17：Lisa Guo Hui Ding   Keynote   PyCon 2017 - 哒哒哒儿尔 - BV1Ms411H7jG
 
  of PICON 2017。 (audience applauding)， Because of my bedtime， I wasn't able to attend。
 

@@ -1,4 +1,4 @@
-# PyCon 2017（油管点击上万合集） - P10：Sofia Heisler   No More Sad Pandas Optimizing Pandas Code for Speed and Efficien - 哒哒哒儿尔 - BV1Ms411H7jG
+# P10：Sofia Heisler   No More Sad Pandas Optimizing Pandas Code for Speed and Efficien - 哒哒哒儿尔 - BV1Ms411H7jG
 
  >> Good afternoon everybody。
 

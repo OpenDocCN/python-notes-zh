@@ -1,4 +1,4 @@
-# PyCon 2017（油管点击上万合集） - P5：Alex Orlov   Cython as a Game Changer for Efficiency   PyCon 2017 - 哒哒哒儿尔 - BV1Ms411H7jG
+# P5：Alex Orlov   Cython as a Game Changer for Efficiency   PyCon 2017 - 哒哒哒儿尔 - BV1Ms411H7jG
 
  lecture today。 We know Python is a great language for everything but speed。
 

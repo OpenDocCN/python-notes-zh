@@ -1,4 +1,4 @@
-# PyCon 2017（油管点击上万合集） - P16：Deborah Hanus   Lights camera action! Scraping a great dataset to predict Oscar - 哒哒哒儿尔 - BV1Ms411H7jG
+# P16：Deborah Hanus   Lights camera action! Scraping a great dataset to predict Oscar - 哒哒哒儿尔 - BV1Ms411H7jG
 
  2017。 Please， before we start， if you do have a device that makes a noise， please convince。
 

@@ -1,4 +1,4 @@
-# PyCon 2017（油管点击上万合集） - P11：Brett Cannon   Whats new in Python 3 6   PyCon 2017 - 哒哒哒儿尔 - BV1Ms411H7jG
+# P11：Brett Cannon   Whats new in Python 3 6   PyCon 2017 - 哒哒哒儿尔 - BV1Ms411H7jG
 
  >> Ladies and gentlemen， Python 3 has been released for many years and after every year。
 

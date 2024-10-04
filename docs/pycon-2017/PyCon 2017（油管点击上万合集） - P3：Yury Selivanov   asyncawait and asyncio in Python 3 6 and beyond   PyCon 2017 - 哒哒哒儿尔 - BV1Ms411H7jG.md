@@ -1,4 +1,4 @@
-# PyCon 2017（油管点击上万合集） - P3：Yury Selivanov   asyncawait and asyncio in Python 3 6 and beyond   PyCon 2017 - 哒哒哒儿尔 - BV1Ms411H7jG
+# P3：Yury Selivanov   asyncawait and asyncio in Python 3 6 and beyond   PyCon 2017 - 哒哒哒儿尔 - BV1Ms411H7jG
 
  >> Good afternoon， everybody。 And welcome to this session of PyCon 2017。 Before we get started。
 

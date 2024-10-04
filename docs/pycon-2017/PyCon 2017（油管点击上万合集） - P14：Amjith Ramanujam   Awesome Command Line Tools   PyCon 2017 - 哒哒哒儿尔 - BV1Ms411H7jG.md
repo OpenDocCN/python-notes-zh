@@ -1,4 +1,4 @@
-# PyCon 2017（油管点击上万合集） - P14：Amjith Ramanujam   Awesome Command Line Tools   PyCon 2017 - 哒哒哒儿尔 - BV1Ms411H7jG
+# P14：Amjith Ramanujam   Awesome Command Line Tools   PyCon 2017 - 哒哒哒儿尔 - BV1Ms411H7jG
 
  And。 [APPLAUSE]， Hello， and welcome to another talk here at PyCon。
 

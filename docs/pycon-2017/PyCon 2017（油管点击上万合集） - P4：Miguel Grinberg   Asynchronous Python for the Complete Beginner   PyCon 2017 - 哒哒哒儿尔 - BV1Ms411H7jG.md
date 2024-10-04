@@ -1,4 +1,4 @@
-# PyCon 2017（油管点击上万合集） - P4：Miguel Grinberg   Asynchronous Python for the Complete Beginner   PyCon 2017 - 哒哒哒儿尔 - BV1Ms411H7jG
+# P4：Miguel Grinberg   Asynchronous Python for the Complete Beginner   PyCon 2017 - 哒哒哒儿尔 - BV1Ms411H7jG
 
  Good afternoon everybody and welcome to our next presentation at PyCon 2017。 Before we get started。
 

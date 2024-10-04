@@ -1,4 +1,4 @@
-# PyCon 2017（油管点击上万合集） - P12：Raymond Hettinger   Modern Python Dictionaries    A confluence of a dozen great - 哒哒哒儿尔 - BV1Ms411H7jG
+# P12：Raymond Hettinger   Modern Python Dictionaries    A confluence of a dozen great - 哒哒哒儿尔 - BV1Ms411H7jG
 
  And now， welcome Raymond Heddinga。
 

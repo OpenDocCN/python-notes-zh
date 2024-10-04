@@ -1,4 +1,4 @@
-# PyCon 2017（油管点击上万合集） - P9：Jake Vanderplas - Keynote - PyCon 2017 - 哒哒哒儿尔 - BV1Ms411H7jG
+# P9：Jake Vanderplas - Keynote - PyCon 2017 - 哒哒哒儿尔 - BV1Ms411H7jG
 
  [APPLAUSE]， Come and get this。 All right， I think I'm up。 Hi， everybody。 It's great to be here。
 

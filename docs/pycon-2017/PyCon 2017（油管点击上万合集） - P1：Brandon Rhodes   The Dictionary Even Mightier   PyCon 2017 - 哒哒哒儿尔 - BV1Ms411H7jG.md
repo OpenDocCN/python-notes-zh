@@ -1,4 +1,4 @@
-# PyCon 2017（油管点击上万合集） - P1：Brandon Rhodes   The Dictionary Even Mightier   PyCon 2017 - 哒哒哒儿尔 - BV1Ms411H7jG
+# P1：Brandon Rhodes   The Dictionary Even Mightier   PyCon 2017 - 哒哒哒儿尔 - BV1Ms411H7jG
 
  [BLANK_AUDIO]， [BLANK_AUDIO]， [BLANK_AUDIO]， [BLANK_AUDIO]。
 

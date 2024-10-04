@@ -1,4 +1,4 @@
-# PyCon 2017（油管点击上万合集） - P2：Andrew T  Baker   5 ways to deploy your Python web app in 2017   PyCon 2017 - 哒哒哒儿尔 - BV1Ms411H7jG
+# P2：Andrew T  Baker   5 ways to deploy your Python web app in 2017   PyCon 2017 - 哒哒哒儿尔 - BV1Ms411H7jG
 
  Good？ Cool。 And once we get that GIF back up there。 Thank you， Drake。 Thank you， folks。
 

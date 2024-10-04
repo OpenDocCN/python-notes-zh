@@ -1,4 +1,4 @@
-# PyCon 2017（油管点击上万合集） - P6：Larry Hastings   The Gilectomy Hows It Going   PyCon 2017 - 哒哒哒儿尔 - BV1Ms411H7jG
+# P6：Larry Hastings   The Gilectomy Hows It Going   PyCon 2017 - 哒哒哒儿尔 - BV1Ms411H7jG
 
  past so。 It's time for our last talk before lunch everyone so we really should make a start now。
 

@@ -1,4 +1,4 @@
-# PyCon 2017（油管点击上万合集） - P7：Al Sweigart   Yes Its Time to Learn Regular Expressions   PyCon 2017 - 哒哒哒儿尔 - BV1Ms411H7jG
+# P7：Al Sweigart   Yes Its Time to Learn Regular Expressions   PyCon 2017 - 哒哒哒儿尔 - BV1Ms411H7jG
 
  So good afternoon， everyone。 We now have El Swigardt， who will be talking on， yes。
 

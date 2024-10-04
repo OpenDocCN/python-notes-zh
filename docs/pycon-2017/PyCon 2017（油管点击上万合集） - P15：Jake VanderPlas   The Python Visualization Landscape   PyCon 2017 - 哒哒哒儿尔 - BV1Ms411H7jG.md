@@ -1,4 +1,4 @@
-# PyCon 2017（油管点击上万合集） - P15：Jake VanderPlas   The Python Visualization Landscape   PyCon 2017 - 哒哒哒儿尔 - BV1Ms411H7jG
+# P15：Jake VanderPlas   The Python Visualization Landscape   PyCon 2017 - 哒哒哒儿尔 - BV1Ms411H7jG
 
  And he's going to talk about Python visualization landscape。 Give a hand to him。
 

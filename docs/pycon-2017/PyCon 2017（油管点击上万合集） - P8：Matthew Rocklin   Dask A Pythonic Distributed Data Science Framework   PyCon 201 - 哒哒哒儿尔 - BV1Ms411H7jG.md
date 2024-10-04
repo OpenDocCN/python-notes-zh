@@ -1,4 +1,4 @@
-# PyCon 2017（油管点击上万合集） - P8：Matthew Rocklin   Dask A Pythonic Distributed Data Science Framework   PyCon 201 - 哒哒哒儿尔 - BV1Ms411H7jG
+# P8：Matthew Rocklin   Dask A Pythonic Distributed Data Science Framework   PyCon 201 - 哒哒哒儿尔 - BV1Ms411H7jG
 
  There will be about five minutes for questions at the end， so hold off。 Great。
 
