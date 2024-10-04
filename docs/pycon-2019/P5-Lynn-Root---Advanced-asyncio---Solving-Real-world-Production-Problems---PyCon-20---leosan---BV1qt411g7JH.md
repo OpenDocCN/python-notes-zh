@@ -2,1774 +2,895 @@
 
 ![](img/70c5fa474cb4ff7321ee8fd9410d75b7_0.png)
 
-hello everyone how's everyone doing come，hello everyone how's everyone doing come。
+hello everyone how's everyone doing come，hello everyone how's everyone doing come。on I need more energy this is only day，on I need more energy this is only day，two，two。
 
-on I need more energy this is only day，on I need more energy this is only day，two，two。
+come on all right we've got a great talk，come on all right we've got a great talk。this is advanced async IO solving，this is advanced async IO solving。
 
-come on all right we've got a great talk，come on all right we've got a great talk。
+real-world production problems by Lind，real-world production problems by Lind。root Lynn has requested that if you have，root Lynn has requested that if you have。
 
-this is advanced async IO solving，this is advanced async IO solving。
+any questions please hold off and she，any questions please hold off and she。can answer those questions in the hall，can answer those questions in the hall。
 
-real-world production problems by Lind，real-world production problems by Lind。
+after the talk so without further ado，after the talk so without further ado，Lynne drew thank you。Lynne drew thank you，the jam-packed room I feel like a lot of。
 
-root Lynn has requested that if you have，root Lynn has requested that if you have。
+the jam-packed room I feel like a lot of，people have some real-world problems to。people have some real-world problems to，solve so my name is Lynne root and。
 
-any questions please hold off and she，any questions please hold off and she。
+solve so my name is Lynne root and，forgive me I have to do this because I'm。forgive me I have to do this because I'm，kind of a nerd happy may the fourth be。
 
-can answer those questions in the hall，can answer those questions in the hall。
+kind of a nerd happy may the fourth be，with you and so I'm a staff engineer at。with you and so I'm a staff engineer at，Spotify for the past few months I've。
 
-after the talk so without further ado，after the talk so without further ado，Lynne drew thank you。
+Spotify for the past few months I've，been building infrastructure to help。been building infrastructure to help，support those that do some like machine。
 
-Lynne drew thank you，the jam-packed room I feel like a lot of。
+support those that do some like machine，learning models to do digital signal。learning models to do digital signal，processing so that's quite interesting。
 
-the jam-packed room I feel like a lot of，people have some real-world problems to。
+processing so that's quite interesting，quite fun，quite fun，I'm also fossa Vangelis at Spotify I。I'm also fossa Vangelis at Spotify I，help folks release their code under the。
 
-people have some real-world problems to，solve so my name is Lynne root and。
+help folks release their code under the，Spotify github organization and then you。Spotify github organization and then you，might know me from PI ladies as well and。
 
-solve so my name is Lynne root and，forgive me I have to do this because I'm。
+might know me from PI ladies as well and，if you don't know about PI ladies we are。if you don't know about PI ladies we are，a mentorship group for women and allies。
 
-forgive me I have to do this because I'm，kind of a nerd happy may the fourth be。
+a mentorship group for women and allies，in the Python community and I encourage。in the Python community and I encourage，you to go to our booth buy all the。
 
-kind of a nerd happy may the fourth be，with you and so I'm a staff engineer at。
+you to go to our booth buy all the，t-shirts so I don't have to take them。t-shirts so I don't have to take them，home，home，um so this is the agenda for today it。
 
-with you and so I'm a staff engineer at，Spotify for the past few months I've。
+um so this is the agenda for today it，doesn't look like it but it's pretty。doesn't look like it but it's pretty，jam-packed we're gonna be covering some。
 
-Spotify for the past few months I've，been building infrastructure to help。
+jam-packed we're gonna be covering some，graceful shutdowns exception handling。graceful shutdowns exception handling，and threading along with testing。
 
-been building infrastructure to help，support those that do some like machine。
+and threading along with testing，debugging and profiling and I think I'll。debugging and profiling and I think I'll，probably use all of my time but it will。
 
-support those that do some like machine，learning models to do digital signal。
+probably use all of my time but it will，save the questions for the hallway。save the questions for the hallway，either way this presentation is pretty。
 
-learning models to do digital signal，processing so that's quite interesting。
+either way this presentation is pretty，code heavy I will show this link at the。code heavy I will show this link at the，end as well so don't worry but the。
 
-processing so that's quite interesting，quite fun，quite fun，I'm also fossa Vangelis at Spotify I。
+end as well so don't worry but the，slides are there all right so let's get。slides are there all right so let's get，to it，to it，a sync i/o the concurrent。
 
-I'm also fossa Vangelis at Spotify I，help folks release their code under the。
+a sync i/o the concurrent，Python programmers dream the answer to。Python programmers dream the answer to，everyone's prayers right the module。
 
-help folks release their code under the，Spotify github organization and then you。
+everyone's prayers right the module，itself has a lot of layers of，itself has a lot of layers of。abstraction allowing developers as much，abstraction allowing developers as much。
 
-Spotify github organization and then you，might know me from PI ladies as well and。
+control as I need and are comfortable，control as I need and are comfortable。with simple hello world like examples，with simple hello world like examples。
 
-might know me from PI ladies as well and，if you don't know about PI ladies we are。
+can show how simple it is but it's very，can show how simple it is but it's very。easy to get lulled into a false sense of，easy to get lulled into a false sense of。
 
-if you don't know about PI ladies we are，a mentorship group for women and allies。
+so we're led to believe that we were，so we're led to believe that we were。able to do a lot with the structure at a，able to do a lot with the structure at a。
 
-a mentorship group for women and allies，in the Python community and I encourage。
+sink and a weight API layer some，sink and a weight API layer some。tutorials well great for the developer，tutorials well great for the developer。
 
-in the Python community and I encourage，you to go to our booth buy all the。
+to get their toes wet try to illustrate，to get their toes wet try to illustrate。real-world examples but they're just，real-world examples but they're just。
 
-you to go to our booth buy all the，t-shirts so I don't have to take them。
+beefed up hello world examples，beefed up hello world examples。some even misuse the async i/o interface，some even misuse the async i/o interface。
 
-t-shirts so I don't have to take them，home，home，um so this is the agenda for today it。
+allowing one to easily fall into the，allowing one to easily fall into the。callback through the callback hell that，callback through the callback hell that。
 
-um so this is the agenda for today it，doesn't look like it but it's pretty。
+we're familiar with and then some I get，we're familiar with and then some I get。you easily up and running with async i/o，you easily up and running with async i/o。
 
-doesn't look like it but it's pretty，jam-packed we're gonna be covering some。
+but then you may realize that you're not，but then you may realize that you're not。really doing it correctly or it's not，really doing it correctly or it's not。
 
-jam-packed we're gonna be covering some，graceful shutdowns exception handling。
+exactly what you want or it only gets，exactly what you want or it only gets。you part of the way there so while some，you part of the way there so while some。
 
-graceful shutdowns exception handling，and threading along with testing。
+tutorials will walk through and do it a，tutorials will walk through and do it a。lot to improve upon the basic like hello，lot to improve upon the basic like hello。
 
-and threading along with testing，debugging and profiling and I think I'll。
+world use case it might still be just，world use case it might still be just。like a web crawler and I'm not sure，like a web crawler and I'm not sure。
 
-debugging and profiling and I think I'll，probably use all of my time but it will。
+about others but I'm not building web，about others but I'm not building web。crawlers at Spotify I'm sure I build a，crawlers at Spotify I'm sure I build a。
 
-probably use all of my time but it will，save the questions for the hallway。
+lot of services that have have to make a，lot of services that have have to make a。lot of HTTP requests that should be，lot of HTTP requests that should be。
 
-save the questions for the hallway，either way this presentation is pretty。
+non-blocking but these services of mine，non-blocking but these services of mine。they also need to react to pub/sub，they also need to react to pub/sub。
 
-either way this presentation is pretty，code heavy I will show this link at the。
+events to measure progress of actions，events to measure progress of actions。initiated from those events to handle，initiated from those events to handle。
 
-code heavy I will show this link at the，end as well so don't worry but the。
+any incomplete action or other external，any incomplete action or other external。errors deal with pub/sub lease，errors deal with pub/sub lease，management and measure service level。
 
-end as well so don't worry but the，slides are there all right so let's get。
+management and measure service level，indicators and then send metrics and。indicators and then send metrics and，sometimes I need naane sikki Oh friendly。
 
-slides are there all right so let's get，to it，to it，a sync i/o the concurrent。
+sometimes I need naane sikki Oh friendly，dependencies so for me my problem got。dependencies so for me my problem got，difficult quickly and I'm so allow me to。
 
-a sync i/o the concurrent，Python programmers dream the answer to。
+difficult quickly and I'm so allow me to，provide you with a real bowl example。provide you with a real bowl example，that actually comes from the real world。
 
-Python programmers dream the answer to，everyone's prayers right the module。
+that actually comes from the real world，and I recently had Spotify actually a。and I recently had Spotify actually a，few years ago at Spotify and we built a。
 
-everyone's prayers right the module，itself has a lot of layers of，itself has a lot of layers of。
+few years ago at Spotify and we built a，service that does periodic hard restarts。service that does periodic hard restarts，of our entire fleet of instance。
 
-abstraction allowing developers as much，abstraction allowing developers as much。
+of our entire fleet of instance，and that's what we're gonna do here has。and that's what we're gonna do here has，anyone heard of that chaos monkey yeah。
 
-control as I need and are comfortable，control as I need and are comfortable。
+anyone heard of that chaos monkey yeah，alright so we're gonna build a service。alright so we're gonna build a service，called mayhem mandrel and it will listen。
 
-with simple hello world like examples，with simple hello world like examples。
+called mayhem mandrel and it will listen，for a pub/sub message and then restart a。for a pub/sub message and then restart a，host based off of that message and as we。
 
-can show how simple it is but it's very，can show how simple it is but it's very。
+host based off of that message and as we，build this service I'll point out some。build this service I'll point out some，best practices that I have learned along。
 
-easy to get lulled into a false sense of，easy to get lulled into a false sense of。
+best practices that I have learned along，the way slash traps that I've fallen。the way slash traps that I've fallen，into and this will essentially become。
 
-so we're led to believe that we were，so we're led to believe that we were。
+into and this will essentially become，the type of resource that pass Lin would。the type of resource that pass Lin would，have wanted about like three years ago。
 
-able to do a lot with the structure at a，able to do a lot with the structure at a。
+have wanted about like three years ago，and so we're gonna start off with some。and so we're gonna start off with some，foundational code we're gonna write a。
 
-sink and a weight API layer some，sink and a weight API layer some。
+foundational code we're gonna write a，simple publisher and here's we're gonna。simple publisher and here's we're gonna，start we have a simple while true loop I。
 
-tutorials well great for the developer，tutorials well great for the developer。
+start we have a simple while true loop I，you a unique ID for each message to。you a unique ID for each message to，publish to our queue I want to highlight。
 
-to get their toes wet try to illustrate，to get their toes wet try to illustrate。
+publish to our queue I want to highlight，that we're not using the wait on the。that we're not using the wait on the，acute output of a message we're using a。
 
-real-world examples but they're just，real-world examples but they're just。
+acute output of a message we're using a，single create task because it will。single create task because it will，actually schedule the care routine on。
 
-beefed up hello world examples，beefed up hello world examples。
+actually schedule the care routine on，the loop without blocking the rest of。the loop without blocking the rest of，the for loop，the for loop。
 
-some even misuse the async i/o interface，some even misuse the async i/o interface。
+the create task method returns a task，the create task method returns a task。but we essentially are using this as，but we essentially are using this as。
 
-allowing one to easily fall into the，allowing one to easily fall into the。
+like a fire-and-forget mechanism if we，like a fire-and-forget mechanism if we。have the await here everything after it，have the await here everything after it。
 
-callback through the callback hell that，callback through the callback hell that。
+would be a block within this cover team，would be a block within this cover team。it isn't necessarily an issue for our，it isn't necessarily an issue for our。
 
-we're familiar with and then some I get，we're familiar with and then some I get。
+current set up though it would be if we，current set up though it would be if we。were to limit the size of our queue we，were to limit the size of our queue we。
 
-you easily up and running with async i/o，you easily up and running with async i/o。
+would be awaiting on space to free up，would be awaiting on space to free up。but we will just stick with the create，but we will just stick with the create。
 
-but then you may realize that you're not，but then you may realize that you're not。
+task method so now that we have a，task method so now that we have a。publisher co-routine function we now，publisher co-routine function we now。
 
-really doing it correctly or it's not，really doing it correctly or it's not。
+need a consumer so this is our consumer，need a consumer so this is our consumer。for the published message messages it's，for the published message messages it's。
 
-exactly what you want or it only gets，exactly what you want or it only gets。
+still it's kind of similar to the，still it's kind of similar to the。publisher itself we do have a while true，publisher itself we do have a while true。
 
-you part of the way there so while some，you part of the way there so while some。
+loop but then we await on the q4 message，loop but then we await on the q4 message。we don't want to create a task out of，we don't want to create a task out of。
 
-tutorials will walk through and do it a，tutorials will walk through and do it a。
+queue duck yet because it doesn't really，queue duck yet because it doesn't really。make sense to block it makes sense to，make sense to block it makes sense to。
 
-lot to improve upon the basic like hello，lot to improve upon the basic like hello。
+block the care routine too because you，block the care routine too because you。can't really do much without a message，can't really do much without a message。
 
-world use case it might still be just，world use case it might still be just。
+itself um I want to highlight again that，itself um I want to highlight again that。we're only blocking within the scope of，we're only blocking within the scope of。
 
-like a web crawler and I'm not sure，like a web crawler and I'm not sure。
+a consumed care routine and we're not，a consumed care routine and we're not。actually blocking the event loop or any，actually blocking the event loop or any，other，other。
 
-about others but I'm not building web，about others but I'm not building web。
+tasks or care routines that are，tasks or care routines that are。scheduled so now we're going to replace，scheduled so now we're going to replace。
 
-crawlers at Spotify I'm sure I build a，crawlers at Spotify I'm sure I build a。
+a sync i/o dot sleep with a function，a sync i/o dot sleep with a function。that will restart a host I'm sure it，that will restart a host I'm sure it。
 
-lot of services that have have to make a，lot of services that have have to make a。
+looks like I'm just pushing the，looks like I'm just pushing the。simulation of i/o work to restart house，simulation of i/o work to restart house。
 
-lot of HTTP requests that should be，lot of HTTP requests that should be。
+function but in doing so I'm actually，function but in doing so I'm actually。able to create a task and out of that，able to create a task and out of that。
 
-non-blocking but these services of mine，non-blocking but these services of mine。
+I'm therefore no longer blocking on，I'm therefore no longer blocking on。waiting for more messages we may also，waiting for more messages we may also。
 
-they also need to react to pub/sub，they also need to react to pub/sub。
+want to do more than one thing per，want to do more than one thing per。message for example in addition to，message for example in addition to。
 
-events to measure progress of actions，events to measure progress of actions。
+restarting a host maybe we'd like to，restarting a host maybe we'd like to。store that message in a database for，store that message in a database for。
 
-initiated from those events to handle，initiated from those events to handle。
+potentially replaying later on so we'll，potentially replaying later on so we'll。make use of a single create task again，make use of a single create task again。
 
-any incomplete action or other external，any incomplete action or other external。
+for saving the for the save cover team，for saving the for the save cover team。to be scheduled on the loop and，to be scheduled on the loop and。
 
-errors deal with pub/sub lease，errors deal with pub/sub lease，management and measure service level。
+basically like checking it over to the，basically like checking it over to the。loop to execute for when it can so in，loop to execute for when it can so in。
 
-management and measure service level，indicators and then send metrics and。
+this example the two tasks of restarting，this example the two tasks of restarting。and saving don't necessarily depend on，and saving don't necessarily depend on。
 
-indicators and then send metrics and，sometimes I need naane sikki Oh friendly。
+one another and I'm completely，one another and I'm completely，sidestepping the concern that if we。sidestepping the concern that if we，should we start a host if we can't save。
 
-sometimes I need naane sikki Oh friendly，dependencies so for me my problem got。
+should we start a host if we can't save，a message but maybe you do want your。a message but maybe you do want your，work to happen serially maybe do not。
 
-dependencies so for me my problem got，difficult quickly and I'm so allow me to。
+work to happen serially maybe do not，want to have concurrency for some。want to have concurrency for some，asynchronous tasks so for this instance。
 
-difficult quickly and I'm so allow me to，provide you with a real bowl example。
+asynchronous tasks so for this instance，maybe you want to restart hosts that。maybe you want to restart hosts that，only have an uptime of more than seven。
 
-provide you with a real bowl example，that actually comes from the real world。
+only have an uptime of more than seven，days just like you should check the。days just like you should check the，balance of your checking account before。
 
-that actually comes from the real world，and I recently had Spotify actually a。
+balance of your checking account before，you actually debit it so needing code to。you actually debit it so needing code to，be serial to have steps or dependencies。
 
-and I recently had Spotify actually a，few years ago at Spotify and we built a。
+be serial to have steps or dependencies，it doesn't mean that you can't be。it doesn't mean that you can't be，asynchronous the wait last restart date。
 
-few years ago at Spotify and we built a，service that does periodic hard restarts。
+asynchronous the wait last restart date，will yield to the loop but it doesn't。will yield to the loop but it doesn't，mean that restart host will be the next。
 
-service that does periodic hard restarts，of our entire fleet of instance。
+mean that restart host will be the next，thing that the loop executes it just。thing that the loop executes it just，allows other thing other things outside。
 
-of our entire fleet of instance，and that's what we're gonna do here has。
+allows other thing other things outside，of that care routine to run so with that。of that care routine to run so with that，in mind I'm going to put all this。
 
-and that's what we're gonna do here has，anyone heard of that chaos monkey yeah。
+in mind I'm going to put all this，message related logic and a separate。message related logic and a separate，care routine so we still don't block the。
 
-anyone heard of that chaos monkey yeah，alright so we're gonna build a service。
+care routine so we still don't block the，consumption of messages saving a message。consumption of messages saving a message，didn't block restart host of needed so。
 
-alright so we're gonna build a service，called mayhem mandrel and it will listen。
+didn't block restart host of needed so，we're going to make that a task again。we're going to make that a task again，and we're just going to remove the。
 
-called mayhem mandrel and it will listen，for a pub/sub message and then restart a。
+and we're just going to remove the，uptime check and a restart host，uptime check and a restart host。indiscriminately because Yolo so we've，indiscriminately because Yolo so we've。
 
-for a pub/sub message and then restart a，host based off of that message and as we。
+pulled a message from a queue and，pulled a message from a queue and。found out work based off of that message，found out work based off of that message。
 
-host based off of that message and as we，build this service I'll point out some。
+but now we need to perform like any，but now we need to perform like any。finalization work from that message so，finalization work from that message so。
 
-build this service I'll point out some，best practices that I have learned along。
+often with pub/sub technologies if you，often with pub/sub technologies if you。don't acknowledge a message with a，don't acknowledge a message with a。
 
-best practices that I have learned along，the way slash traps that I've fallen。
+predefined within a predefined time，predefined within a predefined time。frame it will get redeliver due for a，frame it will get redeliver due for a。
 
-the way slash traps that I've fallen，into and this will essentially become。
+finalization task we should acknowledge，finalization task we should acknowledge。that the message if you should，that the message if you should，acknowledge the message so it doesn't。
 
-into and this will essentially become，the type of resource that pass Lin would。
+acknowledge the message so it doesn't，get redeliver to us so we currently have。get redeliver to us so we currently have，a two separate tasks save and restart。
 
-the type of resource that pass Lin would，have wanted about like three years ago。
+a two separate tasks save and restart，host and we want to make sure both are。host and we want to make sure both are，done before the message is cleaned up。
 
-have wanted about like three years ago，and so we're gonna start off with some。
+done before the message is cleaned up，and we could go back to the sequential。and we could go back to the sequential，await since they're a very direct way to。
 
-and so we're gonna start off with some，foundational code we're gonna write a。
+await since they're a very direct way to，manipulate ordering but we can also use。manipulate ordering but we can also use，sort of callbacks on a completed task。
 
-foundational code we're gonna write a，simple publisher and here's we're gonna。
+sort of callbacks on a completed task，what we therefore want is somehow to。what we therefore want is somehow to，wrap both tasks since we have to wait on。
 
-simple publisher and here's we're gonna，start we have a simple while true loop I。
+wrap both tasks since we have to wait on，both and then do the cleanup and with。both and then do the cleanup and with，that we can make use of async it dot。
 
-start we have a simple while true loop I，you a unique ID for each message to。
+that we can make use of async it dot，gather which returns a feature like。gather which returns a feature like，object and with that future like object。
 
-you a unique ID for each message to，publish to our queue I want to highlight。
+object and with that future like object，we can then attach a callback to it。we can then attach a callback to it，and then we can just a wait on the。
 
-publish to our queue I want to highlight，that we're not using the wait on the。
+and then we can just a wait on the，future itself and so when we run this we。future itself and so when we run this we，can see that both the save care routine。
 
-that we're not using the wait on the，acute output of a message we're using a。
+can see that both the save care routine，and the restart care routine are。and the restart care routine are，complete and then the cleanup is called。
 
-acute output of a message we're using a，single create task because it will。
+complete and then the cleanup is called，so I personally have an allergy to。so I personally have an allergy to，callbacks and as well perhaps you want。
 
-single create task because it will，actually schedule the care routine on。
+callbacks and as well perhaps you want，the cleanup to be non-blocking，the cleanup to be non-blocking。so then here we can just await clean，so then here we can just await clean。
 
-actually schedule the care routine on，the loop without blocking the rest of。
+after the gather since the since it sort，after the gather since the since it sort。of takes care of the order of operations，of takes care of the order of operations。
 
-the loop without blocking the rest of，the for loop，the for loop。
+and it's so much cleaner，and it's so much cleaner，so a quick keeled er of that last。so a quick keeled er of that last，section async IO is pretty easy to use。
 
-the create task method returns a task，the create task method returns a task。
+section async IO is pretty easy to use，but it doesn't automatically mean that。but it doesn't automatically mean that，you're using it correctly you can't just。
 
-but we essentially are using this as，but we essentially are using this as。
+you're using it correctly you can't just，throw out around a sink and await。throw out around a sink and await，keywords around your blocking code it's。
 
-like a fire-and-forget mechanism if we，like a fire-and-forget mechanism if we。
+keywords around your blocking code it's，sort of like a mental paradigm shift you。sort of like a mental paradigm shift you，have to think about what you can farm。
 
-have the await here everything after it，have the await here everything after it。
+have to think about what you can farm，out as well as what you actually still。out as well as what you actually still，need to be sequential，need to be sequential。
 
-would be a block within this cover team，would be a block within this cover team。
+and so having steps within your code，and so having steps within your code。like the first a and then B and then C，like the first a and then B and then C。
 
-it isn't necessarily an issue for our，it isn't necessarily an issue for our。
+may seem like it's blocking when it's，may seem like it's blocking when it's，not sequential code。not sequential code，can still be asynchronous for instance I。
 
-current set up though it would be if we，current set up though it would be if we。
+can still be asynchronous for instance I，might have to call a customer service of。might have to call a customer service of，my bank and I'm on hold and I can put。
 
-were to limit the size of our queue we，were to limit the size of our queue we。
+my bank and I'm on hold and I can put，that down and put it on speakerphone and。that down and put it on speakerphone and，then play with my super needy cat as I。
 
-would be awaiting on space to free up，would be awaiting on space to free up。
+then play with my super needy cat as I，wait so I might be a single-threaded but。wait so I might be a single-threaded but，I can still sort of multitask like CPUs。
 
-but we will just stick with the create，but we will just stick with the create。
+I can still sort of multitask like CPUs，so often you'll want to you want your。so often you'll want to you want your，service to shut down gracefully if it。
 
-task method so now that we have a，task method so now that we have a。
+service to shut down gracefully if it，receives a signal of some sort you'll。receives a signal of some sort you'll，probably want to clean up the database。
 
-publisher co-routine function we now，publisher co-routine function we now。
+probably want to clean up the database，connections that you have stop consuming。connections that you have stop consuming，messages finish the corresponding。
 
-need a consumer so this is our consumer，need a consumer so this is our consumer。
+messages finish the corresponding，current request that you have all like。current request that you have all like，not accepting new requests so if we。
 
-for the published message messages it's，for the published message messages it's。
+not accepting new requests so if we，happen to restart our own instance of。happen to restart our own instance of，our mayhem mandrel service we should。
 
-still it's kind of similar to the，still it's kind of similar to the。
+our mayhem mandrel service we should，essentially clean up our own mess um so。essentially clean up our own mess um so，here's a typical boilerplate code of。
 
-publisher itself we do have a while true，publisher itself we do have a while true。
+here's a typical boilerplate code of，getting a service running we have a。getting a service running we have a，queue instance and setting up the loop。
 
-loop but then we await on the q4 message，loop but then we await on the q4 message。
+queue instance and setting up the loop，scheduling the publish and consume tasks。scheduling the publish and consume tasks，and then start and then close the event。
 
-we don't want to create a task out of，we don't want to create a task out of。
+and then start and then close the event，loop maybe even catch the keyboard。loop maybe even catch the keyboard，interrupt exception so if we've run this。
 
-queue duck yet because it doesn't really，queue duck yet because it doesn't really。
+interrupt exception so if we've run this，and as is and we give it the SIGINT。and as is and we give it the SIGINT，signal we do see that we get into the。
 
-make sense to block it makes sense to，make sense to block it makes sense to。
+signal we do see that we get into the，accept and finally block of those two。accept and finally block of those two，log lines that we had but if we were to。
 
-block the care routine too because you，block the care routine too because you。
+log lines that we had but if we were to，send another signal to our program like。send another signal to our program like，sig term we can see that we don't reach。
 
-can't really do much without a message，can't really do much without a message。
+sig term we can see that we don't reach，that finally clause that we have defined。that finally clause that we have defined，here it should be pointed out that even。
 
-itself um I want to highlight again that，itself um I want to highlight again that。
+here it should be pointed out that even，though even if we only care about the。though even if we only care about the，keyboard interrupt or this again to。
 
-we're only blocking within the scope of，we're only blocking within the scope of。
+keyboard interrupt or this again to，signal it could happen，signal it could happen。outside of the caching of exception，outside of the caching of exception。
 
-a consumed care routine and we're not，a consumed care routine and we're not。
+potentially causing the service to end，potentially causing the service to end。up in incomplete or otherwise unknown，up in incomplete or otherwise unknown。
 
-actually blocking the event loop or any，actually blocking the event loop or any，other，other。
+State so instead of catching keyboard，State so instead of catching keyboard。interrupt let's attach a signal handler，interrupt let's attach a signal handler。
 
-tasks or care routines that are，tasks or care routines that are。
+to the loop so we'll define we'll define，to the loop so we'll define we'll define。a shutdown care routine that is，a shutdown care routine that is，responsible for doing all of our。
 
-scheduled so now we're going to replace，scheduled so now we're going to replace。
+responsible for doing all of our，necessary shutdown tasks and here what。necessary shutdown tasks and here what，I'm doing is simulating like closing the。
 
-a sync i/o dot sleep with a function，a sync i/o dot sleep with a function。
+I'm doing is simulating like closing the，database connections returning the。database connections returning the，pub/sub messages is not acknowledged so。
 
-that will restart a host I'm sure it，that will restart a host I'm sure it。
+pub/sub messages is not acknowledged so，that they can be redeliver and not。that they can be redeliver and not，dropped，dropped，and then collecting all the outstanding。
 
-looks like I'm just pushing the，looks like I'm just pushing the。
+and then collecting all the outstanding，tasks its except for the shutdown task。tasks its except for the shutdown task，itself and then canceling them and we。
 
-simulation of i/o work to restart house，simulation of i/o work to restart house。
+itself and then canceling them and we，don't necessarily need to cancel the。don't necessarily need to cancel the，pending tasks we could just allow them。
 
-function but in doing so I'm actually，function but in doing so I'm actually。
+pending tasks we could just allow them，to finish as well and we may also want。to finish as well and we may also want，to take this opportunity to flush any。
 
-able to create a task and out of that，able to create a task and out of that。
+to take this opportunity to flush any，collective metrics so they're so that。collective metrics so they're so that，they're not lost so let's then add this。
 
-I'm therefore no longer blocking on，I'm therefore no longer blocking on。
+they're not lost so let's then add this，shutdown care routine to our event loop。shutdown care routine to our event loop，the first thing we should do is to set。
 
-waiting for more messages we may also，waiting for more messages we may also。
+the first thing we should do is to set，up our loop and then add the signal。up our loop and then add the signal，handlers that we want to respond to and。
 
-want to do more than one thing per，want to do more than one thing per。
+handlers that we want to respond to and，then we can remove that keyboard。then we can remove that keyboard，interrupt catch so running this again we。
 
-message for example in addition to，message for example in addition to。
+interrupt catch so running this again we，see that we do get to that finally。see that we do get to that finally，clause as well as like the whole，clause as well as like the whole。
 
-restarting a host maybe we'd like to，restarting a host maybe we'd like to。
+shutdown log lines that we see so you，shutdown log lines that we see so you。might be wondering which signals to，might be wondering which signals to。
 
-store that message in a database for，store that message in a database for。
+react to now and apparently there is no，react to now and apparently there is no。standard basically you should be aware，standard basically you should be aware。
 
-potentially replaying later on so we'll，potentially replaying later on so we'll。
+of how you're running your service and，of how you're running your service and。handle it accordingly and it seems like，handle it accordingly and it seems like。
 
-make use of a single create task again，make use of a single create task again。
+it could get a bit messy with conflict，it could get a bit messy with conflict。conflicting signals especially when you，conflicting signals especially when you。
 
-for saving the for the save cover team，for saving the for the save cover team。
+add docker into the mix so there's，add docker into the mix so there's。another misleading API or a confusing，another misleading API or a confusing。
 
-to be scheduled on the loop and，to be scheduled on the loop and。
+API at least for me a sink i/o debt，API at least for me a sink i/o debt。shield now the docs say that it means，shield now the docs say that it means。
 
-basically like checking it over to the，basically like checking it over to the。
+it's a means to shutdown or to shield a，it's a means to shutdown or to shield a。future from being like cancellation but，future from being like cancellation but。
 
-loop to execute for when it can so in，loop to execute for when it can so in。
+if if you have a curtain that must not，if if you have a curtain that must not。be cancelled during shutdown async up，be cancelled during shutdown async up。
 
-this example the two tasks of restarting，this example the two tasks of restarting。
+that shield will not help you at all and，that shield will not help you at all and。this is because the tasks that that，this is because the tasks that that。
 
-and saving don't necessarily depend on，and saving don't necessarily depend on。
+async i/o debt shield creates gets，async i/o debt shield creates gets。included in async i/o dot all tasks and，included in async i/o dot all tasks and。
 
-one another and I'm completely，one another and I'm completely，sidestepping the concern that if we。
+therefore receives the cancellation，therefore receives the cancellation。signal just like the rest of tasks so to，signal just like the rest of tasks so to。
 
-sidestepping the concern that if we，should we start a host if we can't save。
+illustrate really quick I have a super，illustrate really quick I have a super。simple async function that with a long，simple async function that with a long。
 
-should we start a host if we can't save，a message but maybe you do want your。
+sleep and it says just done at the end，sleep and it says just done at the end。and we want to shield it from，and we want to shield it from，cancellation and with a CGI o dot shield。
 
-a message but maybe you do want your，work to happen serially maybe do not。
+cancellation and with a CGI o dot shield，and so running this and canceling it。and so running this and canceling it，after a second we see that we don't。
 
-work to happen serially maybe do not，want to have concurrency for some。
+after a second we see that we don't，actually get to that done line but it's。actually get to that done line but it's，immediately canceled and to be honest I。
 
-want to have concurrency for some，asynchronous tasks so for this instance。
+immediately canceled and to be honest I，actually could not get shield to work。actually could not get shield to work，under any sort，under any sort。
 
-asynchronous tasks so for this instance，maybe you want to restart hosts that。
+Sansa's so I've taken out the signal，Sansa's so I've taken out the signal。handler and I feel like this should work，handler and I feel like this should work。
 
-maybe you want to restart hosts that，only have an uptime of more than seven。
+and running this in cancelling and after，and running this in cancelling and after。a second I still don't get to that done，a second I still don't get to that done。
 
-only have an uptime of more than seven，days just like you should check the。
+line and try it again I thought I might，line and try it again I thought I might。have misinterpreted the docks so I've，have misinterpreted the docks so I've。
 
-days just like you should check the，balance of your checking account before。
+tried canceling the carotene from，tried canceling the carotene from。another care routine but no I just I，another care routine but no I just I。
 
-balance of your checking account before，you actually debit it so needing code to。
+still couldn't get it to work，still couldn't get it to work，I've tried shielding a task from another。I've tried shielding a task from another，crew team that raises it a canceled。
 
-you actually debit it so needing code to，be serial to have steps or dependencies。
+crew team that raises it a canceled，error itself but I couldn't get that to。error itself but I couldn't get that to，work I ran into URI one of the core。
 
-be serial to have steps or dependencies，it doesn't mean that you can't be。
+work I ran into URI one of the core，developers of async ago and I was。developers of async ago and I was，complaining I was like I must be stupid。
 
-it doesn't mean that you can't be，asynchronous the wait last restart date。
+complaining I was like I must be stupid，but he told me that no async i/o is。but he told me that no async i/o is，stupid it makes me feel a little bit。
 
-asynchronous the wait last restart date，will yield to the loop but it doesn't。
+stupid it makes me feel a little bit，better but I still feel like I'm an。better but I still feel like I'm an，idiot I'm probably missing something so。
 
-will yield to the loop but it doesn't，mean that restart host will be the next。
+idiot I'm probably missing something so，if someone in the crowd come to me。if someone in the crowd come to me，afterwards tell me what I'm doing wrong。
 
-mean that restart host will be the next，thing that the loop executes it just。
+afterwards tell me what I'm doing wrong，that'd be super helpful anyways so we。that'd be super helpful anyways so we，don't necessarily have like nurseries to。
 
-thing that the loop executes it just，allows other thing other things outside。
+don't necessarily have like nurseries to，help help us clean up after ourselves we。help help us clean up after ourselves we，need to be responsible and close up。
 
-allows other thing other things outside，of that care routine to run so with that。
+need to be responsible and close up，connections the files that we've opened。connections the files that we've opened，respond to our outstanding requests。
 
-of that care routine to run so with that，in mind I'm going to put all this。
+respond to our outstanding requests，basically leaving things how we found。basically leaving things how we found，them and doing a cleanup in a finally。
 
-in mind I'm going to put all this，message related logic and a separate。
+them and doing a cleanup in a finally，Clause isn't enough though since a。Clause isn't enough though since a，signal could be sent outside of that try。
 
-message related logic and a separate，care routine so we still don't block the。
+signal could be sent outside of that try，except clause so we should do it when we。except clause so we should do it when we，construct the loop and we should tell。
 
-care routine so we still don't block the，consumption of messages saving a message。
+construct the loop and we should tell，how the loop should be deconstructed as。how the loop should be deconstructed as，soon as the program gets interrupted。
 
-consumption of messages saving a message，didn't block restart host of needed so。
+soon as the program gets interrupted，some way this ensures that all of our。some way this ensures that all of our，bases are covered，bases are covered。
 
-didn't block restart host of needed so，we're going to make that a task again。
+and finally once we once we are aware of，and finally once we once we are aware of。how our program should be shut down we，how our program should be shut down we。
 
-we're going to make that a task again，and we're just going to remove the。
+should know to what signals to respond，should know to what signals to respond。to if it's a manual script and then，to if it's a manual script and then。
 
-and we're just going to remove the，uptime check and a restart host，uptime check and a restart host。
+SIGINT might be fine but if it's within，SIGINT might be fine but if it's within。like a demonized docker container then，like a demonized docker container then。
 
-indiscriminately because Yolo so we've，indiscriminately because Yolo so we've。
+alright moving on to exception handling，alright moving on to exception handling。now you might have noticed that we have，now you might have noticed that we have。
 
-pulled a message from a queue and，pulled a message from a queue and。
+not handled any exceptions so far so，not handled any exceptions so far so。let's revisit our restart host cur，let's revisit our restart host cur，routine and we're gonna add a。
 
-found out work based off of that message，found out work based off of that message。
+routine and we're gonna add a，super-realistic exception and so when we。super-realistic exception and so when we，run this we do see that that，run this we do see that that。
 
-but now we need to perform like any，but now we need to perform like any。
+super-serious exception was raised but，super-serious exception was raised but。that we also get a task except exception，that we also get a task except exception。
 
-finalization work from that message so，finalization work from that message so。
+was never retrieved，was never retrieved，because we don't properly handle the。because we don't properly handle the，result of a task when it raises what we。
 
-often with pub/sub technologies if you，often with pub/sub technologies if you。
+result of a task when it raises what we，can do is define an exception handler。can do is define an exception handler，super-complicated I know and then we can。
 
-don't acknowledge a message with a，don't acknowledge a message with a。
+super-complicated I know and then we can，attach it to our loop much like the。attach it to our loop much like the，signal handling and so when we rerun。
 
-predefined within a predefined time，predefined within a predefined time。
+signal handling and so when we rerun，this we see that our logging of，this we see that our logging of。exception does happen oops and we don't，exception does happen oops and we don't。
 
-frame it will get redeliver due for a，frame it will get redeliver due for a。
+get that try or the task cannot be，get that try or the task cannot be。retrieved and so we've set exception，retrieved and so we've set exception。
 
-finalization task we should acknowledge，finalization task we should acknowledge。
+handling on the global level is like a，handling on the global level is like a。global default but perhaps you want to，global default but perhaps you want to。
 
-that the message if you should，that the message if you should，acknowledge the message so it doesn't。
+treat some exceptions differently for，treat some exceptions differently for。certain tasks so we're going to revisit，certain tasks so we're going to revisit。
 
-acknowledge the message so it doesn't，get redeliver to us so we currently have。
+our handle message care routine here so，our handle message care routine here so。say for instance you're fine with a，say for instance you're fine with a。
 
-get redeliver to us so we currently have，a two separate tasks save and restart。
+logging when the save message fails but，logging when the save message fails but。you want to nak the pub side message and，you want to nak the pub side message and。
 
-a two separate tasks save and restart，host and we want to make sure both are。
+go and have it go back to the queue to，go and have it go back to the queue to。restart to retry the whole message so，restart to retry the whole message so。
 
-host and we want to make sure both are，done before the message is cleaned up。
+with them since async i/o gather returns，with them since async i/o gather returns。results in a deterministic way we can，results in a deterministic way we can。
 
-done before the message is cleaned up，and we could go back to the sequential。
+have a more fine-grain exception Handler，have a more fine-grain exception Handler。and attach the results as we wish or，and attach the results as we wish or。
 
-and we could go back to the sequential，await since they're a very direct way to。
+handle the results as we wish so I want，handle the results as we wish so I want。to highlight that setting the return，to highlight that setting the return。
 
-await since they're a very direct way to，manipulate ordering but we can also use。
+exceptions to true is like super，exceptions to true is like super。imperative otherwise exceptions will be，imperative otherwise exceptions will be。
 
-manipulate ordering but we can also use，sort of callbacks on a completed task。
+handled by the default handler and if，handled by the default handler and if。the default Heller isn't set they'll，the default Heller isn't set they'll。
 
-sort of callbacks on a completed task，what we therefore want is somehow to。
+just get swallowed and it's kind of，just get swallowed and it's kind of。confusing so I guess be sure to set some，confusing so I guess be sure to set some。
 
-what we therefore want is somehow to，wrap both tasks since we have to wait on。
+sort of exception handling either，sort of exception handling either。globally or individually or you probably，globally or individually or you probably。
 
-wrap both tasks since we have to wait on，both and then do the cleanup and with。
+want a mix otherwise exceptions may go，want a mix otherwise exceptions may go。unnoticed or cause some weird behavior I，unnoticed or cause some weird behavior I。
 
-both and then do the cleanup and with，that we can make use of async it dot。
+personally like async IO dot gather，personally like async IO dot gather。because of the order of return results，because of the order of return results。
 
-that we can make use of async it dot，gather which returns a feature like。
+it is deterministic but it's easy to，it is deterministic but it's easy to。sort of get tripped up with it by，sort of get tripped up with it by，default it will swallow sort of。
 
-gather which returns a feature like，object and with that future like object。
+default it will swallow sort of，exceptions and then happily continue。exceptions and then happily continue，working on the other tasks that it was。
 
-object and with that future like object，we can then attach a callback to it。
+working on the other tasks that it was，given so if an exception is never。given so if an exception is never，all right sometimes you need to work。
 
-we can then attach a callback to it，and then we can just a wait on the。
+all right sometimes you need to work，with threads and I'm sorry if you do so。with threads and I'm sorry if you do so，maybe you have like a threaded pub/sub。
 
-and then we can just a wait on the，future itself and so when we run this we。
+maybe you have like a threaded pub/sub，client and you，client and you。to consume a message on one thread and，to consume a message on one thread and。
 
-future itself and so when we run this we，can see that both the save care routine。
+then handle the message on the care，then handle the message on the care。routine with a curtain on your main，routine with a curtain on your main。
 
-can see that both the save care routine，and the restart care routine are。
+event loop so let's first attempt to use，event loop so let's first attempt to use。the async i/o API that we're familiar，the async i/o API that we're familiar。
 
-and the restart care routine are，complete and then the cleanup is called。
+with and update our synchronous callback，with and update our synchronous callback。function with creating a task via a，function with creating a task via a。
 
-complete and then the cleanup is called，so I personally have an allergy to。
+single create task and create a task out，single create task and create a task out。of handle message so then this is how we，of handle message so then this is how we。
 
-so I personally have an allergy to，callbacks and as well perhaps you want。
+would call a via the thread pool，would call a via the thread pool。executor very similar to synchronous，executor very similar to synchronous。
 
-callbacks and as well perhaps you want，the cleanup to be non-blocking，the cleanup to be non-blocking。
+functions but you can see that we，functions but you can see that we。actually don't get very far and at this，actually don't get very far and at this。
 
-so then here we can just await clean，so then here we can just await clean。
+point we are in another thread and then，point we are in another thread and then。there's no running event loop in that，there's no running event loop in that。
 
-after the gather since the since it sort，after the gather since the since it sort。
+so if we take what we have right now and，so if we take what we have right now and。update our function to use the main，update our function to use the main。
 
-of takes care of the order of operations，of takes care of the order of operations。
+event loop if we try running this it，event loop if we try running this it。looks like it works but it's actually，looks like it works but it's actually。
 
-and it's so much cleaner，and it's so much cleaner，so a quick keeled er of that last。
+deceptive we're not being thread safe so，deceptive we're not being thread safe so。we're gonna try this again，we're gonna try this again，so instead of a loop dot create task。
 
-so a quick keeled er of that last，section async IO is pretty easy to use。
+so instead of a loop dot create task，we're gonna make use of the thread safe。we're gonna make use of the thread safe，API that should give us a clue right so。
 
-section async IO is pretty easy to use，but it doesn't automatically mean that。
+API that should give us a clue right so，we're gonna use a run care routine。we're gonna use a run care routine，thread safe and now it can be difficult。
 
-but it doesn't automatically mean that，you're using it correctly you can't just。
+thread safe and now it can be difficult，to tell when you're not being thread。to tell when you're not being thread，safe particularly when it looks looks。
 
-you're using it correctly you can't just，throw out around a sink and await。
+safe particularly when it looks looks，like it works like it did in our。like it works like it did in our，previous attempt but in a bit I'll show。
 
-throw out around a sink and await，keywords around your blocking code it's。
+previous attempt but in a bit I'll show，you how easy how you can easily surface。you how easy how you can easily surface，and the issue of thread safety so I。
 
-keywords around your blocking code it's，sort of like a mental paradigm shift you。
+and the issue of thread safety so I，guess in my opinion it's not like too。guess in my opinion it's not like too，difficult to work with threaded code and。
 
-sort of like a mental paradigm shift you，have to think about what you can farm。
+difficult to work with threaded code and，async i/o it's similar to how we work。async i/o it's similar to how we work，with non async code in the async world。
 
-have to think about what you can farm，out as well as what you actually still。
+with non async code in the async world，we'll make use of like the thread pool。we'll make use of like the thread pool，executor which essentially creates an。
 
-out as well as what you actually still，need to be sequential，need to be sequential。
+executor which essentially creates an，avoidable for us however it can be。avoidable for us however it can be，difficult in the sense of when you need。
 
-and so having steps within your code，and so having steps within your code。
+difficult in the sense of when you need，to share state between both of them and。to share state between both of them and，when you want the thread to schedule。
 
-like the first a and then B and then C，like the first a and then B and then C。
+when you want the thread to schedule，something on the main event loop so if。something on the main event loop so if，you must do that then use the thread。
 
-may seem like it's blocking when it's，may seem like it's blocking when it's，not sequential code。
+you must do that then use the thread，safe API is that async i/o gives you and。safe API is that async i/o gives you and，I will admit it took an embarrassing。
 
-not sequential code，can still be asynchronous for instance I。
+I will admit it took an embarrassing，long time for me to realize this had。long time for me to realize this had，services already in production it was。
 
-can still be asynchronous for instance I，might have to call a customer service of。
+services already in production it was，so onto testing and so for a more。so onto testing and so for a more，simplistic starting point and we're。
 
-might have to call a customer service of，my bank and I'm on hold and I can put。
+simplistic starting point and we're，going to test async i/o code before we。going to test async i/o code before we，introduced threading and so we're gonna。
 
-my bank and I'm on hold and I can put，that down and put it on speakerphone and。
+introduced threading and so we're gonna，start simple we're gonna test the save。start simple we're gonna test the save，care routine function using PI test。
 
-that down and put it on speakerphone and，then play with my super needy cat as I。
+care routine function using PI test，since the save care team we need to is a。since the save care team we need to is a，curtain we need to run it in our event。
 
-then play with my super needy cat as I，wait so I might be a single-threaded but。
+curtain we need to run it in our event，loop like so and which Python 3：7 that。loop like so and which Python 3：7 that，makes it easy for us with the async i/o。
 
-wait so I might be a single-threaded but，I can still sort of multitask like CPUs。
+makes it easy for us with the async i/o，dot run function older python versions。dot run function older python versions，python 3 versions we'll have to。
 
-I can still sort of multitask like CPUs，so often you'll want to you want your。
+python 3 versions we'll have to，construct and deconstruct the loop。construct and deconstruct the loop，yourself but some of you might be saying。
 
-so often you'll want to you want your，service to shut down gracefully if it。
+yourself but some of you might be saying，there's a better way and there is there。there's a better way and there is there，is a PI test plugin called PI test -。
 
-service to shut down gracefully if it，receives a signal of some sort you'll。
+is a PI test plugin called PI test -，async i/o that will essentially do that。async i/o that will essentially do that，the hard work for you you just need to。
 
-receives a signal of some sort you'll，probably want to clean up the database。
+the hard work for you you just need to，mark the particular tests that they are。mark the particular tests that they are，async code that needs to be run with。
 
-probably want to clean up the database，connections that you have stop consuming。
+async code that needs to be run with，this decorator and you need to make the。this decorator and you need to make the，test function itself a care team now。
 
-connections that you have stop consuming，messages finish the corresponding。
+test function itself a care team now，when running the tests the plug-in will。when running the tests the plug-in will，essentially do the work for you of。
 
-messages finish the corresponding，current request that you have all like。
+essentially do the work for you of，constructing and deconstructing the。constructing and deconstructing the，event the event loop so the PI test。
 
-current request that you have all like，not accepting new requests so if we。
+event the event loop so the PI test，async i/o plug-in can get you pretty far。async i/o plug-in can get you pretty far，but it doesn't help you when you need to。
 
-not accepting new requests so if we，happen to restart our own instance of。
+but it doesn't help you when you need to，mock out co-routines for instance our。mock out co-routines for instance our，save care routine function calls another。
 
-happen to restart our own instance of，our mayhem mandrel service we should。
+save care routine function calls another，care routine the async i/o dot sleep or。care routine the async i/o dot sleep or，might actually call a database now you。
 
-our mayhem mandrel service we should，essentially clean up our own mess um so。
+might actually call a database now you，don't actually want to wait for async IO。don't actually want to wait for async IO，dot sleep to complete while you're。
 
-essentially clean up our own mess um so，here's a typical boilerplate code of。
+dot sleep to complete while you're，running the tests or do you actually。running the tests or do you actually，want to call a database while you're。
 
-here's a typical boilerplate code of，getting a service running we have a。
+want to call a database while you're，running your tests and so both the unit。running your tests and so both the unit，tests mock library and the PI test -。
 
-getting a service running we have a，queue instance and setting up the loop。
+tests mock library and the PI test -，mock package do not support asynchronous。mock package do not support asynchronous，mocks so we'll sort of have to work。
 
-queue instance and setting up the loop，scheduling the publish and consume tasks。
+mocks so we'll sort of have to work，around this and we are going to make use。around this and we are going to make use，of the PI test mock lot library and。
 
-scheduling the publish and consume tasks，and then start and then close the event。
+of the PI test mock lot library and，create a fixture，create a fixture。now that's essentially returning a，now that's essentially returning a。
 
-and then start and then close the event，loop maybe even catch the keyboard。
+function so the outer function that，function so the outer function that。returns this inner function as a fixture，returns this inner function as a fixture。
 
-loop maybe even catch the keyboard，interrupt exception so if we've run this。
+that will end up using inner tests and，that will end up using inner tests and。then the inner function is basically，then the inner function is basically。
 
-interrupt exception so if we've run this，and as is and we give it the SIGINT。
+creating and returning a mock object，creating and returning a mock object。that we will play with in our tests，that we will play with in our tests。
 
-and as is and we give it the SIGINT，signal we do see that we get into the。
+as well as a stubbed co-routine that，as well as a stubbed co-routine that。will actually end up getting called and，will actually end up getting called and。
 
-signal we do see that we get into the，accept and finally block of those two。
+then it will call our mock for us it，then it will call our mock for us it。also patches if we need the desired care，also patches if we need the desired care。
 
-accept and finally block of those two，log lines that we had but if we were to。
+routine with the stub so we can avoid，routine with the stub so we can avoid。the network calls the sleeps that we，the network calls the sleeps that we。
 
-log lines that we had but if we were to，send another signal to our program like。
+don't want to happen so then we're going，don't want to happen so then we're going。to create another PI test fixture that，to create another PI test fixture that。
 
-send another signal to our program like，sig term we can see that we don't reach。
+will use this create co-op fixture that，will use this create co-op fixture that。we just defined to mock and patch the，we just defined to mock and patch the。
 
-sig term we can see that we don't reach，that finally clause that we have defined。
+async i/o dot sleep and we don't need，async i/o dot sleep and we don't need。the stub care routine that is returned，the stub care routine that is returned。
 
-that finally clause that we have defined，here it should be pointed out that even。
+so we can just sort of throw that away，so we can just sort of throw that away。and then we can use the mock sleep，and then we can use the mock sleep。
 
-here it should be pointed out that even，though even if we only care about the。
+fixture in our test save function so，fixture in our test save function so。what we've done is basically patched a，what we've done is basically patched a。
 
-though even if we only care about the，keyboard interrupt or this again to。
+sync i/o dot sleep in our mayhem module，sync i/o dot sleep in our mayhem module。with the a stub co-routine function and，with the a stub co-routine function and。
 
-keyboard interrupt or this again to，signal it could happen，signal it could happen。
+then we can assert the mock mock to，then we can assert the mock mock to。Isengard that sleep object was called，Isengard that sleep object was called。
 
-outside of the caching of exception，outside of the caching of exception。
+once the mayhem dot save care routine，once the mayhem dot save care routine。was called because we now have a mock，was called because we now have a mock。
 
-potentially causing the service to end，potentially causing the service to end。
+object instead instead of the actual，object instead instead of the actual。care routine we can now do anything，care routine we can now do anything。
 
-up in incomplete or otherwise unknown，up in incomplete or otherwise unknown。
+that's supported with mocks we can do，that's supported with mocks we can do。assert called once with and play with，assert called once with and play with。
 
-State so instead of catching keyboard，State so instead of catching keyboard。
+the return values and side effects as we，the return values and side effects as we。need etc remind you when I'm testing I，need etc remind you when I'm testing I。
 
-interrupt let's attach a signal handler，interrupt let's attach a signal handler。
+do tests with to assert that parameters，do tests with to assert that parameters。were called as accordingly and not just，were called as accordingly and not just。
 
-to the loop so we'll define we'll define，to the loop so we'll define we'll define。
+the simple count thing so that's simple，the simple count thing so that's simple。enough but sometimes you need to test，enough but sometimes you need to test。
 
-a shutdown care routine that is，a shutdown care routine that is，responsible for doing all of our。
+code that is using the create task，code that is using the create task。method and we can't simply use the，method and we can't simply use the。
 
-responsible for doing all of our，necessary shutdown tasks and here what。
+create curve or mock fixture that we，create curve or mock fixture that we，defined a second ago。defined a second ago，so for instance let's revisit our，so for instance let's revisit our。
 
-necessary shutdown tasks and here what，I'm doing is simulating like closing the。
+consume Co routine and this which will，consume Co routine and this which will。create and schedule a task on the loop，create and schedule a task on the loop。
 
-I'm doing is simulating like closing the，database connections returning the。
+and it will pass the handle message care，and it will pass the handle message care。routine so first need a couple of，routine so first need a couple of。
 
-database connections returning the，pub/sub messages is not acknowledged so。
+fixtures for that Q we will mock and，fixtures for that Q we will mock and。patch the async a OQ class within our，patch the async a OQ class within our。
 
-pub/sub messages is not acknowledged so，that they can be redeliver and not。
+module and then we'll use the mock Q，module and then we'll use the mock Q。fixture in another one in the mock get，fixture in another one in the mock get。
 
-that they can be redeliver and not，dropped，dropped，and then collecting all the outstanding。
+fixture and so unlike our mock sleep，fixture and so unlike our mock sleep。fixture we will use that stub care，fixture we will use that stub care。
 
-and then collecting all the outstanding，tasks its except for the shutdown task。
+routine that create mock Co returns and，routine that create mock Co returns and。so here is our test consume function，so here is our test consume function。
 
-tasks its except for the shutdown task，itself and then canceling them and we。
+where we are giving the newly created，where we are giving the newly created。fixtures and so we will try to use the，fixtures and so we will try to use the。
 
-itself and then canceling them and we，don't necessarily need to cancel the。
+create coder mock to mock and patch the，create coder mock to mock and patch the。call to a handle message carotene a via，call to a handle message carotene a via。
 
-don't necessarily need to cancel the，pending tasks we could just allow them。
+that create task and I want to highlight，that create task and I want to highlight。that we're setting the mock get，that we're setting the mock get。
 
-pending tasks we could just allow them，to finish as well and we may also want。
+side-effect to one real value and one，side-effect to one real value and one。exception to make sure that we're not，exception to make sure that we're not。
 
-to finish as well and we may also want，to take this opportunity to flush any。
+permanently stuck in that while true，permanently stuck in that while true。loop that the consume has and finally we，loop that the consume has and finally we。
 
-to take this opportunity to flush any，collective metrics so they're so that。
+want to assert that our mock for handle，want to assert that our mock for handle。message has been called after consume，message has been called after consume。
 
-collective metrics so they're so that，they're not lost so let's then add this。
+has been running so when running this we，has been running so when running this we。see that mock handle message does not，see that mock handle message does not。
 
-they're not lost so let's then add this，shutdown care routine to our event loop。
+actually get called like we were，actually get called like we were。expecting and this is because these，expecting and this is because these。
 
-shutdown care routine to our event loop，the first thing we should do is to set。
+scheduled tasks are only scheduled and，scheduled tasks are only scheduled and。pending at this point we sort of have to，pending at this point we sort of have to。
 
-the first thing we should do is to set，up our loop and then add the signal。
+nudge them along and so to do this and，nudge them along and so to do this and。we kind of collect all the running tasks，we kind of collect all the running tasks。
 
-up our loop and then add the signal，handlers that we want to respond to and。
+except for the test itself and then it's，except for the test itself and then it's。run this explicitly I know this is a bit，run this explicitly I know this is a bit。
 
-handlers that we want to respond to and，then we can remove that keyboard。
+clunky perhaps this isn't an opportunity，clunky perhaps this isn't an opportunity。to contribute to PI test during a，to contribute to PI test during a。
 
-then we can remove that keyboard，interrupt catch so running this again we。
+sprints but if you use the yes the，sprints but if you use the yes the。standard the unit test a library from，standard the unit test a library from。
 
-interrupt catch so running this again we，see that we do get to that finally。
+the standard library there's a package，the standard library there's a package。called async test that handles this and，called async test that handles this and。
 
-see that we do get to that finally，clause as well as like the whole，clause as well as like the whole。
+it's a bit better and it exhausts the，it's a bit better and it exhausts the。scheduling of tasks for you so I hear，scheduling of tasks for you so I hear。
 
-shutdown log lines that we see so you，shutdown log lines that we see so you。
+that you're wanting to get 100% test，that you're wanting to get 100% test。coverage just like me which can be，coverage just like me which can be。
 
-might be wondering which signals to，might be wondering which signals to。
+difficult for our main function so we，difficult for our main function so we。set up the signal handling and exception，set up the signal handling and exception。
 
-react to now and apparently there is no，react to now and apparently there is no。
+handling and we create a few tasks and，handling and we create a few tasks and。then we start and close the loop we，then we start and close the loop we。
 
-standard basically you should be aware，standard basically you should be aware。
+can't exactly use the the event loop，can't exactly use the the event loop。fixture that the PI test - async i/o，fixture that the PI test - async i/o。
 
-of how you're running your service and，of how you're running your service and。
+library gives us we need to manipulate，library gives us we need to manipulate。that fixture that gets ends up getting，that fixture that gets ends up getting。
 
-handle it accordingly and it seems like，handle it accordingly and it seems like。
+injected into our code I mean do this by，injected into our code I mean do this by。updating the event loop so we can，updating the event loop so we can。
 
-it could get a bit messy with conflict，it could get a bit messy with conflict。
+override the clothes behavior if we，override the clothes behavior if we。close the loop during the test we，close the loop during the test we。
 
-conflicting signals especially when you，conflicting signals especially when you。
+actually lose access to the exception，actually lose access to the exception。and signal handlers that we set up，and signal handlers that we set up。
 
-add docker into the mix so there's，add docker into the mix so there's。
+within the main function so we actually，within the main function so we actually。need to close when we're done with the，need to close when we're done with the。
 
-another misleading API or a confusing，another misleading API or a confusing。
+test and then we can use the mock to，test and then we can use the mock to。assert that the main function actually，assert that the main function actually，closes，closes。
 
-API at least for me a sink i/o debt，API at least for me a sink i/o debt。
+Loup and so we write the test main，Loup and so we write the test main。function that actually kind of borders，function that actually kind of borders。
 
-shield now the docs say that it means，shield now the docs say that it means。
+on an integration or functional test and，on an integration or functional test and。we want to make sure in addition to the，we want to make sure in addition to the。
 
-it's a means to shutdown or to shield a，it's a means to shutdown or to shield a。
+expected calls to publish and consume，expected calls to publish and consume。that shut down gets called when expected，that shut down gets called when expected。
 
-future from being like cancellation but，future from being like cancellation but。
+and we can't exactly mock out shut down，and we can't exactly mock out shut down。with our create code or mock since it，with our create code or mock since it。
 
-if if you have a curtain that must not，if if you have a curtain that must not。
+will just patch it with another care，will just patch it with another care。routine and therefore run the care，routine and therefore run the care。
 
-be cancelled during shutdown async up，be cancelled during shutdown async up。
+routine every time a signal rather than，routine every time a signal rather than。canceling tasks in stopping the loop so，canceling tasks in stopping the loop so。
 
-that shield will not help you at all and，that shield will not help you at all and。
+instead we mock out the shut the，instead we mock out the shut the。curtains within shutdown the async i/o，curtains within shutdown the async i/o。
 
-this is because the tasks that that，this is because the tasks that that。
+gather and then here I'm starting a，gather and then here I'm starting a。thread that will essentially send the，thread that will essentially send the。
 
-async i/o debt shield creates gets，async i/o debt shield creates gets。
+process a signal after a tenth of a，process a signal after a tenth of a。second and after starting out thread we，second and after starting out thread we。
 
-included in async i/o dot all tasks and，included in async i/o dot all tasks and。
+will then call the main function that we，will then call the main function that we，want to test。want to test，so this looking at the second half of，so this looking at the second half of。
 
-therefore receives the cancellation，therefore receives the cancellation。
+the test we can then assert that the the，the test we can then assert that the the。loop is set up the way that we expected，loop is set up the way that we expected。
 
-signal just like the rest of tasks so to，signal just like the rest of tasks so to。
+that our mocked out functions have been，that our mocked out functions have been。called and then returning to the test，called and then returning to the test。
 
-illustrate really quick I have a super，illustrate really quick I have a super。
+setup real quick you can yeah you can，setup real quick you can yeah you can。you might want to think about，you might want to think about，parameterizing the test itself with not。
 
-simple async function that with a long，simple async function that with a long。
+parameterizing the test itself with not，just the second signal but all the。just the second signal but all the，signals that we might be expecting and。
 
-sleep and it says just done at the end，sleep and it says just done at the end。
+signals that we might be expecting and，it's probably good to have a test of a。it's probably good to have a test of a，signal that you're not explicitly。
 
-and we want to shield it from，and we want to shield it from，cancellation and with a CGI o dot shield。
+signal that you're not explicitly，attaching the handler to like sig quit。attaching the handler to like sig quit，and so basically the TLDR is used pi。
 
-cancellation and with a CGI o dot shield，and so running this and canceling it。
+and so basically the TLDR is used pi，test async i/o there's also a package。test async i/o there's also a package，called async test as I mentioned before。
 
-and so running this and canceling it，after a second we see that we don't。
+called async test as I mentioned before，for the unit test library it's similar。for the unit test library it's similar，to PI test async i/o in that a construct。
 
-after a second we see that we don't，actually get to that done line but it's。
+to PI test async i/o in that a construct，or a handle the event loop instruction。or a handle the event loop instruction，for you but it also has the exhaustion。
 
-actually get to that done line but it's，immediately canceled and to be honest I。
+for you but it also has the exhaustion，of scheduled tasks and actually um。of scheduled tasks and actually um，mocking co-routines ability right there。
 
-immediately canceled and to be honest I，actually could not get shield to work。
+mocking co-routines ability right there，so we're pretty decent programmers and。so we're pretty decent programmers and，we have good code coverage but sometimes。
 
-actually could not get shield to work，under any sort，under any sort。
+we have good code coverage but sometimes，stuff breaks we need to figure out。stuff breaks we need to figure out，what's going on so we can use everyone's。
 
-Sansa's so I've taken out the signal，Sansa's so I've taken out the signal。
+what's going on so we can use everyone's，favorite debugger printing，favorite debugger printing。sort of so if you have just one small，sort of so if you have just one small。
 
-handler and I feel like this should work，handler and I feel like this should work。
+thing to debug it might help to use the，thing to debug it might help to use the。print stack method on task instance and，print stack method on task instance and。
 
-and running this in cancelling and after，and running this in cancelling and after。
+so when you run this you can see that，so when you run this you can see that。the print attack will like you'll see，the print attack will like you'll see。
 
-a second I still don't get to that done，a second I still don't get to that done。
+the stack for every running task and you，the stack for every running task and you。can increase the number of frames that，can increase the number of frames that。
 
-line and try it again I thought I might，line and try it again I thought I might。
+are printed as well so async IO has a，are printed as well so async IO has a。debug mode actually already available，debug mode actually already available。
 
-have misinterpreted the docks so I've，have misinterpreted the docks so I've。
+and it's quite useful so along with，and it's quite useful so along with。setting our logging to the debug level，setting our logging to the debug level。
 
-tried canceling the carotene from，tried canceling the carotene from。
+we can easily turn on async I had a bug，we can easily turn on async I had a bug。when we run our script so say for，when we run our script so say for。
 
-another care routine but no I just I，another care routine but no I just I。
+instance we didn't have that proper，instance we didn't have that proper。exception handling setup we can see that，exception handling setup we can see that。
 
-still couldn't get it to work，still couldn't get it to work，I've tried shielding a task from another。
+the TAS was never achieved but we also，the TAS was never achieved but we also。get information about the task that it，get information about the task that it。
 
-I've tried shielding a task from another，crew team that raises it a canceled。
+was affected and what's called a source，was affected and what's called a source。trace back to give us more contacts in，trace back to give us more contacts in。
 
-crew team that raises it a canceled，error itself but I couldn't get that to。
+addition to the trace back so without，addition to the trace back so without。debug mode we get told that there is an，debug mode we get told that there is an。
 
-error itself but I couldn't get that to，work I ran into URI one of the core。
+exception that's not properly handled，exception that's not properly handled。and with debug mode it gives us more，and with debug mode it gives us more。
 
-work I ran into URI one of the core，developers of async ago and I was。
+another very handy thing wish I knew a，another very handy thing wish I knew a。few years ago is it's able to tell you，few years ago is it's able to tell you。
 
-developers of async ago and I was，complaining I was like I must be stupid。
+if your thread safe so if you got the，if your thread safe so if you got the。thread if you got threads an event and，thread if you got threads an event and。
 
-complaining I was like I must be stupid，but he told me that no async i/o is。
+the event loop interacting with each，the event loop interacting with each。other the bug mode will surface any non，other the bug mode will surface any non。
 
-but he told me that no async i/o is，stupid it makes me feel a little bit。
+thread safe operations for you as a，thread safe operations for you as a。runtime error and then one really nice，runtime error and then one really nice。
 
-stupid it makes me feel a little bit，better but I still feel like I'm an。
+feature about debug mode in async IO is，feature about debug mode in async IO is。how it sort of acts like a tiny little，how it sort of acts like a tiny little。
 
-better but I still feel like I'm an，idiot I'm probably missing something so。
+profiler that will log asynchronous，profiler that will log asynchronous。calls that are slower than 100，calls that are slower than 100。
 
-idiot I'm probably missing something so，if someone in the crowd come to me。
+milliseconds so we're gonna fake a slow，milliseconds so we're gonna fake a slow。care routine by putting a blocking call，care routine by putting a blocking call。
 
-if someone in the crowd come to me，afterwards tell me what I'm doing wrong。
+into timed out sleep so then we run our，into timed out sleep so then we run our。script again and we can see that async，script again and we can see that async。
 
-afterwards tell me what I'm doing wrong，that'd be super helpful anyways so we。
+IO will surface slow to finish tasks，IO will surface slow to finish tasks。potentially highlighting any，potentially highlighting any，unnecessarily blocking tasks so the。
 
-that'd be super helpful anyways so we，don't necessarily have like nurseries to。
+unnecessarily blocking tasks so the，default for what's considered slow is。default for what's considered slow is，100 milliseconds but that's configurable。
 
-don't necessarily have like nurseries to，help help us clean up after ourselves we。
+100 milliseconds but that's configurable，- you can set the slow callback duration。- you can set the slow callback duration，so much like some people's testing。
 
-help help us clean up after ourselves we，need to be responsible and close up。
+so much like some people's testing，philosophies sometimes you need to debug。philosophies sometimes you need to debug，in production but usually don't want。
 
-need to be responsible and close up，connections the files that we've opened。
+in production but usually don't want，full-on debug mode while in production。full-on debug mode while in production，so there's a lightweight package called。
 
-connections the files that we've opened，respond to our outstanding requests。
+so there's a lightweight package called，a IO debug that will log slow callbacks。a IO debug that will log slow callbacks，for you and it also comes with the。
 
-respond to our outstanding requests，basically leaving things how we found。
+for you and it also comes with the，ability to report delayed calls to stats。ability to report delayed calls to stats，D if you use that now that's the only。
 
-basically leaving things how we found，them and doing a cleanup in a finally。
+D if you use that now that's the only，thing that the mod or that the package。thing that the mod or that the package，will do so it's super lightweight so to。
 
-them and doing a cleanup in a finally，Clause isn't enough though since a。
+will do so it's super lightweight so to，wrap up debugging you can easily print。wrap up debugging you can easily print，the stack of the tasks if needed but you。
 
-Clause isn't enough though since a，signal could be sent outside of that try。
+the stack of the tasks if needed but you，can also get a lot with async IOT's。can also get a lot with async IOT's，debug mode it gives more information。
 
-signal could be sent outside of that try，except clause so we should do it when we。
+debug mode it gives more information，around unhandled exceptions when you're。around unhandled exceptions when you're，not being thread safe and when they're。
 
-except clause so we should do it when we，construct the loop and we should tell。
+not being thread safe and when they're，slow to complete tasks and if you want。slow to complete tasks and if you want，to understand so to complete tasks in。
 
-construct the loop and we should tell，how the loop should be deconstructed as。
+to understand so to complete tasks in，production a o debug is a lightweight。production a o debug is a lightweight，all right so as we saw with ASIC IOT's。
 
-how the loop should be deconstructed as，soon as the program gets interrupted。
+all right so as we saw with ASIC IOT's，debug mode the event loop can already。debug mode the event loop can already，track her routines that take up too much。
 
-soon as the program gets interrupted，some way this ensures that all of our。
+track her routines that take up too much，CPU time to execute but it might be hard。CPU time to execute but it might be hard，to tell what is anomaly and what is a。
 
-some way this ensures that all of our，bases are covered，bases are covered。
+to tell what is anomaly and what is a，pattern so folks a lot of folks might。pattern so folks a lot of folks might，first reach for a seat profile to try。
 
-and finally once we once we are aware of，and finally once we once we are aware of。
+first reach for a seat profile to try，and understand performance and we can。and understand performance and we can，try that out here too but there's not。
 
-how our program should be shut down we，how our program should be shut down we。
+try that out here too but there's not，much to actually glean from it I kind of。much to actually glean from it I kind of，snip it for the slide a little bit but。
 
-should know to what signals to respond，should know to what signals to respond。
+snip it for the slide a little bit but，the top item here is essentially the。the top item here is essentially the，event loop itself if we limit to only。
 
-to if it's a manual script and then，to if it's a manual script and then。
+event loop itself if we limit to only，looking at our code we kind of get a。looking at our code we kind of get a，picture of what's going on like we can。
 
-SIGINT might be fine but if it's within，SIGINT might be fine but if it's within。
+picture of what's going on like we can，see that our main function，see that our main function。takes up the most time but that's where，takes up the most time but that's where。
 
-like a demonized docker container then，like a demonized docker container then。
+the event loop is run is random but，the event loop is run is random but。nothing else is immediately obvious，nothing else is immediately obvious。
 
-alright moving on to exception handling，alright moving on to exception handling。
+so I actually recently discovered that，so I actually recently discovered that。Kay cash grind I don't know if you're，Kay cash grind I don't know if you're。
 
-now you might have noticed that we have，now you might have noticed that we have。
+all familiar with it can't be used with，all familiar with it can't be used with。Python so to do so we just save the，Python so to do so we just save the。
 
-not handled any exceptions so far so，not handled any exceptions so far so。
+output of C profile and then use a，output of C profile and then use a。package called PI prof to call tree that，package called PI prof to call tree that。
 
-let's revisit our restart host cur，let's revisit our restart host cur，routine and we're gonna add a。
+takes the output of C profile and，takes the output of C profile and。converts it into data that will that K，converts it into data that will that K，cash K cash Brian will。
 
-routine and we're gonna add a，super-realistic exception and so when we。
+cash K cash Brian will，stand and so when doing this you met，stand and so when doing this you met。with this UI and I'm sorry if you can't，with this UI and I'm sorry if you can't。
 
-super-realistic exception and so when we，run this we do see that that，run this we do see that that。
+see this you definitely can't see this，see this you definitely can't see this。but basically at the left hand side is，but basically at the left hand side is。
 
-super-serious exception was raised but，super-serious exception was raised but。
+the profiling data that we would，the profiling data that we would。otherwise see and from C profile output，otherwise see and from C profile output。
 
-that we also get a task except exception，that we also get a task except exception。
+and then we can click on some of those，and then we can click on some of those。functions on that right side or the left，functions on that right side or the left。
 
-was never retrieved，was never retrieved，because we don't properly handle the。
+side to update the right side where we，side to update the right side where we。see information about collars and，see information about collars and。
 
-because we don't properly handle the，result of a task when it raises what we。
+colleagues including the call graph，colleagues including the call graph。right there and the map of the collies，right there and the map of the collies。
 
-result of a task when it raises what we，can do is define an exception handler。
+on the top now if you limit the view to，on the top now if you limit the view to。our own script and clicking around the，our own script and clicking around the。
 
-can do is define an exception handler，super-complicated I know and then we can。
+curtain functions we can kind of get an，curtain functions we can kind of get an。idea of where time is spent this，idea of where time is spent this。
 
-super-complicated I know and then we can，attach it to our loop much like the。
+visualization kind of groups modules，visualization kind of groups modules。together by color and so when I was，together by color and so when I was。
 
-attach it to our loop much like the，signal handling and so when we rerun。
+first actually profiling this I saw a，first actually profiling this I saw a。lot of blue and you can kind of click，lot of blue and you can kind of click。
 
-signal handling and so when we rerun，this we see that our logging of，this we see that our logging of。
+through and get a little more，through and get a little more，information and you realize or I realize。information and you realize or I realize，that all that blue that we see is。
 
-exception does happen oops and we don't，exception does happen oops and we don't。
+that all that blue that we see is，related to logging now we're gonna hold。related to logging now we're gonna hold，on to that thought so Kay cash grinding。
 
-get that try or the task cannot be，get that try or the task cannot be。
+on to that thought so Kay cash grinding，will allow us to get sort of a broad。will allow us to get sort of a broad，picture of what's going on and give us。
 
-retrieved and so we've set exception，retrieved and so we've set exception。
+picture of what's going on and give us，some visual clues of where to look for。some visual clues of where to look for，potential areas of unnecessary time。
 
-handling on the global level is like a，handling on the global level is like a。
+potential areas of unnecessary time，spent and then there's a line profiler。spent and then there's a line profiler，package and with this we can kind of。
 
-global default but perhaps you want to，global default but perhaps you want to。
+package and with this we can kind of，hone in on areas of our code that we。hone in on areas of our code that we，were suspicious of so after installing。
 
-treat some exceptions differently for，treat some exceptions differently for。
+were suspicious of so after installing，the line profiler you can add the。the line profiler you can add the，profile decorator where you want to。
 
-certain tasks so we're going to revisit，certain tasks so we're going to revisit。
+profile decorator where you want to，profile them and here I'm only a。profile them and here I'm only a，decorating with the save Co routine so。
 
-our handle message care routine here so，our handle message care routine here so。
+decorating with the save Co routine so，the line profiler library comes with a。the line profiler library comes with a，CLI tool called Kern prof that we will。
 
-say for instance you're fine with a，say for instance you're fine with a。
+CLI tool called Kern prof that we will，invoke our script with and then we。invoke our script with and then we，render the output with the align profile。
 
-logging when the save message fails but，logging when the save message fails but。
+render the output with the align profile，module itself which gives us a。module itself which gives us a，line-by-line assessment of our decorated。
 
-you want to nak the pub side message and，you want to nak the pub side message and。
+line-by-line assessment of our decorated，code so the total time spent here in。code so the total time spent here in，this function is just over two，this function is just over two。
 
-go and have it go back to the queue to，go and have it go back to the queue to。
+milliseconds and then majority of that，milliseconds and then majority of that。time was spent in logging now if only，time was spent in logging now if only。
 
-restart to retry the whole message so，restart to retry the whole message so。
+there was something we could do about，there was something we could do about。that coincidentally there is someone，that coincidentally there is someone。
 
-with them since async i/o gather returns，with them since async i/o gather returns。
+already has done something and so，already has done something and so。there's this package called a AO logger，there's this package called a AO logger。
 
-results in a deterministic way we can，results in a deterministic way we can。
+and that allows for non-blocking logging，and that allows for non-blocking logging。so if we switch out our default logger，so if we switch out our default logger。
 
-have a more fine-grain exception Handler，have a more fine-grain exception Handler。
+with a io logger and rerun the profiler，with a io logger and rerun the profiler。I can see that our total time spent on，I can see that our total time spent on。
 
-and attach the results as we wish or，and attach the results as we wish or。
+the function is halved as well as a time，the function is halved as well as a time。spent logging itself and so certainly，spent logging itself and so certainly。
 
-handle the results as we wish so I want，handle the results as we wish so I want。
+these are like minuscule improvements，these are like minuscule improvements，that we're doing here。that we're doing here，um but you can extrapolate on a much，um but you can extrapolate on a much。
 
-to highlight that setting the return，to highlight that setting the return。
+larger scale and also as I see it if we，larger scale and also as I see it if we。have an event loop let's try and make，have an event loop let's try and make。
 
-exceptions to true is like super，exceptions to true is like super。
+so we've profiled a C profile with C，so we've profiled a C profile with C。profile in with a line profiler but，profile in with a line profiler but。
 
-imperative otherwise exceptions will be，imperative otherwise exceptions will be。
+we've had to stop the service in order，we've had to stop the service in order。to look at results so perhaps you would，to look at results so perhaps you would。
 
-handled by the default handler and if，handled by the default handler and if。
+like a live profiler to go along with，like a live profiler to go along with。your production debugging there's this，your production debugging there's this。
 
-the default Heller isn't set they'll，the default Heller isn't set they'll。
+package called a profiling that provides，package called a profiling that provides。an interactive UI and supports async i/o，an interactive UI and supports async i/o。
 
-just get swallowed and it's kind of，just get swallowed and it's kind of。
-
-confusing so I guess be sure to set some，confusing so I guess be sure to set some。
-
-sort of exception handling either，sort of exception handling either。
-
-globally or individually or you probably，globally or individually or you probably。
-
-want a mix otherwise exceptions may go，want a mix otherwise exceptions may go。
-
-unnoticed or cause some weird behavior I，unnoticed or cause some weird behavior I。
-
-personally like async IO dot gather，personally like async IO dot gather。
-
-because of the order of return results，because of the order of return results。
-
-it is deterministic but it's easy to，it is deterministic but it's easy to。
-
-sort of get tripped up with it by，sort of get tripped up with it by，default it will swallow sort of。
-
-default it will swallow sort of，exceptions and then happily continue。
-
-exceptions and then happily continue，working on the other tasks that it was。
-
-working on the other tasks that it was，given so if an exception is never。
-
-given so if an exception is never，all right sometimes you need to work。
-
-all right sometimes you need to work，with threads and I'm sorry if you do so。
-
-with threads and I'm sorry if you do so，maybe you have like a threaded pub/sub。
-
-maybe you have like a threaded pub/sub，client and you，client and you。
-
-to consume a message on one thread and，to consume a message on one thread and。
-
-then handle the message on the care，then handle the message on the care。
-
-routine with a curtain on your main，routine with a curtain on your main。
-
-event loop so let's first attempt to use，event loop so let's first attempt to use。
-
-the async i/o API that we're familiar，the async i/o API that we're familiar。
-
-with and update our synchronous callback，with and update our synchronous callback。
-
-function with creating a task via a，function with creating a task via a。
-
-single create task and create a task out，single create task and create a task out。
-
-of handle message so then this is how we，of handle message so then this is how we。
-
-would call a via the thread pool，would call a via the thread pool。
-
-executor very similar to synchronous，executor very similar to synchronous。
-
-functions but you can see that we，functions but you can see that we。
-
-actually don't get very far and at this，actually don't get very far and at this。
-
-point we are in another thread and then，point we are in another thread and then。
-
-there's no running event loop in that，there's no running event loop in that。
-
-so if we take what we have right now and，so if we take what we have right now and。
-
-update our function to use the main，update our function to use the main。
-
-event loop if we try running this it，event loop if we try running this it。
-
-looks like it works but it's actually，looks like it works but it's actually。
-
-deceptive we're not being thread safe so，deceptive we're not being thread safe so。
-
-we're gonna try this again，we're gonna try this again，so instead of a loop dot create task。
-
-so instead of a loop dot create task，we're gonna make use of the thread safe。
-
-we're gonna make use of the thread safe，API that should give us a clue right so。
-
-API that should give us a clue right so，we're gonna use a run care routine。
-
-we're gonna use a run care routine，thread safe and now it can be difficult。
-
-thread safe and now it can be difficult，to tell when you're not being thread。
-
-to tell when you're not being thread，safe particularly when it looks looks。
-
-safe particularly when it looks looks，like it works like it did in our。
-
-like it works like it did in our，previous attempt but in a bit I'll show。
-
-previous attempt but in a bit I'll show，you how easy how you can easily surface。
-
-you how easy how you can easily surface，and the issue of thread safety so I。
-
-and the issue of thread safety so I，guess in my opinion it's not like too。
-
-guess in my opinion it's not like too，difficult to work with threaded code and。
-
-difficult to work with threaded code and，async i/o it's similar to how we work。
-
-async i/o it's similar to how we work，with non async code in the async world。
-
-with non async code in the async world，we'll make use of like the thread pool。
-
-we'll make use of like the thread pool，executor which essentially creates an。
-
-executor which essentially creates an，avoidable for us however it can be。
-
-avoidable for us however it can be，difficult in the sense of when you need。
-
-difficult in the sense of when you need，to share state between both of them and。
-
-to share state between both of them and，when you want the thread to schedule。
-
-when you want the thread to schedule，something on the main event loop so if。
-
-something on the main event loop so if，you must do that then use the thread。
-
-you must do that then use the thread，safe API is that async i/o gives you and。
-
-safe API is that async i/o gives you and，I will admit it took an embarrassing。
-
-I will admit it took an embarrassing，long time for me to realize this had。
-
-long time for me to realize this had，services already in production it was。
-
-services already in production it was，so onto testing and so for a more。
-
-so onto testing and so for a more，simplistic starting point and we're。
-
-simplistic starting point and we're，going to test async i/o code before we。
-
-going to test async i/o code before we，introduced threading and so we're gonna。
-
-introduced threading and so we're gonna，start simple we're gonna test the save。
-
-start simple we're gonna test the save，care routine function using PI test。
-
-care routine function using PI test，since the save care team we need to is a。
-
-since the save care team we need to is a，curtain we need to run it in our event。
-
-curtain we need to run it in our event，loop like so and which Python 3：7 that。
-
-loop like so and which Python 3：7 that，makes it easy for us with the async i/o。
-
-makes it easy for us with the async i/o，dot run function older python versions。
-
-dot run function older python versions，python 3 versions we'll have to。
-
-python 3 versions we'll have to，construct and deconstruct the loop。
-
-construct and deconstruct the loop，yourself but some of you might be saying。
-
-yourself but some of you might be saying，there's a better way and there is there。
-
-there's a better way and there is there，is a PI test plugin called PI test -。
-
-is a PI test plugin called PI test -，async i/o that will essentially do that。
-
-async i/o that will essentially do that，the hard work for you you just need to。
-
-the hard work for you you just need to，mark the particular tests that they are。
-
-mark the particular tests that they are，async code that needs to be run with。
-
-async code that needs to be run with，this decorator and you need to make the。
-
-this decorator and you need to make the，test function itself a care team now。
-
-test function itself a care team now，when running the tests the plug-in will。
-
-when running the tests the plug-in will，essentially do the work for you of。
-
-essentially do the work for you of，constructing and deconstructing the。
-
-constructing and deconstructing the，event the event loop so the PI test。
-
-event the event loop so the PI test，async i/o plug-in can get you pretty far。
-
-async i/o plug-in can get you pretty far，but it doesn't help you when you need to。
-
-but it doesn't help you when you need to，mock out co-routines for instance our。
-
-mock out co-routines for instance our，save care routine function calls another。
-
-save care routine function calls another，care routine the async i/o dot sleep or。
-
-care routine the async i/o dot sleep or，might actually call a database now you。
-
-might actually call a database now you，don't actually want to wait for async IO。
-
-don't actually want to wait for async IO，dot sleep to complete while you're。
-
-dot sleep to complete while you're，running the tests or do you actually。
-
-running the tests or do you actually，want to call a database while you're。
-
-want to call a database while you're，running your tests and so both the unit。
-
-running your tests and so both the unit，tests mock library and the PI test -。
-
-tests mock library and the PI test -，mock package do not support asynchronous。
-
-mock package do not support asynchronous，mocks so we'll sort of have to work。
-
-mocks so we'll sort of have to work，around this and we are going to make use。
-
-around this and we are going to make use，of the PI test mock lot library and。
-
-of the PI test mock lot library and，create a fixture，create a fixture。
-
-now that's essentially returning a，now that's essentially returning a。
-
-function so the outer function that，function so the outer function that。
-
-returns this inner function as a fixture，returns this inner function as a fixture。
-
-that will end up using inner tests and，that will end up using inner tests and。
-
-then the inner function is basically，then the inner function is basically。
-
-creating and returning a mock object，creating and returning a mock object。
-
-that we will play with in our tests，that we will play with in our tests。
-
-as well as a stubbed co-routine that，as well as a stubbed co-routine that。
-
-will actually end up getting called and，will actually end up getting called and。
-
-then it will call our mock for us it，then it will call our mock for us it。
-
-also patches if we need the desired care，also patches if we need the desired care。
-
-routine with the stub so we can avoid，routine with the stub so we can avoid。
-
-the network calls the sleeps that we，the network calls the sleeps that we。
-
-don't want to happen so then we're going，don't want to happen so then we're going。
-
-to create another PI test fixture that，to create another PI test fixture that。
-
-will use this create co-op fixture that，will use this create co-op fixture that。
-
-we just defined to mock and patch the，we just defined to mock and patch the。
-
-async i/o dot sleep and we don't need，async i/o dot sleep and we don't need。
-
-the stub care routine that is returned，the stub care routine that is returned。
-
-so we can just sort of throw that away，so we can just sort of throw that away。
-
-and then we can use the mock sleep，and then we can use the mock sleep。
-
-fixture in our test save function so，fixture in our test save function so。
-
-what we've done is basically patched a，what we've done is basically patched a。
-
-sync i/o dot sleep in our mayhem module，sync i/o dot sleep in our mayhem module。
-
-with the a stub co-routine function and，with the a stub co-routine function and。
-
-then we can assert the mock mock to，then we can assert the mock mock to。
-
-Isengard that sleep object was called，Isengard that sleep object was called。
-
-once the mayhem dot save care routine，once the mayhem dot save care routine。
-
-was called because we now have a mock，was called because we now have a mock。
-
-object instead instead of the actual，object instead instead of the actual。
-
-care routine we can now do anything，care routine we can now do anything。
-
-that's supported with mocks we can do，that's supported with mocks we can do。
-
-assert called once with and play with，assert called once with and play with。
-
-the return values and side effects as we，the return values and side effects as we。
-
-need etc remind you when I'm testing I，need etc remind you when I'm testing I。
-
-do tests with to assert that parameters，do tests with to assert that parameters。
-
-were called as accordingly and not just，were called as accordingly and not just。
-
-the simple count thing so that's simple，the simple count thing so that's simple。
-
-enough but sometimes you need to test，enough but sometimes you need to test。
-
-code that is using the create task，code that is using the create task。
-
-method and we can't simply use the，method and we can't simply use the。
-
-create curve or mock fixture that we，create curve or mock fixture that we，defined a second ago。
-
-defined a second ago，so for instance let's revisit our，so for instance let's revisit our。
-
-consume Co routine and this which will，consume Co routine and this which will。
-
-create and schedule a task on the loop，create and schedule a task on the loop。
-
-and it will pass the handle message care，and it will pass the handle message care。
-
-routine so first need a couple of，routine so first need a couple of。
-
-fixtures for that Q we will mock and，fixtures for that Q we will mock and。
-
-patch the async a OQ class within our，patch the async a OQ class within our。
-
-module and then we'll use the mock Q，module and then we'll use the mock Q。
-
-fixture in another one in the mock get，fixture in another one in the mock get。
-
-fixture and so unlike our mock sleep，fixture and so unlike our mock sleep。
-
-fixture we will use that stub care，fixture we will use that stub care。
-
-routine that create mock Co returns and，routine that create mock Co returns and。
-
-so here is our test consume function，so here is our test consume function。
-
-where we are giving the newly created，where we are giving the newly created。
-
-fixtures and so we will try to use the，fixtures and so we will try to use the。
-
-create coder mock to mock and patch the，create coder mock to mock and patch the。
-
-call to a handle message carotene a via，call to a handle message carotene a via。
-
-that create task and I want to highlight，that create task and I want to highlight。
-
-that we're setting the mock get，that we're setting the mock get。
-
-side-effect to one real value and one，side-effect to one real value and one。
-
-exception to make sure that we're not，exception to make sure that we're not。
-
-permanently stuck in that while true，permanently stuck in that while true。
-
-loop that the consume has and finally we，loop that the consume has and finally we。
-
-want to assert that our mock for handle，want to assert that our mock for handle。
-
-message has been called after consume，message has been called after consume。
-
-has been running so when running this we，has been running so when running this we。
-
-see that mock handle message does not，see that mock handle message does not。
-
-actually get called like we were，actually get called like we were。
-
-expecting and this is because these，expecting and this is because these。
-
-scheduled tasks are only scheduled and，scheduled tasks are only scheduled and。
-
-pending at this point we sort of have to，pending at this point we sort of have to。
-
-nudge them along and so to do this and，nudge them along and so to do this and。
-
-we kind of collect all the running tasks，we kind of collect all the running tasks。
-
-except for the test itself and then it's，except for the test itself and then it's。
-
-run this explicitly I know this is a bit，run this explicitly I know this is a bit。
-
-clunky perhaps this isn't an opportunity，clunky perhaps this isn't an opportunity。
-
-to contribute to PI test during a，to contribute to PI test during a。
-
-sprints but if you use the yes the，sprints but if you use the yes the。
-
-standard the unit test a library from，standard the unit test a library from。
-
-the standard library there's a package，the standard library there's a package。
-
-called async test that handles this and，called async test that handles this and。
-
-it's a bit better and it exhausts the，it's a bit better and it exhausts the。
-
-scheduling of tasks for you so I hear，scheduling of tasks for you so I hear。
-
-that you're wanting to get 100% test，that you're wanting to get 100% test。
-
-coverage just like me which can be，coverage just like me which can be。
-
-difficult for our main function so we，difficult for our main function so we。
-
-set up the signal handling and exception，set up the signal handling and exception。
-
-handling and we create a few tasks and，handling and we create a few tasks and。
-
-then we start and close the loop we，then we start and close the loop we。
-
-can't exactly use the the event loop，can't exactly use the the event loop。
-
-fixture that the PI test - async i/o，fixture that the PI test - async i/o。
-
-library gives us we need to manipulate，library gives us we need to manipulate。
-
-that fixture that gets ends up getting，that fixture that gets ends up getting。
-
-injected into our code I mean do this by，injected into our code I mean do this by。
-
-updating the event loop so we can，updating the event loop so we can。
-
-override the clothes behavior if we，override the clothes behavior if we。
-
-close the loop during the test we，close the loop during the test we。
-
-actually lose access to the exception，actually lose access to the exception。
-
-and signal handlers that we set up，and signal handlers that we set up。
-
-within the main function so we actually，within the main function so we actually。
-
-need to close when we're done with the，need to close when we're done with the。
-
-test and then we can use the mock to，test and then we can use the mock to。
-
-assert that the main function actually，assert that the main function actually，closes，closes。
-
-Loup and so we write the test main，Loup and so we write the test main。
-
-function that actually kind of borders，function that actually kind of borders。
-
-on an integration or functional test and，on an integration or functional test and。
-
-we want to make sure in addition to the，we want to make sure in addition to the。
-
-expected calls to publish and consume，expected calls to publish and consume。
-
-that shut down gets called when expected，that shut down gets called when expected。
-
-and we can't exactly mock out shut down，and we can't exactly mock out shut down。
-
-with our create code or mock since it，with our create code or mock since it。
-
-will just patch it with another care，will just patch it with another care。
-
-routine and therefore run the care，routine and therefore run the care。
-
-routine every time a signal rather than，routine every time a signal rather than。
-
-canceling tasks in stopping the loop so，canceling tasks in stopping the loop so。
-
-instead we mock out the shut the，instead we mock out the shut the。
-
-curtains within shutdown the async i/o，curtains within shutdown the async i/o。
-
-gather and then here I'm starting a，gather and then here I'm starting a。
-
-thread that will essentially send the，thread that will essentially send the。
-
-process a signal after a tenth of a，process a signal after a tenth of a。
-
-second and after starting out thread we，second and after starting out thread we。
-
-will then call the main function that we，will then call the main function that we，want to test。
-
-want to test，so this looking at the second half of，so this looking at the second half of。
-
-the test we can then assert that the the，the test we can then assert that the the。
-
-loop is set up the way that we expected，loop is set up the way that we expected。
-
-that our mocked out functions have been，that our mocked out functions have been。
-
-called and then returning to the test，called and then returning to the test。
-
-setup real quick you can yeah you can，setup real quick you can yeah you can。
-
-you might want to think about，you might want to think about，parameterizing the test itself with not。
-
-parameterizing the test itself with not，just the second signal but all the。
-
-just the second signal but all the，signals that we might be expecting and。
-
-signals that we might be expecting and，it's probably good to have a test of a。
-
-it's probably good to have a test of a，signal that you're not explicitly。
-
-signal that you're not explicitly，attaching the handler to like sig quit。
-
-attaching the handler to like sig quit，and so basically the TLDR is used pi。
-
-and so basically the TLDR is used pi，test async i/o there's also a package。
-
-test async i/o there's also a package，called async test as I mentioned before。
-
-called async test as I mentioned before，for the unit test library it's similar。
-
-for the unit test library it's similar，to PI test async i/o in that a construct。
-
-to PI test async i/o in that a construct，or a handle the event loop instruction。
-
-or a handle the event loop instruction，for you but it also has the exhaustion。
-
-for you but it also has the exhaustion，of scheduled tasks and actually um。
-
-of scheduled tasks and actually um，mocking co-routines ability right there。
-
-mocking co-routines ability right there，so we're pretty decent programmers and。
-
-so we're pretty decent programmers and，we have good code coverage but sometimes。
-
-we have good code coverage but sometimes，stuff breaks we need to figure out。
-
-stuff breaks we need to figure out，what's going on so we can use everyone's。
-
-what's going on so we can use everyone's，favorite debugger printing，favorite debugger printing。
-
-sort of so if you have just one small，sort of so if you have just one small。
-
-thing to debug it might help to use the，thing to debug it might help to use the。
-
-print stack method on task instance and，print stack method on task instance and。
-
-so when you run this you can see that，so when you run this you can see that。
-
-the print attack will like you'll see，the print attack will like you'll see。
-
-the stack for every running task and you，the stack for every running task and you。
-
-can increase the number of frames that，can increase the number of frames that。
-
-are printed as well so async IO has a，are printed as well so async IO has a。
-
-debug mode actually already available，debug mode actually already available。
-
-and it's quite useful so along with，and it's quite useful so along with。
-
-setting our logging to the debug level，setting our logging to the debug level。
-
-we can easily turn on async I had a bug，we can easily turn on async I had a bug。
-
-when we run our script so say for，when we run our script so say for。
-
-instance we didn't have that proper，instance we didn't have that proper。
-
-exception handling setup we can see that，exception handling setup we can see that。
-
-the TAS was never achieved but we also，the TAS was never achieved but we also。
-
-get information about the task that it，get information about the task that it。
-
-was affected and what's called a source，was affected and what's called a source。
-
-trace back to give us more contacts in，trace back to give us more contacts in。
-
-addition to the trace back so without，addition to the trace back so without。
-
-debug mode we get told that there is an，debug mode we get told that there is an。
-
-exception that's not properly handled，exception that's not properly handled。
-
-and with debug mode it gives us more，and with debug mode it gives us more。
-
-another very handy thing wish I knew a，another very handy thing wish I knew a。
-
-few years ago is it's able to tell you，few years ago is it's able to tell you。
-
-if your thread safe so if you got the，if your thread safe so if you got the。
-
-thread if you got threads an event and，thread if you got threads an event and。
-
-the event loop interacting with each，the event loop interacting with each。
-
-other the bug mode will surface any non，other the bug mode will surface any non。
-
-thread safe operations for you as a，thread safe operations for you as a。
-
-runtime error and then one really nice，runtime error and then one really nice。
-
-feature about debug mode in async IO is，feature about debug mode in async IO is。
-
-how it sort of acts like a tiny little，how it sort of acts like a tiny little。
-
-profiler that will log asynchronous，profiler that will log asynchronous。
-
-calls that are slower than 100，calls that are slower than 100。
-
-milliseconds so we're gonna fake a slow，milliseconds so we're gonna fake a slow。
-
-care routine by putting a blocking call，care routine by putting a blocking call。
-
-into timed out sleep so then we run our，into timed out sleep so then we run our。
-
-script again and we can see that async，script again and we can see that async。
-
-IO will surface slow to finish tasks，IO will surface slow to finish tasks。
-
-potentially highlighting any，potentially highlighting any，unnecessarily blocking tasks so the。
-
-unnecessarily blocking tasks so the，default for what's considered slow is。
-
-default for what's considered slow is，100 milliseconds but that's configurable。
-
-100 milliseconds but that's configurable，- you can set the slow callback duration。
-
-- you can set the slow callback duration，so much like some people's testing。
-
-so much like some people's testing，philosophies sometimes you need to debug。
-
-philosophies sometimes you need to debug，in production but usually don't want。
-
-in production but usually don't want，full-on debug mode while in production。
-
-full-on debug mode while in production，so there's a lightweight package called。
-
-so there's a lightweight package called，a IO debug that will log slow callbacks。
-
-a IO debug that will log slow callbacks，for you and it also comes with the。
-
-for you and it also comes with the，ability to report delayed calls to stats。
-
-ability to report delayed calls to stats，D if you use that now that's the only。
-
-D if you use that now that's the only，thing that the mod or that the package。
-
-thing that the mod or that the package，will do so it's super lightweight so to。
-
-will do so it's super lightweight so to，wrap up debugging you can easily print。
-
-wrap up debugging you can easily print，the stack of the tasks if needed but you。
-
-the stack of the tasks if needed but you，can also get a lot with async IOT's。
-
-can also get a lot with async IOT's，debug mode it gives more information。
-
-debug mode it gives more information，around unhandled exceptions when you're。
-
-around unhandled exceptions when you're，not being thread safe and when they're。
-
-not being thread safe and when they're，slow to complete tasks and if you want。
-
-slow to complete tasks and if you want，to understand so to complete tasks in。
-
-to understand so to complete tasks in，production a o debug is a lightweight。
-
-production a o debug is a lightweight，all right so as we saw with ASIC IOT's。
-
-all right so as we saw with ASIC IOT's，debug mode the event loop can already。
-
-debug mode the event loop can already，track her routines that take up too much。
-
-track her routines that take up too much，CPU time to execute but it might be hard。
-
-CPU time to execute but it might be hard，to tell what is anomaly and what is a。
-
-to tell what is anomaly and what is a，pattern so folks a lot of folks might。
-
-pattern so folks a lot of folks might，first reach for a seat profile to try。
-
-first reach for a seat profile to try，and understand performance and we can。
-
-and understand performance and we can，try that out here too but there's not。
-
-try that out here too but there's not，much to actually glean from it I kind of。
-
-much to actually glean from it I kind of，snip it for the slide a little bit but。
-
-snip it for the slide a little bit but，the top item here is essentially the。
-
-the top item here is essentially the，event loop itself if we limit to only。
-
-event loop itself if we limit to only，looking at our code we kind of get a。
-
-looking at our code we kind of get a，picture of what's going on like we can。
-
-picture of what's going on like we can，see that our main function，see that our main function。
-
-takes up the most time but that's where，takes up the most time but that's where。
-
-the event loop is run is random but，the event loop is run is random but。
-
-nothing else is immediately obvious，nothing else is immediately obvious。
-
-so I actually recently discovered that，so I actually recently discovered that。
-
-Kay cash grind I don't know if you're，Kay cash grind I don't know if you're。
-
-all familiar with it can't be used with，all familiar with it can't be used with。
-
-Python so to do so we just save the，Python so to do so we just save the。
-
-output of C profile and then use a，output of C profile and then use a。
-
-package called PI prof to call tree that，package called PI prof to call tree that。
-
-takes the output of C profile and，takes the output of C profile and。
-
-converts it into data that will that K，converts it into data that will that K，cash K cash Brian will。
-
-cash K cash Brian will，stand and so when doing this you met，stand and so when doing this you met。
-
-with this UI and I'm sorry if you can't，with this UI and I'm sorry if you can't。
-
-see this you definitely can't see this，see this you definitely can't see this。
-
-but basically at the left hand side is，but basically at the left hand side is。
-
-the profiling data that we would，the profiling data that we would。
-
-otherwise see and from C profile output，otherwise see and from C profile output。
-
-and then we can click on some of those，and then we can click on some of those。
-
-functions on that right side or the left，functions on that right side or the left。
-
-side to update the right side where we，side to update the right side where we。
-
-see information about collars and，see information about collars and。
-
-colleagues including the call graph，colleagues including the call graph。
-
-right there and the map of the collies，right there and the map of the collies。
-
-on the top now if you limit the view to，on the top now if you limit the view to。
-
-our own script and clicking around the，our own script and clicking around the。
-
-curtain functions we can kind of get an，curtain functions we can kind of get an。
-
-idea of where time is spent this，idea of where time is spent this。
-
-visualization kind of groups modules，visualization kind of groups modules。
-
-together by color and so when I was，together by color and so when I was。
-
-first actually profiling this I saw a，first actually profiling this I saw a。
-
-lot of blue and you can kind of click，lot of blue and you can kind of click。
-
-through and get a little more，through and get a little more，information and you realize or I realize。
-
-information and you realize or I realize，that all that blue that we see is。
-
-that all that blue that we see is，related to logging now we're gonna hold。
-
-related to logging now we're gonna hold，on to that thought so Kay cash grinding。
-
-on to that thought so Kay cash grinding，will allow us to get sort of a broad。
-
-will allow us to get sort of a broad，picture of what's going on and give us。
-
-picture of what's going on and give us，some visual clues of where to look for。
-
-some visual clues of where to look for，potential areas of unnecessary time。
-
-potential areas of unnecessary time，spent and then there's a line profiler。
-
-spent and then there's a line profiler，package and with this we can kind of。
-
-package and with this we can kind of，hone in on areas of our code that we。
-
-hone in on areas of our code that we，were suspicious of so after installing。
-
-were suspicious of so after installing，the line profiler you can add the。
-
-the line profiler you can add the，profile decorator where you want to。
-
-profile decorator where you want to，profile them and here I'm only a。
-
-profile them and here I'm only a，decorating with the save Co routine so。
-
-decorating with the save Co routine so，the line profiler library comes with a。
-
-the line profiler library comes with a，CLI tool called Kern prof that we will。
-
-CLI tool called Kern prof that we will，invoke our script with and then we。
-
-invoke our script with and then we，render the output with the align profile。
-
-render the output with the align profile，module itself which gives us a。
-
-module itself which gives us a，line-by-line assessment of our decorated。
-
-line-by-line assessment of our decorated，code so the total time spent here in。
-
-code so the total time spent here in，this function is just over two，this function is just over two。
-
-milliseconds and then majority of that，milliseconds and then majority of that。
-
-time was spent in logging now if only，time was spent in logging now if only。
-
-there was something we could do about，there was something we could do about。
-
-that coincidentally there is someone，that coincidentally there is someone。
-
-already has done something and so，already has done something and so。
-
-there's this package called a AO logger，there's this package called a AO logger。
-
-and that allows for non-blocking logging，and that allows for non-blocking logging。
-
-so if we switch out our default logger，so if we switch out our default logger。
-
-with a io logger and rerun the profiler，with a io logger and rerun the profiler。
-
-I can see that our total time spent on，I can see that our total time spent on。
-
-the function is halved as well as a time，the function is halved as well as a time。
-
-spent logging itself and so certainly，spent logging itself and so certainly。
-
-these are like minuscule improvements，these are like minuscule improvements，that we're doing here。
-
-that we're doing here，um but you can extrapolate on a much，um but you can extrapolate on a much。
-
-larger scale and also as I see it if we，larger scale and also as I see it if we。
-
-have an event loop let's try and make，have an event loop let's try and make。
-
-so we've profiled a C profile with C，so we've profiled a C profile with C。
-
-profile in with a line profiler but，profile in with a line profiler but。
-
-we've had to stop the service in order，we've had to stop the service in order。
-
-to look at results so perhaps you would，to look at results so perhaps you would。
-
-like a live profiler to go along with，like a live profiler to go along with。
-
-your production debugging there's this，your production debugging there's this。
-
-package called a profiling that provides，package called a profiling that provides。
-
-an interactive UI and supports async i/o，an interactive UI and supports async i/o。
-
-as well as threads and green LEDs，as well as threads and green LEDs。
-
-granted you can't attach to a running，granted you can't attach to a running。
+as well as threads and green LEDs，as well as threads and green LEDs。granted you can't attach to a running，granted you can't attach to a running。
 
 process with this particular tool you'll，process with this particular tool you'll。
-
-
-
 ![](img/70c5fa474cb4ff7321ee8fd9410d75b7_2.png)
 
-need to launch your service with it but，need to launch your service with it but。
-
-when you do you get this text-based UI，when you do you get this text-based UI。
+need to launch your service with it but，need to launch your service with it but。when you do you get this text-based UI，when you do you get this text-based UI。
 
 
 
 ![](img/70c5fa474cb4ff7321ee8fd9410d75b7_4.png)
 
 that regularly updates and with this you，that regularly updates and with this you。
-
-
-
 ![](img/70c5fa474cb4ff7321ee8fd9410d75b7_6.png)
 
-can drill down and pause when you're，can drill down and pause when you're。
-
-inspecting something and then restart it，inspecting something and then restart it。
+can drill down and pause when you're，can drill down and pause when you're。inspecting something and then restart it，inspecting something and then restart it。
 
 
 
 ![](img/70c5fa474cb4ff7321ee8fd9410d75b7_8.png)
 
-when you're ready you're also able to，when you're ready you're also able to。
-
-just save the performance data and view，just save the performance data and view。
+when you're ready you're also able to，when you're ready you're also able to。just save the performance data and view，just save the performance data and view。
 
 
 
 ![](img/70c5fa474cb4ff7321ee8fd9410d75b7_10.png)
 
-it with this UI at a later time and then，it with this UI at a later time and then。
+it with this UI at a later time and then，it with this UI at a later time and then。what's actually kind of cool is it，what's actually kind of cool is it。
 
-what's actually kind of cool is it，what's actually kind of cool is it。
+provides a server so that you can，provides a server so that you can。remotely connect to it from elsewhere，remotely connect to it from elsewhere。
 
-provides a server so that you can，provides a server so that you can。
+and so the TLDR profiling there's，and so the TLDR profiling there's。basically not much difference with，basically not much difference with。
 
-remotely connect to it from elsewhere，remotely connect to it from elsewhere。
+profiling async IO code from non async，profiling async IO code from non async。IO code and it can be confusing though，IO code and it can be confusing though。
 
-and so the TLDR profiling there's，and so the TLDR profiling there's。
+with just looking at the output of from，with just looking at the output of from。C profile so to get initial picture of，C profile so to get initial picture of。
 
-basically not much difference with，basically not much difference with。
+your services performance using C，your services performance using C。profile with K cache grind can help，profile with K cache grind can help。
 
-profiling async IO code from non async，profiling async IO code from non async。
+surface areas to investigate without，surface areas to investigate without。that visualization it can be difficult，that visualization it can be difficult。
 
-IO code and it can be confusing though，IO code and it can be confusing though。
+to identify hotspots but then once we do，to identify hotspots but then once we do。have some sort of idea of where hotspots，have some sort of idea of where hotspots。
 
-with just looking at the output of from，with just looking at the output of from。
+are you can use a line profiler to get a，are you can use a line profiler to get a。line-by-line performance data and then，line-by-line performance data and then。
 
-C profile so to get initial picture of，C profile so to get initial picture of。
+finally if you want to profile with，finally if you want to profile with。production data I would take I would，production data I would take I would，suggest，suggest。
 
-your services performance using C，your services performance using C。
+taking a look at the profile package，taking a look at the profile package。profiling package alright that was a lot，profiling package alright that was a lot。
 
-profile with K cache grind can help，profile with K cache grind can help。
+but in essence this talk is something，but in essence this talk is something。that I would have liked to have like，that I would have liked to have like。
 
-surface areas to investigate without，surface areas to investigate without。
+three years ago so I'm kind of talking，three years ago so I'm kind of talking。to pass Lin here but I'm hoping that，to pass Lin here but I'm hoping that。
 
-that visualization it can be difficult，that visualization it can be difficult。
+someone else or you all have some，someone else or you all have some。benefit from this use case that is not a，benefit from this use case that is not a。
 
-to identify hotspots but then once we do，to identify hotspots but then once we do。
+web crawler so um I know it's lunchtime，web crawler so um I know it's lunchtime。but I will be around here through all，but I will be around here through all。
 
-have some sort of idea of where hotspots，have some sort of idea of where hotspots。
-
-are you can use a line profiler to get a，are you can use a line profiler to get a。
-
-line-by-line performance data and then，line-by-line performance data and then。
-
-finally if you want to profile with，finally if you want to profile with。
-
-production data I would take I would，production data I would take I would，suggest，suggest。
-
-taking a look at the profile package，taking a look at the profile package。
-
-profiling package alright that was a lot，profiling package alright that was a lot。
-
-but in essence this talk is something，but in essence this talk is something。
-
-that I would have liked to have like，that I would have liked to have like。
-
-three years ago so I'm kind of talking，three years ago so I'm kind of talking。
-
-to pass Lin here but I'm hoping that，to pass Lin here but I'm hoping that。
-
-someone else or you all have some，someone else or you all have some。
-
-benefit from this use case that is not a，benefit from this use case that is not a。
-
-web crawler so um I know it's lunchtime，web crawler so um I know it's lunchtime。
-
-but I will be around here through all，but I will be around here through all。
-
-the conference as well as the sprints so，the conference as well as the sprints so。
-
-if you have questions you can come find，if you have questions you can come find，me but thank you。
+the conference as well as the sprints so，the conference as well as the sprints so。if you have questions you can come find，if you have questions you can come find，me but thank you。
 
 me but thank you。
-
 ![](img/70c5fa474cb4ff7321ee8fd9410d75b7_12.png)

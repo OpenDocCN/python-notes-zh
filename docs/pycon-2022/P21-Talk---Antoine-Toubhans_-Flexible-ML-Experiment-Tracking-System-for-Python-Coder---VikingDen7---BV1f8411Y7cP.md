@@ -1,451 +1,227 @@
 # P21：Talk - Antoine Toubhans_ Flexible ML Experiment Tracking System for Python Coder - VikingDen7 - BV1f8411Y7cP
 
  Hello and welcome。 So our next presentation and the last one before lunch is we have Antoine。
-
-
-
 ![](img/5650230baed0245b16b87a96032fe4fe_1.png)
 
 ![](img/5650230baed0245b16b87a96032fe4fe_2.png)
 
- Tupong， who is going to be talking about flexible， machine learning experiment tracking system。
+ Tupong， who is going to be talking about flexible， machine learning experiment tracking system。 for Python coders with the VCM Streamlet。 Let's work on Antoine with a round of applause。
 
- for Python coders with the VCM Streamlet。 Let's work on Antoine with a round of applause。
+ Hi everybody。 Thank you for being here。 Today I'm going to talk about ML experiment tracking。 system。 A few words about me。 My name is Antoine Tupong。 I'm French。 I live and work， in Paris。
 
- Hi everybody。 Thank you for being here。 Today I'm going to talk about ML experiment tracking。
+ I work in a consulting firm called Cicara。 What we do is that we build a telemed。 solution for our clients， AI solutions mostly。 I am a data scientist for five years now and。
 
- system。 A few words about me。 My name is Antoine Tupong。 I'm French。 I live and work， in Paris。
+ I mostly work on computer vision problems。 Today I'm going to talk about machine learning。 engineering。 At Cicara the official job title is data scientist but actually what we do is。
 
- I work in a consulting firm called Cicara。 What we do is that we build a telemed。
+ more machine learning engineer because we do data science。 We read research paper。 We。 implement models。 We run experiments but we also build what is around。 We build APIs。
 
- solution for our clients， AI solutions mostly。 I am a data scientist for five years now and。
+ We integrate models in mobile app or stuff like that。 So it's in between data science。 and software engineering。 In software engineering we have a lot of tools。 I mean the software。
 
- I mostly work on computer vision problems。 Today I'm going to talk about machine learning。
+ engineering is very mature and you can leverage on existing best tools and best practices。 So on the other hand machine learning engineering is more than just software engineering。 There。
 
- engineering。 At Cicara the official job title is data scientist but actually what we do is。
+ is a lot of things that you need to do。 You need to track the data alongside the code。 It's more an exploratory work。 You have to try and test things。 And as you train models。
 
- more machine learning engineer because we do data science。 We read research paper。 We。
+ you need tools to investigate them， to touch them to see how it works。 So today I'm going。 to talk about ML experiment tracking system。 In most machine learning projects you have， this loop。
 
- implement models。 We run experiments but we also build what is around。 We build APIs。
+ When somehow you have some data and you want to try some models， you train， your model。 then you evaluate it and it provides you with feedbacks。 So either you modify the。
 
- We integrate models in mobile app or stuff like that。 So it's in between data science。
+ data or the model you change the power parameters or things like that and you do it again。 And。 for these reasons you need an experiment tracking system that allows you to track your experiments。
 
- and software engineering。 In software engineering we have a lot of tools。 I mean the software。
+ So you want to have a record of which data did you use， which code， which parameters。 You want to be able to compare experiments。 And as the project is going on you are going。
 
- engineering is very mature and you can leverage on existing best tools and best practices。
+ to have more and more experiments。 So you need to organize them so that it's easy to search。 And reproducibility is very important because when you have a model who proves to be good。
 
- So on the other hand machine learning engineering is more than just software engineering。 There。
+ you want to be able to rebuild it in order to be able to iterate over it。 And finally。 it's teamwork so you need tools to share the knowledge that you have when you run these。
 
- is a lot of things that you need to do。 You need to track the data alongside the code。
+ experiments。 So today I'm not going to talk about all these solutions which are great but。 I call them monolithic because they provide you with all you need to do a ML project but。
 
- It's more an exploratory work。 You have to try and test things。 And as you train models。
+ it's not very easy to customize them。 Instead， I think we are a good Python developer so instead。 I propose to build an ML experiment tracking system with smaller bricks which are divisients。
 
- you need tools to investigate them， to touch them to see how it works。 So today I'm going。
+ and it will allow you to build a system that is fully customizable。 So let's do machine learning。 for the purpose of this talk。 I will use these cats and dogs image classification program。
 
- to talk about ML experiment tracking system。 In most machine learning projects you have， this loop。
+ It's adapted from TensorFlow tutorial and basically the goal is to build a model that。 given an input image says whether it's a cat or a dog。 A few words about the data set。 It's。
 
- When somehow you have some data and you want to try some models， you train， your model。
+ available in TensorFlow data set。 It's 3，000 images and here you can see some examples of。 cats and dogs。 So how do we do this？ We are going to build training pipelines which are。
 
- then you evaluate it and it provides you with feedbacks。 So either you modify the。
+ the first steps。 The first step is to download the data set。 Then we have to prepare the data， set。 We need to split the data set in three parts。 The train validation and test set。 And。
 
- data or the model you change the power parameters or things like that and you do it again。 And。
+ then I need to train a model over the train and the sets。 And finally I need to evaluate。 this model so that I get a metric to know if it's working good。 I'm going quickly over， the script。
 
- for these reasons you need an experiment tracking system that allows you to track your experiments。
+ Basically it's adapted from the TensorFlow tutorial you can find online。 So。 the train trick basically what it does is it's in port parameters。 It loads the data。 It。
 
- So you want to have a record of which data did you use， which code， which parameters。
+ defines a model here。 And then it's trained here。 The training， there is two steps during。 the training。 First the backbone is frozen and then it's unfrozen。 So let's say we want。
 
- You want to be able to compare experiments。 And as the project is going on you are going。
+ to run an experiment。 So what do we need to do？ First we need to set up the experiment。 So we need to define which model we want to use on which data defines the parameters， and so on。
 
- to have more and more experiments。 So you need to organize them so that it's easy to search。
+ And to do that I can track whatever I do with using GitHub because it's code。 Basically。 it's code or it's configuration files that I can track with so I'm happy with this step。
 
- And reproducibility is very important because when you have a model who proves to be good。
+ Then I need to run the pipeline。 To do that I need to run the script in the right order。 which is I'm not super happy with that because it's easy to mix steps。 And then I need to save。
 
- you want to be able to rebuild it in order to be able to iterate over it。 And finally。
+ the results because when I execute the training pipeline it will produce files。 For instance。 the model weights， the matrix files and so on。 So I need to put it somewhere。 And finally。
 
- it's teamwork so you need tools to share the knowledge that you have when you run these。
+ I need to keep track of the experiment itself which model they use， which parameters， which。 data and so on。 I need tools to do this properly。 So it's time to introduce DVC。 DVC stands for。
 
- experiments。 So today I'm not going to talk about all these solutions which are great but。
+ Data Version Control。 It's a Python library so you can just pip install it。 And what it。 does is that it allows you to track huge files that you don't want to version with Git because。
 
- I call them monolithic because they provide you with all you need to do a ML project but。
+ it's too heavy。 And it will replace this huge file by small metadata files that you can。 track with Git。 So it's very similar to Git LFS for instance。 The API is very similar to。
 
- it's not very easy to customize them。 Instead， I think we are a good Python developer so instead。
+ Git so if you know how to use Git it's pretty much the same with DVC。 Instead of Git add。 your file you just DVC add your file。 And there is also a remote data storage mechanism。
 
- I propose to build an ML experiment tracking system with smaller bricks which are divisients。
+ so you can DVC push pull to save your results。 What is really good with DVC is this reproducible。 pipeline feature。 So in DVC you can track the data but you can also track the way you produce， data。
 
- and it will allow you to build a system that is fully customizable。 So let's do machine learning。
+ Say for instance here I have a two-stage pipeline that will consume file A， B， C and。 in the end will compute a file E。 So all I need to do is to define the pipeline in a， YML file。
 
- for the purpose of this talk。 I will use these cats and dogs image classification program。
+ I just define the two stages to do that。 I give the command and I declare the。 dependencies and the output。 And whenever I want to execute the pipeline I just want DVC， repro。
 
- It's adapted from TensorFlow tutorial and basically the goal is to build a model that。
+ And this will resolve the data so that in which order to execute the stage。 It will。 execute the stages and it will track the input on a put data with DVC。 There is also a cache。
 
- given an input image says whether it's a cat or a dog。 A few words about the data set。 It's。
+ in mechanism so that whenever a stage the dependencies of a stage didn't change it will restore automatically。 the output so that it speed up a little bit the pipeline execution。 So let's go back to。
 
- available in TensorFlow data set。 It's 3，000 images and here you can see some examples of。
+ our training pipeline。 Just as before we have two more files。 No I have a DVC。TML file。 that in which I define the fourth stage of my pipelines。 And I have a parameter file where。
 
- cats and dogs。 So how do we do this？ We are going to build training pipelines which are。
+ I define all the parameter from my training pipeline and this parameter I directly injected。 in the pipeline definition for instance here。 So let's say I want to give a second try to。
 
- the first steps。 The first step is to download the data set。 Then we have to prepare the data， set。
+ run my experiment。 So the first step is pretty much the same but to modify the pipeline of。 parameters I directly modify the DVC。TML and parameters。TML files。 To run the pipeline。
 
- We need to split the data set in three parts。 The train validation and test set。 And。
+ it's much more easy now。 I just run DVC repro and that's it。 And to save the results I have。 nothing to do because DVC will automatically track the output data。 Now regarding the experiment。
 
- then I need to train a model over the train and the sets。 And finally I need to evaluate。
+ tracking it's not very， I'm still not happy with that because whenever you execute a pipeline。 it will create a metadata file that you can track with Git。 So the experiment it's track。
 
- this model so that I get a metric to know if it's working good。 I'm going quickly over， the script。
+ you can access it with Git log but what you will get it's only the commit names and you。 see all commits in your project you see experiment commits together with code commits so it's。
 
- Basically it's adapted from the TensorFlow tutorial you can find online。 So。
+ not very convenient。 The data is tracked but it's not very easy to access。 And another。 difference between classical software engineering is that when you do machine learning it's not。
 
- the train trick basically what it does is it's in port parameters。 It loads the data。 It。
+ a linear work。 When you do classical software engineering it's mostly linear。 You have branches。 but when you code in your branch you do one commit after the user and it's linear。 In。
 
- defines a model here。 And then it's trained here。 The training， there is two steps during。
+ data science whenever you train a model usually you train it with a lot of different e-par parameters。 So it's not linear。 In DVC there is another feature which is called experiment that allows。
 
- the training。 First the backbone is frozen and then it's unfrozen。 So let's say we want。
+ you to track experiment in a non-linear way。 I will not enter into details but what you。 need to see here is that it will create commits whenever you execute a pipeline and it will。
 
- to run an experiment。 So what do we need to do？ First we need to set up the experiment。
+ track them these commits with custom Git references。 And it's not linear。 And since you have。 references for your experiment commits you also have commands to access them。 So let's。
 
- So we need to define which model we want to use on which data defines the parameters， and so on。
+ say I want to see all the experiments from my repository。 I can run this command， DVC。 Xplist and it will give me something like that。 So here you see the parent commits and here。
 
- And to do that I can track whatever I do with using GitHub because it's code。 Basically。
+ you have all the experiments that arise from it。 So now if I want to access the details of。 these experiments I just run DVC Xshow and I can provide the commit hash。 Sorry。 So I。
 
- it's code or it's configuration files that I can track with so I'm happy with this step。
+ need to compile first。 Here it goes。 And now I have the details of all the experiments。 that derive from this Git commit。 So I have the metrics， accuracy， I have all the parameters。
 
- Then I need to run the pipeline。 To do that I need to run the script in the right order。
+ and so on。 So let's get back to running an experiment。 And whenever I want to set up an。 experiment I just create a new run of the pipeline by overriding some parameters。 So。
 
- which is I'm not super happy with that because it's easy to mix steps。 And then I need to save。
+ instead of running DVC repo I run DVC XPRUN and I use this set params option to override。 whatever params parameter I want to override。 And there is a queue mechanism so I can flash。
 
- the results because when I execute the training pipeline it will produce files。 For instance。
+ the queue and execute all the experiments in it by running DVC XPRUN RONOL。 And in the。 end the output data will be automatically tracked by DVC。 And regarding the experiment tracking。
 
- the model weights， the matrix files and so on。 So I need to put it somewhere。 And finally。
+ I can access all the experiment details by running DVC XPRUN。 So it's much better not。 Let's take a step back and let's have a look at the main experiment tracking system features。
 
- I need to keep track of the experiment itself which model they use， which parameters， which。
+ So with DVC we are very good at logging experiment data on tracking the produce data。 It's also。 very good for reproducibility because whenever I want to rerun an experiment I just have to。
 
- data and so on。 I need tools to do this properly。 So it's time to introduce DVC。 DVC stands for。
+ check out the commit and run DVC repo and it will re-exitute the experiment the same way。 Regarding the other features comparing experiments， organizing experiments and collaboration I。
 
- Data Version Control。 It's a Python library so you can just pip install it。 And what it。
+ can do it in common line but it's not very convenient。 I could improve it with UI。 So it's time to introduce Streamlet。 Streamlet is the same website。 It's a faster way to build。
 
- does is that it allows you to track huge files that you don't want to version with Git because。
+ and share data apps。 So it's a Python library。 You can just peep and stall it and use it。 And what it does is that it allows you to build an app without knowledge of how to build。
 
- it's too heavy。 And it will replace this huge file by small metadata files that you can。
+ a web application。 It's only Python and it's very simply simple to understand how it works。 So as you may have noticed the slides I'm showing you are dynamic。 It's because I made。
 
- track with Git。 So it's very similar to Git LFS for instance。 The API is very similar to。
+ slides with Streamlet。 So let's have a quick demo。 In Streamlet you can display whatever。 you want so you can write text like that。 So here you see the rendering。 You can have。
 
- Git so if you know how to use Git it's pretty much the same with DVC。 Instead of Git add。
+ more complex rendering for instance。 You can run the images like that。 And you can run。 the more complex data。 For instance， let's say I have a data frame here。 You just run。
 
- your file you just DVC add your file。 And there is also a remote data storage mechanism。
+ ST the data frame and it will show you this nice table。 So it's very easy to show whatever。 data you want to show in your web app。 And it's also easy to make interaction。 For instance。
 
- so you can DVC push pull to save your results。 What is really good with DVC is this reproducible。
+ let's say I want a slider。 So here I define a slider between 0 and 100。 And whenever I。 change the slider you see here the chosen value gets updated to 35 and I write the result here。
 
- pipeline feature。 So in DVC you can track the data but you can also track the way you produce， data。
+ which is here。 So whenever I change it it gets updated here。 So it's very easy to build。 interaction。 And it allows you to build things like that。 Let's say I want to investigate。
 
- Say for instance here I have a two-stage pipeline that will consume file A， B， C and。
+ my model and I want to see on which images the model is not sure。 So the model it puts。 a probability between 0 and 1 of being a cat or a dog。 0 being a cat and 1 is a dog。 So。
 
- in the end will compute a file E。 So all I need to do is to define the pipeline in a， YML file。
+ let's say I want to see images where the model is pretty sure it's a cat。 So here I have such。 images and let's say I want to see images where the model is not sure。 So close to 50%。
 
- I just define the two stages to do that。 I give the command and I declare the。
+ And here you can see there are three images that correspond to the slider values and this。 one is interesting because there is a cat and a dog on the same image。 So to build this。
 
- dependencies and the output。 And whenever I want to execute the pipeline I just want DVC， repro。
+ template application in the right part it's only a few line of codes that are here。 So。 what I do is that I load the predictions from a CSV file。 Then I define a slider with a double。
 
- And this will resolve the data so that in which order to execute the stage。 It will。
-
- execute the stages and it will track the input on a put data with DVC。 There is also a cache。
-
- in mechanism so that whenever a stage the dependencies of a stage didn't change it will restore automatically。
-
- the output so that it speed up a little bit the pipeline execution。 So let's go back to。
-
- our training pipeline。 Just as before we have two more files。 No I have a DVC。TML file。
-
- that in which I define the fourth stage of my pipelines。 And I have a parameter file where。
-
- I define all the parameter from my training pipeline and this parameter I directly injected。
-
- in the pipeline definition for instance here。 So let's say I want to give a second try to。
-
- run my experiment。 So the first step is pretty much the same but to modify the pipeline of。
-
- parameters I directly modify the DVC。TML and parameters。TML files。 To run the pipeline。
-
- it's much more easy now。 I just run DVC repro and that's it。 And to save the results I have。
-
- nothing to do because DVC will automatically track the output data。 Now regarding the experiment。
-
- tracking it's not very， I'm still not happy with that because whenever you execute a pipeline。
-
- it will create a metadata file that you can track with Git。 So the experiment it's track。
-
- you can access it with Git log but what you will get it's only the commit names and you。
-
- see all commits in your project you see experiment commits together with code commits so it's。
-
- not very convenient。 The data is tracked but it's not very easy to access。 And another。
-
- difference between classical software engineering is that when you do machine learning it's not。
-
- a linear work。 When you do classical software engineering it's mostly linear。 You have branches。
-
- but when you code in your branch you do one commit after the user and it's linear。 In。
-
- data science whenever you train a model usually you train it with a lot of different e-par parameters。
-
- So it's not linear。 In DVC there is another feature which is called experiment that allows。
-
- you to track experiment in a non-linear way。 I will not enter into details but what you。
-
- need to see here is that it will create commits whenever you execute a pipeline and it will。
-
- track them these commits with custom Git references。 And it's not linear。 And since you have。
-
- references for your experiment commits you also have commands to access them。 So let's。
-
- say I want to see all the experiments from my repository。 I can run this command， DVC。
-
- Xplist and it will give me something like that。 So here you see the parent commits and here。
-
- you have all the experiments that arise from it。 So now if I want to access the details of。
-
- these experiments I just run DVC Xshow and I can provide the commit hash。 Sorry。 So I。
-
- need to compile first。 Here it goes。 And now I have the details of all the experiments。
-
- that derive from this Git commit。 So I have the metrics， accuracy， I have all the parameters。
-
- and so on。 So let's get back to running an experiment。 And whenever I want to set up an。
-
- experiment I just create a new run of the pipeline by overriding some parameters。 So。
-
- instead of running DVC repo I run DVC XPRUN and I use this set params option to override。
-
- whatever params parameter I want to override。 And there is a queue mechanism so I can flash。
-
- the queue and execute all the experiments in it by running DVC XPRUN RONOL。 And in the。
-
- end the output data will be automatically tracked by DVC。 And regarding the experiment tracking。
-
- I can access all the experiment details by running DVC XPRUN。 So it's much better not。
-
- Let's take a step back and let's have a look at the main experiment tracking system features。
-
- So with DVC we are very good at logging experiment data on tracking the produce data。 It's also。
-
- very good for reproducibility because whenever I want to rerun an experiment I just have to。
-
- check out the commit and run DVC repo and it will re-exitute the experiment the same way。
-
- Regarding the other features comparing experiments， organizing experiments and collaboration I。
-
- can do it in common line but it's not very convenient。 I could improve it with UI。
-
- So it's time to introduce Streamlet。 Streamlet is the same website。 It's a faster way to build。
-
- and share data apps。 So it's a Python library。 You can just peep and stall it and use it。
-
- And what it does is that it allows you to build an app without knowledge of how to build。
-
- a web application。 It's only Python and it's very simply simple to understand how it works。
-
- So as you may have noticed the slides I'm showing you are dynamic。 It's because I made。
-
- slides with Streamlet。 So let's have a quick demo。 In Streamlet you can display whatever。
-
- you want so you can write text like that。 So here you see the rendering。 You can have。
-
- more complex rendering for instance。 You can run the images like that。 And you can run。
-
- the more complex data。 For instance， let's say I have a data frame here。 You just run。
-
- ST the data frame and it will show you this nice table。 So it's very easy to show whatever。
-
- data you want to show in your web app。 And it's also easy to make interaction。 For instance。
-
- let's say I want a slider。 So here I define a slider between 0 and 100。 And whenever I。
-
- change the slider you see here the chosen value gets updated to 35 and I write the result here。
-
- which is here。 So whenever I change it it gets updated here。 So it's very easy to build。
-
- interaction。 And it allows you to build things like that。 Let's say I want to investigate。
-
- my model and I want to see on which images the model is not sure。 So the model it puts。
-
- a probability between 0 and 1 of being a cat or a dog。 0 being a cat and 1 is a dog。 So。
-
- let's say I want to see images where the model is pretty sure it's a cat。 So here I have such。
-
- images and let's say I want to see images where the model is not sure。 So close to 50%。
-
- And here you can see there are three images that correspond to the slider values and this。
-
- one is interesting because there is a cat and a dog on the same image。 So to build this。
-
- template application in the right part it's only a few line of codes that are here。 So。
-
- what I do is that I load the predictions from a CSV file。 Then I define a slider with a double。
-
- entry here。 And finally I get the two thresholds and I use them to filter the prediction and。
-
- I use ST。image to plot the corresponding images。 So very easy to use。 And I can do a lot more。
+ entry here。 And finally I get the two thresholds and I use them to filter the prediction and。 I use ST。image to plot the corresponding images。 So very easy to use。 And I can do a lot more。
 
  For instance I can directly test the model on whatever image I want。 So for instance here。
-
-
-
 ![](img/5650230baed0245b16b87a96032fe4fe_4.png)
 
  I have an upload widget。 So let's say I want to try it on a cat。 And here the model says。
-
-
-
 ![](img/5650230baed0245b16b87a96032fe4fe_6.png)
 
- it's a cat and it's pretty sure it's a cat。 So it's working well。 So let's say I want to。
+ it's a cat and it's pretty sure it's a cat。 So it's working well。 So let's say I want to。 try my model on edge cases。 Let's take this one for instance。 So obviously I don't have。
 
- try my model on edge cases。 Let's take this one for instance。 So obviously I don't have。
+ lion in the New Zealand train or the test sets。 And with ST。image it's very easy to build a。 UI to test the model on whatever image you want。 So here I get the image and the model。
 
- lion in the New Zealand train or the test sets。 And with ST。image it's very easy to build a。
+ says surprisingly that it's pretty sure it's a dog。 How do I do that？ The code is a bit longer。 but not that long。 I have a function that loads the model with tons of flow。 I get the。
 
- UI to test the model on whatever image you want。 So here I get the image and the model。
+ upload widget with ST。file uploader。 I get the uploaded image in here。 It's a pillow image。 And if I upload it a file then I open the file and I pass it to the model on print prediction。
 
- says surprisingly that it's pretty sure it's a dog。 How do I do that？ The code is a bit longer。
+ And that's it。 So what if now we combine strength of both tools？ On one hand the DVC。 is very good at tracking the data but it does not provide any tool to build complex visualization。
 
- but not that long。 I have a function that loads the model with tons of flow。 I get the。
+ On the other hand， Sremit is very good at building interactive web app on complex data。 visualization。 So let's combine them to build something like that。 So here it's a table of。
 
- upload widget with ST。file uploader。 I get the uploaded image in here。 It's a pillow image。
+ experiments application。 Here you have a table with all experiments。 It's very similar to。 what you get when you run DVCX show but it's in Sremit。 So since it's in Sremit I can do。
 
- And if I upload it a file then I open the file and I pass it to the model on print prediction。
+ whatever I want with it。 For instance I can sort the experiment by accuracy。 And since。 this data is available I can easily plot whatever I want。
 
- And that's it。 So what if now we combine strength of both tools？ On one hand the DVC。
+ So this is the accuracy across experiments， but I can print the number of frozen epochs and I can have more complex plots。 So here， for instance I plot the number of unfrozen epochs against the accuracy but I can change。
 
- is very good at tracking the data but it does not provide any tool to build complex visualization。
+ dynamically this。 So all this interface， it's the code is here。 So it's a bit longer but。 it's not that long。 And the most important part in this code is these three lines because。
 
- On the other hand， Sremit is very good at building interactive web app on complex data。
+ they are the ones where I fetch the experiment information。 So let's see how it works。 First。 I create a DVC repo in Python。 It's very similar to the Git Python API。 And then I retrieve。
 
- visualization。 So let's combine them to build something like that。 So here it's a table of。
+ all the experiment commits by running this experiment。ls。 It's similar to DVCX list command。 but it's in Python。 And what it gets you， it's this dictionary where you have the parent。
 
- experiments application。 Here you have a table with all experiments。 It's very similar to。
+ commit here and the list of experiments that derives from that commit。 Now that I have。 this I can run DVCX to show but in Python providing the references here。 And what I will get is。
 
- what you get when you run DVCX show but it's in Sremit。 So since it's in Sremit I can do。
+ anything I need。 Here I have the two parent commits and for each of them I have for each。 experiment。 The list of used parameters。 The dependencies， the output， the metrics and the。
 
- whatever I want with it。 For instance I can sort the experiment by accuracy。 And since。
+ experience name。 So once I get that it's very easy to build the table of experiment apps。 because all I need to do is to use streamlits to show the data the way I want。 So here I。
 
- this data is available I can easily plot whatever I want。
+ retrieve the experiment metadata。 I just flatten the data and put it in the data frame。 I use a edgid streamlits library。 It's originally a JavaScript library and there is a streamlit。
 
- So this is the accuracy across experiments， but I can print the number of frozen epochs and I can have more complex plots。
+ component that wraps it。 And I show the table here and after that it is very easy to build。 the plots with streamlits。 Something else I could do is a DIFing app。 It's similar to， when you cut。
 
- So here， for instance I plot the number of unfrozen epochs against the accuracy but I can change。
+ You want to compare branches when you do a pre-request for instance to see。 the difference between your cut。 Here it's the same you want to compare to model。 So let's。
 
- dynamically this。 So all this interface， it's the code is here。 So it's a bit longer but。
+ say I want to see the images on which two models disagree。 So here I have two selectors。 to select the experiment I want to compare。 So let's say I take this one。 Okay， seems the， agree。
 
- it's not that long。 And the most important part in this code is these three lines because。
+ Okay。 So this one is very interesting because as you can see the accuracy is the。 same but there is two images on which the model disagree。 So the two labels are cut and。
 
- they are the ones where I fetch the experiment information。 So let's see how it works。 First。
+ the dogs and the first model is wrong on the first image and the second model is wrong on。 the second image。 And here I see the two images。 So this is the code to build this DIFing app。
 
- I create a DVC repo in Python。 It's very similar to the Git Python API。 And then I retrieve。
+ And what is important in here is the way I load the data because to build to know on。 which images the model disagree I need to load the predictions that are tracked on different。
 
- all the experiment commits by running this experiment。ls。 It's similar to DVCX list command。
+ commits。 So the predictions file it's not on my current raw space it's stored in another， commit。 So to do that I use the DVC open function which is very similar to the core open Python。
 
- but it's in Python。 And what it gets you， it's this dictionary where you have the parent。
+ function except that it takes a commit revision as an argument and what it will do is that。 it will yield a file descriptor that you can use to do whatever you want。 Here I just read。
 
- commit here and the list of experiments that derives from that commit。 Now that I have。
+ the CZ file with PONAS。 So once I have this it's very easy to build this because all I。 need to do is to retrieve the two commits I selected from the select box here。 This is。
 
- this I can run DVCX to show but in Python providing the references here。 And what I will get is。
+ the first commit revision and then I load the prediction providing the commit。 And once。 I have the data frame I simply can merge them and compute which images the most model disagree。
 
- anything I need。 Here I have the two parent commits and for each of them I have for each。
+ And that it。 So to sum up if we take a step back as I show you Streamit allows to build。 a very custom web application that allows you to compare experiment， organize your experiments。
 
- experiment。 The list of used parameters。 The dependencies， the output， the metrics and the。
+ and it's also very convenient for collaboration because as a Streamit it's just Python script。 you can just version them you can share them across the team and you can improve them during。
 
- experience name。 So once I get that it's very easy to build the table of experiment apps。
+ the project lifetime。 So to sum up the main advantages of this approach is that you can。 do whatever you want with the UI。 It's very customizable。 You can make evolve the UI and。
 
- because all I need to do is to use streamlits to show the data the way I want。 So here I。
+ there is practically no limit to what you can do whenever Streamit allows you to do， it。 And it's close to zero set up time because you just pip install Devs in Streamit and you。
 
- retrieve the experiment metadata。 I just flatten the data and put it in the data frame。
+ can go there is no infrastructure behind it you don't need Kubernetes or whatever。 On the。 other hand it requires that you have some software engineering skills because if in your team。
 
- I use a edgid streamlits library。 It's originally a JavaScript library and there is a streamlit。
+ you have data scientists that are not comfortable with software engineering it might not be a。 good idea probably a better idea to go with MLflow or framework like that。 And since it's。
 
- component that wraps it。 And I show the table here and after that it is very easy to build。
+ code you have to maintain that code and to deal with technical depth。 And the next step。 here I just show you a few examples of Streamit apps but it's local you have to start it locally。
 
- the plots with streamlits。 Something else I could do is a DIFing app。 It's similar to， when you cut。
+ and the next step is to deploy them in remote servers so that anyone can access them including。 non-technical team members。 And there are many other tools that are provided with Streamit。
 
- You want to compare branches when you do a pre-request for instance to see。
-
- the difference between your cut。 Here it's the same you want to compare to model。 So let's。
-
- say I want to see the images on which two models disagree。 So here I have two selectors。
-
- to select the experiment I want to compare。 So let's say I take this one。 Okay， seems the， agree。
-
- Okay。 So this one is very interesting because as you can see the accuracy is the。
-
- same but there is two images on which the model disagree。 So the two labels are cut and。
-
- the dogs and the first model is wrong on the first image and the second model is wrong on。
-
- the second image。 And here I see the two images。 So this is the code to build this DIFing app。
-
- And what is important in here is the way I load the data because to build to know on。
-
- which images the model disagree I need to load the predictions that are tracked on different。
-
- commits。 So the predictions file it's not on my current raw space it's stored in another， commit。
-
- So to do that I use the DVC open function which is very similar to the core open Python。
-
- function except that it takes a commit revision as an argument and what it will do is that。
-
- it will yield a file descriptor that you can use to do whatever you want。 Here I just read。
-
- the CZ file with PONAS。 So once I have this it's very easy to build this because all I。
-
- need to do is to retrieve the two commits I selected from the select box here。 This is。
-
- the first commit revision and then I load the prediction providing the commit。 And once。
-
- I have the data frame I simply can merge them and compute which images the most model disagree。
-
- And that it。 So to sum up if we take a step back as I show you Streamit allows to build。
-
- a very custom web application that allows you to compare experiment， organize your experiments。
-
- and it's also very convenient for collaboration because as a Streamit it's just Python script。
-
- you can just version them you can share them across the team and you can improve them during。
-
- the project lifetime。 So to sum up the main advantages of this approach is that you can。
-
- do whatever you want with the UI。 It's very customizable。 You can make evolve the UI and。
-
- there is practically no limit to what you can do whenever Streamit allows you to do， it。
-
- And it's close to zero set up time because you just pip install Devs in Streamit and you。
-
- can go there is no infrastructure behind it you don't need Kubernetes or whatever。 On the。
-
- other hand it requires that you have some software engineering skills because if in your team。
-
- you have data scientists that are not comfortable with software engineering it might not be a。
-
- good idea probably a better idea to go with MLflow or framework like that。 And since it's。
-
- code you have to maintain that code and to deal with technical depth。 And the next step。
-
- here I just show you a few examples of Streamit apps but it's local you have to start it locally。
-
- and the next step is to deploy them in remote servers so that anyone can access them including。
-
- non-technical team members。 And there are many other tools that are provided with Streamit。
-
- and Devs for instance with Devs you have a CML that stands for continuous machine learning。
-
- it allows you to branch your pipeline execution with your CI/CD so whenever you push on some。
+ and Devs for instance with Devs you have a CML that stands for continuous machine learning。 it allows you to branch your pipeline execution with your CI/CD so whenever you push on some。
 
  branches it will automatically trigger training or something like that。 So that's it for me。
-
-
-
 ![](img/5650230baed0245b16b87a96032fe4fe_8.png)
 
- thank you for your attention and you can find the code for the pipelines and the slides on。
+ thank you for your attention and you can find the code for the pipelines and the slides on。 this repo and you can find me on Twitter or on GitHub。 Thank you very much。
 
- this repo and you can find me on Twitter or on GitHub。 Thank you very much。
-
- And for the questions if you have any Antoine will be on the corridor to see what your questions。
-
- and thank you all to everyone。 Thank you。
+ And for the questions if you have any Antoine will be on the corridor to see what your questions。 and thank you all to everyone。 Thank you。
