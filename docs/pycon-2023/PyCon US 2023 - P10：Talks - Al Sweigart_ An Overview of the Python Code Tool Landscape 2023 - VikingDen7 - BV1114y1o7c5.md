@@ -1,0 +1,1064 @@
+# PyCon US 2023 - P10：Talks - Al Sweigart_ An Overview of the Python Code Tool Landscape 2023 - VikingDen7 - BV1114y1o7c5
+
+ Right here first， the player's helping to continue to touch the flight。
+
+ The interviewer calls on the old view， typing for the flight。
+
+
+
+![](img/a07ae698bae1d8acb63b27d3fd265ee8_1.png)
+
+ I'm sorry， I shouldn't mention that。
+
+![](img/a07ae698bae1d8acb63b27d3fd265ee8_3.png)
+
+ I'm sorry， I'm sorry。 Thank you so much for coming to this resolvable talk。
+
+ I'm just talking about recently when we do one of the more important important things。
+
+ But on my flight first， I used to have a satellite flight of work。 I mean， they went back to 1。4。
+
+ and they nearly changed the entire flight。 And now they're continuing to maintain their current tension and power progress。
+
+ So， I have to wait and wait until the people have held off them。
+
+ And then they're going to get to the flight。 And then they'll get to the flight。
+
+ And then they'll have about two hours in the flight。 And then they'll have to go back to the flight。
+
+ And then another thing happened。 I fell in love with this beautiful stranger， like Peter Redford。
+
+ And I'm waiting for him to be able to get to the mountains。
+
+ I thought my entire old flight was just like a human plane。
+
+ And then until they fell in love with his father and his mother， they were going to become。
+
+
+
+![](img/a07ae698bae1d8acb63b27d3fd265ee8_5.png)
+
+ And then he got to the day， and he got to the mountains。 And then he got to the flight。
+
+ And I thought， I'm going to get to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。
+
+
+
+![](img/a07ae698bae1d8acb63b27d3fd265ee8_7.png)
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+
+
+![](img/a07ae698bae1d8acb63b27d3fd265ee8_9.png)
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+
+
+![](img/a07ae698bae1d8acb63b27d3fd265ee8_11.png)
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。
+
+![](img/a07ae698bae1d8acb63b27d3fd265ee8_13.png)
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。
+
+![](img/a07ae698bae1d8acb63b27d3fd265ee8_15.png)
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。
+
+![](img/a07ae698bae1d8acb63b27d3fd265ee8_17.png)
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+ And then he got to the flight。 And then he got to the flight。 And then he got to the flight。
+
+
+
+![](img/a07ae698bae1d8acb63b27d3fd265ee8_19.png)
+
+ And then he got to the flight。 And then he got to the flight。
+
