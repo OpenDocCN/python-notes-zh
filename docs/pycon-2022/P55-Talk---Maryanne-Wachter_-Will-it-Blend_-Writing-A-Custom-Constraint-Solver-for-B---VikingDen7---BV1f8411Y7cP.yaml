@@ -470,6 +470,8 @@
   id: totrans-53
   prefs: []
   type: TYPE_NORMAL
+  zh: 要将 Pymaxian 集成到一个成熟的开源 3D 图形程序 Blender 中。这个漫画在接下来的几张幻灯片中会更容易理解，但不用说，与 Blender
+    Python、系统 Python 和虚拟 Python 之间有很多乐趣。那么什么是 Blender？正如我提到的，它是免费的开源软件，采用新的 GPL 许可证。
 - en: I've only listed a few of the possibilities with Blender， which will exceed
     the capabilities。 of Rhinoceros， which was the other three modeling program I
     was familiar with。 The figure I。 had to do anything in Blender is like drinking
@@ -478,6 +480,8 @@
   id: totrans-54
   prefs: []
   type: TYPE_NORMAL
+  zh: 我仅列出了与 Blender 一些可能性，这些可能性将超出我熟悉的另一个三维建模程序 Rhinoceros 的能力。在 Blender 中做任何事情就像是从消防栓里喝水。有很多不同的事情可以做。我在
+    Blender 的探索仅仅是触及了表面。
 - en: with Pymaxian because I was just mainly working with meshes。 Blender also has
     a really well-developed， Python API that most of its underlying code is written
     in C or C++。 So there's a very， robust Blender ecosystem of add-ons。 I've added
@@ -485,6 +489,8 @@
   id: totrans-55
   prefs: []
   type: TYPE_NORMAL
+  zh: 因为我主要在处理网格，使用 Pymaxian 也很方便。Blender 还有一个非常成熟的 Python API，其大部分底层代码是用 C 或 C++
+    编写的。因此，Blender 生态系统中有非常丰富的附加组件。我添加了一些我最喜欢的来自建筑环境的组件。
 - en: So Sverchock is more general purpose because it's a visual programming interface
     that's。 similar to Grasshopper， which is really commonly used by architects with
     Rhinoc。 So how do you get your newly minted scytheon package into the Blender
@@ -493,6 +499,9 @@
   id: totrans-56
   prefs: []
   type: TYPE_NORMAL
+  zh: Sverchock 更加通用，因为它是一个可视化编程接口，类似于 Grasshopper，后者在使用 Rhinoc 的建筑师中非常常见。那么你如何将新创建的
+    scytheon 包放入 Blender Python 中呢？你需要针对与 Blender Python 相同版本的 Blender Python 来构建
+    scytheon。
 - en: You can interrogate everything about your Blender Python install from the scripting
     tab。 There's an IPython interface to basically put in sys。path or sys。version
     info。 I decided。 to sim link my scytheon package into the site packages for the
@@ -500,6 +509,8 @@
   id: totrans-57
   prefs: []
   type: TYPE_NORMAL
+  zh: 你可以通过脚本选项卡调查关于你的 Blender Python 安装的所有信息。实际上有一个 IPython 接口，可以输入 sys.path 或 sys.version
+    信息。我决定将我的 scytheon 包符号链接到 Blender Python 安装的站点包中，而不是复制或与 Blender Python 一起构建它。
 - en: And then so now Pymaxian is part of the Blender site packages， but I still need
     to add how。 Blender is going to interact with that package through its UI and
     operators。 So there's a。 lot of disagreement about what the best way to develop
@@ -508,6 +519,8 @@
   id: totrans-58
   prefs: []
   type: TYPE_NORMAL
+  zh: 现在 Pymaxian 是 Blender 站点包的一部分，但我仍然需要添加 Blender 将如何通过其 UI 和操作与该包进行交互。因此，对于使用
+    Blender 的最佳开发方式存在很多争议。我通常会在每次修改时创建一个新的实例并重新启动 Blender。
 - en: hot reloading doesn't always work。 And it's efficacy keeps changing as Blender
     evolves。 like things that work in 2。9 for relot reloading don't necessarily work
     in 3。1。 But at a minimum。 I do recommend adding Blender to launch from the command
@@ -516,6 +529,8 @@
   id: totrans-59
   prefs: []
   type: TYPE_NORMAL
+  zh: 热重载并不总是有效。随着 Blender 的演变，它的有效性也在不断变化。例如，在 2.9 版中有效的重载方法在 3.1 版中不一定有效。但至少，我确实推荐从命令行启动
+    Blender，因为那样你所有的输出或调试信息都会打印到一个单独的控制台窗口中。所以我将我的 Blender 包放入了。
 - en: the add-ons directory also using a symbolic link。 Sorry。 Okay。 So this is the
     typical file structure for a basic Blender add-on。 And on。 the right you can see
     that there's this side menu and that's actually the menu that I created。 for the
@@ -523,6 +538,8 @@
   id: totrans-60
   prefs: []
   type: TYPE_NORMAL
+  zh: 附加组件目录也使用符号链接。抱歉。好吧。这是基本 Blender 附加组件的典型文件结构。在右侧，你可以看到有一个侧边菜单，那实际上是我为 Blender
+    的 Pymaxian 接口创建的菜单。你可以在其中使用 Pymaxian 的 Blender 上下文。
 - en: is the object in editing context on one of the tabs。 So I have a number of buttons
     that are part of this menu as well as some pop-out panels。 And the Blender operator
     files where you're going to find all of your UI actions that call。 Pymaxian。 So
