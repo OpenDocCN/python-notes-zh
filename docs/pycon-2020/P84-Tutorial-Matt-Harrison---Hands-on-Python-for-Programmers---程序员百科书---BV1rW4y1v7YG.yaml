@@ -2441,6 +2441,8 @@
   id: totrans-274
   prefs: []
   type: TYPE_NORMAL
+  zh: 我会写一个小测试来测试读取csv，我不打算写一个来获取url，只是因为我不想在这里进行网络流量。但我会写一个来测试读取csv，因此单元测试模块遵循x unit范例，x
+    unit范例来自于small talk。x unit范例说如果你要测试某些东西，你需要进行一些设置，然后调用你的单元。
 - en: make some assertion about the call to your unit and then you do some tear down
     the setup and tear。 down in order to get your test in a state where they will
     run consistently in our case um our setup。 would be making sure that we have some
@@ -2449,6 +2451,7 @@
   id: totrans-275
   prefs: []
   type: TYPE_NORMAL
+  zh: 对你的单元调用做一些断言，然后进行一些拆卸，设置和拆卸，以便让你的测试处于一种可以一致运行的状态。在我们的例子中，我们的设置是确保我们在磁盘上有一些csv文件，在这种情况下我确实在磁盘上有一个csv文件，所以我并不打算在这里详细说明设置，但如果这是生产环境，我会。
 - en: would want to make sure that i have this csv file on there so you might want
     to do that if you're。 doing production i'm not really going to go over that just
     i'll just sort of say be aware of that if。 i move the csv file since this test
@@ -2457,6 +2460,7 @@
   id: totrans-276
   prefs: []
   type: TYPE_NORMAL
+  zh: 我想确保我在这里有这个csv文件，所以如果你正在进行生产，你可能想要这样做。我并不打算详细说明，只想提醒你注意，如果我移动csv文件，由于这个测试不依赖于它，它将会失败，所以我们将说，结果等于读取csv，我们将说covid。
 - en: dot csv and then just give us a result and i'm also going to say self dot assert
     equals and i'm going。 to assert that the the length of res whatever it is i think
     it's 2014 or something let's do that and。 we'll see what happens here okay so
@@ -2466,6 +2470,7 @@
   id: totrans-277
   prefs: []
   type: TYPE_NORMAL
+  zh: .csv，然后给我们一个结果，我还将说self.assertEquals，我将断言res的长度，无论它是什么，我认为是2014之类的，我们来试试，看看会发生什么。因此，这就是我们的测试，这里调用我们的单元，而这里进行了一些断言。你会注意到assertEquals，这看起来像。
 - en: what's called camel casing and over here i'm using underscores between words
     uh so again this is due。 to the fact that this unit test library came from java
     this is the naming images that java uses。 python there's a document called pepe
@@ -2474,6 +2479,7 @@
   id: totrans-278
   prefs: []
   type: TYPE_NORMAL
+  zh: 这里所说的叫做驼峰命名法，而我在这里使用的是下划线分隔单词。这是因为这个单元测试库来源于java，这是java使用的命名方式。Python中有一个文档叫做pepe，建议不要使用这种命名约定，然而，Python标准库内部存在一些命名约定的矛盾。
 - en: are violated so just just be aware of that fyi okay at the bottom of this i'm
     going to put a little。 snippet here i'm going to say if under name equals equals
     the stringed under main so this little snippet。 right here if this is true this
@@ -2483,6 +2489,8 @@
   id: totrans-279
   prefs: []
   type: TYPE_NORMAL
+  zh: 被违反了，所以请注意这一点，供你参考。在此底部，我将放一个小片段，我会说如果__name__等于字符串__main__，那么这个小片段如果成立，这意味着我们正在执行这个文件。让我们放一个else，否则我们正在将这个文件作为库加载，我即将打印加载，如果我在执行它，我想说unit
+    test。
 - en: not main so in a unit test module there's a main function if i run that what
     it will do is it will。 look for any classes at subclass unit test look for any
     methods that are test that start with test。 in there and it will run those and
@@ -2492,6 +2500,7 @@
   id: totrans-280
   prefs: []
   type: TYPE_NORMAL
+  zh: 在单元测试模块中有一个主函数。如果我运行它，它将寻找任何子类为unit test的类，寻找任何以test开头的方法，并运行它们，最后报告结果。因此此时我们已经准备好我们的基本单元测试，我们将来到这里运行并说运行它，我将把它放在同一目录中。
 - en: as our covet here it's going to ask us to save it and i'm going to say that
     as test underscore covet。 i don't need to save it as this but it's good naming
     convention to use start naming it with test。 because there are multiple test run
