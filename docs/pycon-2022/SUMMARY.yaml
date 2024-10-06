@@ -3,94 +3,111 @@
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[PyCon 2022 会议笔记](README.md)'
 - en: '[P1：Charlas - Ariel Ortiz_ Match case para principiantes - VikingDen7 - BV1f8411Y7cP](P1-Charlas---Ariel-Ortiz_-Match-case-para-principiantes---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-1
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P1：演讲 - Ariel Ortiz_ 初学者的匹配案例 - VikingDen7 - BV1f8411Y7cP](P1-Charlas---Ariel-Ortiz_-Match-case-para-principiantes---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P10：Keynote - Sara Issaoun - VikingDen7 - BV1f8411Y7cP](P10-Keynote---Sara-Issaoun---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-2
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P10：主题演讲 - Sara Issaoun - VikingDen7 - BV1f8411Y7cP](P10-Keynote---Sara-Issaoun---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P11：Keynote - Steering Council Panel - VikingDen7 - BV1f8411Y7cP](P11-Keynote---Steering-Council-Panel---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-3
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P11：主题演讲 - 领导委员会小组 - VikingDen7 - BV1f8411Y7cP](P11-Keynote---Steering-Council-Panel---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P12：Lightning Talks - Day 1 - VikingDen7 - BV1f8411Y7cP](P12-Lightning-Talks---Day-1---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-4
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P12：闪电演讲 - 第 1 天 - VikingDen7 - BV1f8411Y7cP](P12-Lightning-Talks---Day-1---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P13：Lightning Talks - Day 2 AM - VikingDen7 - BV1f8411Y7cP](P13-Lightning-Talks---Day-2-AM---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-5
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P13：闪电演讲 - 第 2 天 上午 - VikingDen7 - BV1f8411Y7cP](P13-Lightning-Talks---Day-2-AM---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P14：Lightning Talks - Day 2 PM - VikingDen7 - BV1f8411Y7cP](P14-Lightning-Talks---Day-2-PM---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-6
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P14：闪电演讲 - 第 2 天 下午 - VikingDen7 - BV1f8411Y7cP](P14-Lightning-Talks---Day-2-PM---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P15：Lightning Talks - Day 3 - VikingDen7 - BV1f8411Y7cP](P15-Lightning-Talks---Day-3---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-7
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P15：闪电演讲 - 第 3 天 - VikingDen7 - BV1f8411Y7cP](P15-Lightning-Talks---Day-3---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P16：Talk - A. Jesse Jiryu Davis_ Why Should Async Get All The Love   Advanced
     Contro - VikingDen7 - BV1f8411Y7cP](P16-Talk---A--Jesse-Jiryu-Davis_-Why-Should-Async-Get-All-The-Love---Advanced-Contro---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-8
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P16：演讲 - A. Jesse Jiryu Davis_ 为什么异步值得关注   高级控制 - VikingDen7 - BV1f8411Y7cP](P16-Talk---A--Jesse-Jiryu-Davis_-Why-Should-Async-Get-All-The-Love---Advanced-Contro---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P17：Talk - Aaron Stephens_ Python for Threat Intelligence - VikingDen7 - BV1f8411Y7cP](P17-Talk---Aaron-Stephens_-Python-for-Threat-Intelligence---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-9
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P17：演讲 - Aaron Stephens_ Python 在威胁情报中的应用 - VikingDen7 - BV1f8411Y7cP](P17-Talk---Aaron-Stephens_-Python-for-Threat-Intelligence---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P18：Talk - Ajinkya Rajput_Ashish Bijlani_Bad actors vs our community_ detecting
     soft - VikingDen7 - BV1f8411Y7cP](P18-Talk---Ajinkya-Rajput_Ashish-Bijlani_Bad-actors-vs-our-community_-detecting-soft---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-10
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P18：演讲 - Ajinkya Rajput_Ashish Bijlani_ 不良行为者与我们的社区_ 检测软 - VikingDen7 - BV1f8411Y7cP](P18-Talk---Ajinkya-Rajput_Ashish-Bijlani_Bad-actors-vs-our-community_-detecting-soft---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P19：Talk - Amit Saha_ Implementing shared functionality using Middleware -
     VikingDen7 - BV1f8411Y7cP](P19-Talk---Amit-Saha_-Implementing-shared-functionality-using-Middleware---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-11
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P19：演讲 - Amit Saha_ 使用中间件实现共享功能 - VikingDen7 - BV1f8411Y7cP](P19-Talk---Amit-Saha_-Implementing-shared-functionality-using-Middleware---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P2：Charlas - Cristián Maureira-Fredes_Denny Perez_  Uniendo a las comunidades
     hispa - VikingDen7 - BV1f8411Y7cP](P2-Charlas---Cristi-n-Maureira-Fredes_Denny-Perez_--Uniendo-a-las-comunidades-hispa---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-12
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P2：演讲 - Cristián Maureira-Fredes_Denny Perez_ 连接西班牙语社区 - VikingDen7 - BV1f8411Y7cP](P2-Charlas---Cristi-n-Maureira-Fredes_Denny-Perez_--Uniendo-a-las-comunidades-hispa---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P20：Talk - Anthony Shaw_ Write faster Python! Common performance anti patterns
     - VikingDen7 - BV1f8411Y7cP](P20-Talk---Anthony-Shaw_-Write-faster-Python--Common-performance-anti-patterns---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-13
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P20：演讲 - Anthony Shaw_ 更快地编写 Python！常见性能反模式 - VikingDen7 - BV1f8411Y7cP](P20-Talk---Anthony-Shaw_-Write-faster-Python--Common-performance-anti-patterns---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P21：Talk - Antoine Toubhans_ Flexible ML Experiment Tracking System for Python
     Coder - VikingDen7 - BV1f8411Y7cP](P21-Talk---Antoine-Toubhans_-Flexible-ML-Experiment-Tracking-System-for-Python-Coder---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-14
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P21：演讲 - Antoine Toubhans_ 为 Python 程序员设计的灵活 ML 实验追踪系统 - VikingDen7 - BV1f8411Y7cP](P21-Talk---Antoine-Toubhans_-Flexible-ML-Experiment-Tracking-System-for-Python-Coder---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P22：Talk - Benjamin _Zags_ Zagorsky_ Handling Timezones in Python - VikingDen7
     - BV1f8411Y7cP](P22-Talk---Benjamin-_Zags_-Zagorsky_-Handling-Timezones-in-Python---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-15
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P22：演讲 - Benjamin _Zags_ Zagorsky_ 在 Python 中处理时区 - VikingDen7 - BV1f8411Y7cP](P22-Talk---Benjamin-_Zags_-Zagorsky_-Handling-Timezones-in-Python---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P23：Talk - Benjamin Bariteau_ How We Migrated 3.8 Million Lines of Python
     2 Without - VikingDen7 - BV1f8411Y7cP](P23-Talk---Benjamin-Bariteau_-How-We-Migrated-3-8-Million-Lines-of-Python-2-Without---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-16
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P23：演讲 - Benjamin Bariteau_ 我们如何迁移 380 万行 Python 2 而不 - VikingDen7 - BV1f8411Y7cP](P23-Talk---Benjamin-Bariteau_-How-We-Migrated-3-8-Million-Lines-of-Python-2-Without---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P24：Talk - Bernát Gábor_ How we standardized editable installs   PEP 660 vs  PEP
     662 - VikingDen7 - BV1f8411Y7cP](P24-Talk---Bern-t-G-bor_-How-we-standardized-editable-installs---PEP-660-vs--PEP-662---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-17
@@ -292,82 +309,96 @@
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P50：演讲 - Kevin Kho_Han Wang_ 比较不同的Python和Pandas扩展方式 - VikingDen7 - BV1f8411Y7cP](P50-Talk---Kevin-Kho_Han-Wang_-Comparing-the-Different-Ways-to-Scale-Python-and-Pand---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P51：Talk - Kevin Modzelewski_ Writing performant code for modern Python interpreters
     - VikingDen7 - BV1f8411Y7cP](P51-Talk---Kevin-Modzelewski_-Writing-performant-code-for-modern-Python-interpreters---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-47
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P51：演讲 - Kevin Modzelewski_ 为现代Python解释器编写高效代码 - VikingDen7 - BV1f8411Y7cP](P51-Talk---Kevin-Modzelewski_-Writing-performant-code-for-modern-Python-interpreters---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P52：Talk - Liran Haimovitch_ Effective Protobuf_ Everything You Wanted To
     Know, But - VikingDen7 - BV1f8411Y7cP](P52-Talk---Liran-Haimovitch_-Effective-Protobuf_-Everything-You-Wanted-To-Know--But---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-48
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P52：演讲 - Liran Haimovitch_ 有效的Protobuf_ 一切你想知道的，但 - VikingDen7 - BV1f8411Y7cP](P52-Talk---Liran-Haimovitch_-Effective-Protobuf_-Everything-You-Wanted-To-Know--But---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P53：Talk - Maria Jose Molina Contreras_ Better Air, Better Health  Creating
     an indoo - VikingDen7 - BV1f8411Y7cP](P53-Talk---Maria-Jose-Molina-Contreras_-Better-Air--Better-Health--Creating-an-indoo---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-49
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P53：演讲 - Maria Jose Molina Contreras_ 更好的空气，更好的健康  创建一个室内 - VikingDen7 - BV1f8411Y7cP](P53-Talk---Maria-Jose-Molina-Contreras_-Better-Air--Better-Health--Creating-an-indoo---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P54：Talk - Mario Corchero_ Finding penguins with a snake  Linux features for
     a Pytho - VikingDen7 - BV1f8411Y7cP](P54-Talk---Mario-Corchero_-Finding-penguins-with-a-snake--Linux-features-for-a-Pytho---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-50
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P54：演讲 - Mario Corchero_ 用蛇寻找企鹅  Linux在Python中的功能 - VikingDen7 - BV1f8411Y7cP](P54-Talk---Mario-Corchero_-Finding-penguins-with-a-snake--Linux-features-for-a-Pytho---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P55：Talk - Maryanne Wachter_ Will it Blend_ Writing A Custom Constraint Solver
     for B - VikingDen7 - BV1f8411Y7cP](P55-Talk---Maryanne-Wachter_-Will-it-Blend_-Writing-A-Custom-Constraint-Solver-for-B---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-51
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P55：演讲 - Maryanne Wachter_ 它能混合吗_ 为B编写自定义约束求解器 - VikingDen7 - BV1f8411Y7cP](P55-Talk---Maryanne-Wachter_-Will-it-Blend_-Writing-A-Custom-Constraint-Solver-for-B---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P56：Talk - Mason Egger_ Write Docs Devs Love_ Ten Tips To Level Up Your Tech
     Writing - VikingDen7 - BV1f8411Y7cP](P56-Talk---Mason-Egger_-Write-Docs-Devs-Love_-Ten-Tips-To-Level-Up-Your-Tech-Writing---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-52
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P56：演讲 - Mason Egger_ 写出开发者喜爱的文档_ 提升技术写作的十个技巧 - VikingDen7 - BV1f8411Y7cP](P56-Talk---Mason-Egger_-Write-Docs-Devs-Love_-Ten-Tips-To-Level-Up-Your-Tech-Writing---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P57：Talk - Meredydd Luff_ Building a Python Code Completer - VikingDen7 -
     BV1f8411Y7cP](P57-Talk---Meredydd-Luff_-Building-a-Python-Code-Completer---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-53
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P57：演讲 - Meredydd Luff_ 构建Python代码完成器 - VikingDen7 - BV1f8411Y7cP](P57-Talk---Meredydd-Luff_-Building-a-Python-Code-Completer---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P58：Talk - Miranda Auhl_ Animating NFL play by play data using matplotlib''s
     FuncAnim - VikingDen7 - BV1f8411Y7cP](P58-Talk---Miranda-Auhl_-Animating-NFL-play-by-play-data-using-matplotlib-s-FuncAnim---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-54
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P58：演讲 - Miranda Auhl_ 使用matplotlib的FuncAnim为NFL逐场数据动画化 - VikingDen7 - BV1f8411Y7cP](P58-Talk---Miranda-Auhl_-Animating-NFL-play-by-play-data-using-matplotlib-s-FuncAnim---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P59：Talk - Mohammad Athar_ D&D and G  a daring tale of Dungeons and Dragons
     and also - VikingDen7 - BV1f8411Y7cP](P59-Talk---Mohammad-Athar_-D-D-and-G--a-daring-tale-of-Dungeons-and-Dragons-and-also---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-55
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P59：演讲 - Mohammad Athar_ D&D和G  一个大胆的地下城与龙的故事 - VikingDen7 - BV1f8411Y7cP](P59-Talk---Mohammad-Athar_-D-D-and-G--a-daring-tale-of-Dungeons-and-Dragons-and-also---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P6：Keynote - Łukasz Langa - VikingDen7 - BV1f8411Y7cP](P6-Keynote----ukasz-Langa---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-56
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P6：主题演讲 - Łukasz Langa - VikingDen7 - BV1f8411Y7cP](P6-Keynote----ukasz-Langa---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P60：Talk - Moshe Zadka_ Best Practices for Continuous Integration in Python
     V02 - VikingDen7 - BV1f8411Y7cP](P60-Talk---Moshe-Zadka_-Best-Practices-for-Continuous-Integration-in-Python-V02---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-57
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P60：演讲 - Moshe Zadka_ Python V02的持续集成最佳实践 - VikingDen7 - BV1f8411Y7cP](P60-Talk---Moshe-Zadka_-Best-Practices-for-Continuous-Integration-in-Python-V02---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P61：Talk - Nandita Viswanath and Sagar Aryal_ In house to open source  Stitching
     the - VikingDen7 - BV1f8411Y7cP](P61-Talk---Nandita-Viswanath-and-Sagar-Aryal_-In-house-to-open-source--Stitching-the---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-58
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P61：演讲 - Nandita Viswanath和Sagar Aryal_ 从内部到开源  将 - VikingDen7 - BV1f8411Y7cP](P61-Talk---Nandita-Viswanath-and-Sagar-Aryal_-In-house-to-open-source--Stitching-the---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P62：Talk - Nir Barazida_ Dock Your Jupyter Notebook - VikingDen7 - BV1f8411Y7cP](P62-Talk---Nir-Barazida_-Dock-Your-Jupyter-Notebook---VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-59
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P62：演讲 - Nir Barazida_ 将您的Jupyter Notebook停靠 - VikingDen7 - BV1f8411Y7cP](P62-Talk---Nir-Barazida_-Dock-Your-Jupyter-Notebook---VikingDen7---BV1f8411Y7cP.md)'
 - en: '[P63：Talk - Olivier Breuleux_ How to change Python (while it''s running) -
     VikingDen7 - BV1f8411Y7cP](P63-Talk---Olivier-Breuleux_-How-to-change-Python--while-it-s-running----VikingDen7---BV1f8411Y7cP.md)'
   id: totrans-60
