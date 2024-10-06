@@ -4,14 +4,17 @@
   prefs:
   - PREF_H1
   type: TYPE_NORMAL
+  zh: P26：演讲 - 克里斯托弗·阿里萨_ 从CSV文件构建NumPy数组，比Pan更快 - VikingDen7 - BV1114y1o7c5
 - en: Good afternoon everyone。 Thank you so much for joining me today's show。
   id: totrans-1
   prefs: []
   type: TYPE_NORMAL
+  zh: 大家下午好。非常感谢你们今天参加我的节目。
 - en: '![](img/b840ff5722b15db3c148661cdad8345d_1.png)'
   id: totrans-2
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/b840ff5722b15db3c148661cdad8345d_1.png)'
 - en: So a little bit about the need to show the good started。 I am Chief Technology
     Officer at。 RUSCA-CADER， Finance Plan， where I created an important health under。
     I've been partnering。 Python since 2000 and back then I was working my team team
@@ -20,6 +23,7 @@
   id: totrans-3
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以关于展示的需要，良好的开始。我是RUSCA-CADER的首席技术官，Finance Plan，在那里我创建了一个重要的健康项目。我自2000年以来一直在合作使用Python，当时我和我的团队在咖啡博物馆的观众中工作，音乐技术的教授。我觉得我不会在这里工作。
 - en: time for algorithmic composition and competition in musicology。 In 2012 however，
     I've been。 meeting the Python to build financial systems and that worked for me
     to build a site of training。 a pretty good site in the library built on an immutable
@@ -28,6 +32,7 @@
   id: totrans-4
   prefs: []
   type: TYPE_NORMAL
+  zh: 在音乐学中，算法创作和竞争的时间。然而在2012年，我开始接触Python来构建金融系统，这对我构建一个培训网站很有帮助。这个网站是基于不可变数据模型构建的相当不错的库网站。所以我们本周都在这里，构建20年的playcom，对吗？好吧，我仍在构建一些东西。
 - en: slightly different。 20 years of students in the parking and Python， all of you
     are， there as well。 right？ Well it turned out in 2000， 20 years ago， Python 2。3
     was reading。 which included the very first time the student-led computer in the
@@ -35,10 +40,12 @@
   id: totrans-5
   prefs: []
   type: TYPE_NORMAL
+  zh: 略有不同。20年的学生在停车场和Python，大家都在那里，对吗？好吧，结果在2000年，20年前，Python 2.3在使用。这包括第一次学生主导的计算机进入标准库，并且其中有一个名为student-in-的函数。
 - en: '![](img/b840ff5722b15db3c148661cdad8345d_3.png)'
   id: totrans-6
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/b840ff5722b15db3c148661cdad8345d_3.png)'
 - en: code right here。 And this is that core student-in-the- token I did。 the function
     called part-process star and then it's small。 And what this function。 does is
     process one character at a time with a giant switch that we've been controlling，
@@ -47,10 +54,12 @@
   id: totrans-7
   prefs: []
   type: TYPE_NORMAL
+  zh: 代码就在这里。这是我做的核心student-in-the-token。我创建了名为part-process star的函数，然后它很小。这个函数的作用是一次处理一个字符，配合我们控制的巨大开关状态。我们都知道我们在巨大开关屏幕后看到的东西。但是student-in-the-。
 - en: '![](img/b840ff5722b15db3c148661cdad8345d_5.png)'
   id: totrans-8
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/b840ff5722b15db3c148661cdad8345d_5.png)'
 - en: code is very efficient because it is too poor and it's configurable for a wide
     range of。 conditions in data。 So a basic reason you can take a scenario wrapping
     up screen that is。 representing the online and you can see that's good。 There
@@ -59,6 +68,7 @@
   id: totrans-9
   prefs: []
   type: TYPE_NORMAL
+  zh: 代码非常高效，因为它过于简单，并且可配置以适应各种数据条件。因此，你可以通过一个场景包裹屏幕，表示在线，你会发现这很好。在这里没有好的后端阅读器，我们也可以通过列表做到这一点，并且我们可以很漂亮地排放出来。
 - en: the building。 Now really the speaker of this new video is a highly conceivable。
     So here。 I did it across the internet， across in a state character， across the
     whole character。 and I always knew it possible to be an anarchist as expected。
@@ -66,6 +76,7 @@
   id: totrans-10
   prefs: []
   type: TYPE_NORMAL
+  zh: 现在，这个新视频的演讲者是一个高度可信的人。所以在这里，我在互联网上做到了这一点，跨越了状态字符，跨越了整个字符。我一直知道这可能是一个无政府主义者，正如预期的那样。现在这个新视频并没有做到所有事情。它跨越了道路，并不常见。
 - en: and it's a real and convenient column of data， by column。 So this new video
     doesn't help us with the detection of the present per column。 which is something
     useful， nor do we continue to follow their collections already。 Since， 2018。 the
@@ -74,6 +85,7 @@
   id: totrans-11
   prefs: []
   type: TYPE_NORMAL
+  zh: 它是一列真实且方便的数据，以列的形式。所以这个新视频对我们每列的现有检测没有帮助，这是有用的，也不继续跟踪他们已经收集的数据。自2018年以来，过去10年的中间，10年里没有时间教授一点点。
 - en: offered from a planter。 Now panders and Indian peers and youth does automatic
     take to take。 the government per column。 It has full support for CSU readers，
     die-electrics and disability。 And it has been a very good performance。 I often

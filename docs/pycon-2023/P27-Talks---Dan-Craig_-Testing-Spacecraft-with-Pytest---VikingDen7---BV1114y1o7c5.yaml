@@ -719,6 +719,7 @@
   id: totrans-91
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/6674bf40fbb047dd378dbcaf75e5c197_19.png)'
 - en: So， we can implement this by defining， three different folders in our test case。
     which is once a whole， once a flat-side， what we call the integrated。 test-oriented
     data in this environment， and in a bus file， we can define our test case once。
@@ -727,6 +728,7 @@
   id: totrans-92
   prefs: []
   type: TYPE_NORMAL
+  zh: 因此，我们可以通过在我们的测试案例中定义三个不同的文件夹来实现这一点。一次是整体，一次是平面侧，我们称之为集成测试导向的数据在这个环境中，而在一个总线文件中，我们可以在其中一个文件夹中定义我们的测试案例，然后只需将其导入到另一个中，然后只是这样。
 - en: it was where the logic happened， where we defined that same 60， three different
     tests。 So。 the one on the top is the six-to-all hardware， and then a test-to-hiddle
     environment。 where we wanted to handle a switch， so we can close that real。 And
@@ -735,16 +737,19 @@
   id: totrans-93
   prefs: []
   type: TYPE_NORMAL
+  zh: 这是逻辑发生的地方，我们定义了相同的60，三个不同的测试。所以，上面的一个是六到所有硬件，然后是测试到隐藏环境。我们希望处理一个开关，这样我们就能关闭那个真实的开关。然后，我们总是这样做，然后在环境的两侧整合它。
 - en: where we need to send the command into the bus。 And on the bottom， we just call
     it the user。 which takes 36。 And so， now， it makes a very easy test。 which has
     to only test the command in different environments。
   id: totrans-94
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们需要将命令发送到总线。而在底部，我们称之为用户。这个过程需要36。因此，现在，这个测试变得非常简单。它只需在不同的环境中测试命令。
 - en: '![](img/6674bf40fbb047dd378dbcaf75e5c197_21.png)'
   id: totrans-95
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/6674bf40fbb047dd378dbcaf75e5c197_21.png)'
 - en: But， in other cases， in other cases， we need to be prioritizing the test。 And
     in these cases。 our pilot system has a lot of layers of the dimension。 So， we
     have two controller nodes。 and one of them is from different receivers， which
@@ -753,6 +758,7 @@
   id: totrans-96
   prefs: []
   type: TYPE_NORMAL
+  zh: 但是，在其他情况下，我们需要优先考虑测试。在这些情况下，我们的试点系统有很多层次的维度。所以，我们有两个控制器节点。其中一个来自不同的接收器，两个都是双面的。并且在相同的时间可以单独在测试中发起。
 - en: And in each of those nodes， it is also looking at a majority vote。 of three
     different separation cases。 So， there's a lot of combinations of ways， that we
     could even。 you know， correct in file or not file to file a particular test。 The
@@ -760,10 +766,12 @@
   id: totrans-97
   prefs: []
   type: TYPE_NORMAL
+  zh: 在每个节点中，它也在查看三种不同分离情况的多数投票。所以，有很多组合方式，我们甚至可以，你知道，纠正文件或不文件的特定测试。解决这个问题的方法是对这些测试进行参数化。
 - en: '![](img/6674bf40fbb047dd378dbcaf75e5c197_23.png)'
   id: totrans-98
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/6674bf40fbb047dd378dbcaf75e5c197_23.png)'
 - en: because all of this is the command that it's written。 And we do this by， like，
     these tests do。 where we can have， you know， different tests for running， the
     full files。 and just a single string one， or two out of three separate issues。
@@ -771,16 +779,19 @@
   id: totrans-99
   prefs: []
   type: TYPE_NORMAL
+  zh: 因为所有这些都是写好的命令。我们这样做，就像这些测试一样。我们可以有，你知道的，不同的测试来运行完整的文件。只是一个单独的字符串，或者是三个单独问题中的两个。我们实现了所有八个文件的乘法。
 - en: just having different groups of interest here， to these tests。 And it can really
     do a good job of decreasing， the word-bought to the inlet of the test。 So。 sometimes
     that's not enough。
   id: totrans-100
   prefs: []
   type: TYPE_NORMAL
+  zh: 这里只是有不同的利益小组，来进行这些测试。它确实能很好地减少，这个字的引入到测试中。所以，有时候这还不够。
 - en: '![](img/6674bf40fbb047dd378dbcaf75e5c197_25.png)'
   id: totrans-101
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/6674bf40fbb047dd378dbcaf75e5c197_25.png)'
 - en: Sometimes， we need to make it more easy for these two versions。 And this will
     work primarily in two-family-to-school。 So， here we have， and this will be。 a
     two different consumers on this test， but controller。 And instead。 we look at
@@ -789,15 +800,18 @@
   id: totrans-102
   prefs: []
   type: TYPE_NORMAL
+  zh: 有时候，我们需要让这两个版本变得更简单。这将主要在双家庭到学校的环境中工作。所以，在这里我们有，这将是。这两个不同的消费者在这个测试中，但控制器。相反。我们查看你的一个运行较多的测试，这两个节点上都是相同的测试，我们选择了这些节点。所以。
 - en: does that mean I have to parameterize， my own， you know， and obviously， my test
     in my test， no。 I can parameterize one system。
   id: totrans-103
   prefs: []
   type: TYPE_NORMAL
+  zh: 这是否意味着我必须参数化我自己的，你知道的，显然，我的测试在我的测试中，不。我可以参数化一个系统。
 - en: '![](img/6674bf40fbb047dd378dbcaf75e5c197_27.png)'
   id: totrans-104
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/6674bf40fbb047dd378dbcaf75e5c197_27.png)'
 - en: and have the rest of my test to come on-one。 So， here's the example of this
     one。 where we have this test meet-back here that runs， and it depends on the node。
     And we have a node-1。 and it has to find out how to test the two-hour， of those
@@ -805,6 +819,7 @@
   id: totrans-105
   prefs: []
   type: TYPE_NORMAL
+  zh: 让我其余的测试合并在一起。所以，这里是这个测试的一个示例。在这里，我们有这个测试的回馈，它依赖于节点。我们有节点-1，它必须找出如何测试这两个小时的测试。这就是为什么我们有两个不同的节点。所以。
 - en: I've pointed out this is what my test is now， and it doesn't really have to
     know or care that it's。 actually depending on the time that I touch this。 It doesn't
     depending on the node。 and as long as you pass in that three， it's happy。
