@@ -1,16 +1,20 @@
 - en: P78：Tutorial Geir Arne Hjelle - Introduction to Decorators Power Up Your Python
     Code - 程序员百科书 - BV1rW4y1v7YG
+  id: totrans-0
   prefs:
   - PREF_H1
   type: TYPE_NORMAL
 - en: Hi everyone， I'm Gaed Arnalap and first of all I'm really sorry that we couldn't
     all。
+  id: totrans-1
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/13dc3ed458136a286215705708b44e8c_1.png)'
+  id: totrans-2
   prefs: []
   type: TYPE_IMG
 - en: '![](img/13dc3ed458136a286215705708b44e8c_2.png)'
+  id: totrans-3
   prefs: []
   type: TYPE_IMG
 - en: meet in Pittsburgh。 I've really been looking forward to coming to PyCon to meet
@@ -19,6 +23,7 @@
     and I'm really looking forward to sharing all the cool stuff about Decorators。
     with you。 So what I'll do in this tutorial， it will be about Decorators and I'll
     kind of talk。
+  id: totrans-4
   prefs: []
   type: TYPE_NORMAL
 - en: through everything from kind of the background to get you started and hopefully
@@ -26,6 +31,7 @@
     from starting out is that you're somewhat comfortable with Python but no knowledge。
     of Decorators from before is necessary。 During this tutorial I will be working
     in the terminal and I hope that you will all work。
+  id: totrans-5
   prefs: []
   type: TYPE_NORMAL
 - en: together with me。 After we kind of got the basics up and running most of the
@@ -33,6 +39,7 @@
     you and we need to then figure out how can we。 create Decorators to solve those
     tasks。 After you have given it a shot I will also work through one possible solution
     together。 with you。 So what are Decorators？ That doesn't really tell as much。
+  id: totrans-6
   prefs: []
   type: TYPE_NORMAL
 - en: The concept is much more interesting。 Decorators are there in the language to
@@ -40,6 +47,7 @@
     be stuff like label a function that you want to have time during code execution。
     or maybe profiled and even just compiled if that's necessary。 It could be things
     like labeling your endpoints and a web server that these endpoints need。
+  id: totrans-7
   prefs: []
   type: TYPE_NORMAL
 - en: to be behind the authentication so the users need to be logged in to see these。
@@ -47,6 +55,7 @@
     they use。 Decorators to convert regular function arguments into command line arguments
     and options。 Of course we won't have time to implement all of these kind of behaviors
     ourselves but。
+  id: totrans-8
   prefs: []
   type: TYPE_NORMAL
 - en: the plan for the tutorial is that you'll learn all the concepts that are necessary
@@ -54,6 +63,7 @@
     small and easy concept once you get。 the hang of it but there are several elements
     that are kind of flying around there。 So it takes some time to kind of just land
     all the necessary things and put them together。
+  id: totrans-9
   prefs: []
   type: TYPE_NORMAL
 - en: So with that let's get started and see what this course will include。 So let's
@@ -61,6 +71,7 @@
     of all let me just say that I work as a data scientist in Norway with a company。
     called the MastenXbridge and then on my spare time I write some articles for real
     Python。
+  id: totrans-10
   prefs: []
   type: TYPE_NORMAL
 - en: and I did write an article with real Python that was published I guess almost
@@ -69,6 +80,7 @@
     covering here in that article as well if you'd like。 to have things written down。
     Okay so what we'll do today is that we'll first start with an introduction to
     Decorators。
+  id: totrans-11
   prefs: []
   type: TYPE_NORMAL
 - en: and during this introduction we'll kind of get all the pieces that are kind
@@ -76,6 +88,7 @@
     running we'll start to do exercises and first we'll。 have three exercises we're
     all kind of making somewhat basic decorators and just see how。 we can make them
     run for us， kind of learn the basic templates how the decorators look。
+  id: totrans-12
   prefs: []
   type: TYPE_NORMAL
 - en: and things like this。 And then afterwards we'll do more advanced decorators
@@ -83,18 +96,21 @@
     of work to keep state and all those kind of， things。 And then at the end I'll
     kind of talk a little bit about some additional resources and how。 to kind of
     continue working with decorators。 The first section， Introduction to Decorators。
+  id: totrans-13
   prefs: []
   type: TYPE_NORMAL
 - en: I want to cover first a couple of building， blocks。 So first is this concept
     of functions being first-class objects。 This is kind of fancy way of just saying
     that you can assign a name to your functions。 You can have many names assigned
     to one function and you can pass them around。
+  id: totrans-14
   prefs: []
   type: TYPE_NORMAL
 - en: You can take a function， pass it as an argument into another function。 You can
     have functions returned out of the function and things like this。 So functions
     work exactly like any other object in Python and that's respect。 And we also want
     to talk a little bit about inner functions。
+  id: totrans-15
   prefs: []
   type: TYPE_NORMAL
 - en: These are just functions that are defined inside of other functions。 And again
@@ -102,6 +118,7 @@
     that if you haven't seen it before it may look strange at first but it kind of
     has a。 natural behavior。 And we'll see both why we want to know about these things
     and how it works in this section。
+  id: totrans-16
   prefs: []
   type: TYPE_NORMAL
 - en: And the third little thing that we want to have a look at is how we can manipulate
@@ -109,12 +126,14 @@
     those kind of things。 Putting all of this together will then come to the point
     where we can actually decorate。 our functions。 So we can create decorators and
     that will kind of be more or less the end of this introduction。
+  id: totrans-17
   prefs: []
   type: TYPE_NORMAL
 - en: except that we'll also learn how to make these decorators play nice with us。
     So how can they play together with essentially any function that you can think
     of to decorate。 and things like this。 So that's kind of just an overview of this
     first section。 So now let's get started。 So I will be using IPython as my terminal。
+  id: totrans-18
   prefs: []
   type: TYPE_NORMAL
 - en: This is a very nice terminal that also kind of， but if you're familiar with
@@ -123,12 +142,14 @@
     now to get started the first topic that we want to talk about is just that functions。
     are first class objects。 And as I briefly mentioned during the introduction this
     means that you can use functions wherever。
+  id: totrans-19
   prefs: []
   type: TYPE_NORMAL
 - en: you use other expressions like variables and those kind of things。 And one thing
     that we'll be using a lot is that we can take functions and pass them into。 other
     functions。 So just to kind of get us started and see what this means。 Let's start
     with a very simple say hello function that will essentially be your good。
+  id: totrans-20
   prefs: []
   type: TYPE_NORMAL
 - en: old hello world。 But instead of adding or calling print explicitly I'll here
@@ -136,6 +157,7 @@
     the hello statement。 And then I'll take this logger that is now a function and
     I'll call it and then I'll call。 it with something like hello。 So once we have
     this defined we could now essentially run our regular hello world by。
+  id: totrans-21
   prefs: []
   type: TYPE_NORMAL
 - en: saying say hello to the world and use print as our logger function。 And you
@@ -143,6 +165,7 @@
     happened here is that I'm here saying that I want logger。 to be the print function。
     And then that is kind of picked up here and now it's calling this function and
     it tells。
+  id: totrans-22
   prefs: []
   type: TYPE_NORMAL
 - en: me where it runs print alone。 And just to point out that here we're kind of
@@ -150,12 +173,14 @@
     the wrong type here。 so say say hello one comma two we will get， error because
     we are using the logger here as something that can be called typically a。 function
     and you can't execute it too。 Okay but what other things can I do？
+  id: totrans-23
   prefs: []
   type: TYPE_NORMAL
 - en: So now for instance if I import the logging module I could also say hello to
     our logs。 and now I can say that okay now I want to use a different function。
     So now instead of using print maybe I want to use logger wanting。 And you can
     now see that it's and some stuff here and that's the way that the logging module。
+  id: totrans-24
   prefs: []
   type: TYPE_NORMAL
 - en: works by printing stuff out。 If I use this with a different logger info you'll
@@ -163,12 +188,14 @@
     which is set by default to only outputs things。 that are at the warning level
     or higher as it's called。 So we can kind of see that these functions are doing
     something in the background right？
+  id: totrans-25
   prefs: []
   type: TYPE_NORMAL
 - en: We could even do things on files。 So for instance say that we have a。 first
     let's just look at a file， let's say hello。text。 and you can see that I don't
     have that file on my computer at the moment。 So let's create it。 So I say that
     I want to say hello。text for writing and call this one file for the moment。
+  id: totrans-26
   prefs: []
   type: TYPE_NORMAL
 - en: and now I can call my say hello function and let's say hello to files and this
@@ -177,12 +204,14 @@
     on the screen， now look inside we actually see that we have。 created a file on
     the disk。 And then the final example I want to do with this is just that if we
     define now a different。
+  id: totrans-27
   prefs: []
   type: TYPE_NORMAL
 - en: function for instance a reversed print function， I'll have this one taking some
     text and I'll。 have it just use your regular print function but then reverse the
     text。 So I'll take the reverse of the text and let me also then throw in a capitalized
     on top， of it。 So this is now just our regular version of course。 I can hide there。
+  id: totrans-28
   prefs: []
   type: TYPE_NORMAL
 - en: This one and you'll see that it's reversed the text。 We can also send this one
@@ -194,12 +223,14 @@
     have this one function right say hello。 That was just this very simple definition。
     And then we can kind of give it a lot of different behaviors based on the function
     that we're。
+  id: totrans-29
   prefs: []
   type: TYPE_NORMAL
 - en: passing in。 And this might be depending on the background I guess。 either completely
     natural or truly， groundbreaking。 And either way whether you're used to this or
     not it is a very powerful concept。 And it's one of these things that kind of comes
     from the world of functional programming。
+  id: totrans-30
   prefs: []
   type: TYPE_NORMAL
 - en: of which Python has adopted a few principles without really taking it all the
@@ -207,6 +238,7 @@
     and kind of applied。 in many different contexts。 And the decorators is kind of
     a very important part of that。 One thing I also want to just point out here is
     that， well let's look at print for instance， here。
+  id: totrans-31
   prefs: []
   type: TYPE_NORMAL
 - en: Is that when we pass in the function we pass it just with the name。 We don't
@@ -214,6 +246,7 @@
     two things is that in this first case we are actually。 looking at the print function
     object。 So we're just taking the print object itself and passing it in。 Well in
     the other case if we actually call it what we end up passing in is the return。
+  id: totrans-32
   prefs: []
   type: TYPE_NORMAL
 - en: value from print。 In print case that is just none。 So that explains why we get
@@ -221,6 +254,7 @@
     ended up doing in this output 16 there is really just the same。 as if we had directly
     said logarithms。 So one important thing to just keep in mind when we're passing
     these functions around。
+  id: totrans-33
   prefs: []
   type: TYPE_NORMAL
 - en: is that you want to always pass them around without calling them so without
@@ -228,6 +262,7 @@
     what that really means。 We can pass functions around。 Then we have something called
     inner functions or this is just a concept that you are allowed。 to define functions
     within other functions。 So let's just create a very simple example。
+  id: totrans-34
   prefs: []
   type: TYPE_NORMAL
 - en: So I'll just have a regular function that I'll call an outer function and have
@@ -235,6 +270,7 @@
     call inner。 And then from the inner one I'll say let's say hello from the inner
     function。 And there's a definition of inner but then inside of outer so first
     it will print then。
+  id: totrans-35
   prefs: []
   type: TYPE_NORMAL
 - en: it will define inner and then finally I'll have it call the inner function。
@@ -242,6 +278,7 @@
     the outer function。 That's just the print we have here。 And then it says hello
     from the inner function which happens when we call the inner function。 right there。
     One thing I'll point out is that inner is not defined outside of outer itself。
+  id: totrans-36
   prefs: []
   type: TYPE_NORMAL
 - en: So it's just defined within the local scope of the outer function。 And again
@@ -249,6 +286,7 @@
     have。 thought of it that way。 So if we look a little bit at this definition of
     outer and let me now also just define a。 new variable here。 So I'll just say variable
     equals one。
+  id: totrans-37
   prefs: []
   type: TYPE_NORMAL
 - en: It's slightly interesting and called the variable pi-con and I'll develop it
@@ -256,6 +294,7 @@
     not available。 outside of those functions right。 So if we do other it still runs
     as it used to but pi-con only defined inside of the outer。 function itself。 So
     with the inner functions they behave exactly the same。
+  id: totrans-38
   prefs: []
   type: TYPE_NORMAL
 - en: So they are defined there and they're all only kind of bound to the local scope
@@ -263,6 +302,7 @@
     right is that if there is some variable or。 value that is interesting for the
     outside world what you need to do is to return it。 So if we return pi-con and
     then we call outer then we can get a hold of the value of pi-con， here。
+  id: totrans-39
   prefs: []
   type: TYPE_NORMAL
 - en: And we can do the same with the functions。 Instead of returning pi-con I can
@@ -271,6 +311,7 @@
     give a name to it。 I'll call it inside just to keep it different from the name
     inner that you've seen。 This is now a regular function that we can call。 After
     it has kind of been returned I have access to it outside。
+  id: totrans-40
   prefs: []
   type: TYPE_NORMAL
 - en: Again this is just being able to do the same with functions that you're already
@@ -279,6 +320,7 @@
     with the inner functions is that they can。 use information from their enclosing
     scope。 So this is again something that you might be familiar with from regular
     functions that。
+  id: totrans-41
   prefs: []
   type: TYPE_NORMAL
 - en: if you have something defined outside of the function you can refer to it inside
@@ -286,12 +328,14 @@
     just to show how that works also for the inner function here now we can say that
     the。 Python is like this and this in the string。 Now when I run outer you'll see
     that it says here Python is 2020 where it has gone to the。
+  id: totrans-42
   prefs: []
   type: TYPE_NORMAL
 - en: enclosing scope to get the value of Python。 So that's a little bit just introduction
     to inner functions。 And now let's try to see how we can use this to kind of play
     with functions。 So now we want to manipulate our functions a little bit。 And one
     thing that I'll just kind of start doing here is I'll just define a very simple。
+  id: totrans-43
   prefs: []
   type: TYPE_NORMAL
 - en: function that I'll call hello and it will take a function as its only argument
@@ -299,6 +343,7 @@
     hello and then you can use the double underscore name double underscore so the
     under。 name attribute to get the name of the function。 And yeah let's just start
     there。
+  id: totrans-44
   prefs: []
   type: TYPE_NORMAL
 - en: So now we have something that takes a function we define the outer function
@@ -306,12 +351,14 @@
     pass in my other。 function object it can now say allow outer。 One thing just to
     show you we also have the inside function。 So here I gave it the name inside but
     it was defined as inner。
+  id: totrans-45
   prefs: []
   type: TYPE_NORMAL
 - en: So what will be the name if we now say hello inside。 In this case it's picking
     up the original name hello inner it's saying here。 This is something for now just
     to note what happens there and this is something that will。 come back with a little
     bit later。 Okay。 Now let's make our hello function slightly more advanced。
+  id: totrans-46
   prefs: []
   type: TYPE_NORMAL
 - en: I'll just also return。 So now I'm returning the exact same function I'm not
@@ -320,6 +367,7 @@
     the function outer。 So the return value from this is a function object right。
     That means that we can just call it。 So I can add double parentheses to it and
     call it。
+  id: totrans-47
   prefs: []
   type: TYPE_NORMAL
 - en: And now you can see that okay we got the hello outer from the hello function
@@ -327,6 +375,7 @@
     inside of outer。 So this is starting to be a little bit of inception here and
     then finally we got the。 return value that was this inner function that we returned
     from outer。
+  id: totrans-48
   prefs: []
   type: TYPE_NORMAL
 - en: That means that instead of calling it directly I could also assign it to a new
@@ -335,6 +384,7 @@
     is just the outer function and you can even check here。 that new outer is regular
     outer and that's true。 Okay so that's kind of getting a little bit of playing
     with these functions。
+  id: totrans-49
   prefs: []
   type: TYPE_NORMAL
 - en: Now let's move closer to what we actually do when we are decorating functions。
@@ -342,6 +392,7 @@
     around。 the original function and then in that wrapper you add some functionality。
     So for now I'm going to play with a function that I'll call wrapper and this will
     be our。
+  id: totrans-50
   prefs: []
   type: TYPE_NORMAL
 - en: first real decorator in a sense。 And what we'll do here is that we'll start
@@ -349,6 +400,7 @@
     just print out that I'll use I'll just print out the sentence before。 Then we'll
     call our function and finally we'll also print out or we'll do something after。
     we have called the function and for now I'll just again print out。
+  id: totrans-51
   prefs: []
   type: TYPE_NORMAL
 - en: Okay I said this is our first decorator。 It's not really a decorator yet and
@@ -357,6 +409,7 @@
     these three lines are familiar that's from calling outer function。 and then we
     do something after outer。 But in this case this wrapping happened exactly when
     we ran this line right and if I now just。
+  id: totrans-52
   prefs: []
   type: TYPE_NORMAL
 - en: run harder again you can see that this is still seems to be a regular function
@@ -364,6 +417,7 @@
     So this is kind of just wrapping the outer function just at runtime and we need
     to kind。 of call wrapper outer every time we use it。 That's not really what we're
     after we're looking for something that's a little bit more。
+  id: totrans-53
   prefs: []
   type: TYPE_NORMAL
 - en: permanent。 So this is where our knowledge now inner functions come into play
@@ -371,6 +425,7 @@
     of things I'll just name。 it with the same name as the other function but with
     an underscore in front。 And this inner function will now do what we did in wrapper
     earlier namely it will do something。
+  id: totrans-54
   prefs: []
   type: TYPE_NORMAL
 - en: before calling the function then it will call the function and then it will
@@ -379,12 +434,14 @@
     similar to what we already did with the other function right。 And what can this
     do for us now？ So if I now say wrapper of outer remember that when we did this
     last time it ran outer。
+  id: totrans-55
   prefs: []
   type: TYPE_NORMAL
 - en: In this case it now just returns this inner wrapper function that we created。
     And what happens here is that we wrap this now at this stage only once and I'll
     now say。 that we take a new outer and we'll make it wrapped outer。 And what I
     can do now is that I'll do a new outer and call it and now you can see that。
+  id: totrans-56
   prefs: []
   type: TYPE_NORMAL
 - en: we have stuff happening before we run our function we have the stuff that was
@@ -393,6 +450,7 @@
     the wrapping of outer happened。 only once so it only happened here on line 54。
     The only time we actually did the wrapping itself and what we have been doing
     since then。
+  id: totrans-57
   prefs: []
   type: TYPE_NORMAL
 - en: is calling this actually new function underscore wrapper that then is doing
@@ -400,6 +458,7 @@
     for one more very small stuff and that's that we will actually。 just redefine
     the name outer so that it points to this new wrapped function。 So I did say earlier
     new outer equals wrapper outer。
+  id: totrans-58
   prefs: []
   type: TYPE_NORMAL
 - en: The only change you'll do now is that instead of sending this to new name I'll
@@ -407,6 +466,7 @@
     outer has been decorated by。 the decorator wrapper。 So wrapper is now a decorator
     and outer has been decorated and what we can see here is。 that outer is no longer
     the outer function as it was defined and now every time I call。
+  id: totrans-59
   prefs: []
   type: TYPE_NORMAL
 - en: outer you can see that we have changed its behavior。 So that's essentially how
@@ -414,6 +474,7 @@
     the creators before you probably not seen this syntax because what we Python。
     introduced a long time ago I believe it was Python 2。3， Python 2。4 is something
     called。
+  id: totrans-60
   prefs: []
   type: TYPE_NORMAL
 - en: a decorator syntax and if we now just recall our other function I'll keep this
@@ -421,6 +482,7 @@
     we have our regular。 function back but if I not changed this definition and just
     on the line right before the definition。 the outer line I'll write an add symbol
     and then the name wrapper and this is the usual。
+  id: totrans-61
   prefs: []
   type: TYPE_NORMAL
 - en: form the usual syntax that we use to decorate functions and if you run this
@@ -428,6 +490,7 @@
     where it's doing something。 before calling the function it's calling the function
     and then it's doing something afterwards。 So this is the syntax that you'll usually
     see for decorators but kind of the main takeaway。
+  id: totrans-62
   prefs: []
   type: TYPE_NORMAL
 - en: that I want to make sure that you get here is that that syntax is purely syntactic
@@ -435,6 +498,7 @@
     just to kind of enforce that point a little bit just you take away that I hope
     you have。 so far is that what we'll call decorators that's just any function that
     accepts a function。
+  id: totrans-63
   prefs: []
   type: TYPE_NORMAL
 - en: and returns a function。 So just to remind you if we define our wrapper function
@@ -442,6 +506,7 @@
     argument and then it returns some function。 back this function could really be
     any function but it's for all useful purposes it should be。 somewhat related to
     the the function that you get it。
+  id: totrans-64
   prefs: []
   type: TYPE_NORMAL
 - en: And the other takeaway is that this add wrapper syntax or add decorator is just
@@ -449,6 +514,7 @@
     equals wrapper out function。 This is something that will be very useful to just
     keep in mind when you're trying to。 figure out how do a decorator work when we
     get to the more advanced decorators will have。
+  id: totrans-65
   prefs: []
   type: TYPE_NORMAL
 - en: the creators that can take arguments for instance we'll be able to stack several
@@ -456,6 +522,7 @@
     it's always useful to kind。 of come back to what is really happening in the background
     so then having this in mind。 is really useful。 Okay then before we leave this
     topic so here we have our wrapper function I just want to。
+  id: totrans-66
   prefs: []
   type: TYPE_NORMAL
 - en: point out that there's a few issues with our wrapper function and one is as
@@ -463,6 +530,7 @@
     very simple hello world exercise。 again say just hello name this and let's okay
     let's run it。 So say hello world works right and now if I decorate this with my
     wrapper like this and。
+  id: totrans-67
   prefs: []
   type: TYPE_NORMAL
 - en: then we'll say hello world one more time we get a typo it says here that underscore
@@ -470,6 +538,7 @@
     wrong happening。 with the argument here so the fact that say hello here takes
     an argument is causing us。 some problems。 Okay we'll soon look into how to fix
     that but there's more problems so let's say that。
+  id: totrans-68
   prefs: []
   type: TYPE_NORMAL
 - en: we also have another function for this one I'll do a quick dice roll I think
@@ -477,6 +546,7 @@
     should just return。 a random number and until you're between one and six so if
     we do a dice roll there's three。 there's four so on and now what happens if we
     use our wrapper decorator on this one。
+  id: totrans-69
   prefs: []
   type: TYPE_NORMAL
 - en: In this case once I run dice roll you can see here that while it seems to run
@@ -484,6 +554,7 @@
     didn't get the。 result of the dice roll so we can see here that the actual result
     that we saw appeared。 three and four and so on is eaten up by a decorator so there's
     also something regarding。
+  id: totrans-70
   prefs: []
   type: TYPE_NORMAL
 - en: return values that doesn't quite work with our wrapper we'll also fix that one
@@ -491,6 +562,7 @@
     again function。 and that's I've been talking about this double underscore name
     attribute that kind of shows。 us the name of the functions so it's not dice it's
     dice roll but the dice roll here seems。
+  id: totrans-71
   prefs: []
   type: TYPE_NORMAL
 - en: to think that it's called wrapper so there's also something happened with the
@@ -498,6 +570,7 @@
     decoration we replaced。 the dice roll function with this wrapper function so of
     course it has a different name for most。 cases this isn't really important but
     it may have some subtle problems to it so we definitely。
+  id: totrans-72
   prefs: []
   type: TYPE_NORMAL
 - en: want to fix it and it also makes debugging much harder when you can't really
@@ -505,6 +578,7 @@
     these problems the first。 one was that if we said hello world this thing completely
     crashed and so let's see what happens。 here and so if you're looking now into
     what is happening remember that say hello has been。
+  id: totrans-73
   prefs: []
   type: TYPE_NORMAL
 - en: decorated with wrapper so that means that it has really been replaced by this
@@ -512,6 +586,7 @@
     say hello world but you。 can see that the wrapper doesn't take any arguments and
     that's of course we could now。 do something like and just add the name argument
     here and then if we do redefine our say hello。
+  id: totrans-74
   prefs: []
   type: TYPE_NORMAL
 - en: let's see and then run hello world it works and the problem now is that if we
@@ -519,6 +594,7 @@
     work so for instance。 if I now apply this to the die-stroll function die-stroll
     won't work and so this is not really。 a good solution let's see a better solution
     did I fix this we can use what's called the。
+  id: totrans-75
   prefs: []
   type: TYPE_NORMAL
 - en: star arcs and star star keyword arguments the quarks and what this medium does
@@ -526,6 +602,7 @@
     so the ones where。 you don't use a keyword and all the keyword arguments that
     you give to a function and。 just collects them into a list in a dictionary or
     two-plan dictionary and then we don't need。
+  id: totrans-76
   prefs: []
   type: TYPE_NORMAL
 - en: to care about how many what they're called or anything and then we can just
@@ -533,6 +610,7 @@
     now I'm saying that。 I'll just take whatever arguments you give to me and I'll
     pass them on to the to the。 function I'm wrapping so let's try to run this wrapper
     around say hello and we can now。
+  id: totrans-77
   prefs: []
   type: TYPE_NORMAL
 - en: see that we can run say hello world and now it does what it should do it does
@@ -540,6 +618,7 @@
     say hello and if I。 would now for instance call say hello without any arguments
     you can now see that it's actually。 doing something before it's calling say hello
     and now it's say hello itself that's complaining。
+  id: totrans-78
   prefs: []
   type: TYPE_NORMAL
 - en: about the missing positional argument so now we the wrapper itself is just taking
@@ -547,6 +626,7 @@
     dice roll so let's see if we remember what was the problem。 here it's just that
     when we have our dice roll it had some return value but that return。 value is
     somehow eaten up by our decorator so let's see what happens then so you can。
+  id: totrans-79
   prefs: []
   type: TYPE_NORMAL
 - en: now see that once we call our function which will be the dice roll in this case
@@ -554,6 +634,7 @@
     line so the first。 thing we need to do is to definitely make sure that we save
     that return value to some。 value and now to make this behave consistently and
     then return that value so you can see now。
+  id: totrans-80
   prefs: []
   type: TYPE_NORMAL
 - en: that I'm just saving the return value here so that I can do some more stuff
@@ -561,6 +642,7 @@
     the return value。 on so you can see this is kind of the same principle just in
     reverse so with the arcs。 and quarks we need to just take whatever we get and
     pass it on to the function and for。
+  id: totrans-81
   prefs: []
   type: TYPE_NORMAL
 - en: the return value we take whatever we get is return from here and then return
@@ -568,6 +650,7 @@
     see where we have。 it there we go so now if I call dice roll you can see that
     it does something before the。 dice roll it does something after the dice roll
     and it returns out value some value of。
+  id: totrans-82
   prefs: []
   type: TYPE_NORMAL
 - en: the dice roll so that worked then the final issue that we looked at was that
@@ -575,6 +658,7 @@
     the via a naive approach。 so here I have my inner function wrapper that I'm defining
     and then the issue is that it。 has the wrong name right so one thing I could do
     is just to say okay let's just change it。
+  id: totrans-83
   prefs: []
   type: TYPE_NORMAL
 - en: so now I want to wrap your name to just equal okay so if we do this and then
@@ -582,6 +666,7 @@
     now the name of dice roll。 dice roll so we successfully have changed the name
     of dice roll and now this works but it's。 not an ideal solution for instance now
     if I can I just say print out the function object。
+  id: totrans-84
   prefs: []
   type: TYPE_NORMAL
 - en: you'll see that it now in the in kind of the wrapper for the function object
@@ -589,6 +674,7 @@
     and things like this。 so we changed name but we haven't changed other things that
     might be useful to to change as。 well and it turns out that this is kind of important
     enough thing to look into so that。
+  id: totrans-85
   prefs: []
   type: TYPE_NORMAL
 - en: it exists a function in the in the standard library inside of the fun tools
@@ -596,6 +682,7 @@
     that the doctoring says。 that this is used to update a wrapper function to look
     like the wrapped function so that's。 essentially exactly what we want to do right
     and then it has some details here for it you。
+  id: totrans-86
   prefs: []
   type: TYPE_NORMAL
 - en: can see what which things it actually changes so here we have the name that
@@ -603,6 +690,7 @@
     like this and now there。 we could use the fun tools update wrapper but there is
     actually an even a simpler thing。 called wraps and this is a decorator factory
     so it's actually a decorator to apply update。
+  id: totrans-87
   prefs: []
   type: TYPE_NORMAL
 - en: wrapper to a wrapper function so this makes it even easier to use okay so how
@@ -610,6 +698,7 @@
     want to do this manually instead。 what I'll do is that I'll apply the fun tools
     wraps and right over here and there's this is。 something we haven't seen with
     decorators before but it takes an argument namely which。
+  id: totrans-88
   prefs: []
   type: TYPE_NORMAL
 - en: function it should copy information from so it should take our original function
@@ -617,6 +706,7 @@
     with taking。 arguments later but with this wrapper and now we can have a look
     at our dice roll and。 first of all see that let our name is dice roll so that
     was what we were kind of looking。
+  id: totrans-89
   prefs: []
   type: TYPE_NORMAL
 - en: for with our fix earlier but if I now look at the dice roll just a wrapper for
@@ -624,6 +714,7 @@
     duck string we're。 playing a little bit hard fast by capturing here but let's
     add a string function and now。 we can see that I can do help as far forward using
     here see that we have six sided dice。
+  id: totrans-90
   prefs: []
   type: TYPE_NORMAL
 - en: in the duck string so with all of these things now we have what I'll call actually
@@ -631,6 +722,7 @@
     you'll do is that。 you'll have some kind of wrapper function so this will be the
     actual decorator it's a。 function that takes a function as input and it returns
     some function as output usually。
+  id: totrans-91
   prefs: []
   type: TYPE_NORMAL
 - en: you'll define this function that it turned it up with as an inner function because
@@ -638,6 +730,7 @@
     kind of。 some of its behavior either by doing something before and after or one
     could even do some。 weird things with arguments and those kind of things but often
     you'll end up having something。
+  id: totrans-92
   prefs: []
   type: TYPE_NORMAL
 - en: before calling the function and then you'll actually call the function recall
@@ -645,6 +738,7 @@
     and then you might be doing。 something after calling function and finally usually
     you'll then return the return value。 from the function so that that's kept but
     there might be decorators where you want to。
+  id: totrans-93
   prefs: []
   type: TYPE_NORMAL
 - en: change the the return value and things like this as well but this is kind of
@@ -652,13 +746,16 @@
     and we're now getting。 ready to work work our way into these exercises and one
     thing that I'll just recommend is that。 once you start working on the exercises
     start with this kind of wrapper template here and。
+  id: totrans-94
   prefs: []
   type: TYPE_NORMAL
 - en: then take it from there。 Okay so let's move on over and look at our first exercises。
     So。
+  id: totrans-95
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/13dc3ed458136a286215705708b44e8c_4.png)'
+  id: totrans-96
   prefs: []
   type: TYPE_IMG
 - en: let's start with the exercises so first of all just a little bit of logistics
@@ -666,6 +763,7 @@
     help you get started。 You can all download these from this repository and what
     you'll find inside of this repository。 will be some task files that contain some
     code I'll show you those soon and then also the。
+  id: totrans-97
   prefs: []
   type: TYPE_NORMAL
 - en: template that we saw for the for the decorator so let's start here。 So if you
@@ -673,6 +771,7 @@
     just a few small comments。 added and this you can use as a starting point for
     your own decorators。 For most many cases。 at least it will be a good starting
     point and then as we'll kind of get into more advanced。
+  id: totrans-98
   prefs: []
   type: TYPE_NORMAL
 - en: things you'll kind of figure out how to add stuff to it。 But then let's move
@@ -680,6 +779,7 @@
     you can kind of this。 function or this file you can run and it will probably then
     tell you that you don't have。 timer implemented in pike on decorators。 So your
     task is to implement the timer decorator。
+  id: totrans-99
   prefs: []
   type: TYPE_NORMAL
 - en: so that it will behave properly。 So let me just show you an example of how we
@@ -687,6 +787,7 @@
     but now I'm giving， it the task。py file that we have here and then a -i flag。
     So what this means is that。 iPython runs test a pike as a usual script file but
     then once it's finished running it。
+  id: totrans-100
   prefs: []
   type: TYPE_NORMAL
 - en: stops in interactive mode。 So inside of here I now have waste time defined and
@@ -694,6 +795,7 @@
     you the behavior that。 we're expecting and what you can first of all see here
     is that when you run the function。 waste time it pops up a line saying a lapse
     time in this case zero seconds。 At this line。
+  id: totrans-101
   prefs: []
   type: TYPE_NORMAL
 - en: you can see it's not anywhere in source code instead that comes from the timer
@@ -701,6 +803,7 @@
     is just measuring。 how long time does it take for this function to run。 So what
     is this function for the task。 it can it's not really that important but let's
     just have a quick look at it。 So it's just。
+  id: totrans-102
   prefs: []
   type: TYPE_NORMAL
 - en: something that's kind of set up to waste a little bit of time。 It takes in a
@@ -708,6 +811,7 @@
     runs through the range of that。 for that number and inside of that for loop is
     essentially another loop where it runs up。 to the range of the running index there
     and then it somehow calculates some kind of sum。
+  id: totrans-103
   prefs: []
   type: TYPE_NORMAL
 - en: out of this。 In the case where number is 10 you can see that the result comes
@@ -715,6 +819,7 @@
     now you can see it at。 least spent 300 of a second。 Since this kind of scales
     more or less like n squared with。 a double loop let's try 10 times more than we
     should be at about 2， 3 seconds。 Yeah it's。
+  id: totrans-104
   prefs: []
   type: TYPE_NORMAL
 - en: like less than 2 seconds。 So your task then is to implement the time of the
@@ -722,6 +827,7 @@
     this。 Of course your。 running times will probably be slightly different but the
     behavior should kind of be the same。 And just a small hint I guess to get you
     started is that to actually view the measuring of time。
+  id: totrans-105
   prefs: []
   type: TYPE_NORMAL
 - en: you'll want to import the time module it's part of the standard library and
@@ -729,6 +835,7 @@
     this is what they call。 a counter for benchmarking。 What it returns is a seemingly
     random number。 But the importance。 of this number is that during a session it
     is always increasing and the number here is essentially。
+  id: totrans-106
   prefs: []
   type: TYPE_NORMAL
 - en: if we can use it to measure time。 So for instance if I took here the time minus
@@ -736,18 +843,23 @@
     you want to kind of base your time around。 And yeah what you should do now is
     just pause the video and see if you can more or less recreate。 this behavior。
     Then once you start up the video again we'll walk through a solution together。
+  id: totrans-107
   prefs: []
   type: TYPE_NORMAL
 - en: Good luck。
+  id: totrans-108
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/13dc3ed458136a286215705708b44e8c_6.png)'
+  id: totrans-109
   prefs: []
   type: TYPE_IMG
 - en: '[silence]。'
+  id: totrans-110
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/13dc3ed458136a286215705708b44e8c_8.png)'
+  id: totrans-111
   prefs: []
   type: TYPE_IMG
 - en: Let's have a look then at how we can solve this timer decorated thing。 So first
@@ -755,6 +867,7 @@
     into the script here so we can just。 run it more easily。 I don't have to run it
     manually。 So if we， solve three of them。 And so if we do this time with 10，000
     like this and then just。
+  id: totrans-112
   prefs: []
   type: TYPE_NORMAL
 - en: and I'll show you so now I have a move in my solution。 So if I now run Python
@@ -762,18 +875,21 @@
     it doesn't exist。 And so now I have my， wrapper template example here and I'll
     just change this one， to timer quickly。 Let's see like this。 And we have a template
     for decorators。 And now just to run my。
+  id: totrans-113
   prefs: []
   type: TYPE_NORMAL
 - en: example we can see here that it at least runs through the thing but it doesn't
     really do anything。 yet。 So that's the next thing we need to fix。 I said that
     we could use， time standard library。 So we can import that。 Now what should we
     be doing with this one？
+  id: totrans-114
   prefs: []
   type: TYPE_NORMAL
 - en: Well we saw that the perf counter was something that was kind of measuring relative
     time。 So if we sort of implement the clock here so I'll say that I'm the。 perf
     counter and I'll call that the tick。 And we call our function and then we calculate
     the。 clock afterwards。 And now we have two measurements of the perf counter。
+  id: totrans-115
   prefs: []
   type: TYPE_NORMAL
 - en: And then let's see what should we print out something like elapsed time。 And
@@ -781,6 +897,7 @@
     there。 Now I'm just using the template exactly as it was written right。 And I'll
     do here is that before。 we start the function I'll take a note of what is the
     time right now。 I'll kind of record the tick。
+  id: totrans-116
   prefs: []
   type: TYPE_NORMAL
 - en: And then I call the function and then afterwards I want to record what's the
@@ -788,12 +905,14 @@
     times。 The rest is just。 the template using the template。 I'll probably update
     this one as well。 Something like recording。 running， or let's just say timing。
     Let's see what this one works。
+  id: totrans-117
   prefs: []
   type: TYPE_NORMAL
 - en: So if you run this again we can now see that it prints out。 elapsed time and
     it seems to be calculating this thing correctly。 So this shows an example of how
     to， kind of get started。 Hopefully this gives you some idea about how you can
     do something， before calling a function。
+  id: totrans-118
   prefs: []
   type: TYPE_NORMAL
 - en: How you can do things after calling a function。 And。 just to remind you if we
@@ -801,12 +920,14 @@
     the number that we pass in and the total that is passed out are both handled correctly。
     Right so the clearly number has something to say here and we get the return values
     here。
+  id: totrans-119
   prefs: []
   type: TYPE_NORMAL
 - en: So this gives us at least one solution for the first exercise。 Okay then it's
     time for the second one。 Let's move on。 For the second exercise we're gonna do
     something called the trace decorator and this one is also。 something that should
     fit to the pattern of the template that you've seen already fairly well。
+  id: totrans-120
   prefs: []
   type: TYPE_NORMAL
 - en: So let me first just do a demo to show you a little bit how this would work。
@@ -814,6 +935,7 @@
     I have the functions defined here。 So you。 can for instance if we just look at
     the first one it's again essentially a hello world type of。 function but we decorate
     it here with the decorated trace。
+  id: totrans-121
   prefs: []
   type: TYPE_NORMAL
 - en: So if I run this you can see that it returns， hello world and that's kind of
@@ -822,6 +944,7 @@
     get to kind。 of follow how the flow of your program is。 So in this case it says
     that okay it's calling the。 greet function with world and then this greet function
     returned hello world and now if we for。
+  id: totrans-122
   prefs: []
   type: TYPE_NORMAL
 - en: instance do something like a bit name equals world you can see here that it
@@ -829,6 +952,7 @@
     so maybe it will end to be a Python。 and say def world and you can kind of see
     these things kind of happening here and then to kind。 of just make the example
     a little bit more interesting。
+  id: totrans-123
   prefs: []
   type: TYPE_NORMAL
 - en: We also have a couple more functions so here I， added a random greet function
@@ -837,6 +961,7 @@
     and now。 since this is random let's actually set the random C so it's reproducible
     and now if I call random。 greet let's see random greet yeah I'll just call it
     with the default arguments here then you can see。
+  id: totrans-124
   prefs: []
   type: TYPE_NORMAL
 - en: that you see random greet is called and then this one calls our greet function
@@ -844,6 +969,7 @@
     way back to us and then to make this。 even more I guess convoluted probably and
     there's also a greet many function that just calls random。 greet several times
     so if I do a greet many let's say we do that three times。
+  id: totrans-125
   prefs: []
   type: TYPE_NORMAL
 - en: and you can now see that we first call greet many and then there are。 one random
@@ -851,6 +977,7 @@
     we call the greet function and then finally greet many returns with this list。
     So again it may not seem like an amazing kind of function but this can be useful
     to just follow。
+  id: totrans-126
   prefs: []
   type: TYPE_NORMAL
 - en: the structure of your program and mainly this is now just for testing so what
@@ -858,6 +985,7 @@
     and mainly the big difference from。 what you've done already is that we are here
     using the values of arcs and quarks the argument list and。 the keyword argument
     list also inside of the function itself or inside of the decorator I guess the。
+  id: totrans-127
   prefs: []
   type: TYPE_NORMAL
 - en: creative function so that should hopefully work out well。 There's a little bit
@@ -865,22 +993,27 @@
     F strings and joints and things like this if you can just print them out that's
     also perfectly。 fine and then just remember when you want to get the name here
     you can get that from essentially the。
+  id: totrans-128
   prefs: []
   type: TYPE_NORMAL
 - en: name attribute right so greet underscore for instance and one little thing you
     might remember here or。 can't try out as well is that the name of the function
     is something that you can。 figure out already inside your decorator before the
     wrapper function if you want to do that。
+  id: totrans-129
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/13dc3ed458136a286215705708b44e8c_10.png)'
+  id: totrans-130
   prefs: []
   type: TYPE_IMG
 - en: okay so let's look at how we can solve the second task so the first thing we
     need to do is to add。
+  id: totrans-131
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/13dc3ed458136a286215705708b44e8c_12.png)'
+  id: totrans-132
   prefs: []
   type: TYPE_IMG
 - en: a trace decorator to our Python decorators list and for this one yeah let's
@@ -888,6 +1021,7 @@
     be doing something quite similar。 but I'll kind of do it step rest up here so
     show the trace of function calls I guess we can call this one。 and one thing that
     we can just do right now is just define the name of the function because this。
+  id: totrans-133
   prefs: []
   type: TYPE_NORMAL
 - en: we're going to use a couple of times so I'm just defining this in a variable
@@ -896,6 +1030,7 @@
     it will then be in the closing scope we define it once when we。 find a when we
     kind of decorate the function and then we can use it afterwards inside of our
     wrapper。
+  id: totrans-134
   prefs: []
   type: TYPE_NORMAL
 - en: function and then we have the wrapper function and this one remember we need
@@ -903,6 +1038,7 @@
     the fun tools wraps on top of this。 so that's the one that adds in kind of the
     correct naming of our wrapped function。 and this will then be the yeah I'll call
     it the trace function that replaces the original function。
+  id: totrans-135
   prefs: []
   type: TYPE_NORMAL
 - en: and then remember okay how was the template we do something。 before we call
@@ -910,6 +1046,7 @@
     and and make do something， and we're calling the function and finally we return
     value and then the final thing we need。 for now is that the trace decorator here
     it needs to return a function and so we need a second return。
+  id: totrans-136
   prefs: []
   type: TYPE_NORMAL
 - en: bottom here where we return the different so what I've done so far is not really。
@@ -917,6 +1054,7 @@
     thing is the name。 thing there but more written out the template just to have
     that one here for me and now just to test。 that this kind of runs I'll now run
     i thin and the task too and one thing I did was just that I added。
+  id: totrans-137
   prefs: []
   type: TYPE_NORMAL
 - en: a few test cases so the ones that we did manually earlier I added them to the
@@ -924,6 +1062,7 @@
     seed here so we can kind of be consistent。 so if i'm running this you can now
     see that as expected I guess it's not printing out any。 other tracing information
     and the three lines that are here are just me separating the test cases。
+  id: totrans-138
   prefs: []
   type: TYPE_NORMAL
 - en: with some lines okay so that means that at least we have defined the decorated
@@ -931,6 +1070,7 @@
     and I was okay now we're going to。 use the arcs and quarks here a little bit and
     so one thing we could then do would be something like。 pulling and then now I
     can use my name variable but I pick up there。
+  id: totrans-139
   prefs: []
   type: TYPE_NORMAL
 - en: and if we know the arcs and quarks， something like this and then we want to
@@ -938,6 +1078,7 @@
     keyword arguments we got before calling the。 function and then I'm printing a
     three turn value afterwards so if we now run this。 now see okay here we started
     and that we actually get the trace here so now you can see that it's。
+  id: totrans-140
   prefs: []
   type: TYPE_NORMAL
 - en: calling greet greet returned hello world it's calling greet again which returned
@@ -945,12 +1086,14 @@
     greet returns and so on and so。 here we have essentially solved the exercise one
     thing I'll just spend this short half minute on。 is just we can make the output
     nicer it doesn't really change the functionality of the。
+  id: totrans-141
   prefs: []
   type: TYPE_NORMAL
 - en: of the decorator though so it's not really that important say to this exercise
     but。 gonna just to show you so one thing we can do is that we can make。 a representation
     of the keyword arguments and first I'm just gonna take all the。 representations
     for each of the arguments for a in cards and this doesn't really。
+  id: totrans-142
   prefs: []
   type: TYPE_NORMAL
 - en: inch much the the only thing this part would do is that it will kind of print
@@ -958,6 +1101,7 @@
     arguments I want to。 represent them like a string where it's showing the key equals
     the value for k and v in quarks。 items let's see like this and then finally I
     can say that my signature so the signature of the。
+  id: totrans-143
   prefs: []
   type: TYPE_NORMAL
 - en: function I can get now by just joining together all of these things with a comma。
@@ -965,6 +1109,7 @@
     can see we get something that looks more like。 the actual function called here
     and there's one little thing left that we might want to fix。 so that's you can
     see here there's missing quotes around the strings and that's because here we're。
+  id: totrans-144
   prefs: []
   type: TYPE_NORMAL
 - en: just using the string representation and not the wrapper representation like
@@ -972,6 +1117,7 @@
     that that then adds in your。 quotes there and there's also a shortcut to doing
     wrapper v in in F strings so if you just do a bang。 and then R that means use
     the wrapper representation instead of string representation so we can do that。
+  id: totrans-145
   prefs: []
   type: TYPE_NORMAL
 - en: as well and I'll just do the same here for the value here since we're dealing
@@ -979,6 +1125,7 @@
     make them easier to see。 let's do this one up so here for instance you can see
     that the return value also has string。 okay so that gives us a nice trace decorator
     again it just follows the same pattern that we're using。
+  id: totrans-146
   prefs: []
   type: TYPE_NORMAL
 - en: doing something before we call the function and we're doing we're calling the
@@ -986,6 +1133,7 @@
     kind of takeaways。 here we're that okay we can also use these arcs and quarks
     and we can use the function itself。 if what we're taking out only depends on the
     function not on the arguments then you can even do。
+  id: totrans-147
   prefs: []
   type: TYPE_NORMAL
 - en: stuff up here in the so in the decorator function and the kind of convenience
@@ -993,6 +1141,7 @@
     actually decorate the function。 while whatever you do down here needs to happen
     every time the decorator is called so if it's。 something that takes a little bit
     of time it's great to be able to do it once if that's possible。
+  id: totrans-148
   prefs: []
   type: TYPE_NORMAL
 - en: okay then one more thing I want to show you before we move on is that it's also
@@ -1000,6 +1149,7 @@
     defined right and so we could。 use that together with the trace decorator so as
     an example let me just put it。 well time run trace right here， and then to yeah
     to see the updates we can now run our function again。
+  id: totrans-149
   prefs: []
   type: TYPE_NORMAL
 - en: and you'll now see that every time a random greet is called we also get one
@@ -1007,6 +1157,7 @@
     timer around the trace random greet function。 and this is kind of when one of
     the first times when it really starts messing a little bit with。 okay what's actually
     happening here and so it might be useful then to just spell out。
+  id: totrans-150
   prefs: []
   type: TYPE_NORMAL
 - en: what's actually happening so this is now， essentially what it does is that it's
@@ -1014,6 +1165,7 @@
     definition of random greet。 so this statement is essentially the same as what
     we're doing here and so so it。 remember random greet is a function then trace
     returns a function and then timer takes in a function。
+  id: totrans-151
   prefs: []
   type: TYPE_NORMAL
 - en: and returns it again so what timer we'll do is just take how much time does
@@ -1021,6 +1173,7 @@
     to run so so it all kind of。 builds together nicely one short little note that
     will do， is let's see if we can make。 it's our source this okay here we go， so
     if we run this you can see here that the elapsed timeprints after。
+  id: totrans-152
   prefs: []
   type: TYPE_NORMAL
 - en: the tracing is done and that makes sense because we put timer on the outside
@@ -1028,6 +1181,7 @@
     what this means is that we're actually timing just random greet and then we're
     tracing。 kind of the timer call and you won't see much difference but if you know
     it now。
+  id: totrans-153
   prefs: []
   type: TYPE_NORMAL
 - en: elapsed time is at least printed out before random greet returns because。 the
@@ -1035,12 +1189,14 @@
     so when we call function here that's actually calling the timed function。 so in
     this case this part is already printing out the elapsed time before we get to
     the print。
+  id: totrans-154
   prefs: []
   type: TYPE_NORMAL
 - en: statement down there yes so this is mainly just showing you that we can。 indeed
     stack timers now stack decorators together。 okay then for the third exercise we'll
     do something a bit different。 so for this third exercise we're going to do something
     slightly different。
+  id: totrans-155
   prefs: []
   type: TYPE_NORMAL
 - en: so now we're looking at a decorator that we're again going to implement that
@@ -1048,6 +1204,7 @@
     it will just。 register essentially the existence of a function and we now have
     this code here before I kind of。 walk you through what this code does let me just
     run it and show you the effect of it。
+  id: totrans-156
   prefs: []
   type: TYPE_NORMAL
 - en: so again I'll run it with iPitan so that it first runs through the code and
@@ -1055,6 +1212,7 @@
     see it actually there is。 actually some a little bit of script here that it stops
     running so first it's actually an input here。 asking me to input a text so let's
     say something like decorators are。
+  id: totrans-157
   prefs: []
   type: TYPE_NORMAL
 - en: now it says here that there are some parsers one called two or fourths one called
@@ -1062,56 +1220,72 @@
     if you look over here on the。 on the code you can see that the parsers come from
     something called registered that's also part of。 the decorator that you're going
     to make and but you can kind of recognize here the names here are。
+  id: totrans-158
   prefs: []
   type: TYPE_NORMAL
+  zh: 现在这里说有一些解析器，一个叫做two or fourths，一个叫做反转，还有一个叫做橡胶语言，它要求我选择一个解析器，如果你看代码，你可以看到解析器来自于某个叫做registered的地方，这也是你要制作的装饰器的一部分，但你可以识别出这些名称。
 - en: from these functions so there's a registered true or false function there's
     a registered。 reversed function and there's a registered rubber language function
     and we're going to look at what。 these do as well but let's choose reversed that's
     an example and you can now see somehow prints out。 nephirasarutarotz or something
     like this and if you look closely at this you can kind of see。
+  id: totrans-159
   prefs: []
   type: TYPE_NORMAL
+  zh: 从这些函数中，有一个注册的真或假函数，还有一个注册的反转函数，以及一个注册的橡胶语言函数，我们将要深入了解它们的功能，但先选择反转作为例子，你现在可以看到它打印出nephirasarutarotz或类似的东西，如果你仔细观察，你会发现。
 - en: that this is decorators are fun in reverse so this thing has reversed our text
     so you can kind of see。 here okay what what does the script to it asks us to input
     a text then there's a there's a wild。 true loop here the only thing it does is
     to make sure that the answer that we're giving here is one。 of the registered
     parsers if it's not it just asks one more time once that's done it comes down
     here。
+  id: totrans-160
   prefs: []
   type: TYPE_NORMAL
+  zh: 这就是装饰器在反转中的乐趣，所以这个东西已经反转了我们的文本，你可以看到，脚本要求我们输入一个文本，然后有一个while真循环，它唯一的作用是确保我们在这里给出的答案是注册解析器之一，如果不是，它只会再问一次，完成后会来到这里。
 - en: and it says okay parser funk it goes into this registered dictionary and picks
     out the parser。 from the dictionary and then it calls this parser funk with the
     text so let's have a closer look at。 what this registered is and you can hear
     see that this is a dictionary and it has entries where you。 have the name of a
     function and pointing to the function object itself and this is kind of。
+  id: totrans-161
   prefs: []
   type: TYPE_NORMAL
+  zh: 它说，parser funk进入这个注册字典并从字典中挑选出解析器，然后调用这个parser funk与文本，所以让我们更仔细地看看这个注册字典，你可以看到这是一个字典，其中有条目，功能名称指向函数对象本身。
 - en: happened for all three of these and this is something that can be used in Python
     for instance to emulate。 switch switch statements and things like this or it can
     be used like here to give the user some。 some kind of dynamic choice between different
     available things for instance you could imagine that。 this was part of a bigger
     plugin or hooking system where you can define hooks and just register。
+  id: totrans-162
   prefs: []
   type: TYPE_NORMAL
+  zh: 这在所有三个中都是这样，这可以在Python中用于模拟开关语句等，或者像这里一样，为用户提供在不同可用选项之间的一种动态选择，例如你可以想象这是一个更大插件或钩子系统的一部分，你可以定义钩子并注册。
 - en: them like this even at even at runtime you could add registered new hooks so
     it kind of gives you。 some extra flexibility in your code but one thing to note
     here is that yeah it's just these claims。 to be the functions that we have defined
     right here and in this case we have actually not been。 using fun tools reps so
     it actually is just the pure function and so for the register。
+  id: totrans-163
   prefs: []
   type: TYPE_NORMAL
+  zh: 即使在运行时，你也可以添加注册的新钩子，这为你的代码提供了一些额外的灵活性，但这里需要注意的是，这些声称是我们在这里定义的函数，实际上我们并没有使用fun
+    tools reps，所以它实际上只是一个纯函数，因此对于你要制作的注册装饰器，它实际上并不需要包装函数本身，只需返回相同的函数。
 - en: decorated that you're going to make it will actually not need to to wrap the
     function itself it just。 returns the same function so the only thing you need
     to do there is to the the registered。 decorator takes in the function and then
     it just registers that function into the registered。 dictionary that you have
     here and then it can return that function back again and before。
+  id: totrans-164
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以你需要做的唯一事情是，注册的装饰器接受函数，然后将该函数注册到你这里的注册字典中，然后它可以将该函数返回回来，在此之前。
 - en: having you run off and implement this and i'll just show you quickly what these。
     things do as well and so the true or false function so let me actually call it
     here so have a true or。 false this so you can see this is now a function so we
     can call it and it does things like it。 translates between few different say more
     human readable strings that has some true or false。
+  id: totrans-165
   prefs: []
   type: TYPE_NORMAL
 - en: connotation so for instance yes is true and no is false for example so that's
@@ -1119,12 +1293,14 @@
     one of those words for instance if i actually write decorators here it just returns
     none。 either there is no return statement so it just falls off the of the function
     and returns none。
+  id: totrans-166
   prefs: []
   type: TYPE_NORMAL
 - en: the next one is reversed so that was the one we saw already it's just reversing
     the string and。 then using capitalized to put a capital letter in front。 and then
     the final little parser just for fun here is something called the rubber language。
     parser and let's move there we go and and this is based on actually。
+  id: totrans-167
   prefs: []
   type: TYPE_NORMAL
 - en: children's book series by the Swedish author of the lingran where they， mean
@@ -1133,6 +1309,7 @@
     what it does here is that for each letter in the text string that。 you give it
     if that letter is part of the consonants so if it's a consonant then it's written
     out as the。
+  id: totrans-168
   prefs: []
   type: TYPE_NORMAL
 - en: letter repeated and then within o between them so you can for instance see there
@@ -1140,17 +1317,21 @@
     on and otherwise so if it's a well or any。 other symbol it's just returned as
     is so that this was kind of then yeah used as a toy language for。 kids in suite
     so these are just different functions to play with for different kind of。
+  id: totrans-169
   prefs: []
   type: TYPE_NORMAL
 - en: so it's text parsing and so not really important again for the for the implementation
     of the task。 but the task that you have is to figure out how can you create this
     decorator so good luck。
+  id: totrans-170
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/13dc3ed458136a286215705708b44e8c_14.png)'
+  id: totrans-171
   prefs: []
   type: TYPE_IMG
 - en: '![](img/13dc3ed458136a286215705708b44e8c_15.png)'
+  id: totrans-172
   prefs: []
   type: TYPE_IMG
 - en: okay so let's see how we can actually implement this register decorator and
@@ -1158,6 +1339,7 @@
     just give this one and now just to show you i moved the implementation of register
     so now again I。 get the error saying that we don't have register defined so let's
     see what did we need here we wanted。
+  id: totrans-173
   prefs: []
   type: TYPE_NORMAL
 - en: if you look here we want to have the decorator register and we want to have
@@ -1165,6 +1347,7 @@
     this as a module level dictionary。 and it can just be empty we don't need this
     to the moment that will instead be dynamically filled。 in by the grader and we
     wanted to have a decorator called register and since it's a decorator it takes。
+  id: totrans-174
   prefs: []
   type: TYPE_NORMAL
 - en: in a function let's add in a quick buck string to it and some point at least
@@ -1172,6 +1355,7 @@
     one of the hints essentially we talked about。 how this one should not wrap the
     function at all it should just return the same function。 so you can see how that's
     different from how for instance the timer decorator works which takes。
+  id: totrans-175
   prefs: []
   type: TYPE_NORMAL
 - en: in a function and wraps it in a different function that is then returned so
@@ -1179,6 +1363,7 @@
     at least it starts running so the imports work。 and if now the decorators are
     fun you can now see that okay my parsers here is empty so there。 there is no parser
     to choose from maybe it works to just type reversed and choose one of them。
+  id: totrans-176
   prefs: []
   type: TYPE_NORMAL
 - en: so we just need to stop that so there's still a little bit lacking here in our
@@ -1186,6 +1371,7 @@
     every function we want to have。 one item into our dictionary so that means that
     I want to do something like you registered and。 I need the name of the function
     and this we've seen a few times we can pick out using the name。
+  id: totrans-177
   prefs: []
   type: TYPE_NORMAL
 - en: attribute and what do I want this to point to I just wanted to do the function
@@ -1193,6 +1379,7 @@
     than so if we run again okay let's input。 the decorators are fun and now you can
     see that we actually got our list of parsers here。 true or false reversed and
     rubber language so let's try to choose the rubber language this time then。
+  id: totrans-178
   prefs: []
   type: TYPE_NORMAL
 - en: language and indeed it seems to work now we have， (speaking in foreign language)，
@@ -1200,6 +1387,7 @@
     it accepts a function。 it returns a function in this case the same function and
     the only thing we've done is that。 we've created a list at runtime our dictionary
     at runtime over which functions that are。
+  id: totrans-179
   prefs: []
   type: TYPE_NORMAL
 - en: registered by this decorator and just to show you finally here if we do。 look
@@ -1207,14 +1395,17 @@
     is true show you also that it's now the registered dictionary that we hear started
     just。 as empty has been filled out by them with the different functions and this
     happens at the time。
+  id: totrans-180
   prefs: []
   type: TYPE_NORMAL
 - en: the function is defined so for instance we could just to show you we could read
     add another function。 this case so just add the old trusted world example we've
     been doing a few times。 something like this and now if I look in the understood。
+  id: totrans-181
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/13dc3ed458136a286215705708b44e8c_17.png)'
+  id: totrans-182
   prefs: []
   type: TYPE_IMG
 - en: or you can see that this has indeed been added here and we could now。 use that
@@ -1222,6 +1413,7 @@
     and just to kind of do a quick summary of what you have seen so far as we've seen
     a couple of。 decorators kind of following the this regular pattern where you define
     a decorator as a function。
+  id: totrans-183
   prefs: []
   type: TYPE_NORMAL
 - en: that accepts a function as an argument it then defines an inner function that
@@ -1229,6 +1421,7 @@
     case the timer function。 we just start the timer but you do something before calling
     the function then you call the function。 and then you do something after calling
     the function and then finally inside of this。
+  id: totrans-184
   prefs: []
   type: TYPE_NORMAL
 - en: wrapper function you return the return value and then from the decorator itself
@@ -1236,6 +1429,7 @@
     doing this we saw another fairly。 similar example with the trace but how we could
     split out so we could do some of the。 things that are related to the function
     itself we can kind of do outside of the wrapper function。
+  id: totrans-185
   prefs: []
   type: TYPE_NORMAL
 - en: while if you need to do any actions on the arguments you should do it inside
@@ -1243,6 +1437,7 @@
     then finally we saw this simpler。 register decorator that doesn't really change
     the function at all but just in this case registers。 the existence of the function
     so that's half half the task we're going to do in this course。
+  id: totrans-186
   prefs: []
   type: TYPE_NORMAL
 - en: so this is a great time to just take a break your stretch your legs a little
@@ -1250,6 +1445,7 @@
     we will continue with a few。 more slightly advanced concepts so in this second
     part we'll talk a little bit about a few more。 advanced concepts for decorators
     the first one would be looking at decorators that can keep some sort。
+  id: totrans-187
   prefs: []
   type: TYPE_NORMAL
 - en: of state so you can add some state to your functions essentially and somewhat
@@ -1257,6 +1453,7 @@
     is one kind of language construct。 that's really good for keeping state so in
     this section we'll actually look a little bit on both。 using classes as decorators
     so so far we've kind of been saying that a decorator is a function。
+  id: totrans-188
   prefs: []
   type: TYPE_NORMAL
 - en: it turns out it doesn't need to be a function it could for instance be a。 eopia
@@ -1264,6 +1461,7 @@
     there's some new developments to decorators where a decorator doesn't even need
     to be a function or。 class it's it might be some kind of expression so we'll briefly
     touch on that as well。
+  id: totrans-189
   prefs: []
   type: TYPE_NORMAL
 - en: and then so far we've been using just kind of decorators just something like
@@ -1271,13 +1469,16 @@
     we'll look at how we can add arguments。 to our the careers and then it turns out
     that there's also some use cases where you may want to use。 arguments or maybe
     not so we'll have some how can you actually get away with using optional arguments。
+  id: totrans-190
   prefs: []
   type: TYPE_NORMAL
 - en: in our decorators so this will be the the next coming tasks that we're kind
     of looking to。 so yeah we'll start working on task 4 in a second。
+  id: totrans-191
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/13dc3ed458136a286215705708b44e8c_19.png)'
+  id: totrans-192
   prefs: []
   type: TYPE_IMG
 - en: so in this fourth task what we're going to do is look at decorators that can
@@ -1285,6 +1486,7 @@
     kind of the example of this that we want you to implement is this decorator here
     called count calls。 and what it will just do is just count how many times a function
     has been called。
+  id: totrans-193
   prefs: []
   type: TYPE_NORMAL
 - en: so so again this may not be the most useful thing but it could help you out
@@ -1293,6 +1495,7 @@
     of a Fibonacci calculator so just for brief background for those。 who are not
     familiar with Fibonacci numbers this is just a series of numbers that go something
     like。
+  id: totrans-194
   prefs: []
   type: TYPE_NORMAL
 - en: 1 2 3 5 8 13 and so on and what you can kind of notice here is if you look at
@@ -1300,6 +1503,7 @@
     is the sum of 2 plus 3 8 is the sum of 3。 plus 5 and so on and so one way to write
     this out just using say more like a math notation is。 saying something like fib
     n the nth Fibonacci number is just sum of fib n minus 1 so the previous Fibonacci。
+  id: totrans-195
   prefs: []
   type: TYPE_NORMAL
 - en: number and fib n minus 2 the number before that again and implementing this
@@ -1307,6 +1511,7 @@
     this essentially as what's called a recursive。 function so you have here to calculate
     Fibonacci I would give a number we just sum up Fibonacci of。 the previous number
     number minus 1 and Fibonacci of number minus 2 and then one thing we need to。
+  id: totrans-196
   prefs: []
   type: TYPE_NORMAL
 - en: remember in a recursive function is that we need some kind of stop condition
@@ -1314,6 +1519,7 @@
     with 3 here we will be looking at Fibonacci。 of 2 plus Fibonacci on 1 and so here
     we just stop whenever the number is less than 2 then。 we should return 1 so you
     kind of want this the first Fibonacci number。
+  id: totrans-197
   prefs: []
   type: TYPE_NORMAL
 - en: and yeah let's just run this and see then what happens so again I'll just use
@@ -1321,6 +1527,7 @@
     here now。 and this is called the creator so one thing it does is that it adds
     an attribute to the function。 and so you can see here I'm able to say Fibonacci
     dotted number calls and so this is just a counter。
+  id: totrans-198
   prefs: []
   type: TYPE_NORMAL
 - en: that counts how many times have this function been called and then we can do
@@ -1329,6 +1536,7 @@
     Fibonacci number is indeed 1 and Fibonacci has been called one time now。 if I
     now call Fibonacci one more time you can now see that it remembers but it had
     called it once。
+  id: totrans-199
   prefs: []
   type: TYPE_NORMAL
 - en: before and now we call it one more time so now we are called it twice and now
@@ -1336,6 +1544,7 @@
     that let's for instance calculate the。 seventh Fibonacci number and that's kind
     of what you can see here as well and now how many calls。 would we need to calculate
     this and so if you now ask for the number of calls you can see that this。
+  id: totrans-200
   prefs: []
   type: TYPE_NORMAL
 - en: so grown up for some reason this code spent 41 calls to Fibonacci to calculate
@@ -1343,6 +1552,7 @@
     of here so that when we for。 instance did Fibonacci of 7 that calls Fibonacci
     of 6 plus Fibonacci of 5 but then the call to Fibonacci。 of 6 here also needs
     to call Fibonacci of 5 but it it calculates it all over again instead of using。
+  id: totrans-201
   prefs: []
   type: TYPE_NORMAL
 - en: the value that it has here so in this way this code ends up just doing a lot
@@ -1350,6 +1560,7 @@
     use something like either a。 lookup table some caching or just a simple for loop
     where you kind of fill out an array as you move。 through or something like this
     but this implementation it's really nice to just illustrate something that。
+  id: totrans-202
   prefs: []
   type: TYPE_NORMAL
 - en: ends up spending a lot of number of calls so for this one kind of L2N3 so I'm
@@ -1357,6 +1568,7 @@
     that should just take 30 something additions。 right but you can see here it actually
     takes some time to calculate and if I now look at the number。 of calls we can
     see that it spent over 7 million function calls to calculate this number and。
+  id: totrans-203
   prefs: []
   type: TYPE_NORMAL
 - en: okay so that's the Fibonacci code and now what the task is here as I said is
@@ -1364,6 +1576,7 @@
     straightforward building on what。 we've done before the new thing is that we have
     this Tottenham calls thing that we're using here。 for state and just to show you
     a little bit of how those work we can I'll just show you here something。
+  id: totrans-204
   prefs: []
   type: TYPE_NORMAL
 - en: like an example of the hello world thing that we've seen but very implement
@@ -1371,6 +1584,7 @@
     we need to。 the clue in there and but now I want to assume that I have a list
     of seen names that I have added as a。 as a little greet so I'll say something
     like this and the greet。scene will be a list directly a set。
+  id: totrans-205
   prefs: []
   type: TYPE_NORMAL
 - en: of the different names that I've already seen and then if I've already seen
@@ -1379,6 +1593,7 @@
     our usual hello name。 And now for this to work probably we should。 also now just
     note that we have a seen name so I'll add this to our set and then something like
     this。
+  id: totrans-206
   prefs: []
   type: TYPE_NORMAL
 - en: so now I mentioned that gray greets。scene I want this to be a set and the way
@@ -1386,6 +1601,7 @@
     empty set like this and now if I look at。 greet。scene it is an empty set I'll
     see if this actually works so if we now just run greet it says。 hello world as
     we expected to if I then call greet again it says seen you before world so now。
+  id: totrans-207
   prefs: []
   type: TYPE_NORMAL
 - en: can actually use this greet。scene attribute that it's using here so we're keeping
@@ -1393,6 +1609,7 @@
     by putting it as an attribute on。 the function we kind of namespace it to where
     it belongs so this is something that's really。 interesting for this for this function
     so we've named space it to that by putting it as an attribute。
+  id: totrans-208
   prefs: []
   type: TYPE_NORMAL
 - en: and for instance now if you instead greet icon we'll see the hello p icon and。
@@ -1400,19 +1617,24 @@
     to show you how you can。 add a num calls and an attribute to a function so what
     the task is as mentioned is implement。 the count calls to grader and so that it
     has a num calls attribute that counts the number of。
+  id: totrans-209
   prefs: []
   type: TYPE_NORMAL
 - en: calls the function has been invoked good luck。
+  id: totrans-210
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/13dc3ed458136a286215705708b44e8c_21.png)'
+  id: totrans-211
   prefs: []
   type: TYPE_IMG
 - en: okay so let's see how we can solve this so now again i've been flipped out my
     piking the creators。
+  id: totrans-212
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/13dc3ed458136a286215705708b44e8c_23.png)'
+  id: totrans-213
   prefs: []
   type: TYPE_IMG
 - en: and i've added some tests here so now just see how it's advanced if we now run
@@ -1420,6 +1642,7 @@
     start by doing that so we have our decorators here i have the old ones we have。
     registered timer and trace and now we want to implement a count calls takes in
     a function and。
+  id: totrans-214
   prefs: []
   type: TYPE_NORMAL
 - en: this one should do is essentially count the number of calls to function。 and
@@ -1427,6 +1650,7 @@
     that。 we're used to so we'll add wraps like this i'll wrap so for this one we
     actually need。 some kind of wrapper function because we need to do something when
     the function is called。
+  id: totrans-215
   prefs: []
   type: TYPE_NORMAL
 - en: so i'll just call this underscore count calls we have the arguments and keyword
@@ -1434,6 +1658,7 @@
     is and then let's see what else。 yeah we want to return calls so this is kind
     of just a skeleton and then we'll implement this。 and a little bit but let's just
     check that this works well we don't have the num calls attribute。
+  id: totrans-216
   prefs: []
   type: TYPE_NORMAL
 - en: right okay so let's start by just adding that one in so when we are just defining
@@ -1441,6 +1666,7 @@
     i'll just say okay what i want。 count calls to have and it calls zero so something
     like this so again you can just。 even a function you can just define an attribute
     on that function simply by assigning to it。
+  id: totrans-217
   prefs: []
   type: TYPE_NORMAL
 - en: so if we do this now let's see if that one runs yes so now we have code running
@@ -1448,12 +1674,14 @@
     then i tried to calculate。 seventh Fibonacci number for that when i got none so
     of course the code isn't doing what it should。 yet but at least it's it's running
     through okay so let's see what do we actually need to do inside。
+  id: totrans-218
   prefs: []
   type: TYPE_NORMAL
 - en: of our decorator well essentially every time we call the function we just want
     to increase or。 increment num calls so that can be done by input also and so say。
     equals equals this and then i want to add one to it so count calls and plus equals
     one。 and that should help us at least get some numbers in here so well let's try。
+  id: totrans-219
   prefs: []
   type: TYPE_NORMAL
 - en: okay yeah now we can see that something happens but we're still getting the。
@@ -1461,12 +1689,14 @@
     not calling。 it right so now we need to actually call the function and since this
     time we're actually not。 need to do anything we're doing anything after we call
     the function so i'll just return。
+  id: totrans-220
   prefs: []
   type: TYPE_NORMAL
 - en: function both way and bugs and like this so let's see if this one runs。 and
     now you can see okay we got zero calls let's see what these numbers mean。 zero
     calls before we do anything then the seventh Fibonacci number is 21。 an article
     claiming that we spent 41 calls to do it then the 32nd Fibonacci number is something。
+  id: totrans-221
   prefs: []
   type: TYPE_NORMAL
 - en: like three and a half million and in total we've now spent seven million function
@@ -1474,12 +1704,14 @@
     here is that we have this。 wrapper function and mainly what it does is just call
     the function itself but we need to wrap here。 because every time we call the function
     we want to increment this camera so that's what we're doing。
+  id: totrans-222
   prefs: []
   type: TYPE_NORMAL
 - en: there so this is one way that you can keep state in your decorators。 and it
     works fairly nicely although you might be thinking well if i'm going to keep state。
     typically i want to use a class if you're if you're used to classes。 and using
     classes gives you much more flexibility and they're kind of built more for。
+  id: totrans-223
   prefs: []
   type: TYPE_NORMAL
 - en: we're doing this so let's see if we can actually implement the count calls decorator
@@ -1487,6 +1719,7 @@
     is a function but it turns out that。 anything that you can kind of use to fulfill
     the pattern right so if you remember if we just。 add our color like this so we
     said here that doing something like count calls， of some function。
+  id: totrans-224
   prefs: []
   type: TYPE_NORMAL
 - en: setting that thing up is essentially the same as just defining your function。
@@ -1494,6 +1727,7 @@
     is the same as。 defining the function independently and then decorating it manually
     afterwards。 so this syntax is just translated to this one and usually what you
     want to have here is a function。
+  id: totrans-225
   prefs: []
   type: TYPE_NORMAL
 - en: but anything that kind of you can use that syntax for will more or less work。
@@ -1501,6 +1735,7 @@
     note a little bit。 later but it will work for anything that's callable so if you
     have a class and that class is callable。 you could do the same thing so what does
     it mean for a class to be callable。
+  id: totrans-226
   prefs: []
   type: TYPE_NORMAL
 - en: well let's just look at a basic class here so i'm going to make an adder class。
@@ -1508,6 +1743,7 @@
     of sorts。 so when you instantiate it will take some number let's just score that
     number。 and then what we want to do is that we want this adder class well let's
     look at an example。
+  id: totrans-227
   prefs: []
   type: TYPE_NORMAL
 - en: i want to be able to say something like adder three should be now essentially
@@ -1515,6 +1751,7 @@
     to say something like add three to five。 and then want this thing to say eight
     here you can see i got the type error saying that the。 adder object is not callable
     so that's the concept we were talking about and the idea is that we want。
+  id: totrans-228
   prefs: []
   type: TYPE_NORMAL
 - en: to make adder callable and then any cluster is callable we should be able to
@@ -1522,6 +1759,7 @@
     you make a class callable。 it's actually by implementing one of the special methods
     called call or double underscore call。 double underscore under call and i'm going
     to say here now that when i call it i want to have some。
+  id: totrans-229
   prefs: []
   type: TYPE_NORMAL
 - en: other number and then the result of calling this adder instance will be that
@@ -1529,6 +1767,7 @@
     here we have made the。 adder object callable so now we can do and add three again
     create this adder object。 and if i now do add three of five let's see that's number
     three you can see that this turns out to be。
+  id: totrans-230
   prefs: []
   type: TYPE_NORMAL
 - en: eight surprisingly and if i add three to twelve i get fifteen and so on。 so
@@ -1536,6 +1775,7 @@
     if we can。 then do the same thing but plus that i want to call count calls。 and
     what this count calls to be is something i can use as a decorator so what does
     that mean well。
+  id: totrans-231
   prefs: []
   type: TYPE_NORMAL
 - en: we just saw that then we need to be able to define a call method so we're going
@@ -1543,6 +1783,7 @@
     our wrapped function up here。 so i'm just going to define something like this
     and then we'll figure out what we need to put。 into there then we're also saying
     that we want to have let's see for this to work as a decorator。
+  id: totrans-232
   prefs: []
   type: TYPE_NORMAL
 - en: i need to be able to essentially now say i want to say something like count
@@ -1551,12 +1792,14 @@
     so that means that when i do this what i'm doing then is instantiating。 the class
     and so to get this to work we need to have the instantiation of the class to pick
     up the。
+  id: totrans-233
   prefs: []
   type: TYPE_NORMAL
 - en: f the function that we're working with so that means that we need to have an
     init method。 here that takes in one parameter and that parameter will be a function。
     and seems like it's a good idea to store that function for later。 so something
     like this is kind of the basic structure of our count calls。
+  id: totrans-234
   prefs: []
   type: TYPE_NORMAL
 - en: later that should work the same as the as the， now it's defined using a class
@@ -1565,6 +1808,7 @@
     this over and use count calls so let's see now if i can restart my terminal。 on
     my ipython and this looks good now we can see that okay we're kind of back in
     the situation。
+  id: totrans-235
   prefs: []
   type: TYPE_NORMAL
 - en: we were earlier when we were running this task let me just run it with a regular
@@ -1572,6 +1816,7 @@
     on this one then so first of。 all we again want to have the attribute name calls
     and so since this is a class we just define。 calls now in a sense more naturally
     instead of adding it to a function like we do here。
+  id: totrans-236
   prefs: []
   type: TYPE_NORMAL
 - en: we just add it as a regular instance attributes in our init method。 so this
@@ -1579,6 +1824,7 @@
     the situation。 way so earlier where we have zero name calls and we get the non-returns
     when calling the function。 so this now in a sense the logistics of this works
     but we don't have。
+  id: totrans-237
   prefs: []
   type: TYPE_NORMAL
 - en: the function kind of running properly yet i want to add one more test just to
@@ -1586,6 +1832,7 @@
     tools reps。 earlier and now to get for instance a good name and so on so just
     want to check that we are able。 to do the same thing also with the function yeah
     and we can see that there is something wrong。
+  id: totrans-238
   prefs: []
   type: TYPE_NORMAL
 - en: there as well okay let's see then how should we continue working with this。
@@ -1593,6 +1840,7 @@
     and now it's not。 completely clear to me where should i put the reps right probably
     here we had it on the。 function that was kind of cold so maybe i should put it
     there or i should put it here。
+  id: totrans-239
   prefs: []
   type: TYPE_NORMAL
 - en: but then i need to refer to the function which is only fine there and so on
@@ -1600,6 +1848,7 @@
     can do instead is to just use functor tools。 remember that the functor tools reps
     is it's really just using something called update wrapper in the。 background so
     we'll use that one instead and see that the functor tools update wrapper it takes。
+  id: totrans-240
   prefs: []
   type: TYPE_NORMAL
 - en: both the wrapper and a wrapped and where it updates a wrapper function to look
@@ -1607,6 +1856,7 @@
     the wrapper that's just the count class。 thing so i'll just write self there and
     then what i want to wrap is the functor oh what's this in place。 let's see how
     this runs and now we can see that it has gotten its name Fibonacci so we got that。
+  id: totrans-241
   prefs: []
   type: TYPE_NORMAL
 - en: one in place and we have the syracles but now we just need to work a little
@@ -1614,6 +1864,7 @@
     we call we want to increase the。 number calls so i'll add one and then yeah let's
     just test it again make sure it works yes now we。 can see that we got the ones
     and views and then we want to uh call the function so in this case i。
+  id: totrans-242
   prefs: []
   type: TYPE_NORMAL
 - en: want to return itself so now we call the function that we have in this sort
@@ -1621,6 +1872,7 @@
     so hargs and hargs so let's see then。 so now if we run now it's starting to look
     better so now we we got something that actually。 has decorated uh our Fibonacci
     function in a proper manner so let's look at these ones together。
+  id: totrans-243
   prefs: []
   type: TYPE_NORMAL
 - en: and so what we see here is that the count call function decorator and the count
@@ -1628,6 +1880,7 @@
     code you can also see。 that it's it's very much the same so essentially all the
     code that we had here in count calls the。 wrapper function we now put into call
     so that's kind of what happens every time we call the。
+  id: totrans-244
   prefs: []
   type: TYPE_NORMAL
 - en: decorator function and then we had some of this other initialization function
@@ -1636,6 +1889,7 @@
     look at our let's see yes so let's let's go back to the trace decorator that we
     had here。 and I'll just import it like this and now say that I want to use this
     not to decorate a function。
+  id: totrans-245
   prefs: []
   type: TYPE_NORMAL
 - en: but to decorate a class so we're kind of doing the opposite now so what you've
@@ -1643,6 +1897,7 @@
     going to see can we。 use a function to decorate a class so let's do something
     like just reusing the old trace。 and we have some kind of class it doesn't really
     matter too much for this example so just gonna make。
+  id: totrans-246
   prefs: []
   type: TYPE_NORMAL
 - en: a quickly trivial class that was really weird but I decorated it with trace
@@ -1650,6 +1905,7 @@
     the trace kicks in together so when I。 decorated the class here it means that
     when I essentially call the class which means kind of。 instantiates the class
     the trace thing starts working and I can then see that okay it's calling。
+  id: totrans-247
   prefs: []
   type: TYPE_NORMAL
 - en: thing and then it this thing returned an object which is now our thing now this
@@ -1657,6 +1913,7 @@
     like this is a thing right but now。 if I want to pick I can say is instance little
     thing of the class thing and we'll get some weird。 error here saying that this
     instance argument too must be a type or a two pull of types so it seems。
+  id: totrans-248
   prefs: []
   type: TYPE_NORMAL
 - en: like the thing here it's not the type anymore so let's have a look at see what
@@ -1664,6 +1921,7 @@
     bit we might be able to realize what。 has happened because how did we define thing
     well we use trace here around thing so that means that。 thing there it comes in
     takes the name fun inside of here even though it's a class but then it's kind。
+  id: totrans-249
   prefs: []
   type: TYPE_NORMAL
 - en: of we create this inner function and then we return that inner function so that
@@ -1671,6 +1929,7 @@
     that this class。 even though the decorator might do its work the class has changed
     somewhat。 in many applications that doesn't really matter too much but there are
     definitely applications。
+  id: totrans-250
   prefs: []
   type: TYPE_NORMAL
 - en: where you want to keep you want to both be able to decorate your class and keep
@@ -1678,6 +1937,7 @@
     out also that one thing we could do。 would be to move the trace decorator down
     to the init method and just decorate the init method。 instead that wouldn't change
     the class here and we would kind of get the same effect of just showing。
+  id: totrans-251
   prefs: []
   type: TYPE_NORMAL
 - en: the trace of the init but that's more of an artifact of this being a very simple
@@ -1685,6 +1945,7 @@
     properly so let's look at the。 principle and essentially what we need to take
     care of here is that we need to create a decorator。 that just returns the same
     class so let's have a look at that so I'm just going to make a new。
+  id: totrans-252
   prefs: []
   type: TYPE_NORMAL
 - en: decorator I'm calling it hello it will be a simplified version of trace and
@@ -1692,6 +1953,7 @@
     thing essentially and then we want to。 do something see what better later and
     then at the end of this doing something I still just want。 to return the class
     and just to point out that this now essentially does well it really does nothing。
+  id: totrans-253
   prefs: []
   type: TYPE_NORMAL
 - en: just do the example quickly so the thing is thing and now let's see that。 thing
@@ -1699,6 +1961,7 @@
     happen。 but we want this to actually be something useful so that we for instance
     got this trace saying that。 this thing was instantiated okay so how can we do
     it let's have a look at our function here。
+  id: totrans-254
   prefs: []
   type: TYPE_NORMAL
 - en: so the the important kind of principle that we need to adhere to here is that
@@ -1706,6 +1969,7 @@
     I want to do in this case I just。 want to print out a message whenever the class
     is instantiated so that in practice means that I。 just want to wrap the the init
     function of this particular class so there are it this will depend。
+  id: totrans-255
   prefs: []
   type: TYPE_NORMAL
 - en: very much on the decorator you're creating exactly what you want to do here
@@ -1713,12 +1977,14 @@
     you want to add some attributes it might be。 that you want to change around some
     return values it may be that you want to automatically define some。 special methods
     and things like this in this case we're just kind of wrapped init method。
+  id: totrans-256
   prefs: []
   type: TYPE_NORMAL
 - en: so one way to do that would be to then create hello init wrapper。 and kind of
     as usual this wrapper function will just take in lots loads of arguments and。
     group and and let's see what did I want to do first I just want to say that an
     instance。 of the in now we have a class， that name here was created。
+  id: totrans-257
   prefs: []
   type: TYPE_NORMAL
 - en: and let's see let's spend a little bit more space on this I know and so that's
@@ -1726,6 +1992,7 @@
     quarts。 so now I'm kind of just wrapping the init but how do I now actually。 make
     sure that this init thing is wrapped properly well what I usually do write this
     just to return。
+  id: totrans-258
   prefs: []
   type: TYPE_NORMAL
 - en: now we need to return class so what I instead is saying something like class
@@ -1733,6 +2000,7 @@
     sign there。 so what we're doing here is that I'm just replacing class init with
     my new wrapper function。 and now one more thing we need to be a little bit careful
     with here is that I'm replacing it but。
+  id: totrans-259
   prefs: []
   type: TYPE_NORMAL
 - en: then I'm calling it again and this will actually create an infinite loop。 where
@@ -1740,6 +2008,7 @@
     in condition so we need to actually store also a reference to the old or original
     init。 so let's just say something like original init that is the class init and
     then here what we're。
+  id: totrans-260
   prefs: []
   type: TYPE_NORMAL
 - en: actually calling is the original init method okay so let's see if this thing
@@ -1747,6 +2016,7 @@
     it with hello which is this thing。 and if I now say that thing it's a thing you
     can see that hello does its work and。 tells us that the instance of thing was
     created so that comes from up here。
+  id: totrans-261
   prefs: []
   type: TYPE_NORMAL
 - en: so it seems like the hello thing works and have we now managed to actually preserve
@@ -1754,6 +2024,7 @@
     is just one example of。 how you could potentially work if you need to decorate
     classes probably the most。 say famous decorator that's used for decorating classes
     is the new data class decorator that was。
+  id: totrans-262
   prefs: []
   type: TYPE_NORMAL
 - en: introduced in python 3 7 okay so this has been a bit of a teacher in a sense
@@ -1761,6 +2032,7 @@
     a count calls decorator。 so that we could keep state and we implemented both using
     function properties or attributes and。 as a class and then we also took a small
     leader into looking into how we can decorate classes。
+  id: totrans-263
   prefs: []
   type: TYPE_NORMAL
 - en: then we're now ready for our fifth task so let's see what that turns out to
@@ -1768,6 +2040,7 @@
     the task itself。 i'm just going to do a short demonstration and the topic that
     we're going to talk about now is how。 can we create decorators that can take arguments
     and what we're going to use this for is that we'll。
+  id: totrans-264
   prefs: []
   type: TYPE_NORMAL
 - en: create decorator called use units where we can specify that a given function。
@@ -1776,6 +2049,7 @@
     nicely what i'm going to do now first before we actually look at the details of。
     the task i'm just going to show you a few examples of how to calculate with these
     units。
+  id: totrans-265
   prefs: []
   type: TYPE_NORMAL
 - en: and this will both give you some ideas about kind of the unit part of this but
@@ -1783,6 +2057,7 @@
     just start with this。 fairly straightforward decorator where i'm just going to
     say that they'll have a function or。 a decorator called meters per second it will
     take in a function as usual and what i'm going to do here。
+  id: totrans-266
   prefs: []
   type: TYPE_NORMAL
 - en: is now i just add an attribute to the function which is just a string saying
@@ -1790,6 +2065,7 @@
     this in structure it reminds us a little。 bit called this register decorator that
     we did earlier where we had where rejects took in a function。 and put essentially
     a reference to that function into a dictionary and then we return the function。
+  id: totrans-267
   prefs: []
   type: TYPE_NORMAL
 - en: itself so now again we're returning the same function but we're just adding
@@ -1797,6 +2073,7 @@
     this will not really be super helpful。 but let's have a look at how it works so
     if i have the decorator meters per second。 and now i'm just going to define a
     fairly straightforward function again that's called。
+  id: totrans-268
   prefs: []
   type: TYPE_NORMAL
 - en: every bit and it just takes in a duration and yeah let's do the distance first
@@ -1805,6 +2082,7 @@
     distance over a given duration then the average speed is the distance divided
     by that duration。 and now the idea behind the meters per second decorator is just
     mainly just a reminder to ourselves。
+  id: totrans-269
   prefs: []
   type: TYPE_NORMAL
 - en: that this average speed will be calculated as meters per second of course this
@@ -1812,6 +2090,7 @@
     them to have a distance in。 meters and the duration in seconds so this it's not
     really very helpful this is mainly it's a small。 say one thing you can do here
     is just say average speed of unit and you can kind of。
+  id: totrans-270
   prefs: []
   type: TYPE_NORMAL
 - en: be okay this should be in meters per second and just to see a quick calculation
@@ -1819,6 +2098,7 @@
     at that time he ran 100 meters。 and 98 seconds so this was during the world championships
     in 2009 and i can see here that。 his average speed or those 100 meters was 10。4
     meters per second as we can then see right here。
+  id: totrans-271
   prefs: []
   type: TYPE_NORMAL
 - en: okay so that's just some mainly using a decorator for bookkeeping maybe not
@@ -1826,6 +2106,7 @@
     work with units themselves。 and to do this i'm going to use a very cool library
     that's called the pint and。 your first year is just a pip install pint so the
     library itself。
+  id: totrans-272
   prefs: []
   type: TYPE_NORMAL
 - en: and i already have this library installed so you can see it's already satisfied
@@ -1833,6 +2114,7 @@
     just have a quick look at how pint works so you import it import pint and then
     pint。 has something called the unit registry and unit registry as you can see
     here is just something that。
+  id: totrans-273
   prefs: []
   type: TYPE_NORMAL
 - en: stores definitions and relationships between units so this will be sort of like
@@ -1840,6 +2122,7 @@
     using pint you want。 initialize it by just making an instance of the unit registry。
     and then what you can do with the unit registry is that you can then just add
     strings or call it。
+  id: totrans-274
   prefs: []
   type: TYPE_NORMAL
 - en: with a string like this meters per second and you can see here that it then
@@ -1847,6 +2130,7 @@
     instance now say okay two meters。 per second then we have two meters per second
     but then I can also multiply this with something like。 say three seconds if I
     do this now I'm talking okay if I move at a speed of two meters per second。
+  id: totrans-275
   prefs: []
   type: TYPE_NORMAL
 - en: for three seconds how far can I move that and we can see here then let's okay
@@ -1854,6 +2138,7 @@
     it's able to multiply meters per。 second times seconds and figure out that that's
     meters but we can also do other units so let's try。 for instance to say oh by
     the way we weren't measuring the speed in meters per second we were。
+  id: totrans-276
   prefs: []
   type: TYPE_NORMAL
 - en: measuring it in miles per hour for instance and then if we move for two miles
@@ -1861,12 +2146,14 @@
     well this might not be that。 satisfactory but it's calculated okay in this case
     we calculated or removed six miles seconds per hour。 that may not be that helpful
     how much is a miles second per hour that's not the distance I know。
+  id: totrans-277
   prefs: []
   type: TYPE_NORMAL
 - en: but actually we can have pint simplified as far as using something we call two
     base units。 and this we can get out the result it will kind of simplify everything
     down to。 the base units and we can see that okay we move 2。7 meters more or less
     or we could also just specify。
+  id: totrans-278
   prefs: []
   type: TYPE_NORMAL
 - en: here what do we actually want to see this and so maybe we want to。 okay so that's
@@ -1874,6 +2161,7 @@
     that works so let's go back to our meters per second decorator and what we need
     to do here now。 is that I want to have this one return not the not just a function
     itself but I wanted to。
+  id: totrans-279
   prefs: []
   type: TYPE_NORMAL
 - en: actually multiply in the unit into the return value of the function so the first
@@ -1881,12 +2169,14 @@
     registry and I want to instantiate it。 and now we could do what we did earlier
     just have a global variable that kind of points to the。 unit registry but to kind
     of keep our namespace and clean I'll add this one。
+  id: totrans-280
   prefs: []
   type: TYPE_NORMAL
 - en: kind of global unit registry just on the decorator here itself。 and then yeah
     we can just keep the unit here and let's now。 instead of saying unit there I'll
     just say that the unit this time is， I'm yours。 and I'm sorry I will just keep
     it like this and then I'm gonna now we want to have the。
+  id: totrans-281
   prefs: []
   type: TYPE_NORMAL
 - en: so then I'll do my inverse per second underscore and this one takes in arcs
@@ -1894,6 +2184,7 @@
     and quarks and I multiply this。 meters per second year eggs of the unit registry
     of the unit。 and let's see then now we do not return the function itself but we're
     returning the rapid function。
+  id: totrans-282
   prefs: []
   type: TYPE_NORMAL
 - en: so now you can see this looks more like they are critical decorators where we
@@ -1901,6 +2192,7 @@
     this one on the first function that we had。 earlier and let's see what happens
     so now earlier we calculated the average speed。 and now we're going to do a little
     bit more interesting stuff on this I'm just going to save this as。
+  id: totrans-283
   prefs: []
   type: TYPE_NORMAL
 - en: variable bolts like this and first of all we can now just look at this violation
@@ -1908,6 +2200,7 @@
     right so we can start playing with it。 so first of all just to show we could say
     well what would happen if bolt ran twice as fast well in。 that case he would run
     for second for instance but maybe more interesting to get the hold of how。
+  id: totrans-284
   prefs: []
   type: TYPE_NORMAL
 - en: fast did he actually run we can see here that we can convert this to kilometers
@@ -1915,6 +2208,7 @@
     a minute hour something like this and that will give us a number and it's also
     possible to。 pick out so if you now need to store this back as just a regular
     float number if you do。
+  id: totrans-285
   prefs: []
   type: TYPE_NORMAL
 - en: it and that will kind of give you a little， okay so now we have defined ourselves
@@ -1923,6 +2217,7 @@
     in that case we can't really decorate it with meters per second we need a new
     decorator。 that has a distance unit and so then we just create meters decorator
     and we kind of go through。
+  id: totrans-286
   prefs: []
   type: TYPE_NORMAL
 - en: the same motions and we can see that that's not really working out too well
@@ -1930,6 +2225,7 @@
     it we want to be able to use it。 let's see so if you look at this one I want to
     be able to write something like use unit and then send。 in the unit as a as an
     argument to the decorator that this way I can use the same decorator but。
+  id: totrans-287
   prefs: []
   type: TYPE_NORMAL
 - en: for many different types of units and essentially creating that decorator is
@@ -1937,6 +2233,7 @@
     used in this way and give us something。 reasonable and let's see here this works
     so let's just。 see this unit has not been defined but I haven't done the exercise
     but to have a look at our。
+  id: totrans-288
   prefs: []
   type: TYPE_NORMAL
 - en: our file I can see here now that we have we're importing something called use
@@ -1945,6 +2242,7 @@
     run this task file and now I can， as before I can find a bolt but now he's a runner
     that can run 100 meters in 9。58 seconds， and then plane I'll pretend now that
     there's a plane that flies from the bird。
+  id: totrans-289
   prefs: []
   type: TYPE_NORMAL
 - en: there are no direct routes but if there were that plane would be flying something
@@ -1952,6 +2250,7 @@
     two different things that can。 move and now if you have a look over here in the
     task we see that the class runner takes in the。 distance and duration and can
     calculate average speed in meters per second while the plane。
+  id: totrans-290
   prefs: []
   type: TYPE_NORMAL
 - en: also takes in distance and duration but calculates its average speed in kilometers
@@ -1959,6 +2258,7 @@
     I can see that that is 10。4 meters per second as we have seen before and I can
     ask my plane。 what's your average speed and it will be something like 696 almost
     700 kilometers per hour。
+  id: totrans-291
   prefs: []
   type: TYPE_NORMAL
 - en: and now something possibly interesting would then would be to see how many times
@@ -1966,6 +2266,7 @@
     say in bolt when it's running。 so to do that we can take this and divide by both
     average speed and I'll get a better ratio in this。 case and if you look now at
     the ratio it seems like the plane is something like 66。6 kilometers。
+  id: totrans-292
   prefs: []
   type: TYPE_NORMAL
 - en: seconds per hour meters faster than bolt again we get this completely crazy
@@ -1973,6 +2274,7 @@
     units。 and now we can see we've done something correctly because we end up with
     something that's dimensionless。 and now it's easy to see that the plane is just
     a little bit actually less than 20 times faster than。
+  id: totrans-293
   prefs: []
   type: TYPE_NORMAL
 - en: bolt so I guess that means that bolt it feels like it's fairly faster。 okay
@@ -1980,6 +2282,7 @@
     end of this task。 so how do you actually create this use unit decorator。 so let's
     have a look and the idea as we briefly said was that we want to be able to do
     something。
+  id: totrans-294
   prefs: []
   type: TYPE_NORMAL
 - en: something like this it's kind of the idea here and if you remember so essentially
@@ -1987,6 +2290,7 @@
     back to what what does the notation。 mean what does this thing appear mean and
     remember this would be something similar to if we first。 define our average speed
     so I'm not going to write it out but just okay so we have defined it。
+  id: totrans-295
   prefs: []
   type: TYPE_NORMAL
 - en: and then we decorate it by saying something like okay average speed is the same
@@ -1994,6 +2298,7 @@
     and apply it to average。 let's move this over a little bit so you can see and
     and then let's see if we now stare at this for a。 while you can see that calling
     use unit with meters per second there that part should return。
+  id: totrans-296
   prefs: []
   type: TYPE_NORMAL
 - en: a decorator so the use unit will actually not be a decorator itself it will
@@ -2001,6 +2306,7 @@
     so it will be a different decorator depending。 on the unit and so what that actually
     means is that you'll end up with something like。 deaf use unit this thing should
     just take in a unit and then inside of here you're going to do。
+  id: totrans-297
   prefs: []
   type: TYPE_NORMAL
 - en: something and then essentially you want to hear define some kind of decorator
@@ -2008,21 +2314,26 @@
     second is a decorator so that's what。 we need to return from use unit and then
     that decorator will be a function that can take a function。 here and then wrap
     that function again so what we're doing here is kind of adding one more layer。
+  id: totrans-298
   prefs: []
   type: TYPE_NORMAL
 - en: of inner functions to what we already have been doing okay so then that's the
     task can we make it。 run on the run run clean code here and i'm just gonna say
     good luck with that and then i'll be back。
+  id: totrans-299
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/13dc3ed458136a286215705708b44e8c_25.png)'
+  id: totrans-300
   prefs: []
   type: TYPE_IMG
 - en: shortly with with one solution for it， okay i hope you enjoyed that task so
     now let's see how can we make the use unit decorator。
+  id: totrans-301
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/13dc3ed458136a286215705708b44e8c_27.png)'
+  id: totrans-302
   prefs: []
   type: TYPE_IMG
 - en: and so that you can take in arguments and as before i've gone in here now and
@@ -2030,6 +2341,7 @@
     at just by running running this。 task with python and first of all let's just
     see here that now we cannot even import use unit from。 the decorators so we need
     to start off just by defining it and let's see then so if i now go to。
+  id: totrans-303
   prefs: []
   type: TYPE_NORMAL
 - en: my python decorators i'm just here all the way at the bottom and i'm gonna define。
@@ -2037,6 +2349,7 @@
     will be a decorator。 not really a decorator itself it will be a decorator factory
     something that will return。 the craters and so does that really mean it means
     that for this one。
+  id: totrans-304
   prefs: []
   type: TYPE_NORMAL
 - en: let's first actually just say here that this decorator will register， or add
@@ -2044,6 +2357,7 @@
     unit decorator that will be the thing that i。 want to return and since this is
     a decorator it will take in a function and then it will。 return some function
     i'm just gonna return the same function。
+  id: totrans-305
   prefs: []
   type: TYPE_NORMAL
 - en: and my decorator factory and then needs to return for the crater so if we do
@@ -2051,6 +2365,7 @@
     whatever the value of unit here i just。 return decorator that does nothing it
     just returns the function itself but this kind of just to check。 the logistics
     of what we're doing so for now call our task we can see that it starts running。
+  id: totrans-306
   prefs: []
   type: TYPE_NORMAL
 - en: it's able now to calculate the average speed of our both it's able to calculate
@@ -2059,6 +2374,7 @@
     units but this is promising we are kind of getting somewhere。 so now we want to
     actually build up our decorator factory so the first thing i'm gonna do now is
     like。
+  id: totrans-307
   prefs: []
   type: TYPE_NORMAL
 - en: we did earlier i need to instantiate this unit registry and i'm just gonna store
@@ -2066,6 +2382,7 @@
     we can see that。 my flake 8 is hopefully pointing out that i haven't defined a
     point so let's just run up here and。 and then we are linter happy and so now we
     have the unit registry so that means that we should be。
+  id: totrans-308
   prefs: []
   type: TYPE_NORMAL
 - en: able to start returning some functions here or adding in some units i guess
@@ -2074,6 +2391,7 @@
     factory is kind of just something that is partly just messing。 with our heads
     so now we want to write this the way we usually write decorators kind of forget
     about。
+  id: totrans-309
   prefs: []
   type: TYPE_NORMAL
 - en: what's on the outside and so how do we write our decorators well we define an。
@@ -2081,6 +2399,7 @@
     as usual and remember that these things usually then take in the harks and quarks
     of the function。 that we can just pass through and at some point here we're gonna
     return the function of harks。
+  id: totrans-310
   prefs: []
   type: TYPE_NORMAL
 - en: and quarks and so that's more or less what we're doing there but then the decorator
@@ -2088,6 +2407,7 @@
     like this and now we should also。 remember to apply the fun tools wraps of and
     so now we have something that's at least some kind of。 the crater it corrects
     something that we can see now i'm still not doing what i promised i would be。
+  id: totrans-311
   prefs: []
   type: TYPE_NORMAL
 - en: doing which was actually multiplied by units so let's fix that part as well
@@ -2095,6 +2415,7 @@
     it。 oh like this and let's see yeah so we can try to run this and see now it seems
     to actually work out。 right we have our 10。4 we now got the label that is a meter
     per second we have this almost 700。
+  id: totrans-312
   prefs: []
   type: TYPE_NORMAL
 - en: kilometers an hour and now we see the ratio it's actually 18。5 in dimensional
@@ -2102,6 +2423,7 @@
     part of the task but remember we had this。 reminder that we could put on the function
     and so if i want to do this as well i could now say use unit。 but unit so now
     i'm equals unit so now i'm just adding the reminder on the function that。
+  id: totrans-313
   prefs: []
   type: TYPE_NORMAL
 - en: reader is returning that this what's the unit of this this is really not necessary
@@ -2109,6 +2431,7 @@
     just have a quick look at how that works。 and so this means now that i should
     be able to for instance say let's see we have gold。 it's a runner and his average
     speed function and unit is not there。
+  id: totrans-314
   prefs: []
   type: TYPE_NORMAL
 - en: i we forgot to save them let's see sorry about that let's do this one more time。
@@ -2116,6 +2439,7 @@
     more time that we can。 come out in this unit the tricky part here is probably
     more of just keeping track of。 at which level do we actually need to do this thing
     so so now we have just to repeat this we have here。
+  id: totrans-315
   prefs: []
   type: TYPE_NORMAL
 - en: we have the the wrapper function the one that actually replaces the the average
@@ -2123,6 +2447,7 @@
     that is the thing that actually。 decorates but then to use arguments we also have
     this factory that kind of takes care of。 creating a different decorator for each
     argument that he created okay so now we're ready for our。
+  id: totrans-316
   prefs: []
   type: TYPE_NORMAL
 - en: last task in this tutorial and what we're going to do here is to kind of put
@@ -2131,6 +2456,7 @@
     or less but it has some superpowers and what super trace can do。 is that we can
     call it both as a regular decorator like you see here and we can call it as a
     decorator。
+  id: totrans-317
   prefs: []
   type: TYPE_NORMAL
 - en: with arguments like you see down there and what that allows us is both to kind
@@ -2138,6 +2464,7 @@
     so for instance in this case。 the idea is that you can specify a logger to kind
     of change how the tracing is logged so。 as usual i'll start out by just trying
     out this thing。
+  id: totrans-318
   prefs: []
   type: TYPE_NORMAL
 - en: so first of all let's just try to call the greet function so we build a low
@@ -2145,6 +2472,7 @@
     right so super trace without any arguments。 works exactly like the old trace but
     what happens if we call random greet。 so random greet you can now see that it
     also works similar to what we're used to but。
+  id: totrans-319
   prefs: []
   type: TYPE_NORMAL
 - en: note here that there's some warning output there and you can kind of see how
@@ -2152,6 +2480,7 @@
     the logging。warning method so instead of actually。 being printed to the screen
     here it's being logged by the logging。warning method so super trace。 can both
     work as a decorator as you see there and as what we saw last time was we're decorator。
+  id: totrans-320
   prefs: []
   type: TYPE_NORMAL
 - en: factories so essentially your task for task number six will be how can you implement
@@ -2159,6 +2488,7 @@
     without hints。 just take a break now but one little hint that i'm kind of going
     to give and it's it's kind of hint。 that you have i guess heard a few times now
     and let's let's try to look at what what does the notation。
+  id: totrans-321
   prefs: []
   type: TYPE_NORMAL
 - en: here really mean right so we have now both something that we can write as super
@@ -2166,6 +2496,7 @@
     that means is that we have some。 we have some function but we want to create and
     that really means that。 either we're doing super trace， of like this or we're
     doing f equals super trace of logar equals let's do logging。
+  id: totrans-322
   prefs: []
   type: TYPE_NORMAL
 - en: warning， of us and we need this super trace function to be able to handle both
@@ -2173,6 +2504,7 @@
     general it will be hard to be able。 to support the creators with taking positional
     arguments so let me just drill that way now。 right now so we will not be able
     to do this that will not work as expected so i'm going to say that。
+  id: totrans-323
   prefs: []
   type: TYPE_NORMAL
 - en: we want to only use keyword arguments here and the reason is just that we need
@@ -2180,6 +2512,7 @@
     going to decorate so in the easiest way to。 do that is just to say okay the first
     positional argument if that's a function then we're gonna。 um work with this but
     you can see here that if we would do this without the logger then logging。
+  id: totrans-324
   prefs: []
   type: TYPE_NORMAL
 - en: warning would be a callable it will be a function and it would be very hard
@@ -2187,6 +2520,7 @@
     use a。 the keyword arguments and that kind of gives you then some starting point
     so that means that first。 of all okay it should be able to take in a function
     as their argument as usual it should also be able。
+  id: totrans-325
   prefs: []
   type: TYPE_NORMAL
 - en: to leave out that function right so what we're doing here relieving that function
@@ -2195,6 +2529,7 @@
     signature of this will be something like okay it could take a。 function or it
     could take a logger right but either of these has to be optional so we need to
     specify。
+  id: totrans-326
   prefs: []
   type: TYPE_NORMAL
 - en: some default values for them for the sense to just say that if we're not giving
@@ -2202,6 +2537,7 @@
     force or use the star here just means that。 everything after this meets the keyword
     arguments it's not really necessary to put it in here but。 it's kind of nice to
     just point it out that everything coming behind here we should regard as keyword。
+  id: totrans-327
   prefs: []
   type: TYPE_NORMAL
 - en: arguments and since we want super trace to work also with just the function
@@ -2210,6 +2546,7 @@
     the default case so i'm just gonna say that our default print is the。 logger so
     this will be the signature of your decorator slash decorator function and now
     what you need to。
+  id: totrans-328
   prefs: []
   type: TYPE_NORMAL
 - en: do is to essentially have this one behave either like a decorator or a decorator
@@ -2217,21 +2554,26 @@
     this will be a decorator factory and。 it should create different decorators based
     on the logger here if funk is actually a function then。 we're already at the decorate
     stage so then this should just work as a decorator and return a wrapped。
+  id: totrans-329
   prefs: []
   type: TYPE_NORMAL
 - en: function so that's a hint that hopefully is enough to get you started and then
     i'll just say good luck。 on this last task and then i'll see you in a minute with
     a suggestion for a solution。
+  id: totrans-330
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/13dc3ed458136a286215705708b44e8c_29.png)'
+  id: totrans-331
   prefs: []
   type: TYPE_IMG
 - en: okay i hope you enjoyed that little task so now let's see how we can solve this
     uh super trace。
+  id: totrans-332
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/13dc3ed458136a286215705708b44e8c_31.png)'
+  id: totrans-333
   prefs: []
   type: TYPE_IMG
 - en: the decorator and um what i've gone ahead and done here i'm more or less as
@@ -2239,6 +2581,7 @@
     out the greet printing along line and。 then the random greet and i'll see if we
     can get the super greeter to work so remember we want this to。 use print um here
     uh super trace sorry and the logging thing for the random great function。
+  id: totrans-334
   prefs: []
   type: TYPE_NORMAL
 - en: and um now let's just start out by testing this this thing uh work and see now
@@ -2247,6 +2590,7 @@
     i mentioned this the super trace is basically just uh the trace。 the crater so
     i'm gonna use my copy paste powers uh to include trace one more time here but
     then。
+  id: totrans-335
   prefs: []
   type: TYPE_NORMAL
 - en: we also so have we want to use the super trace decorator or the creator factory
@@ -2254,6 +2598,7 @@
     be known if the function is not given。 or it will take a logger which has the
     default value of print so the default value is print。 and otherwise will use uh
     whatever is given and then we have the actual trace down here and i'm just。
+  id: totrans-336
   prefs: []
   type: TYPE_NORMAL
 - en: gonna indent it so now this trace is just i mean let's define internally in
@@ -2261,6 +2606,7 @@
     we're usually using i'll call this the super trace。 uh greater so let me give
     track of what's what and then this kind of inner。 the wrap function i'll rename
     this one as well to be underscore super trace。
+  id: totrans-337
   prefs: []
   type: TYPE_NORMAL
 - en: and let's see that was actually the wrong one， let's see down here we have our
@@ -2268,6 +2614,7 @@
     do we need to change now well we have now。 this logger will be an option so let
     me change the function as we have here。 using whatever is the value of logger
     so by default this will still be print but we may be able to change。
+  id: totrans-338
   prefs: []
   type: TYPE_NORMAL
 - en: it okay so that's essentially just what we need to do to reuse trace and so
@@ -2275,6 +2622,7 @@
     and that is how what do we。 need to do now to have super trace out here work both
     as a decorator and as a decorator factory。 and i'm just for now i'm just going
     to hide the code for the decorator down there。
+  id: totrans-339
   prefs: []
   type: TYPE_NORMAL
 - en: to be able to focus on the logic here so what i have now is that i have defined
@@ -2282,6 +2630,7 @@
     somehow now want to use this。 for my for my arguments so you can remember when
     we just had the regular arguments if this had just。 been something like this what
     we need to do here would just be to return。
+  id: totrans-340
   prefs: []
   type: TYPE_NORMAL
 - en: super trace decorator like this then we would have。 something that works fine
@@ -2289,6 +2638,7 @@
     allow us to not give arguments we need to have the parentheses essentially。 since
     this is an optional argument we would be allowed to use， let's see here something
     like， like。
+  id: totrans-341
   prefs: []
   type: TYPE_NORMAL
 - en: i we're calling things there but so we haven't implemented everything yet but。
@@ -2296,6 +2646,7 @@
     super trace。 like this with an empty empty braces there because that would just
     mean that we use the regular。 the regular， okay let's run this you can see that
     this this will actually work。
+  id: totrans-342
   prefs: []
   type: TYPE_NORMAL
 - en: and what what happens here is that since we're not giving any arguments there
@@ -2303,18 +2654,21 @@
     in the。 here kind of say that logger should be logging dot warning like this and
     then。 or hello will work the warning and so this this is what we kind of saw in
     the last exercise where we。
+  id: totrans-343
   prefs: []
   type: TYPE_NORMAL
 - en: use arguments but what as you might have seen from some other。 output we had
     what we will not be allowed to do is just use it without the arguments here。 this
     will now throw an error at us and and the reason of course is that without the。
     braces there what actually happens is that the funk hello here is passed into。
+  id: totrans-344
   prefs: []
   type: TYPE_NORMAL
 - en: the super trace factory as the new logger and then it's somehow using this as
     a。 logger and everything gets quite confusing so that's not what we want to happen。
     so let's see we had here funk equals now and then a star。 and now what we have
     seen essentially now is that if funk is none。
+  id: totrans-345
   prefs: []
   type: TYPE_NORMAL
 - en: what does that actually mean well it means that there was no function that was
@@ -2322,6 +2676,7 @@
     where did we have it。 up here or possibly even this case but in either way there
     was no function that was passed in。 so that is actually the case that we have
     already solved so let's just like this。
+  id: totrans-346
   prefs: []
   type: TYPE_NORMAL
 - en: so we could do this and now if we just restart this。 we heard some error message
@@ -2329,6 +2684,7 @@
     trace， in this this will still work while as we saw from the output above if we
     do it without any parentheses。 I'm calling we're now getting this weird non-type
     object is not callable and that is because hello。
+  id: totrans-347
   prefs: []
   type: TYPE_NORMAL
 - en: there is no hello it seems if I actually print out hello you can see that this
@@ -2336,6 +2692,7 @@
     is none we do this。 but then we just fall off the end here so then if function
     is not none which happens in this case。 then we haven't defined what happens so
     hello was actually just replaced by none in this case。
+  id: totrans-348
   prefs: []
   type: TYPE_NORMAL
 - en: that's clearly not good enough so instead what do we need to do well now what
@@ -2343,6 +2700,7 @@
     right that's kind of what we。 that's the behavior we're interested in here and
     what was the old trace decorator well that was。 the one that we have copied over
     here the super trace decorator that I call it now and。
+  id: totrans-349
   prefs: []
   type: TYPE_NORMAL
 - en: what happened really there so it seems like again I want to take this thing
@@ -2350,6 +2708,7 @@
     function and for this to behave like for。 for this super trace here to behave
     like it's a it's a decorator this one needs to just define。 or return the wrapped
     function and that is actually exactly what super decorator does。
+  id: totrans-350
   prefs: []
   type: TYPE_NORMAL
 - en: if I send it funk right so that's funk into the super trace decorator it will。
@@ -2357,6 +2716,7 @@
     it starts up there。 and it goes down here so if I send in super trace decorator
     and I send funk to it it will return me。 super trace which is this wrapping function
     so this thing right here will actually help us out。
+  id: totrans-351
   prefs: []
   type: TYPE_NORMAL
 - en: and and take that necessary step that we're looking at and first let's actually
@@ -2364,6 +2724,7 @@
     can see。 let's just make it be enough and that if I run now the greet thing actually
     works so let's recall。 what happens here and we print out greet world and that
     is just super trace without any arguments。
+  id: totrans-352
   prefs: []
   type: TYPE_NORMAL
 - en: so that part works and our random greet where you super trace with the logging
@@ -2371,6 +2732,7 @@
     here actually works and just to have。 one more explanation on why this thing works
     and let's。 and recall again I kind of repeat this so this is kind of the mantra
     that I hope you。
+  id: totrans-353
   prefs: []
   type: TYPE_NORMAL
 - en: you realize is kind of the key takeaway here is that to figure out how these
@@ -2378,9 +2740,11 @@
     actually happens here。 so say that we have some function I'll just call it f again
     and that we apply super trace to it。 so if I do like super trace of f this is
     really the same as。
+  id: totrans-354
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/13dc3ed458136a286215705708b44e8c_33.png)'
+  id: totrans-355
   prefs: []
   type: TYPE_IMG
 - en: if we instead just define f and then we say that f equals super trace of f right。
@@ -2388,6 +2752,7 @@
     in f there so f。 becomes a funk over here so funk is not none so that means that
     what we're doing is saying that f。 equals underscore super trace creator of fun
     quote of。
+  id: totrans-356
   prefs: []
   type: TYPE_NORMAL
 - en: so this is what happens in the case where we have。 we're passing in without
@@ -2395,6 +2760,7 @@
     arguments so say that we're doing super trace parentheses。 equals logging that
     warning， and then of this function so now if we spell this out well what we're
     doing now is that we're doing f。
+  id: totrans-357
   prefs: []
   type: TYPE_NORMAL
 - en: equals super trace of logger equals logging that warning of f。 right this is
@@ -2402,12 +2768,14 @@
     looking。 into here well in that case there is no funk that's defined right here
     right。 now so that means that funk take its default value which is none so we're
     in this case。
+  id: totrans-358
   prefs: []
   type: TYPE_NORMAL
 - en: and in that case super trace is just essentially replaced by super trace decorator。
     so then we will end up with the notation f equals underscore super trace。 decorator
     and that's just all of this has been replaced by super trace decorator。 and then
     we have the parentheses f at the end so taking this function object that we're。
+  id: totrans-359
   prefs: []
   type: TYPE_NORMAL
 - en: returning here and applying it to f and as you can see now is that in both cases
@@ -2415,6 +2783,7 @@
     same place where f has been decorated。 by super trace decorator so that's exactly
     what we wanted right that's what we were aiming for。 the only difference between
     these two cases is that the value of the logger has changed。
+  id: totrans-360
   prefs: []
   type: TYPE_NORMAL
 - en: so in the second case we are changing the value of logger and that logger is
@@ -2422,6 +2791,7 @@
     trace so this is definitely a mouthful but。 if you wrap your head around this
     you really should know enough to understand。 essentially any decorator that you
     can find in the python language so hopefully this has been。
+  id: totrans-361
   prefs: []
   type: TYPE_NORMAL
 - en: something that you have enjoyed and have learned something from now that actually。
@@ -2429,6 +2799,7 @@
     small。 kind of recap of what we have been learning so first of all in this advanced
     decorators section。 what you we were talking about was first a little bit about
     how to keep state with decorators。
+  id: totrans-362
   prefs: []
   type: TYPE_NORMAL
 - en: and we saw how we can either use function attributes to remember things from。
@@ -2436,6 +2807,7 @@
     then we saw a little bit on how do we decorate classes and especially how can
     we make sure that。 we keep the type information because usually when you're decorating
     something you're。
+  id: totrans-363
   prefs: []
   type: TYPE_NORMAL
 - en: replacing the original function or class with your wrapper function but if you
@@ -2443,6 +2815,7 @@
     do some other tricks instead。 then for our what was the fifth task we saw how
     we could use decorators with arguments。 this was the exercise where we added units
     to our methods or functions and then now in the final。
+  id: totrans-364
   prefs: []
   type: TYPE_NORMAL
 - en: task we looked at how we can have optional arguments where we can call the decorator
@@ -2450,6 +2823,7 @@
     time repeat the key takeaways and is that in general a decorator is any function
     that。 accepts a function and returns a function what we have kind of seen here
     is that this is the。
+  id: totrans-365
   prefs: []
   type: TYPE_NORMAL
 - en: concept is actually more general than this decorators really any callable thing
@@ -2457,13 +2831,16 @@
     for instance。 and then the one thing that I hope that you definitely take from
     this is just that this kind。 of syntax that we're using for decorators is really
     just syntactic sugar for writing this thing out。
+  id: totrans-366
   prefs: []
   type: TYPE_NORMAL
 - en: and once it's more noted I'll just kind of point out to say we had if we go
     back here。
+  id: totrans-367
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/13dc3ed458136a286215705708b44e8c_35.png)'
+  id: totrans-368
   prefs: []
   type: TYPE_IMG
 - en: so let's see if we first I'll just do from our Python decorators I'll import
@@ -2471,6 +2848,7 @@
     much about this but say that for。 instance we have a math factorial function for
     instance here we'll get some numbers and。 we could for instance say that you can
     approximate the value of e。
+  id: totrans-369
   prefs: []
   type: TYPE_NORMAL
 - en: do something like this by taking the sum of the inverse of factorial numbers。
@@ -2478,6 +2856,7 @@
     that's one one still one two is two。 so this doesn't seem too interesting with
     three we get six so the factorial number is actually。 what you get if you just
     multiply all the numbers less than or equal to the number itself so three。
+  id: totrans-370
   prefs: []
   type: TYPE_NORMAL
 - en: factorial is six because one times two times three is six then four factorial
@@ -2485,6 +2864,7 @@
     there is a mathematical formula that says。 that the number e which is approximately
     seven eighteen which also I guess happens to be the last。 version of a python
     d and can be calculated using these factorial numbers so if I take the sum。
+  id: totrans-371
   prefs: []
   type: TYPE_NORMAL
 - en: of one divided by math factorial let's see of n for n in range of let's give
@@ -2493,6 +2873,7 @@
     I get close to two point seven one eight right but not extremely close if I use
     more numbers I get。 closer and now say that I was interested in figuring out how
     many calls do we do to math。
+  id: totrans-372
   prefs: []
   type: TYPE_NORMAL
 - en: pictorial during this method now I what I like to want to do is then something
@@ -2500,12 +2881,15 @@
     if I'm in the standard library。 so that doesn't really help me so we do instead
     and in this case what you can do is to actually。 just use your the non-sick tactic
     sugar version of decoration。
+  id: totrans-373
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/13dc3ed458136a286215705708b44e8c_37.png)'
+  id: totrans-374
   prefs: []
   type: TYPE_IMG
 - en: '![](img/13dc3ed458136a286215705708b44e8c_38.png)'
+  id: totrans-375
   prefs: []
   type: TYPE_IMG
 - en: and see the factorial is count calls of math。f pictorial like this and now if
@@ -2513,9 +2897,11 @@
     called yet but if we do。 calculate this e of 25 we can see that factorial has
     indeed been called 25。 So this was just a。 quick example showing that it is actually
     possible to decorate even functions that you are not defining。
+  id: totrans-376
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/13dc3ed458136a286215705708b44e8c_40.png)'
+  id: totrans-377
   prefs: []
   type: TYPE_IMG
 - en: yourself and so this will actually last time that I mentioned how these things
@@ -2523,6 +2909,7 @@
     if you need to figure out how。 decoration actually works。 Then just a few notes
     that we saw from the previous section we can use。 function attributes or classes
     to keep state。 Decorators can take arguments and to implement。
+  id: totrans-378
   prefs: []
   type: TYPE_NORMAL
 - en: this you will be using decorator factories which are just functions that create
@@ -2530,6 +2917,7 @@
     that case your decorator factory。 should return either a decorator or a wrapped
     function depending on how it's called。 That was。 kind of the task 6 that we saw。
     Just a quick list of some decorators that you may be familiar with。
+  id: totrans-379
   prefs: []
   type: TYPE_NORMAL
 - en: already。 So there's a few decorators in the standard library where probably
@@ -2537,6 +2925,7 @@
     property and class method probably。 So what property does is that it can just
     convert a method on a class into a property as something。 that you just get out
     with an attribute access instead of calling it。 The class method creates。
+  id: totrans-380
   prefs: []
   type: TYPE_NORMAL
 - en: class methods in your classes and static method can create static methods on
@@ -2544,6 +2933,7 @@
     you have a feeling for what that one does。 Then there was in Python 3。7 there
     was something you。 call data classes and that is a new way of constructing classes。
     It kind of simplifies。
+  id: totrans-381
   prefs: []
   type: TYPE_NORMAL
 - en: a lot of the boilerplate that you often want to use for classes and this is
@@ -2551,6 +2941,7 @@
     similar to what we did when we decorated。 classes in that it kind of builds a
     class and it adds attributes to it。 And finally there's one in。 the library called
     contextlib which is a library for working with context managers and there's a。
+  id: totrans-382
   prefs: []
   type: TYPE_NORMAL
 - en: decorator that can simplify the creation of new context managers which is actually
@@ -2558,6 +2949,7 @@
     and I'm not going to。 even attempt to list all the different ways they can be
     used in kind of third-party packages。 but just a few that you may be familiar
     with depending on the background。 So one is called number。
+  id: totrans-383
   prefs: []
   type: TYPE_NORMAL
 - en: which is a really cool project for speeding up especially computation heavy
@@ -2565,6 +2957,7 @@
     in time compilation so。 on the fly compilation essentially of your code which
     can really speed up your code if it's really。 CPU heavy。 Then flask is a web framework
     which uses decorators to just designate。
+  id: totrans-384
   prefs: []
   type: TYPE_NORMAL
 - en: functions as handlers essentially or as an endpoints for your website using
@@ -2572,6 +2965,7 @@
     line interface library。 that you can use to create command line programs essentially
     from your Python scripts and it。 uses decorators to just specify different commands
     inside of your command line program different。
+  id: totrans-385
   prefs: []
   type: TYPE_NORMAL
 - en: arguments different options and so on。 So all of these ease decorators in a
@@ -2579,6 +2973,7 @@
     the beginning of the course。 I have written an article for the website real Python
     which goes into a lot of the same detail。 that we've done here and if you look
     at that article you'll kind of recognize some of the。
+  id: totrans-386
   prefs: []
   type: TYPE_NORMAL
 - en: examples we've done some examples that are new but it's a good resource to kind
@@ -2586,6 +2981,7 @@
     On real Python there's also a video。 course that kind of covers mostly of the
     basic decorator part so it doesn't go into quite a。 much depth as we've done here。
     Then there's some other cool resources so there is a package on。
+  id: totrans-387
   prefs: []
   type: TYPE_NORMAL
 - en: pipi called decorator and if you're going to work with decorators this one kind
@@ -2593,6 +2989,7 @@
     and I'm kind of abstracted away a。 little bit so especially when we come to things
     like making decorators with optional arguments and。 things like this it's easier
     to do using the decorator package so I'll recommend having a look at that one。
+  id: totrans-388
   prefs: []
   type: TYPE_NORMAL
 - en: The Python Cookbook it's a book that was published by Orile something like seven
@@ -2600,6 +2997,7 @@
     kind of tell you how to do stuff and in chapter。 nine of that on the Python Cookbook
     it's called something like meta programming there are many。 different recipes
     using decorators so if you have access to that book I really recommend that you。
+  id: totrans-389
   prefs: []
   type: TYPE_NORMAL
 - en: check it out。 The source code so the kind of the recipes themselves are available
@@ -2607,6 +3005,7 @@
     batteries here and have a look at。 some other ways that they're doing things there
     and then if I guess for the if you really want to。 dive into the details decorators
     were added to the Python language using a Python enhancement proposal。
+  id: totrans-390
   prefs: []
   type: TYPE_NORMAL
 - en: and pep 318 was the one that was the one that kind of introduced the creators。
@@ -2614,14 +3013,17 @@
     land so for Python。 three nine which is now very close to being in beta there
     is actually a new addition to。 decorators and so that's introducing in something
     called pep 614 and what the pep 614 does is that it。
+  id: totrans-391
   prefs: []
   type: TYPE_NORMAL
 - en: actually allows it kind of relaxes a little bit on some of the restrictions
     that are on decorators。 and let's have a look at how that actually works so let's
     see we'll use one and then we'll go over。
+  id: totrans-392
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/13dc3ed458136a286215705708b44e8c_42.png)'
+  id: totrans-393
   prefs: []
   type: TYPE_IMG
 - en: here to them just a little piece of code that I prepared for for this example。
@@ -2629,6 +3031,7 @@
     the most trivial。 decorator we can have it's a do nothing decorator that takes
     the function and just returns it straight。 back again so decorating anything with
     do nothing changes nothing does nothing then we have a simplified。
+  id: totrans-394
   prefs: []
   type: TYPE_NORMAL
 - en: trace decorator here i'm just saying that we're calling the function not trying
@@ -2636,6 +3039,7 @@
     decorator right we have trace。 funk returning the wrap function here and so how
     we would typically now use this is that we'll just。 say something like add do
     nothing and if we're going to try this you can see here flake is complaining。
+  id: totrans-395
   prefs: []
   type: TYPE_NORMAL
 - en: about this syntax error happening here because here i'm not decorating with
@@ -2643,6 +3047,7 @@
     here i've added just this if else。 statement or if else expression i guess where
     i'm using the prod variable that we have appear。 that i'm currently set to false
     and then i'm saying okay so if prod then do nothing so if we're in。
+  id: totrans-396
   prefs: []
   type: TYPE_NORMAL
 - en: production i don't want to do anything with this one but if we're not running
@@ -2650,6 +3055,7 @@
     the trace decorator and in um， python 3。8 so the current python and this is a
     syntax error we can't really do this but then， what pep 6。14 is saying is that
     there's really no reason not to allow this and。
+  id: totrans-397
   prefs: []
   type: TYPE_NORMAL
 - en: this is one example where this might be useful and that you can kind of easily
@@ -2657,6 +3063,7 @@
     and so essentially it。 means that you can have any expression here that evaluates
     to a callable will be allowed as a decorator。 so let's see how this actually runs
     so if i now run so first let me actually just show you that this。
+  id: totrans-398
   prefs: []
   type: TYPE_NORMAL
 - en: doesn't work at all right it's a syntax error if i just use my regular python
@@ -2664,6 +3071,7 @@
     the value prod which is false and then。 i'm calling greet there which the trace
     tells me here that it's calling greet so we can see here。 that in this case it
     decorated using trace and just a quick note here this was an enhanced syntax。
+  id: totrans-399
   prefs: []
   type: TYPE_NORMAL
 - en: for fstrings that was introduced in python 3。8 that you can use an equal sign
@@ -2671,6 +3079,7 @@
     variable and the value of the。 variable so that was an enhancement in python 3。8
     okay so this seems to work it was able to figure。 out that it could use trace
     in this case so let's try just to change this one then to run run in。
+  id: totrans-400
   prefs: []
   type: TYPE_NORMAL
 - en: production so now we're setting some flag and we're running in production instead。
@@ -2678,19 +3087,23 @@
     called greet。 i believe let's actually test that as well so we'll add a print
     statement there。 but it has it's calling greet but it's not tracing anything so
     in this case it's using the do nothing。
+  id: totrans-401
   prefs: []
   type: TYPE_NORMAL
 - en: decorator that's only calls the function as usual。 so that's somewhat exciting
     at least and it of course。
+  id: totrans-402
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/13dc3ed458136a286215705708b44e8c_44.png)'
+  id: totrans-403
   prefs: []
   type: TYPE_IMG
 - en: gives you many opportunities to probably abuse this so use it twice but it's
     i guess fun to see that。 something is happening also to decorators they've kind
     of been。 fairly solid means they in the language for a long time now。 so with
     that i yeah i'd recommend you to check out these extra resources。
+  id: totrans-404
   prefs: []
   type: TYPE_NORMAL
 - en: and then i'm just gonna end here by thanking you so much for your attention
@@ -2698,17 +3111,22 @@
     so you could。 reach me either at yeah yeah at twitter you can find some information
     on github。 and you can see some more information about this article and real python
     and so on。
+  id: totrans-405
   prefs: []
   type: TYPE_NORMAL
 - en: so yeah thank you so much bye bye。
+  id: totrans-406
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/13dc3ed458136a286215705708b44e8c_46.png)'
+  id: totrans-407
   prefs: []
   type: TYPE_IMG
 - en: you， you， (buzzing)， You。
+  id: totrans-408
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/13dc3ed458136a286215705708b44e8c_48.png)'
+  id: totrans-409
   prefs: []
   type: TYPE_IMG
