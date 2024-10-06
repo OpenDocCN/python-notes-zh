@@ -93,6 +93,7 @@
   id: totrans-11
   prefs: []
   type: TYPE_NORMAL
+  zh: 这是著名的数据科学家和人工智能顾问莫尼卡·罗加蒂提出的“人类需求”。她指出，值得的数据收集构成了AILR需求金字塔的基础。数据素养、数据收集和数据流动，这些构成了必须满足的基本需求，以便我们实现自我实现或涅槃，在我们这个案例中将是。
 - en: attainment of artificial intelligence。 So nonetheless， the quantity of data
     we also。 have to take care of about the type of data that we feed into the algorithms
     which has。 a profound effect on the success of the algorithm。 As we say garbage
@@ -101,6 +102,7 @@
   id: totrans-12
   prefs: []
   type: TYPE_NORMAL
+  zh: 达成人工智能的目标。因此，除了数据的数量，我们还必须关注输入算法的数据类型，这对算法的成功有深远影响。正如我们所说，垃圾进，垃圾出。因此，机器学习模型的好坏本质上取决于你所拥有的数据。——彼得·诺维格。
 - en: has put it in very clearly that more data beats clever algorithms but better
     data beats more， data。 So in that case， we should talk about data， curation and
     first of all， let's talk about academia。 Core machine learning and data science，
@@ -110,6 +112,7 @@
   id: totrans-13
   prefs: []
   type: TYPE_NORMAL
+  zh: 他非常清楚地指出，更多的数据胜过聪明的算法，但更好的数据胜过更多的数据。在这种情况下，我们应该讨论数据、数据策划，首先，让我们谈谈学术界。核心机器学习和数据科学的学术研究团队更注重新颖性和推进领域，往往比盈利逻辑或性能扩展更为重要。
 - en: In this attempt to work on new problems， finding collaborators from pertinent
     domains and seeking。 funding for research groups are not the only obstacles they
     face。 They also have to look。 for relevant data sources in the absence of in-house
@@ -118,6 +121,7 @@
   id: totrans-14
   prefs: []
   type: TYPE_NORMAL
+  zh: 在努力解决新问题的过程中，寻找相关领域的合作者和为研究团队寻求资金并不是他们面临的唯一障碍。他们还必须在没有内部数据的情况下寻找相关的数据源，这与像Facebook、Google这样的企业巨头不同，后者可以访问大量数据。因此，这些成熟的组织。
 - en: on the other hand seldom have obstacles in obtaining computation power， hiring
     folks。 with expertise in corresponding domains or accessing relevant data。 The
     challenge， however。 comes in scaling up the solutions to massive user base。 Any
@@ -126,6 +130,7 @@
   id: totrans-15
   prefs: []
   type: TYPE_NORMAL
+  zh: 另一方面，获取计算能力、聘用相关领域的专家或访问相关数据几乎没有障碍。然而，挑战在于将解决方案扩展到庞大的用户基础。任何拥有大量非结构化数据（如原始日志）的组织在这一点上都是发展中的。
 - en: data processing pipeline for them remains a task。 And for creating such resilient
     pipelines。 apart from relevant technology， we also require the skills to identify
     and curate meaningful。 data sets， unbiased data sets from the sea of unstructured
@@ -134,6 +139,7 @@
   id: totrans-16
   prefs: []
   type: TYPE_NORMAL
+  zh: 数据处理管道对他们来说仍然是一项任务。创建这样稳健的管道，除了相关技术外，我们还需要识别和策划有意义的数据集、无偏见的数据集的技能，这些数据集来自我们拥有的大量非结构化数据。这就是我们寻找数据源的地方。因此，确实应该有所作为。所以，没错。
 - en: so there can be like different approaches to building like a good quality data
     set。 And。 like we'll be like giving you guys some overview on like how we can
     approach that。 Basically。 some pointers regarding that。 But before we can do that，
@@ -142,6 +148,7 @@
   id: totrans-17
   prefs: []
   type: TYPE_NORMAL
+  zh: 因此，可以有不同的方法来构建高质量的数据集。我们将为大家提供一些关于如何实现这一点的概述。基本上，一些关于这方面的提示。但是在我们这样做之前，让我给你们介绍我们自己收集的三个数据集。这些数据集在Kaggle上可用。
 - en: so feel free to explore them。 So， the first data set is clothing fed data set。
     So， this。 data set was collected from our e-commerce website called mod cloth。
     So， there people。 kind of report their transactions that they have done。 And what
@@ -150,6 +157,7 @@
   id: totrans-18
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以请随意探索它们。第一个数据集是服装数据集。这个数据集来自我们名为ModCloth的电子商务网站收集。在这里，人们报告他们的交易情况，以及他们对产品的喜好，特别是产品是否合适他们。
 - en: the data which we have here is user ID， product ID， fit feedback， size purchased，
     ratings。 and reviews of the product that has been purchased and some sort of like
     customer measurements。 And second data set we have is sarcasm detection data set。
