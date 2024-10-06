@@ -163,6 +163,7 @@
   id: totrans-19
   prefs: []
   type: TYPE_NORMAL
+  zh: 实际上弄清楚像在这条线上需要多少个点，特别是像这样的曲线。你可以把整数放在那里作为滑块。有一个代码块，空间量，然后你会得到一个结果，你可以将其输入到你的模型中。这非常方便，因为你不必坐在那里自己去弄明白。
 - en: and draw it out or it takes forever。 So this is a really cool automation technology。
     It's。 visual on spot and you can see the results。 And we go further with it。 I
     can create something。 like a floor plan。 I say a rectangular floor plan and I
@@ -171,6 +172,8 @@
   id: totrans-20
   prefs: []
   type: TYPE_NORMAL
+  zh: 然后将其绘制出来，或者会花费很长时间。因此，这是一项非常酷的自动化技术。它是实时可视化的，你可以看到结果。我们进一步扩展。我可以创建一些像平面图的东西。我说是一个矩形平面图，我设定长
+    30 英尺和 60 英尺。我只需将四个角的 XYZ 坐标绑定在一起。在底部我有我的。
 - en: different kinds of materials。 Curtain wall and levels， how many levels I want
     and a concrete。 slab at six inches。 I connect the dots on that rectangular corded
     set to create my shape and。 then I embed the types of equipment I want on there
@@ -179,6 +182,7 @@
   id: totrans-21
   prefs: []
   type: TYPE_NORMAL
+  zh: 不同种类的材料。幕墙和楼层，我想要多少层，以及六英寸的混凝土。 我连接这些矩形有线集上的点来创建我的形状，然后我嵌入我想要的设备类型和材料，以得到一些地板、墙壁和层数的输出。我们从这个几何预览到这个结果。这是。
 - en: about 70 stories of a tower。 So we just built our skyscraper in like two seconds。
     It's that， quick。 If I did that manually it would take me an hour maybe two。 So
     it's pretty cool。 results you can do with Dynamo。 And you can also do some unconventional
@@ -187,6 +191,8 @@
   id: totrans-22
   prefs: []
   type: TYPE_NORMAL
+  zh: 大约 70 层的塔楼。因此我们只用了大约两秒钟就建好了我们的摩天大楼。就是这么快。如果我手动去做，可能需要一个小时，甚至两个小时。因此，使用 Dynamo
+    可以得到非常酷的结果。你也可以做一些非常规的事情。你可以。利用这些组合块，随意在墙上设计一个波浪图案。它可能。
 - en: put some art on it。 If you want to do something a little unique and again you
     can be played。 all of it。 And you don't have to be an expert in coding to use
     it。 And also you can just。 preview geometry。 You want to play around with， connect
@@ -195,6 +201,7 @@
   id: totrans-23
   prefs: []
   type: TYPE_NORMAL
+  zh: 在上面放一些艺术。如果你想做一些独特的事情，再次你可以进行所有操作。你不必是编程专家就能使用它。此外，你可以预览几何图形。你想玩弄的，连接事物，你知道，看看事情是如何发展的。如果你喜欢那种动手做的感觉，这真是太好了。
 - en: clay idea which a lot of designers are。 Not too comfortable with just visual
     textual code。 But you might be asking this is all cool。 Great。 What was happening
     with Python？ Somebody， there。 It also has a Python script node。 Within it。 This
@@ -203,6 +210,8 @@
   id: totrans-24
   prefs: []
   type: TYPE_NORMAL
+  zh: 粘土概念，很多设计师对此不太熟悉，仅仅依靠可视化文本代码。但是你可能会问，这一切都很酷。太好了。那 Python 又是怎么回事？某人那里。它里面也有一个
+    Python 脚本节点。这是我多年前进入 Python 世界的入口。但我真的想用它，但我没有办法使用它。它在这里工作。
 - en: You can do anything with Python from those parts but Dynamo did have one。 It
     has a little。 IDE in it。 You just import the runtime。 You import the geometry
     library that comes with。 Dynamo software。 And you have an input node。 So you have
@@ -211,6 +220,8 @@
   id: totrans-25
   prefs: []
   type: TYPE_NORMAL
+  zh: 你可以用 Python 完成那些部分的任何事情，但 Dynamo 确实有一个。它内置了一个小型 IDE。你只需导入运行时。你导入随 Dynamo 软件附带的几何库。然后你有一个输入节点。所以你必须有一根电线连接进来。然后你有一个输出节点。这与典型的
+    Python 脚本有点不同。否则。
 - en: very similar concept。 And what's great about it， you don't have to use the API。
     You don't。 have to know anything about the SDK。 You could just use this Python
     script plus the Dynamo。 script to get things into your database。 And that API
@@ -219,6 +230,8 @@
   id: totrans-26
   prefs: []
   type: TYPE_NORMAL
+  zh: 是一个非常相似的概念。最棒的是，你不需要使用 API。你不需要了解 SDK 的任何内容。你只需使用这个 Python 脚本加上 Dynamo 脚本，就可以将数据放入数据库。而
+    Revit 的 API 是一个庞然大物。它并不友好。能够绕过它真不错。因此，与你使用的所有这些相比，你可以。
 - en: run it with a Python script in Dynamo。 And it uses iron Python or seed Python
     at this point。 as for implementation。 So I can give you an example。 We can just
     do a loop to make a bunch。 of stuff。 And in this case， this happens all the time。
