@@ -455,18 +455,23 @@
   id: totrans-60
   prefs: []
   type: TYPE_NORMAL
+  zh: 让我们来做这个。所以，如果这是一个异步的。Python 7代码。并且，让我们确保它正在运行。所以。对我来说，如果我点击这里，它应该就。我要看到一个hello
+    word。让我们看看发生了什么。我只是要确保它正在运行。我只是要创建一个文件。抱歉。好的。
 - en: '![](img/3c3588b77123e82a29264958f5086ce4_26.png)'
   id: totrans-61
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/3c3588b77123e82a29264958f5086ce4_26.png)'
 - en: So， let's do it in command line。 So， if I run that code。
   id: totrans-62
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以，让我们在命令行中做这件事。所以，如果我运行那段代码。
 - en: '![](img/3c3588b77123e82a29264958f5086ce4_28.png)'
   id: totrans-63
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/3c3588b77123e82a29264958f5086ce4_28.png)'
 - en: I see a hello word。 So， that's how I know my code is working。 Okay。 We need
     to import the GitHub and aio HTTP libraries。 So， let's add those。 And， for。 let's
     instantiate the GitHub API。 So， that using the code there。 So， instead of hello
@@ -475,6 +480,8 @@
   id: totrans-64
   prefs: []
   type: TYPE_NORMAL
+  zh: 我看到一个hello word。所以，这就是我知道我的代码在工作的方式。好的。我们需要导入GitHub和aio HTTP库。所以，让我们添加这些。并且。让我们实例化GitHub
+    API。所以，使用那段代码。所以，不要hello word。并且。实例化GitHub API。我将给它。因此，在旧令牌那里。
 - en: that's basically the GitHub token that I generated earlier。 And， I save。 And。
     then I'm getting it from the environment variable。 So， that's that。 Now。 what
     we're going to do here is we're going to。 Using the API， we're going to create。
@@ -482,6 +489,7 @@
   id: totrans-65
   prefs: []
   type: TYPE_NORMAL
+  zh: 这基本上是我之前生成的GitHub令牌。我保存了。然后我从环境变量中获取它。所以，就是这样。现在。我们要在这里做的是。使用API，我们要在我的仓库中创建。一个问题。所以，如果你查看GitHub。
 - en: Documentation on how to create an issue using their API。 It says here is basically
     make post request。 To this URL， repos， owner that。 Owner and repo that will be
     the， your， the repository where you want to create it to。 Slash issues。 And， pass
@@ -489,6 +497,7 @@
   id: totrans-66
   prefs: []
   type: TYPE_NORMAL
+  zh: 关于如何使用他们的API创建问题的文档。这里说的基本上是发出POST请求。到这个URL，repos，owner那。拥有者和repo将是，你的，想要创建的仓库。斜杠issues。并且，传入这个。这个参数。所以，基本上标题是一个必需参数。所以。
 - en: basically you can create it。 And， this JSON data title。 So， required body is
     optional。 And。 you can specify the assignments。 So， in GitHub。 It， so when it
     says post to that URL。 In GitHub。 it looks like this。 You use the GitHub that
@@ -497,6 +506,8 @@
   id: totrans-67
   prefs: []
   type: TYPE_NORMAL
+  zh: 基本上你可以创建它。这个JSON数据标题。所以，必需的主体是可选的。而且。你可以指定指派。因此，在GitHub中。当它说向那个URL发布时。在GitHub中。它看起来是这样的。你使用我们为真实实例化的GitHub
+    API。向那个URL发出一个POST请求。所以，就是repos，owner和repo名称斜杠issues。并且。
 - en: then pass in the data like that。 So， let's copy it。 And， what the code like
     that。 So。 this is how your code would look like。 I'm pretty sure my code looks
     the same。 And， let's run that。 Nothing happens。 So， I'm going to go ahead and
@@ -505,6 +516,7 @@
   id: totrans-68
   prefs: []
   type: TYPE_NORMAL
+  zh: 然后像那样传入数据。所以，让我们复制它。代码是这样的。所以。这就是你的代码看起来的样子。我很确定我的代码看起来一样。让我们运行它。什么都没发生。所以，我要继续完成它。然而，如果我们去我的仓库。我们是。它的关系。已经有一个问题被打开。我们遇到了一个问题。
 - en: That's basically what we said here。 The title is， we got a problem。 And。 the
     description is more emoting。 So， it works。 So。 we just use GitHub API to create
     an issue without even going to GitHub。 So。 we just use GitHub API to create an
@@ -512,6 +524,8 @@
   id: totrans-69
   prefs: []
   type: TYPE_NORMAL
+  zh: 这基本上就是我们在这里说的。标题是，我们遇到了一个问题。而且。描述更具表现力。所以，它工作。因此。我们只使用GitHub API来创建一个问题，而不需要去GitHub。因此。我们只是使用GitHub
+    API来创建一个问题。好的。那么，这里有一个练习给你。
 - en: Why don't you leave an additional comment to the same issue that we just created
     here。 So。 we have an issue， but now we want to leave a comment here using the
     API。 The GitHub documentation for that says， make a post request to this URL repo/owner
@@ -520,14 +534,18 @@
   id: totrans-70
   prefs: []
   type: TYPE_NORMAL
+  zh: 为什么不对我们刚刚在这里创建的同一个问题留下一个额外的评论呢。所以。我们有一个问题，但现在我们想用API在这里留下一个评论。GitHub文档对此说，向这个URL
+    repo/owner repo名称/issues/issue编号/comments发出POST请求。所以，如果你想在这里暂停，自己花一些时间尝试一下。
 - en: you can pause here。 So， in fact， let me pause my recording。
   id: totrans-71
   prefs: []
   type: TYPE_NORMAL
+  zh: 你可以在这里暂停。所以，实际上，让我暂停我的录制。
 - en: '![](img/3c3588b77123e82a29264958f5086ce4_30.png)'
   id: totrans-72
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/3c3588b77123e82a29264958f5086ce4_30.png)'
 - en: So， if you want to take a break， try all of this by yourself first。 and then
     I will continue with this solution。 I will show you how I did that。 So， all right。
   id: totrans-73
@@ -1267,6 +1285,7 @@
   id: totrans-168
   prefs: []
   type: TYPE_NORMAL
+  zh: 到问题 URL，并传递状态关闭和结束。这基本上是完全一样的。唯一改变的是。我们将使用安装访问。是的，应该更像这样。所以问题。你的地址基本上是一个响应。你都是。然后我们将通过这样关闭它。
 - en: G H patch。 To the issue URL。 And passing the data。 State is closed。 And don't
     forget the old token。 There you go。 All right。 So let's。 Commit。 All right。 Let's
     commit this file。 Deploy it to Heroku。 So thanks to the maintainer。 Commit and
@@ -1275,6 +1294,8 @@
   id: totrans-169
   prefs: []
   type: TYPE_NORMAL
+  zh: G H 补丁。到问题 URL。并传递数据。状态为关闭。不要忘记旧的令牌。好了。好的。让我们。提交。好的。让我们提交这个文件。部署到 Heroku。所以感谢维护者。提交并推送。现在让我们去
+    Heroku。实际上，让我们看看。在日志中。它正在构建。好的。让我们看看我能否确保它被部署。
 - en: Okay。 I'm going to start the deploy。 So here you can see the logs getting updated。
     Okay。 Okay。 Deploy。 And if we go back here， this should give me。 This still works。
     Okay。 All right。 Let's see what happens。 Let's try it out。 Let's install that
@@ -1283,6 +1304,8 @@
   id: totrans-170
   prefs: []
   type: TYPE_NORMAL
+  zh: 好的。我将开始部署。所以你可以看到日志正在更新。好的。好的。部署。如果我们回到这里，这应该给我。这仍然有效。好的。好的。让我们看看会发生什么。我们试一下。让我们安装那个应用程序。返回到
+    GitHub 应用程序。你的 GitHub 应用设置。点击安装应用。这只是一个教程。
 - en: I'm just going to install it in my strange relationship repo。 So just under
     one。 Click install。 And it seems to be installed。 Now let's check the web hooks。
     So go back to your GitHub apps list。 Go to the GitHub app。 Go to advanced。 Okay。
@@ -1291,6 +1314,8 @@
   id: totrans-171
   prefs: []
   type: TYPE_NORMAL
+  zh: 我将把它安装在我的奇怪关系库中。所以只需在一个下面。点击安装。似乎已安装。现在让我们检查 web hook。所以返回到你的 GitHub 应用列表。去
+    GitHub 应用。进入高级。好的。出了点问题。我是什么？这个错误 404。好的。让我们弄清楚发生了什么。它说这个 URL 是 404。好的。也许我没有部署它。
 - en: Already not committed correctly。 GitHub app for the plate。 Yes。 One second。
     I have to say thanks to the maintainer and I have the web hook。 Yeah。 That's actually
     go to the GitHub。 Well， there's no one I want。 Okay。 I got to say thanks。 What's
@@ -1298,6 +1323,7 @@
   id: totrans-172
   prefs: []
   type: TYPE_NORMAL
+  zh: 已经没有正确提交。GitHub 应用程序用于板块。是的。等一下。我得感谢维护者，我有 webhook。是的。实际上，去 GitHub。好吧，没有我想要的。好的。我得说谢谢。这里发生了什么？我相信。我不应该包含它。对吧。好的。这是我的错误。
 - en: Sorry about that。 Go back to the settings of this and。 Yes。 Okay。 All right。
     So there was an error。 Okay。 This is actually a good example now。 So there was
     an error with delivering our web hook。 Now do we need to like reinstall the app
@@ -1306,6 +1332,7 @@
   id: totrans-173
   prefs: []
   type: TYPE_NORMAL
+  zh: 抱歉。返回到这个设置。是的。好的。好的。那里出现了错误。好的。现在这是一个很好的例子。所以在发送我们的 webhook 时出现了错误。现在我们是否需要重新安装应用才能接收它？好吧，你不必。我点击高级，你可以在这里看到所有失败的传送。对吧。
 - en: And you don't have to reinstall it。 All you need to do is basically。 Try to
     do it。 And now it works。 So we can go through each of this one one by one。 And
     this is basically the installation that we are looking for the installation。 Web
@@ -1313,39 +1340,48 @@
   id: totrans-174
   prefs: []
   type: TYPE_NORMAL
+  zh: 你不必重新安装它。你所需要做的就是。尝试这样做。现在它有效了。所以我们可以逐个查看每一个。这基本上是我们要寻找的安装。我们想要的事件的安装。现在让我们读取标签。现在成功了。
 - en: '![](img/3c3588b77123e82a29264958f5086ce4_70.png)'
   id: totrans-175
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/3c3588b77123e82a29264958f5086ce4_70.png)'
 - en: And let's also read the label。 This again。 Let's see。
   id: totrans-176
   prefs: []
   type: TYPE_NORMAL
+  zh: 让我们再读取标签。让我们看看。
 - en: '![](img/3c3588b77123e82a29264958f5086ce4_72.png)'
   id: totrans-177
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/3c3588b77123e82a29264958f5086ce4_72.png)'
 - en: Oh， something's wrong here。 This has 500 errors。
   id: totrans-178
   prefs: []
   type: TYPE_NORMAL
+  zh: 哦，这里出了点问题。这个有 500 错误。
 - en: '![](img/3c3588b77123e82a29264958f5086ce4_74.png)'
   id: totrans-179
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/3c3588b77123e82a29264958f5086ce4_74.png)'
 - en: Okay。 Let's see。 Let's take a look at the love now。
   id: totrans-180
   prefs: []
   type: TYPE_NORMAL
+  zh: 好的。让我们看看。现在看看日志。
 - en: '![](img/3c3588b77123e82a29264958f5086ce4_76.png)'
   id: totrans-181
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/3c3588b77123e82a29264958f5086ce4_76.png)'
 - en: Oh， I did not pass in。 Sorry。 Oh。 Yes。 Actually。 Okay。 What do we need from
     here？
   id: totrans-182
   prefs: []
   type: TYPE_NORMAL
+  zh: 哦，我没有通过。抱歉。哦。是的。实际上。好的。我们需要从这里做什么？
 - en: I will fix the documentation。 It's。 Look at。 You have documentation。 Oops。 Okay。
     So basically installation ID and app ID and private key。 All right。 Yes。 So one
     second。 Installation ID。 We have it。 We need an ID， which is something we got
@@ -1729,6 +1765,7 @@
   id: totrans-234
   prefs: []
   type: TYPE_NORMAL
+  zh: 并创建另一个请求。我想创建一个拉取请求。所以让我等一下。旧的已经完成。好吧，开始。创建一个核心请求。然后。哦，我是否做错了？我在这里犯了错误，没有添加等待。好吧。让我们再构建一次。好吧。好吧。我们就创建另一个拉取请求。我还是要再读一下。仍然不错。
 - en: And I can see already。 The label was added。 The bot。 The comment and it adds
     the needs review label。 So that's that's that。 Yeah， so that's I think that's
     the end of our tutorial。 So we went through a lot of things。 We built a GitHub
@@ -1737,6 +1774,7 @@
   id: totrans-235
   prefs: []
   type: TYPE_NORMAL
+  zh: 我已经可以看到了。标签已被添加。机器人。评论，并添加了需要审查的标签。所以就是这样。嗯，我想这就是我们教程的结束。因此，我们回顾了很多内容。我们从头开始构建了一个GitHub应用程序，一个工作的GitHub机器人。如果你能跟上，并且到目前为止你的GitHub机器人能够正常工作。
 - en: congratulations。 It's it's awesome。 I know。 I'm sorry。 I made lots of mistakes
     here that makes this longer than it needs to be。 But I guess the lesson is。 In
     in your real development time。 You'll probably be writing more unit tests instead
@@ -1745,6 +1783,7 @@
   id: totrans-236
   prefs: []
   type: TYPE_NORMAL
+  zh: 祝贺你。这太棒了。我知道。我很抱歉。我在这里犯了很多错误，这让事情比需要的时间更长。但我想教训是，在你真正的开发时间里，你可能会写更多的单元测试，而不是像我那样不断部署。我将要谈论网络。我将要谈论网络。我将要谈论网络。
 - en: I'm going to talk about the web。 I'm going to talk about the web。 I'm going
     to talk about the web。 I'm going to talk about the web。 I'm going to talk about
     the web。 I'm going to talk about the web。 I'm going to talk about the web。 I'm
@@ -1753,6 +1792,7 @@
   id: totrans-237
   prefs: []
   type: TYPE_NORMAL
+  zh: 我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。
 - en: I'm going to talk about the web。 I'm going to talk about the web。 I'm going
     to talk about the web。 I'm going to talk about the web。 I'm going to talk about
     the web。 I'm going to talk about the web。 I'm going to talk about the web。 I'm
@@ -1761,6 +1801,7 @@
   id: totrans-238
   prefs: []
   type: TYPE_NORMAL
+  zh: 我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。
 - en: I'm going to talk about the web。 I'm going to talk about the web。 I'm going
     to talk about the web。 I'm going to talk about the web。 I'm going to talk about
     the web。 I'm going to talk about the web。 I'm going to talk about the web。 I'm
@@ -1769,6 +1810,7 @@
   id: totrans-239
   prefs: []
   type: TYPE_NORMAL
+  zh: 我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。
 - en: I'm going to talk about the web。 I'm going to talk about the web。 I'm going
     to talk about the web。 I'm going to talk about the web。 I'm going to talk about
     the web。 I'm going to talk about the web。 I'm going to talk about the web。 I'm
@@ -1777,6 +1819,7 @@
   id: totrans-240
   prefs: []
   type: TYPE_NORMAL
+  zh: 我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。我将要谈论网络。
 - en: I'm going to talk about the web。 I'm going to talk about the web。 I'm going
     to talk about the web。 I'm going to talk about the web。 I'm going to talk about
     the web。 I'm going to talk about the web。 I'm going to talk about the web。 I'm
