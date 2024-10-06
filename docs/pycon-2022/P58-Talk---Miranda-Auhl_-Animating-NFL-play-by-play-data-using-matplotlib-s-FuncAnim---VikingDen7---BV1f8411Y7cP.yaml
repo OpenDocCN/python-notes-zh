@@ -159,6 +159,7 @@
   id: totrans-18
   prefs: []
   type: TYPE_NORMAL
+  zh: 代表坐标平面上的X和Y坐标。NFL设置了球场，足球场。这样他们可以基本上将其视为一个X，Y坐标平面，以便你能够找到在任何时刻任何球员或球的位置。在这些比赛中，这真不错，对吧？所以这实际上就是这些X，Y坐标的含义。它是码数。
 - en: it's in yards。 It's saying exactly where that individual or the ball is at any，
     given time。 So then next we have speed which the S is representing the speed of
     the individual。 at that moment in time。 Then we have acceleration is what the
@@ -167,6 +168,7 @@
   id: totrans-19
   prefs: []
   type: TYPE_NORMAL
+  zh: 它是以码数为单位。它精确地说明了那个个体或球在任何给定时间的位置。然后我们有速度，S代表个体在那个时刻的速度。接下来是加速度，A就是这个意思。比赛ID是每场比赛的唯一标识符。得知道哪一个是哪一个，知道这些是有好处的。
 - en: And then this play ID is talking， specifying since this data is kind of bent
     on just showing。 passing plays。 This play ID is a unique identifier for us to
     know within a game a specific passing。 play。 So that's what that play ID is。 And
@@ -175,6 +177,7 @@
   id: totrans-20
   prefs: []
   type: TYPE_NORMAL
+  zh: 然后这个比赛ID在说，指定由于这些数据主要是展示传球比赛。这个比赛ID是我们在比赛中知道特定传球的唯一标识符。这就是这个比赛ID的作用。然后最后一列是相当重要的。在今天的讨论中，我们将深入探讨这一点，但这是这个帧。
 - en: And kind of at first glance， you know， it's not super clear what it is。 Essentially
     this。 frame column is taking every tenth of a second and mapping it to an integer
     value。 And it， also。 it's not only just mapping it to an integer value， but it's
@@ -183,6 +186,7 @@
   id: totrans-21
   prefs: []
   type: TYPE_NORMAL
+  zh: 一开始，你知道，这并不特别清楚它是什么。实际上，这个帧列是在将每个十分之一秒映射到一个整数值。而且，它不仅仅是将其映射到一个整数值，而是将其映射到一个随着时间不断增加的整数值。因此，正如你看到的，14.599的十分之一秒。
 - en: is mapped to a frame value of one。 And the 14。7 second， tenth of a second is
     mapped to。 a frame value of two。 So we see that as time is increasing， that frame
     value is increasing。 And another note that when we looked at this data more is
@@ -191,6 +195,7 @@
   id: totrans-22
   prefs: []
   type: TYPE_NORMAL
+  zh: 映射到帧值为一。而14.7秒的十分之一秒映射到帧值为二。因此我们看到，随着时间的增加，这个帧值也在增加。还有一个值得注意的地方是，当我们进一步查看这些数据时，对于每个比赛ID，它会计算每个十分之一秒并将其映射到帧上。但是然后随着。
 - en: soon as you hit a new play value， so like if we were to go to 76， the frame
     value would。 kind of restart at one。 So essentially we know from this that that
     14。599， tenth of a second。 was the first tenth of a second to occur in the 75th
@@ -199,6 +204,7 @@
   id: totrans-23
   prefs: []
   type: TYPE_NORMAL
+  zh: 一旦你触发一个新的比赛值，比如说如果我们进入76，这个帧值会重新开始计数。因此，我们从中知道14.599的十分之一秒是在第75场比赛中发生的第一个十分之一秒。然后你知道14.7是第75场比赛中发生的第二个十分之一秒。因此，这些帧ID是独特的。
 - en: to the play。 Alright， so we get to know our data。 Now right， we can get to the
     fun stuff。 We can actually analyze it。 We can create visualizations。 And so one
     of the visualizations。 that I wanted to know was， well， we have these x， y coordinates。
@@ -207,6 +213,7 @@
   id: totrans-24
   prefs: []
   type: TYPE_NORMAL
+  zh: 到比赛中。好吧，现在我们开始了解我们的数据。现在我们可以进入有趣的部分。我们实际上可以分析它。我们可以创建可视化图表。因此，我想知道的其中一个可视化是，我们有这些x，y坐标。让我们实际上在场地上绘制这些球员，对吧？这听起来挺有趣的。我们有这些信息。来吧，做吧。
 - en: So I created a script and I set up my Python script kind of with an argument
     because。 I wanted to focus on one play at a time。 And so I defined the game ID
     that I wanted to look。 at and then the play ID that I wanted to kind of zoom in
@@ -215,6 +222,7 @@
   id: totrans-25
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以我创建了一个脚本，并且我的Python脚本设置了一个参数，因为我想专注于一次一个的比赛。因此，我定义了我想查看的比赛ID，然后是我想要深入分析并绘制数据的比赛ID。于是我定义了这个。然后我还从我的时间尺度数据库中提取我的数据。因此我在提取。
 - en: that data in my Python script for this specific play。 So then I can really dig
     in more and。 analyze it。 So then I have data in my Python script。 What's next？
     Well， if I'm going to。 plot players on a field， I'm going to need a field。 So
@@ -223,6 +231,7 @@
   id: totrans-26
   prefs: []
   type: TYPE_NORMAL
+  zh: 在我的Python脚本中，这个特定动作的数据。因此我可以深入挖掘并分析它。那么，我在我的Python脚本中有数据。接下来是什么？好吧，如果我要在场地上绘制玩家，我需要一个场地。因此我创建了一个生成场地的函数，我可以直接调用它，得到这个超棒的场地。所以我。
 - en: made it so that I kind of like smush all of my matplotlib functions into one
     kind of。 wrap them all up into one function so that I can call that generate field
     and get you。 know the yard lines and the hash marks and all this good stuff。 So
@@ -231,6 +240,7 @@
   id: totrans-27
   prefs: []
   type: TYPE_NORMAL
+  zh: 我让所有的matplotlib函数融合在一起，打包成一个函数，这样我可以调用它来生成场地，获取你知道的码线和标记等等。所以，然后，我们有了一个场地，但现在我们需要实际绘制玩家。所以我创建了另一个函数。
 - en: created a draw play function。 And this draw play function takes in a value of
     a frame。 So it takes in a frame argument and it's going to draw a play kind of
     plot in a play from。 that frame。 So with the frame value， it represents right
@@ -239,6 +249,7 @@
   id: totrans-28
   prefs: []
   type: TYPE_NORMAL
+  zh: 我创建了一个绘制动作的函数。这个绘制动作函数接受一个帧值。因此它接受一个帧参数，并将在该帧中绘制一个动作图。因此，帧值表示一个时刻。我可以输入一个时刻，并绘制这个图。因此，通过这个函数，我让它绘制，哦。
 - en: this is just， you know， showing us the frame value。 So with this plotting function，
     I take。 in that frame value and then I can actually plot the players。 I created
     a legend and I。 also get a title。 So， all right。 So now in order to actually create
@@ -247,6 +258,7 @@
   id: totrans-29
   prefs: []
   type: TYPE_NORMAL
+  zh: 这只是，知道吧，给我们展示框架值。所以通过这个绘图函数，我获取了这个框架值，然后实际上可以绘制玩家。我创建了一个图例，并且我还得到了一个标题。所以，好吧。现在为了实际创建函数并在图表上绘制，我让它可以只调用这四行代码，得到，你知道的。
 - en: this static plot that I wanted。 And so the first line is a figure。 So I'm creating
     a。 matplotlib figure。 Second line is I generate the field so I produce the field
     on the figure。 Third line is that I'm calling the draw play function for a frame
@@ -255,6 +267,7 @@
   id: totrans-30
   prefs: []
   type: TYPE_NORMAL
+  zh: 这个我想要的静态图。所以第一行是一个图形。我正在创建一个matplotlib图形。第二行是我生成场地，因此我在图形上生成场地。第三行是我为帧ID值为65调用绘制动作函数。然后最后一行是绘图显示，实际上给我们展示了这个图，所以我们可以看到它。
 - en: So this is the 75th， 10th of a second for this specific play that I'm kind of
     digging。 into for this script。 And so， you know， we see we have home team， away
     team， we have the。 football and like， you know， this is pretty cool。 You know，
@@ -263,6 +276,7 @@
   id: totrans-31
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以这是我正在深入研究的特定动作的第75秒，10分之一秒。你知道的，我们看到主队、客队，还有足球，像你知道的，这很酷。你知道，这是一个有趣的图。我可以看到场上的玩家，但你知道，球在哪里。
 - en: passed right now？ It seems to be kind of floating in air。 No one's really attached
     to it。 So。 really， this static plot， I was like， it's not really doing it for
     me。 And so， I asked。 the question， well， what if I could animate it and actually
@@ -271,6 +285,7 @@
   id: totrans-32
   prefs: []
   type: TYPE_NORMAL
+  zh: 现在传递过来了吗？它似乎漂浮在空中。没有人真正附着于此。所以，实际上，这个静态图，我觉得，它对我来说并不算太好。因此，我问了一个问题，嗯，如果我可以让它动画化，不仅让玩家在这个动作中移动，还能看到历史上。
 - en: they went as they went through the play。 And this is really where funk animation
     comes， into play。 And so， but in order to understand how to use funk animation，
     I really feel that。 you have to understand how animations work in general because
@@ -279,6 +294,7 @@
   id: totrans-33
   prefs: []
   type: TYPE_NORMAL
+  zh: 他们在进行这个动作时移动。这就是funk动画发挥作用的地方。但为了理解如何使用funk动画，我觉得你必须理解动画是如何工作的，因为它们直接相连。所以，让我们考虑一个翻书。翻书，通常是这样的。
 - en: it's usually a set of static drawings that you flip through really fast to kind
     of give。 this illusion of motion。 And so， that is exactly， I actually created
     a digital flip book with。 my iPad。 And so， I drew a bunch of static images of
@@ -441,6 +457,8 @@
   id: totrans-51
   prefs: []
   type: TYPE_NORMAL
+  zh: 创建我们的动画。我们可以将这个静态图表转换为动画。所以，这里是静态图表的 Python 代码。我们在定义的顶部有 Funke 动画，仅供参考。所以，首先，我们需要实际上将
+    Funke 动画插入到我们的代码中。很好，意思是我们把它放进来。问题是 Funke 动画需要将动画存储到一个变量中。
 - en: And so， in this case， I called my variable anim represents animation。 And then
     it's just one of the requirements with Funke animation。 It has to have somewhere。
     to store the animation。 So， you create that variable。 Next， you have the two required
@@ -449,6 +467,8 @@
   id: totrans-52
   prefs: []
   type: TYPE_NORMAL
+  zh: 因此，在这种情况下，我称我的变量 anim 表示动画。然后，这是使用 Funke 动画的一个要求。它必须有某个地方来存储动画。因此，你创建那个变量。接下来，你有两个必需的参数。所以，首先，我们有
+    fig。我们把 fig 放进去，然后是绘制播放函数，它是迭代函数。
 - en: That's the next required argument。 And we just call the name。 You don't add，
     any of the arguments。 You just call the name of the function and you throw it
     in there。 And then， lastly。 I wanted to also -- oh， sorry， I didn't -- Michael's
@@ -457,6 +477,8 @@
   id: totrans-53
   prefs: []
   type: TYPE_NORMAL
+  zh: 这是下一个必需的参数。我们只需调用名称。你不添加任何参数。你只需调用函数的名称并把它放进去。最后。我还想——哦，抱歉，我没有——迈克尔在那儿。我还想指定
+    Funke 动画将要迭代的帧。默认情况下，Funke。
 - en: animation will iterate starting at an integer value of zero。 And it's going
     to iterate over。 integer value。 So， it goes zero， one， two， you know， on， so on
     and so forth。 In our case， right。 we like the integer value。 We want to iterate
@@ -465,6 +487,7 @@
   id: totrans-54
   prefs: []
   type: TYPE_NORMAL
+  zh: 动画将从整数值零开始迭代。它将遍历整数值。所以，它从零开始，一，二，依此类推。在我们的案例中，我们喜欢整数值。我们想要在整数值上迭代。但我们希望它从一开始，并在整数值上迭代。所以，我们实际上可以指定确切的。
 - en: range of values we want for animation to iterate on。 And in this case， right，
     I want values。 starting at one， you know， going at -- increasing by one。 And then
     this one 13 is just the max。 value for the frame for this specific play。 So， I
@@ -473,6 +496,8 @@
   id: totrans-55
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们希望动画迭代的值范围。在这种情况下，我想要的值是从一开始，你知道，按一的增量增加。然后，这个 13 就是这个特定播放的帧的最大值。所以，我把所有帧值放在边界内。所以，这就是我从哪里得到了，因为我们从一开始。它一直到
+    13。
 - en: And then friends， well， now we can actually comment out the draw。 play frame
     function that we call up there and the plot show there for the static graph。 We
     can comment that out。 And now put plot show underneath our animation。 And -- oh，
@@ -480,33 +505,40 @@
   id: totrans-56
   prefs: []
   type: TYPE_NORMAL
+  zh: 然后朋友们，嗯，现在我们实际上可以注释掉上面调用的绘制播放帧函数和静态图表的显示。我们可以把它注释掉。然后把图表显示放在我们的动画下面。哦，等等，它没有。
 - en: '![](img/ed22573dd2f8cf2a678008c7665fb628_3.png)'
   id: totrans-57
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/ed22573dd2f8cf2a678008c7665fb628_3.png)'
 - en: get -- okay， that's okay。 Because I have another graph here。 That's okay。 I
     have a -- I have。
   id: totrans-58
   prefs: []
   type: TYPE_NORMAL
+  zh: 好吧，没关系。因为我这里还有另一个图表。没问题。我有一个——我有。
 - en: '![](img/ed22573dd2f8cf2a678008c7665fb628_5.png)'
   id: totrans-59
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/ed22573dd2f8cf2a678008c7665fb628_5.png)'
 - en: '![](img/ed22573dd2f8cf2a678008c7665fb628_6.png)'
   id: totrans-60
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/ed22573dd2f8cf2a678008c7665fb628_6.png)'
 - en: a -- a GIF of it。 So， not a problem。 Technical issues， folks。 Gotta love it。
     Okay。 And I。 think I can go to the next slide。 You can just -- yeah。 Okay。 So，
     this is -- this is an。
   id: totrans-61
   prefs: []
   type: TYPE_NORMAL
+  zh: 一个——它的 GIF。所以，没问题。技术问题，伙计们。真让人喜欢。好吧。我觉得我可以去下一张幻灯片。你可以——是的。好吧。这是——这是一个。
 - en: '![](img/ed22573dd2f8cf2a678008c7665fb628_8.png)'
   id: totrans-62
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/ed22573dd2f8cf2a678008c7665fb628_8.png)'
 - en: added animation that I -- that I was hopefully going to show after the first
     animation。 But。 what's cool is that I took this static plot and so you can ignore
     the jersey numbers。 Those are jersey numbers that I added。 And， right， this is
@@ -515,6 +547,7 @@
   id: totrans-63
   prefs: []
   type: TYPE_NORMAL
+  zh: 我添加的动画，我希望在第一个动画之后显示。但有趣的是，我把这个静态图表拿过来了，所以你可以忽略球衣号码。这些是我添加的球衣号码。而且，对，这更加有趣。现在，我们实际上可以看到这个播放——你知道，我们不仅仅是看到一个快照。
 - en: you know， the ball floating in space。 Now we actually see the past being thrown。
     This。 person is like just about to score touch on and actually does。 This is super
     fun and way。 more engaging。 And what's cool is that once you have an animation
@@ -523,6 +556,7 @@
   id: totrans-64
   prefs: []
   type: TYPE_NORMAL
+  zh: 你知道的，球漂浮在太空中。现在我们实际上可以看到过去被投掷。这。个人就快要得分了，实际上也得分了。这真是超级有趣，参与感更强。酷的是，一旦你有了这样的动画，你可以像我在这里所做的那样添加内容。因此，在这种情况下，我使用了一个设置函数，一种设置类型的函数。
 - en: to add the jersey numbers for each individual so that we know who's， you know，
     getting past。 what or who's， you know， tackling， whoever。 And I also added some
     statistics tables。 And。 you could even add statistics to the individuals if you
@@ -531,6 +565,7 @@
   id: totrans-65
   prefs: []
   type: TYPE_NORMAL
+  zh: 为每个人添加球衣号码，这样我们就知道谁在过去了什么，或者谁在擒抱谁。我还添加了一些统计表。如果你愿意，也可以在图表上为个人添加统计数据。可能性是无穷无尽的。那么你如何使用动画呢？只要你有一个图形，你就可以。
 - en: a matplotlib figure， ooh， and an iterable plotting function， then you can animate
     it。 That's really all you need。 And especially if you have kind of set yourself
     up with avoiding。 kind of the plotting setting type functions and also making
@@ -539,6 +574,7 @@
   id: totrans-66
   prefs: []
   type: TYPE_NORMAL
+  zh: 一个matplotlib图形，哦，还有一个可迭代的绘图函数，那么你就可以对其进行动画处理。这就是你所需要的一切。尤其是如果你能避免设置类型的绘图函数，并确保可迭代的帧值是第一个，你就可以对其进行动画处理。我希望你能感到鼓舞，实际上去尝试。
 - en: try this out in your static plots at home。 And so， folks， that's it。 That's
     pretty much， it。 Here are some resources。 So this first link is a link to my GitHub
     project。 I include。 all of the slides and also the Python script that I ran through
@@ -547,6 +583,7 @@
   id: totrans-67
   prefs: []
   type: TYPE_NORMAL
+  zh: 在家里的静态图表中试试这个。因此，各位，这就是全部。这基本上就是这样。以下是一些资源。第一个链接是指向我GitHub项目的链接。我包含了所有幻灯片以及我在这里运行的Python脚本。这是完整的脚本。因此，你可以获得我没有在这里展示的所有代码。第二个是CAGG比赛的链接。
 - en: the 2021 CAGGLE competition。 So you can download the data yourself。 All you
     need is a CAGGLE。 account。 And then the third and fourth links are actually the
     first one is a tutorial that。 my team made to help you basically walk you through
@@ -555,6 +592,7 @@
   id: totrans-68
   prefs: []
   type: TYPE_NORMAL
+  zh: 2021年CAGGLE比赛。因此，你可以自己下载数据。你所需的仅仅是一个CAGGLE账户。然后第三个和第四个链接实际上是第一个是我的团队制作的教程，旨在帮助你基本上通过从CAGGLE获取数据、将其放入一个时间序列BB数据库（基本上是Postgres）来指导你。然后，哦，那是我的。
 - en: train of thought。 And then actually analyzing it。 And then the last is just
     a blog post kind。 of diving into other analytics that you could try out。 So that
     is it。 Happy coding friends。 Thank you so much for being so patient with all of
@@ -563,15 +601,19 @@
   id: totrans-69
   prefs: []
   type: TYPE_NORMAL
+  zh: 思路流程。然后实际上进行分析。最后只是一个博客文章，探讨你可以尝试的其他分析。所以就这些。祝大家编码愉快。非常感谢你们在所有技术问题上的耐心。我希望你们今天剩下的时间过得愉快。是的，谢谢。如果有人想要时间的贴纸，欢迎来找我。
 - en: come see me or if you have questions。 Also come see me。 So thank you。
   id: totrans-70
   prefs: []
   type: TYPE_NORMAL
+  zh: 如果你有问题，欢迎来找我。所以谢谢。
 - en: '![](img/ed22573dd2f8cf2a678008c7665fb628_10.png)'
   id: totrans-71
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/ed22573dd2f8cf2a678008c7665fb628_10.png)'
 - en: (applause)。
   id: totrans-72
   prefs: []
   type: TYPE_NORMAL
+  zh: （掌声）。
