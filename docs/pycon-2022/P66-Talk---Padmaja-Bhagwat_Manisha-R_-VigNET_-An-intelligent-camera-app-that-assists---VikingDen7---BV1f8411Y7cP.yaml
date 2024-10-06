@@ -4,15 +4,19 @@
   prefs:
   - PREF_H1
   type: TYPE_NORMAL
+  zh: P66：演讲 - **Padmaja Bhagwat**_**Manisha R**_ **VigNET**_ 一个智能相机应用程序的介绍 - **VikingDen7**
+    - **BV1f8411Y7cP**
 - en: Good evening everyone。 We have a next talk that is on Visionet， an intelligent
     camera。
   id: totrans-1
   prefs: []
   type: TYPE_NORMAL
+  zh: 大家晚上好。接下来的演讲是关于**Visionet**，一个智能相机。
 - en: '![](img/e5e281b99ab1922feb99f35c9a0cb653_1.png)'
   id: totrans-2
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/e5e281b99ab1922feb99f35c9a0cb653_1.png)'
 - en: app that assists you in understanding your surroundings by Padma Jha Bhagavat
     and Manish， Shah。 Over to you Padma Jha。 Thank you so much。 Helen Keller once
     said that there is no better way to thank God for your sight than by giving。 help
@@ -21,6 +25,8 @@
   id: totrans-3
   prefs: []
   type: TYPE_NORMAL
+  zh: 这个应用程序可以帮助你理解周围环境，由**Padma Jha Bhagavat**和**Manish Shah**开发。接下来请**Padma Jha**发言。非常感谢。**海伦·凯勒**曾经说过，没有比帮助黑暗中的人更能感谢上帝赐予你视力的方式了。大家晚上好。我是**Padma
+    Jha Bhagavat**，我非常兴奋能向大家介绍**Project Minute**。
 - en: Before we get into the talk here is a small introduction about us。 I am Padma
     Jha Bhagavat。 and this is my dear friend Manish Shah。 We both work as data scientist
     at Glance India。 I work on monetizing the content for Glance。 Manisha here works
@@ -29,6 +35,8 @@
   id: totrans-4
   prefs: []
   type: TYPE_NORMAL
+  zh: 在进入演讲之前，这里有一个关于我们的简要介绍。我是**Padma Jha Bhagavat**，这是我的好朋友**Manish Shah**。我们都在**Glance
+    India**担任数据科学家。我负责为**Glance**实现内容的货币化。而**Manisha**则负责个性化**Glance**的用户体验，顺便提一下，这个用户体验每天有1.5亿活跃用户。
 - en: So originally this talk was supposed to be given by both Manisha and I but unfortunately。
     she couldn't join us here today。 So you see I now have double the responsibility
     to make。 this talk as interesting and fun as possible and it tells me it's not
@@ -37,6 +45,7 @@
   id: totrans-5
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以最初这个演讲是由**Manisha**和我一起进行的，但不幸的是，她今天无法加入我们。所以你们看到我现在有了双倍的责任，要尽可能让这个演讲有趣和好玩，这让我意识到代入她的角色并不是一件简单的事情。但我会尽力而为。那么让我们进入演讲的主要部分。
 - en: First things first what are we going to learn today？ We are going to see how
     to build an。 end to end deep learning based application particularly we will be
     looking into a visual。 question answering based application and this is how the
@@ -45,6 +54,7 @@
   id: totrans-6
   prefs: []
   type: TYPE_NORMAL
+  zh: 首先我们今天要学习什么？我们将学习如何构建一个端到端的基于深度学习的应用程序，特别是我们将关注一个基于视觉问答的应用程序，今天演讲的提纲如下。首先，我们将研究使这个应用程序得以实现的数据和模型。
 - en: then we will look into how to quickly prototype such deep learning based application
     and the。 final part would cover how can we productionize these application by
     building services on top。 of your model particularly we will be looking into front
@@ -53,6 +63,7 @@
   id: totrans-7
   prefs: []
   type: TYPE_NORMAL
+  zh: 接下来我们将探讨如何快速原型制作这样一个基于深度学习的应用程序，最后一部分将涵盖如何通过在你的模型上构建服务来实现这些应用程序的生产化，特别是我们将关注前端和服务以及API服务。话虽如此，让我们深入演讲。一些人可能知道，超过2.53亿人。
 - en: of words population suffers from visual impairment which is roughly 1 in 30。
     For them simple every。 day task like locating a matching pair of saw or telling
     what dollar bill it is can become。 extremely difficult。 Hence we decided to build
@@ -61,6 +72,7 @@
   id: totrans-8
   prefs: []
   type: TYPE_NORMAL
+  zh: 的人口受到视觉障碍的影响，这大约是30人中就有1人。对他们来说，像找到一双匹配的袜子或辨别某张钞票的面额这样的简单日常任务可能变得极其困难。因此，我们决定构建一个基于视觉问答的应用程序，可以真正将你的视觉世界转变为可听的体验。现在你可能在想。
 - en: wondering what visual question answering is。 Simply put it's an intelligent
     camera app。 which takes image and a question related to that image and gives an
     answer out。 For instance。 let's say you are on to your everyday evening walk where
@@ -69,6 +81,7 @@
   id: totrans-9
   prefs: []
   type: TYPE_NORMAL
+  zh: 想知道什么是视觉问答？简单来说，它是一个智能相机应用程序，能够接收图像和与该图像相关的问题，并给出答案。例如，假设你在每天的傍晚散步时，遇到了一只非常可爱的狗狗，你拍下它的照片，并问一个问题，比如这只狗在吃什么。现在这两个。
 - en: inputs then go into our VQA model which gives out an answer saying it's eating
     stick or。 rather playing with stick。 So that's the goal of today's application
     that we are going to。 build the model which can take both image and a question
@@ -650,6 +663,8 @@
   id: totrans-79
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们整个 API 服务是使用 fast API 构建的。你可以克隆这个仓库来试试。此外，在这个仓库中，你也可以看到如何在云平台上部署它。我们展示了如何使用它，如何在
+    GCP 上部署。所以，自己试试看，因为不要仅仅依赖录制的演示。你需要亲自尝试。只是有几点需要注意的是，它能够正常工作。
 - en: the best in Google Chrome and Microsoft Edge。 Safari and Firefox has a bit of
     audio issue。 which we will be fixing it soon。 So that's it for today， folks。 Thank
     you so much。 And this is the team that helped us build it rather of Shiva's and
@@ -658,16 +673,21 @@
   id: totrans-80
   prefs: []
   type: TYPE_NORMAL
+  zh: 在 Google Chrome 和 Microsoft Edge 中效果最佳。Safari 和 Firefox 有些音频问题，我们会很快修复。所以今天就到这里，伙计们。非常感谢你们。这是帮助我们建立它的团队，而不是
+    Shiva 和 Pablo，因为没有他们，这个应用程序就不可能实现。所以非常感谢他们。
 - en: huge thanks to you all for being such an amazing audience today。 Thank you so
     much。 I hope you enjoyed。
   id: totrans-81
   prefs: []
   type: TYPE_NORMAL
+  zh: 感谢大家今天成为如此优秀的观众。非常感谢。我希望你们喜欢。
 - en: '![](img/e5e281b99ab1922feb99f35c9a0cb653_21.png)'
   id: totrans-82
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/e5e281b99ab1922feb99f35c9a0cb653_21.png)'
 - en: '[Applause]， (applause)。'
   id: totrans-83
   prefs: []
   type: TYPE_NORMAL
+  zh: '[掌声]，（掌声）。'
