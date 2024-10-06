@@ -502,6 +502,7 @@
   id: totrans-59
   prefs: []
   type: TYPE_NORMAL
+  zh: 未来的迭代。这是一个示例，在子解释器下生成一些数据，并在主解释器中处理这些数据。因此，首先，我们在通道中创建解释器，并返回通道的两个端点，类型明显不同的对象。然后，当我们启动一个线程，在我们的子解释器中执行一些简单代码时。就在这里。
 - en: notice how when we call run， we specify the channel end to inject into the sub-interpreters。
     under main module。 And then we use that channel end in the executed code。 And
     there in that。 case we're sending data out。 And then finally， we pop the data
@@ -510,6 +511,7 @@
   id: totrans-60
   prefs: []
   type: TYPE_NORMAL
+  zh: 注意，当我们调用运行时，我们指定了要注入子解释器的通道端。在主模块下。然后我们在执行的代码中使用该通道端。在这种情况下，我们正在发送数据。最后，我们在主解释器中从通道中取出数据，以便在那里处理。通道的一个重要特性是发送。
 - en: and receiving are both blocking operations。 And this is the main way that interpreters。
     can be synchronized。 Async await for me doesn't really fit in my brain。 It just
     doesn't work。 for me。 I suspect I'm not the only one。 So I'm happy to say that
@@ -518,6 +520,7 @@
   id: totrans-61
   prefs: []
   type: TYPE_NORMAL
+  zh: 发送和接收都是阻塞操作。这是解释器可以同步的主要方式。对我来说，异步等待并不适合我的思维。这对我来说就是不工作。我怀疑我不是唯一一个这样的人。因此，我很高兴地说，子解释器促进了一种我认为非常适合我的思维的替代并发模型。这个模型相当。
 - en: well described。 A lot of research， a guy named Tony Hor， CSP， it's called， communicating。
     sequential processes。 So a key here is that unlike traditional threading with
     its unbounded。 data sharing， with sub-interpreters you get opt-in sharing。 And
@@ -526,6 +529,7 @@
   id: totrans-62
   prefs: []
   type: TYPE_NORMAL
+  zh: 描述得很好。很多研究，有个叫托尼·霍尔的家伙，CSP，称为通讯顺序过程。所以这里的关键是，与传统线程的无限数据共享不同，子解释器实现的是选择性共享。接下来，尽管它并不完美，我们正在变得更好。我喜欢这个比喻。在很多情况下，它确实很重要。
 - en: So let's get to the part where this intersects with the gill。 Sub-interpreters。
     are a way that we can get rid of the gill。 But how？ We're going to stop sharing
     the gill。 So currently， sub-interpreters still share the gill between them。 And
@@ -533,10 +537,12 @@
   id: totrans-63
   prefs: []
   type: TYPE_NORMAL
+  zh: 让我们谈谈这个与全局解释器锁交叉的部分。子解释器是我们摆脱全局解释器锁的一种方式。但怎么做呢？我们将停止共享全局解释器锁。目前，子解释器之间仍然共享全局解释器锁。这样，你就能获得所有。
 - en: '![](img/58dcdd6d0916a383eff7c8db2666689f_18.png)'
   id: totrans-64
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/58dcdd6d0916a383eff7c8db2666689f_18.png)'
 - en: the downsides of the gill。 If you remember this chart with all the state that
     we have， to deal with。 currently the gill is part of Python's global runtime state。
     If we move。 it to per-interpreter state， then we can get multi-core parallelism。
@@ -545,6 +551,7 @@
   id: totrans-65
   prefs: []
   type: TYPE_NORMAL
+  zh: 全局解释器锁的缺点。如果你记得这张图表，其中有我们需要处理的所有状态，目前全局解释器锁是Python全局运行时状态的一部分。如果我们将其移动到每个解释器的状态，那么我们就可以实现多核并行处理。因此，我在这里有点含糊不清。我承认。但实现这一点不应该是一个太具侵入性的变化。实际上。
 - en: that's an important requirement for what I've been working on。 I don't want
     to， make big changes。 So all this sounds too good to be true。 No one's done it
     yet。 But why？ Because， well。 possibly they didn't know about sub-interpreters
@@ -553,6 +560,7 @@
   id: totrans-66
   prefs: []
   type: TYPE_NORMAL
+  zh: 这是我正在研究的一个重要要求。我不想做出大的改变。所以这一切听起来太好了，令人难以置信。还没有人做到这一点。但为什么呢？因为，可能他们不知道子解释器，或者子解释器对那些人来说并不重要。但无论如何，我现在正在进行这项工作。我来了。
 - en: I'm trying to make this happen。 Regarding the blockers， there are some blockers
     that。 are straightforward and pretty discreet。 We're working on those。 We've got
     to figure out。 what to do。 If we don't have a gill anymore to protect global state，
@@ -561,6 +569,7 @@
   id: totrans-67
   prefs: []
   type: TYPE_NORMAL
+  zh: 我正在努力实现这一点。关于阻塞因素，有一些阻塞因素是直接而相对简单的。我们正在处理这些问题。我们必须弄清楚该怎么办。如果我们不再有全局解释器锁来保护全局状态，那么我们必须最小化全局运行时状态，并用更细粒度的锁来保护其余部分。但这并不完全。
 - en: going to impact the execution of Python code。 Now， my project's advanced kind
     of slowly。 I just haven't had a lot of time。 But I've relatively recently joined
     Microsoft and they've。 been kind enough to give me time to work on this each week。
