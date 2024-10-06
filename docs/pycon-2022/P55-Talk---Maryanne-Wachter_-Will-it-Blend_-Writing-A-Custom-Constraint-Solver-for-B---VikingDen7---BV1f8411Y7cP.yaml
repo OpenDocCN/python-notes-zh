@@ -530,6 +530,7 @@
   id: totrans-61
   prefs: []
   type: TYPE_NORMAL
+  zh: 这是编辑上下文中的对象，位于选项卡之一上。我有许多按钮是这个菜单的一部分，还有一些弹出面板。Blender操作符文件中，你会找到调用Pymaxian的所有UI操作。因此它在属性和方法方面有一个特定的Blender类结构。
 - en: And it also has a number of requirements for like unique labels。 So that's like
     underscore， ID name。 underscore label。 And then you can see that I have to define
     execute which is。 also has return a specific set of values。 So for all those nice
@@ -538,6 +539,7 @@
   id: totrans-62
   prefs: []
   type: TYPE_NORMAL
+  zh: 它还有一些对唯一标签的要求，比如下划线、ID名称、下划线标签。然后你可以看到，我必须定义执行，也就是要返回一组特定的值。因此，对于所有这些漂亮的面板，你必须有特定的前缀来定义具体属性。否则当你告诉它基本上添加你的包时，它不会注册。
 - en: So within I've got these pop-out panels you have some additional attributes
     that you can。 set basic values。 So in this case it's adding the strengths of the
     constraints with a typical。 notation。 And all of these UI panels have a draw method。
@@ -546,6 +548,7 @@
   id: totrans-63
   prefs: []
   type: TYPE_NORMAL
+  zh: 在这些弹出面板中，你可以设置一些附加属性以设置基本值。在这种情况下，它增加了约束的强度，使用了典型的符号。这些UI面板都有一个绘制方法。因此，大多数典型的附加组件也有一个属性文件，并且你必须注册每一个。
 - en: constant that you use for those menus which in my case resulted in a lot of
     code pretty， quickly。 So rather than using a properties file I decided instead
     to put those constraints。 and basically they're bound so like all the options
@@ -554,6 +557,7 @@
   id: totrans-64
   prefs: []
   type: TYPE_NORMAL
+  zh: 你在这些菜单中使用的常量，这在我的情况下导致了相当多的代码生成，因此我决定不使用属性文件，而是将那些约束放入一个JSON文件中，基本上是绑定了所有选项，像是用户可以设置的值的精确度。因此我把它放入一个基本上进行分组的JSON文件中。
 - en: each set of values by the type of constraint。 And then within my actual menu
     file for loading。 into Blender I was able to import and iterate through that JSON
     file to automatically register。 each one of these properties so it's going to
@@ -562,6 +566,7 @@
   id: totrans-65
   prefs: []
   type: TYPE_NORMAL
+  zh: 每组值由约束类型决定。然后在我实际的菜单文件中加载Blender时，我能够导入并迭代该JSON文件，以自动注册这些属性，这样未来添加内容到这个JSON文件会更容易，而不是需要编写一堆类。
 - en: And so what do I have after all that？ Pimaxian currently only supports a couple
     of constraints。 as basically a proof of concept but I was able to replicate the
     kind of hanging cloth。 form finding that I showed on that first few slides。 I'd
@@ -570,6 +575,7 @@
   id: totrans-66
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以经过这些，我现在得到的是什么？Pimaxian目前仅支持几个约束，基本上是一个概念证明，但我能够复制我在前几张幻灯片中展示的悬挂布料形态探索。我希望能做更多使其更具互动性。你可以在Blender中使用模态操作符，以允许一些交互性。
 - en: or I was looking into possibly using sockets that would be able to feed updated
     geometry。 back so that the user can have more interaction with the simulation。
     So in closing I'd really like to thank the Python software foundation and Pilates
@@ -578,17 +584,21 @@
   id: totrans-67
   prefs: []
   type: TYPE_NORMAL
+  zh: 我还在考虑可能使用套接字，这样能够反馈更新的几何体，以便用户可以与模拟进行更多交互。所以最后我真的很想感谢Python软件基金会和Pilates给我这个机会来这里发言。特别是纽约市的Pilates小组，他们起到了关键作用。
 - en: a sounding board for a much shorter version of this talk。 And I'd also like
     to thank the。 Recur Center because I worked mainly on the Blender part of this
     project when I was doing。 a retreat there last summer。 So thank you。
   id: totrans-68
   prefs: []
   type: TYPE_NORMAL
+  zh: 这是一个更简短版本演讲的讨论平台。我还想感谢Recur Center，因为我在上个夏天的静修中主要参与了这个项目的Blender部分。所以谢谢你们。
 - en: '![](img/3c3974f3c5ba50851d48ba6ae3207320_4.png)'
   id: totrans-69
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/3c3974f3c5ba50851d48ba6ae3207320_4.png)'
 - en: '[BLANK_AUDIO]。'
   id: totrans-70
   prefs: []
   type: TYPE_NORMAL
+  zh: '[BLANK_AUDIO]。'
