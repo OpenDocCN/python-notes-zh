@@ -2538,10 +2538,12 @@
   id: totrans-302
   prefs: []
   type: TYPE_NORMAL
+  zh: 它将在这里作为表达式产生一个结果，表示它将产生某种结果。好的。注意我们这里只使用 i32，因此它只会与 32 位整数一起工作，好的？
 - en: And here we start the declaration of our function， okay？
   id: totrans-303
   prefs: []
   type: TYPE_NORMAL
+  zh: 在这里我们开始声明我们的函数，好的？
 - en: Notice that I'm only placing here its export directive。 I'm saying that I'm
     going to export our function as a dunder， well it's not dunder。 it's just an underscore，
     underscore start。 Okay， this is the name of my function and this is where the
@@ -2550,6 +2552,8 @@
   id: totrans-304
   prefs: []
   type: TYPE_NORMAL
+  zh: 注意我这里只放置了它的导出指令。我在说我要将我们的函数导出为一个 dunder，实际上并不是 dunder，只是一个下划线，_start。好的，这是我的函数名称，也是函数执行将要开始的地方。好的？我们将使用这个名称，_start
+    来指示在我们的 Python 代码中，我们希望执行这个。
 - en: all this function。 And in line number 32， notice here that we have here just
     two closing parentheses。 This is one and this is the second one。 The first one
     actually closes the function and the last one closes the module。 okay？ So every
@@ -2559,6 +2563,7 @@
   id: totrans-305
   prefs: []
   type: TYPE_NORMAL
+  zh: 所有这些函数。在第 32 行，注意这里我们只有两个闭合括号。这是一个，这是第二个。第一个实际上关闭函数，最后一个关闭模块。好的？因此，我在编译器中产生的每个程序必须以这些几行指令开始，并以这两个闭合括号结束，好的？
 - en: So this is something that has to happen here。 And in line number 35， we have
     a dictionary here。 okay？ And this dictionary is the mapping between the words
     of our cheeky-forth programs。 and the corresponding instruction or instructions
@@ -2566,15 +2571,19 @@
   id: totrans-306
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以这是一件必须在这里发生的事情。在第 35 行，我们有一个字典，好的？这个字典是我们 cheeky-forth 程序中的单词与 WebAssembly
+    中相应指令或指令的映射，好的？
 - en: In WebAssembly it takes form。 So in line 36 you can see that for doing a multiplication，
     okay？
   id: totrans-307
   prefs: []
   type: TYPE_NORMAL
+  zh: 在 WebAssembly 中它采取了形式。所以在第 36 行，你可以看到为了进行乘法，好的？
 - en: We have the key in this dictionary is the star， okay？
   id: totrans-308
   prefs: []
   type: TYPE_NORMAL
+  zh: 在这个字典中，关键是星号，好的？
 - en: It means that whenever I find a star I need to convert this into the i32。mool
     instruction in WebAssembly text form， okay？ It's actually contained within square
     brackets。 It's a list， what we have associated to each value， because we can have
@@ -2583,6 +2592,8 @@
   id: totrans-309
   prefs: []
   type: TYPE_NORMAL
+  zh: 这意味着每当我找到一个星号时，我需要将其转换为 WebAssembly 文本形式的 i32.mool 指令，好的？它实际上包含在方括号内。这是一个列表，我们为每个值关联的内容，因为我们可以有多个指令。如你所见，例如，在第
+    41 行我们得到了 nl 单词，好的？
 - en: And this one actually gets converted into two WebAssembly instructions。 The
     first one is i32 const 10， which pushes a 10 to the top of a stack。 And then a
     call to emit。 okay？ Call emit will call the emit function that is defined somewhere
@@ -2591,6 +2602,8 @@
   id: totrans-310
   prefs: []
   type: TYPE_NORMAL
+  zh: 实际上，这个会被转换成两个 WebAssembly 指令。第一个是 i32 const 10，它将 10 推送到栈顶。然后是一个 emit 的调用。好的？调用
+    emit 将调用在其他地方定义的 emit 函数，由于我们之前的重要指令，它在这里是可用的，好的？
 - en: So notice here we already have implemented the star， the plus， the dot， the
     period。 the emit input and nl instructions here， okay？ So that's what our compiler
     currently is able to do。 Plus some additional functionality that is actually provided
@@ -2599,15 +2612,18 @@
   id: totrans-311
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以注意这里我们已经实现了星号、加号、点、句点、emit 输入和 nl 指令，好的？所以这就是我们编译器目前能够做到的。加上一些实际上在后面提供的额外功能。这与访问变量等事情有关，而这些在这里并不存在。
 - en: But those are special because they work a little bit different。 They're a little
     bit more elaborate。 okay？ So let's go to the very end of our code。
   id: totrans-312
   prefs: []
   type: TYPE_NORMAL
+  zh: 但这些是特别的，因为它们的工作方式有点不同。它们稍微复杂一些。好的？那么让我们看看代码的最后部分。
 - en: '![](img/86495766b190929aba361b4772d72632_38.png)'
   id: totrans-313
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/86495766b190929aba361b4772d72632_38.png)'
 - en: We have the main， and this is actually designed so that you can just read the
     main and have a general idea of how this works。 okay？ So any moment， remember，
     if you want to see the implementation of any of these functions。 just， I think，
@@ -3359,12 +3375,15 @@
   id: totrans-405
   prefs: []
   type: TYPE_NORMAL
+  zh: 这正是我们在这个程序中翻译为 WebAssembly 的内容。因此，为了在这里再次运行它，我们现在在终端中运行执行脚本，并告诉它在哪里找到 Wasm 文件，可以吗？在这种情况下，它也在与源文件相同的位置。所以这里我们有
+    Wasm 和 WAT。我们运行 Wasm，可以吗？WAT 有助于创建 Wasm。
 - en: And it's now running， okay？ So think of it， what's happening here。 We。 Wasm
     are this Python package that is the WebAssembly runtime， is able to read this
     file， okay？
   id: totrans-406
   prefs: []
   type: TYPE_NORMAL
+  zh: 现在它正在运行，可以吗？所以想一想，这里发生了什么。我们。Wasm 是这个 WebAssembly 运行时的 Python 包，能够读取这个文件，可以吗？
 - en: Which is this binary format。 It does a just in time translation of that file
     into the native platform。 whatever is running here in our Git pod workspace， okay？
     It gets translated。 this is actually an x86 computer。 So it gets translated into
@@ -3373,6 +3392,8 @@
   id: totrans-407
   prefs: []
   type: TYPE_NORMAL
+  zh: 这是这个二进制格式。它将该文件即时翻译成本地平台。无论在我们的 Git pod 工作区中运行的是什么，可以吗？它被翻译了。这实际上是一个 x86 计算机。所以它被翻译成基于寄存器等的本地代码。再一次，严格来说，Wasm
+    代码实际上不能与世界的其他部分接口。
 - en: but because we have these imports， we're able to combine them functions that
     will do that job for us。 okay？ But notice that even though what we're looking
     at， what gets printed。 and in this moment it's actually expecting us to type something。
@@ -3382,15 +3403,19 @@
   id: totrans-408
   prefs: []
   type: TYPE_NORMAL
+  zh: 但是因为我们有这些导入，我们能够组合它们的函数来为我们完成这个工作，可以吗？但请注意，尽管我们正在查看的内容，打印的内容。在这个时刻，它实际上期望我们输入一些内容。所有这些操作都是通过
+    Python 完成的。但是这些事情的执行顺序和加法、乘法等算术操作将会执行。
 - en: all that is done through the native code that was translated from the WebAssembly
     binary code， okay？
   id: totrans-409
   prefs: []
   type: TYPE_NORMAL
+  zh: 所有操作都是通过从 WebAssembly 二进制代码翻译而来的本地代码完成的，明白吗？
 - en: So， I mean， there's a lot of stuff actually happening here， okay？
   id: totrans-410
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以，我的意思是，这里实际上发生了很多事情，可以吗？
 - en: But at the end it gives me just the illusion of everything working nicely together。
     So let's put。 I don't know， a 10 and let's put a minus 5， okay？ And these two
     lines 11 and 14。 these are the ones in charge of displaying what we have here，
@@ -3399,6 +3424,8 @@
   id: totrans-411
   prefs: []
   type: TYPE_NORMAL
+  zh: 但最终它给我一种一切都很好地协同工作的错觉。那么我们放个 10，放个减 5，可以吗？这两行 11 和 14。是负责显示我们这里内容的，可以吗？所以你可以看到，它正在工作。我们有一个
+    Hello World，可以吗？我们通常在很多语言中以 Hello World 开始。
 - en: but here it's not that really interesting。 As you can see here， we start in
     line number four。 we start pushing a 72， what's that， 72？ It's the capital letter
     H， yes， exactly。 And we do an emit。 so that prints the H， okay？ And then we have
@@ -3406,6 +3433,8 @@
   id: totrans-412
   prefs: []
   type: TYPE_NORMAL
+  zh: 但这里并不那么有趣。正如你所看到的，我们从第 4 行开始。我们开始推送 72，什么是 72？这是大写字母 H，是的，正是这样。然后我们发出 emit。所以打印
+    H，可以吗？然后我们有 101 emit，那就是小写的 e，可以吗？
 - en: And we emit it， okay？ And so on。 As you can see， putting messages here is pretty
     difficult。 pretty error prone， okay？ But it works， okay？ And at the end it has
     a new line。 So we can now try it out。 Okay， so we first need to compile it， we
@@ -3414,12 +3443,16 @@
   id: totrans-413
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们发出它，可以吗？等等。正如你所看到的，这里放消息是相当困难的，容易出错，可以吗？但它有效，可以吗？最后它有一个新行。所以我们现在可以试试看。好的，我们首先需要编译它，我们使用一个调皮的
+    fourth 编译器。文件在示例目录中，名为 Hello World dot fourth，可以吗？再一次。
 - en: remember when we use cheeky fourth， this creates two files and here they are。
     One has the same。 they both have the same extension of the program that it compiled。
     The program that we see as input has a dot F4th extension， okay？
   id: totrans-414
   prefs: []
   type: TYPE_NORMAL
+  zh: 记得我们使用调皮的 fourth，这会创建两个文件，它们在这里。一个有相同的扩展名，它们都有编译后程序的相同扩展名。我们看到的输入程序有一个 .F4th
+    扩展名，可以吗？
 - en: And it produces two files with the same name but different extensions， Wasm
     and what？ Once again。 you can open the WAT to see what it has， so this is the
     Hello World。 As you can see。 it's pretty long， 37 lines of code。 Okay， and in
