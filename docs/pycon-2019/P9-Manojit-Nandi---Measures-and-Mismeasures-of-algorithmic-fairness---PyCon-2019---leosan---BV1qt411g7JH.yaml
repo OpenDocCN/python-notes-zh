@@ -4,41 +4,50 @@
   prefs:
   - PREF_H1
   type: TYPE_NORMAL
+  zh: P9：Manojit Nandi - 算法公平性的测量与误测 - PyCon 2019 - leosan - BV1qt411g7JH
 - en: Hi everyone welcome on that speaker would be Manajit Nandi talking to us。 about
     measures and mismeasures of algorithmic fairness。
   id: totrans-1
   prefs: []
   type: TYPE_NORMAL
+  zh: 大家好，欢迎！今天的演讲者是 Manajit Nandi，他将与我们谈论算法公平性的测量与误测。
 - en: '![](img/19dc4c4a9b64c2297f4044cba9885c3c_1.png)'
   id: totrans-2
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/19dc4c4a9b64c2297f4044cba9885c3c_1.png)'
 - en: '![](img/19dc4c4a9b64c2297f4044cba9885c3c_2.png)'
   id: totrans-3
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/19dc4c4a9b64c2297f4044cba9885c3c_2.png)'
 - en: '![](img/19dc4c4a9b64c2297f4044cba9885c3c_3.png)'
   id: totrans-4
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/19dc4c4a9b64c2297f4044cba9885c3c_3.png)'
 - en: How do I do things？ There we go that's how things happen。 Okay ah sorry for
     the bit。
   id: totrans-5
   prefs: []
   type: TYPE_NORMAL
+  zh: 我该如何做事情？好了，这就是事情发生的方式。抱歉，稍等一下。
 - en: '![](img/19dc4c4a9b64c2297f4044cba9885c3c_5.png)'
   id: totrans-6
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/19dc4c4a9b64c2297f4044cba9885c3c_5.png)'
 - en: like hello everyone thank you all for coming to my talk this afternoon on。 measures
     and mismeasures of algorithmic fairness。 I'm Manajit Nandi and。
   id: totrans-7
   prefs: []
   type: TYPE_NORMAL
+  zh: 嗨，大家好，感谢大家今天下午来参加我的演讲，主题是算法公平性的测量与误测。我是 Manajit Nandi。
 - en: '![](img/19dc4c4a9b64c2297f4044cba9885c3c_7.png)'
   id: totrans-8
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/19dc4c4a9b64c2297f4044cba9885c3c_7.png)'
 - en: I'm a data scientist so a quick about me according to the Google Cloud Computer，
     Vision API。 So I ran a photo myself through the Google Vision API and it produced。
     some labels for me so let's go through some of them and see how right they are。
@@ -46,15 +55,19 @@
   id: totrans-9
   prefs: []
   type: TYPE_NORMAL
+  zh: 我是一名数据科学家，所以我根据 Google Cloud 计算机视觉 API 快速介绍一下自己。我将自己的照片通过 Google Vision API
+    处理，生成了一些标签，让我们看看其中的一些标签，以及它们的准确性。我是舞者吗？
 - en: Yes I'm an aerial dancer in a circus acrobat I just work as a。 data scientist
     for 40 hours a week because I got a pay rent somehow。 Am I， entertaining？
   id: totrans-10
   prefs: []
   type: TYPE_NORMAL
+  zh: 是的，我是一名马戏团空中舞者，我每周工作 40 小时作为数据科学家，因为我得以某种方式支付房租。我是，娱乐型的吗？
 - en: I hope so you're stuck with me for the next 40 minutes。 Am I fun？
   id: totrans-11
   prefs: []
   type: TYPE_NORMAL
+  zh: 希望如此，你将和我一起度过接下来的 40 分钟。我有趣吗？
 - en: Ah most of the time and lastly am I a girl huh so that one is not true I am
     a。 male presenting cis man so why did Google Vision think I am a girl and the。
     thing is it's not just Google Vision if I were to run this through Microsoft's。
@@ -62,6 +75,8 @@
   id: totrans-12
   prefs: []
   type: TYPE_NORMAL
+  zh: 嗯，大多数时候。最后，我是女孩吗？嗯，这个不对，我是一个男性表现的顺性别男性。那么，为什么 Google Vision 会认为我是女孩呢？实际上，不仅仅是
+    Google Vision，如果我通过微软的视觉 API 来处理，结果也会相似，它会说哦，这是一张。
 - en: lady and so the thing is like what are these really looking for when they say。
     this is a girl are they saying how similar am I to what they've understood to
     be a。 girl is it because of oh this is a dancer and all the dancers in my training。
@@ -69,16 +84,19 @@
   id: totrans-13
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以，问题是，当他们说这是一个女孩时，他们到底在寻找什么？他们是在说我与他们理解的女孩有多相似吗？是因为哦，这是一个舞者，而我训练集中的所有舞者都是女孩，所以这也是一个女孩，还是因为某些身体特征。
 - en: feature about me that makes it think that oh this is probably a girl and this。
     seems like a fun innocuous example but these types of systems of automatic。 gender
     recognition are used everywhere for example to basically show you better。
   id: totrans-14
   prefs: []
   type: TYPE_NORMAL
+  zh: 关于我，让系统认为哦，这可能是一个女孩。虽然这似乎是一个有趣无害的例子，但这种自动性别识别的系统在很多地方都被使用，例如基本上为了向你展示更好的。
 - en: '![](img/19dc4c4a9b64c2297f4044cba9885c3c_9.png)'
   id: totrans-15
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/19dc4c4a9b64c2297f4044cba9885c3c_9.png)'
 - en: ads when you're in a taxi cab for some reason because after all is not the true。
     purpose of data size to show you better ads and think about this this is it sounds。
     really dumb it's actually quite dangerous because if you basically have。 some
@@ -86,12 +104,14 @@
   id: totrans-16
   prefs: []
   type: TYPE_NORMAL
+  zh: 广告出现在出租车里，出于某种原因，因为毕竟，数据的真正目的不是为了向你展示更好的广告。想想看，这听起来真的很傻，但实际上相当危险，因为如果你对什么是男性有一些原型性的理解。
 - en: this is what a woman should look like you could actually misgender people whom。
     that is actually a huge issue to and so there's a researcher at University of，
     Washington osu！
   id: totrans-17
   prefs: []
   type: TYPE_NORMAL
+  zh: 这就是女性应该是什么样子。你实际上可能会错误性别化一些人，这确实是一个很大的问题。华盛顿大学的研究者已经做了一项调查，研究了人机系统中对性别和酷儿身份的理解，他们的总体发现是，人机系统中对性别的理解固有地排斥跨性别者。
 - en: Keys and in who's done a survey of how queerness and gender are。 thought out
     in human computer systems and their overall findings is that the way。 we think
     about gender in human computer systems is inherently trans exclusionary。 so now
@@ -99,6 +119,7 @@
   id: totrans-18
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以现在，随着我们努力成为以数据驱动的领导者，并使用这些类型的。
 - en: systems we are sort of using systems that are inherently trans exclusionary
     we。 inherently make decisions that ignore the existence and lived experience of
     the。 trans community and I hope this example sort of motivates why we should care
