@@ -197,6 +197,8 @@
   id: totrans-26
   prefs: []
   type: TYPE_NORMAL
+  zh: 你对该语言中不同概念的理解。而根据角色的不同，他们可能会问你一些特定领域的问题。如果你申请的是后端 Django 的职位，他们可能会问你一些关于 Django
+    的问题。大致就是这样。如果这个电话进展顺利，下一步通常是一个叫做 COM 评估的环节。
 - en: which is a mini， self-contained project that the， recruiter will probably email
     you。 some instructions for。 And it's your job over the next， two to seven days
     to put together。 some response or solution to， whatever the prompt is。 There is
@@ -205,6 +207,7 @@
   id: totrans-27
   prefs: []
   type: TYPE_NORMAL
+  zh: 这就是一个迷你自包含的项目，招聘人员可能会给你发一些指示。而你在接下来的两到七天里要做的，就是针对任何提示提供一些响应或解决方案。关于这些项目是否有效或公平有一些争论。不幸的是，一些公司。
 - en: use them to get a little free labor， out of people， which is not right。 But
     when done well。 and when structured well， companies， can get a good sense of how
     a。 candidate might fit in on a team in， terms of skill。 And the last step is。
@@ -213,6 +216,7 @@
   id: totrans-28
   prefs: []
   type: TYPE_NORMAL
+  zh: 利用这些项目从人们那里获取一些免费的劳动，这是不对的。但如果做得好，结构合理，企业可以很好地评估候选人在团队中的技能适配度。最后一步通常是现场面试。这部分我总是特别紧张。通常。
 - en: there are at least four hours you， meet anywhere from three to ten， people，
     most of whom will be on。 your team。 And a lot of the， interviews are technical
     in nature， and you're whiteboarding are。 pair programming。 And I'll， explain what
@@ -221,6 +225,7 @@
   id: totrans-29
   prefs: []
   type: TYPE_NORMAL
+  zh: 至少有四个小时你会见到三到十个不等的人，大多数人将是你的团队成员。很多面试都是技术性质的，你会进行白板讨论或者对练编程。我稍后会解释这些是什么。此外，还有很多行为问题，人们会问你一些你可能之前听过的问题。
 - en: like what would you do if or how， do you approach conflict those kinds， of things。
     Whiteboarding。 you may know， is， when you and your interviewer are， standing in
     front of a big white。 board instead of a computer screen， and working through
@@ -229,15 +234,18 @@
   id: totrans-30
   prefs: []
   type: TYPE_NORMAL
+  zh: 他们会问你如果发生某种情况你会怎么做，或者你如何处理冲突之类的问题。白板讨论，你可能知道，是指你和面试官站在一个大白板前，而不是电脑屏幕前，共同解决问题。对练编程是你们在解决同样的问题，但实际上是在编码。
 - en: Pros and cons to both won't get into， the disagreements about which of， those
     are better。 but there's a lot。
   id: totrans-31
   prefs: []
   type: TYPE_NORMAL
+  zh: 关于两者的利弊我就不深入探讨了，争论哪一个更好也不重要。但有很多值得关注的内容。
 - en: '![](img/70703ffa26ed5a812aef8fe19e57bf40_13.png)'
   id: totrans-32
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/70703ffa26ed5a812aef8fe19e57bf40_13.png)'
 - en: of conversation about that online。 So， let's move into the skills， part。 First。
     I want to talk about， the non-technical skills。 People， often call these soft
     skills。 I don't like to call them soft skills， because non-technical skills are，
@@ -245,10 +253,12 @@
   id: totrans-33
   prefs: []
   type: TYPE_NORMAL
+  zh: 在网上关于这个的讨论。因此，我们接下来谈谈技能部分。首先，我想谈谈非技术技能。人们通常称这些为软技能。我不喜欢称之为软技能，因为非技术技能对人们来说非常重要。
 - en: '![](img/70703ffa26ed5a812aef8fe19e57bf40_15.png)'
   id: totrans-34
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/70703ffa26ed5a812aef8fe19e57bf40_15.png)'
 - en: And our personal stuff can be really， hard， but it really matters。 And the first
     one of those is problem， solving。 And we hear this phrase。 a lot as software engineers。
     Everyone wants to work with people， who are great problem solvers。 And to me，
@@ -256,16 +266,19 @@
   id: totrans-35
   prefs: []
   type: TYPE_NORMAL
+  zh: 而个人方面的内容可能真的很困难，但非常重要。其中一个就是解决问题的能力。我们作为软件工程师经常听到这个词。每个人都想和擅长解决问题的人一起工作。在我看来，“解决问题者”这个词实际上是更长描述的简写。对我来说。
 - en: it means using what you， already know to solve a specific， problem that might
     not be， defined。 And for those of you with， a little more experience， you know，
     that this happens all the time in。 your work。 So this is a skill that。
   id: totrans-36
   prefs: []
   type: TYPE_NORMAL
+  zh: 这意味着利用你已经知道的东西去解决一个可能没有明确定义的具体问题。对于那些有些经验的人来说，你知道，这在你的工作中时常发生。所以这是一项技能。
 - en: '![](img/70703ffa26ed5a812aef8fe19e57bf40_17.png)'
   id: totrans-37
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/70703ffa26ed5a812aef8fe19e57bf40_17.png)'
 - en: your interviewers are going to be， screening for。 Another non-technical skill
     that。 has been really important in my， career growth is the ability to ask， good
     questions。 And I've linked， here to a blog article by Julia， Evans called "How
@@ -538,22 +551,28 @@
   id: totrans-74
   prefs: []
   type: TYPE_NORMAL
+  zh: 强烈推荐，从现在开始几乎每一张幻灯片。我不会告诉你我已链接到幻灯片。此时你可以自己阅读。但我将在接下来的十分钟中展示的所有数据结构和算法，都在那本书中。因此虽然我们没有时间在这次演讲中逐步分析
+    Python 代码。
 - en: all of the python code is there。
   id: totrans-75
   prefs: []
   type: TYPE_NORMAL
+  zh: 所有的 Python 代码都在这里。
 - en: '![](img/70703ffa26ed5a812aef8fe19e57bf40_41.png)'
   id: totrans-76
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/70703ffa26ed5a812aef8fe19e57bf40_41.png)'
 - en: waiting for you。 So first we'll start with the linear。
   id: totrans-77
   prefs: []
   type: TYPE_NORMAL
+  zh: 等待你的到来。所以我们先从线性开始。
 - en: '![](img/70703ffa26ed5a812aef8fe19e57bf40_43.png)'
   id: totrans-78
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/70703ffa26ed5a812aef8fe19e57bf40_43.png)'
 - en: data structures stacks， which you， can think of like a stack of， plastic。 So
     we're going to take a stack， and we're going to take a stack， and we're going
     to take a stack。 and we're going to take a stack， and we're going to take a stack，
@@ -562,6 +581,7 @@
   id: totrans-79
   prefs: []
   type: TYPE_NORMAL
+  zh: 数据结构栈，你可以把它想象成一堆塑料。所以我们要进行栈的操作，我们要进行栈的操作，我们要进行栈的操作。我们要进行栈的操作，我们要进行栈的操作，我们要进行栈的操作。我们要进行栈的操作，我们要进行栈的操作，我们要进行栈的操作。
 - en: and we're going to take a stack， and we're going to take a stack， and we're
     going to take a stack。 and we're going to take a stack， and we're going to take
     a stack， and we're going to take a stack。 and we're going to take a stack， and
@@ -570,6 +590,7 @@
   id: totrans-80
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们要进行栈的操作，我们要进行栈的操作，我们要进行栈的操作。我们要进行栈的操作，我们要进行栈的操作，我们要进行栈的操作。我们要进行栈的操作，我们要进行栈的操作，我们要进行栈的操作。我们要进行栈的操作，我们要进行栈的操作，我们要进行栈的操作。
 - en: and we're going to take a stack， and we're going to take a stack， and we're
     going to take a stack。 and we're going to take a stack， and we're going to take
     a stack， and we're going to take a stack。 and we're going to take a stack， and
@@ -578,6 +599,7 @@
   id: totrans-81
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们要进行栈的操作，我们要进行栈的操作，我们要进行栈的操作。我们要进行栈的操作，我们要进行栈的操作，我们要进行栈的操作。我们要进行栈的操作，我们要进行栈的操作，我们要进行栈的操作。我们要进行栈的操作，我们要进行栈的操作，我们要进行栈的操作。
 - en: and we're going to take a stack， and we're going to take a stack， and we're
     going to take a stack。 and we're going to take a stack， and we're going to take
     a stack， and we're going to take a stack。 and we're going to take a stack， and
@@ -586,6 +608,7 @@
   id: totrans-82
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们要进行栈的操作，我们要进行栈的操作，我们要进行栈的操作。我们要进行栈的操作，我们要进行栈的操作，我们要进行栈的操作。我们要进行栈的操作，我们要进行栈的操作，我们要进行栈的操作。我们要进行栈的操作，我们要进行栈的操作，我们要进行栈的操作。
 - en: and we're going to take a stack， and we're going to take a stack， and we're
     going to take a stack。 and we're going to take a stack， and we're going to take
     a stack， and we're going to take a stack。 and we're going to take a stack， and
@@ -594,10 +617,12 @@
   id: totrans-83
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们要进行栈的操作，我们要进行栈的操作，我们要进行栈的操作。我们要进行栈的操作，我们要进行栈的操作，我们要进行栈的操作。我们要进行栈的操作，我们要进行栈的操作，我们要进行栈的操作。我们要进行栈的操作。
 - en: '![](img/70703ffa26ed5a812aef8fe19e57bf40_45.png)'
   id: totrans-84
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/70703ffa26ed5a812aef8fe19e57bf40_45.png)'
 - en: and we're going to take a stack， and we're going to take a stack， and we're
     going to take a stack。 and we're going to take a stack， and we're going to take
     a stack， and we're going to take a stack。 and we're going to take a stack， and
@@ -606,18 +631,22 @@
   id: totrans-85
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们要进行栈的操作，我们要进行栈的操作，我们要进行栈的操作。我们要进行栈的操作，我们要进行栈的操作，我们要进行栈的操作。我们要进行栈的操作，我们要进行栈的操作，我们要进行栈的操作。我们要进行栈的操作。
 - en: '![](img/70703ffa26ed5a812aef8fe19e57bf40_47.png)'
   id: totrans-86
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/70703ffa26ed5a812aef8fe19e57bf40_47.png)'
 - en: and we're going to take a stack， and we're going to take a stack。
   id: totrans-87
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们要进行栈的操作，我们要进行栈的操作。
 - en: '![](img/70703ffa26ed5a812aef8fe19e57bf40_49.png)'
   id: totrans-88
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/70703ffa26ed5a812aef8fe19e57bf40_49.png)'
 - en: and we're going to take a stack， and we're going to take a stack， and we're
     going to take a stack。 and we're going to take a stack， and we're going to take
     a stack， and we're going to take a stack。 and we're going to take a stack， and
@@ -821,6 +850,8 @@
   id: totrans-117
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们将要取一个栈，我们将要取一个栈，我们将要取一个栈。 我们将要取一个栈，我们将要取一个栈，我们将要取一个栈。 我们将要取一个栈，我们将要取一个栈，我们将要取一个栈。
+    我们将要取一个栈，我们将要取一个栈，我们将要取一个栈。
 - en: and we're going to take a stack， and we're going to take a stack， and we're
     going to take a stack。 and we're going to take a stack， and we're going to take
     a stack， and we're going to take a stack。 and we're going to take a stack， and
@@ -829,15 +860,19 @@
   id: totrans-118
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们将要取一个栈，我们将要取一个栈，我们将要取一个栈。 我们将要取一个栈，我们将要取一个栈，我们将要取一个栈。 我们将要取一个栈，我们将要取一个栈，我们将要取一个栈。
+    我们将要取一个栈，我们将要取一个栈，我们将要取一个栈。
 - en: and we're going to take a stack， and we're going to take a stack， and we're
     going to take a stack。 and we're going to take a stack。
   id: totrans-119
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们将要取一个栈，我们将要取一个栈，我们将要取一个栈。 我们将要取一个栈。
 - en: '![](img/70703ffa26ed5a812aef8fe19e57bf40_69.png)'
   id: totrans-120
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/70703ffa26ed5a812aef8fe19e57bf40_69.png)'
 - en: and we're going to take a stack， and we're going to take a stack， and we're
     going to take a stack。 and we're going to take a stack， and we're going to take
     a stack， and we're going to take a stack。 and we're going to take a stack， and
@@ -846,6 +881,8 @@
   id: totrans-121
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们将要取一个栈，我们将要取一个栈，我们将要取一个栈。 我们将要取一个栈，我们将要取一个栈，我们将要取一个栈。 我们将要取一个栈，我们将要取一个栈，我们将要取一个栈。
+    我们将要取一个栈，我们将要取一个栈，我们将要取一个栈。
 - en: and we're going to take a stack， and we're going to take a stack， and we're
     going to take a stack。 and we're going to take a stack， and we're going to take
     a stack， and we're going to take a stack。 and we're going to take a stack， and
@@ -853,10 +890,12 @@
   id: totrans-122
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们将要取一个栈，我们将要取一个栈，我们将要取一个栈。 我们将要取一个栈，我们将要取一个栈，我们将要取一个栈。 我们将要取一个栈，我们将要取一个栈，我们将要取一个栈。
 - en: '![](img/70703ffa26ed5a812aef8fe19e57bf40_71.png)'
   id: totrans-123
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/70703ffa26ed5a812aef8fe19e57bf40_71.png)'
 - en: and we're going to take a stack， and we're going to take a stack， and we're
     going to take a stack。 and we're going to take a stack， and we're going to take
     a stack， and we're going to take a stack。 and we're going to take a stack， and
@@ -865,6 +904,8 @@
   id: totrans-124
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们将要取一个栈，我们将要取一个栈，我们将要取一个栈。 我们将要取一个栈，我们将要取一个栈，我们将要取一个栈。 我们将要取一个栈，我们将要取一个栈，我们将要取一个栈。
+    我们将要取一个栈，我们将要取一个栈，我们将要取一个栈。
 - en: and we're going to take a stack， and we're going to take a stack， and we're
     going to take a stack。 and we're going to take a stack， and we're going to take
     a stack， and we're going to take a stack。 and we're going to take a stack， and
@@ -873,23 +914,29 @@
   id: totrans-125
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们将要取一个栈，我们将要取一个栈，我们将要取一个栈。 我们将要取一个栈，我们将要取一个栈，我们将要取一个栈。 我们将要取一个栈，我们将要取一个栈，我们将要取一个栈。
+    我们将要取一个栈，我们将要取一个栈，我们将要取一个栈。
 - en: and we're going to take a stack。
   id: totrans-126
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们将要取一个栈。
 - en: '![](img/70703ffa26ed5a812aef8fe19e57bf40_73.png)'
   id: totrans-127
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/70703ffa26ed5a812aef8fe19e57bf40_73.png)'
 - en: and we're going to take a stack， and we're going to take a stack， and we're
     going to take a stack。
   id: totrans-128
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们将要取一个栈，我们将要取一个栈，我们将要取一个栈。
 - en: '![](img/70703ffa26ed5a812aef8fe19e57bf40_75.png)'
   id: totrans-129
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/70703ffa26ed5a812aef8fe19e57bf40_75.png)'
 - en: and we're going to take a stack， and we're going to take a stack， and we're
     going to take a stack。 and we're going to take a stack， and we're going to take
     a stack， and we're going to take a stack。 and we're going to take a stack， and

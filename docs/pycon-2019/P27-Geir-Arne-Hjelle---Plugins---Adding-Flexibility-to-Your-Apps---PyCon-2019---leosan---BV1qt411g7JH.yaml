@@ -104,34 +104,41 @@
   id: totrans-14
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以我接下来要做的事情是，让我们看看能否稍微放大一点。这就是我所拥有的这个小绘图函数的代码，我希望它的功能是。这将是一个命令行应用程序，所以我只需使用这个很棒的小库。叫做click。这个库的作用是我可以在上面添加一个小装饰器，并说这就是。
 - en: a command like this and then I can go to my command line and say that I want
     to run this。
   id: totrans-15
   prefs: []
   type: TYPE_NORMAL
+  zh: 像这样的命令，然后我可以去我的命令行，告诉它我想运行这个。
 - en: '![](img/7fc67d00d0d9834c47a466f563a4b7ac_9.png)'
   id: totrans-16
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/7fc67d00d0d9834c47a466f563a4b7ac_9.png)'
 - en: and of course not much happened but if I do help here you can see that I already
     got。
   id: totrans-17
   prefs: []
   type: TYPE_NORMAL
+  zh: 当然没有发生太多事情，但如果我在这里输入help，你可以看到我已经得到了。
 - en: '![](img/7fc67d00d0d9834c47a466f563a4b7ac_11.png)'
   id: totrans-18
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/7fc67d00d0d9834c47a466f563a4b7ac_11.png)'
 - en: some help message popped in here。 So this is done just by calling this a click
     command。 And before I actually continue here because I'm going to use these decorators
     a little。
   id: totrans-19
   prefs: []
   type: TYPE_NORMAL
+  zh: 这里弹出了一些帮助信息。这只是通过调用这个click命令完成的。在我继续之前，因为我将稍微使用这些装饰器。
 - en: '![](img/7fc67d00d0d9834c47a466f563a4b7ac_13.png)'
   id: totrans-20
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/7fc67d00d0d9834c47a466f563a4b7ac_13.png)'
 - en: bit so let me just stop here and take a half a minute crash course in what a
     decorator， is。 So the thing you saw with the add symbol on top there is called
     the decorator and what。 this is really just a function that you can use to wrap
@@ -140,6 +147,7 @@
   id: totrans-21
   prefs: []
   type: TYPE_NORMAL
+  zh: 部分，所以让我在这里停一下，进行一个半分钟的快速课程，讲讲什么是装饰器。你在上面看到的加号符号就是装饰器，实际上它只是一个函数，可以用来包装另一个函数。它的作用本质上是拥有你的原始函数，然后调用你的装饰器。
 - en: function on it。 So a decorator is really just a function that takes a function
     as an argument and returns。 a function。 And what you kind of the thing you get
     out is the decorated function。 So why do you want to do this？ Well you can add
@@ -148,14 +156,17 @@
   id: totrans-22
   prefs: []
   type: TYPE_NORMAL
+  zh: 在其上执行函数。所以装饰器实际上只是一个函数，它接受一个函数作为参数并返回。一个函数。你得到的就是被装饰的函数。那么你为什么要这样做呢？因为你可以在许多函数和方法之间添加通用功能。因此这里的例子是，我们正在处理一个常规函数，也就是我有的主函数。
 - en: and making it into a command that you can run on the command line。
   id: totrans-23
   prefs: []
   type: TYPE_NORMAL
+  zh: 将其变成可以在命令行上运行的命令。
 - en: '![](img/7fc67d00d0d9834c47a466f563a4b7ac_15.png)'
   id: totrans-24
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/7fc67d00d0d9834c47a466f563a4b7ac_15.png)'
 - en: And as I said what Python is doing is the decorated equals decorator of the
     original。 function but the typical way that you write it is using this pie syntax
     or add symbol。 syntax like we see here。 Okay if you want to learn a lot more about
@@ -164,10 +175,13 @@
   id: totrans-25
   prefs: []
   type: TYPE_NORMAL
+  zh: 正如我所说，Python所做的是将装饰的函数等于原始函数的装饰器，但通常写法是使用这种pie语法或加号符号。语法，如我们在这里看到的。如果你想了解更多关于Python装饰器的内容，我写了一篇文章在real
+    Python上，你可以深入研究。
 - en: '![](img/7fc67d00d0d9834c47a466f563a4b7ac_17.png)'
   id: totrans-26
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/7fc67d00d0d9834c47a466f563a4b7ac_17.png)'
 - en: Okay so back to our demo。 Okay I have this command and I want to read in a data
     file so that means that I need to。 take this in as an argument。 So I'll have here
     the argument of a file path and this magically pops into my main method。 then
@@ -177,6 +191,8 @@
   id: totrans-27
   prefs: []
   type: TYPE_NORMAL
+  zh: 好的，回到我们的演示。好的，我有这个命令，我想读取一个数据文件，这意味着我需要。将其作为参数传入。所以我这里会有一个文件路径的参数，这个参数神奇地传入我的主方法。然后由click处理。我更喜欢将我的文件路径转换为pathlib路径，因此pathlib是标准库中一个相对较新的库。它是在Python
+    3.4中引入的，使得使用起来更加方便。
 - en: to work with file paths。 So I'll just convert the string that I'm really getting
     in here to a pathlib。 So we have the file path like this and then I want to do
     what I want to do while I want。 to read my data。 So let's just read data from
@@ -185,6 +201,7 @@
   id: totrans-28
   prefs: []
   type: TYPE_NORMAL
+  zh: 处理文件路径。因此我只需将这里实际上获得的字符串转换为pathlib。这样我们就有了这样的文件路径，然后我想做的就是读取我的数据。因此让我们从文件路径中读取数据，当我有了数据后，我想创建一个图。基本上这就是我想要的脚本，但当然现在我们需要添加那两个。
 - en: methods read data and create plot and those are fairly simple。 So I first time
     I read data it takes in a file path and let's see what do we want this。 one to
     do I want this to read in this case actually CSV data and return a Pandas data，
