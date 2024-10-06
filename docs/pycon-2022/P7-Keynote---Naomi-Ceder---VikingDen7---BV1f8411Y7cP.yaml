@@ -3,14 +3,17 @@
   prefs:
   - PREF_H1
   type: TYPE_NORMAL
+  zh: P7：主题演讲 - Naomi Ceder - VikingDen7 - BV1f8411Y7cP
 - en: I am very pleased to introduce you to our final keynotes。
   id: totrans-1
   prefs: []
   type: TYPE_NORMAL
+  zh: 我非常高兴向大家介绍我们最后的主题演讲者。
 - en: '![](img/42365745117f3ad1224930f0a4107318_1.png)'
   id: totrans-2
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/42365745117f3ad1224930f0a4107318_1.png)'
 - en: She is a Python user since 2001 at PyCon US attendee since 2003。 One of the
     originators of the poster session， the education summit， the intro to sprints，
     sessions。 the PyCon charlars and the hatchery programs。 She's the co-founder of
@@ -18,14 +21,17 @@
   id: totrans-3
   prefs: []
   type: TYPE_NORMAL
+  zh: 她自2001年起成为Python用户，自2003年起参加PyCon。她是海报会议、教育峰会、引导冲刺会议、PyCon charlars和孵化器项目的发起人之一。她是Transcode的共同创始人。我可以继续讲述她为这个社区所做的一切。
 - en: She's one of our most prolific community members。
   id: totrans-4
   prefs: []
   type: TYPE_NORMAL
+  zh: 她是我们最富有成效的社区成员之一。
 - en: '![](img/42365745117f3ad1224930f0a4107318_3.png)'
   id: totrans-5
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/42365745117f3ad1224930f0a4107318_3.png)'
 - en: I'm pleased to introduce Naomi Cedar。 Well， good afternoon。 I'm honored and
     delighted to be here。 And before anything else， I'd like to note that this is
     our 20th PyCon。 Yes， number 20。 My 20th PyCon is well， I might add。 And I would
@@ -34,6 +40,7 @@
   id: totrans-6
   prefs: []
   type: TYPE_NORMAL
+  zh: 我很高兴向大家介绍Naomi Cedar。下午好。我很荣幸和高兴能够在这里。在开始之前，我想指出这是我们的第20届PyCon。没错，第20届。我参加的第20届PyCon，我想补充一下。我想对组织者、工作人员、志愿者，以及你们所有人表示最诚挚的感谢，感谢你们让这次盛会如此愉快地回归世界。
 - en: So thank you all。 Now， I call this talk a time of gifts。 And that's inspired
     by this little gem of a travel memoir that was written by a man named。 Patrick
     Lee Fuhrmer， who in the 1930s， after being thrown out of his last year of British。
@@ -42,6 +49,7 @@
   id: totrans-7
   prefs: []
   type: TYPE_NORMAL
+  zh: 感谢大家。那么，我将这次演讲称为“礼物时光”。这受到一位名叫帕特里克·李·弗尔默（Patrick Lee Fuhrmer）的旅行回忆录的启发，他在1930年代，因为不够认真而被英国公立学校开除，决定从荷兰步行到莱茵河。
 - en: across Europe， down the Danube， and ultimately to Istanbul。 Now this took him
     a couple of years。 but the focus of his book is not on the places and， the sites
     he visited。 nor is it on the historic events that were unfolding around him because。
@@ -49,6 +57,7 @@
   id: totrans-8
   prefs: []
   type: TYPE_NORMAL
+  zh: 从欧洲穿越多瑙河，最终到达伊斯坦布尔。这花了他几年的时间，但他书中的重点并不在于他所访问的地方和景点，也不在于围绕他发生的历史事件，因为当时他正在穿越德国和奥地利，而纳粹正逐渐掌权。
 - en: Yet he seems to barely notice that。 Instead， he is interested in the people
     he met along the way。 boatmen， truck drivers， farmers， shopkeepers， even occasionally
     an aristocrat。 and their gifts of food， shelter， and companionship。 which sustained
@@ -56,6 +65,7 @@
   id: totrans-9
   prefs: []
   type: TYPE_NORMAL
+  zh: 然而，他似乎几乎没有注意到这一点。相反，他对他在路上遇到的人感兴趣：船夫、卡车司机、农民、店主，甚至偶尔还有贵族，以及他们提供的食物、住所和陪伴，这些支持着他在漫长旅程中的生存。而对我来说。
 - en: and I would imagine for many of you， my time in this community has been my，
     time of gifts。 Gifts that have sustained me in so many ways on my journey over
     the past 20 years to various。 continents， across two genders， through different
@@ -64,6 +74,7 @@
   id: totrans-10
   prefs: []
   type: TYPE_NORMAL
+  zh: 我想对于你们中的许多人来说，我在这个社区的时间是我人生中的“礼物时光”。这些礼物在过去20年里以多种方式滋养着我，让我跨越不同的大陆，经历两个性别，走过生命的不同阶段。因此，这让我思考我们如何评估和分享社区的礼物。
 - en: people have compared open source communities like the Python community to a
     gift economy。 Now here at PyCon the other day， I heard somebody say， "In Python，
     people know how open source。 works。"， Maybe。 There are a lot of ways to look at
@@ -72,6 +83,7 @@
   id: totrans-11
   prefs: []
   type: TYPE_NORMAL
+  zh: 人们将开源社区，如Python社区，与礼物经济进行比较。最近在PyCon，我听到有人说：“在Python中，人们知道开源是如何运作的。”也许吧。有很多方式来观察社区。我想知道这种对开源运作方式的理解是否对每个人都相同。
 - en: I certainly expect there are a lot of opinions。 But I do think it's important
     for communities to think about and to articulate how they。 think their principles
     should work， how their communities should work。 And I want to present a way of
@@ -80,6 +92,7 @@
   id: totrans-12
   prefs: []
   type: TYPE_NORMAL
+  zh: 我确实期待有很多观点。但我认为社区思考并阐明他们认为原则应该如何运作、社区应该如何运作是很重要的。我想提出一种对我们社区的思考方式，这对我来说是合理的。谁知道呢，也许这至少会成为讨论的素材。所以要明确。
 - en: what I'm about to say is purely my own opinion。 I stepped away from the PSF
     board two years ago。 Please don't blame any of them for this。 But I would say
     that as a community。 a community that is organized around an open source language，
@@ -159,6 +172,7 @@
   id: totrans-21
   prefs: []
   type: TYPE_NORMAL
+  zh: 而特别的问题是，让一切正常运作的志愿者的倦怠。我多次看到我称之为流星的人。这些人突然出现在社区中，开始贡献，通常以多种方式展现出似乎超人般的精力和热情。仅仅在他们第一次活动后的几个月，他们就开始组织其他活动，甚至在教授。
 - en: courses， they're contributing code and more。 And they're so successful。 they're
     so eager to help that we give them more and give them。 more and give them more
     to do to the point that people like me start wondering how can。 anyone possibly
@@ -166,6 +180,7 @@
   id: totrans-22
   prefs: []
   type: TYPE_NORMAL
+  zh: 课程中，他们在贡献代码和其他内容。他们非常成功，非常渴望帮助，以至于我们给他们更多的工作，更多，再更多，甚至让像我这样的人开始怀疑，任何人怎么可能做到这一点？答案通常是，他们做不到，至少不能持续太久。
 - en: And in those cases we'll start to notice them getting tired， enthusiasm， fading，
     even as。 they get involved in more and more things。 I've had some people like
     this take me aside and quietly ask me how to deal with the stress。 how to keep
@@ -175,6 +190,7 @@
   id: totrans-23
   prefs: []
   type: TYPE_NORMAL
+  zh: 在这些情况下，我们会开始注意到他们变得疲惫，热情逐渐减退，即使他们参与了越来越多的事情。我曾有一些这样的人私下找我询问如何应对压力，如何维持所有的事务。当我告诉他们答案是减少工作量时，他们很难接受。有时我觉得他们可能想要这样做。
 - en: but by now they don't have the time。 They've got an event to organize。 a blog
     post to edit or code to write or calls to jump on， or whatever it might be。 And
     in many cases， not all， but in many cases after a few months， a couple years maybe
@@ -183,6 +199,7 @@
   id: totrans-24
   prefs: []
   type: TYPE_NORMAL
+  zh: 但到现在为止，他们没有时间了。他们需要组织活动、编辑博客文章、编写代码、接听电话，或者其他任何事情。在许多情况下，并不是所有情况，但在许多情况下，经过几个月，可能一两年后，他们开始渐渐淡出。电子邮件无人回复，截止日期被推迟，拉取请求被忽视，电话被漏接。
 - en: whatever it might be。 Because the demands of all that they were doing for free
     as volunteers combined with。 work， family， everything else， literally sucked all
     of the energy out of them。 The tank is empty。 they have no more to give。 And the
@@ -191,6 +208,7 @@
   id: totrans-25
   prefs: []
   type: TYPE_NORMAL
+  zh: 无论是什么。因为他们作为志愿者所做的所有事情的要求，加上工作、家庭和其他一切，真的耗尽了他们所有的精力。油箱是空的，他们再也没有什么可以给予的了。而他们与社区之间的关系受到了损害，往往是不可修复的。我也见过一些人可能开始得比较慢。
 - en: focused on one thing built over the， next 20 years until they've become key
     developers。 maintainers of a project， key community organizers。 And they've been
     doing what they've been doing for many years， usually hearing more。 complaints
@@ -198,6 +216,7 @@
   id: totrans-26
   prefs: []
   type: TYPE_NORMAL
+  zh: 专注于某一件事情，经过接下来的20年，他们成为了项目的关键开发者、维护者和社区组织者。他们多年来一直在做他们所做的事情，通常听到的投诉多于赞美。他们感觉自己的工作被视为理所当然。
 - en: Many cases they may have too much invested emotionally to walk away， but they're
     tired。 And I'm wondering how long they can hold on。 In fact。 sometimes these leaders
     have given so much more than anyone else， they end up。 kind of running the project
@@ -205,6 +224,7 @@
   id: totrans-27
   prefs: []
   type: TYPE_NORMAL
+  zh: 在许多情况下，他们可能情感上投入太多，无法轻易离开，但他们确实很累。我在想他们还能坚持多久。事实上，这些领导者有时付出的比其他人多得多，结果最终是单独在运营项目。他们每当需要做某件事情时都会承担责任。
 - en: it goes through them。 And when they're encouraged to share the load， they tend
     to say， "Oh。 now I can handle， it。"， And besides， it's more work to train somebody
     new。 or "I don't know how to onboard somebody，"， or， you know。 there are lots
@@ -212,6 +232,7 @@
   id: totrans-28
   prefs: []
   type: TYPE_NORMAL
+  zh: 这份工作从他们身上传递出去。当他们被鼓励分享负担时，他们往往会说：“哦，我现在可以应付。”而且，训练一个新人更费力。“我不知道怎么引导新人，”或者你知道的，有很多事情会阻止他们这样做。但另一方面。
 - en: we have people who would love to contribute。 And we see this all the time where
     they're eager to contribute something。 but for one， reason or another， it goes
     wrong。 They might be ignored because nobody knows how to onboard them。 Maybe the
@@ -221,6 +242,7 @@
   id: totrans-29
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们有很多愿意贡献的人。我们时常看到，他们渴望贡献一些东西，但由于某种原因，这种贡献却未能如愿。他们可能被忽视，因为没有人知道如何引导他们。也许负责该项目的人认为已经有足够的人了。或者他们只是在与错误的人交流。又或者，他们试图贡献一些不合适的东西。
 - en: Maybe they're trying to come in way above the level of what they actually understand。
     Now if that's the case， if they're trying to come in at a level， they can usually
     be。 redirected to something maybe a little bit more appropriate to start out on。
@@ -228,6 +250,7 @@
   id: totrans-30
   prefs: []
   type: TYPE_NORMAL
+  zh: 也许他们试图以超出自己理解范围的方式参与。如果是这样，他们通常可以被引导到一些更适合的起点上。但是对很多其他人来说，似乎他们就这样被遗忘了。
 - en: And each time they try to get involved and somehow get turned away， they're
     less likely。 to try again and we end up losing those people。 So the end result
     is that our projects。 our community initiatives， whatever it might be， are at
@@ -236,6 +259,7 @@
   id: totrans-31
   prefs: []
   type: TYPE_NORMAL
+  zh: 每当他们试图参与却被拒绝时，他们再尝试的可能性就更小，我们最终失去了这些人。因此，最终结果是我们的项目、我们的社区倡议，不管是什么，都面临着因为人们的疲惫而逐渐消亡的风险，而这些人又没有被替代。这就是我们最终发现一些被遗弃的项目的原因，比如未解决的问题。
 - en: ignored PRs， out of date dependencies。 We find community initiatives with deserted
     mailing lists。 ghost town slacks， all of that。 And occasionally maybe one of these
     will be revived。 but most of the time they're just， left behind。 So some people
@@ -244,6 +268,7 @@
   id: totrans-32
   prefs: []
   type: TYPE_NORMAL
+  zh: 被忽视的PR（拉取请求）、过时的依赖项。我们发现一些社区倡议有荒凉的邮件列表、空无一人的Slack频道，所有这些情况。偶尔也许会有一些被复兴，但大多数时候，它们就被遗留在了那儿。因此，有些人认为这只是开源项目运作的方式。几周前我读到一篇关于开源可持续性的文章。
 - en: developer and maintainer of several Java projects characterized open source
     as this is a quote。 a model that relies on people giving more than they can for
     very little or nothing in return。 hoping that there will be someone to take over
@@ -252,6 +277,8 @@
   id: totrans-33
   prefs: []
   type: TYPE_NORMAL
+  zh: 一位多个Java项目的开发者和维护者将开源描述为“这是一个依赖于人们给予的远超过他们所能提供的，并几乎没有任何回报的模型，期望在前一个人耗尽精力后会有人接过这个责任。”
+    这种关于开源如何运作的描述告诉我，如果我们确实是一个赠礼文化。
 - en: which I would argue we are， things are going wrong。 We have people giving more
     than they can sustain， others who are barely able to sustain what。 they give but
     feel they aren't receiving anything in return。 And you know， by the way。 I'm sure
@@ -259,6 +286,7 @@
   id: totrans-34
   prefs: []
   type: TYPE_NORMAL
+  zh: 我会说我们确实存在问题。我们有些人给予的超出了他们所能维持的，还有一些人勉强维持着自己的付出，但却感觉没有得到任何回报。顺便说一下，我敢肯定，这些人感到没有回报的情绪是很真实的。
 - en: are made worse by seeing companies all over the place use their work for free
     in place。 of things that they had been paying cans or hundreds of thousands of
     dollars for without。 acknowledgment， usually without them giving back anything
@@ -267,6 +295,7 @@
   id: totrans-35
   prefs: []
   type: TYPE_NORMAL
+  zh: 看到各个公司免费使用他们的作品，而之前却为这些东西支付了成千上万的美元，却没有得到任何认可，通常也没有任何回报，这让情况更加恶化。所以这是一种非常令人沮丧的事情。而且，正如我提到的，我们还有其他一些人感觉到他们的贡献被拒绝。
 - en: And this last is actually a pretty serious thing。 In gift-giving cultures。 refusing
     someone's gift is an insult。 You're basically telling them you don't want them
     to be part of your community。 So that happens。 It's no wonder that they're not
@@ -275,6 +304,7 @@
   id: totrans-36
   prefs: []
   type: TYPE_NORMAL
+  zh: 而最后一点实际上是个相当严重的问题。在赠礼文化中，拒绝别人的礼物是一种侮辱。你基本上是在告诉他们，你不希望他们成为你社区的一部分。因此，这种情况确实存在。难怪他们不会留下来帮助接管项目。因此，作为一个开源社区，我们面临一些挑战，问题在于。
 - en: what do we do about it？ What can we do about it？ And to my mind。 the first step
     is to understand what's going on。 What are the motivations and the values that
     are driving our community？
