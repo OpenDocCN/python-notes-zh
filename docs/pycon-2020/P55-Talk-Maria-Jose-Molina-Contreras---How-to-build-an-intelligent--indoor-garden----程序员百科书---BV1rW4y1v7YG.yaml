@@ -112,6 +112,7 @@
   id: totrans-15
   prefs: []
   type: TYPE_NORMAL
+  zh: 快乐而且浇水在这里是关键。但这不是唯一的。第一件事，根据你的环境条件选择植物是成功的关键。并不是所有植物都来自户外。但如果想创建室内花园，你需要有足够的光照。考虑合成光，注意温度。
 - en: the relative humidity and the orientation of your house。 But it's not the only
     factor that we need to have a mine。 We also consider the moisture sensor。 We need
     to know who is our plant soil and how to measure the moisture of the soil。 There
@@ -119,6 +120,7 @@
   id: totrans-16
   prefs: []
   type: TYPE_NORMAL
+  zh: 相对湿度和你房子的朝向。但这不是我们需要考虑的唯一因素。我们还需要考虑湿度传感器。我们需要知道我们的植物土壤是什么，以及如何测量土壤湿度。有许多类型的传感器，但我只尝试了两种。一种电阻型和一种电容型。
 - en: I try a resistive even knowing that they have corrosion problems because it
     was for shorter。 water exposition。 But if you need to leave it all the time， use
     a capacitive。 For that reason。 you're going to see that in some moments I use
@@ -127,6 +129,7 @@
   id: totrans-17
   prefs: []
   type: TYPE_NORMAL
+  zh: 我尝试了一种电阻型，即使知道它们有腐蚀问题，因为这是为了较短的水暴露时间。但如果你需要一直放着，使用电容型。因此，你会看到在某些时候我使用第一种，而在其他时候我使用第二种选择，以便从你的土壤湿度传感器中获得创造性的读数。
 - en: it is recommended that you first calibrate it for the particular type of soil
     that you plan to monitor。 Because different types of soil can affect the sensor。
     So your sensor may be more or less sensitive。 depending on the type of soil that
@@ -135,6 +138,7 @@
   id: totrans-18
   prefs: []
   type: TYPE_NORMAL
+  zh: 建议你首先根据你计划监测的特定土壤类型进行校准。因为不同类型的土壤会影响传感器。因此，你的传感器可能会对使用的土壤类型更敏感或不敏感。当然，在开始项目之前，第一件要做的事是取样。例如，在这个案例中，我取了三个装有水和土壤的杯子。
 - en: pretty wet and also dry soil。 And I went measuring the balliose from one to
     another。 always from dry， to wet。 And then you need to do experiments and take
     numbers to define what is dry and what is wet。 in numbers parameters。 It's only
@@ -143,6 +147,7 @@
   id: totrans-19
   prefs: []
   type: TYPE_NORMAL
+  zh: 相当湿润也很干燥的土壤。我测量了从一个到另一个的球形物质，总是从干燥到湿润。然后你需要进行实验，获取数据以定义什么是干燥，什么是湿润，使用数字参数。这是现在唯一的事情。谁告诉你你的计划是什么？好吧，如果我问你哪个是正确的方法，A、B还是C，答案是，惩罚。
 - en: the species and the state of development。 Not all the plants like the same water
     method。 And maybe you are wondering but why？ Well， an important factor is the
     root distribution。 Applying with superficial growth prefer a method A。 Applying
@@ -151,6 +156,7 @@
   id: totrans-20
   prefs: []
   type: TYPE_NORMAL
+  zh: 物种和生长状态。并不是所有植物都喜欢相同的浇水方法。也许你会想，但为什么？一个重要因素是根系分布。表层生长的植物偏好方法A。深层生长的植物，A、B、C都可以。方法A可能会导致额外的土壤矿物流失。方法B有时不够。
 - en: for the plant receive， if the plant receives a lot of dietitin。 Alternatively。
     the two methods could be a great idea that it's the case C to have a good， mineral
     watering balance。 But let's start considering the method A and or B for our watering
@@ -159,14 +165,17 @@
   id: totrans-21
   prefs: []
   type: TYPE_NORMAL
+  zh: 对于植物接收，如果植物接收到大量的饮食。或者，这两种方法可能是一个很好的主意，情况C能够保持良好的矿物浇水平衡。但让我们开始考虑方法A和B作为我们的浇水系统。经过这样的考虑，我们可以去做一个在这方面表现良好的标志或原型。在这一切过半的时候。
 - en: things clear and the final， I designed my first prototype。 That was that。
   id: totrans-22
   prefs: []
   type: TYPE_NORMAL
+  zh: 事情清楚，最后，我设计了我的第一个原型。就是这样。
 - en: '![](img/de28c605e7563fbe12ada5d4ee4412d5_8.png)'
   id: totrans-23
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/de28c605e7563fbe12ada5d4ee4412d5_8.png)'
 - en: Here you can see the initial idea that I have in mind。 I thought， okay， I have
     my plan with a。 moisture sensor connected to the microcontroller and also a water
     pump that somehow can activate。 and activate the water。 It looked really simple
@@ -267,10 +276,12 @@
   id: totrans-37
   prefs: []
   type: TYPE_NORMAL
+  zh: 站在那里连接，所以我有添加更多东西的选项。如你所见，我在系统中包含了我的扬声器和水位传感器。这里是所有组件和新的组件。
 - en: '![](img/de28c605e7563fbe12ada5d4ee4412d5_14.png)'
   id: totrans-38
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/de28c605e7563fbe12ada5d4ee4412d5_14.png)'
 - en: components。 In layer D the green circuit that is under the circuit plate ground
     is called。 Cricate and include many extra ports to connect more things to your
     liquid plate ground。 I also bought a speaker and I put it inside the box。 I don't
@@ -279,6 +290,7 @@
   id: totrans-39
   prefs: []
   type: TYPE_NORMAL
+  zh: 组件。在D层，电路板接地下的绿色电路称为。Cricate，并包括许多额外的端口以连接更多的东西到你的液体板接地。我还买了一个扬声器，并把它放在盒子里。我没有看到，你可以看到红色的。水位传感器位于B层。当然，我们还有旧组件，比如继电器。
 - en: the batteries， the water pump， and the moisture sensor in good letter C。 As
     you can see for this project I used the capacity one。 Attention the water level
     is low。 please fill the water container。 Attention the water level is low， please
@@ -287,6 +299,7 @@
   id: totrans-40
   prefs: []
   type: TYPE_NORMAL
+  zh: 电池、水泵和湿度传感器在良好状态C中。如你所见，对于这个项目，我使用了容量型。注意水位低，请填充水容器。注意水位低，请填充水容器。这里是代码，层次有点长，但仍然简单到足以。
 - en: for everyone that wants to try。 I wrote a Python class to keep all the functionalities
     of the system。 so the first thing I do is to create an object called plantaris。
     The main loop had some steps so。 on the right you can see the implementation of
@@ -295,6 +308,7 @@
   id: totrans-41
   prefs: []
   type: TYPE_NORMAL
+  zh: 对于想尝试的每个人。我写了一个Python类来保持系统的所有功能。所以我做的第一件事是创建一个名为plantaris的对象。主循环有一些步骤，因此你可以在右侧看到函数的实现。首先，你可以看到方法水位正常做的事情与我们在系统一中做的类似，只是检查值。
 - en: and return true or false。 When the level is not okay we play a message there。
     I am just opening a。 WAF file and play it through the speaker。 So that's all you
     need to have a voice notification if the。 water level is slow。 The second condition
@@ -303,6 +317,7 @@
   id: totrans-42
   prefs: []
   type: TYPE_NORMAL
+  zh: 并返回真或假。当水位不正常时，我们在那里播放一条消息。我只是打开一个WAF文件并通过扬声器播放。所以这就是你需要的全部内容，以便在水位过低时获得语音通知。第二个条件是检查湿度值是否正常。这是系统一中的相同代码。我检查湿度水平是否正常，如果不正常，我会。
 - en: turn out my plan。 Here watering our plant is just opening the relay for a few
     seconds and then close。 it。 If you are thinking there is a mistake because for
     opening I wrote false that it's because the。 relay has two states always close
@@ -311,6 +326,7 @@
   id: totrans-43
   prefs: []
   type: TYPE_NORMAL
+  zh: 实现我的计划。这里给植物浇水就是打开继电器几秒钟，然后关闭它。如果你认为这是个错误，因为我写了假来打开，那是因为继电器有两种状态：始终关闭或始终打开。由于我不想让水泵一直工作，所以我使用了始终关闭的阀门，因此需要为保持打开状态写真。
 - en: always closed。 That is why writing false means that the relay will be open。
     Here of course here is not the the full code you can find the code in the GitHub
     account。 As I was generating a lot of data I decided to do something about it
@@ -319,6 +335,7 @@
   id: totrans-44
   prefs: []
   type: TYPE_NORMAL
+  zh: 始终关闭。这就是为什么写假意味着继电器将处于打开状态。在这里当然不是完整代码，你可以在GitHub账户中找到代码。由于我生成了大量数据，我决定做点什么，我认为。我应该把我的系统连接到互联网。因此，我开始寻找组件。
 - en: could help me with that and I noticed a new system by Adafruit called Pyportal
     so I went to the store。 and got it to start playing with。 It's a really interesting
     component with that allows you to have。 I/Ot and also has a screen。 It's super
@@ -327,6 +344,7 @@
   id: totrans-45
   prefs: []
   type: TYPE_NORMAL
+  zh: 可以帮我解决这个问题，我注意到Adafruit有一个新的系统叫做Pyportal，所以我去了商店。并得到了它以开始玩耍。这是一个非常有趣的组件，允许你进行I/O，并且还有一个屏幕。虽然我尽了最大努力，但由于我的经验不足，我在将组件连接到设备时遇到了很多问题，但我花了很多时间。
 - en: of time reading about GST connectors。 I too see pores and even Wi-Fi microchips。
     I am still figuring out the boldities of those things but that's a story for another
     talk or for。 other moments。 But still I think that it's a really interesting component
