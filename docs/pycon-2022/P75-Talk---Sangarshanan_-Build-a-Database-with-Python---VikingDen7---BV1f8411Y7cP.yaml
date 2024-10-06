@@ -1,12 +1,15 @@
 - en: P75：Talk - Sangarshanan_ Build-a-Database with Python - VikingDen7 - BV1f8411Y7cP
+  id: totrans-0
   prefs:
   - PREF_H1
   type: TYPE_NORMAL
 - en: So before we start， just a small story， so imagine me as an intern in my first
     company。
+  id: totrans-1
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/31a0123927beac156dca1c36db1e34f8_1.png)'
+  id: totrans-2
   prefs: []
   type: TYPE_IMG
 - en: I'm just in the meeting room and we are discussing how to build a good back
@@ -14,6 +17,7 @@
     got all excited and I was like。 you know what？ We should use Google Spanner， we
     should use Cockroach TV。 we should use some niche databases， that were really
     cool at the time。
+  id: totrans-3
   prefs: []
   type: TYPE_NORMAL
 - en: And that made everyone aware that I was the intern in the room。 But apart from
@@ -21,6 +25,7 @@
     of like pull me aside and he gave me this advice that kind of stuck around。 So
     he told me whenever you want to pick a database that you want to use for your
     project。
+  id: totrans-4
   prefs: []
   type: TYPE_NORMAL
 - en: think of three reasons why you should not use Postgres。 And if you can give
@@ -28,6 +33,7 @@
     just use Postgres。 And that actually confused me a bit。 I always thought developers
     like to play around with toys。 cool new tools， the niche， new thing in the market，
     we like to use it， like to play around with it。
+  id: totrans-5
   prefs: []
   type: TYPE_NORMAL
 - en: But with databases， I always saw that people just like to keep it safe， they
@@ -35,12 +41,14 @@
     me because it's like this black box machine。 that kind of just works， right？ Like
     for almost everything that we wanted to do。 And we can just tune it to make it
     do things and we have our， you know， data engineers。
+  id: totrans-6
   prefs: []
   type: TYPE_NORMAL
 - en: database administrators who kind of take care of things for us。 So we just，
     you know。 have fun with it。 But what made it mystical also made me curious about
     it。 So I wanted to kind of break down what it all meant。 So why build your own
     database， right？
+  id: totrans-7
   prefs: []
   type: TYPE_NORMAL
 - en: That's the first question。 And the fact that it's mystical is not a good enough
@@ -48,6 +56,7 @@
     the abstractions that， you know。 make up the， database， the black box that it
     is。 And you can also kind of reason about bad performance and bugs。 which you
     can face when， you're kind of creating database。
+  id: totrans-8
   prefs: []
   type: TYPE_NORMAL
 - en: There are actually a lot of concurrency bugs that happen even in like production，
@@ -55,23 +64,28 @@
     face those bugs。 They are really cool though。 And then you can actually write
     better queries if you know how your database is working。 right？ Like how it actually
     kind of fetches the data internally。
+  id: totrans-9
   prefs: []
   type: TYPE_NORMAL
 - en: You can write good queries that don't take an ask to execute。 And also it's
     fun， you know。 Cool。 So as the Victorian man once said， what to make it a database？
+  id: totrans-10
   prefs: []
   type: TYPE_NORMAL
 - en: So that's the first question I asked myself when I went to help to build the
     database， right？
+  id: totrans-11
   prefs: []
   type: TYPE_NORMAL
 - en: And fair warning， I was an intern during this time， right？
+  id: totrans-12
   prefs: []
   type: TYPE_NORMAL
 - en: So I did not have a good idea on how databases， you know， what are they made
     of， what do they。 even do？ So this was what I had in my mind， you know。 So you，
     this is me。 And then I just talked to the database and there is a base。 I don't
     know。 Is it a base？
+  id: totrans-13
   prefs: []
   type: TYPE_NORMAL
 - en: And then I consider a base to be how you talk to your database。 So it can be
@@ -80,12 +94,14 @@
     then the base kind of talks to the data that's there internally and it kind of
     returns。 to results to you， right？ Like this is how I kind of imagine the database
     to be。
+  id: totrans-14
   prefs: []
   type: TYPE_NORMAL
 - en: which is not actually completely wrong。 But it has a lot of things inside and
     there are a bunch of utilities that are in the background。 and a lot of crazy
     things which I'm going to discuss later。 But this is essentially what I thought
     it looked like。 So first is the base， right？
+  id: totrans-15
   prefs: []
   type: TYPE_NORMAL
 - en: The part of the database that you can use to talk to your database initially。
@@ -93,6 +109,7 @@
     you can talk to it really well。 Cool。 So I don't know， the code might be a little
     small。 So you should find it in the repo if you can see。 Awesome。 Good。 So I chose
     repo as my， you know。
+  id: totrans-16
   prefs: []
   type: TYPE_NORMAL
 - en: weapon of choice to talk to the database。 Initially I thought of sending it
@@ -100,6 +117,7 @@
     Python library called Prom Toolkit that I used to kind of。 build a very simple
     CLI that can be used as your interface to talk to your database。 So what I'm essentially
     doing here is just defining a wild， true loop so that my terminal。
+  id: totrans-17
   prefs: []
   type: TYPE_NORMAL
 - en: keeps running。 And then I have a session that I start。 Oh， and by the way， I
@@ -107,6 +125,7 @@
     call it yeet。 Cool。 So。 so after we define the session， we have a query executor
     which， you know， you pass， a SQL query to。 you know， we'll discuss what that is。
     And once you run it， it kind of gives you the result。
+  id: totrans-18
   prefs: []
   type: TYPE_NORMAL
 - en: It kind of gives you the time it took to run it。 It kind of gives you what operation
@@ -114,10 +133,12 @@
     between the steps。 It's just going to say， you know， I can't do it。 It is an error。
     Yeah。 So we're going to discuss what exactly is happening in the classes that
     are defined， here。
+  id: totrans-19
   prefs: []
   type: TYPE_NORMAL
 - en: but this is the general structure。 Okay。 So we talked， I briefly mentioned SQL，
     right？
+  id: totrans-20
   prefs: []
   type: TYPE_NORMAL
 - en: This is how you talk to your database。 So SQL is your databases second language
@@ -125,6 +146,7 @@
     are several dialects of SQL that are present， like really， really crazy dialects。
     so much grammar that's there， which kind of put me to sleep when I try to like
     do research， on it。
+  id: totrans-21
   prefs: []
   type: TYPE_NORMAL
 - en: There was like so much。 So I decided to keep it really simple and I kind of
@@ -132,68 +154,86 @@
     by myself。 So it's no longer a structured query language for me。 This structure
     is gone。 It's just a query language。 So this is the grammar that I define for
     my database。 So you have DDL。
+  id: totrans-22
   prefs: []
   type: TYPE_NORMAL
+  zh: 有太多的内容了。所以我决定保持简单，并且我自己定义了一种语法，为SQL制定了一种语法规则。因此对我而言，它不再是结构化查询语言。这种结构已经消失。它只是一个查询语言。所以这是我为我的数据库定义的语法。所以你有DDL。
 - en: DML， DQL， the keywords that you hear。 So they mean data manipulation language。
     data definition language and data query language。 And you also have wildcards
     that you can use in your SQL query。 So my grammar is like very simple。 So I can，
     you know， create a table。 delete a table or a database and I can also perform，
     select and insert。 I cannot do alters。
+  id: totrans-23
   prefs: []
   type: TYPE_NORMAL
+  zh: DML，DQL，听到的关键词。因此它们分别代表数据操作语言、数据定义语言和数据查询语言。你还可以在SQL查询中使用通配符。所以我的语法非常简单。我可以创建一个表，删除一个表或数据库，我也可以执行选择（select）和插入（insert）。我不能进行更改（alter）。
 - en: I have my wildcard， which is going to be a star。 And I have my query languages。
     So I can use from。 where and limit。 For the purposes of this talk， I'm not going
     to go into the details of the implementation。 of like group buys and you know，
     joins。 But if you want to talk about it， you know， find me later。 I would love
     to discuss that， with you。 Cool。 So this is how the query indicator kind of looks
     like internally。
+  id: totrans-24
   prefs: []
   type: TYPE_NORMAL
+  zh: 我有我的通配符，它将是星号（star）。我有我的查询语言。因此我可以使用`from`、`where`和`limit`。在这次演讲中，我不会详细讲解实现的细节，比如团购和连接（joins）。但如果你想谈论这个，你知道，之后找我。我很乐意和你讨论。很酷。所以这就是查询指示器在内部的样子。
 - en: So what it does is， so if you kind of know how programming languages work， this
     is kind。 of similar to how they work as well， like how they take in your code，
     which is kind of， an English。 right， and kind of interpret what they mean and
     execute。 It's kind of like very similar。 So the query indicator kind of takes
     my query in， right？
+  id: totrans-25
   prefs: []
   type: TYPE_NORMAL
+  zh: 它的工作原理是，如果你知道编程语言是如何工作的，这与它们的工作方式有些相似，比如它们如何接收你的代码，这就像是英语一样，对吧？然后解析它们的含义并执行。这非常相似。因此，查询指示器会接收我的查询，对吧？
 - en: It takes a simple SQL query and SQL queries actually make a lot of sense， you
     know， when。 you read them as a person who is not kind of accustomed with the whole
     database thing。 If you just show them like a simple SQL query， they know how it
     works， right？
+  id: totrans-26
   prefs: []
   type: TYPE_NORMAL
+  zh: 这是一条简单的SQL查询，实际上SQL查询是非常有意义的，你知道，当你作为一个不太熟悉整个数据库的人阅读它们时。如果你只是给他们展示一条简单的SQL查询，他们就会知道它是如何工作的，对吧？
 - en: So you have a SQL parser， you have a SQL planner and you have your executive。
     So SQL parser kind of takes a SQL query and kind of splits them into tokens。 SQL
     planner kind of creates a tree out of that query and then you kind of tree。 So
     we're going to discuss what exactly those mean。 Cool。 So first， I write a query，
     right？
+  id: totrans-27
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以你有一个SQL解析器，你有一个SQL规划器，还有一个执行器。因此，SQL解析器会接收SQL查询并将其分割成标记。SQL规划器则会从这个查询创建一个树形结构，然后我们将讨论这些具体的意义。很酷。所以首先，我写了一个查询，对吧？
 - en: I write a simple select query。 So if you cannot read the query。 it says select
     star from customer where name is JoJo。 Right？ So once I write the query。 the query
     gets passed。 And by passed， I mean the database kind of figures out that my DML
     is select。 my wildcard， is star， I have from is my DQL， my customer is the table
     name or the table reference。
+  id: totrans-28
   prefs: []
   type: TYPE_NORMAL
+  zh: 我写了一个简单的选择查询。所以如果你看不懂这个查询，它的内容是 `select star from customer where name is JoJo`。对吧？所以一旦我写好查询，查询就被处理了。而我所说的被处理，意味着数据库基本上会判断我的数据操作语言（DML）是选择（select），我的通配符是星号（star），`from`是我的数据查询语言（DQL），而`customer`是表名或表引用。
 - en: I， have where clause which uses an equal operator and I have like these objects
     that I have to。 compare， you know， a column reference， which is named and the
     object is JoJo。 Cool。 So using this token， it generates like an abstract syntax
     tree， which kind of looks like this for。 this query， which is very simple。 So
     if you want to look at query plans。
+  id: totrans-29
   prefs: []
   type: TYPE_NORMAL
+  zh: 我有一个`where`子句，它使用等号运算符，并且我有这些对象需要进行比较，你知道，一个列引用，它的名称是`name`，而对象是`JoJo`。很酷。所以使用这个标记，它生成了一个抽象语法树，这对于这个非常简单的查询看起来大致是这样的。如果你想查看查询计划。
 - en: you can also perform explain on your queries in， like。 get a bit of like Postgres
     where you can actually visualize this tree for yourself。 for any query that you
     write。 And for this simple query is just a select star from。 you have customer
     reference when， you have a where clause and you have this operation that's running
     on a column name on a constant。
+  id: totrans-30
   prefs: []
   type: TYPE_NORMAL
 - en: Right？ So once I have a plan， I know exactly what to do because there's a order
     defined by SQL。 standard， like how I have to kind of execute a query。 So I just
     go ahead and run it。 But you know the query that I wrote is really bad。 You cannot
     just select star all the data because you don't know the amount of data that you're。
+  id: totrans-31
   prefs: []
   type: TYPE_NORMAL
 - en: querying。 And when you query a lot of data， you're going to face some problems。
@@ -201,6 +241,7 @@
     we get to the fun part。 you know， the data part where we're going to actually，
     you， know， build the data out。 Cool。 So first of all， I decided， you know what，
     I'm going to keep it simple and I'm going， to， you know。
+  id: totrans-32
   prefs: []
   type: TYPE_NORMAL
 - en: write all my data into memory。 So what I've defined here is a simple database
@@ -208,6 +249,7 @@
     every single table。 And what I mean by an insert is just inserting a new key and
     a record for a particular ID。 for a table。 Right？ So it's just a dictionary insert，
     a dictionary get。
+  id: totrans-33
   prefs: []
   type: TYPE_NORMAL
 - en: and a delete is just a dictionary pop。 And this kind of worked for me， you know。
@@ -215,6 +257,7 @@
     could define a table which is test。 I can insert named Barry who is 35 and I can
     just be like。 you know what， select name and， select age from the test table and
     it's giving me the results。
+  id: totrans-34
   prefs: []
   type: TYPE_NORMAL
 - en: And I can also delete age。 I've never done a select。 It's going to give me like
@@ -222,6 +265,7 @@
     thing is missing。 which is persistence because when my database closes or if I
     close， my session， everything's gone。 you know， puff。 So I need some kind of assistance。
     So to do that， you always remember to flush。
+  id: totrans-35
   prefs: []
   type: TYPE_NORMAL
 - en: which I do by flushing it to the desk。 So for every insert that happens to the
@@ -229,9 +273,11 @@
     I'm going to insert something called tombstones。 So for tombstone。 I just use
     the tombstone emoji database， which is like a bad way because， it takes a lot
     of space。
+  id: totrans-36
   prefs: []
   type: TYPE_NORMAL
 - en: But you know， I want to have fun。 So， uh， apparently locks are nuts， right？
+  id: totrans-37
   prefs: []
   type: TYPE_NORMAL
 - en: Because it's so simple and sequential rights on disk are like performance， like
@@ -239,6 +285,7 @@
     You know。 it's really happy about that。 But you have this issue when you move
     in from in memory to disk。 right？ Because when you want to select something， you
     have to go through every single key in。
+  id: totrans-38
   prefs: []
   type: TYPE_NORMAL
 - en: your disk， which gives you an off and worst case select complexity， which is
@@ -246,83 +293,109 @@
     what if something， happens。 you just flush partial records or where did it go。
     And also you kind of keep appending to a log file， which kind of can get really
     big and。
+  id: totrans-39
   prefs: []
   type: TYPE_NORMAL
+  zh: 你的磁盘，这给你一个偏移和最坏情况下的选择复杂度，就是这样。而且你还面临一个问题，比如当你刷新到磁盘时，如果发生了什么，如何处理？你可能只是刷新了部分记录，或者它去了哪里。你也可能不断向日志文件追加，这可能会变得很大。
 - en: you run out of disk space， right？ That's also a problem。
+  id: totrans-40
   prefs: []
   type: TYPE_NORMAL
+  zh: 你用完磁盘空间了，对吧？这也是一个问题。
 - en: '![](img/31a0123927beac156dca1c36db1e34f8_3.png)'
+  id: totrans-41
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/31a0123927beac156dca1c36db1e34f8_3.png)'
 - en: So we're going to solve these issues one by one。 Cool。 So we're going to kind
     of bring back the in memory concept， which kind of is like a cache。 which is going
     to put our disk。 So what it's going to have is contain where exactly the files
     are present in the disk。 And what I call cache and in memory dictionary is what
     database calls indexes。
+  id: totrans-42
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以我们将逐一解决这些问题。很酷。所以我们将恢复内存概念，这就像是一个缓存，将放置我们的磁盘。所以它将包含文件在磁盘上确切的位置。我称之为缓存和内存字典的就是数据库所称的索引。
 - en: '![](img/31a0123927beac156dca1c36db1e34f8_5.png)'
+  id: totrans-43
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/31a0123927beac156dca1c36db1e34f8_5.png)'
 - en: Yeah， it's a really cool concept where database is kind of have a secondary
     structure on top。 of your actual data， where it kind of maintains where the exact
     data is located in the disk。 or you know somewhere else， depending on the database。
     And we can use that to quickly look up where my data is and then directly just
     go there。
+  id: totrans-44
   prefs: []
   type: TYPE_NORMAL
+  zh: 是的，这真是一个很酷的概念，数据库在你的实际数据上有一个次级结构，它维护了确切的数据在磁盘上的位置，或者你知道的其他地方，取决于数据库。我们可以用它快速查找我的数据在哪里，然后直接去那里。
 - en: rather than just you know looking at the whole data， which can be really big。
     So we're going to start really simple and bring back our in memory dictionary，
     which is。 going to be hash indexes。 So by hash index， I just implement an in memory
     mapping of every key to the byte offset location。 So for example， I have I have
     written to my file a name called John and a name called， Don， right？
+  id: totrans-45
   prefs: []
   type: TYPE_NORMAL
+  zh: 而不是仅仅查看所有数据，这可能真的很大。所以我们将从非常简单的开始，并恢复我们的内存字典，这将是哈希索引。因此，通过哈希索引，我只是实现了每个键到字节偏移位置的内存映射。例如，我写入我的文件的名称叫约翰，还有一个名字叫唐，对吧？
 - en: And the ID is like one and two。 And the offset location is like 0， 9。 18 and
     it just goes in multiples of nine because， that's the size I'm giving it giving
     the table to write。 you know， this kind of is defined， when I create the table。
     I kind of define what size I'm going to occupy for every record。 And if I go more
     than that。
+  id: totrans-46
   prefs: []
   type: TYPE_NORMAL
+  zh: ID就像是一个和两个。偏移位置就像是0，9，18，它以九的倍数进行，因为这是我给表格的大小来写的。你知道，这种情况在我创建表格时就被定义了。我定义了每条记录将占用的大小。如果超过这个大小。
 - en: it's going to be like， you know what， I can't do this。 This is bigger。 So if
     I want to look up。 for example， the key to or the named on， I just go to the offset，
     nine。 which I can look up directly from the hash index。 So it's like， oh。 want
     to look it up and you just go and read it from the disk。 I mean。
+  id: totrans-47
   prefs: []
   type: TYPE_NORMAL
+  zh: 这就像，你知道，我做不到。这太大了。所以如果我想查找。例如，键或名称，我直接去偏移量9。我可以直接从哈希索引中查找。所以就像，哦。我想查找，然后你直接去磁盘上读取。我是说。
 - en: seek it from the file in the disk。 So it's super fast， right？ And cool。 This
     is the implementation。 The code can be really bad。 So you know， you can refer
     to the whole。 So what I'm essentially doing here is what I just said。 So we kind
     of define the size for the record that we have and also the primary key and。
+  id: totrans-48
   prefs: []
   type: TYPE_NORMAL
+  zh: 就从磁盘文件中查找。所以这非常快，对吧？很酷。这是实现。代码可能真的很糟糕。所以你知道，你可以参考整体。所以我在这里做的基本上就是我刚才说的。我们定义了我们拥有的记录的大小，以及主键。
 - en: we just use the size to kind of exactly know the offset in which the data is
     located。 So we just perform an insert。 And when we do an insert， we do actually
     two inserts。 So we actually insert to the disk and also insert to the index。 We
     kind of tell the index where exactly my start and end offsets are and where exactly。
+  id: totrans-49
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们仅使用这个大小来准确知道数据的位置偏移。所以我们执行插入。当我们进行插入时，实际上做了两个插入。所以我们实际上是插入到磁盘，也插入到索引中。我们告诉索引我的开始和结束偏移量到底在哪里。
 - en: my data is so that it can quickly look it up。 And when I do a get。 I just kind
     of use those to get the data out。 And when I do a delete。 I just kind of look
     for that index。 And if it's like a tombstone， I just be like， you know what。 the
     data doesn't exist anymore。 Cool。 So we have actually solved the problem of speed，
     right？
+  id: totrans-50
   prefs: []
   type: TYPE_NORMAL
 - en: Because now we have indexes and data is super fast。 But we still have the problem
     of running out of disk。 So we're going to solve that problem by breaking our logs
     into segments， which is going to。 be very easy because we're going to be defining
     fixed size for every segment。
+  id: totrans-51
   prefs: []
   type: TYPE_NORMAL
 - en: So if you have-- so this is from DDIA， by the way。 So if you have two segments
     where we have these append only logs， right， you're going。 to have repetition
     of keys that happen。 Because for every insert， you're going to perform an append。
     And a key can have like thousands of inserts that happen。
+  id: totrans-52
   prefs: []
   type: TYPE_NORMAL
 - en: And you just want the latest insert that happens for a key， right？
+  id: totrans-53
   prefs: []
   type: TYPE_NORMAL
 - en: You don't care about what happened like 10 inserts before。 So what you do is
@@ -330,6 +403,7 @@
     you don't have to care about。 So what compaction does is it takes these older
     blocks of segments that are there for the data。 and kind of combine them into
     a newer segment。 And it creates a new segment。
+  id: totrans-54
   prefs: []
   type: TYPE_NORMAL
 - en: It doesn't replace anything。 It just takes the older segments， creates segments。
@@ -337,6 +411,7 @@
     the database just looks up the newer segments。 And this is actually quite optimal
     because this is happening in the background。 And merge operations are quite efficient
     when you perform them on files and disk。
+  id: totrans-55
   prefs: []
   type: TYPE_NORMAL
 - en: And then you have now smaller segments that keep incrementally getting smaller
@@ -345,6 +420,7 @@
     get deleted， we don't actually delete them。 We just say。 you know， mark them for
     deletes。 And what happens is there is an operation that happens in our database
     in the background。
+  id: totrans-56
   prefs: []
   type: TYPE_NORMAL
 - en: which I like to call vacuum， which is a really cool name for a process， which
@@ -352,17 +428,20 @@
     are marked for deletes。 Cool。 So we solved both the problems， right？ We have speed
     and we are not going to run out of this space。 So we have super fast lookups that
     happen through indexes。
+  id: totrans-57
   prefs: []
   type: TYPE_NORMAL
 - en: We have append only writes that happen through logs。 Both of them are awesome。
     And we have compaction happening in the background。 We are not running out of
     this space。 And because of the presence of both these structures。 we have crash
     recovery because whenever database， crashes。
+  id: totrans-58
   prefs: []
   type: TYPE_NORMAL
 - en: we can generate the state of our index directly from our data。 And we also have
     concurrency because you just have one writer in your append only logs。 And the
     tree can have multiple writer threads that kind of run simultaneously， right？
+  id: totrans-59
   prefs: []
   type: TYPE_NORMAL
 - en: So we have concurrency too。 But there is an issue by issue with our hash indexes。
@@ -370,6 +449,7 @@
     it in memory。 So it kind of fits well when you have less number of keys， but more
     keys means more。 memory and you're going to fail。 And you also have really bad
     performance for range queries。
+  id: totrans-60
   prefs: []
   type: TYPE_NORMAL
 - en: You want to look up data from like， you know， index ID one to ID hundred or
@@ -377,6 +457,7 @@
     That's cool。 Cool。 So we're going to solve this by introducing a very simple concept，
     which is sorting。 And interviews will be happy that， you know， we're using sort
     of， you know， we're using。
+  id: totrans-61
   prefs: []
   type: TYPE_NORMAL
 - en: sorting here。 So what you're going to do is rather than just storing it as in
@@ -384,12 +465,14 @@
     to the disk is sorted so that when we're going。 to look up a range key， we just
     know what range it is in。 And we don't also have to store an in memory mapping
     of every key。
+  id: totrans-62
   prefs: []
   type: TYPE_NORMAL
 - en: We can just have like a key that's kind of like we can just have a sparse representation。
     of the key so that if there is any key between the two keys， we know exactly where
     it is。 because it's sorted， right？ So we can just quickly look it up。 So we don't
     also have like a huge index file that's， you know， crunching our desk。
+  id: totrans-63
   prefs: []
   type: TYPE_NORMAL
 - en: So an example of an in memory balance tree that we can use to replace our hash
@@ -397,6 +480,7 @@
     balance trees that you can use。 but I just picked， this。 So red black tree can
     like I'm not going to explain how the data structure works because。 there are
     other Indians on the internet that do that。
+  id: totrans-64
   prefs: []
   type: TYPE_NORMAL
 - en: So red black tree essentially just have really simple rules that it follows。
@@ -404,6 +488,7 @@
     cannot。 have red children or parents， right？ So these are these two rules that
     it follows。 And then you just when you make an insert or a delete， you just make
     sure we just make。
+  id: totrans-65
   prefs: []
   type: TYPE_NORMAL
 - en: sure to update your node so that the rules still apply。 And when you do that。
@@ -411,11 +496,13 @@
     complexity。 which is like really cool。 So now again， there is no persistence because
     we're having this in memory。 having this red， black tree in memory。 So we're going
     to have to write our tree to a desk。
+  id: totrans-66
   prefs: []
   type: TYPE_NORMAL
 - en: So to do that， we're going to introduce what's being the standard in the industry
     since the， 1970s。 which is like a crazy time for an algorithm or like a software
     to kind of live， on， right？
+  id: totrans-67
   prefs: []
   type: TYPE_NORMAL
 - en: And that is B trees。 So in B trees， we just take out these nodes that we had
@@ -424,6 +511,7 @@
     So it kind of works。 So what we do is if we have this is also a media here。 by
     the way。 So we just have these， we just have a page which has the keys that we
     want in a sorted。
+  id: totrans-68
   prefs: []
   type: TYPE_NORMAL
 - en: order and it has a reference to the keys that kind of move around like a tree。
@@ -431,12 +519,14 @@
     between 100， and 200， right。 which goes down and the keys less than 100。 There's
     another reference that goes down。 So if you want to look up， for example， key
     to 51， we just go by the third reference and。
+  id: totrans-69
   prefs: []
   type: TYPE_NORMAL
 - en: then we know to 50s there。 Between 250 and 270， we just go down and we find
     it， right。 So we have a fixed size for these segments and in certain update operations
     kind of happen。 depending on the file size。 And yeah， this kind of just works。
     So how do you perform operations on this B tree， right？ Like， again。
+  id: totrans-70
   prefs: []
   type: TYPE_NORMAL
 - en: I'm not going to completely go into the details of insertion and deletion， on
@@ -444,6 +534,7 @@
     on the internet， it's all there。 So in general， if you just need a key， you just
     check if there is a space in the segment。 because segments are fixed size， right？
     So you must have space to insert。 If you have space。
+  id: totrans-71
   prefs: []
   type: TYPE_NORMAL
 - en: you insert， if you don't have space， you split the key。 That's it。 And with
@@ -451,6 +542,7 @@
     in the leaf or what's internal and if it's。 leaf， it depends on the number of
     keys， if it's internal or depends on the keys and it。 depends on the children。
     So essentially it's like you either do the operation or you， you know。
+  id: totrans-72
   prefs: []
   type: TYPE_NORMAL
 - en: split the tree， change it around and then do the operation。 And again。 B trees
@@ -458,9 +550,11 @@
     relational database and even non-relational databases use it as an index。 And
     it has like， again， over log in complexity for performing these operations and
     maintains。
+  id: totrans-73
   prefs: []
   type: TYPE_NORMAL
 - en: the tree in a balanced way。 So， B trees are old， right？
+  id: totrans-74
   prefs: []
   type: TYPE_NORMAL
 - en: But we're going to have a lot of improvements that can happen on top of B trees。
@@ -468,6 +562,7 @@
     page in a， tree。 we're just going to create a new page and then reference the
     new page rather than。 updating the existing page， right？ And what we get out of
     this is something super cool。
+  id: totrans-75
   prefs: []
   type: TYPE_NORMAL
 - en: which is really good concurrency， because for example， if someone is running
@@ -475,12 +570,14 @@
     at 8 a。m。 And after 8 a。m。 there are several updates that happen to that tree，
     right？ So the references keep changing。 But since it's copy on right， they're
     going to be new pages that kind of reference new， queries。
+  id: totrans-76
   prefs: []
   type: TYPE_NORMAL
 - en: So the query that you run at 8 o'clock， it's going to return the result of the
     database。 at 8 o'clock。 It's not going to change as time moves， even if your query
     takes a long time to run。 And this happens with every query that runs at every
     point in time。 So we call this snapshot isolation。 And since we have this。
+  id: totrans-77
   prefs: []
   type: TYPE_NORMAL
 - en: we can actually-- so this is what databases call MBCC or multi-version。 concurrency
@@ -488,6 +585,7 @@
     snapshot isolation in your database。 There is also the concept of wall logs where
     you just have append only logs of B3 operations。 so that you can regenerate your
     B3 if you're in a base crashes and you also have latches， and logs。
+  id: totrans-78
   prefs: []
   type: TYPE_NORMAL
 - en: So if a write happens， you can just lock a tree saying that there's a write
@@ -495,13 +593,16 @@
     plug。 Euro pattern is another awesome conference that is happening in 11th and
     17th of July。 in Dublin Island。 It's happening also remote。 And the program is
     going to be out in the next week case。
+  id: totrans-79
   prefs: []
   type: TYPE_NORMAL
 - en: There is also a really amazing stuff called Make a Summit。 We have transcored
     awesome stuff happening。 So just check it out。 And thank you so much for coming。
     I'm going to wrap this talk up。 Yeah。 [APPLAUSE]， [APPLAUSE]。
+  id: totrans-80
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/31a0123927beac156dca1c36db1e34f8_7.png)'
+  id: totrans-81
   prefs: []
   type: TYPE_IMG

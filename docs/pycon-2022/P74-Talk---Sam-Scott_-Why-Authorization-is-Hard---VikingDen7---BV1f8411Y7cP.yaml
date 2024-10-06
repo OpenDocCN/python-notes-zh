@@ -332,6 +332,7 @@
   id: totrans-40
   prefs: []
   type: TYPE_NORMAL
+  zh: 对吧？这是一个相当常见的例子。一个典型的例子。想象一下，我们有一个flask路由，接受一个文档ID并返回该文档给用户。我们想确保用户只能阅读被允许的文档。因此，我们在这里添加了我们的强制措施，检查，好的，用户能做这个事情吗？如果不能。
 - en: we return an exception or an error。 And this is your bread and butter typical
     enforcement。 But it's not sufficient。 It's not enough。 And the reason is because
     if you just do this。 then typically what will happen is your， user will stumble
@@ -341,6 +342,7 @@
   id: totrans-41
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们返回一个异常或错误。这是你的主攻方向，典型的强制执行。但是这还不够。这不够。原因是如果你只是这样做，通常会发生的是你的用户会偶然碰到某个页面，并且他们会遇到一个巨大的可怕错误。这对任何人来说都不好。我声称这是我们作为开发者的责任，避免人们碰到大的错误。
 - en: horrible error messages。 And so the way we do that is we want to basically inform
     our users early on what they can and。 can't do inside the app。 You can sort of
     think of this like Minority Report if you've seen the film。 It's like a pre-crime
@@ -349,6 +351,7 @@
   id: totrans-42
   prefs: []
   type: TYPE_NORMAL
+  zh: 可怕的错误信息。因此，我们这样做的方式是，我们希望在应用程序内部尽早通知用户他们可以做什么和不能做什么。你可以把这看作是《少数派报告》，如果你看过那部电影的话。这就像一种预犯罪决策，他们可以预测某人将要做错事，所以他们提前到达，然后，我很确定他们只是进行教育。
 - en: them and send them on their way， right？ That's what we're trying to do here。
     So in an example of this in the wild， I have a little game here。 It's going to
     be the spot the difference。 I have the same page in GitHub。 It's the OSO organization。
@@ -357,6 +360,7 @@
   id: totrans-43
   prefs: []
   type: TYPE_NORMAL
+  zh: 让他们继续前行，对吧？这就是我们在这里要做的。所以在野外的一个例子，我这里有一个小游戏。它是找不同。我在GitHub上有同样的页面。顶部，我是未登录状态，而底部，我是登录状态。所以有很多不同之处。
 - en: The one I want to call out in particular is this account of how many repositories
     OSO supposedly。 has。 So at the top， if you can't read that， it's pretty small。
     At the top。 it's saying there are 35 repositories and at the bottom， there are
@@ -365,6 +369,7 @@
   id: totrans-44
   prefs: []
   type: TYPE_NORMAL
+  zh: 我特别想提到的是关于OSO supposedly的许多仓库的这个账户。顶部，如果你看不清楚的话，那是相当小的。顶部显示有35个仓库，而底部则有70个。基本上，这里发生的是GitHub在过滤和隐藏给我的仓库。
 - en: that I don't have access to when I'm logged out。 So these are private repositories
     inside the organization。 GitHub doesn't let me try and open this page and then
     give me big error that says you don't。 have access。 They just hide it from me
@@ -374,6 +379,7 @@
   id: totrans-45
   prefs: []
   type: TYPE_NORMAL
+  zh: 当我未登录时我没有权限访问的内容。因此，这些是组织内部的私有仓库。GitHub不让我尝试打开这个页面，然后给我一个大错误，告诉我你没有权限。他们完全把它隐藏起来。所以我不太可能偶然遇到一个显示我没有权限的错误页面，因为我甚至无法尝试先到达那里。所以我们可能会尝试实现这个方式。
 - en: let's say in a Django app， is by taking that authorization， model from before。
     taking our logic and trying to push it down into the database。 The core idea here
     is by taking your logic and turning them to something like a query， filter。 so
@@ -381,6 +387,7 @@
   id: totrans-46
   prefs: []
   type: TYPE_NORMAL
+  zh: 假设在一个Django应用中，通过取用之前的授权模型，将我们的逻辑推入数据库。这里的核心思想是将你的逻辑转化为查询，过滤。因此，当我们对数据库进行查询时，假设使用Django的RM，它已经。
 - en: has those conditions applied。 So what I'm showing here is a specific Django
     technique that kind of lets you expose an。 objects manager that has already had
     that authorization applied。 And now anywhere in my app that I try and reference
@@ -389,6 +396,7 @@
   id: totrans-47
   prefs: []
   type: TYPE_NORMAL
+  zh: 这些条件适用。因此，我在这里展示的是一种特定的Django技术，可以让你暴露一个已经应用了授权的对象管理器。现在在我的应用中，无论我尝试引用哪个对象，我都会获取一个特定的文档。我获取的文档列表，总是会应用那个授权逻辑。
 - en: And so my app kind of almost behaves like if you don't have access to it， it
     doesn't exist。 There's other ways you can achieve this as well。 So some databases
     like Postgres have a concept called like row level security where you can。 achieve
@@ -618,6 +626,7 @@
   id: totrans-73
   prefs: []
   type: TYPE_NORMAL
+  zh: 如果你有非常少量的共享数据，假设在你的应用程序中，用户实际上在一个组织中只有一个角色，那就可以。然后你可以将那些数据分发到类似加密令牌的东西上。所以也许像JWT这样的东西，你将其编码到那个令牌中，知道，那个。
 - en: user has a specific role。 What's nice about this is now for an individual services
     standpoint。 when a request comes， in， you know， you do your JWT validation and
     now you have that data as if it already was。 local and you can just read straight
@@ -626,6 +635,7 @@
   id: totrans-74
   prefs: []
   type: TYPE_NORMAL
+  zh: 用户有特定的角色。这点不错的是，现在从单个服务的角度来看，当请求到来时，你进行JWT验证，现在你拥有的数据就像它已经是本地的一样，你可以直接读取，比如，好的，你知道，用户拥有哪些角色，而你的应用程序的其余部分则继续如常。
 - en: That's a great option when your data is kind of small。 But think， you know。
     if you had to encode in that token， all of the orgs you have， all， the repositories
     you have。 all the issues you created， all the PRs you submitted in GitHub， that
@@ -634,6 +644,7 @@
   id: totrans-75
   prefs: []
   type: TYPE_NORMAL
+  zh: 当你的数据相对较小的时候，这是一个不错的选择。但想想，如果你不得不在那个令牌中编码你拥有的所有组织、所有的代码库、你创建的所有问题、你在GitHub上提交的所有PR，那令牌会变得巨大。因此，一旦数据超过某个大小，你就真的不能这样做。
 - en: So one option for still keeping that data decentralized is you just leave the
     data where， it is。 You say， look， I have my microservices or my services。 They，
     you know。 have good service boundaries of what data they manage。 So every time
@@ -642,6 +653,7 @@
   id: totrans-76
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以保留数据分散的一个选项是将数据保持在原处。你说，看，我有我的微服务或我的服务。它们，你知道，拥有良好的服务边界来管理它们的数据。所以每次我需要那个数据，我就会做微服务该做的，去查询那个服务。
 - en: Maybe I have a role service that just manages roles。 Anytime I need to check
     that。 I'll go query that service。 I think this is， this is like a good approach
     if you already have a very robust mechanism。 for querying other services。 You've，
@@ -651,6 +663,7 @@
   id: totrans-77
   prefs: []
   type: TYPE_NORMAL
+  zh: 也许我有一个角色服务，仅仅管理角色。每当我需要检查时，我就去查询那个服务。我认为这是一种不错的方法，如果你已经有一个非常强大的机制来查询其他服务。你，我知道你在微服务方面已经投入了全部资源，你有一个极好的GRPC方法来做到这一点，因为这真的需要做到好，因为这会使你的应用程序变得不可思议。
 - en: chatty。 Right？ Anytime you do authorization， pretty much every request。 you're
     potentially going and reaching， out to another service and asking what roles does
     user have。 So that brings me to the final option， centralizing the data。 I'm going
@@ -658,6 +671,7 @@
   id: totrans-78
   prefs: []
   type: TYPE_NORMAL
+  zh: 聊天性，对吧？每次你进行授权，几乎每个请求。你可能会去联系另一个服务，询问用户拥有哪些角色。因此这让我想到最后一个选项，数据集中化。我认为如果你在集中数据，那么你也应该集中逻辑。
 - en: as well。 Like instead of just having it as be like a， a dumb store of， of data，
     extend it with。 some logic。 And so in this world， what happens is you're almost
     back to the simplicity of that initial。 monolithic API where an individual service
@@ -666,6 +680,7 @@
   id: totrans-79
   prefs: []
   type: TYPE_NORMAL
+  zh: 像是将其作为一个，愚蠢的数据存储来扩展它，加上一些逻辑。因此在这个世界里，发生的事情是你几乎回到了那个初始单一API的简单性，单个服务可以询问、授权，用户是否可以读取这个文档。而这，你知道，这将只是一个网络。
 - en: network request that goes in queries， that central service that has all the
     data。 has all the logic and it can make that decision， and return that true or
     false。 So from a downstream app standpoint， incredibly， incredibly clean and simple，
@@ -673,6 +688,7 @@
   id: totrans-80
   prefs: []
   type: TYPE_NORMAL
+  zh: 网络请求会查询那个拥有所有数据的中央服务，拥有所有逻辑，它可以做出决策，并返回真或假。因此从下游应用的角度来看，非常、非常干净和简单，几乎没有工作要做。这里的挑战是构建那个中央服务。
 - en: And it's kind of hard to understate just how challenging that is。 So companies
     who've gone down this path talking Google， Airbnb， Carter， just across the road。
     Carter， when they did this， they had， you know， full team of engineers， six， eight
@@ -770,6 +786,7 @@
   id: totrans-93
   prefs: []
   type: TYPE_NORMAL
+  zh: 何时使用不同的模式以及为什么？这完全是中立的，不涉及特定供应商。这不是关于OSO。这纯粹是让开发者如果想更深入地理解授权，就去阅读这些内容。另一方面，我们确实有一款产品，基本上是我们对解决这类问题的最佳方法的看法。所以我最后的建议大致有两个方向。
 - en: Number one， if you listen to this talk and you thought， wow， this really does
     sound like。 a lot of fun。 I totally buy everything Sam just said。 You should come
     and work with us on it and have fun。 Come build the language and distribute the
@@ -777,6 +794,7 @@
   id: totrans-94
   prefs: []
   type: TYPE_NORMAL
+  zh: 首先，如果你听完这个演讲，觉得哇，这听起来真的很有趣。我完全支持萨姆刚才说的一切。你应该来和我们一起参与，并享受这个过程。来构建语言并分发系统。这太棒了。另一方面。
 - en: you're listening and you're like， that sounds terrible。 I really want to focus
     on making my app。 my product work really well for my customers。 This isn't the
     kind of thing we should be spending time on。 Then you should check out our product
@@ -785,6 +803,7 @@
   id: totrans-95
   prefs: []
   type: TYPE_NORMAL
+  zh: 如果你在听，并且觉得，这听起来糟糕。我真的想专注于让我的应用程序、我的产品为我的客户做好。这不是我们应该花时间去做的事情。那么你应该看看我们的产品，因为我们公司的使命基本上是让人们在这个问题上花费的时间比现在少十分之一。
 - en: So that concludes my talk。 Thank you everyone for listening。 I will be hanging
     around to answer any questions。 We're also doing an open space at three in room
     251D。 I believe。 So I hope to see you out there at the conference and I will happily
@@ -792,7 +811,9 @@
   id: totrans-96
   prefs: []
   type: TYPE_NORMAL
+  zh: 这就是我演讲的结束。感谢大家的倾听。我会在这里等着回答任何问题。我们还将在251D房间进行一个开放空间讨论。我相信。所以希望在会议上见到你们，我将非常乐意谈论这个话题，基本上可以一直聊下去。谢谢大家。[掌声]
 - en: '![](img/7d2460332f12e9adc53684e71c4115a7_7.png)'
   id: totrans-97
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/7d2460332f12e9adc53684e71c4115a7_7.png)'
