@@ -350,6 +350,7 @@
   id: totrans-52
   prefs: []
   type: TYPE_NORMAL
+  zh: 我觉得很惊讶的是，几乎没有人认为静态链接是个好主意，但他们喜欢容器。这是静态链接的加强版。它是一个包含所有内容的大tar包。里面有一个完整的操作系统。你在链接所有内容。我看到过一个容器，里面有一个Chrome浏览器。你在干什么？
 - en: So what we want to do is how can we leverage these containers in a smart way。
     So just so everyone is on the same page。 A container， there are two parts to this。
     There is a packaging format。 The goal is we package all of our dependencies into
@@ -358,6 +359,7 @@
   id: totrans-53
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以我们想做的是如何智能地利用这些容器。为了让每个人在同一页面上，容器有两个部分。这是一个打包格式。我们的目标是将所有的依赖关系打包成一个tar包。实际上它就是一个tar包。它是一个具有特定格式的tar包，以便我们知道如何下载它。
 - en: extract it， and， be very efficient with layers。 So what we are going to do is
     build one of these things。 Now I have cached most of this because these days no
     matter what app you build， for some。 reason it downloads like two thirds of the
@@ -365,10 +367,12 @@
   id: totrans-54
   prefs: []
   type: TYPE_NORMAL
+  zh: 解压它，并且在层上非常高效。那么我们要做的是构建这样的东西。现在我已经缓存了大部分内容，因为如今无论你构建什么应用程序，出于某种原因，它都会下载大约三分之二的互联网才能工作。我会给你看看这样的一个东西看起来是什么样子。
 - en: '![](img/9619658629589a41f3618dae125dd6d7_35.png)'
   id: totrans-55
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/9619658629589a41f3618dae125dd6d7_35.png)'
 - en: So we have our application。 So what we are going to do is start with this Docker
     file。 So the Docker file here is， you will see the first line there。 It says from
     Ubuntu。 Yes。 that is an entire operating system to put our 2K application into。
@@ -377,6 +381,7 @@
   id: totrans-56
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以我们有了我们的应用程序。那么我们要做的就是从这个Docker文件开始。你会看到这里的第一行，它写着从Ubuntu开始。没错，这是一个完整的操作系统，用来放置我们的2K应用程序。现在这样做是有原因的。这里有多少人会说他们真的知道所有的软件依赖关系？确实很少。
 - en: So when you don't know， you just bring in everything until it works。 And then
     we get DevOps。 So the next thing I do here is there is a couple of things happening
     though。 We take all the tribal knowledge from wikis and runbooks and we put them
@@ -385,6 +390,7 @@
   id: totrans-57
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以当你不知道的时候，你就引入所有东西直到它有效。然后我们就得到了DevOps。那么我在这里要做的下一件事是有几个事情发生。我们把维基和运行手册中的所有部落知识放进Docker文件中。现在这并不是我们能做的最好，但对大多数人来说是一个不错的起点。
 - en: the people building software。 And we can do clever things like cache some of
     the layers。 So even though that first layer is pretty big， it is actually only
     about 70 or so megs。 we can cache that on the servers so we don't have to copy
@@ -393,6 +399,8 @@
   id: totrans-58
   prefs: []
   type: TYPE_NORMAL
+  zh: 软件构建者。我们可以做一些聪明的事情，比如缓存一些层。虽然第一层相当大，但它实际上只有大约70兆。我们可以在服务器上缓存它，这样就不需要为我们的应用程序复制它。接下来我们要做的事情是执行app
+    get install，Python 3。
 - en: Everyone is using Python 3 by now。 Please tell me it happened。 All right。 just
     clap in case it just for tins。 And then we copy our requirements。txt into place。
     Now the goal of this whole thing is that now everyone has a very sane and clean
@@ -401,6 +409,7 @@
   id: totrans-59
   prefs: []
   type: TYPE_NORMAL
+  zh: 现在每个人都在使用Python 3。请告诉我这已经发生了。好吧，鼓掌一下，以防只是为了装饰。然后我们将我们的requirements.txt复制到指定位置。现在这整个过程的目标是让每个人都有一个非常合理和干净的构建环境，他们可以构建自己的应用程序。你可以给人们原始的Docker文件，让他们自己构建，或者你。
 - en: can build it and store the artifact。 So if you have ever built any package of
     any kind。 the goal here is to build an artifact， and we will store it somewhere。
     Now once we have the artifact， we can give someone the image name and they can
@@ -409,6 +418,7 @@
   id: totrans-60
   prefs: []
   type: TYPE_NORMAL
+  zh: 可以构建它并存储工件。所以如果你曾经构建过任何类型的包，目标是构建一个工件，并将其存储在某个地方。现在一旦我们有了工件，我们可以给某人图像名称，他们就可以运行它。所以我们就从这里构建，以便看到我们在谈论什么。现在我的Python有点生疏。
 - en: So if you see any bad code today， please give me a pass。 Do not put it on Twitter。
     I promise to follow Pepe later。 Okay， so we have this entry point。 So this is
     basically going to do the same thing I was doing on my command line and we。 are
@@ -517,15 +527,18 @@
   id: totrans-74
   prefs: []
   type: TYPE_NORMAL
+  zh: 遇见云。这是你说运行这个应用程序的地方，由人决定它在哪里运行。有时候我们在一个非常 fancy 的数据库中追踪，别名电子表格。这个问题在于，如果其中一台机器崩溃，他们有一个称为值班的东西。机器崩溃了，你会接到电话，然后把应用程序放回机器上。
 - en: So what we want to do is solve this problem in a way that goes a little bit
     further than， a laptop。
   id: totrans-75
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们想要做的是以一种超出笔记本电脑的方式解决这个问题。
 - en: '![](img/9619658629589a41f3618dae125dd6d7_45.png)'
   id: totrans-76
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/9619658629589a41f3618dae125dd6d7_45.png)'
 - en: So we have a tool called Kubernetes。 There are other tools that do very similar
     things but we are going to work with this for。 now。 So I have about 5 nodes in
     my cluster。 Now the goal with this is that I do not want to statically assign
@@ -533,6 +546,7 @@
   id: totrans-77
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以我们有一个叫做 Kubernetes 的工具。还有其他做类似事情的工具，但我们现在将使用这个。因此，我的集群中大约有 5 个节点。这个目标是我不想静态分配我的应用程序和机器。
 - en: They are designed to go away。 I want to treat each machine as one collective
     or like a multi-CPU system and treat the whole。 cluster like a single machine。
     So we need a new API。 We need some abstractions。 So once I have this abstraction
@@ -541,10 +555,12 @@
   id: totrans-78
   prefs: []
   type: TYPE_NORMAL
+  zh: 他们的设计是消失。我想把每台机器视为一个整体，或者像一个多 CPU 系统，把整个集群视为一台单一的机器。因此，我们需要一个新的 API。我们需要一些抽象。一旦我有了这个抽象，我们可以打包我们的容器，称之为部署。让我们快速看一下这个。
 - en: '![](img/9619658629589a41f3618dae125dd6d7_47.png)'
   id: totrans-79
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/9619658629589a41f3618dae125dd6d7_47.png)'
 - en: So we have this deployment object。 So here is the container we built and we
     have it hosted somewhere。 So anyone that wants to run this app can pull this particular
     container image。 Now some of you are like well how does the system know where
@@ -552,40 +568,48 @@
   id: totrans-80
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以我们有这个部署对象。这是我们构建的容器，我们在某个地方托管它。因此，任何想要运行这个应用程序的人都可以提取这个特定的容器镜像。现在有些人可能会问，系统怎么知道该把它放在哪里？
 - en: Since a lot of people didn't raise their hands about what a scheduler is I am
     going to explain， it。 Now the fastest way I have done this without diving too
     deep into computer science and。
   id: totrans-81
   prefs: []
   type: TYPE_NORMAL
+  zh: 由于很多人没有举手，我将解释一下调度程序是什么。现在，我将以最快的方式解释这个，而不深入计算机科学。
 - en: '![](img/9619658629589a41f3618dae125dd6d7_49.png)'
   id: totrans-82
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/9619658629589a41f3618dae125dd6d7_49.png)'
 - en: hijacking my whole talk we play a game of Tetris。 So how many people here say
     they have fully automated deployments？
   id: totrans-83
   prefs: []
   type: TYPE_NORMAL
+  zh: 劫持我的整个演讲，我们玩一局俄罗斯方块。所以这里有多少人说他们已经完全自动化了部署？
 - en: Okay。 Now this is a worthy goal to get to。 You click a button and your app installs
     to specific machines。 I'm going to show you what that looks like。 You do that
     in Tetris。
   id: totrans-84
   prefs: []
   type: TYPE_NORMAL
+  zh: 好吧。这是一个值得追求的目标。你点击一个按钮，你的应用程序安装到特定的机器上。我将向你展示这是什么样子。你在俄罗斯方块中做到这一点。
 - en: '![](img/9619658629589a41f3618dae125dd6d7_51.png)'
   id: totrans-85
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/9619658629589a41f3618dae125dd6d7_51.png)'
 - en: I'll show you。 It looks like it's amazing by the way if you can get to this
     point。 So the goal is we want one click deployment of all of our apps。
   id: totrans-86
   prefs: []
   type: TYPE_NORMAL
+  zh: 我会给你展示。如果你能达到这一点，效果真的是惊人的。所以目标是我们想要一键部署我们所有的应用程序。
 - en: '![](img/9619658629589a41f3618dae125dd6d7_53.png)'
   id: totrans-87
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/9619658629589a41f3618dae125dd6d7_53.png)'
 - en: Now you need to know a whole bunch of information ahead of time in order for
     this to work。 You need to know all error scenarios。 You need to know if a machine
     is in maintenance or not。 And you need to make sure there is no network issues
@@ -593,19 +617,23 @@
   id: totrans-88
   prefs: []
   type: TYPE_NORMAL
+  zh: 现在你需要提前知道一堆信息才能使这个工作。你需要知道所有错误场景。你需要知道机器是否在维护中。你需要确保没有网络问题，因为你需要能够在 bash 中绕过它们。
 - en: '![](img/9619658629589a41f3618dae125dd6d7_55.png)'
   id: totrans-89
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/9619658629589a41f3618dae125dd6d7_55.png)'
 - en: Python if you're lucky。 So what we're going to do is this is one click deploy。
     This is the DevOps holy grail I'm about to show you。 Be ready。
   id: totrans-90
   prefs: []
   type: TYPE_NORMAL
+  zh: 如果你幸运的话，是 Python。所以我们要做的是这是一次一键部署。这是 DevOps 的圣杯，我马上要向你展示。准备好。
 - en: '![](img/9619658629589a41f3618dae125dd6d7_57.png)'
   id: totrans-91
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/9619658629589a41f3618dae125dd6d7_57.png)'
 - en: You ready？ One click deployment。 Bam。 One click。 And then you leave。 It's fully
     automated by the way。 But the problem here is your memory and CPU is just on the
     floor and you're losing。 Now we're at a cloud provider this is pretty good actually。
@@ -613,6 +641,7 @@
   id: totrans-92
   prefs: []
   type: TYPE_NORMAL
+  zh: 你准备好了吗？一键部署。砰。一键。然后你离开。顺便说一下，这是完全自动化的。但这里的问题是你的内存和 CPU 直接降到地面，你在损失。现在我们在一个云服务提供商，这其实很好。增加更多的虚拟机。
 - en: '![](img/9619658629589a41f3618dae125dd6d7_59.png)'
   id: totrans-93
   prefs: []
@@ -1025,10 +1054,12 @@
   id: totrans-159
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以当我去构建这个东西时，我想要一些感觉像那样的东西。
 - en: '![](img/9619658629589a41f3618dae125dd6d7_112.png)'
   id: totrans-160
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/9619658629589a41f3618dae125dd6d7_112.png)'
 - en: So let's just do a watch on here。 I'm going to show you my new tool。 As you
     can tell。 I'm a bit shy here。 So please don't laugh at me if this doesn't work。
     All right。 so this should terminate。 Let's clean things up。 Man， do you know what
@@ -1036,10 +1067,12 @@
   id: totrans-161
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以让我们在这里进行监视。我将向你展示我的新工具。如你所见。我在这里有点害羞。所以如果这不行，请不要笑我。好吧，这应该终止。让我们清理一下。伙计，你知道它在做什么吗？
 - en: '![](img/9619658629589a41f3618dae125dd6d7_114.png)'
   id: totrans-162
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/9619658629589a41f3618dae125dd6d7_114.png)'
 - en: It's trying to gracefully shut down。 All right， we're down。 OK， so we're going
     to try this thing。 So in the app， I'm using what's shipped on Wednesday。 So this
     is just double， not smart。 On conference Wi-Fi。 OK， Google， talk to Kubernetes。
@@ -1048,6 +1081,7 @@
   id: totrans-163
   prefs: []
   type: TYPE_NORMAL
+  zh: 它正在尝试优雅地关闭。好的，我们已经关闭。好吧，所以我们要试这个东西。所以在应用中，我使用的是周三发布的内容。所以这只是双倍，不聪明。在会议Wi-Fi下。好吧，谷歌，和Kubernetes对话。我们可能需要切换到飞行模式，因为我可能需要带宽，好吗？好吧，谷歌。
 - en: you better work as people are watching。 I spent all night on this， too。 So talk
     to Kubernetes。 No way。 Hold on。 We're not going to abandon ship on this。 I will
     be up here for six hours if I have to。 You just ignore the whole speaker timer。
@@ -1056,28 +1090,34 @@
   id: totrans-164
   prefs: []
   type: TYPE_NORMAL
+  zh: 你最好努力工作，因为人们在看着。这个我也花了一整晚。要和Kubernetes对话。没办法。等等。我们不会放弃这个。我会在这里待六个小时，如果有必要的话。你就忽略整个演讲计时器。好吧，谷歌。和Kubernetes对话。什么？它就像在这里，哈哈哈。哦，哦，哦，哦。哦，哦，哦，哦，哦。
 - en: '![](img/9619658629589a41f3618dae125dd6d7_116.png)'
   id: totrans-165
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/9619658629589a41f3618dae125dd6d7_116.png)'
 - en: I got it。 Let's do this。 Let's do this。
   id: totrans-166
   prefs: []
   type: TYPE_NORMAL
+  zh: 我明白了。让我们开始吧。让我们开始吧。
 - en: '![](img/9619658629589a41f3618dae125dd6d7_118.png)'
   id: totrans-167
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/9619658629589a41f3618dae125dd6d7_118.png)'
 - en: Maybe we have to hit the test button。 Maybe we need that。 Don't you guys like
     when the live demo doesn't go well？ You're like， he's going to fail。 I know it。
     My apologies。 I don't understand。 [LAUGHTER]。
   id: totrans-168
   prefs: []
   type: TYPE_NORMAL
+  zh: 也许我们需要按测试按钮。也许我们需要这个。你们不喜欢现场演示不顺利的情景吗？你们会想，他要失败了。我知道。很抱歉。我不理解。[笑声]。
 - en: '![](img/9619658629589a41f3618dae125dd6d7_120.png)'
   id: totrans-169
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/9619658629589a41f3618dae125dd6d7_120.png)'
 - en: Talk to Kubernetes。 This is the top result。 Talk to Kubernetes。 Here's the top
     search result。 It's trolling me。 OK， Google。 Talk to Kubernetes。 Sure。 here is
     the test version of Kubernetes cluster。 Hello， Kelsey。 Hi。 Looks like you have
@@ -1085,59 +1125,74 @@
   id: totrans-170
   prefs: []
   type: TYPE_NORMAL
+  zh: 和Kubernetes对话。这是最顶级的结果。和Kubernetes对话。这是最顶级的搜索结果。它在捉弄我。好吧，谷歌。和Kubernetes对话。好的，这是Kubernetes集群的测试版本。你好，Kelsey。嗨。看起来这次你有一个大观众。我希望演示之神站在你这边。[笑声]。
 - en: What's my cluster status？ The PyCon cluster is running with 10 CPUs and 37。5
     gigs of RAM。 Run the Hello World application。 What image tag would you like to
     deploy？ 1。0。 Deploying Hello World 1。0 into the PyCon cluster。
   id: totrans-171
   prefs: []
   type: TYPE_NORMAL
+  zh: 我的集群状态如何？PyCon集群运行中，有10个CPU和37.5GB的内存。运行Hello World应用。你想部署哪个镜像标签？1.0。将Hello
+    World 1.0部署到PyCon集群中。
 - en: '![](img/9619658629589a41f3618dae125dd6d7_122.png)'
   id: totrans-172
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/9619658629589a41f3618dae125dd6d7_122.png)'
 - en: '[APPLAUSE]， So we''ve got an app running。 Scale the Hello World deployment。
     How many replicas would you like？ [INAUDIBLE]， 500 divided by like 10 minus 40
     minus 5。 [LAUGHTER]。 5。 Scaling the Hello World deployment to 5。'
   id: totrans-173
   prefs: []
   type: TYPE_NORMAL
+  zh: '[掌声]，所以我们有一个应用在运行。扩展Hello World部署。你想要多少副本？[听不清]，500除以10再减去40再减去5。[笑声]。5。将Hello
+    World部署扩展到5。'
 - en: '![](img/9619658629589a41f3618dae125dd6d7_124.png)'
   id: totrans-174
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/9619658629589a41f3618dae125dd6d7_124.png)'
 - en: '[APPLAUSE]。'
   id: totrans-175
   prefs: []
   type: TYPE_NORMAL
+  zh: '[掌声]。'
 - en: '![](img/9619658629589a41f3618dae125dd6d7_126.png)'
   id: totrans-176
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/9619658629589a41f3618dae125dd6d7_126.png)'
 - en: Now， here's the thing。 It's easy to do deployments。 How many people have ever
     done zero downtime deployments？ You liars。
   id: totrans-177
   prefs: []
   type: TYPE_NORMAL
+  zh: 现在，事情是这样的。部署很简单。有多少人做过零停机时间的部署？你们这些骗子。
 - en: '![](img/9619658629589a41f3618dae125dd6d7_128.png)'
   id: totrans-178
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/9619658629589a41f3618dae125dd6d7_128.png)'
 - en: You still got on call。 But no， it's a tough thing to do。
   id: totrans-179
   prefs: []
   type: TYPE_NORMAL
+  zh: 你仍然在呼叫。但不，这是一件困难的事情。
 - en: '![](img/9619658629589a41f3618dae125dd6d7_130.png)'
   id: totrans-180
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/9619658629589a41f3618dae125dd6d7_130.png)'
 - en: So the holy grail is to do these。
   id: totrans-181
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以圣杯就是要做到这些。
 - en: '![](img/9619658629589a41f3618dae125dd6d7_132.png)'
   id: totrans-182
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/9619658629589a41f3618dae125dd6d7_132.png)'
 - en: downtime， zero downtime deployments。 So we have 1。0 running right now inside
     of our cluster。 And the goal is we want to upgrade this。 So this is the nice thing
     about this fully API driven world。 from the networking to the stores to the app
