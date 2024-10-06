@@ -608,6 +608,8 @@
   id: totrans-79
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们可以在这里看到的东西，不仅仅是使用滑轮噪音，我们还可以使用滑轮。除了清理滑轮噪音波之外，我们还可以创建一些嘈杂的背景或。使用滑轮噪音的颗粒效果，如我们所见，因此在这个
+    RPS 中，我创建了。一个噪音场，在前面有一个背景网格和一个嘈杂的背景。
 - en: basically which is using the pulley noise generated random noise and which is
     eventually giving。 a granular effect。 Let's see how geometry factors and chaos
     and how we can use the geometrical patterns the。 factors in simple chaos theory
@@ -616,6 +618,7 @@
   id: totrans-80
   prefs: []
   type: TYPE_NORMAL
+  zh: 基本上，这使用生成的滑轮噪音随机噪音，最终产生。一个颗粒效果。让我们看看几何如何作用于混沌，以及我们如何使用几何模式、。在简单混沌理论中的因子生成右侧的美学艺术品。这是一个几何图案，乍一看似乎很复杂，但如果你仔细观察，它是。
 - en: just using circles of random radius and with no fail and just stroke over a
     period of time。 and up to a length of diameter。 So the very basic and famous example
     of geometric pattern could be the C L pencil gasket where。 we are recursively
@@ -624,16 +627,19 @@
   id: totrans-81
   prefs: []
   type: TYPE_NORMAL
+  zh: 仅仅使用随机半径的圆圈，并且没有故障，只是在一段时间内进行笔划。直到直径的长度。因此，几何模式的一个非常基本和著名的例子可以是 C L 铅笔垫圈，其中。我们递归地划分三角形并在内部创建更小的三角形，所以这。基本上是一个递归划分为更小等边三角形的等边三角形。
 - en: triangle with one because they call it each time。 This example is pretty simple
     which is not using any kind of fill and just we are just。 filling the stroke with
     a black color and we can like do small transformation in the。
   id: totrans-82
   prefs: []
   type: TYPE_NORMAL
+  zh: 三角形与一，因为他们每次都这样称呼。这是一个相当简单的例子，没有使用任何填充，我们只是。用黑色填充笔划，并且我们可以进行小的变换。
 - en: '![](img/52a2487830e8dc13348b25b8c0d4a613_43.png)'
   id: totrans-83
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/52a2487830e8dc13348b25b8c0d4a613_43.png)'
 - en: initial state and we can modify it into something like this where we are not
     just filling the。 stroke we are filling the triangle and we are also using random
     values and the rotating。 it the location we are rotating the triangles we are
@@ -642,10 +648,12 @@
   id: totrans-84
   prefs: []
   type: TYPE_NORMAL
+  zh: 初始状态，我们可以将其修改为类似于这样的状态，其中我们不仅填充了。笔划，还填充了三角形，并且我们还使用随机值并进行旋转。我们正在旋转三角形的位置，并且正在改变其位置，而不是。仅仅使用三角形，我们还使用卷曲顶点来在外部添加一些草图效果。
 - en: '![](img/52a2487830e8dc13348b25b8c0d4a613_45.png)'
   id: totrans-85
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/52a2487830e8dc13348b25b8c0d4a613_45.png)'
 - en: surface。 This is a example of a fractal which looks like a flower so it's using
     four different。 types of fractal and put together at a 360 degree and together
     it's giving something。 like this effect which looks like a fractal basically a
@@ -653,10 +661,12 @@
   id: totrans-86
   prefs: []
   type: TYPE_NORMAL
+  zh: 表面。这是一个看起来像花的分形示例，它使用四种不同的。分形类型，并在 360 度上组合在一起，产生这样的效果，看起来像基本上是一个花的分形。
 - en: '![](img/52a2487830e8dc13348b25b8c0d4a613_47.png)'
   id: totrans-87
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/52a2487830e8dc13348b25b8c0d4a613_47.png)'
 - en: When we talk about fractal mandibot set is one of the most famous one in mandibot
     fractal。 or the mandibot set the more you zoom the more similar patterns you see
     and then that。 makes fractal so fascinating。 So it is represented on a complex
@@ -665,6 +675,8 @@
   id: totrans-88
   prefs: []
   type: TYPE_NORMAL
+  zh: 当我们谈论分形时，曼德博集是曼德博分形中最著名的之一。或曼德博集，你放大越多，就越能看到相似的图案，这。使得分形如此迷人。因此，它在复平面上表示，其中有一个坐标系统，作为复数。你可以看到这里的方程，例如
+    z 等于 x 加 yi，其中 i 是复数。
 - en: number the xy axis represents the real and the z axis represents the imaginary
     part so。 we pick a point in the coordinate plane and pass it to the equation and
     iterate it to some。 n number of times and eventually we get the mandibot set we
@@ -673,11 +685,13 @@
   id: totrans-89
   prefs: []
   type: TYPE_NORMAL
+  zh: 数字 xy 轴表示实数，z 轴表示虚数部分。因此。我们在坐标平面上选择一个点并将其传递给方程，并迭代若干。n 次，最终我们得到了曼德博集。我们可以使用不同的参数。比如如果我们触碰无穷大，我们可以改变集合的颜色，否则它应该是黑色。
 - en: and most of the fractals are similar in nature we can also create a julia set
     which in some。
   id: totrans-90
   prefs: []
   type: TYPE_NORMAL
+  zh: 大多数分形在本质上是相似的，我们也可以创建一个朱莉亚集，这在某种。
 - en: '![](img/52a2487830e8dc13348b25b8c0d4a613_49.png)'
   id: totrans-91
   prefs: []
@@ -798,6 +812,7 @@
   id: totrans-108
   prefs: []
   type: TYPE_NORMAL
+  zh: 排序工作，因此像素排序是一种著名的过程，用于隔离图像中任意的水平或垂直。像素，并根据任意数量的标准对位置进行排序。我们以图像为例，提取其像素，并加载像素在原始像素位置的。过量函数，然后我们选择下一个像素位置，改变数值。
 - en: of signs and you will see a change in the direction then we compare it and swap
     the pixels according。 to the brightness so eventually by sorting the pixels we
     get something similar to these。 and these are created using in the artworks are
@@ -805,10 +820,12 @@
   id: totrans-109
   prefs: []
   type: TYPE_NORMAL
+  zh: 的符号，你将看到方向的变化。然后我们进行比较，并根据亮度交换像素。因此，通过对像素进行排序，我们得到类似于这些的东西。这些是在过去的艺术作品中创建的，而这些是另外一些。
 - en: '![](img/52a2487830e8dc13348b25b8c0d4a613_63.png)'
   id: totrans-110
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/52a2487830e8dc13348b25b8c0d4a613_63.png)'
 - en: set of examples just using pixel sorting so now we can talk about genetic algorithms。
     which is a part of evolutionary algorithms so all the specs of a life are driven
     by computation。 and algorithms how we learn play work etc given the situation
@@ -817,6 +834,7 @@
   id: totrans-111
   prefs: []
   type: TYPE_NORMAL
+  zh: 使用像素排序的一组示例，因此现在我们可以谈论遗传算法。这是进化算法的一部分，因此生命的所有特性都是由计算驱动的。和算法，如何学习、工作等。根据情况，我们可以看到生成的。艺术最能反映我们时代，反映这一点的艺术家一直在使用一种技术，即遗传。
 - en: algorithm to replicate images this is basically an optimization technique that
     mimics the。 Darwinian law of natural selection and the survival of the fittest
     so depending on what。 type of problem we are working with we can we have to tailor
@@ -825,6 +843,7 @@
   id: totrans-112
   prefs: []
   type: TYPE_NORMAL
+  zh: 算法来复制图像。这基本上是一种优化技术，模拟了达尔文的自然选择法则和适者生存。因此，根据我们正在处理的问题类型，我们必须相应地定制算法。这里是一个示例，我们最初设定一个种群，包含随机。
 - en: random ellipsis with random colors and over generation and generation it's learning
     to。 replicate the original image those are steps includes are they making the
     initial population。 then finding the fitness function or by assigning a fitness
@@ -833,15 +852,18 @@
   id: totrans-113
   prefs: []
   type: TYPE_NORMAL
+  zh: 随机椭圆和随机颜色，经过一代又一代的学习，逐渐学会复制原始图像。这些步骤包括创建初始种群。然后寻找适应度函数，或通过分配适应度值进行选择，进行父代之间的交叉，并变异基因，直到我们反复进行这个过程。
 - en: we get the optimized solution here we are finding the optimized pixel value
     so to know genetic。
   id: totrans-114
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们在这里获得优化的解决方案，我们正在寻找优化的像素值，以了解遗传。
 - en: '![](img/52a2487830e8dc13348b25b8c0d4a613_65.png)'
   id: totrans-115
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/52a2487830e8dc13348b25b8c0d4a613_65.png)'
 - en: algorithms in depth we basically start with the initial population so that we
     can have an initial。 generation and then we can generate a further generations
     after that we have a termination condition。 with checks if the individual is the
@@ -850,6 +872,7 @@
   id: totrans-116
   prefs: []
   type: TYPE_NORMAL
+  zh: 深入了解算法，我们基本上是从初始种群开始，这样我们就可以有一个初始。代，然后我们可以在此之后生成进一步的代。我们有一个终止条件，检查个体是否是最佳的最优解，如果不是最佳的最优解。则我们将其进行配对过程，因为存在一个庞大的初始种群。
 - en: we can't select all the individuals so we assign them with a fitness value such
     that the individuals。 below a specific level would be rejected here we are working
     with the images so we have to calculate。 the fitness we have different each pixel
@@ -858,6 +881,7 @@
   id: totrans-117
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们不能选择所有个体，因此我们为它们分配适应度值，使得适应度低于特定水平的个体将被拒绝。这里我们正在处理图像，因此我们必须计算。适应度。每个像素的颜色基本上是它的像素值，我们可以为此使用锦标赛选择方法。一旦我们得到了适合的父代，我们进行交叉，一旦我们有。
 - en: a new generation we can also check for some mutation by altering the genes of
     the newly created off。 springs this way we get the best optimal solution over
     some Xn number of generations and in our case。 the initial set of shapes say polygon
