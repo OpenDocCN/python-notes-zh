@@ -599,6 +599,7 @@
   id: totrans-75
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以我们在这个 SQL 中所做的基本上是，当你引发异常时，不是做这件事，而是做这个被称为打印异常的高级函数。因此，我们仅在异常上升到顶层时执行这件事，解释器将崩溃，因为没有人处理异常。
 - en: So when we are printing the trace back and you know all those messages because
     the interpreter。 is going to finish then at that the step the last thing that
     we do is this print exception。 suggestions which runs the function that I just
@@ -608,6 +609,8 @@
   id: totrans-76
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以当我们打印回溯时，你知道所有这些消息，因为解释器即将完成，在那一步，最后我们要做的就是这个打印异常建议，它运行我刚才展示给你的函数，然后提供你刚做的建议。所以基本上，那个函数非常酷，这样我们保持
+    Python。
 - en: fast we only do this thing on when the interpreter is going to finalize and
     a code that runs normally。 and catches exception keeps being fast。 This is just
     an example to show you that error message is quite hard because now you can。 try
@@ -617,6 +620,7 @@
   id: totrans-77
   prefs: []
   type: TYPE_NORMAL
+  zh: 快速时，我们仅在解释器即将终结时执行这件事，正常运行的代码并捕获异常保持快速。这只是一个例子，展示了错误消息相当困难，因为现在你可以。试着对人友好，但你需要确保语言的正常用法仍然快速，人们在正常代码中不需要为良好的错误消息付出代价。
 - en: that doesn't raise error messages。 So more things that we have I'm very excited
     about this one so this is better trace back。 on Python 3。11。 So let me show you
     what this is about。 So this is PEP 657 that I did with a Maras Cara and Batu Chantascaya。
@@ -625,25 +629,31 @@
   id: totrans-78
   prefs: []
   type: TYPE_NORMAL
+  zh: 这不会引发错误消息。所以我们有更多的事情，我对此非常兴奋，所以这是在 Python 3.11 中更好的回溯。让我向你展示这是什么。所以这是我和 Maras
+    Cara 及 Batu Chantascaya 一起做的 PEP 657。它有这个可怕的名称，包括在回溯中精细粒度的错误位置，但我向你保证。
 - en: you that the thing is actually much more great than the name that we place there
     and it looks。 like this basically。 So if you before have like a bunch of errors
     this is a trace back for some code and here。
   id: totrans-79
   prefs: []
   type: TYPE_NORMAL
+  zh: 你会发现事情实际上远比我们放置的名称要伟大，它基本上看起来像这样。所以如果你之前有一堆错误，这是一些代码的回溯，和这里。
 - en: '![](img/0675f7d0d1f76ed0b5504798f42823d4_20.png)'
   id: totrans-80
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/0675f7d0d1f76ed0b5504798f42823d4_20.png)'
 - en: it's telling you that in this long expression so absolute value of this error
     is non-type。
   id: totrans-81
   prefs: []
   type: TYPE_NORMAL
+  zh: 它告诉你，在这个长表达式中，这个错误的绝对值是非类型的。
 - en: '![](img/0675f7d0d1f76ed0b5504798f42823d4_22.png)'
   id: totrans-82
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/0675f7d0d1f76ed0b5504798f42823d4_22.png)'
 - en: object has no actual X。 It means that something in this long line is none but
     which one it is you don't know。 You probably need to touch the bag and know what's
     going on there which is not cool but。 now in Python 3。11 we saw you exactly which
@@ -652,25 +662,31 @@
   id: totrans-83
   prefs: []
   type: TYPE_NORMAL
+  zh: 对象没有实际的 X。这意味着在这条长线中有些东西是 None，但具体是哪个你不知道。你可能需要触碰包知道那里发生了什么，这并不好。但在 Python 3.11
+    中，我们准确地看到了哪个是 None，这个要好得多，我们相信，我们还看到了这些高级底层功能。
 - en: in all the trace back。 This is also very useful when you do dictionary access
     so before for instance you are actually。
   id: totrans-84
   prefs: []
   type: TYPE_NORMAL
+  zh: 在所有的回溯中。这在你进行字典访问时也非常有用，所以之前，例如你实际上。
 - en: '![](img/0675f7d0d1f76ed0b5504798f42823d4_24.png)'
   id: totrans-85
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/0675f7d0d1f76ed0b5504798f42823d4_24.png)'
 - en: in a big JSON some response and a bunch of things here and the error is non-type
     object。 is not subscriptable which means that in this response some of these levels
     is none but you。
   id: totrans-86
   prefs: []
   type: TYPE_NORMAL
+  zh: 在一个大的 JSON 中，一些响应和许多其他内容，错误是非类型对象。无法被下标，这意味着在这个响应中，这些层级中有些是 None，但你。
 - en: '![](img/0675f7d0d1f76ed0b5504798f42823d4_26.png)'
   id: totrans-87
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/0675f7d0d1f76ed0b5504798f42823d4_26.png)'
 - en: don't know which one it is but now in 3。11 we told you which one is the one
     that is none。 which is great much better and you know you can see also like in
     the trace back which part。 of the function calls were running because for instance
