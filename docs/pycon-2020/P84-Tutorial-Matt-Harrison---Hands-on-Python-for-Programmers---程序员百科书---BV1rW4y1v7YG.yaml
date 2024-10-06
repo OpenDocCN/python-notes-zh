@@ -109,6 +109,7 @@
   id: totrans-15
   prefs: []
   type: TYPE_NORMAL
+  zh: 默认情况下，如果你没有将其添加到路径中，输入“Bython”会显示“Bython不是内部命令”。如果你“安装了Python但没有将其添加到路径中”，通常会出现这个问题。因此，添加到路径的最简单方法实际上是重新安装，如果你有相同的版本。
 - en: installer that you use to install Python。 You can just do， you can click that，
     double click it。 it'll say "Do you want to fix your， install？"， That's a little
     bit quicker than just doing a full on reinstall but you want to make sure。 on
@@ -118,10 +119,12 @@
   id: totrans-16
   prefs: []
   type: TYPE_NORMAL
+  zh: 你用来安装Python的安装程序。你可以点击它，双击，它会问你“你想修复你的安装吗？”，这比完全重新安装要快一点，但你要确保。在Windows安装向导的第一页，有一个小复选框，上面写着“将Python添加到你的大写P-A-T-H。”，如果你勾选这个，你应该能够从命令行运行Python。
 - en: Why is it important to run Python from the command line？
   id: totrans-17
   prefs: []
   type: TYPE_NORMAL
+  zh: 为什么从命令行运行Python很重要？
 - en: I'm a firm believer that if you want to be proficient in Python you should know
     how to。 use the command line because a lot of tools are run from the command line。
     We'll be demoing a lot of them today in our course。 We'll be demoing creating
@@ -130,48 +133,58 @@
   id: totrans-18
   prefs: []
   type: TYPE_NORMAL
+  zh: 我坚信，如果你想熟练掌握Python，你应该知道如何使用命令行，因为许多工具都是从命令行运行的。今天我们将在课程中演示许多工具。我们将演示创建虚拟环境，运行代码覆盖和运行测试，所有这些都是从命令行完成的。
 - en: '![](img/6b46b41e9915a07d27bee0f1ba1884fb_10.png)'
   id: totrans-19
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/6b46b41e9915a07d27bee0f1ba1884fb_10.png)'
 - en: the command line。 If you're not comfortable from the command line I highly encourage
     you to try it out and。
   id: totrans-20
   prefs: []
   type: TYPE_NORMAL
+  zh: 命令行。如果你对命令行不熟悉，我强烈鼓励你尝试一下。
 - en: '![](img/6b46b41e9915a07d27bee0f1ba1884fb_12.png)'
   id: totrans-21
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/6b46b41e9915a07d27bee0f1ba1884fb_12.png)'
 - en: get comfortable from it。 Also believe that if you understand how things are
     going underneath the covers and abstractions。 such as IDs and what not are going
     to be easier to use because you're going to know what they're。
   id: totrans-22
   prefs: []
   type: TYPE_NORMAL
+  zh: 让自己适应它。还要相信，如果你理解背后的机制和抽象，例如ID等，将会更容易使用，因为你知道它们的工作原理。
 - en: '![](img/6b46b41e9915a07d27bee0f1ba1884fb_14.png)'
   id: totrans-23
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/6b46b41e9915a07d27bee0f1ba1884fb_14.png)'
 - en: doing behind the scenes。 So if Windows is not working for you and you're following
     along on Windows now it'd。 be a great time to pause the video， go and install
     Windows， reinstall Python on it and。
   id: totrans-24
   prefs: []
   type: TYPE_NORMAL
+  zh: 在后台进行操作。所以，如果Windows对你不起作用，现在在Windows上跟着操作，那是一个很好的时机暂停视频，去安装Windows，重新安装Python。
 - en: '![](img/6b46b41e9915a07d27bee0f1ba1884fb_16.png)'
   id: totrans-25
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/6b46b41e9915a07d27bee0f1ba1884fb_16.png)'
 - en: make sure it's working。 I'll be demoing today on Windows and on Mac。 If you're
     on Linux。 Linux is very similar to what I'm doing with Mac。
   id: totrans-26
   prefs: []
   type: TYPE_NORMAL
+  zh: 确保它能正常工作。今天我将在Windows和Mac上演示。如果你在Linux上，Linux与我在Mac上做的非常相似。
 - en: '![](img/6b46b41e9915a07d27bee0f1ba1884fb_18.png)'
   id: totrans-27
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/6b46b41e9915a07d27bee0f1ba1884fb_18.png)'
 - en: Again， we're using Python 3 there instead of Python because a lot of Mac or
     Linux distributions。 include Python 2 as well。 So Python 3 is just a little bit
     more specific there。 So make sure that you can run that if you can't do it on
@@ -180,6 +193,8 @@
   id: totrans-28
   prefs: []
   type: TYPE_NORMAL
+  zh: 再次提醒，我们在这里使用Python 3而不是Python，因为许多Mac或Linux发行版也包括Python 2。因此，Python 3在这里更加具体。如果你不能在Linux上运行，它应该能够在Linux上运行Python
+    3，如果你无法在Mac上使用正确的命令安装。
 - en: You'll need to install Python 3。 You can use homebrew or you can go to Python。org
     and install Python。 Make sure that that is working before continuing with the
     tutorial。 Okay。 I'm going to pretend I'm a motivational speaker and do my little
@@ -188,6 +203,8 @@
   id: totrans-29
   prefs: []
   type: TYPE_NORMAL
+  zh: '你需要安装Python 3。你可以使用homebrew，或者去Python.org安装Python。在继续教程之前，确保它能正常工作。好的，我假装自己是一个励志演讲者，并且做我应该做的Dr.
+    Mom。 '
 - en: this little acronym about learning is to decide。 Decide you want to learn。 For
     the next little bit。 if you're following along you're going to be here and this
     is。 an intensive environment so decide you want to do it。 Next part is our relax。
@@ -2559,6 +2576,8 @@
   id: totrans-288
   prefs: []
   type: TYPE_NORMAL
+  zh: 我把 i 设置为 2215，所以如果我把这里改为 2212，只是通过检查假设这是正确的。我们在重新运行时，它应该说我们运行了一个测试，并且没有失败。好的，它说请使用
+    assert equal 而不是这个，所以有一个应用程序错误，我们可以修复它并再次运行，它应该只是说运行了一个测试。
 - en: okay cool so there is a little test to test that out um let's write another
     test here maybe we'll。 test like get value here so i can come over here to def
     test get value and this is a method so it。 needs to have self as the parameter
@@ -2568,6 +2587,8 @@
   id: totrans-289
   prefs: []
   type: TYPE_NORMAL
+  zh: 好吧，很好，所以有一个小测试来测试一下。嗯，让我们再写一个测试，可能我们将测试像 get value 这样的东西，所以我可以过来这里，定义 test get
+    value，这是一个方法，所以它需要有 self 作为参数。它接受行和列名，并仅返回该值，所以如果我想，我可以先创建一些数据。
 - en: can say data is equal to a dictionary it has name mat and then another dictionary
     that has name。 to z okay and if i were to call this now the result is equal to
     covid get value and i want to get。 from data uh the column name name and then
@@ -2576,6 +2597,8 @@
   id: totrans-290
   prefs: []
   type: TYPE_NORMAL
+  zh: 可以说数据等同于一个字典，它有名称 mat，然后另一个字典名称为 z。好吧，如果我现在调用这个，结果等于 covid 的值，我想从数据中获取列名为 name
+    的内容，然后我应该能够说 self assert equal，结果应该是一个包含 mat 和 suzi 的列表，因此我可以访问 assert equal 方法，因为我。
 - en: subclass this test up here so let's run that and see if this works。 okay cool
     so we have two tests that work that looks like it's working awesome。 okay so now
     would be a great time to pause this and make sure that your tests run and。 if
@@ -2584,6 +2607,7 @@
   id: totrans-291
   prefs: []
   type: TYPE_NORMAL
+  zh: 让我们在这里子类化这个测试，然后运行看看是否有效。好的，很好，我们有两个测试可以工作，看起来不错。好吧，现在是暂停的好时机，确保你的测试能运行。如果你在运行测试时遇到问题，常见的问题是你没有。
 - en: importing or you didn't save this file in the same directory as the other one
     or you didn't。 save this file as lowercase covid dot 19 or lowercase covid dot
     py this is looking for the same。 file name without the py on it in in the same
@@ -2592,6 +2616,8 @@
   id: totrans-292
   prefs: []
   type: TYPE_NORMAL
+  zh: 导入文件时，或者你没有将此文件保存在与另一个文件相同的目录中，或者你没有将此文件命名为小写的 covid dot 19 或小写的 covid dot py。这个程序正在寻找相同文件名的文件，而没有
+    py，且在同一目录中。好的，所以我现在要做的是演示安装另一个库，我们将看看代码覆盖率。
 - en: jump over to my windows machine it might be a little bit snappier for me since
     it's not doing all this。 other stuff so i'm going to say pip install coverage
     we're going to install a code coverage tool now if。 let me just show you what's
@@ -2600,6 +2626,9 @@
   id: totrans-293
   prefs: []
   type: TYPE_NORMAL
+  zh: 切换到我的 Windows 机器可能会让我感到更顺畅，因为它没有做其他所有的事情。所以我将说 pip install coverage，我们将安装一个代码覆盖工具。让我先给你展示一下在你说
+    pip install coverage 时，后台发生了什么。嗯，有一个名为 pypi 的网站，这是一个 Python 包索引，这个网站基本上是所有人想发布并提供给其他人的
+    Python 包的仓库。
 - en: basically is a repo for all the python packages that people want to release
     and make available to。 others this is the cool thing down here if you look at
     this there are almost a quarter of a million。 projects that you can leverage with
@@ -2608,6 +2637,8 @@
   id: totrans-294
   prefs: []
   type: TYPE_NORMAL
+  zh: 这下有趣的地方是，如果你看这里，几乎有四分之一百万的项目可以用 Python 利用，所以这真的很酷，基本上允许你站在巨人的肩膀上。如果我想了解代码覆盖率，我可以输入
+    coverage。
 - en: into here and i can see that there are various tools for code coverage and click
     on this right。 here and this says coverage dot 5。1 i know that this is the code
     coverage tool that i want to use。 all you have to do is say pip install coverage
@@ -2906,6 +2937,8 @@
   id: totrans-325
   prefs: []
   type: TYPE_NORMAL
+  zh: kng 文件名展示了当我们这样做时的效果，好吧，现在我们已经定义了我们的参数，我们要找出我将要说的内容，我将说 opt 等于 ap.parse args，我们将解析传入的参数，我们将说如果
+    opt.state 如果我们得到了状态，那么我们要做的是调用 plot state。
 - en: and we're going to pass in opt。state opt。state opt。csv and opt。output okay i'm
     going to say this。 now i'm going to go to the command line i'm going to run this
     from the command line let me show you。 the code there again we added this little
@@ -2914,6 +2947,8 @@
   id: totrans-326
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们将传入 opt.state，opt.state，opt.csv 和 opt.output，好的，我现在要说这个。现在我要去命令行，我将从命令行运行这个，让我给你看。代码，再次添加这个小
+    if 语句，检查 name 是否等于主程序，这在说我们是否在执行这个文件，还是从命令行运行这个文件。
 - en: note that over here in our test in our test file here we are loading covid but
     we're not executing。 the command line so this this wouldn't this line would not
     execute when we imported it it only。 executes when you run it from the command
@@ -2922,6 +2957,7 @@
   id: totrans-327
   prefs: []
   type: TYPE_NORMAL
+  zh: 请注意，在我们的测试文件中，我们加载了 COVID，但并没有执行命令行，因此这行在我们导入时不会执行，它仅在你从命令行运行时执行，或者如果我们回到这里说运行模块。好吧，然后我们添加到这个小主函数，它将检查命令中的内容。
 - en: line arguments so i'm going to go to command line let's see if we can run this
     from the command line。 here so here's my command line， okay so here's my command
     line and i'm going to say python three covid dy-h。 and it's running it's thinking
@@ -2930,6 +2966,7 @@
   id: totrans-328
   prefs: []
   type: TYPE_NORMAL
+  zh: 行参数，所以我将去命令行，看看我们是否可以从命令行运行它。这里是我的命令行，好的，所以这是我的命令行，我将说 python 3 covid dy-h。它正在运行，它在思考，现在我的计算机被许多事情拖慢了。但你看，呃，请注意，它给我们提供了这个很好的文档。
 - en: it even spit out this png file name for us here so let's try and run it。 let's
     say python three and we're going to say state is ut-c that's covid。csv and dash
     oh i'm going。 to say utad。png here okay and it says can't open file ut so i got
@@ -2938,6 +2975,8 @@
   id: totrans-329
   prefs: []
   type: TYPE_NORMAL
+  zh: 它甚至为我们生成了这个 png 文件名，所以我们来尝试运行它。我们说 python 3，并且我们会说 state 是 ut-c，这个是 covid.csv
+    和 dash oh，我将说 utad.png，好的，它说无法打开文件 ut，所以我在这里遇到了错误，让我们看看我能否修复它，plot state 应该给我们状态。
 - en: oh yeah my bad um yeah you just say python covid。py there you go okay。 okay
     well that's something i'll just run this from windows as well python covid， and
     covid。py and i'll do dash h here you see that it gives us the help i'm going to
@@ -2945,6 +2984,8 @@
   id: totrans-330
   prefs: []
   type: TYPE_NORMAL
+  zh: 哦，对不起，嗯，是的，你只需说 python covid.py，好的。好的，那我就从 Windows 运行这个，python covid 和 covid.py，然后我这里做
+    dash h，你看到它给我们提供了帮助，我将说 dash s。也许我们会做 wy 代表怀俄明，dash c 是 covid sv，dash output yo.png。
 - en: okay looks like that worked here um look like we worked over here uh just open
     utad。png here。 there's our utad plot let's open our wyoming plot， there's our
     wyoming plot as well okay uh。 so now would be a great time to pause it and make
@@ -2953,6 +2994,8 @@
   id: totrans-331
   prefs: []
   type: TYPE_NORMAL
+  zh: 好的，看起来这在这里工作了，嗯，看起来我们在这里也工作了，呃，打开 utad.png。这里是我们的 utad 图，打开我们的怀俄明图，那里也是我们的怀俄明图，好的，呃。现在是暂停的好时机，确保你已经在你的机器上成功运行命令行，再次需要在导入中添加
+    argparse 和 cis。
 - en: and down here to the bottom uh this main function and this little snippet down
     here。 so pause that and make sure that that's working okay so at this point we've
     come to the end of。 our tutorial hopefully you've had a good time you've been
@@ -2961,6 +3004,8 @@
   id: totrans-332
   prefs: []
   type: TYPE_NORMAL
+  zh: 这里在底部，呃，这个主函数和下面这个小代码片段。所以暂停一下，确保它正常工作，因此到目前为止，我们已经来到了教程的结尾，希望你玩得愉快，能够了解一点关于
+    Python 的知识。你对训练的肌肉记忆又回来了，今天我们使用了 IDLE，我喜欢 IDLE，因为我可以。
 - en: take code i can run it in the REPL and i can sort of go back and forth now again
     i said do i。 recommend everyone use idle day today no i don't um idle has some
     problems but i do recommend that。 you learn how to take your code and run it and
