@@ -173,6 +173,7 @@
   id: totrans-20
   prefs: []
   type: TYPE_NORMAL
+  zh: 不同的内核模块。最后，在底层，你会有硬件，包括不同的CPU和GPU架构。这就是为什么仅使用简单的PIP命令安装依赖项，无法帮助你实现可重复性的目标，这是你希望在笔记本中拥有的。所以总结一下，如果你这样做，就是PIP安装。
 - en: your dependency without specifying， any version of hashes。 it will not guarantee
     any reproducibility， for your notebook。 And maybe you would think of doing something
     like that， which is specifying a list of requirements。 either manifest files such
@@ -180,6 +181,7 @@
   id: totrans-21
   prefs: []
   type: TYPE_NORMAL
+  zh: 你的依赖项未指定任何版本的哈希。这不会保证你笔记本的可重复性。也许你会想到做这样的事情，指定一个需求列表，比如要求的`requirements.txt`文件。但在这里又是。
 - en: you don't have any information about versions， of hashes used。 So this will
     not work and not guarantee either any reproducibility， for your Jupyter notebook。
     My point is Jupyter notebooks are by default not standalone。 You can share a Jupyter
@@ -187,6 +189,7 @@
   id: totrans-22
   prefs: []
   type: TYPE_NORMAL
+  zh: 你没有关于使用的版本或哈希的任何信息。所以这将不起作用，也不会保证你的Jupyter笔记本的任何可重复性。我的观点是Jupyter笔记本默认不是独立的。你可以与其他人共享Jupyter笔记本。
 - en: It considers that it will run on a different machine， with different dependency
     versions。 and using a different Python version。 In fact， dependency management
     in Jupyter notebooks。 but constraints are the other of the notebooks， to provide
@@ -195,6 +198,7 @@
   id: totrans-23
   prefs: []
   type: TYPE_NORMAL
+  zh: 它考虑到它将在不同的机器上运行，具有不同的依赖版本，并使用不同的Python版本。实际上，Jupyter笔记本中的依赖管理，但约束是笔记本的另一个，提供一个解耦的清单文件，比如文本要求，或一个与笔记本一起使用的PIP文件。
 - en: so that the notebook users can install the exact same software。 stack that you
     use to develop the notebook。 Dependencies are also a problem when。 you want to
     containerize your notebook。 If you run， for example。 to ship your notebook into
@@ -202,6 +206,7 @@
   id: totrans-24
   prefs: []
   type: TYPE_NORMAL
+  zh: 这样笔记本用户就可以安装与开发笔记本时相同的软件堆栈。当你想要容器化你的笔记本时，依赖项也是一个问题。例如，如果你要将笔记本打包到容器中并与其他人共享，你。
 - en: have them to make sure that your Docker file or container file。 would be able
     to adjust the dependencies accordingly。 And finally。 the consumers that receive
     a shared notebook， also have to set up manual is correct environments。 which，
@@ -210,6 +215,7 @@
   id: totrans-25
   prefs: []
   type: TYPE_NORMAL
+  zh: 确保你的Docker文件或容器文件能够相应地调整依赖项。最后，接收共享笔记本的消费者也必须手动设置正确的环境，这可能很困难，如果没有清单文件，或者没有关于环境的信息。
 - en: the author or developed a notebook is provided with it。 And this is often the
     case with shared Jupyter notebooks。 To summarize what would be the difficulties，
     this creates for both others and consumers。 they should both create an environment
@@ -217,6 +223,7 @@
   id: totrans-26
   prefs: []
   type: TYPE_NORMAL
+  zh: 创建笔记本的作者或开发者会提供它。这通常发生在共享的Jupyter笔记本中。总结一下，这给其他人和消费者带来了哪些困难，他们都应该创建一个运行笔记本的环境，理想情况下。
 - en: a virtual one that would not， be polluted by any dependencies。 They will have
     to install the dependencies， to create a kernel， and update it every time。 they
     have a new dependency。 And in addition to that， the author， had to maintain a
@@ -225,6 +232,7 @@
   id: totrans-27
   prefs: []
   type: TYPE_NORMAL
+  zh: 一个虚拟环境，不会被任何依赖污染。他们必须安装依赖项，创建内核，并在每次有新依赖项时更新它。此外，作者还必须维护一个需求文件，以便让其他人获得与笔记本开发时完全相同的依赖项。
 - en: What we are looking for is a solution， that would have authors keep their dependencies。
     and manifest files up to dates and thus achieve， a reproducibility of their notebook。
     So earlier I introduced you project。tots。 So now I will see how that can actually。
@@ -233,6 +241,7 @@
   id: totrans-28
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们正在寻找的是一个解决方案，能够让作者保持他们的依赖和清单文件的最新状态，从而实现他们笔记本的可重复性。早些时候我向你介绍了项目`tots`。现在我将看看它如何实际帮助你管理笔记本中的依赖，并为你的应用获取最佳的依赖集。
 - en: First， the three words about tots。 So the main goal of tots is to help developers
     and data。 scientists create and maintain healthy Python applications。 This project
     was started in 2018 at Red's Head Office of CTO。 and now it is maintained by a
