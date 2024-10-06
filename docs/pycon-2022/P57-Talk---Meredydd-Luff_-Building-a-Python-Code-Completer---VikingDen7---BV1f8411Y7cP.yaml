@@ -386,6 +386,7 @@
   id: totrans-45
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们正在处理这些变量。好的，现在我们的补全工具知道如何在函数定义内行走。我们在进展，但它仍然不知道我们现在在一个新的作用域中。如果我们的光标在这里，与在外部时所拥有的变量是不同的。所以让我们来建模一下。当我们碰到一个函数定义时。
 - en: we create a new scope to represent what's going on inside， the function。 Of
     course。 it's going to start out with all the variables that already existed in
     the， parent scope。 And then we want to add all that function's arguments to it。
@@ -393,6 +394,8 @@
   id: totrans-46
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们创建一个新的作用域来表示函数内部发生的事情。当然，它会从父作用域中已经存在的所有变量开始。然后我们想把这个函数的所有参数添加进去。所以再看一下AST，我们有这些args对象。所以对于arg
+    in statement.args.args。
 - en: we add the argument name to the scope because that's， now variable that's in
     scope。 And then when we walk the body， we walk it in this new scope。 So now if
     we run this。 if we trigger our completion here， oops， we will explode。 Line 26，
@@ -400,6 +403,7 @@
   id: totrans-47
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们将参数名称添加到作用域，因为那现在是一个在作用域内的变量。然后当我们遍历函数体时，我们在这个新作用域内遍历。所以现在如果我们运行这个。如果我们在这里触发补全，哎呀，我们会出错。第26行，哦，是的，新作用域。在舞台上实时编码，充满了陷阱。好吧。
 - en: we have a code completer that passes our code， walks through it， builds up a
     representation。 of what's going on。 It understands that inside a function you're
     in a different scope to outside a function。 and it's offering us those foo and
@@ -408,6 +412,7 @@
   id: totrans-48
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们有一个代码补全工具，它处理我们的代码，遍历它，建立一个正在发生的事情的表示。它理解在函数内部你处于一个不同的作用域，而在函数外部是另一回事。它为我们提供了foo和bar作为补全。但是如果我们在外部补全，你会发现它只提供我们的全局变量，因为它。
 - en: knows we're not in a scope where those are valid options。 So we have built a
     completer。 it passes our code， it walks through our AST， it builds up。 a representation
     of what's going on and offers suggestions that are contextually appropriate。 to
@@ -415,10 +420,12 @@
   id: totrans-49
   prefs: []
   type: TYPE_NORMAL
+  zh: 它知道我们不在一个这些选项有效的作用域中。所以我们构建了一个补全工具。它处理我们的代码，遍历我们的AST，建立一个正在发生的事情的表示，并提供与光标所在位置上下文相关的建议。
 - en: '![](img/d12cab4ccfc4304f1aba514a1562280c_4.png)'
   id: totrans-50
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/d12cab4ccfc4304f1aba514a1562280c_4.png)'
 - en: Pretty cool， right？ That was pretty simple。 What's next？ Well。 there are some
     pretty straightforward extensions we might make。 For one thing。 we might want
     to teach it about some more syntax。 Right now。 our completer only understands
@@ -426,6 +433,7 @@
   id: totrans-51
   prefs: []
   type: TYPE_NORMAL
+  zh: 很酷，对吧？这很简单。接下来是什么呢？好吧，我们可能会进行一些相当直接的扩展。首先，我们可能想教它更多的语法。现在，我们的补全工具只理解赋值语句和函数定义。
 - en: We'd probably want to teach it about if statements and while loops and arithmetic
     operators and。 the rest of Python syntax。 We could make it track types。 So it's
     actually quite handy to know not just that a variable exists but what type it。
@@ -434,11 +442,13 @@
   id: totrans-52
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们可能想教它关于if语句、while循环和算术运算符，以及Python语法的其他部分。我们可以让它跟踪类型。因此，知道一个变量不仅存在而且是什么类型是相当方便的，所以我们可以让我们的补全工具注意到，嘿，这里有一个person类和Alice。
 - en: is an instance of person。 So if I type Alice dot， it could say did you mean
     Alice dot name？
   id: totrans-53
   prefs: []
   type: TYPE_NORMAL
+  zh: 是一个person的实例。所以如果我输入Alice.，它可以说“你是指Alice.name吗？”
 - en: We could give help with function arguments。 We could notice that the cursor
     is inside the arguments to a function call and we could。 pop up some helpful information
     about what arguments that function takes and so on and， so forth。 I mean， I'm
@@ -447,6 +457,7 @@
   id: totrans-54
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们可以提供函数参数的帮助。我们可以注意到光标在函数调用的参数内，我们可以弹出一些有用的信息，关于这个函数需要什么参数等等。我是说，我实际上不会实现这些，我们会在这里呆上一整天，但我们不会在这里呆太久，因为这些都是相当简单的扩展。
 - en: to what we've already set up。 Unfortunately， it's a bit more complicated than
     that and the main and biggest source。 of complication in code completing a Python
     program is that it is mathematically impossible。 to know in advance what a program
