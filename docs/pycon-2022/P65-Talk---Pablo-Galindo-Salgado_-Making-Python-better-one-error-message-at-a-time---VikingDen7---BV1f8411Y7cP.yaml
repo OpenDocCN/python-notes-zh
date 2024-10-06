@@ -194,6 +194,8 @@
   id: totrans-25
   prefs: []
   type: TYPE_NORMAL
+  zh: 那么让我介绍一下反向解析器。反向解析器是我们与 Sandre Sanjido 在 PEP 617 上合作的成果。基本上，我们替换了 C Python 中的解析，这个解析最初是在
+    1990 年引入的——这是 Gido 提出的 Python 的第一条评论，这是旧的解析器。而新的反向解析器是在 30 年后制作的。所以，你知道的。
 - en: the old parser was a very resilient piece of technology， but， you know。 we thought
     that we needed a new parser because there was a bunch of things that we couldn't。
     do with the old one， apart from maintainers-related topics and other things。 So
@@ -202,6 +204,7 @@
   id: totrans-26
   prefs: []
   type: TYPE_NORMAL
+  zh: 旧的解析器是一种非常强大的技术，但你知道的，我们认为我们需要一个新的解析器，因为有很多事情是旧解析器无法做到的，除了与维护者相关的主题和其他事情。因此，现在我们可以用新的解析器完成的事情包括带括号的上下文和管理器。
 - en: which for technical reasons that I know going to go into detail， we couldn't。
     do this much better because now you can put this kind of like， you know， open
     parenthesis。 and the surface over there。 And also， like， for instance， match statements。
@@ -210,6 +213,7 @@
   id: totrans-27
   prefs: []
   type: TYPE_NORMAL
+  zh: 出于我知道的技术原因，我不会详细讨论，我们无法做到更好，因为现在你可以放置这样的开括号，和表面在那边。此外，例如，匹配语句。我们喜欢匹配语句。是的，我觉得，它们很酷。你可以匹配所有的东西。
 - en: So this is only possible with the new parser， which is great。 But there is a
     problem。 Many people see these things and they are quite angry because they think
     that the new。 back parsers is slightly level， right？ Because now we have a lot
@@ -218,6 +222,7 @@
   id: totrans-28
   prefs: []
   type: TYPE_NORMAL
+  zh: 这只有在新的解析器下才有可能，这真是太好了。但也有一个问题。很多人看到这些事情时感到相当生气，因为他们认为新的反向解析器略显低级，对吧？因为现在我们有很多模糊和可怕的结论，因为反向解析器实际上允许我们使用非常奇特的语法等等。
 - en: But one you can convince you that the new back parsers is actually quite helpful
     because， you know。 yes， allow us to do things that you may not know， may like
     or not may like。 but those were possible anyway and we have a process to improve
@@ -226,6 +231,8 @@
   id: totrans-29
   prefs: []
   type: TYPE_NORMAL
+  zh: 但如果你能说服自己新的反向解析器实际上是非常有帮助的，因为你知道的。是的，允许我们做一些你可能不知道的事情，可能喜欢或不喜欢。但这些事情无论如何都是可能的，我们有一个改进
+    Python 语法的过程，这并不是反向解析器的错，对吧？就像，你知道的，如果你有一把刀。
 - en: the knife can serve multiple purposes。 I will lead you to your imagination what
     you can do with a knife。 But the idea here is that the back parser now finally
     allows us to do these newer messages。 which is quite cool。 So let me convince
@@ -234,12 +241,14 @@
   id: totrans-30
   prefs: []
   type: TYPE_NORMAL
+  zh: 刀可以有多种用途。我会让你想象一下你可以用刀做什么。但这里的想法是反向解析器现在终于允许我们做到这些新的消息，这是相当酷的。所以让我说服你，以防你以前没有见过它们。让我给你展示一些我们在三个版本中的新消息。我们有很多。
 - en: so I'm not going to cover a lot of them， but some of them。 So for instance。
     newer messages in Python three times。 So in mind that you have this conditional，
     right？
   id: totrans-31
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以我不会覆盖很多内容，但会提到一些。例如，在 Python 中的三个新消息。所以请记住，你有这个条件，对吧？
 - en: And then you forget the colon over there， which is a common mistake for。 especially
     for people learning the language。 So now we tell you the aspect of colon。 That's
     cool。 right？ More things。 So for instance， now similar things that we have before。
@@ -247,21 +256,25 @@
   id: totrans-32
   prefs: []
   type: TYPE_NORMAL
+  zh: 然后你忘记了那里的冒号，这是学习这门语言的人尤其常犯的错误。所以现在我们告诉你冒号的方面。这很酷，对吧？更多的事情。所以，例如，现在我们有类似的事情，你在写字典时，忘记写那个值。
 - en: And now when you do this thing， the parser says， I actually spread an expression
     after。 the dictionary key and the colon， which is also quite cool。 This is quite
     common， apparently。 Many。 many people were super happy when we saw this one。
   id: totrans-33
   prefs: []
   type: TYPE_NORMAL
+  zh: 现在当你做这个事情时，解析器说，我实际上在字典键和冒号之后分散了一个表达式，这也是相当酷的。这显然是相当常见的。许多人在看到这个时非常开心。
 - en: '![](img/0675f7d0d1f76ed0b5504798f42823d4_8.png)'
   id: totrans-34
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/0675f7d0d1f76ed0b5504798f42823d4_8.png)'
 - en: You are comparing something and then you forgot here that did you put a double
     equal。
   id: totrans-35
   prefs: []
   type: TYPE_NORMAL
+  zh: 你在比较某些东西，然后你在这里忘了是否写了双等号。
 - en: '![](img/0675f7d0d1f76ed0b5504798f42823d4_10.png)'
   id: totrans-36
   prefs: []
@@ -515,6 +528,7 @@
   id: totrans-67
   prefs: []
   type: TYPE_NORMAL
+  zh: 建议。相信我，那是正确的版本，非常酷。你知道，这是一个小改进，但事实证明，它节省了很多时间，尤其是当你在一个非常大的函数中输入错误的变量时，因为它会立即告诉你发生了什么。我认为这是我最喜欢的之一，因为自从我们添加了这个，它帮助了我很多。
 - en: even when we were developing this one so it's quite cool。 But the question is
     like okay so how this are done because it's a very interesting like。 the check
     of the array of errors right。 So let me explain to you how we did this one。 It's
@@ -523,6 +537,7 @@
   id: totrans-68
   prefs: []
   type: TYPE_NORMAL
+  zh: 即使在我们开发这个的时候，所以这非常酷。但是问题是，好的，这些是如何完成的，因为这是一个非常有趣的事情，比如说错误数组的检查。让我给你解释一下我们是如何做到的。这非常有趣。第一件事是现在我们扩展了一些异常，特别是属性错误。
 - en: exceptions with two things。 Now these exceptions in three times know the name
     of the attribute that you were trying。 to access and the object in which you were
     trying to access。 So if this was the collection module the object will be the
@@ -531,6 +546,7 @@
   id: totrans-69
   prefs: []
   type: TYPE_NORMAL
+  zh: 异常与两个东西。现在这些异常三次知道你尝试访问的属性的名称，以及你尝试访问的对象。所以如果这是集合模块，对象将是集合模块，而名称将被命名为顶球体。这个例子将是X和一些东西，然后写在那里的。
 - en: I don't know why I don't bring my own slides。 But then this is an attribute
     that bubbles up and then we run a word distance function。 This is a very simplified
     version that fits into slide。 The one that we use is I don't know 200 lines of
@@ -539,6 +555,7 @@
   id: totrans-70
   prefs: []
   type: TYPE_NORMAL
+  zh: 我不知道为什么我不带自己的幻灯片。但是这是一个浮现出来的属性，然后我们运行一个词距函数。这是一个非常简化的版本，适合于幻灯片。我们使用的那个是我不知道的`200行`C代码，实际上不太适合演示。但这个想法是这是一个非常简单的算法。
 - en: It uses like some version of layman's thing distance to know which are the closest
     strings。 to the one that we provide and then it will tell you okay so maybe you
     know these are。 the ones that we think is the best much。 It looks at the deal
@@ -547,6 +564,7 @@
   id: totrans-71
   prefs: []
   type: TYPE_NORMAL
+  zh: 它使用某种版本的门外汉的距离来知道哪些是最接近的字符串。与我们提供的相似，然后它会告诉你，好的，所以也许你知道这些是我们认为最好的匹配。它查看对象的交易来区分哪些是最好的。所以基本上算法是，一旦你有了这个词实例函数，你就做点什么。
 - en: like okay so I'm going to use the function to know in the exception all the
     possible attributes。 that are in the object and then I'm going to one by one check
     the word distance to that。 one I'm going to pick the smaller one and that's probably
@@ -555,6 +573,7 @@
   id: totrans-72
   prefs: []
   type: TYPE_NORMAL
+  zh: 好吧，所以我将使用这个函数来知道在异常中所有可能的属性。然后我将逐个检查与那个的词距。我将选择更小的一个，这可能就是建议。我们在这里和那里有大量的额外检查，以确保我们不做奇怪的事情。
 - en: with those but this is basically the algorithm。 But wait there is something。
     Think about this right attribute errors are raised all over the place。 If we start
     doing this algorithm to check where the pro exceptions that are closer。 and the
@@ -562,6 +581,7 @@
   id: totrans-73
   prefs: []
   type: TYPE_NORMAL
+  zh: 对于那些，但这基本上就是算法。但等等，还有一些事情。考虑这一点，属性错误在各处被引发。如果我们开始做这个算法来检查更接近的程序异常和名称，这非常非常昂贵，所以我们不在属性错误上执行这个事情。
 - en: because it will make by so much lower right。 So what we do here and basically
     what I'm saying is that this thing needs to be fast。 because if you catch the
     attribute error nobody will see those suggestions and we need to。 make sure that
@@ -570,6 +590,7 @@
   id: totrans-74
   prefs: []
   type: TYPE_NORMAL
+  zh: 因为它会使得情况降低得如此多。所以我们在这里做的基本上就是我所说的，这件事需要快速。因为如果你捕捉到属性错误，没有人会看到那些建议，我们需要确保这种代码依然快速。对吧？所以我们在这里做的，这是SQL，但我会解释。
 - en: So what we do here in this SQL is basically that instead of doing this thing
     when you raise。 the exception we do this thing on this fancy function that is
     called print exception so。 we only do this thing with exception has bubble up
@@ -735,6 +756,7 @@
   id: totrans-97
   prefs: []
   type: TYPE_NORMAL
+  zh: Python很棒，我们希望你能帮助我们，所以我将教你如何有效地帮助我们处理错误消息。你能做的第一件事是打开问题，现在Python的问题跟踪器在GitHub上运行，这很不错，最后我们终于能够做到，明天在同一场讲座中会有更多内容，现在你可以打开一个问题，他们有跟踪器。
 - en: for C Python telling us suggestions that you think we should look at we will
     tell you sometimes。 that that suggestion is actually very difficult or it will
     mess with other things so you know。 have an open mind don't get frustrated we
@@ -743,6 +765,7 @@
   id: totrans-98
   prefs: []
   type: TYPE_NORMAL
+  zh: 对于CPython，请告诉我们你认为我们应该关注的建议，我们有时会告诉你，这个建议实际上很困难，或者会影响其他事情，所以请保持开放的心态，不要沮丧。如果我们告诉你添加错误消息很困难或不可能，但很多时候，这种情况已经发生过，大家已经在努力。
 - en: come to our issue tracker and have suggested oh what about this particular error
     and we。 have implemented that so if you have ideas especially if you are starting
     to learn Python。 for instance and you have been frustrated with some of these
@@ -751,6 +774,7 @@
   id: totrans-99
   prefs: []
   type: TYPE_NORMAL
+  zh: 请访问我们的[问题跟踪器](https://example.org)，并提出建议，哦，这个特定的错误如何呢？我们已经实施了这一点，所以如果你有想法，特别是如果你刚开始学习Python，举例来说，且你对这些错误信息感到沮丧，来告诉我们，这真的会很有帮助。
 - en: 20 minutes I'm doing a PhD and I wasn't able to do this so that's a good candidate
     right。 also you just an educator or you are teaching Python and then you see out
     of your students。 struggling with error messages we would love to know which ones
@@ -759,6 +783,7 @@
   id: totrans-100
   prefs: []
   type: TYPE_NORMAL
+  zh: 我花了20分钟做一个博士学位，结果无法做到，所以这是一个很好的候选者。如果你是一位教育工作者，或者你在教Python，看到你的学生在错误信息上挣扎，我们希望知道哪些错误信息是他们最困难的。如果你想更深入地探讨，你可以自己来处理。
 - en: the best place to start is to go to this guy that I wrote in the Python dev
     guide so you。 do Google Python dev guide parser he is this big document called
     guide to see Python parser。 is very technical but I think it's quite nice some
@@ -767,6 +792,7 @@
   id: totrans-101
   prefs: []
   type: TYPE_NORMAL
+  zh: 最好的起点是去我在Python开发指南中写的那个人那里，你可以Google一下“Python dev guide parser”，这是一份名为“CPython解析器指南”的大型文档，内容相当技术性，但我觉得非常好，其他开发者也可以验证这个说法，想法是你可以在这里详细了解解析器的工作原理。
 - en: at the end of this this guide there is a section about how to add your messages
     and how to。 validate your error messages so you can read that and then you can
     try to add some error。 messages do you add a bunch of test cases and you can submit
@@ -775,6 +801,7 @@
   id: totrans-102
   prefs: []
   type: TYPE_NORMAL
+  zh: 在本指南的最后，有一节关于如何添加你的消息以及如何验证错误消息的内容，你可以阅读这部分，然后尝试添加一些错误消息，添加一堆测试用例，然后提交一个PR给CPython，这将会非常酷，不仅如此，很多人已经在做这件事了。
 - en: is a bunch of error messages that have been proposed by members of the community
     not by。 myself and they have improved and some of them except this one which is
     an issue which。 is still open but all of them will see in 3/11 which is super
@@ -783,6 +810,7 @@
   id: totrans-103
   prefs: []
   type: TYPE_NORMAL
+  zh: 这里有一堆由社区成员提出的错误消息，而不是我自己提出的，它们已经得到了改善，除了这个仍然是开放问题的消息之外，所有这些消息将在3/11中展示，这非常棒，所以你也可以成为其中之一，或许头像更酷，但你可以提出新的错误消息。
 - en: would love to review your PR it's just that you know you need to get into account
     that。 can we distinguish an open mind because as you saw error messages are quite
     hard and sometimes。 people are very excited and they bring their little error
@@ -791,6 +819,7 @@
   id: totrans-104
   prefs: []
   type: TYPE_NORMAL
+  zh: 我很乐意审查你的PR，只是你需要考虑到，我们能否保持开放的心态，因为正如你所见，错误信息相当复杂，有时人们非常兴奋，带来了看似很好的错误信息，但实际上我们需要拒绝它们。
 - en: it's quite complex so you know how about open mind when you propose these error
     messages。 and that's basically that's basically it I hope that you have learned
     a bit about this。 thing I think the moral of the story is that if you are doing
