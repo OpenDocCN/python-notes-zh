@@ -322,6 +322,7 @@
   id: totrans-37
   prefs: []
   type: TYPE_NORMAL
+  zh: 功能性同行真正喜欢这种函数的地方是，如你所见，下面的第二个函数我们获得一个输入，应用一系列函数，并得到一个输出。对一个功能性的人来说，这就是每个程序应该始终工作的方式。我们获取一个输入，应用一系列函数，得到一个输出。它完成的功能与第一个函数相同。
 - en: The other sort of observation that we can make between the two functions is
     that the。 first function even though it tells me that it's returning a string，
     it doesn't tell me。 anything in the function signature that this string could
@@ -330,6 +331,7 @@
   id: totrans-38
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们可以对这两个函数进行的另一种观察是，第一个函数尽管告诉我它返回一个字符串，但在函数签名中并没有告诉我这个字符串可能是空的。在下面的函数中，我可以看到它返回一个字符串的选项，因此调用者可以了解这一点。
 - en: method now knows that this value that is being returned could be empty and they
     are。 forced to deal with the case of emptiness。 And in the case of an option class
     you have something get or else。 So if there's no value you can supply a value
@@ -338,6 +340,8 @@
   id: totrans-39
   prefs: []
   type: TYPE_NORMAL
+  zh: 方法现在知道返回的这个值可能是空的，他们被迫处理空值的情况。在选项类的情况下，你有一些获取或其他的功能。因此，如果没有值，你可以在那里提供一个值。所有的函数，如get
+    contact，contact.get name，name.get first name。如果我上移一张幻灯片。
 - en: those functions are just simple functions that return an option。 And that's
     really what flat map is doing for us。 It's just chaining the options together
     so that we can rewrite this logic in a way that。 reads left to right。 The second
@@ -346,6 +350,7 @@
   id: totrans-40
   prefs: []
   type: TYPE_NORMAL
+  zh: 这些函数只是简单的返回一个选项的函数。而这正是扁平映射为我们做的事情。它只是将选项连接在一起，这样我们就可以以一种从左到右的方式重写这个逻辑。第二个API也是我们所称的流式API。它的读取方式与英语相同，从左到右。
 - en: You don't necessarily read English like inside out with if statements and while
     loops you。 kind of read it just left to right。 So we get the benefit of chaining
     operations and sort of seeing a fluent API style。 Okay。 So that's sort of how
@@ -354,6 +359,7 @@
   id: totrans-41
   prefs: []
   type: TYPE_NORMAL
+  zh: 你不一定是用if语句和while循环来从内到外地阅读英语，而是从左到右地阅读。因此，我们可以享受到链接操作的好处，并看到流式API风格。这就是我们如何使用选项类处理空值。第二个例子将处理异常，因为我们讨论过。
 - en: before is that an exception just like that example that we did with the sums
     and we mutated。 sum that function was impure。 So anytime I raise an exception
     within my code。 I'm also suffering from the same problem that， my code is not
@@ -362,6 +368,7 @@
   id: totrans-42
   prefs: []
   type: TYPE_NORMAL
+  zh: 之前的例子是一个异常，就像我们与求和所做的例子一样，我们改变了那个函数是非纯的。所以每次我在代码中引发异常时，我也面临着同样的问题，我的代码不是引用透明的，函数也不是纯的。因此，我们处理选项的方式类似，选项是一个父类。
 - en: two child classes to deal with the behaviors that we wanted。 We have a class
     called try。 And the try class is also a parent class。 The try class has two children
     classes。 the first of which is called success and the other， one is called failure。
@@ -370,6 +377,7 @@
   id: totrans-43
   prefs: []
   type: TYPE_NORMAL
+  zh: 两个子类来处理我们想要的行为。我们有一个类叫做try。这个try类也是一个父类。try类有两个子类，第一个叫做success，另一个叫做failure。所以success封装了没有错误发生的成功值。
 - en: failure encapsulates the exception that might be thrown in that event if like
     an accept。 So let's take an example here where something that could potentially
     fail。 It could go wrong。 And so we're going to look at an example of JSON parsing。
@@ -378,6 +386,7 @@
   id: totrans-44
   prefs: []
   type: TYPE_NORMAL
+  zh: failure封装了在某个事件中可能被抛出的异常，比如一个接受。因此，让我们在这里举一个可能失败的例子。它可能出错。因此，我们将查看JSON解析的示例。我们有两个字符串，第一个字符串是可以解析的。它会解析成我们的模型。是正确的。
 - en: The second string I've deliberately made a mistake。 There's no attribute called
     first name is wrong。 So when I try to sort of parse my JSON and get it into my
     model， it is going to raise， an error。 It's going to raise an exception。 So let's
@@ -529,6 +538,7 @@
   id: totrans-61
   prefs: []
   type: TYPE_NORMAL
+  zh: 执行时间大约是四秒。里面的睡眠时间使其大约为四秒。所以是的， pretty simple 的示例。我们可以很容易地使用未来在新线程中运行某些东西。好的。但结合两个东西呢？看起来我们看到扁平映射来组合我们的选项和尝试。我们可以做同样的高阶函数来组合特征。
 - en: So here we have two threads。 One is going to sleep for three seconds。 Return
     100。 The other one is going to sleep for five seconds。 Return the value 50 and
     then what we want to do is sort of add up those two results。 right？ So you can
@@ -538,6 +548,7 @@
   id: totrans-62
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以这里有两个线程。一个将睡眠三秒，返回100。另一个将睡眠五秒，返回值50，然后我们想做的是将这两个结果相加，对吗？所以你可以看到结果一我们称之为特征执行，结果二我们称之为未来，第二个函数，然后我们说结果一我们扁平映射到结果二，并将它们相加。
 - en: values and we add a little callback。 So the callback here is doing the same
     thing that we did in the more imperative example where。 we're trying to calculate
     what is the total overall running time like you see。 So in this example one thread
@@ -546,11 +557,13 @@
   id: totrans-63
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们添加了一些回调。所以这里的回调做的事情与我们在更具命令性的示例中所做的相同。我们试图计算整体运行时间。所以在这个示例中，一个线程用了三秒，另一个线程用了五秒。两个线程并行执行。一旦较长的线程完成，它就结合了结果。
 - en: We got the value 150。 It was roughly more or less five seconds of execution
     time。 So what happens then if something were to go wrong though？
   id: totrans-64
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们得到了150的值。执行时间大约是五秒。那么如果出了什么问题呢？
 - en: So in this example we'll deal with an error。 So the first function is actually
     going to just throw an exception which we know is impure。 but for this example
     we'll go ahead and do it anyway just to see what kind of happens。 And now on our
@@ -559,6 +572,7 @@
   id: totrans-65
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以在这个示例中，我们将处理一个错误。第一个函数实际上会抛出一个异常，我们知道这不是纯的。但在这个示例中，我们还是会这样做，看看会发生什么。在我们的回调中，我们有相同的代码来扁平映射和映射，但在我们的回调中。因为一旦特征完成，它的行为就像一个尝试。
 - en: It has a success and a failure and we can check that。 So in my callback on this
     example now I simply we can simply check did the result fail or。 did it succeed
     and handle those two use cases separately。 So in this example again it ran both
@@ -566,6 +580,7 @@
   id: totrans-66
   prefs: []
   type: TYPE_NORMAL
+  zh: 它有一个成功和一个失败，我们可以检查它。所以在我这个示例的回调中，我简单地检查结果是失败还是成功，并分别处理这两种用例。所以在这个示例中，它再次并行运行了三秒线程和。
 - en: five second thread the three second thread failed so it never actually had to
     you know。 the five second thread kept running but for the purpose of the computation
     it actually。 finished in three seconds because it got the error and it error out。
@@ -574,6 +589,7 @@
   id: totrans-67
   prefs: []
   type: TYPE_NORMAL
+  zh: 五秒的线程，三秒的线程失败了，所以它实际上没有完成。五秒的线程一直在运行，但在计算的目的上，它实际上在三秒内完成了，因为它遇到了错误并报错。因此我们有这种基于特征的回调风格，可以用来检查值。
 - en: once it's complete succeeds or fails。 Okay but I'm going to go up a couple slides
     here。 So in this example where we are combining features using flat map and map
     comprehensions。 and stuff like that we could easily see okay so we have two threads
@@ -582,6 +598,7 @@
   id: totrans-68
   prefs: []
   type: TYPE_NORMAL
+  zh: 一旦它完成，无论成功还是失败。好的，但我会跳到几张幻灯片。我们在这个示例中使用扁平映射和映射理解组合特征。我们可以很容易地看到，好吧，所以这里有两个线程在运行，两个结果。我们关心的异步计算的值，但如果有三个呢？
 - en: or four or five or more results this could get you know map flat map map flat
     map over。 and over and over again this can get a little complicated and the real
     thing is so when。 I do feature。run I'm getting a feature value back and I get
