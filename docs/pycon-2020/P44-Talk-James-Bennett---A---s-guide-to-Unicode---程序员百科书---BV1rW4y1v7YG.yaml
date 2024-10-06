@@ -359,6 +359,7 @@
   id: totrans-46
   prefs: []
   type: TYPE_NORMAL
+  zh: 至少有两种方式可以用Unicode书写。这是我们之前看到的使用组合音调字符的一种形式。还有一种预组合形式，它在一个代码点中完成。出于历史原因，这种形式存在。许多早期的单一目的编码都有不同的预组合字符。
 - en: combinations of letters and accent marks。 And so for compatibility Unicode has
     to have them as well so that you can do a lossless conversion。 to and from Unicode
     back to your original encoding。 If you ever want to。 But this means that in Unicode
@@ -367,6 +368,7 @@
   id: totrans-47
   prefs: []
   type: TYPE_NORMAL
+  zh: 字母和音调符号的组合。因此，为了兼容性，Unicode也必须包含这些，以便您能够进行无损转换，将Unicode转换回您原始的编码格式。如果您需要的话。这意味着在Unicode中，我们可能会有多种方式来书写相同的内容。这两个代码点序列，一个是预组合点，另一个是分解点。
 - en: sequence of two code points are considered equivalent。 And in fact Unicode calls
     them canonically equivalent because it should always be safe。 to swap one of these
     for the other。 You won't change the meaning of your text by doing so。 But it also
@@ -374,6 +376,7 @@
   id: totrans-48
   prefs: []
   type: TYPE_NORMAL
+  zh: 两个代码点的序列被视为等价。实际上，Unicode称它们为规范等价，因为在这些序列之间交换通常是安全的。您不会通过这样做改变文本的含义。但它也有一个兼容等价的概念，在这种情况下，交换可能并不总是安全。
 - en: be safe to swap between two different ways of writing the same thing。 So here
     for example we have a code point that represents a composed fraction one half
     and。 a decomposed sequence that writes it out as a one and a two with a splash
@@ -382,6 +385,7 @@
   id: totrans-49
   prefs: []
   type: TYPE_NORMAL
+  zh: 在两种不同的写法之间安全交换是可行的。例如，这里我们有一个代码点表示一个组合分数一半，以及一个分解序列，将其写成一和二，中间有一个斜杠。在某些情况下，交换这两者是正确的，而在其他情况下则不是。
 - en: And this gives rise to the concept of normalization。 Which is a way that we
     can take different sequences that may represent the same thing。 and find out if
     they do by making them equal after the normalization。 And because Unicode has
@@ -389,6 +393,7 @@
   id: totrans-50
   prefs: []
   type: TYPE_NORMAL
+  zh: 这引出了规范化的概念。这是一种我们可以处理不同序列的方法，这些序列可能代表相同的内容，并通过规范化使它们相等，从而找出它们是否相同。由于Unicode有组合形式和分解形式，并且有两种不同的类型。
 - en: of equivalents。 There are four different ways to normalize Unicode depending
     on what the result should。 look like and what rules you want to apply。 So you
     can either get a composed or a decomposed form after the normalization。 You can
@@ -398,6 +403,7 @@
   id: totrans-51
   prefs: []
   type: TYPE_NORMAL
+  zh: 有四种不同的方式来规范化Unicode，具体取决于结果应该是什么样子以及您想要应用的规则。因此，在规范化之后，您可以获得组合或分解形式。在此过程中，您可以使用规范等价或兼容等价规则。我们稍后会对此进行讨论，但如果您感到不知所措。
 - en: want a general recommendation if you ever need to do Unicode normalization yourself。
     it's probably best to pick form NFKC。 That's the one that will make the most trade-offs
     in favor of what you probably want but we'll。 see examples of how different normalization
@@ -406,6 +412,7 @@
   id: totrans-52
   prefs: []
   type: TYPE_NORMAL
+  zh: 如果您需要进行Unicode规范化，一般建议选择NFKC形式。这是最能满足您需求的选择，但稍后我们会看到不同规范化形式的好坏示例。说到相同内容的多种写法，许多语言都有多种写法。
 - en: different forms for different characters， uppercase and lowercase and in fact
     Unicode has three。 different cases lowercase， uppercase and title case and multiple
     different case mappings。 and ways of transforming characters according to case
@@ -414,6 +421,7 @@
   id: totrans-53
   prefs: []
   type: TYPE_NORMAL
+  zh: 不同字符有不同的形式，大写和小写，实际上Unicode有三种不同的大小写：小写、大写和标题大小写，以及多种不同的大小写映射和根据大小写转换字符的方式，还有完全不区分大小写的字符的概念。实际上，Unicode中的大多数代码点都是抽象实体。
 - en: handles are uncased because the case mappings won't change them because they're
     coming from。 languages or systems of symbols that just don't have a concept of
     case。 Now you might be wondering well how then do I do things like case insensitive
@@ -422,6 +430,8 @@
   id: totrans-54
   prefs: []
   type: TYPE_NORMAL
+  zh: 不区分大小写的处理，因为大小写映射不会改变它们，因为它们来自没有大小写概念的语言或符号系统。现在你可能想知道，如何进行不区分大小写的比较。尤其是因为如果深入挖掘，Unicode
+    至少有三种不同的大小写概念和确定字符大小写的方式。
 - en: case and ways to find out what case a character is or whether it even is case
     and the answer。 is case folding which Python supports and we'll see examples of
     it in a little bit but I do。 want to call out that Python's documentation says
@@ -430,6 +440,7 @@
   id: totrans-55
   prefs: []
   type: TYPE_NORMAL
+  zh: 答案是大小写折叠，Python 支持这一点，我们稍后会看到一些例子。但我想指出的是，Python 的文档说的并不好。Python 说大小写折叠更像是一种更激进的小写形式，虽然这在某种程度上是正确的。
 - en: for a lot of Western European languages the result of case folding will look
     lowercase this。 is not a guarantee there are languages where the result of case
     folding will look uppercase。 So don't think of case folding as being uppercasing
@@ -438,6 +449,7 @@
   id: totrans-56
   prefs: []
   type: TYPE_NORMAL
+  zh: 对于许多西欧语言，大小写折叠的结果看起来会是小写的。这并不是保证，有些语言的大小写折叠结果看起来会是大写的。因此，不要把大小写折叠视为大写或小写，它是一个独立的概念，但关于大小写折叠需要了解的重要一点是，经过大小写折叠后的两个字符串将被视为一个单元，而不是两个字符。
 - en: if they differed only in case they will be the same after the fold。 And of course
     case can also extend beyond what Unicode really handles。 Unicode handles most
     of these cases for example the Greek Sigma which takes different forms。 depending
@@ -445,6 +457,8 @@
   id: totrans-57
   prefs: []
   type: TYPE_NORMAL
+  zh: 如果它们仅在大小写上有所不同，经过折叠后会变得相同。当然，大小写还可以超出 Unicode 实际处理的范围。Unicode 处理大多数这些情况，例如希腊字母
+    Sigma，根据其在单词中的位置有不同形式，突厥语系有点和无点形式。
 - en: forms of the letter I and it's incredibly important to preserve the dot or absence
     of。 the dot when you're doing a case transformation because those effect meaning
     German has this。 character officially it's called the sharp s historically it
@@ -453,6 +467,8 @@
   id: totrans-58
   prefs: []
   type: TYPE_NORMAL
+  zh: 字母 I 的各种形式，保留点或缺点在大小写转换中非常重要，因为这些会影响含义。德语有这个字符，正式名称是**锐音s**，历史上没有大写形式，因此它在大写时变为
+    SS，但这也意味着 Unicode 中的大小写映射不是传递的。
 - en: because uppercasing this and then lower casing again won't get you back what
     you started。 with and there's far more complexity in the language of that have
     case that Unicode just。 doesn't handle and tells you you may need to have low-calaware
@@ -461,6 +477,8 @@
   id: totrans-59
   prefs: []
   type: TYPE_NORMAL
+  zh: 因为将其大写再小写并不会让你回到最初的状态，许多具有大小写的语言的复杂性是 Unicode 无法处理的，并告诉你可能需要有大小写敏感的规则。例如，在荷兰语中，以
+    ij 开头的单词必须作为一个整体进行标题大小写处理。
 - en: unit rather than as two characters and Unicode simply tells you you need to
     get low-calaware。 rules for the specific language you're going to work with it
     handles some of these but。 nowhere near all the complexity that exists in all
@@ -469,6 +487,7 @@
   id: totrans-60
   prefs: []
   type: TYPE_NORMAL
+  zh: Unicode 简单地告诉你，需要获得你将要处理的特定语言的大小写敏感规则，虽然它处理了一些情况，但远没有涵盖所有语言中存在的复杂性。最后，我们需要理解，既然我们要与计算机合作，实际上如何将其转化为。
 - en: computer which means how do we get it into a binary form how do we encode it
     and decode。 it going between code points which are numeric values but kind of
     abstract to actual bits。 and bytes and to do that we need a Unicode transformation
@@ -477,6 +496,8 @@
   id: totrans-61
   prefs: []
   type: TYPE_NORMAL
+  zh: 计算机处理这意味着我们如何将其转化为二进制形式，如何编码和解码，在代码点之间转换，这些是数字值，但在实际的位和字节之间是抽象的。为此，我们需要一种 Unicode
+    转换格式，有很多种，我在这里列出了一些，你最常见的可能是 UTF-8 和 UTF-16。
 - en: but it's worth being aware that most of these are variable width they use different
     numbers。 of bytes to encode different code points UTF-8 for example for a code
     point from the。 ASCII range only needs one byte but for other code points may
@@ -485,6 +506,7 @@
   id: totrans-62
   prefs: []
   type: TYPE_NORMAL
+  zh: 不过值得注意的是，大多数这些是可变宽度的，它们使用不同数量的字节来编码不同的代码点。例如，对于ASCII范围内的代码点，UTF-8只需要一个字节，但其他代码点可能需要最多四个字节。对于最低编号平面（平面零或基本多语言平面BMP）的任何内容，UTF-16也是如此。
 - en: you'll sometimes see it written uses two bytes for anything from higher numbered
     planes uses。 four bytes because originally Unicode had just the one plane and
     it had two to the sixteenth。 code points in it so there was an assumption that
@@ -493,6 +515,7 @@
   id: totrans-63
   prefs: []
   type: TYPE_NORMAL
+  zh: 你有时会看到它写作，对于任何来自更高编号平面的内容使用两个字节，使用四个字节，因为最初Unicode只有一个平面，里面有到二的十六次方的代码点，因此有一个假设，即16位应该足够给任何人使用。对吧，最终Unicode添加了更多平面，UTF-16采用了一种方案。
 - en: lets it still handle 16 bit units but sometimes use two of them per code point
     the exact mechanics。 if you want to go look it up are called surrogate pairs and
     basically there is a segment of。 plane zero of Unicode that set aside that will
@@ -501,6 +524,7 @@
   id: totrans-64
   prefs: []
   type: TYPE_NORMAL
+  zh: 让它仍然处理16位单元，但有时每个代码点使用两个单元。如果你想查找确切的机制，称为替代对，基本上Unicode的平面零中有一段被保留，将永远不会被分配，UTF-16将大于16位的代码点转换为来自该范围的两个代码点，然后你可以。
 - en: transform them back again to get back the original value and this is how UTF-16
     handles those。 code points that are larger than 16 bits but that also means that
     it too now is a variable。 with encoding and of course we need to consider what
@@ -509,6 +533,7 @@
   id: totrans-65
   prefs: []
   type: TYPE_NORMAL
+  zh: 将它们再次转换回去以获取原始值，这就是UTF-16处理那些大于16位的代码点的方式，但这也意味着它现在也是一种可变编码，当然我们需要考虑我们将向程序员暴露什么样的抽象，因为在编程语言中处理字符串的方式是不同的。
 - en: they might be sequences of bytes they might be sequences of the encodings code
     units or。 they might be sequences of code points or sequences of graph themes
     and their trade-offs。 involved in all of these one of the important things to
@@ -517,6 +542,7 @@
   id: totrans-66
   prefs: []
   type: TYPE_NORMAL
+  zh: 它们可能是字节序列，也可能是编码代码单元的序列，或者可能是代码点的序列，或图形主题的序列及其权衡。要注意的一个重要事项是，根据你所选择的语言抽象，你可能能够或无法引发更改。
 - en: meaning or even completely invalidate a sequence of code points by cutting into
     it so for example。 in a language like see where typically strings are exposed
     as a sequence of bytes if you。 arbitrarily cut in the middle of that you might
@@ -525,6 +551,7 @@
   id: totrans-67
   prefs: []
   type: TYPE_NORMAL
+  zh: 通过切割进入代码点的序列，甚至可能完全使其失效。例如，在像C这样的语言中，通常字符串被作为字节序列暴露，如果你任意切割其中的一部分，可能会切割到一个多字节代码单元中间，或者可能会切割到一个需要多个字节的代码点中间。
 - en: be cutting at a code point boundary but cutting in the middle of a graph theme
     that's made。 up of multiple code points all of these operations can be unsafe
     and depending on which abstraction。 your language exposes to you you may be at
@@ -532,10 +559,12 @@
   id: totrans-68
   prefs: []
   type: TYPE_NORMAL
+  zh: 你可能在代码点边界进行切割，但如果在由多个代码点构成的图形主题中间进行切割，所有这些操作可能都是不安全的，具体取决于你所使用的语言向你暴露的抽象，你可能面临这些问题的不同版本。
 - en: '![](img/2a3245dcd9af276985281a539c729f78_17.png)'
   id: totrans-69
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/2a3245dcd9af276985281a539c729f78_17.png)'
 - en: now you might be wondering well what does Python do and you might also be wondering。
     well we're twenty minutes into this and you haven't really talked about Python
     I thought。 this was a Python talk well okay let's talk about Python originally
@@ -543,10 +572,13 @@
   id: totrans-70
   prefs: []
   type: TYPE_NORMAL
+  zh: 现在你可能在想，Python是怎么做的？你可能还在想，嗯，我们已经讲了二十分钟，你还没有真正谈到Python，我以为这是一个关于Python的演讲。好吧，来谈谈Python，最初有Python
+    2。
 - en: '![](img/2a3245dcd9af276985281a539c729f78_19.png)'
   id: totrans-71
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/2a3245dcd9af276985281a539c729f78_19.png)'
 - en: and Python 2's story for Unicode was not that great in Python 2 the string type
     was a sequence。 of bytes there was a separate type called the Unicode that was
     a Unicode string it offered。 access to lots of features of Unicode it could represent
@@ -634,6 +666,7 @@
   id: totrans-80
   prefs: []
   type: TYPE_NORMAL
+  zh: 代码单元，这是我喜欢在尝试不同语言时使用的测试方法：取一个像“屎堆”这样的字符串，问语言这有多长。如果你得到的答案是1，这意味着语言可能在以代码点或图形主题作为字符串抽象工作；如果你得到的答案是大于1，那么可能。
 - en: it's working with code units like Python used to with its 2-byte 16-bit encoding
     on narrow。 builds or maybe even at something more complex like just exposing sequences
     of UTF-8 bytes。 which will give you an even larger answer on some of the emoji
@@ -642,6 +675,7 @@
   id: totrans-81
   prefs: []
   type: TYPE_NORMAL
+  zh: 这与像Python这样的代码单元的工作方式类似，Python在窄构建上使用其2字节16位编码，或者甚至可能是更复杂的方式，比如仅暴露UTF-8字节序列。这将为某些表情符号提供更大的答案，但这是一个快速了解语言所做的事情及其暴露的抽象的好方法。
 - en: says it has Unicode support because that's an important thing to know now as
     far as Python。 we now have strings which are sequences of code points which means
     that we can find out。 information about them if we grab something out of a string
@@ -650,6 +684,7 @@
   id: totrans-82
   prefs: []
   type: TYPE_NORMAL
+  zh: 这表明它有Unicode支持，因为这是一个现在需要知道的重要事情。至于Python，我们现在有的字符串是代码点序列，这意味着我们可以找到关于它们的信息。如果我们从字符串中获取某些内容，那么长度为1的字符串就是一个代码点。如果我们迭代一个字符串，我们就是在迭代代码点。
 - en: take a slice of a string or index into a string we're getting code points and
     we can actually。 find out what's the numeric value of a code point and we can
     transform it into hexadecimal。 as a tradition for representing Unicode code points
@@ -658,6 +693,7 @@
   id: totrans-83
   prefs: []
   type: TYPE_NORMAL
+  zh: 当我们切片一个字符串或对字符串进行索引时，我们获取的是代码点，我们实际上可以找出代码点的数值，并可以将其转换为十六进制，作为表示Unicode代码点的传统。标准库中还有一个非常有用的模块叫Unicode数据，这为我们提供了大量的访问权限。
 - en: Unicode databases and the information that Unicode provides about its code points
     and。 characters so we can ask questions like what's the name of this code point
     or what category。 is it assigned to what's its bidirectional or combining rendering
@@ -666,6 +702,7 @@
   id: totrans-84
   prefs: []
   type: TYPE_NORMAL
+  zh: Unicode数据库以及Unicode提供的关于其代码点和字符的信息，因此我们可以提出问题，比如这个代码点的名称是什么，或它被分配到哪个类别，双向或组合渲染行为是什么，所有这些都是找出有用信息的方式。我们还可以从那个模块访问Unicode标准化。
 - en: and we can use any Unicode normalization form we want and so here for example
     we can take。 that pre-composed u with umlaut character and decompose it into the
     two code points sequence。 or we can take that pre-composed one half fraction and
@@ -674,6 +711,7 @@
   id: totrans-85
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们可以使用任何Unicode标准化形式，因此在这里，例如，我们可以将带有变音符号的预组合字符分解为两个代码点序列，或者我们可以将预组合的1/2分解为使用兼容等价的序列。此外，Python中还可以进行大小写折叠。
 - en: which is useful gives us access to case insensitive comparison and anytime you
     need to do a case。 insensitive string comparison in Python this is what you should
     be reaching for a lot of。 us probably developed habits from earlier days when
@@ -682,16 +720,19 @@
   id: totrans-86
   prefs: []
   type: TYPE_NORMAL
+  zh: 这很有用，给我们提供了不区分大小写比较的访问权限，任何时候你需要在Python中进行不区分大小写的字符串比较，这就是你应该去使用的。我们中的许多人可能养成了从早期不使用Unicode时的习惯，使用大写或小写，而我们中的许多人在处理数据库时可能仍然会这样做。
 - en: because we may not have a case fold abstraction in our sequel libraries or in
     our database。 but in Python we have that available and that's how we should be
     doing case insensitive comparisons。
   id: totrans-87
   prefs: []
   type: TYPE_NORMAL
+  zh: 因为我们在SQL库或数据库中可能没有大小写折叠的抽象，但在Python中我们有这个功能，这就是我们进行不区分大小写比较的方式。
 - en: '![](img/2a3245dcd9af276985281a539c729f78_21.png)'
   id: totrans-88
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/2a3245dcd9af276985281a539c729f78_21.png)'
 - en: of strings so everything is wonderful right obviously well yes in a way Python
     three and。 especially since three point three does a good job of implementing
     Unicode and exposing。 it in a useful way and making it relatively easy for us
@@ -700,10 +741,12 @@
   id: totrans-89
   prefs: []
   type: TYPE_NORMAL
+  zh: 字符串一切都很好，对吗？显然是的，某种程度上，Python 3 尤其是从 3.3 开始，做了很好的 Unicode 实现，并以有用的方式展示出来，使我们相对容易使用，但仍然有一些陷阱和问题，我们可能会陷入其中，尤其是绝对路径的问题。
 - en: '![](img/2a3245dcd9af276985281a539c729f78_23.png)'
   id: totrans-90
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/2a3245dcd9af276985281a539c729f78_23.png)'
 - en: statements but this is one that I will get pretty absolute on I will call this
     the golden。 rule of working with text in any sort of programming language not
     just Python is to be aware of。 your programs boundaries and do encoding and decoding
@@ -712,6 +755,7 @@
   id: totrans-91
   prefs: []
   type: TYPE_NORMAL
+  zh: 这是我会绝对坚持的规则，我称之为任何编程语言（不仅仅是 Python）处理中与文本有关的黄金法则，即要意识到你程序的边界，并在那里进行编码和解码，仅在那儿；我所说的边界是指，如果你的程序读取和写入文件，那么这就是一个边界。
 - en: when it opens up and reads the contents of a file or writes the contents back
     onto the。 file system if your program talks over a network that's a boundary when
     it sends information。 out over that connection or receives information coming
@@ -720,6 +764,7 @@
   id: totrans-92
   prefs: []
   type: TYPE_NORMAL
+  zh: 当它打开并读取文件的内容或将内容写回文件系统时，如果你的程序通过网络通信，那么这是一个边界；当它通过该连接发送信息或接收信息时，这些都是你应该进行编码和解码的点，这些是你应该处理字节的地方。
 - en: objects but once you have them encoded or decoded you should be working entirely
     with。 strings internally you should not be passing around bytes objects or dealing
     with encoded。 sequences of bytes at almost any cost because most older approaches
@@ -728,6 +773,8 @@
   id: totrans-93
   prefs: []
   type: TYPE_NORMAL
+  zh: 对象，但一旦你将它们编码或解码，你应该完全使用字符串，内部不应传递字节对象或处理编码的字节序列，因为大多数较旧的方法以及许多较旧的 Python 代码在从
+    2 跃升到 3 时遇到麻烦正是因为这个原因。
 - en: of mixing of byte strings and Unicode strings or even just not using Unicode
     strings at all。 in some cases and not thinking about encoding and decoding and
     where they needed to happen。 so this is your golden rule if you take nothing else
@@ -736,6 +783,7 @@
   id: totrans-94
   prefs: []
   type: TYPE_NORMAL
+  zh: 字节字符串和 Unicode 字符串的混合，或者根本不使用 Unicode 字符串的情况，可能会出现，并且没有考虑编码和解码以及它们需要发生的地方。因此，这是你的黄金法则：如果你只记住这一点，请寻找你程序的边界，识别它们，在那里进行编码和解码，仅在那儿进行。
 - en: else be working with strings be working with real Unicode now there is still
     some difficulty。 every once in a while especially when it comes to working with
     files and especially on certain。 types of Unix operating systems and these problems
@@ -744,6 +792,7 @@
   id: totrans-95
   prefs: []
   type: TYPE_NORMAL
+  zh: 否则就应处理字符串，真正使用 Unicode。现在，仍然存在一些困难，尤其是在处理文件时，尤其是在某些类型的 Unix 操作系统上，这些问题可分为几个不同的类别。有些系统没有可靠的方法来询问系统使用什么编码。
 - en: for its file system so you know that something like a file name is a sequence
     of bytes but。 you might not have any way of figuring out how to decode that into
     a sequence of Unicode。 code points there are also file systems where technically
@@ -752,6 +801,7 @@
   id: totrans-96
   prefs: []
   type: TYPE_NORMAL
+  zh: 对于它的文件系统，文件名是字节序列，但你可能没有任何方法来确定如何将其解码为 Unicode 代码点的序列；也有一些文件系统在技术上没有要求能够解码，路径可以是你想要的任意字节序列。
 - en: and never validly decode in any known encoding and Python has made progress
     over the course。 of the Python 3 release series with getting better at this there
     are some tips and tricks。 and tools and now Python mostly does its best to let
@@ -760,6 +810,8 @@
   id: totrans-97
   prefs: []
   type: TYPE_NORMAL
+  zh: 并且在任何已知编码中都无法有效解码，Python 在 Python 3 版本系列中取得了进展，变得更好，有一些技巧和工具。现在，Python 通常会尽力让你将文件系统视为
+    UTF-8，处理可能无效或完全无法解码的路径时也有一些技巧。
 - en: what Python does now is similar to what UTF-16 does where when it encounters
     a byte that。 can't possibly decode as a sequence of code points it preserves it
     as is by transforming。 it into a code point from the surrogate pair range and
@@ -842,6 +894,7 @@
   id: totrans-107
   prefs: []
   type: TYPE_NORMAL
+  zh: 不再知道如何渲染，许多emoji也是如此。例如，这是一个四口之家的家庭，但在底层它是七个不同的码点，而许多人类的emoji都是多码点序列，要么是组成一组人，要么是组成修改符以指示性别、肤色或其他属性。
 - en: again splitting in the middle of them can be destructive it can change the meaning
     or。 completely destroy the meaning of a sequence so we need to turn back to that
     concept we。 saw earlier of the graph theme the minimally distinctive unit of meaning
@@ -850,6 +903,7 @@
   id: totrans-108
   prefs: []
   type: TYPE_NORMAL
+  zh: 再次在它们中间拆分可能是破坏性的，这可能改变含义或完全毁坏序列的意义，因此我们需要回到我们之前看到的图形主题概念，即最小的独特意义单元。不幸的是，Python没有直接提供处理字符串中图形主题的方法，但你可以。
 - en: still do it using third party libraries so for example this is a third party
     regular。 expression library called regex you can pip install it and it offers
     a lot more support。 for Unicode then Python's standard library regex module does
@@ -858,6 +912,7 @@
   id: totrans-109
   prefs: []
   type: TYPE_NORMAL
+  zh: 仍然可以使用第三方库来完成，例如，这是一个名为regex的第三方正则表达式库，你可以通过pip安装，它提供了比Python标准库的正则表达式模块更好的Unicode支持，包括过滤和匹配Unicode属性，最重要的是，在这种情况下，它提供了一个元。
 - en: character for matching Unicode graph theme clusters and this is actually defined
     in one。 of the Unicode specifications it's supposed to be this capital X character
     but it means。 that we can do things now like count the number of graph themes
@@ -866,6 +921,7 @@
   id: totrans-110
   prefs: []
   type: TYPE_NORMAL
+  zh: 用于匹配Unicode图形主题簇的字符，这实际上是在Unicode规范之一中定义的，应该是这个大写字母X字符，但它意味着我们现在可以做一些事情，比如计算字符串中的图形主题数量，或者在图形主题上拆分，或者遍历图形主题，而不是冒着拆分图形主题的风险。
 - en: made up of multiple code points but even in the Python standard library there
     is still。 a lot of awareness of Unicode if we go back to for example the regex
     module in the Python。 standard library most of us have probably written code like
@@ -874,6 +930,7 @@
   id: totrans-111
   prefs: []
   type: TYPE_NORMAL
+  zh: 由多个码点组成，但即使在Python标准库中，对Unicode的认知仍然很强。如果我们回到Python标准库中的正则表达式模块，大多数人可能都写过这样的代码，表示哦，好的，我需要匹配看起来像年份的东西，因此是四个的序列。
 - en: digits and it's going to be something like 2020 well it turns out Unicode has
     a much。 broader concept of digit than what speakers of English and Western European
     languages。 do so that second string for example pulls digit characters from four
@@ -882,6 +939,7 @@
   id: totrans-112
   prefs: []
   type: TYPE_NORMAL
+  zh: 数字，它将类似于2020，实际上Unicode对数字的概念要比英语和西欧语言的使用者宽泛得多。比如，这个第二个字符串从四个不同的区块和四种不同的语言中提取了数字字符，但仍然匹配，因为根据。
 - en: to Unicode properties they are all digits and this is an important thing to
     be aware of。 when you're working with Python in Python 3 where everything is Unicode
     and things are。 mostly Unicode aware that you need to be explicit as the Zen of
@@ -890,6 +948,7 @@
   id: totrans-113
   prefs: []
   type: TYPE_NORMAL
+  zh: 关于Unicode属性，它们都是数字，当你在Python 3中工作时，这是一个重要的事情，所有东西都是Unicode，大部分都是Unicode感知的，你需要明确，就像Python的禅语所说的，明确优于隐含，但你需要确保理解这些东西的含义。
 - en: mean like this digit medic character or the other regex medic characters and
     if what you。 really wanted was only to match digits 0 through 9 from the Latin
     character set you can say。 that but you do have to be explicit about it。 There
@@ -898,6 +957,7 @@
   id: totrans-114
   prefs: []
   type: TYPE_NORMAL
+  zh: 比如这个数字字符或者其他正则表达式字符，如果你真正想要的只是匹配拉丁字符集中的数字0到9，你可以这么说，但你确实需要明确。此外，处理字符串比较和与不同字符串的操作也可能会遇到困难。
 - en: the same thing different ways and here it can be difficult to give any single
     answer because。 the answer is usually context sensitive it depends on what you're
     doing。 So for example。 here this is a fairly simple algorithm but it comes from
