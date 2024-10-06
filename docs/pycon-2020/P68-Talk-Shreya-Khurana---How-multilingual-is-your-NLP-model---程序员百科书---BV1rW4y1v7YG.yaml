@@ -87,6 +87,7 @@
   id: totrans-10
   prefs: []
   type: TYPE_NORMAL
+  zh: 要做的是找出输入序列中哪些词是命名实体，比如地点、人物名字等。语言建模。在我看来，这是语言系统中最有趣的工作。因此，你要做的是输入一个句子，基本上尝试预测该句子的概率，即该句子的概率。
 - en: of that corpus， what is the probability that this word will occur next given
     the first， few words。 Machine translation is as the name suggests it's translating
     from one language。 to the other and right now with the boom of neural networks
@@ -95,16 +96,19 @@
   id: totrans-11
   prefs: []
   type: TYPE_NORMAL
+  zh: 在该语料库中，给定前几个单词，接下来这个词出现的概率是多少。机器翻译顾名思义，就是从一种语言翻译成另一种语言，而现在随着神经网络在自然语言处理（NLP）中的蓬勃发展，这一领域正在进行大量研究。序列分类可能与情感分析有关。
 - en: analysis where what you're trying to do is you have an input sequence and you're
     just trying。 to assign it to one or the other class。 Now let's see some of the
     examples of this new。
   id: totrans-12
   prefs: []
   type: TYPE_NORMAL
+  zh: 分析，你要做的是输入一个序列，然后尝试将其分配给一个或另一个类别。现在让我们看看一些这种新方法的例子。
 - en: '![](img/655df6621bc0adf7ffe519682da6a324_3.png)'
   id: totrans-13
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/655df6621bc0adf7ffe519682da6a324_3.png)'
 - en: sort of language data that we're seeing。 So which means that you're trying to
     mix between。 syntax or grammar of one language with the other and this often happens
     when we have multilingual。 speakers and they sometimes miss elements of multiple
@@ -113,6 +117,7 @@
   id: totrans-14
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们所看到的这种语言数据意味着你正在尝试将一种语言的句法或语法与另一种语言混合，这种情况通常发生在我们有多语言使用者的时候，他们有时会将多种语言的元素混合在一起，因此你会看到不同的音位和句法混合在一起。在右侧，你可以看到这个例子。
 - en: where the first two words are of English and the rest of the sentence is in
     Malay and you。 can often see them in conversations。 This is an example in Spanglish
     so it's a mixture。 of English the first few words and the rest ending is of Spanish。
@@ -121,6 +126,7 @@
   id: totrans-15
   prefs: []
   type: TYPE_NORMAL
+  zh: 其中前两个单词是英语，其余句子是马来语，你经常可以在对话中看到它们。这是一个西班牙英语的例子，因此它是英语和西班牙语的混合，前几个单词是英语，其余部分是西班牙语。好吧，实际上是利用我的Facebook时间线去寻找代码切换的例子。
 - en: translated data。 So this first example here is code switched because the first
     few words。 in the first example are in the translated text which means it's Hindi
     but it's actually。 converted to the English alphabet and the last three words
@@ -129,6 +135,7 @@
   id: totrans-16
   prefs: []
   type: TYPE_NORMAL
+  zh: 翻译的数据。第一个例子是代码切换，因为在第一个例子中的前几个单词是翻译文本，这意味着它是印地语，但实际上是转换为英语字母，最后三个单词“让我庆祝”是英语。这个例子是独特的，因为前几个单词是。
 - en: in the Hindi they've not great script which means it's in the native script。
     The last of。 the few words are in English and there's also a couple of words which
     are in transliterated。 English text。 This is the example of a tweet where you
@@ -137,6 +144,7 @@
   id: totrans-17
   prefs: []
   type: TYPE_NORMAL
+  zh: 在印地语中，他们没有很好的书写方式，这意味着它使用的是本土书写系统。最后几个单词是英语，还有几个词是转写的英语文本。这是一个推文的例子，你可以识别出前四个单词“当你妈妈说”是英语，但其余的单词是转写的。
 - en: English。 So these examples are pretty common if you look at YouTube comments
     or comments。 on Amazon tweets or on Facebook and this is because whenever multilingual
     speak they tend。 to mix languages and grammar of different types together。 So
@@ -145,6 +153,7 @@
   id: totrans-18
   prefs: []
   type: TYPE_NORMAL
+  zh: 英语。这些例子在观看YouTube评论或亚马逊推文，或在Facebook上时是相当常见的，这是因为每当多语言者说话时，他们往往会混合不同类型的语言和语法。因此，作为Facebook这一倡议的一部分，实际上是打破障碍，允许每个人以自己的方式进行互动。
 - en: content in their own language what they did was they started working with transliterated。
     text and translating it into either the native script or the English script。 So
     the official。 definition of transliteration is that you convert words written
@@ -153,6 +162,7 @@
   id: totrans-19
   prefs: []
   type: TYPE_NORMAL
+  zh: 在自己的语言中，他们开始使用转写文本，并将其翻译成本地文字或英语文字。因此，转写的官方定义是将用一种字母书写的词转换为另一种字母，这通常发生在你没有对不同文字的支持时。
 - en: in your keyboard or if you're working on a phone so basically it's just easier
     to work。 with a single set of alphabet。 So on the left hand side of the screenshot
     you would be able。 to recognize there are different scripts， there are words in
@@ -161,6 +171,7 @@
   id: totrans-20
   prefs: []
   type: TYPE_NORMAL
+  zh: 在你的键盘上或者如果你在手机上工作，基本上用一个字母集工作会更简单。因此，在屏幕截图的左侧，你可以识别出不同的文字，有些英语单词你可能无法识别，可能还有西班牙语单词，而Facebook所做的就是他们。
 - en: basically translated everything to English and so if you are a speaker who does
     not speak。 Spanish or other languages that are shown in the text then you would
     be able to recognize。 the screenshot on the right and read stuff in English。 Alright，
@@ -169,6 +180,7 @@
   id: totrans-21
   prefs: []
   type: TYPE_NORMAL
+  zh: 基本上将所有内容翻译成英语，因此如果你是一个不会说西班牙语或其他文本中展示的语言的说话者，那么你将能够识别右侧的屏幕截图，并以英语阅读内容。好了，现在我们转到语言识别。语言识别是一个非常困难的问题，因为存在某些。
 - en: vocabularies in many languages which are shared and the first framework we're
     going。 to be covering right now is CLD3。 Now CLD3 was this Chrome extension that
     was released by。 Google and if you ever use Chrome you know that it detects language
@@ -177,6 +189,7 @@
   id: totrans-22
   prefs: []
   type: TYPE_NORMAL
+  zh: 在许多语言中共享的词汇，而我们现在要覆盖的第一个框架是CLD3。CLD3是谷歌发布的一个Chrome扩展，如果你使用过Chrome，你就知道它可以检测语言。那么它是如何构建的呢？是使用N-grams。所以他们做的是假设你有一个输入序列。
 - en: they would extract the unicroms and they would calculate the probability of
     each。 Instagram so a unigram in this case is just a simple character。 Then they
     would go to。 buy grams and they would look at pairs of characters and what is
@@ -185,6 +198,7 @@
   id: totrans-23
   prefs: []
   type: TYPE_NORMAL
+  zh: 他们会提取单元，并计算每个Instagram的概率，因此在这种情况下，单元仅仅是一个简单的字符。然后他们会转向双元，查看字符对以及它们在输入序列中出现的概率，对于三元也是如此。然后基本上。
 - en: they would embed all of these unigram probabilities in an embedding layer， feed
     that to a hidden。 layer of certain neurons and basically feed that to a softmax
     layer。 During the inference。 they would do something like extract these N-grams
@@ -193,6 +207,7 @@
   id: totrans-24
   prefs: []
   type: TYPE_NORMAL
+  zh: 他们会将所有这些单元概率嵌入到一个嵌入层，然后将其输入到某些神经元的隐藏层，基本上再送到一个softmax层。在推理过程中，他们会提取输入文本中的这些N-grams，计算概率，然后只需通过整个神经网络进行一次前向传递。
 - en: So let's see CLD3 in practice。 It supports these set of languages that are shown
     here。 and it also supports the encircled ones which are the transliterated ones。
     So you can see。 that it supports Chinese transliterated Russian， Bulgarian， Greek
@@ -201,6 +216,7 @@
   id: totrans-25
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以让我们看看CLD3的实际应用。它支持这里展示的一组语言，也支持圈出的那些转写语言。因此你可以看到，它支持中文、转写的俄语、保加利亚语、希腊语（EL）、日语（JA）、印地语（H.I），而拉丁前缀和后缀则表示它是转写的。
 - en: So CLD3 has this function called get language where if you just give it the
     input sentence。 or just a sequence of characters it would recognize what language
     it's in。 So it gives。 the probability with which it's predicting that language
@@ -209,6 +225,7 @@
   id: totrans-26
   prefs: []
   type: TYPE_NORMAL
+  zh: CLD3有一个叫做get language的功能，如果你输入一句话或一串字符，它会识别出是什么语言。因此，它会给出预测该语言的概率，并且还会提供它认为文本中属于该语言的比例。在这里，第一个例子中我们看到。
 - en: give it a mixture of French which is the Jürburgr， the first three words and
     we give。 it a URL but it's unable to recognize that French part of the sentence
     and that is because。 it gets confused to the URL which is in English。 Now CLD3
@@ -289,6 +306,7 @@
   id: totrans-35
   prefs: []
   type: TYPE_NORMAL
+  zh: 朴素贝叶斯分类器和多项事件模型的组合，它只查看字节和n-gram的混合物。现在我们来看看实践中如何运作，所以我所做的是加载模型，您在这里标准化概率，这意味着您有评分，并将为所有不同语言标准化概率。
 - en: So I set the language to be a particular， set over here this is one very useful
     advantage of using this module that you can actually set it to。 be a particular
     language set。 So if you're sure that your training set only has about four languages。
@@ -298,6 +316,7 @@
   id: totrans-36
   prefs: []
   type: TYPE_NORMAL
+  zh: 我将语言设置为特定语言集，这里是使用该模块的一个非常有用的优点，您可以将其实际设置为特定语言集。因此，如果您确定训练集只有四种语言，您可以将其提供给识别器，它将预测这四种语言之一。现在让我们看看我们所说的语言，包括俄语、英语、意大利语和斯洛伐克语。
 - en: we see that this is the piece of transliterated Russian that we gave it earlier
     also in CLD3。 it predicts it to be a slow vakian with a probability of 0。67。 Another
     example is of this Hindi transliteration where I give it a set of Hindi and English。
@@ -306,6 +325,7 @@
   id: totrans-37
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们看到这是之前在CLD3中给出的转写俄语，它预测为慢瓦基安语，概率为0.67。另一个例子是这个印地语转写，我给了一组印地语和英语文本，但由于它根本不支持转写文本，因此只预测为英语。
 - en: it sees English characters over here。 Another identification framework we have
     is Langdetect。 However one thing that you should know about Langdetect is that
     it is。 undeterministic which means that if you try and run it on a text which
@@ -314,6 +334,7 @@
   id: totrans-38
   prefs: []
   type: TYPE_NORMAL
+  zh: 因为它在这里看到的是英语字符。我们还有另一个识别框架Langdetect。然而，您应该知道Langdetect有一个特点，即它是不可确定的，这意味着如果您在文本过短或过于模糊的情况下运行它，可能每次都会得到不同的结果。
 - en: classifier and works with character based engrams。 However it supports only
     about 49 languages and。 those also with about 99。8% precision。 It does not support
     any of the transliterated languages though。 and how it works is that basically
@@ -322,6 +343,7 @@
   id: totrans-39
   prefs: []
   type: TYPE_NORMAL
+  zh: 分类器基于字符的n-gram工作。然而，它仅支持大约49种语言，并且精确度约为99.8%。不过，它不支持任何转写语言，其工作原理基本上是根据语言计算特征。如果您查看带重音的E，您只能在西班牙语和意大利语中看到，而在其他语言中则不太常见。
 - en: English right and it will look at features like how often the words that are
     starting with Z。 are used in German versus how often they're used in English and
     then it will compute the。 probability of those features given the input sequence。
@@ -330,6 +352,7 @@
   id: totrans-40
   prefs: []
   type: TYPE_NORMAL
+  zh: 它是基于英语的，并会查看像Z开头的单词在德语中使用的频率与在英语中使用的频率的差异，然后计算给定输入序列的这些特征的概率。在Python中，您可以将其导入为Langdetect，它有一个检测函数。
 - en: Langs。 Again you can just go through the notebooks at your own pace， play with
     it， give it more。 examples， get a feel of how it's performing on your preferred
     language。 Now over here as you can see again because it does not support transliterated
@@ -338,6 +361,7 @@
   id: totrans-41
   prefs: []
   type: TYPE_NORMAL
+  zh: 您可以根据自己的节奏浏览笔记本，进行尝试，给它更多例子，感受它在您偏好的语言上的表现。正如您在这里所见，由于它不支持转写数据，它只预测为慢瓦基安语。如果您再次运行它，由于其非确定性，它会给您不同的结果。
 - en: four different languages with four different probabilities like over here is
     predicting。 slow wakian， albanian， huern， hung， gary， and but none of them is
     Russian。 So in the past few slides we saw how all of these frameworks have their
@@ -346,6 +370,7 @@
   id: totrans-42
   prefs: []
   type: TYPE_NORMAL
+  zh: 四种不同语言和四种不同概率的预测，如这里所示。慢瓦基安语、阿尔巴尼亚语、赫尔语、匈牙利语、加里语，但其中没有俄语。在之前的几张幻灯片中，我们看到所有这些框架都有自己的局限性。
 - en: recognizing them。 If you have a very small text length that means you're just
     giving very。 less information to the model or any of these models that these frameworks
     have been trained on。 There are often borrowed words from different languages
