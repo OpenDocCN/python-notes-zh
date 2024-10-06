@@ -469,6 +469,7 @@
   id: totrans-55
   prefs: []
   type: TYPE_NORMAL
+  zh: 循环复杂度，它会将复杂性细分到函数级别。因此，在这个例子中，我只是添加了一个名为test8的测试函数，它仅添加了几行。代码和另一个测试案例，所以它会为我打印信息。然后最后，你可以对这些指标进行图形化，所以如果我对我的测试文件进行图形化，想要。
 - en: to look at the maintainability index over time then it's going to print that
     out for。 me in an interactive graph and each point on the graph will actually
     be the Git revision。 and the reasons why and also the author of the Git commit。
@@ -477,6 +478,7 @@
   id: totrans-56
   prefs: []
   type: TYPE_NORMAL
+  zh: 随着时间推移查看可维护性指数，那么它会为我打印出一个交互式图形，图上的每个点实际上都是Git修订版。及其原因，还有Git提交的作者。所以这是一个小玩具演示，但对于一个大型应用程序，你可以尝试另一个示例。所以我可以看到。
 - en: how the maintainability index of my code has changed with each Git commit and
     then lastly。 you can combine metrics together so if you wanted to look at maintainability
     index and。 lines of code you can give it multiple measures and it will add a second
@@ -485,19 +487,23 @@
   id: totrans-57
   prefs: []
   type: TYPE_NORMAL
+  zh: 每次Git提交后我的代码的可维护性指数是如何变化的，最后。你可以将多个指标结合在一起，所以如果你想查看可维护性指数和。代码行数，可以给出多个度量，它会将第二个度量作为气泡。大小添加，因此我基本上可以查看我的代码随时间变化的情况。
 - en: '![](img/7da318d509d441e90f69efc38e15b1a9_10.png)'
   id: totrans-58
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/7da318d509d441e90f69efc38e15b1a9_10.png)'
 - en: Okay so using Wiley you can track the complexity of your code and then you can
     start to refactor。
   id: totrans-59
   prefs: []
   type: TYPE_NORMAL
+  zh: 好的，使用Wiley你可以跟踪代码的复杂性，然后你可以开始重构。
 - en: '![](img/7da318d509d441e90f69efc38e15b1a9_12.png)'
   id: totrans-60
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/7da318d509d441e90f69efc38e15b1a9_12.png)'
 - en: it to make it simpler。 There's something else I wanted to point out which is
     that when you。 start to look at complexity in your applications you're going to
     find that some of your modules。 some of your files have a complexity which is
@@ -506,6 +512,7 @@
   id: totrans-61
   prefs: []
   type: TYPE_NORMAL
+  zh: 使其变得更简单。我还想指出的是，当你开始关注应用程序中的复杂性时，你会发现一些模块。一些文件的复杂性远高于其他文件，其原因在于复杂性有其自身的引力。因此，如果你有一个函数。
 - en: you've started to add edge cases to as your application matures you're going
     to find yourself。 adding more and more edge cases to that function。 If you've
     got what they call like a god class。 or something or a module that basically ends
@@ -514,6 +521,7 @@
   id: totrans-62
   prefs: []
   type: TYPE_NORMAL
+  zh: 你开始为应用程序添加边界情况，随着应用程序的发展，你会发现自己。越来越多地为那个函数添加边界情况。如果你有一个所谓的“上帝类”或某种模块，基本上会处理所有情况，那么这将。带来越来越多的复杂性。所以我想指出这个原则，因为我认为。
 - en: it's important when you start to refactor is that one of the things you need
     to start。 to do is to spread complexity around your code， break it up and follow
     something called the。 single responsibility principle。 The single responsibility
@@ -522,6 +530,7 @@
   id: totrans-63
   prefs: []
   type: TYPE_NORMAL
+  zh: 在开始重构时重要的一点是，你需要开始做的是将复杂性分散到你的代码中，拆分它，并遵循一种称为。单一责任原则。单一责任原则是指任何函数或任何代码片段应具有一个责任。你不应该有一段代码。
 - en: is trying to achieve everything because then it becomes unmaintainable。 it has
     too many characteristics， and it becomes very hard to test。 This lovely creature
     is the cane code， there's anyone here， from Australia？ One at the back。 You probably
@@ -529,6 +538,7 @@
   id: totrans-64
   prefs: []
   type: TYPE_NORMAL
+  zh: 正在尝试实现所有功能，因为那样就变得不可维护。它的特性太多，测试起来非常困难。这个可爱的生物是红蟾蜍，这里有来自澳大利亚的人吗？后面有一个。你可能认得它。所以有毒的红蟾蜍是。
 - en: introduced in 1935 to Australia in the hope that they would control the destructive
     cane。 beetle population。 So why am I talking about this？ They turned out to be
     really bad at controlling。 beetles but remarkably successful at reproducing。 They
