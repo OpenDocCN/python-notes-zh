@@ -99,6 +99,7 @@
   id: totrans-13
   prefs: []
   type: TYPE_NORMAL
+  zh: 成像仪正在向大气中喷出大量气体。右侧是科罗拉多州。这就是未封闭的气井管道泄漏天然气进入地下的情况，几周或几个月后，天然气渗入某人的地下室，导致他们的房子爆炸。因此，寻找气体泄漏是非常重要的。这在物理规模上是一个非常大的问题。
 - en: It's typical for a company to manage maybe 10，000， thousands of wells。 And it's
     typical to be able to send guys with a pickup truck out with that optical gas。
     imager to maybe one or two of these a day。 And so they do not get inspected very
@@ -107,6 +108,7 @@
   id: totrans-14
   prefs: []
   type: TYPE_NORMAL
+  zh: 一家公司通常会管理大约10,000口井，成千上万的井。通常情况下，工作人员会驾驶一辆皮卡车，带着光学气体成像仪，每天可能检查一到两个井。因此，这些井并不会经常接受检查，而这些检查往往是随机进行的，因为他们不知道该派哪位工作人员去。所以我们发明了泄漏调查仪。
 - en: This is a picon so I'm going to gloss over the hardware a little bit but basically
     what you need to know。 is we throw a bunch of optics and electronics into a fiberglass
     pod and we strap it to the bottom of the cessna。 and we fly it over oil producing
@@ -115,6 +117,7 @@
   id: totrans-15
   prefs: []
   type: TYPE_NORMAL
+  zh: 这是一个picon，所以我将略过硬件的细节，但基本上你需要知道的是，我们把一堆光学元件和电子设备放进一个玻璃纤维舱，然后把它绑在塞斯纳飞机的底部，我们飞过像二叠纪盆地这样的石油生产区域。光学组件是光谱仪，基本上可以检测甲烷的吸收波长。
 - en: There's a 6-axis GPS which tells us where we are and there is an optical camera
     which tells us what we're looking at。 And we combine all that data using a metric
     that we develop to turn that into information that shows us where on the ground。
@@ -125,6 +128,7 @@
   id: totrans-16
   prefs: []
   type: TYPE_NORMAL
+  zh: 这里有一个6轴GPS，告诉我们我们在哪里，还有一个光学相机，告诉我们我们在看什么。我们将所有这些数据结合起来，使用我们开发的一个指标，将其转化为信息，显示出地面上甲烷的浓度。这就是你现在看到的，我们多次经过同一个设施，观察到泄漏。但硬件只是开始。你需要将数据从飞机转移到云端，才能在现实世界中进行操作。
 - en: You need to do a ton of crunching on it。 You need to turn it into a GIS product
     so people know what they're looking at and where。 And you need to deliver that
     to people who can actually fix the leaks。 So I want to talk about that entire
@@ -133,16 +137,19 @@
   id: totrans-17
   prefs: []
   type: TYPE_NORMAL
+  zh: 你需要对这些数据进行大量的处理。你需要将其转化为GIS产品，以便人们知道他们在看什么以及在哪里。你还需要将这些信息传递给能够实际修复泄漏的人。因此，我想谈谈整个过程，如何从传感器数据转变为实际的泄漏修复。我想讨论的第一件事是我所称之为可扩展的突发科学计算。
 - en: So how does it work？ We start， we land a plane in Midland Texas。 First thing
     you have to do is figure out how to upload 100 gigabytes of data from Midland
     Texas。
   id: totrans-18
   prefs: []
   type: TYPE_NORMAL
+  zh: 那么这怎么运作呢？我们开始，飞机在德克萨斯州米德兰降落。首先要做的就是弄清楚如何从德克萨斯州米德兰上传100GB的数据。
 - en: '![](img/20d91c795ad2920af997c03ad1fe7d9a_7.png)'
   id: totrans-19
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/20d91c795ad2920af997c03ad1fe7d9a_7.png)'
 - en: Once that hits S3 it sends off an SQS message which gets picked up by our cloud
     orchestration。 It spins up a bunch of really big iron and it outputs that data
     to S3 where we pick it up in some apps that we developed for our analysts。 Some
@@ -151,6 +158,7 @@
   id: totrans-20
   prefs: []
   type: TYPE_NORMAL
+  zh: 一旦数据传送到S3，就会发送一个SQS消息，被我们的云编排系统接收。它启动一大堆强大的服务器，并将数据输出到S3，我们在为分析师开发的一些应用程序中接收这些数据。其中一些应用程序基于QGIS，这是一个非常好的开源GIS工具包。有些则是基于网页应用程序，很多数据会推送到PostGIS中。
 - en: So one of the things that makes us different from a typical consumer facing
     application is that we do really big bursty computing。 and then we get rid of
     all the servers。 So we treat our servers like cattle rather than pets when you're
@@ -158,6 +166,7 @@
   id: totrans-21
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们与典型消费者应用程序的不同之处在于，我们进行非常大规模的突发计算，然后就把所有服务器都清除掉。因此，我们将服务器视为牛群，而不是宠物，完成后就把它们处理掉。
 - en: So we built an MVP because we figured the absolute critical thing that we needed
     to do was be able to run this end to end without any human intervention if we
     wanted to be able to scale up this process。 So we built a job runner based on
