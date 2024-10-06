@@ -93,6 +93,7 @@
   id: totrans-11
   prefs: []
   type: TYPE_NORMAL
+  zh: 换句话说，这些漏洞中有三分之二是可以通过不同的编程语言来避免的。这就是为什么不选C而特别选择Rust的原因。首先，Rust是内存安全的。这意味着只要不使用Rust的不安全关键字，这些漏洞类别，比如缓冲区溢出和使用已释放内存，是不可能发生的。
 - en: It's high performance in the same way C is。 You can control the exact layouts
     of objects and memory allocations。 And it's got a very modern set of tooling such
     as a package manager， build system， code。 formatter and even integration with
@@ -101,6 +102,7 @@
   id: totrans-12
   prefs: []
   type: TYPE_NORMAL
+  zh: 它的性能与C一样高。你可以精确控制对象和内存分配的布局。它还具备一整套现代工具，比如包管理器、构建系统、代码格式化器，甚至与Python绑定的集成。目前已经广泛使用，这次会议的许多赞助商也在使用它。
 - en: other major tech companies are using Rust。 Having identified that we thought
     Rust was a good choice for pie C8 cryptography that。 was really enough for us
     to commit to figure out how we were going to use it。 But we have another motivation
@@ -110,6 +112,8 @@
   id: totrans-13
   prefs: []
   type: TYPE_NORMAL
+  zh: 其他主要科技公司也在使用Rust。经过识别，我们认为Rust是用于PIE C8加密的一个不错选择。这足以让我们决定如何使用它。但我们还有另一个动机。当保罗和我审视内存安全问题时，我们看到的问题远不止PIE
+    C8加密在OpenSSL中的应用。我们看到的问题影响到操作系统和网页浏览器。
 - en: chat applications and video， and image libraries。 And we see memory and safety
     vulnerabilities used against women's rights activists。 human， rights activists，
     nutritionists working on a sugar tax in Mexico and ethnic minorities。 And we believe
@@ -119,6 +123,7 @@
   id: totrans-14
   prefs: []
   type: TYPE_NORMAL
+  zh: 聊天应用程序、视频和图像库。我们看到内存和安全漏洞被用来对抗女性权利活动家、人权活动家、在墨西哥推进糖税的营养学家以及少数民族。我们相信必须也可以采取措施来改善安全状态，使得利用这些漏洞变得如此实际。改善这种状况的一部分是让更多的人更容易采用内存安全的方案。
 - en: languages。 We have a pretty significant place in the Python ecosystem。 A lot
     of people rely on us。 As you may have gotten from the title of this talk we have
     millions of downloads a day。 We regularly are in the top 20 Python packages on
@@ -127,6 +132,7 @@
   id: totrans-15
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们在Python生态系统中占有相当重要的位置。很多人依赖我们。正如你可能从这次演讲的标题中了解到的，我们每天有数百万次下载。我们经常在PIPI下载量前20名的Python包中。我们希望利用这个位置，让下一个想要采用Rust的库变得更容易。
 - en: to improve their security。 As you're going to hear we have to do a bunch of
     work to make this practical and realistic。 We want the next person to choose Rust
     not to have to deal with the challenges we had， to。 So how did we actually go
@@ -136,6 +142,7 @@
   id: totrans-16
   prefs: []
   type: TYPE_NORMAL
+  zh: 为了提高它们的安全性。正如你将听到的，我们需要做大量工作，使其实际可行。我们希望下一个选择Rust的人不必面对我们曾经遇到的挑战。那么，我们实际上是如何开始采用Rust的呢？首先，我们必须弄清楚除了Rust编程语言本身外，我们要使用哪些工具。我们做出的第一个选择是用哪个库来进行Python之间的绑定。
 - en: and Rust code。 We chose a library called PIO3 which wraps the CPython C API。
     It's got a very ergonomic API。 It's well maintained。 It has support for basically
     the entire Python API surface。 And here's some example code creating a module
@@ -143,6 +150,7 @@
   id: totrans-17
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们选择了一个名为PIO3的库，它封装了CPython C API。这个库的API非常人性化，维护良好，基本上支持整个Python API的所有功能。以下是一些示例代码，创建一个模块，其中包含一个名为的单一函数。
 - en: double that takes an integer and multiplies it by two。 We're not going to fully
     explain the Rust programming language but hopefully this is。 pretty reasonable
     readable to you。 And PIO3 handles a lot of the details behind the scenes automatically
