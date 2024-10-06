@@ -4,15 +4,18 @@
   prefs:
   - PREF_H1
   type: TYPE_NORMAL
+  zh: P61：演讲 - Nandita Viswanath 和 Sagar Aryal_ 从内部到开源  将过去与未来结合 - VikingDen7 - BV1f8411Y7cP
 - en: Welcome everyone， you're in room 355 A， B， C。 And we have Nandita， Vyswanath，
     and Sagar。
   id: totrans-1
   prefs: []
   type: TYPE_NORMAL
+  zh: 欢迎大家，你们在 355 A，B，C 房间。我们有 Nandita、Vyswanath 和 Sagar。
 - en: '![](img/34317168f3c1eed0d8c15494197d3d54_1.png)'
   id: totrans-2
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/34317168f3c1eed0d8c15494197d3d54_1.png)'
 - en: Ariel。 And they're going to talk about in-house to open source， stitching the
     past to the。 future with Python。 Hi everyone， I'm Nandita， I'm a software engineer
     at Bloomberg。 And I'm Sagar。 I'm also a software engineer at Bloomberg。 And we're
@@ -22,6 +25,8 @@
   id: totrans-3
   prefs: []
   type: TYPE_NORMAL
+  zh: Ariel。 他们将讨论从内部到开源，如何将过去与未来结合，使用 Python。大家好，我是 Nandita，我是 Bloomberg 的软件工程师。
+    我是 Sagar，我也是 Bloomberg 的软件工程师。我们将展示我们的演讲，主题是从内部到开源，如何将过去与未来结合，使用 Python。今天我们将讨论在思考时如何利用开源软件。
 - en: about migrating away from legacy code。 Our talk is loosely broken up into four
     sections。 We're going to start with an introduction。 We'll then move on to identifying
     our right open source candidate。 We'll catch up on how you can integrate your
@@ -31,6 +36,7 @@
   id: totrans-4
   prefs: []
   type: TYPE_NORMAL
+  zh: 关于从遗留代码迁移的讨论。我们的演讲大致分为四个部分。我们将以介绍开始。接着，我们将识别合适的开源候选者。然后，我们会介绍如何将开源候选者集成到你现有的技术栈中。最后，我们将总结一些结论。因此，在我们深入讨论为什么你应该考虑开源以进行遗留迁移之前。
 - en: code， let's first understand what legacy code even is。 Legacy code is typically
     code that's no longer engineered but is just patched for fixes。 So it becomes
     nearly impossible to add new features which makes them great candidates。 for migrations。
@@ -38,6 +44,7 @@
   id: totrans-5
   prefs: []
   type: TYPE_NORMAL
+  zh: 在讨论代码之前，我们先了解一下什么是遗留代码。遗留代码通常是指不再进行工程设计的代码，而只是进行修补以修复问题。因此，添加新特性几乎变得不可能，这使得它们成为迁移的理想候选者。因此，当你考虑迁移软件时。
 - en: I think open source should be one of the first， things that come to mind。 And
     the first reason why is because you already have access to high quality pre-built
     software。 Transcents are there's already software within the open source community
@@ -46,6 +53,7 @@
   id: totrans-6
   prefs: []
   type: TYPE_NORMAL
+  zh: 我认为开源应该是最先想到的事情之一。第一个原因是因为你已经可以获得高质量的预构建软件。换句话说，开源社区中已经有软件能够满足你的需求，即使并不是完全符合，通常也只需最小的努力。
 - en: for you to go in and tailor it to your specific needs。 Which brings me to the
     second big advantage。 customization。 Now since the code is open source， you know
     what's going on。 you can maybe just add a， plugin to tailor it to your requirement
@@ -54,6 +62,7 @@
   id: totrans-7
   prefs: []
   type: TYPE_NORMAL
+  zh: 让你可以根据具体需求进行调整。这让我想到了第二个重要优势：**自定义**。由于代码是开源的，你可以了解其内部运作，也许只需添加一个插件来满足你的要求，或者自己修改代码库。另一个优势是，在某种程度上，你能够接触到最新的创新。
 - en: As more and more people start adopting that open source software， more people
     become invested。 in its growth and development。 So in a way you're always on top
     of the cutting edge technology。 And it's not just me saying this we're all at
@@ -62,6 +71,8 @@
   id: totrans-8
   prefs: []
   type: TYPE_NORMAL
+  zh: 随着越来越多的人开始采用开源软件，越来越多的人也会对其成长和发展产生兴趣。因此，在某种程度上，你总是处于前沿技术之上。而这不仅仅是我在说，大家都在 PyCon。调查也发现，IT
+    领导者认为开源的使用将会迅速增长。
 - en: the next couple years。 But even while open source is great。 there are some things
     to still keep in mind。 The first is that support and maintenance may not always
     be available。 But there are some companies and enterprises that offer maintenance
@@ -70,6 +81,7 @@
   id: totrans-9
   prefs: []
   type: TYPE_NORMAL
+  zh: 在未来的几年里。但即使开源是很好的，仍有一些事情需要注意。首先，支持和维护可能并不总是可用。但也有一些公司和企业提供额外费用的维护服务。因此，这点需要记住。另一点需要特别注意，尤其是在构建关键应用程序时。
 - en: is the maturity and the stability of the software。 If there is an issue。 you
     might end up relying on someone to fix it or you might have to， step up and fix
     it yourself。 So that's an added consideration。 And the last is that usage of open
@@ -78,6 +90,7 @@
   id: totrans-10
   prefs: []
   type: TYPE_NORMAL
+  zh: 软件的成熟度和稳定性。如果出现问题，您可能会依赖某人来修复它，或者您可能需要自己挺身而出解决。因此，这是一个额外的考虑因素。最后，使用开源软件并不消除硬件成本。如果您希望大规模采用开源，您必须为硬件进行预算。
 - en: At this point I want to introduce a case study that we're going to be walking
     through as。 the talk progresses。 We're going to be trying to migrate an orchestration
     framework。 So let's think of a really complex framework that has to use some metadata
@@ -86,6 +99,7 @@
   id: totrans-11
   prefs: []
   type: TYPE_NORMAL
+  zh: 在这一点上，我想介绍一个案例研究，我们将在整个演讲过程中进行探讨。我们将尝试迁移一个编排框架。想象一下一个非常复杂的框架，它必须使用一些元数据来决定调度一些流程，并且需要考虑流程依赖关系、监控事件等。
 - en: then finally write some data to a database。 Let's build a little more clarity
     around that。 So say we have some metadata based on which we decide we need a scheduler
     process。 Our process is that little red circle you see there。 Triggering that
@@ -93,6 +107,7 @@
   id: totrans-12
   prefs: []
   type: TYPE_NORMAL
+  zh: 然后最后将一些数据写入数据库。让我们对此更清晰一些。假设我们有一些元数据，根据这些元数据我们决定需要一个调度程序流程。我们的流程就是您看到的小红圈。触发那个红圈实际上可以引发一系列其他流程或紫色流程。
 - en: circles which can in turn set off another set of processes or orange circles。
     So our red circle is not really done until all of the purple and the orange process
     is， complete。 And like I said earlier， what these processes are doing is just
@@ -101,6 +116,7 @@
   id: totrans-13
   prefs: []
   type: TYPE_NORMAL
+  zh: 圆圈可以触发另一系列的流程或橙色圆圈。因此，我们的红色圆圈在所有紫色和橙色流程完成之前实际上是没有完成的。正如我之前所说，这些流程所做的只是写入数据，而我们正在查看大约5000万数据点的范围。
 - en: But this is when the complexity really kicks in。 We don't want to just schedule
     and orchestrate one of these red circles。 We want to do hundreds of such processes
     and in turn write billions of data points with。 no room for error。 Now next I'd
@@ -110,6 +126,7 @@
   id: totrans-14
   prefs: []
   type: TYPE_NORMAL
+  zh: 但这时复杂性真正开始显现。我们不仅仅想调度和编排一个红圈。我们希望执行数百个这样的流程，并因此写入数十亿个数据点，没有出错的余地。接下来，我想和您谈谈如何识别您想要迁移的软件。我们将采用三阶段的方法来进行讨论。
 - en: The first being understanding your requirements， identifying what it is that
     you're actually。 looking to replace and then researching for a solution that would
     address these requirements。 And finally you want to narrow your solution。 You
@@ -119,6 +136,7 @@
   id: totrans-15
   prefs: []
   type: TYPE_NORMAL
+  zh: 第一步是理解您的需求，确定您实际希望替换的内容，然后研究能够满足这些需求的解决方案。最后，您希望缩小解决方案范围。您需要将想到的潜在解决方案缩小到一个最终系统。因此，在理解您的需求方面，在我们的用例中，我们首先必须去掉。
 - en: all the business logic as well as the specific intricacies that were unique
     to our problem。 and try to boil it down to the highest level。 We came up with
     one sentence that we believe perfectly describes our use case and that is。 the
@@ -128,6 +146,7 @@
   id: totrans-16
   prefs: []
   type: TYPE_NORMAL
+  zh: 所有业务逻辑以及我们的问题所特有的具体细节，并尝试将其简化为最高层级。我们想出了一个句子，完美描述了我们的用例，那就是：利用特定领域的元数据自动协调事件和数据流，以智能地调度和触发流程。这句有点长，但从中我们可以提炼出三个关键词来描述。
 - en: the system and that is scheduler， orchestration and dependencies。 Now we came
     up with a list of must haves as well as nice to haves。 In terms of the must haves。
     obviously modeling dependencies， that's the first and primary， goal。 We want processes
@@ -135,6 +154,7 @@
   id: totrans-17
   prefs: []
   type: TYPE_NORMAL
+  zh: 这个系统包含调度程序、编排和依赖关系。我们列出了必须具备的功能和可有可无的功能。在必须具备的功能方面，显然建模依赖关系是首要目标。我们希望流程能够触发其他流程。
 - en: We also want to be able to do this for historical runs and obviously we want
     permissioning since。 this is going into production。 We want to make sure there's
     no vulnerabilities。 This is also another consideration。 Like I mentioned on a
@@ -143,6 +163,7 @@
   id: totrans-18
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们还希望能够对历史运行进行此操作，显然我们希望有权限控制，因为这将投入生产。我们希望确保没有漏洞。这也是另一个考虑因素。正如我提到的，在生产集群中，我们不希望它占用所有资源。在一些可有可无的方面，我们确实提到希望有用户界面以及能力。
 - en: monitor all these processes would be nice to have， not necessary though。 Parallelization。
     these processes are being run on off peak hours so it wasn't a necessity。 Now
     when it came time to research， obviously the first thing everyone does is goes
@@ -151,6 +172,7 @@
   id: totrans-19
   prefs: []
   type: TYPE_NORMAL
+  zh: 监控所有这些流程是很不错的，但并不是必需的。并行化。这些流程在非高峰时段运行，因此这并不是必要条件。现在当进行研究时，显然每个人首先做的就是上网。你输入关键词，并将其放入搜索引擎，试图寻找潜在的解决方案。
 - en: options。 Going about this we eventually landed on Apache's website where most
     open source systems are。 We found two systems which closely match what we're looking
     for。 The namely Apache NIFI as well as Apache Airflow。 Another way that we were
@@ -159,6 +181,8 @@
   id: totrans-20
   prefs: []
   type: TYPE_NORMAL
+  zh: 在这个过程中，我们最终来到了 Apache 的网站，大多数开源系统都在这里。我们找到两个与我们需求相近的系统，分别是 Apache NIFI 和 Apache
+    Airflow。我们进行研究的另一个途径是口耳相传。你可以看到像 PyCon 这样的会议能给你提供可能适合你使用案例的潜在解决方案。
 - en: As well as networking from which internally at Bloomberg we support ARGO that's
     another。 solution that we came across。 We have these three potential options。
     We want to first figure out the evaluation criteria。 How can we narrow it down
@@ -166,6 +190,7 @@
   id: totrans-21
   prefs: []
   type: TYPE_NORMAL
+  zh: 还有内部网络支持 ARGO，这是我们遇到的另一个解决方案。我们有这三个潜在选项。我们想先确定评估标准。我们如何将其缩小到一个特定的系统？
 - en: We broadly categorize it into these four different metrics。 Just being adoption
     so systems that have more get hub activity are bound to have more， support。 Your
     questions will be answered quicker。 Any bugs that come up will be fixed sooner。
@@ -174,6 +199,7 @@
   id: totrans-22
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们大致将其分为这四个不同的指标。仅仅是采用，因此拥有更多 GitHub 活动的系统必然会有更多支持。你的问题会得到更快的回答。出现的任何漏洞也会更快得到修复。这是一个非常重要的因素。然后是兼容性。这个系统是否符合你的技术要求？
 - en: Does it address the problem that you're trying to solve？ Then of course extendability。
     Once you do integrate an open source system it would be nice for it to eventually
     evolve。 into something more。 Then it address other problems that you haven't particularly
@@ -182,6 +208,7 @@
   id: totrans-23
   prefs: []
   type: TYPE_NORMAL
+  zh: 它是否解决了你想要解决的问题？然后当然是可扩展性。一旦你集成了一个开源系统，最终它能够演变成更好的东西是非常理想的。然后它能解决其他你在开始使用之前未曾预见的问题。最后是定制的便利性。没有任何系统是完美匹配的，但如果某个东西灵活且易于定制，对你来说就是好的。
 - en: specific use case that's obviously better。 This is what we ended up categorizing
     these three systems into。 Airflow was a very popular Apache project。 It's very
     actively maintained， very extensible。 lots of plugins and lots of support for
@@ -191,6 +218,8 @@
   id: totrans-24
   prefs: []
   type: TYPE_NORMAL
+  zh: 特定的使用案例显然更好。这就是我们最终将这三个系统分类的方式。Airflow 是一个非常受欢迎的 Apache 项目。它维护非常活跃，扩展性很强。支持许多插件，并且有很多支持。它在权限和控制方面非常灵活，非常容易适应。它实际上是纯管道。Apache
+    NIFI 也是一个很好的解决方案，但由于它的原因并不完全符合我们的使用案例。
 - en: very data pipeline focused。 We do already have the ETL infrastructure。 That's
     not the part we're trying to replace。 It didn't exactly match what we were looking
     for。 Argo again it was supported internally at Bloomberg so that communication
@@ -198,6 +227,7 @@
   id: totrans-25
   prefs: []
   type: TYPE_NORMAL
+  zh: 非常注重数据管道。我们已经有了 ETL 基础设施。这不是我们想要替代的部分。它并没有完全符合我们的需求。阿戈再次在彭博内部得到了支持，因此那条沟通链条更加直接。这就是为什么它在采用率上得分如此之高。
 - en: But it's focused on containerized applications whereas we're looking for more
     of a bare metal。 Linux solution。 Again this is very subjective evaluation criteria
     for our specific use case。 Not necessarily going to be true everywhere。 Now Apache
@@ -207,6 +237,8 @@
   id: totrans-26
   prefs: []
   type: TYPE_NORMAL
+  zh: 但它专注于容器化应用程序，而我们寻找的是更接近裸金属的 Linux 解决方案。再说一次，这对于我们的特定用例来说是非常主观的评估标准，并不一定适用于所有地方。现在，正如我提到的，Apache
+    Airflow 是基于有向无环图的，简单来说，它是纯 Python 的。它并不支持我们所有的特定用例，但提供了很多支持。
 - en: plugins and we did find plugins that were very useful。 And of course a very
     nice and easy to navigate Web UI。 Now with that I like to hand it off to my colleague
     Nanda。 Okay great。 So now Sagar has helped us pick Airflow and we know Airflow
@@ -214,6 +246,8 @@
   id: totrans-27
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们发现了一些非常有用的插件。当然，还有一个非常友好且易于导航的 Web UI。现在，我想把时间交给我的同事 Nanda。好的，很好。所以现在 Sagar
+    帮助我们选择了 Airflow，我们知道 Airflow 是我们想要迁移的目标。
 - en: to but where do we even start？ We have this huge complex framework that's been
     working just fine。 The only issue is that we're not able to iterate and add new
     features to it。 It's doing a lot of things it's monitoring for dependencies， it's
@@ -222,6 +256,7 @@
   id: totrans-28
   prefs: []
   type: TYPE_NORMAL
+  zh: 但我们应该从哪里开始呢？我们有这个庞大复杂的框架，它运行得很好。唯一的问题是我们无法迭代并添加新功能。它正在做很多事情，监控依赖关系，记录数十亿个数据点。错误的可能性很大。因此，在我们进一步推进之前，先将其分解为独立但相互关联的组件。
 - en: What are we really dealing with here？ We have a scheduler that uses some metadata
     to decide which process to kick off。 We have an orchestration engine possibly
     that kicks off that first process and monitors。 it for completion。 And we have
@@ -231,6 +266,7 @@
   id: totrans-29
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们真正面对的是什么？我们有一个调度程序，它使用一些元数据来决定启动哪个进程。我们可能有一个调度引擎，启动第一个进程并监控其完成。还有一个可以称之为工作管理系统的组件，监控启动的依赖进程。这三者是我们试图迁移的这个巨大框架的独立部分。
 - en: from。 If we want to move away from all of these three in one big bang there's
     just a lot more risk。 and the scope for failure balloons。 Instead we could just
     start by replacing the easily replaceable components to me that looks。 like the
@@ -240,6 +276,8 @@
   id: totrans-30
   prefs: []
   type: TYPE_NORMAL
+  zh: 如果我们想一次性摆脱这三者，将会有更多的风险，失败的可能性也会增大。相反，我们可以先替换容易替换的组件，我认为这看起来像是调度程序和调度引擎。所以我们可以尝试将调度程序和调度引擎从这个框架中移除，并用
+    Airflow 替换。但怎么做呢？调度程序，调度引擎。
 - en: job management system all worked perfectly together because。 they were all natively
     integrated and they were probably built around the same time they。 were built
     to be compatible with each other。 But then when we integrate with an open source
@@ -248,6 +286,7 @@
   id: totrans-31
   prefs: []
   type: TYPE_NORMAL
+  zh: 工作管理系统完美地协同工作，因为它们都是原生集成的，并且可能是在同一时间构建的。它们是为了相互兼容而构建的。但当我们与像 Airflow 这样的开源解决方案集成时，它并不是为我们特定的用例构建的，但仍然运行得很好。
 - en: So we need a way to really make air flow and our job management system kind
     of speak the。 same language and I think we all know where I'm getting at with
     this。 We're at PyCon。 So this is where we want to introduce PyHero， our Python
@@ -256,14 +295,18 @@
   id: totrans-32
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以我们需要一种方法，使 Airflow 和我们的工作管理系统能够“说同一种语言”，我想我们都知道我在说什么。我们在 PyCon。这就是我们想要介绍 PyHero
+    的地方，我们的 Python 组件，它将帮助连接 Airflow 和我们的遗留工作管理系统。
 - en: And we have a lot of superheroes out there so why should we think of PyHero？
   id: totrans-33
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们有很多超级英雄在外面，那么为什么我们要考虑 PyHero？
 - en: There are essentially three superpowers that we're really looking for right？
   id: totrans-34
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们实际上在寻找三种超能力，对吧？
 - en: We want to be able to integrate easily with our existing code base。 So it should
     be easy for us to integrate with something that's not necessarily Python based。
     The second superpower that we want is we need to be able to write this component
@@ -272,6 +315,7 @@
   id: totrans-35
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们希望能够轻松与现有代码库集成。因此，我们应该能够轻松集成一些不一定基于Python的东西。我们想要的第二种超能力是能够非常快速地编写这个组件。最终在未来，我们的作业管理系统也会消失，而Airflow将接管一切。
 - en: is going to take over everything。 So at that point of time PyHero will unfortunately
     have to step down。 So we don't want to invest too much time building out PyHero。
     It's eventually just going to go away。 And the third thing that we're looking
@@ -280,6 +324,7 @@
   id: totrans-36
   prefs: []
   type: TYPE_NORMAL
+  zh: 到那个时候，PyHero将不幸地需要退出。所以我们不想投入太多时间来构建PyHero。它最终只是会消失。我们寻找的第三件事是生产级的PyHero。尽管PyHero是暂时的，但它仍然必须具有生产质量，因为我们希望。
 - en: to run in production we cannot cut corners in terms of its performance。 So let's
     now jump into discussing how Python possesses all of these three superpowers starting。
     with how we can use it to integrate with an existing stack。 So let's assume the
@@ -288,11 +333,13 @@
   id: totrans-37
   prefs: []
   type: TYPE_NORMAL
+  zh: 在生产中运行时，我们不能在性能方面马虎。所以让我们跳入讨论Python如何具备这三种超能力，首先是如何用它与现有堆栈集成。假设最坏的情况，我们的作业管理系统根本不是Python，而是用一种全新的语言构建的。
 - en: Now we need Python to kind of interface with it。 What are the different ways
     that we can go about this？
   id: totrans-38
   prefs: []
   type: TYPE_NORMAL
+  zh: 现在我们需要Python与之接口。我们可以通过哪些不同的方式来实现？
 - en: The first is like I said an interface approach where we want to directly use
     our non-Python。 components within our Python module。 In this case we have honestly
     multiple options。 We can let's if you had like a C or C++ library that you wanted
@@ -301,6 +348,7 @@
   id: totrans-39
   prefs: []
   type: TYPE_NORMAL
+  zh: 首先，正如我所说的，我们采用接口方法，希望在我们的Python模块中直接使用非Python组件。在这种情况下，我们确实有多个选择。如果你有一个想使用的C或C++库，可以将其编译为.sor.dll文件，然后在Python代码中导入。
 - en: An alternative would be to use the Python API to expose our C C++ libraries
     via a Python， interface。 But both of these will require you to kind of go in and
     modify your libraries themselves。 There is another easier non-intrusive approach
@@ -309,6 +357,7 @@
   id: totrans-40
   prefs: []
   type: TYPE_NORMAL
+  zh: 另一种选择是使用Python API通过Python接口暴露我们的C和C++库。但这两种方法都需要你去修改库本身。还有另一种更简单、不具侵入性的方法，可以将你的非Python组件视为独立实体。
 - en: You modularize them and package them as executables and you just invoke them
     as subprocesses from。 within your Python script。 So this is where you really have
     to kind of balance your requirements and you have to。 make a trade-off。 If you
@@ -318,6 +367,7 @@
   id: totrans-41
   prefs: []
   type: TYPE_NORMAL
+  zh: 你将它们模块化并打包为可执行文件，然后从Python脚本中作为子进程调用它们。因此，这里你真的需要平衡你的需求，并做出权衡。如果在我们的作业管理系统中有想要重用的东西，即使在迁移完成后也是如此。假设我们有一个强大的C++库，打算继续使用。
 - en: after we fully moved to a flow。 It might make sense to just go with the first
     approach even if it's going to require more。 development time。 But in our case
     we were really looking at completely replacing our job management system。 in which
@@ -327,6 +377,7 @@
   id: totrans-42
   prefs: []
   type: TYPE_NORMAL
+  zh: 在我们完全迁移到Airflow后，可能更合理的做法是采用第一种方法，即使这需要更多的开发时间。但在我们的案例中，我们确实是在寻找完全替换我们的作业管理系统，这样就更容易将其模块化并打包为可执行文件，并作为子进程调用。因此，现在我们已经讨论了如何将Python与现有堆栈集成，接下来我们继续。
 - en: to discussing how Python can help us write production quality code quickly。
     So we've talked about how we want this Pihiro component to be running in production。
     And one of the most important things that that comes with is a when is when something，
@@ -335,6 +386,7 @@
   id: totrans-43
   prefs: []
   type: TYPE_NORMAL
+  zh: 讨论Python如何帮助我们快速编写生产质量代码。因此，我们已经谈到了如何让这个Pihiro组件在生产中运行。其中最重要的一点是当发生问题时。当出现问题时，你不希望几小时或几天后才发现。
 - en: you want to know as soon as Pihiro went down in production。 And to do this we
     actually found ourselves using a feature of Python that most of us are。 already
     aware of。 I learned about it in theory too but this is how we could really see
@@ -343,6 +395,7 @@
   id: totrans-44
   prefs: []
   type: TYPE_NORMAL
+  zh: 你希望在Pihiro在生产中崩溃时立即知道。为了做到这一点，我们实际上发现自己使用了Python的一个特性，大多数人已经了解。我在理论上也学过，但这是我们在编写生产质量代码时如何真正看到它被使用的。因此，我们在组内使用了一个接收三个参数的装饰器。
 - en: It takes in a severity， a group and the name of the component。 And based on
     these three arguments it creates a ticket and with the appropriate severity。 level
     and routes it to the correct group。 So all it does is really just wrap the function
@@ -351,6 +404,8 @@
   id: totrans-45
   prefs: []
   type: TYPE_NORMAL
+  zh: 它接受一个严重性、一个组和组件的名称。根据这三个参数，它创建一个票据，并以适当的严重性级别将其路由到正确的组。所以它所做的实际上只是将函数代码包裹在一个try
+    catch块中，并根据输入参数创建一个get，当出现问题和执行失败时进行路由。
 - en: But this was great when I was trying to come up with this component quickly
     because I could。 just focus on writing the core functionality of my module without
     worrying about the bells。 and whistles around alarming because it really just
@@ -359,6 +414,7 @@
   id: totrans-46
   prefs: []
   type: TYPE_NORMAL
+  zh: 但在我快速构思这个组件时，这非常棒，因为我可以专注于编写模块的核心功能，而不必担心警报周围的繁琐细节，因为这实际上是免费的。但仅仅能够快速编写代码是不够的。
 - en: It's also important that we're able to debug this code quickly especially when
     we're interfacing。 with a legacy component。 With that I'd like to walk you through
     an example of a bug that we faced when trying to implement。 air flow and how the
@@ -367,6 +423,8 @@
   id: totrans-47
   prefs: []
   type: TYPE_NORMAL
+  zh: 快速调试这段代码也很重要，尤其是在与遗留组件接口时。有鉴于此，我想带你了解我们在尝试实现air flow时面临的一个bug的例子，以及PDB作为Pi的超能力如何帮助我们挽救局面。因此，我们有一个屏幕，即air
+    flow的登录屏幕，如你所见，顶部有一个错误消息。
 - en: message at the top。 So the way that we generated this was we tried to sign in
     using SSO which redirects us to the。 SSO page and we log in and it redirects us
     back here。 Now we knew the credentials were correct so that wasn't the issue at
@@ -375,6 +433,7 @@
   id: totrans-48
   prefs: []
   type: TYPE_NORMAL
+  zh: 生成这个消息的方式是我们尝试使用SSO登录，这会将我们重定向到SSO页面，然后我们登录，重定向回这里。现在我们知道凭据是正确的，所以这并不是问题所在，但我们在这个页面上没有关于导致此问题的其他信息。
 - en: Now the first place anyone really starts to debug is by checking the logs and
     when we。 did check the logs this is the only message that really came in with
     any relevance。 It was this error message right here。 Now we see that there's some
@@ -383,6 +442,7 @@
   id: totrans-49
   prefs: []
   type: TYPE_NORMAL
+  zh: 任何人调试的第一步通常是检查日志，当我们检查日志时，这就是唯一与此相关的消息。正是这个错误消息出现在这里。我们看到OAuth存在一些问题，并且看到有关无效受众的信息，但这仍然相当抽象。它没有给我们太多信息。
 - en: However we do know exactly what line and what file this error is being raised。
     So with PDB let's step into that file and try to figure out what's going on。 So
     we went to that file and these are the lines that the error was being thrown from。
@@ -391,6 +451,7 @@
   id: totrans-50
   prefs: []
   type: TYPE_NORMAL
+  zh: 不过，我们确实知道这个错误是在什么行和什么文件中引发的。那么，让我们使用PDB深入到那个文件，试图弄清楚发生了什么。因此，我们去到那个文件，这些行是错误抛出的地方，如你所见，日志消息就在第四行，我们放置了一个断点。
 - en: Now with this break point we are able to halt execution of the program while
     trying to log。 in on the web server itself and we pause execution and from there
     we're able to observe。 the variables including these abstract variables like app
