@@ -1,12 +1,15 @@
 - en: P19：Talks - Boaz Wiesner, Keren Meron_ Supercharging Pipeline Efficiency with
     ML Per - VikingDen7 - BV1114y1o7c5
+  id: totrans-0
   prefs:
   - PREF_H1
   type: TYPE_NORMAL
 - en: Okay， we are in this fund now to start our second to last talk of Python 2023。
+  id: totrans-1
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/bdda7ec387967196cbef27c2ef043b69_1.png)'
+  id: totrans-2
   prefs: []
   type: TYPE_IMG
 - en: This also being supercharging the Python efficiency with no performance prediction，
@@ -14,19 +17,23 @@
     So if you have questions。 and if you have questions， please line up with the microphone
     right here in the center。 And that's the question。 So if you're giving me a one
     round of applause to our speakers。
+  id: totrans-3
   prefs: []
   type: TYPE_NORMAL
 - en: Thank you very much。 So everyone， is there all of you are going to have some
     of your questions at all？
+  id: totrans-4
   prefs: []
   type: TYPE_NORMAL
 - en: Right， I'm in the middle of the beginning， and I'm in the middle of the middle
     of the middle of the middle。 And I'm in the middle of the middle of the middle
     of the middle of the middle。 So today we're going to talk about how we should
     return our Python efficiency。
+  id: totrans-5
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/bdda7ec387967196cbef27c2ef043b69_3.png)'
+  id: totrans-6
   prefs: []
   type: TYPE_IMG
 - en: and then we should learn a little bit more about this。 So my name is。 and I'm
@@ -34,6 +41,7 @@
     got back in。 but I'm not the middle of the middle。 Very good。 And I'm going to
     go ahead and put that off the generic standard。 I'll start with the third， and
     today I'd like to thank them for their first one。
+  id: totrans-7
   prefs: []
   type: TYPE_NORMAL
 - en: And it's three months ago。 Thank you。 Thank you。 Thank you。 Thank you。 Thank
@@ -41,6 +49,7 @@
     the middle of the middle。 we're going to try to show you what's going to happen
     in the middle of the middle。 So our clients are continuing to work in this community。
     We're going to call the marketing videos。
+  id: totrans-8
   prefs: []
   type: TYPE_NORMAL
 - en: so on the other hand， we're going to call it all the work。 And we can write
@@ -48,18 +57,21 @@
     of the middle of the middle。 So in the middle of the middle of the middle， we
     can just check。 So I've come in inside。 so I've got a million， so on the middle
     of the middle of the middle of the middle。
+  id: totrans-9
   prefs: []
   type: TYPE_NORMAL
 - en: So I've got to say Python， which is going to make a difference， and then combining
     the video。 And then obviously， so we can also call it all the marketing efforts。
     and then we'll show you how to invest in this， all of the options。 So in the middle
     of the middle of the middle， we can just check。 So in the middle of the middle。
+  id: totrans-10
   prefs: []
   type: TYPE_NORMAL
 - en: we can just check the results。 So in the middle， we can just check。 And then
     all the way through the middle of the middle。 So we can also check。 And then all
     the way through the middle。 So we can also check the results。 And then all the
     way through the middle of the middle of the middle。
+  id: totrans-11
   prefs: []
   type: TYPE_NORMAL
 - en: So we can also check the results。 And then all the way through the middle of
@@ -67,6 +79,7 @@
     And then we can also check the results。 And then we can also check the results。
     And then we can also check the results。 So in the middle of the middle of the
     middle， we can also check the results。
+  id: totrans-12
   prefs: []
   type: TYPE_NORMAL
 - en: And then we can also check the results。 And then we can also check the results。
@@ -74,6 +87,7 @@
     And then we can also check the results。 And then we can also check the results。
     So in the middle。 we can also check the results。 And then we can also check the
     results。
+  id: totrans-13
   prefs: []
   type: TYPE_NORMAL
 - en: And then we can also check the results。 And then we can also check the results。
@@ -81,6 +95,7 @@
     can see the results。 So we can see the results。 And then we can also check the
     results。 And then we can see the results。 And then we can see the results。 And
     then we can see the results。 And then we can see the results。
+  id: totrans-14
   prefs: []
   type: TYPE_NORMAL
 - en: So we can also see the results。 And then we can see the results。 And then we
@@ -88,6 +103,7 @@
     results。 We saw it in the results。 You notice that the results of a test by light
     cut。 And you can see the results。 And then we can see the results。 And then we
     can see the results。
+  id: totrans-15
   prefs: []
   type: TYPE_NORMAL
 - en: It's going to be very tough for them to suck。 And you can see the hands and
@@ -95,6 +111,7 @@
     first cut would otherwise finish on。 And then you can see the results。 So I'll
     show you how to do this。 And then we can see the results。 And then we can see
     the results。
+  id: totrans-16
   prefs: []
   type: TYPE_NORMAL
 - en: And part of this is that we've said， since then we've been treated。 And part
@@ -102,6 +119,7 @@
     And then we can see the results。 And then we can see the results。 And then we
     can see the results。 And then on the top of the results。 More than a gallon of
     water， it's going to be。
+  id: totrans-17
   prefs: []
   type: TYPE_NORMAL
 - en: And we can see the results。 And then on the top of the results。 And so it's
@@ -109,30 +127,35 @@
     all the results are already。 sort of small and simple body communities。 For example，
     the other test from the results。 that we've been using in the past， both in the
     findings。 And then we already saw the results。
+  id: totrans-18
   prefs: []
   type: TYPE_NORMAL
 - en: And then we went along。 And then we went through the results。 So in family lives。
     we're going to need to do， a little bit more of the results。 And so we're going
     to be able to put a straight up attack。 And then we can see the right path in
     the heavy part。 And then the better of things。
+  id: totrans-19
   prefs: []
   type: TYPE_NORMAL
 - en: we can see the most of the experiences and problems。 So for example。 one of
     the things we've been doing， is out there。 And we talked more about that in a
     statement。 Okay， but how would you list？ And how would you send the results？ And
     then you can see the results。 Well， you can tell me if you follow almost the statement。
+  id: totrans-20
   prefs: []
   type: TYPE_NORMAL
 - en: and follow the statement and then you can tell。 So I get the right of the menu。
     And then obviously the whole test will have the same， intelligence intelligence。
     So I will also control because obviously， we've just had a very long list of similarities。
     But in the end， we also saw these problems。 And we said that already。
+  id: totrans-21
   prefs: []
   type: TYPE_NORMAL
 - en: we've had a lot of possibilities， and a lot of possibilities。 We should show。
     in making that decision， and going around in the same possible case today。 Another
     example of the analysis from the computer is that， when it came to that result。
     there were a couple of things that were going to happen。
+  id: totrans-22
   prefs: []
   type: TYPE_NORMAL
 - en: And the output of one test will be the interest of it。 Next step。 The values
@@ -140,6 +163,7 @@
     out the data， you'll see that it's known as "service problems"。 And I would say。
     we obviously will be out there， into the talk。 We'll have very limited effects
     on our own presentation。
+  id: totrans-23
   prefs: []
   type: TYPE_NORMAL
 - en: So how we saw this discussion is in some of our results。 So we did this idea
@@ -147,6 +171,7 @@
     allowed。 And in fact。 it was famous in the world， we said that we had a statement
     that we had a statement that we had。 however， to the super-time really relevant
     to this。
+  id: totrans-24
   prefs: []
   type: TYPE_NORMAL
 - en: to the 6th and then what it does is try to find a statement， and then to the
@@ -154,35 +179,42 @@
     I got a little bit out there to say that we didn't have a little bit of a statement。
     It's so easy to say that this is where in fact this is where it's actually going
     to stand。
+  id: totrans-25
   prefs: []
   type: TYPE_NORMAL
 - en: So I don't know if I'm not just saying a little bit of anything。 On the other
     one。 in the context of what we are， I don't have to tell you to go for what we're
     doing。 That's because we're saying that we are going to have a statement。 and
     we believe in final and then what it does。 So tonight， I think， to be example。
+  id: totrans-26
   prefs: []
   type: TYPE_NORMAL
 - en: is a broadening approach， where it's obviously something that we're not having
     often and then we're going to get performance。 not in the survey。 So that's why
     I want to say it。 Getting to know what we said is our last answer。 we just need
     one "x" in the sample。
+  id: totrans-27
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/bdda7ec387967196cbef27c2ef043b69_5.png)'
+  id: totrans-28
   prefs: []
   type: TYPE_IMG
 - en: We just need to know if we're going to take a second， it's not a single one。
     it's going to be the next one， it's going to be the next one。 This is where we're
     still at the same time， we're still at the same time。 it's going to be the next
     one， so we're going to take a second。
+  id: totrans-29
   prefs: []
   type: TYPE_NORMAL
 - en: So I'm going to turn it into a similar model， to the future， which I remember。
     even a little bit more。 And I think I'm going to use this system。 so this means
     that we can do a model for a second。
+  id: totrans-30
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/bdda7ec387967196cbef27c2ef043b69_7.png)'
+  id: totrans-31
   prefs: []
   type: TYPE_IMG
 - en: Now we did slide out， slide it into a one-bit model， or obviously， we're still
@@ -190,27 +222,33 @@
     how important it is to be very different from the schedule。 and that's why we're
     still at a large level， so we're going to need to know what it's going to be。
     So I'm going to do the model， or the details。
+  id: totrans-32
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/bdda7ec387967196cbef27c2ef043b69_9.png)'
+  id: totrans-33
   prefs: []
   type: TYPE_IMG
 - en: Well， inside of our world， we're all at the same time。 so we're going to have
     a couple of different models。 and then we're going to have a couple of different
     combinations， getting them to a model。 so we're going to have a little bit more，
     so we're going to have a little bit more of a thing。
+  id: totrans-34
   prefs: []
   type: TYPE_NORMAL
 - en: We're going to have a little bit more of a big goal。 so we're going to have
     a little bit more of a little bit more of a little bit more of a thing。 so we're
     going to have a little bit more of a little bit more of a thing。 So we did put
     a little bit more of a model， so we're going to have some time。
+  id: totrans-35
   prefs: []
   type: TYPE_NORMAL
 - en: and then we're going to have a little bit more of a problem。
+  id: totrans-36
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/bdda7ec387967196cbef27c2ef043b69_11.png)'
+  id: totrans-37
   prefs: []
   type: TYPE_IMG
 - en: Then， after all， I was trying to say， "Not filled with without。"， And we will
@@ -218,12 +256,14 @@
     did the ball about $3。50。 So， so now。 we're gonna build clients by well， that's
     what we do。 We will be just using policy process。 and to try to make a sense of
     tools for someone who they're going to call。 And then。
+  id: totrans-38
   prefs: []
   type: TYPE_NORMAL
 - en: if you're doing similar and staying at $4。50， you're gonna run fast through
     the process of number of 10。 So， now， we will remember the points in this example。
     This is why we talked about the things that we have learned around the time。 We
     also have the combination of the time that you're thinking。 And in this way。
+  id: totrans-39
   prefs: []
   type: TYPE_NORMAL
 - en: we can really build a policy in this way。 So， that is why it is really safe
@@ -231,6 +271,7 @@
     that it builds the time that you're thinking about。 So。 we're essentially telling
     you to explore how to think for the model。 and not really remember the context。
     The first thing we do is we will also make decisions of the time and do。
+  id: totrans-40
   prefs: []
   type: TYPE_NORMAL
 - en: To follow the question that I've been told you in numbers。 that if I can only
@@ -238,6 +279,7 @@
     of the time that you're gonna remember。 And then， that's why we're getting a new
     link to it once we leave it to both。 So， next。 we go to the next model。 In fact，
     we can also try to kind of slide in and tell you how to expand our。
+  id: totrans-41
   prefs: []
   type: TYPE_NORMAL
 - en: capacity to be supported by the time。 So， to follow the question that we can
@@ -245,6 +287,7 @@
     report to the $1，000。 And if we're doing operations and things like that， we can
     do something like that。 so we're going to think about something to slide in and
     do。 So， finally。
+  id: totrans-42
   prefs: []
   type: TYPE_NORMAL
 - en: we're going to make the new link to it and know that it's expected to go to
@@ -252,6 +295,7 @@
     never。 we can't really know what kind of thing we're going to call。 We're going
     to call it the $1，000。 but we're going to call it the $1，000。 So， when we play
     in the letter。
+  id: totrans-43
   prefs: []
   type: TYPE_NORMAL
 - en: we're going to say that we call it the $1，000， and then we can say that we're
@@ -259,10 +303,12 @@
     we can do that。 and then we can do that， and then we can do that， and then we
     can do that， and then we can do that。 So， now， I want to ask you， how is it going
     to help us to understand the model。
+  id: totrans-44
   prefs: []
   type: TYPE_NORMAL
 - en: and then how did we actually need， potential to see what we're going to discuss
     in order to improve our scientific history？
+  id: totrans-45
   prefs: []
   type: TYPE_NORMAL
 - en: Cool。 41， that's so awesome。 That's kind of cool。 I know， and the first thing
@@ -270,6 +316,7 @@
     innovative。 and I just want to add all of it， because that's just really throwing
     down all of our tests。 That is our entire training of the test for any of the
     structures that has to happen in the test for instance。
+  id: totrans-46
   prefs: []
   type: TYPE_NORMAL
 - en: and this is from a very different problem。 And we're looking at this。 I have
@@ -277,6 +324,7 @@
     So。 the first thing happens is that we need to have these stories passed。 We have
     a project called a test in particular， and it's just a complex thing called a
     test。
+  id: totrans-47
   prefs: []
   type: TYPE_NORMAL
 - en: It is a simple， complex thing called a test。 That was a relevant metadata for
@@ -284,78 +332,98 @@
     to say。 So， then。 it takes that idea， and it takes it to something like three。
     It takes everybody that's an object for it。 And this also has an example called
     a test in。
+  id: totrans-48
   prefs: []
   type: TYPE_NORMAL
 - en: It allows you to use a test while clearing， and run while clearing over data。
     so you can see it's a test。 And when you go right back。 you might not be able
     to make it to people who are looking for a test。 And it's only predicted to be
     a runner。 This is a story test that we run。
+  id: totrans-49
   prefs: []
   type: TYPE_NORMAL
 - en: It's currently one of the best， one of the best， four-inch customer。 And this
     is a responsible for actually three of them， including the model。 And the way
     that it works is that first， it's clear it is to find a three-inch user。 And it's
     clear that it's a good step for a test and build a data set out of it。
+  id: totrans-50
   prefs: []
   type: TYPE_NORMAL
 - en: But then it takes the existing model and takes the new data。 and it brings the
     new model and you have all the updated information。 So， in each way。 it's something
     changes or something that becomes heavier instead of white。 then it takes a couple
     of things to run a test for a lot of things。 Now， finally。
+  id: totrans-51
   prefs: []
   type: TYPE_NORMAL
+  zh: 但随后它获取现有模型并引入新数据。并带来新模型，你拥有所有更新的信息。所以，以每种方式而言。如果有些东西改变或者变得更重而不是更轻，那么需要几样东西来进行大量测试。现在，最后。
 - en: it wasn't a particular thing， but it's gone for three years。 And it's higher
     model and two years later。 And it's a smaller procedure。 Then a materialized model。
     which is pretty small， and actually straight into the value of a product。 So you
     can see the key。 the key that you customize in it， and the value that you make
     higher scale and like models。 Now。
+  id: totrans-52
   prefs: []
   type: TYPE_NORMAL
+  zh: 这并不是一件特别的事情，但它已经过了三年。而且这是一个更高的模型，两年后。并且是一个更小的程序。然后是一个物化模型。这个模型相当小，实际上直接关联到一个产品的价值。所以你可以看到关键。你在其中自定义的关键，以及你提高规模和类似模型的价值。现在。
 - en: the last thing to look at is the salary value。 The following value is the bid
     of salary code that runs every time that I'm going to have to receive。 And the
     price of the price， the credit card， the credit card， the value that you have。
     And then zero-filtration code there， but all it does is just the card。 It takes
     the customer out of the test， takes the model from right。 And runs the test。
+  id: totrans-53
   prefs: []
   type: TYPE_NORMAL
+  zh: 最后要关注的是薪资值。以下值是每次我需要接收的薪资代码的出价。而价格是价格，信用卡，信用卡，你拥有的价值。然后那里有零过滤代码，但它所做的只是处理卡。它将客户从测试中移除，从右侧获取模型。并运行测试。
 - en: then there's three models， and this is the result of the model。 So that the
     right cost by the right is $10。50。 And the right key is the right key， or the
     right key。 which has better creative workers than a computer。 Now， finally。 for
     all the specific links and model models， we'll be able to make sure that they're
     accurate。
+  id: totrans-54
   prefs: []
   type: TYPE_NORMAL
+  zh: 然后有三个模型，这是模型的结果。因此，正确的成本是$10.50。正确的钥匙是正确的钥匙，或者是正确的钥匙。它拥有比计算机更优秀的创造性工作者。现在，最后。对于所有特定链接和模型模型，我们将确保它们的准确性。
 - en: So you can see how these predicted rates are known。 which is the correct to
     the rate of lowering using RNN for a rate in a square error。 If you all will get
     too high， we're alerted to the rate of the investment。 So， when you go work。 right，
     we have a split R， it's a light and heavy sheet。 So we have a dedicated salary
     worker。
+  id: totrans-55
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以你可以看到这些预测利率是已知的。这是降低RNN在平方误差中利率的正确方式。如果你们的数值过高，我们会对投资利率进行警报。所以，当你去工作时，没错，我们有一个分割的R，它是轻型和重型的表格。因此我们有一位专职薪资工人。
 - en: which is a piece of tape。 And in that way， when you solve a problem。 your balance
     has filled up and bring the rate to our customers。 So that's great。 And you decided
     to start looking a bit more consistent。 You start talking to me a bit about all
     of the data。
+  id: totrans-56
   prefs: []
   type: TYPE_NORMAL
+  zh: 这是一段胶带。通过这种方式，当你解决问题时，你的余额已经填满，并将利率带给我们的客户。所以这很棒。你决定开始更一致地看待事情。你开始和我谈论所有数据的情况。
 - en: So all of the money that I always do is use these data to keep the cash and
     the fees from the record。 So， I can use simple class calls to find a bunch of
     web servers， and then load balances。 And then if I run a lot of the money on the
     box and run a load， then all of the sudden。 with this product， you can send out
     the serial web servers to send them a load of money。 Now。
+  id: totrans-57
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以我总是做的所有事情就是使用这些数据来保持现金和记录中的费用。因此，我可以使用简单的类调用来找到一堆网络服务器，然后进行负载均衡。然后如果我在箱子上运行很多钱并进行负载，那么突然间。借助这个产品，你可以将串行网络服务器发送出去，以发送一笔钱。现在。
 - en: it's about $10。00。 Now， he's selling these two-hour number of workers up in
     damage。 which is one of the things that I have to do。 So， in case you're doing
     the actual work。 Now。 how do you bother with the policy？ Well， if I could pass
     it on， I'm talking about time。 I'm in the word "I'll be sharing a bunch of copies。"，
     And I got the logit reasons。 So， first of all。
+  id: totrans-58
   prefs: []
   type: TYPE_NORMAL
+  zh: 这大约是$10.00。现在，他正在销售这些两小时的工人数量，造成了一些损失。这是我必须做的事情之一。所以，如果你正在做实际工作的话。那么，你如何处理这个政策呢？好吧，如果我能传达一下，我是在谈论时间。我在说“我将分享一堆副本。”而我得到了逻辑理由。所以，首先。
 - en: it reduces to， and it's time to go up and it's time to go up and it's time to
     go up。 And then it's more work for it to be decreased。 So。 I've decided to make
     a decision to make a decision to make a decision to make a decision to make a
     decision。 So， I think it's a good job。 So， I'm running a single-line infrastructure。
+  id: totrans-59
   prefs: []
   type: TYPE_NORMAL
 - en: And I think that's one job to start working really hard at one point to solve
@@ -363,23 +431,27 @@
     one will work really hard。 but I'll first go ahead and finish it。 So， I think
     it's both a one and one to send them a line。 I think it's about to talk about
     it in the first place。 I was going to let you do that very quickly。
+  id: totrans-60
   prefs: []
   type: TYPE_NORMAL
 - en: And finally， there's no language in this country。 So。 we've all been there in
     the middle of the night。 You see the time， you get paid to make up 3 a。m。 You
     put the plus button in the third place。 All of the time it's all set。 I'm not
     going to be making it。 I'm not going to be making it。 Okay。 So。
+  id: totrans-61
   prefs: []
   type: TYPE_NORMAL
 - en: our story in creation theory is a little bit different than it's a law study。
     First of all， that is。 you know， this one is two-range lectures。 That's what depends
     on the lower of our system， right？
+  id: totrans-62
   prefs: []
   type: TYPE_NORMAL
 - en: If you're still in the C-， or the lower of our infrastructure。 That's what it
     is。 It's only called a perspective or short call。 Now， in our data pipeline。 we
     have an actual number of people that don't want to think what's wrong， or not。
     If it's not just one， two， or three hours to run it。
+  id: totrans-63
   prefs: []
   type: TYPE_NORMAL
 - en: then it's one of my skills in order to scale them up。 Because then we mean so，
@@ -387,12 +459,14 @@
     we work with was this。 But。 you know， both of these things are like， you know，
     the test。 And one of them is a percent of our pipeline is one。 And it's all still，
     right？
+  id: totrans-64
   prefs: []
   type: TYPE_NORMAL
 - en: It's kind of a pipeline。 It's a pretty awesome。 Now。 what's it to think about
     the architecture needed？ So。 all it's going to be a salary on two dimensions。
     And it mustn't take from four dimensions before it's off of five all of those。
     It is possible for all that from five and then to five。 In all of our environments。
+  id: totrans-65
   prefs: []
   type: TYPE_NORMAL
 - en: one cloud or a container is one's library worker， which is considering tasks
@@ -400,6 +474,7 @@
     to see all of it。 you're sort of a data dog， so you can fast monitor these things。
     We provide the data dog's infrastructure agent， which features the students from
     data dogs。
+  id: totrans-66
   prefs: []
   type: TYPE_NORMAL
 - en: and it's possible to provide you through the data dog method for your computer
@@ -407,6 +482,7 @@
     can't over that。"， So。 we provide you with the data dog。 Now， then all it could
     be is a task that has been stored on the cloud or scale。 And that's where you
     need to be。 And all it could be is on two-one dimensions。
+  id: totrans-67
   prefs: []
   type: TYPE_NORMAL
 - en: The last thing to the puzzle is the cluster of a scale。 It was not the title
@@ -414,6 +490,7 @@
     one of them。 And， of course。 the auto scale of a scale is just to build up a new
     AWS instance to run。 And just to say， it works。 We didn't actually mention these
     by auto scaleers。
+  id: totrans-68
   prefs: []
   type: TYPE_NORMAL
 - en: And those were a talk of I and noticed that it's a new thing to do with us。
@@ -421,10 +498,12 @@
     data loss。 And that'll make you auto scale or go up in data loss。 And if you want
     to be able to do so。 you just think out of it， you can really narrow the window
     and make sure everything works more effectively。
+  id: totrans-69
   prefs: []
   type: TYPE_NORMAL
 - en: And that's why we need to see the number of one pods。 And it looks here for
     a way to do it， right？
+  id: totrans-70
   prefs: []
   type: TYPE_NORMAL
 - en: The number of the two goes up， the number of one pods goes up。 The number of
@@ -432,18 +511,21 @@
     have to go up first。 But for the number of one pods goes up。 This is the only
     thing that's happened in the actual pod。 And it's kind of a constraint of the
     digital thing that's going to be like you。 But it does work。
+  id: totrans-71
   prefs: []
   type: TYPE_NORMAL
 - en: And it's pretty fun to do。 And last but definitely not least。 we're waiting
     for the people in the pod here。 Our pod talk's in the data。 So， in the data area。
     actually I think it's what's about in the data space。 We're just going to see
     where it can be tested。 And that they offer a splash of the pod。
+  id: totrans-72
   prefs: []
   type: TYPE_NORMAL
 - en: which is one of the traffic applications。 We're going to take it up。 Your engine
     is going to be a four-year-four。 But now， we're going to take it up。 We're going
     to take it up。 We're going to take it up。 We're going to take it up。 We're going
     to take it up。 We're going to take it up。 We're going to take it up。
+  id: totrans-73
   prefs: []
   type: TYPE_NORMAL
 - en: We're going to take it up。 We're going to take it up。 We're going to take it
@@ -451,6 +533,7 @@
     it up。 We're going to take it up。 We're going to take it up。 We're going to take
     it up。 We're going to take it up。 We're going to take it up。 We're going to take
     it up。
+  id: totrans-74
   prefs: []
   type: TYPE_NORMAL
 - en: We're going to take it up。 We're going to take it up。 We're going to take it
@@ -458,6 +541,7 @@
     it up。 We're going to take it up。 We're going to take it up。 We're going to take
     it up。 We're going to take it up。 We're going to take it up。 We're going to take
     it up。
+  id: totrans-75
   prefs: []
   type: TYPE_NORMAL
 - en: We're going to take it up。 We're going to take it up。 We're going to take it
@@ -465,6 +549,7 @@
     it up。 We're going to take it up。 We're going to take it up。 We're going to take
     it up。 We're going to take it up。 We're going to take it up。 We're going to take
     it up。
+  id: totrans-76
   prefs: []
   type: TYPE_NORMAL
 - en: We're going to take it up。 We're going to take it up。 We're going to take it
@@ -472,6 +557,7 @@
     it up。 We're going to take it up。 We're going to take it up。 We're going to take
     it up。 We're going to take it up。 We're going to take it up。 We're going to take
     it up。
+  id: totrans-77
   prefs: []
   type: TYPE_NORMAL
 - en: We're going to take it up。 We're going to take it up。 We're going to take it
@@ -479,6 +565,7 @@
     it up。 We're going to take it up。 We're going to take it up。 We're going to take
     it up。 We're going to take it up。 We're going to take it up。 We're going to take
     it up。
+  id: totrans-78
   prefs: []
   type: TYPE_NORMAL
 - en: We're going to take it up。 We're going to take it up。 We're going to take it
@@ -486,15 +573,18 @@
     it up。 We're going to take it up。 We're going to take it up。 We're going to take
     it up。 We're going to take it up。 We're going to take it up。 We're going to take
     it up。
+  id: totrans-79
   prefs: []
   type: TYPE_NORMAL
 - en: We're going to take it up。 We're going to take it up。 We're going to take it
     up。 We're going to take it up。 We're going to take it up。 We're going to take
     it up。 We're going to take it up。 We're going to take it up。 We're going to take
     it up。
+  id: totrans-80
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/bdda7ec387967196cbef27c2ef043b69_13.png)'
+  id: totrans-81
   prefs: []
   type: TYPE_IMG
 - en: We're going to take it up。 We're going to take it up。 We're going to take it
@@ -502,6 +592,7 @@
     it up。 We're going to take it up。 We're going to take it up。 We're going to take
     it up。 We're going to take it up。 We're going to take it up。 We're going to take
     it up。
+  id: totrans-82
   prefs: []
   type: TYPE_NORMAL
 - en: We're going to take it up。 We're going to take it up。 We're going to take it
@@ -509,12 +600,15 @@
     it up。 We're going to take it up。 We're going to take it up。 We're going to take
     it up。 We're going to take it up。 We're going to take it up。 We're going to take
     it up。
+  id: totrans-83
   prefs: []
   type: TYPE_NORMAL
 - en: We're going to take it up。
+  id: totrans-84
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/bdda7ec387967196cbef27c2ef043b69_15.png)'
+  id: totrans-85
   prefs: []
   type: TYPE_IMG
 - en: We're going to take it up。 We're going to take it up。 We're going to take it
@@ -522,6 +616,7 @@
     it up。 We're going to take it up。 We're going to take it up。 We're going to take
     it up。 We're going to take it up。 We're going to take it up。 We're going to take
     it up。
+  id: totrans-86
   prefs: []
   type: TYPE_NORMAL
 - en: We're going to take it up。 We're going to take it up。 We're going to take it
@@ -529,12 +624,14 @@
     it up。 We're going to take it up。 We do also make sure we have a bullet on the
     phone and phone。 And something goes wrong。 And we'll see if our task is actually
     going to --。
+  id: totrans-87
   prefs: []
   type: TYPE_NORMAL
 - en: If some -- if our task is going to go wrong， they're going to run the phone。
     And they're going to find a decision。 And we'll see in the later thing。 And that's
     why it's like --。 So then you can do drugs。 And you can see the phone rather than
     such a special as code。 And then you can see the phone。 So we need that option。
+  id: totrans-88
   prefs: []
   type: TYPE_NORMAL
 - en: And it's the opportunity for the opportunity for the opportunity。 So it's given
@@ -542,24 +639,28 @@
     not the most great， but the last thing is to ask the brain of those people。 And
     just read up on it and say， "You can find a decision。 Don't like it。"， And all
     the other things。
+  id: totrans-89
   prefs: []
   type: TYPE_NORMAL
 - en: So it's --， And the difficulty is part of the opportunity， that you can find。
     So that you can find a little bit of the --， Yeah。 so the opportunity that you
     like wants to get in your mind， and it's in your mind。 And it's in your mind。
     And it's in your mind。 And it's in your mind。
+  id: totrans-90
   prefs: []
   type: TYPE_NORMAL
 - en: And then you want to see the more。 And then you want to see the more。 And then
     you want to see the more。 So you can find the more。 And then you want to see the
     more。 And then you want to see the more。 And then you want to see the more。 And
     then you want to see the more。 And then you want to see the more。
+  id: totrans-91
   prefs: []
   type: TYPE_NORMAL
 - en: And then you want to see the more。 And then you want to see the more。 And then
     you want to see the more。 And then you want to see the more。 And then you want
     to see the more。 And then you want to see the more。 And then you want to see the
     more。 Oh， I want to go with the most。 Because you have to see the more。
+  id: totrans-92
   prefs: []
   type: TYPE_NORMAL
 - en: And you have to see the more。 And you have to see the more。 And you have to
@@ -567,6 +668,7 @@
     you have to see the more。 And you have to see the more。 And you have to see the
     more。 And you have to see the more。 And you have to see the more。 And you have
     to see the more。 And you have to see the more。
+  id: totrans-93
   prefs: []
   type: TYPE_NORMAL
 - en: And you have to see the more。 And you have to see the more。 And you have to
@@ -574,6 +676,7 @@
     you have to see the more。 And you have to see the more。 And you have to see the
     more。 And you have to see the more。 And you have to see the more。 And you have
     to see the more。 And you have to see the more。
+  id: totrans-94
   prefs: []
   type: TYPE_NORMAL
 - en: And you have to see the more。 And you have to see the more。 And you have to
@@ -581,6 +684,7 @@
     you have to see the more。 And you have to see the more。 And you have to see the
     more。 And you have to see the more。 And you have to see the more。 And you have
     to see the more。 And you have to see the more。
+  id: totrans-95
   prefs: []
   type: TYPE_NORMAL
 - en: And you have to see the more。 And you have to see the more。 And you have to
@@ -588,6 +692,7 @@
     you have to see the more。 And you have to see the more。 And you have to see the
     more。 And you have to see the more。 And you have to see the more。 And you have
     to see the more。 And you have to see the more。
+  id: totrans-96
   prefs: []
   type: TYPE_NORMAL
 - en: And you have to see the more。 And you have to see the more。 And you have to
@@ -595,43 +700,57 @@
     you have to see the more。 And you have to see the more。 And you have to see the
     more。 And you have to see the more。 And you have to see the more。 And you have
     to see the more。 And you have to see the more。
+  id: totrans-97
   prefs: []
   type: TYPE_NORMAL
+  zh: 你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。
 - en: And you have to see the more。 And you have to see the more。 And you have to
     see the more。 And you have to see the more。 And you have to see the more。 And
     you have to see the more。 And you have to see the more。 And you have to see the
     more。 And you have to see the more。 And you have to see the more。 And you have
     to see the more。 And you have to see the more。
+  id: totrans-98
   prefs: []
   type: TYPE_NORMAL
+  zh: 你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。
 - en: And you have to see the more。 And you have to see the more。 And you have to
     see the more。 And you have to see the more。 And you have to see the more。 And
     you have to see the more。 And you have to see the more。 And you have to see the
     more。 And you have to see the more。 And you have to see the more。 And you have
     to see the more。 And you have to see the more。
+  id: totrans-99
   prefs: []
   type: TYPE_NORMAL
+  zh: 你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。
 - en: And you have to see the more。 And you have to see the more。 And you have to
     see the more。 And you have to see the more。 And you have to see the more。 And
     you have to see the more。 And you have to see the more。 And you have to see the
     more。 And you have to see the more。 And you have to see the more。 And you have
     to see the more。 And you have to see the more。
+  id: totrans-100
   prefs: []
   type: TYPE_NORMAL
+  zh: 你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。
 - en: And you have to see the more。 And you have to see the more。 And you have to
     see the more。 And you have to see the more。 And you have to see the more。 And
     you have to see the more。 And you have to see the more。 And you have to see the
     more。 And you have to see the more。 And you have to see the more。 And you have
     to see the more。 And you have to see the more。
+  id: totrans-101
   prefs: []
   type: TYPE_NORMAL
+  zh: 你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。
 - en: And you have to see the more。 And you have to see the more。 And you have to
     see the more。 And you have to see the more。 And you have to see the more。 And
     you have to see the more。 And you have to see the more。 And you have to see the
     more。 And you have to see the more。 And you have to see the more。 And you have
     to see the more。 And I think so。 Thank you very much。
+  id: totrans-102
   prefs: []
   type: TYPE_NORMAL
+  zh: 你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。你必须看到更多。我觉得是的。非常感谢。
 - en: Thank you。 Thank you。 Thank you。 Thank you。 (keyboard clicking)。
+  id: totrans-103
   prefs: []
   type: TYPE_NORMAL
+  zh: 谢谢。谢谢。谢谢。谢谢。（键盘点击声）。
