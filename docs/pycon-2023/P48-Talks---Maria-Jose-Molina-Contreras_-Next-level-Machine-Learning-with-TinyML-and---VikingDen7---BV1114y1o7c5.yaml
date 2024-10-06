@@ -1,0 +1,1283 @@
+- en: P48：Talks - Maria Jose Molina Contreras_ Next level Machine Learning with TinyML
+    and - VikingDen7 - BV1114y1o7c5
+  prefs:
+  - PREF_H1
+  type: TYPE_NORMAL
+- en: Hello everyone。 Welcome to the next session。 I will talk to you about the computer
+    and research and a couple of ingredients。 rest in it。 So I ask people， like you
+    might have been following us on YouTube。 and I'm here to get to the computer and
+    to the computer。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_1.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: So we'd also like to do a little more detail on the computer and what we need
+    to do。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_3.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I'm so excited to hear what you're talking about， because I'm so excited about
+    it。 I just want to know that this is so important， I'm not in debt。 but people
+    really follow up on my phone。 Yes， we'll be all right on that。 But I hope that
+    you enjoy as well as I'm going to be。 And of course， it's a lot of money。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_5.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: First， I want to thank you for being with us。 First， I want to thank you for
+    being with us。 My name is Rani Peece。 I'm in the background in the background，
+    I'm in the office of the office。 I work on the data science， living at this point
+    of company for indoor housing， school in college。 and in general。 I am a really，
+    really good， with our center of income。 Also， in a state science。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I need to all enjoy the content and the content and support data science。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_7.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: And this is the last process that I've been reading the last years。 Since the
+    time of time。 I'm showing what I'm going to be making。 I'm just here to come here。
+    There's no learning in the section。 You know， it's my point where I speak or not。
+    But here it was not meant to be my main thing， but， you know， I'm getting raised
+    by the world。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I thought I had been reading some， maybe reading a channel or a button。 You're
+    too hot to play around and spend the community。 So。 what do you need all people
+    to start playing great science with and all of us？
+  prefs: []
+  type: TYPE_NORMAL
+- en: And when my next project was focused on doing our quality in English。 I think
+    it's important that at the moment， when I realized that a culture seems to be
+    too simple。 It's a system that's working very well。 Our time has been here。 It's
+    been here。 It's been here。 It's been so difficult。 It's been here since years。
+    I've been here since years。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_9.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_11.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_13.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_15.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_17.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_19.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_21.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_23.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_25.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_27.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_29.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_31.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_33.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_35.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_37.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_39.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_41.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_43.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_45.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_47.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_49.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_51.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_53.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_55.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_57.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_59.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_61.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_63.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_65.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_67.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_69.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_71.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_73.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_75.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_77.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_79.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_81.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_83.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_85.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_87.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_89.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_91.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_93.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_95.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_97.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_99.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_101.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_103.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_105.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_107.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_109.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_111.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_113.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。 I've been here for a while。 I've been here for a
+    while。 I've been here for a while。 I've been here for a while。 I've been here
+    for a while。 I've been here for a while。 I've been here for a while。 I've been
+    here for a while。 I've been here for a while。 I've been here for a while。 I've
+    been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL
+- en: '![](img/8abb667ee6943fdedc5d04846aef29f7_115.png)'
+  prefs: []
+  type: TYPE_IMG
+- en: I've been here for a while。 I've been here for a while。
+  prefs: []
+  type: TYPE_NORMAL

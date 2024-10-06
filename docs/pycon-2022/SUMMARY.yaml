@@ -1,0 +1,425 @@
+- en: '[PyCon 2022 会议笔记](README.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P1：Charlas - Ariel Ortiz_ Match case para principiantes - VikingDen7 - BV1f8411Y7cP](P1-Charlas---Ariel-Ortiz_-Match-case-para-principiantes---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P10：Keynote - Sara Issaoun - VikingDen7 - BV1f8411Y7cP](P10-Keynote---Sara-Issaoun---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P11：Keynote - Steering Council Panel - VikingDen7 - BV1f8411Y7cP](P11-Keynote---Steering-Council-Panel---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P12：Lightning Talks - Day 1 - VikingDen7 - BV1f8411Y7cP](P12-Lightning-Talks---Day-1---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P13：Lightning Talks - Day 2 AM - VikingDen7 - BV1f8411Y7cP](P13-Lightning-Talks---Day-2-AM---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P14：Lightning Talks - Day 2 PM - VikingDen7 - BV1f8411Y7cP](P14-Lightning-Talks---Day-2-PM---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P15：Lightning Talks - Day 3 - VikingDen7 - BV1f8411Y7cP](P15-Lightning-Talks---Day-3---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P16：Talk - A. Jesse Jiryu Davis_ Why Should Async Get All The Love   Advanced
+    Contro - VikingDen7 - BV1f8411Y7cP](P16-Talk---A--Jesse-Jiryu-Davis_-Why-Should-Async-Get-All-The-Love---Advanced-Contro---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P17：Talk - Aaron Stephens_ Python for Threat Intelligence - VikingDen7 - BV1f8411Y7cP](P17-Talk---Aaron-Stephens_-Python-for-Threat-Intelligence---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P18：Talk - Ajinkya Rajput_Ashish Bijlani_Bad actors vs our community_ detecting
+    soft - VikingDen7 - BV1f8411Y7cP](P18-Talk---Ajinkya-Rajput_Ashish-Bijlani_Bad-actors-vs-our-community_-detecting-soft---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P19：Talk - Amit Saha_ Implementing shared functionality using Middleware -
+    VikingDen7 - BV1f8411Y7cP](P19-Talk---Amit-Saha_-Implementing-shared-functionality-using-Middleware---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P2：Charlas - Cristián Maureira-Fredes_Denny Perez_  Uniendo a las comunidades
+    hispa - VikingDen7 - BV1f8411Y7cP](P2-Charlas---Cristi-n-Maureira-Fredes_Denny-Perez_--Uniendo-a-las-comunidades-hispa---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P20：Talk - Anthony Shaw_ Write faster Python! Common performance anti patterns
+    - VikingDen7 - BV1f8411Y7cP](P20-Talk---Anthony-Shaw_-Write-faster-Python--Common-performance-anti-patterns---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P21：Talk - Antoine Toubhans_ Flexible ML Experiment Tracking System for Python
+    Coder - VikingDen7 - BV1f8411Y7cP](P21-Talk---Antoine-Toubhans_-Flexible-ML-Experiment-Tracking-System-for-Python-Coder---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P22：Talk - Benjamin _Zags_ Zagorsky_ Handling Timezones in Python - VikingDen7
+    - BV1f8411Y7cP](P22-Talk---Benjamin-_Zags_-Zagorsky_-Handling-Timezones-in-Python---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P23：Talk - Benjamin Bariteau_ How We Migrated 3.8 Million Lines of Python
+    2 Without - VikingDen7 - BV1f8411Y7cP](P23-Talk---Benjamin-Bariteau_-How-We-Migrated-3-8-Million-Lines-of-Python-2-Without---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P24：Talk - Bernát Gábor_ How we standardized editable installs   PEP 660 vs  PEP
+    662 - VikingDen7 - BV1f8411Y7cP](P24-Talk---Bern-t-G-bor_-How-we-standardized-editable-installs---PEP-660-vs--PEP-662---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P25：Talk - Bianca Rosa_ Observability driven development - VikingDen7 - BV1f8411Y7cP](P25-Talk---Bianca-Rosa_-Observability-driven-development---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P26：Talk - Brandt Bucher_ A Perfect Match The history, design, implementation,
+    and f - VikingDen7 - BV1f8411Y7cP](P26-Talk---Brandt-Bucher_-A-Perfect-Match-The-history--design--implementation--and-f---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P27：Talk - Brendan Collins_ Who Said Wrangling Geospatial Data at Scale was
+    Easy_ - VikingDen7 - BV1f8411Y7cP](P27-Talk---Brendan-Collins_-Who-Said-Wrangling-Geospatial-Data-at-Scale-was-Easy_---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P28：Talk - Bruce Eckel_ Making Data Classes Work for You - VikingDen7 - BV1f8411Y7cP](P28-Talk---Bruce-Eckel_-Making-Data-Classes-Work-for-You---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P29：Talk - Calvin Hendryx-Parker_ Bootstrapping Your Local Python Environment
+    - VikingDen7 - BV1f8411Y7cP](P29-Talk---Calvin-Hendryx-Parker_-Bootstrapping-Your-Local-Python-Environment---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P3：Charlas - Marcelo Elizeche Landó_ AyudaPy org  De proyecto de fin de semana
+    a mo - VikingDen7 - BV1f8411Y7cP](P3-Charlas---Marcelo-Elizeche-Land-_-AyudaPy-org--De-proyecto-de-fin-de-semana-a-mo---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P30：Talk - Carlos Kidman_ Testing Machine Learning Models - VikingDen7 - BV1f8411Y7cP](P30-Talk---Carlos-Kidman_-Testing-Machine-Learning-Models---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P31：Talk - Christopher Ariza_ Employing NumPy''s NPY Format for Faster Than
+    Parquet D - VikingDen7 - BV1f8411Y7cP](P31-Talk---Christopher-Ariza_-Employing-NumPy-s-NPY-Format-for-Faster-Than-Parquet-D---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P32：Talk - Christopher Neugebauer_ Fast and reproducible tests, packaging,
+    and deplo - VikingDen7 - BV1f8411Y7cP](P32-Talk---Christopher-Neugebauer_-Fast-and-reproducible-tests--packaging--and-deplo---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P33：Talk - Cillian Kieran_ Open Source, Python Based Tools For Data Privacy
+    - VikingDen7 - BV1f8411Y7cP](P33-Talk---Cillian-Kieran_-Open-Source--Python-Based-Tools-For-Data-Privacy---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P34：Talk - Daniel Pope_ Why I reimplemented Trio in a game engine - VikingDen7
+    - BV1f8411Y7cP](P34-Talk---Daniel-Pope_-Why-I-reimplemented-Trio-in-a-game-engine---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P35：Talk - Deepak K Gupta_  Speed Up Data Access with PyArrow Apache Arrow   Data
+    is - VikingDen7 - BV1f8411Y7cP](P35-Talk---Deepak-K-Gupta_--Speed-Up-Data-Access-with-PyArrow-Apache-Arrow---Data-is---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P36：Talk - Dustin Ingram_ Securing the Open Source Software Supply Chain -
+    VikingDen7 - BV1f8411Y7cP](P36-Talk---Dustin-Ingram_-Securing-the-Open-Source-Software-Supply-Chain---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P37：Talk - Graham Bleaney_Pradeep Kumar Srinivasan_ Securing Code with the
+    Python Ty - VikingDen7 - BV1f8411Y7cP](P37-Talk---Graham-Bleaney_Pradeep-Kumar-Srinivasan_-Securing-Code-with-the-Python-Ty---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P38：Talk - Jeremiah Paige_ Intro to Introspection - VikingDen7 - BV1f8411Y7cP](P38-Talk---Jeremiah-Paige_-Intro-to-Introspection---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P39：Talk - Henry Fredrick Schreiner III_ Building a binary extension - VikingDen7
+    - BV1f8411Y7cP](P39-Talk---Henry-Fredrick-Schreiner-III_-Building-a-binary-extension---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P4：Diversity & Inclusion Workgroup - VikingDen7 - BV1f8411Y7cP](P4-Diversity---Inclusion-Workgroup---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P40：Talk - Jan-Hein Bührman_ When to refactor your code into generators and
+    how - VikingDen7 - BV1f8411Y7cP](P40-Talk---Jan-Hein-B-hrman_-When-to-refactor-your-code-into-generators-and-how---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P41：Talk - Jason Fried_ If an asyncio Task fails in the woods and nobody is
+    around t - VikingDen7 - BV1f8411Y7cP](P41-Talk---Jason-Fried_-If-an-asyncio-Task-fails-in-the-woods-and-nobody-is-around-t---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P42：Talk - Greg Compestine_ How to Succeed with Python Across the Enterprise
+    - VikingDen7 - BV1f8411Y7cP](P42-Talk---Greg-Compestine_-How-to-Succeed-with-Python-Across-the-Enterprise---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P43：Talk - Jes Ford_ The Model Review_ improving transparency, reproducibility,
+    & kn - VikingDen7 - BV1f8411Y7cP](P43-Talk---Jes-Ford_-The-Model-Review_-improving-transparency--reproducibility----kn---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P44：Talk - Jessica Temporal_ Let''s talk about JWT - VikingDen7 - BV1f8411Y7cP](P44-Talk---Jessica-Temporal_-Let-s-talk-about-JWT---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P45：Talk - John Reese_ Open Source on Easy Mode - VikingDen7 - BV1f8411Y7cP](P45-Talk---John-Reese_-Open-Source-on-Easy-Mode---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P46：Talk - Joseph Lucas_ Serialization  More than pickling - VikingDen7 -
+    BV1f8411Y7cP](P46-Talk---Joseph-Lucas_-Serialization--More-than-pickling---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P47：Talk - Josh Weissbock_ Distributed Web Scraping in Python - VikingDen7
+    - BV1f8411Y7cP](P47-Talk---Josh-Weissbock_-Distributed-Web-Scraping-in-Python---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P48：Talk - Juan Gonzalez_ Improving App Performance with Snapshots - VikingDen7
+    - BV1f8411Y7cP](P48-Talk---Juan-Gonzalez_-Improving-App-Performance-with-Snapshots---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P49：Talk - Kelly Schuster - Paredes_Sean Tibor_ Learn Python Like a 12 Year
+    Old - VikingDen7 - BV1f8411Y7cP](P49-Talk---Kelly-Schuster---Paredes_Sean-Tibor_-Learn-Python-Like-a-12-Year-Old---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P5：Keynote - Closing_ Mariatta - VikingDen7 - BV1f8411Y7cP](P5-Keynote---Closing_-Mariatta---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P50：Talk - Kevin Kho_Han Wang_ Comparing the Different Ways to Scale Python
+    and Pand - VikingDen7 - BV1f8411Y7cP](P50-Talk---Kevin-Kho_Han-Wang_-Comparing-the-Different-Ways-to-Scale-Python-and-Pand---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P51：Talk - Kevin Modzelewski_ Writing performant code for modern Python interpreters
+    - VikingDen7 - BV1f8411Y7cP](P51-Talk---Kevin-Modzelewski_-Writing-performant-code-for-modern-Python-interpreters---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P52：Talk - Liran Haimovitch_ Effective Protobuf_ Everything You Wanted To
+    Know, But - VikingDen7 - BV1f8411Y7cP](P52-Talk---Liran-Haimovitch_-Effective-Protobuf_-Everything-You-Wanted-To-Know--But---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P53：Talk - Maria Jose Molina Contreras_ Better Air, Better Health  Creating
+    an indoo - VikingDen7 - BV1f8411Y7cP](P53-Talk---Maria-Jose-Molina-Contreras_-Better-Air--Better-Health--Creating-an-indoo---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P54：Talk - Mario Corchero_ Finding penguins with a snake  Linux features for
+    a Pytho - VikingDen7 - BV1f8411Y7cP](P54-Talk---Mario-Corchero_-Finding-penguins-with-a-snake--Linux-features-for-a-Pytho---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P55：Talk - Maryanne Wachter_ Will it Blend_ Writing A Custom Constraint Solver
+    for B - VikingDen7 - BV1f8411Y7cP](P55-Talk---Maryanne-Wachter_-Will-it-Blend_-Writing-A-Custom-Constraint-Solver-for-B---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P56：Talk - Mason Egger_ Write Docs Devs Love_ Ten Tips To Level Up Your Tech
+    Writing - VikingDen7 - BV1f8411Y7cP](P56-Talk---Mason-Egger_-Write-Docs-Devs-Love_-Ten-Tips-To-Level-Up-Your-Tech-Writing---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P57：Talk - Meredydd Luff_ Building a Python Code Completer - VikingDen7 -
+    BV1f8411Y7cP](P57-Talk---Meredydd-Luff_-Building-a-Python-Code-Completer---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P58：Talk - Miranda Auhl_ Animating NFL play by play data using matplotlib''s
+    FuncAnim - VikingDen7 - BV1f8411Y7cP](P58-Talk---Miranda-Auhl_-Animating-NFL-play-by-play-data-using-matplotlib-s-FuncAnim---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P59：Talk - Mohammad Athar_ D&D and G  a daring tale of Dungeons and Dragons
+    and also - VikingDen7 - BV1f8411Y7cP](P59-Talk---Mohammad-Athar_-D-D-and-G--a-daring-tale-of-Dungeons-and-Dragons-and-also---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P6：Keynote - Łukasz Langa - VikingDen7 - BV1f8411Y7cP](P6-Keynote----ukasz-Langa---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P60：Talk - Moshe Zadka_ Best Practices for Continuous Integration in Python
+    V02 - VikingDen7 - BV1f8411Y7cP](P60-Talk---Moshe-Zadka_-Best-Practices-for-Continuous-Integration-in-Python-V02---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P61：Talk - Nandita Viswanath and Sagar Aryal_ In house to open source  Stitching
+    the - VikingDen7 - BV1f8411Y7cP](P61-Talk---Nandita-Viswanath-and-Sagar-Aryal_-In-house-to-open-source--Stitching-the---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P62：Talk - Nir Barazida_ Dock Your Jupyter Notebook - VikingDen7 - BV1f8411Y7cP](P62-Talk---Nir-Barazida_-Dock-Your-Jupyter-Notebook---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P63：Talk - Olivier Breuleux_ How to change Python (while it''s running) -
+    VikingDen7 - BV1f8411Y7cP](P63-Talk---Olivier-Breuleux_-How-to-change-Python--while-it-s-running----VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P64：Talk - Pablo Alcain_ Software Development for Machine Learning in Python
+    - VikingDen7 - BV1f8411Y7cP](P64-Talk---Pablo-Alcain_-Software-Development-for-Machine-Learning-in-Python---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P65：Talk - Pablo Galindo Salgado_ Making Python better one error message at
+    a time - VikingDen7 - BV1f8411Y7cP](P65-Talk---Pablo-Galindo-Salgado_-Making-Python-better-one-error-message-at-a-time---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P66：Talk - Padmaja Bhagwat_Manisha R_ VigNET_ An intelligent camera app that
+    assists - VikingDen7 - BV1f8411Y7cP](P66-Talk---Padmaja-Bhagwat_Manisha-R_-VigNET_-An-intelligent-camera-app-that-assists---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P67：Talk - Pandy Knight_ Managing the Test Data Nightmare - VikingDen7 - BV1f8411Y7cP](P67-Talk---Pandy-Knight_-Managing-the-Test-Data-Nightmare---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P68：Talk - Paul Ganssle_ What to Do When the Bug Is in Someone Else''s Code
+    - VikingDen7 - BV1f8411Y7cP](P68-Talk---Paul-Ganssle_-What-to-Do-When-the-Bug-Is-in-Someone-Else-s-Code---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P69：Talk - Paul Kehrer_Alex Gaynor_ Shipping Python Extensions in Rust Two
+    Million T - VikingDen7 - BV1f8411Y7cP](P69-Talk---Paul-Kehrer_Alex-Gaynor_-Shipping-Python-Extensions-in-Rust-Two-Million-T---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P7：Keynote - Naomi Ceder - VikingDen7 - BV1f8411Y7cP](P7-Keynote---Naomi-Ceder---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P70：Talk - Paul Vincent Craven_ Harvest the power of the GPU for awesome special
+    eff - VikingDen7 - BV1f8411Y7cP](P70-Talk---Paul-Vincent-Craven_-Harvest-the-power-of-the-GPU-for-awesome-special-eff---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P71：Talk - Peacock_ Getting Started with Statically Typed Programming in Python
+    3.10 - VikingDen7 - BV1f8411Y7cP](P71-Talk---Peacock_-Getting-Started-with-Statically-Typed-Programming-in-Python-3-10---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P72：Talk - Reuven M. Lerner_ Understanding attributes (Or_ They''re not nearly
+    as bor - VikingDen7 - BV1f8411Y7cP](P72-Talk---Reuven-M--Lerner_-Understanding-attributes--Or_-They-re-not-nearly-as-bor---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P73：Talk - Roman Yurchak_Hood Chatham_ Pyodide_  A Python distribution for
+    the brows - VikingDen7 - BV1f8411Y7cP](P73-Talk---Roman-Yurchak_Hood-Chatham_-Pyodide_--A-Python-distribution-for-the-brows---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P74：Talk - Sam Scott_ Why Authorization is Hard - VikingDen7 - BV1f8411Y7cP](P74-Talk---Sam-Scott_-Why-Authorization-is-Hard---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P75：Talk - Sangarshanan_ Build-a-Database with Python - VikingDen7 - BV1f8411Y7cP](P75-Talk---Sangarshanan_-Build-a-Database-with-Python---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P76：Talk - Sebastiaan Zeeff_ Demystifying Python’s Internals_ Diving into
+    CPython by - VikingDen7 - BV1f8411Y7cP](P76-Talk---Sebastiaan-Zeeff_-Demystifying-Python-s-Internals_-Diving-into-CPython-by---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P77：Talk - Tadeh Hakopian_ Programming Your Way up a Skyscraper   Python in
+    the Buil - VikingDen7 - BV1f8411Y7cP](P77-Talk---Tadeh-Hakopian_-Programming-Your-Way-up-a-Skyscraper---Python-in-the-Buil---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P78：Talk - Tetsuya Jesse Hirata_ Productionize Research Oriented Code By Python
+    - VikingDen7 - BV1f8411Y7cP](P78-Talk---Tetsuya-Jesse-Hirata_-Productionize-Research-Oriented-Code-By-Python---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P79：Talk - Trey Hunner_ Python Oddities Explained - VikingDen7 - BV1f8411Y7cP](P79-Talk---Trey-Hunner_-Python-Oddities-Explained---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P8：Keynote - Peter Wang - VikingDen7 - BV1f8411Y7cP](P8-Keynote---Peter-Wang---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P80：Talk - Vic Kumar_ Writing Functional Code in Python - VikingDen7 - BV1f8411Y7cP](P80-Talk---Vic-Kumar_-Writing-Functional-Code-in-Python---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P81：Talk - Zachary Sarah Corleissen_ Localize your open source documentation_
+    a Kube - VikingDen7 - BV1f8411Y7cP](P81-Talk---Zachary-Sarah-Corleissen_-Localize-your-open-source-documentation_-a-Kube---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P82：Talk. - Francesco Murdaca_Maya Costantini_ How to Make Your Python Jupyter
+    Noteb - VikingDen7 - BV1f8411Y7cP](P82-Talk----Francesco-Murdaca_Maya-Costantini_-How-to-Make-Your-Python-Jupyter-Noteb---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P83：Talk_ Jigyasa Grover_Rishabh Misra_ Sculpting Data for Machine Learning
+    V02 - VikingDen7 - BV1f8411Y7cP](P83-Talk_-Jigyasa-Grover_Rishabh-Misra_-Sculpting-Data-for-Machine-Learning-V02---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P84：Talks - Fred Phillips_ Hooking into the import system - VikingDen7 - BV1f8411Y7cP](P84-Talks---Fred-Phillips_-Hooking-into-the-import-system---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P85：Tutorial - Ariel Ortiz_ A Pythonista''s Introductory Guide to Web Assembly
+    - VikingDen7 - BV1f8411Y7cP](P85-Tutorial---Ariel-Ortiz_-A-Pythonista-s-Introductory-Guide-to-Web-Assembly---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P86：Tutorial - Jacob Deppen_ Documenting your code from docstrings to automated
+    buil - VikingDen7 - BV1f8411Y7cP](P86-Tutorial---Jacob-Deppen_-Documenting-your-code-from-docstrings-to-automated-buil---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P87：Typing Summit - at VikingDen7 - BV1f8411Y7cP](P87-Typing-Summit---at-VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P88：Tutorial - Zac Hatfield-Dodds_ Introduction to Property Based Testing
+    - VikingDen7 - BV1f8411Y7cP](P88-Tutorial---Zac-Hatfield-Dodds_-Introduction-to-Property-Based-Testing---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P89：Welcome - Emily Morehouse - VikingDen7 - BV1f8411Y7cP](P89-Welcome---Emily-Morehouse---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P9：Keynote - Python Software Foundation Update - VikingDen7 - BV1f8411Y7cP](P9-Keynote---Python-Software-Foundation-Update---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
+- en: '[P90：Talk - Reka_Ben_ Actionable insights vs ranking How to use and how NOT
+    to use co - VikingDen7 - BV1f8411Y7cP](P90-Talk---Reka_Ben_-Actionable-insights-vs-ranking-How-to-use-and-how-NOT-to-use-co---VikingDen7---BV1f8411Y7cP.md)'
+  prefs:
+  - PREF_UL
+  type: TYPE_NORMAL
