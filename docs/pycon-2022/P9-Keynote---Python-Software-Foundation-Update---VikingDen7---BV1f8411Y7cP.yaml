@@ -3,18 +3,22 @@
   prefs:
   - PREF_H1
   type: TYPE_NORMAL
+  zh: P9：主题演讲 - Python软件基金会更新 - VikingDen7 - BV1f8411Y7cP
 - en: \>\> And now let's welcome Thomas Waters to the stage to kick off our PSF update。
   id: totrans-1
   prefs: []
   type: TYPE_NORMAL
+  zh: \>\> 现在让我们欢迎Thomas Waters上台，启动我们的PSF更新。
 - en: '![](img/41771c61b3cbee41c0cc78b4bd253286_1.png)'
   id: totrans-2
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/41771c61b3cbee41c0cc78b4bd253286_1.png)'
 - en: '![](img/41771c61b3cbee41c0cc78b4bd253286_2.png)'
   id: totrans-3
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/41771c61b3cbee41c0cc78b4bd253286_2.png)'
 - en: \>\> So some of you may have seen me this morning on stage for the steering
     council。 This is not that。 This is a different hat。 I'm also the vice chair of
     the board of directors of the PSF。 And I have been for the last half year the
@@ -23,16 +27,20 @@
   id: totrans-4
   prefs: []
   type: TYPE_NORMAL
+  zh: \>\> 所以你们中有些人可能今天早上在舞台上看到我参与指导委员会。这不是那个。这是另一个角色。我还是PSF董事会的副主席。在过去的半年里，我担任了临时总经理，自从Eva
+    Yodlauska去年离开PSF。我相信你们很多人都听说过Eva，她主持了14年的PyCon。
 - en: She ran the PSF for 10。 Grew the PSF from a small volunteer led organization
     with one staff member to a multimillion dollar。 foundation with seven staff members
     to full time contractors and a bunch more。 Sorry。 Technical difficulties。
   id: totrans-5
   prefs: []
   type: TYPE_NORMAL
+  zh: 她运营了PSF达10年。将PSF从一个由志愿者领导的组织，拥有一名员工，发展成为一个价值数百万美元的基金会，拥有七名全职员工和更多的合同工。抱歉，技术问题。
 - en: '![](img/41771c61b3cbee41c0cc78b4bd253286_4.png)'
   id: totrans-6
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/41771c61b3cbee41c0cc78b4bd253286_4.png)'
 - en: And I just want to say yes， thank you。 I just want to say on behalf of everyone
     thank you Eva for all your hard work。 Many， many years of service。 And unfortunately
     she couldn't be here。 I know she'll be watching the recording so I just want to
@@ -41,6 +49,7 @@
   id: totrans-7
   prefs: []
   type: TYPE_NORMAL
+  zh: 我只想说，是的，谢谢。我想代表大家感谢Eva的辛勤工作。许多年的服务。不幸的是，她无法到场。我知道她会观看录音，所以我想确保我们非常感激她的所有工作。Eva离开后，她特别注意确保基金会继续运作。
 - en: without her。 I took on the general manager position just to make sure the staff
     had everything they。 needed but it was the staff who did all the work。 And they
     have been amazing。 So thank you to the staff as well。 And the board of directors
@@ -49,6 +58,7 @@
   id: totrans-8
   prefs: []
   type: TYPE_NORMAL
+  zh: 没有她的帮助，我担任总经理职位只是为了确保员工拥有所需的一切，但真正工作的是员工，他们表现得很棒。所以也要感谢员工。董事会成立了一个搜索委员会，以找到下一任执行董事。我们与很多社区成员进行了交谈，他们告诉我们他们认为谁适合这个职位。
 - en: be the next executive director。 We took that in but we also hired a search firm。
     We looked at a lot of left field candidates at different people at different places
     in。 the industry。 And then we ended up with several really good candidates that
@@ -57,6 +67,7 @@
   id: totrans-9
   prefs: []
   type: TYPE_NORMAL
+  zh: 成为下一任执行董事。我们考虑了这个意见，但也聘请了一家搜索公司。我们关注了很多来自行业不同地方的候选人。最后，我们得到了几个非常优秀的候选人，并进行了良好的交谈，最终我们聘用了许多社区成员一开始就推荐的人。
 - en: us the hire from the start。 But at least we know we made the right decision。
     I am entirely confident of that because we did our due diligence。 So Deb Nicholson。
     a Python community member and someone with a large wealth of experience。 and knowledge
@@ -64,6 +75,7 @@
   id: totrans-10
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们从一开始就知道这次聘用是正确的。我对此完全有信心，因为我们做了尽职调查。所以，Deb Nicholson是一位Python社区成员，拥有丰富的经验和开源社区的知识。欢迎Deb。你好，我是你们的新执行董事。
 - en: I want to thank Thomas for that lovely introduction。 He just made it sound like
     he showed up to a couple extra meetings but he actually acted。 as a staff person
     for months with no pay and then also helped really helped me find out。 where everything
@@ -71,6 +83,7 @@
   id: totrans-11
   prefs: []
   type: TYPE_NORMAL
+  zh: 我想感谢Thomas的精彩介绍。他让一切听起来像他只参加了一些额外的会议，但实际上他作为员工无偿工作了几个月，并帮助我找出一切，了解我应该参加哪些会议以及需要与谁交谈。
 - en: So he did a fantastic job。 He might not like this but can we please give him
     a round of applause。 So it's really nice to see the top halves of your faces。
     It's been a really weird ride。 I guess everyone says that， right？ But I want to
