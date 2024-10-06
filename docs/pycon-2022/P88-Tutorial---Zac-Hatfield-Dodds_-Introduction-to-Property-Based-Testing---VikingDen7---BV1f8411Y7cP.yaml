@@ -1181,6 +1181,7 @@
   id: totrans-140
   prefs: []
   type: TYPE_NORMAL
+  zh: 编译器优化后，当你在原始输入上运行这个新程序时，你会得到相同的结果。我认为这大约导致了 900 个常见编译器中的错误。最后一点是，如果有一些操作应该没有效果，那么检查它们是否确实没有效果就是一种变形测试。你可以说，如果我调用我的。
 - en: function and then do a no op， no changes。 But honestly， the high level message，
     if you have。 assertions and you check that your code doesn't raise unexpected
     exceptions on any valid input。 and you test your round trips， you are basically
@@ -1189,6 +1190,8 @@
   id: totrans-141
   prefs: []
   type: TYPE_NORMAL
+  zh: 函数然后执行一个无操作，不进行任何更改。但老实说，高级信息是，如果你有断言，并且检查你的代码在任何有效输入上不会引发意外异常，并测试你的往返，你基本上就完成了。因此，当然当你回到你的工作或其他项目，考虑是否想使用
+    hypothesis。
 - en: don't worry about the fancy stuff， until after you've done all of this and then
     decide whether you want to do more。 At that point you will probably also have
     a good sense of is property-based testing valuable for。 your particular project。
@@ -1197,6 +1200,7 @@
   id: totrans-142
   prefs: []
   type: TYPE_NORMAL
+  zh: 不用担心复杂的内容，直到你完成所有这些，然后再决定是否想要做更多。在那时，你可能也会对基于属性的测试在你特定项目中的价值有一个很好的判断。但当然，今天我们将进行更多的练习。因此，第三部分的练习只是下一个笔记本。这里有几个示例函数。
 - en: to write test for。 But if you have a simple function in your own code base that
     you'd like to work on。 or an open source thing， this is very much a kind of picker
     function。 try to identify the properties， and then write a simple property-based
@@ -1205,10 +1209,12 @@
   id: totrans-143
   prefs: []
   type: TYPE_NORMAL
+  zh: 来为你的代码库中一个简单的函数编写测试，或者在开源项目中，这是一个非常适合的选择。试着识别属性，然后编写一个简单的基于属性的测试。我们开始吧。我会在一分钟内巡回以提供帮助，但现在我只是要拔掉插头，看看能否让我的演示工作。
 - en: '![](img/8a2a8090e0ca721c225298b1c97c51f4_28.png)'
   id: totrans-144
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/8a2a8090e0ca721c225298b1c97c51f4_28.png)'
 - en: Okay， so I'll just interrupt the exercises briefly because I got my live demo
     working。 at least for the first step。 So the idea here is we have this hypothesis
     command and it turned。 out my laptop was really slow because it was low on battery。
@@ -1217,6 +1223,8 @@
   id: totrans-145
   prefs: []
   type: TYPE_NORMAL
+  zh: 好吧，我将暂时打断练习，因为我的现场演示已经正常工作，至少在第一步是这样。所以这里的想法是我们有这个 hypothesis 命令，结果是我的笔记本电脑因为电量低而变得很慢。现在已经插上电源，应该可以正常工作。如果你要求
+    hypothesis 为排序函数编写测试，好的。
 - en: but I'm just sorry。 Then we hypothesis write sorted and we discover that。 hypothesis
     will actually write a test which includes the key and reverse arguments to sorted。
     And all of my tests just completely ignored reverse。 So they assume we were sorting
@@ -1225,6 +1233,7 @@
   id: totrans-146
   prefs: []
   type: TYPE_NORMAL
+  zh: 不过我只是感到抱歉。然后我们使用 hypothesis 编写排序并发现，hypothesis 实际上会写一个测试，包含关键参数和反向参数以进行排序。而我所有的测试都完全忽略了反向排序。因此，它们假设我们是在正向排序，但我们也可能想要测试如果我们传递反向为真时的成对排序。
 - en: ordering is in fact the other way around。 And so I finally go try to kind of
     useful for that。 By default it writes pi test style tests if you have pi test
     installed。 If you don't or if you ask。 for them it will write unit test style
@@ -1233,6 +1242,7 @@
   id: totrans-147
   prefs: []
   type: TYPE_NORMAL
+  zh: 排序实际上是相反的。因此我最终尝试去做一些有用的事情。默认情况下，如果你安装了 pytest，它会编写 pytest 风格的测试。如果没有，或者如果你请求，它会编写单元测试风格的测试，只测试类。是的。这里。啊。那是一个函数或模块的名称。任何可以被导入的东西。
 - en: so this is just like there is a built-in function called sorted。 If you wrote
     this for， well。 I mean we'll see in a moment， if we wrote a test that asked。litrolaval
     is equivalent to the。 eval built-in。 So literal of l is just like a val but only
@@ -1241,6 +1251,9 @@
   id: totrans-148
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以这就像有一个内置函数叫做 sorted。如果你为此编写测试，嗯，我是说我们一会儿就会看到，如果我们写一个测试，询问 litrolaval 是否等于
+    eval 内置函数。那么 literal of l 就像是一个 val，但仅适用于 Python 文本，我们可以得到一个测试。因此我们可以从 asked 导入
+    val 或导入 asked，然后访问它的 eval 属性。
 - en: And then eval is just a python built-in。 So we go stragglers knows how to access
     those。 And we have a fairly simple test。 We get a result from literal of l， we
     get a result from。 revale and then we assert that they're equal。 This test also
