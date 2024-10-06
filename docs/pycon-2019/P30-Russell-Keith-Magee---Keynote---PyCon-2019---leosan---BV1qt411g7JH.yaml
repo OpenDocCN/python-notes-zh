@@ -1,11 +1,14 @@
 - en: P30：Russell Keith-Magee - Keynote - PyCon 2019 - leosan - BV1qt411g7JH
+  id: totrans-0
   prefs:
   - PREF_H1
   type: TYPE_NORMAL
 - en: 。 。 。 。 。 。 。 。 。 。 。 。 。 。 。 [ Pause ]。
+  id: totrans-1
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/af67456081012fc3c13f5641659012bf_1.png)'
+  id: totrans-2
   prefs: []
   type: TYPE_IMG
 - en: Good morning！ [ Applause ]， I couldn't be more excited to welcome you to the
@@ -13,12 +16,14 @@
     Picon 2019 staff。 I want to start by saying thank you。 Thank you to all the volunteers
     that make this conference possible。 to the Picon Software Foundation for taking
     on the fiscal responsibility of this conference。
+  id: totrans-3
   prefs: []
   type: TYPE_NORMAL
 - en: We would not be here without the board and staff of the PSF。 I want to thank
     all of the presenters who came to share their work。 And I want to thank the sponsors
     who support this conference as well。 And of course this conference would have
     no purpose without you。
+  id: totrans-4
   prefs: []
   type: TYPE_NORMAL
 - en: So I want to thank you and we're just going to give all those people a round
@@ -26,6 +31,7 @@
     is committed to providing a safe environment。 and a positive experience for everyone。
     [ Applause ]。 And that's regardless of any difference that we may have。 In order
     to ensure this， all staff。
+  id: totrans-5
   prefs: []
   type: TYPE_NORMAL
 - en: attendees， speakers， sponsors， and volunteers at any Picon event are required
@@ -33,28 +39,34 @@
     with the Code of Conduct at that URL。 as well as the procedures for handling incidents
     that are linked therein。 You can find these documents there or by going to us。picon。org
     under About Code of Conduct。
+  id: totrans-6
   prefs: []
   type: TYPE_NORMAL
 - en: If at any point during the conference， you're concerned that someone may have
     violated the Picon Code of Conduct。 You're encouraged to report it。 If you're
     unsure whether the incident is a violation or whether the space where it happened
     is covered by this Code of Conduct。
+  id: totrans-7
   prefs: []
   type: TYPE_NORMAL
 - en: we encourage you to still report it。 The organizers are okay with receiving
     reports where no action is taken for the sake of creating a safer space。 At any
     point you can make a report by email to piconusreport@picon。org by SMS or telephone
     to 12018628572。
+  id: totrans-8
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/af67456081012fc3c13f5641659012bf_3.png)'
+  id: totrans-9
   prefs: []
   type: TYPE_IMG
 - en: Or during the conference you can find incident responder who will be wearing
     a brightly colored t-shirt like this。
+  id: totrans-10
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/af67456081012fc3c13f5641659012bf_5.png)'
+  id: totrans-11
   prefs: []
   type: TYPE_IMG
 - en: Once again， this is the contact information on screen。 I'd encourage you to
@@ -62,6 +74,7 @@
     Got it？ Cool。 Quick orientation。 If this is your very first picon I want to apologize。
     As picon has grown， trying to detail each and every part of the conference that
     makes these --。
+  id: totrans-12
   prefs: []
   type: TYPE_NORMAL
 - en: who's calling me -- and trying to detail each and every part of the conference
@@ -70,25 +83,31 @@
     you didn't make it， that's okay。 At this URL at some point today。 the video from
     that orientation is going to go up and you can go and watch Adrian share each
     and every detail of the conference。
+  id: totrans-13
   prefs: []
   type: TYPE_NORMAL
 - en: including things that have already passed。
+  id: totrans-14
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/af67456081012fc3c13f5641659012bf_7.png)'
+  id: totrans-15
   prefs: []
   type: TYPE_IMG
 - en: Now more generally， you are in this conference center。 It's fairly large and
     so we're just going to walk through it piece by piece。
+  id: totrans-16
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/af67456081012fc3c13f5641659012bf_9.png)'
+  id: totrans-17
   prefs: []
   type: TYPE_IMG
 - en: First， I want to talk about some accessibility things that we've got going on。
     We will be providing live captioning for all talks this year。 similar to what
     you see to my left and to my right。 Additionally， additionally。 spaces even reserved
     in the center of each speaking room for wheelchair access。
+  id: totrans-18
   prefs: []
   type: TYPE_NORMAL
 - en: The conference is ADA compliant。 However， if you have any concerns or need additional
@@ -96,6 +115,7 @@
     to support you。 You are here。 This is exhibit hall A， which will host our plenary
     sessions over the next three days。 During those plenary sessions， we'll have some
     keynotes soon。 Russell Keith McGee。 We have Shaw。
+  id: totrans-19
   prefs: []
   type: TYPE_NORMAL
 - en: Jessica。 And then on Sunday， we have the Python Steering Council panel and Nina。
@@ -103,6 +123,7 @@
     to date 540， Saturday morning。 Sunday morning， and also Saturday tomorrow at the
     end of the day。 Consider making some time to attend lightning talks。 You sort
     of never know what you will see。
+  id: totrans-20
   prefs: []
   type: TYPE_NORMAL
 - en: And if you're interested in giving a lightning talk， which is a very short five
@@ -110,12 +131,14 @@
     Expo Hall。 This is located in exhibit halls B and C。 So you probably already found
     it because that's where we're providing meals this year。 All meals through Sunday
     will be in the Expo Hall。
+  id: totrans-21
   prefs: []
   type: TYPE_NORMAL
 - en: And you can find the menus and ingredients for these meals at the URL on screen。
     If you've indicated that you require kosher consideration or allergies， when you're
     registered。 please look for the signs in the hall to locate your meals。 The Expo
     Hall is also the place where all of the sponsor booths are。
+  id: totrans-22
   prefs: []
   type: TYPE_NORMAL
 - en: I encourage you to stop by our sponsor booths and find out more about what they're
@@ -124,6 +147,7 @@
     Python's registration costs under control。 Their presence here represents an incredible
     investment in our community and this conference and also make the operations with
     the Python software foundation possible。
+  id: totrans-23
   prefs: []
   type: TYPE_NORMAL
 - en: They're here to meet with you， encourage you to check out their projects and
@@ -131,138 +155,181 @@
     only be out there today and tomorrow。 On Sunday， that entire space will be reconfigured。
     In addition to sponsors。 I want to take a moment to very poorly show all the names
     of the corporate companies who sent people to Python on a corporate registration。
+  id: totrans-24
   prefs: []
   type: TYPE_NORMAL
+  zh: 他们在这里与您会面，鼓励您查看他们的项目和产品，并可能甚至雇佣您。提醒一下，赞助商展位仅在今天和明天开放。到周日，整个空间将重新配置。除了赞助商，我想花一点时间很不专业地展示所有送人到Python的公司名称。
 - en: These registrations help offset the cost of individual and hobbyist registrations，
     I'm sorry。 student and hobbyist registrations， and go to support the Python software
     foundation work as well。 In the Expo Hall still， that's a big room， we do a lot
     with it， is Startup Row。 There are some tables and today and tomorrow there will
     be people who competed and won a spot on Startup Row。
+  id: totrans-25
   prefs: []
   type: TYPE_NORMAL
+  zh: 这些注册有助于抵消个人和爱好者注册的费用，我很抱歉。学生和爱好者注册的费用也用于支持Python软件基金会的工作。在展览大厅仍然是一个大房间，我们在这里做了很多事情，就是创业区。今天和明天会有一些桌子，有些人竞争并赢得了创业区的位置。
 - en: These are new companies who are doing something with Python that might be new
     and interesting。 Check those out， note that these change， so the people that are
     there today will not be there tomorrow and people。 and they'll be replaced with
     other companies。 You want to stop by Startup Row twice if you get a chance。 On
     Sunday， that entire room gets reconfigured into our posters and jobs fair。
+  id: totrans-26
   prefs: []
   type: TYPE_NORMAL
+  zh: 这些是一些新公司，他们在做与Python相关的新鲜且有趣的事情。请关注这些内容，注意这些会有所变化，因此今天在那里的人员明天不会再在那，届时会被其他公司取代。如果有机会，您希望去创业区两次。到周日，整个房间将重新配置为我们的海报和招聘会。
 - en: That will be Sunday morning。
+  id: totrans-27
   prefs: []
   type: TYPE_NORMAL
+  zh: 那将是周日早晨。
 - en: '![](img/af67456081012fc3c13f5641659012bf_11.png)'
+  id: totrans-28
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/af67456081012fc3c13f5641659012bf_11.png)'
 - en: On screen are our breakout rooms。 Note that there are some distance from where
     we are generally over to these other rooms。 Those are the H-room ball rooms and
     they're right there。 If you made it here。 you just need to go up that escalator
     or up that escalator or come through this concourse to find them。 They are a little
     bit of a distance from the other talk rooms。
+  id: totrans-29
   prefs: []
   type: TYPE_NORMAL
+  zh: 屏幕上是我们的分组讨论室。请注意，这些房间距离我们通常所在的地方有一些距离。那些是H室的宴会厅，就在那里。如果您来到了这里，您只需上那条扶梯或通过这个走廊就能找到它们。它们与其他讲座房间有点距离。
 - en: so if you're planning to see a talk in there， make some consideration for time。
     We have five talk tracks with 95 sessions once again this year。 and you have 19
     opportunities to see one of these talks。 But don't worry。 most of the talks will
     be recorded and available online after the conference。
+  id: totrans-30
   prefs: []
   type: TYPE_NORMAL
+  zh: 因此，如果您打算在那儿参加讲座，请考虑一下时间。今年我们有五条讲座轨道和95场会议，您将有19次机会参加其中一场讲座。但不用担心，大多数讲座会被录制，并在会议后在线提供。
 - en: So as you stare at a conflict between two talks you'd like to see， go with your
     gut。
+  id: totrans-31
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以当你面临两个想看的讲座的冲突时，听从你的直觉。
 - en: '![](img/af67456081012fc3c13f5641659012bf_13.png)'
+  id: totrans-32
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/af67456081012fc3c13f5641659012bf_13.png)'
 - en: If you do attend a talk where time remains and the speaker allows for questions
     and decides to ask for those questions。 in the legendary words of PyCon chair
     emeritus branded Rhodes。 remember to phrase your question in the form of a question。
     We have a veritable fleet of rooms available for open spaces。 All day today， Saturday
     and Sunday。
+  id: totrans-33
   prefs: []
   type: TYPE_NORMAL
+  zh: 如果您参加一个讲座，时间还剩下，演讲者允许提问并决定征求这些问题时。请记住，以问题的形式表达您的问题，引用PyCon名誉主席布兰登·罗兹的传奇话语。我们有很多房间可供开放空间使用，今天、周六和周日全天都有。
 - en: these rooms are allocated for anyone to self-organize a one-hour meet-up style
     event。 and they'll be open from 8 a。m。 to 11 p。m。 They're a great opportunity
     to connect and have a deeper discussion on something that。 or find people who
     have a shared interest or a common goal。 I want to encourage you to consider shaping
     the conference by having your own open space。
+  id: totrans-34
   prefs: []
   type: TYPE_NORMAL
+  zh: 这些房间分配给任何人自组织一小时的聚会风格活动，并将开放从早上8点到晚上11点。这是一个很好的机会，可以深入讨论某个主题，或者找到有共同兴趣或共同目标的人。我希望鼓励您考虑通过举办自己的开放空间来塑造会议。
 - en: You can stop by the board and post your own open space or prove what's already
     there。 And new this year you can go to the URL on screen。 and at that location
     you'll find a photograph of the current day's board。 that you can sort of pinch
     and zoom around in to see what has been posted。
+  id: totrans-35
   prefs: []
   type: TYPE_NORMAL
+  zh: 你可以去董事会发布自己的开放空间或证明现有内容。今年新推出的功能是，你可以访问屏幕上的网址，在那个位置你会找到当天董事会的照片，可以放大查看发布的内容。
 - en: So you don't have to constantly be crowding around the boards。 So these rooms
     are something that is sort of near and dear to my heart。 These rooms。 which are
     25C and 26ABC， are home to the PyCon Hatchery Program。 PyCon is a conference that
     has grown and evolved over the years through the direction of volunteers。
+  id: totrans-36
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以你不必不断围着董事会。这个房间对我来说非常重要。这些房间，25C和26ABC，是PyCon孵化器计划的所在地。PyCon是一场通过志愿者的指导逐年增长和发展的会议。
 - en: the board and staff。 Last year we launched the Hatchery Program and it's intended
     to offer anyone the opportunity to see their idea come to fruition at PyCon。 Whether
     the intent is at a permanent fixture of the conference or something that's just
     ephemeral and topical or important for any given year。
+  id: totrans-37
   prefs: []
   type: TYPE_NORMAL
+  zh: 董事会和工作人员。去年我们推出了孵化器计划，旨在为任何人提供机会，在PyCon上看到他们的想法实现。无论目标是成为会议的永久固定部分，还是仅仅是当年重要的短暂话题。
 - en: the Hatchery Program offers space and resources at PyCon for that idea。 We're
     excited to have the inaugural Hatchery Program returning this year and three new
     concepts joining us for 2019。 All day today and today only you can attend Lust
     PyCon， it's a full day of talks given in Spanish。 That'll be in room 25C。 The
     Charlie schedule is matched to the primary talk schedule。
+  id: totrans-38
   prefs: []
   type: TYPE_NORMAL
+  zh: 孵化器计划为PyCon提供空间和资源。我们很高兴今年能迎来首届孵化器计划，并有三个新概念加入我们2019年。今天全天，您可以参加Lust PyCon，这是一天的西班牙语演讲活动。将在25C房间进行，查理日程与主要演讲日程相匹配。
 - en: So you're welcomed and encouraged to jump in for just a single talk or stay
     all day。 New this year is the Art of PyCon。 It's a miniature arts festival and
     it's going to focus on narrative。 performance and visual art。 You can find that
     event this evening in room 26ABC tonight from 8 to 10PM。 So if you're up for a
     show， you can see that there。
+  id: totrans-39
   prefs: []
   type: TYPE_NORMAL
+  zh: 欢迎并鼓励你参加单场演讲或整天活动。今年的新活动是PyCon艺术展。这是一个小型艺术节，将集中于叙事、表演和视觉艺术。今晚8点到10点，您可以在26ABC房间找到该活动。如果你想看表演，可以到那里去。
 - en: The PyCon Hatchery Maintainor Summit is also new this year and it's seeking
     to build a community of practice for projects and maintainers。 project maintainers
     and key contributors with the goal of helping the Python community sustain and
     grow healthy projects and communities。
+  id: totrans-40
   prefs: []
   type: TYPE_NORMAL
+  zh: PyCon孵化器维护者峰会也是今年的新活动，旨在为项目和维护者建立一个实践社区，项目维护者和关键贡献者的目标是帮助Python社区维持和发展健康的项目和社区。
 - en: This will be a mixture of lightning talks and discussions and it'll be going
     on from 10 to 50。 from 10 to 50 until 2PM in room 25C。 Also new this year are
     the Mentored Sprint。 They'll run from 2。30 to 6。30PM tomorrow in room 25C。 And
     this is a newcomers introduction to contributing to an open source project。 And
     it's done under the mentorship of somebody who has more experience and has worked
     on the project in the past。
+  id: totrans-41
   prefs: []
   type: TYPE_NORMAL
+  zh: 这将是闪电演讲和讨论的混合，时间是从10点到50分钟，直到下午2点在25C房间进行。今年的新活动还有指导冲刺，明天从下午2:30到6:30在25C房间进行。这是新手参与开源项目的介绍，在有经验的人指导下进行，他们曾在该项目上工作过。
 - en: These focus on providing less experienced developers a supportive environment
     in which they can learn。 collaborate and expand their network and celebrate their
     victories at the end of it。 So these are the PyCon Hatchery programs for this
     year。 And if you have an idea。 the PyCon Hatchery program is very likely to continue。
+  id: totrans-42
   prefs: []
   type: TYPE_NORMAL
+  zh: 这些活动专注于为经验较少的开发者提供支持环境，让他们学习、合作，扩展网络并庆祝他们的胜利。所以这些是今年的PyCon孵化器计划。如果你有一个想法，PyCon孵化器计划很可能会继续。
 - en: So keep an eye out for the CFP which will be launching sometime between now
     and next PyCon。 I really ran out of arrows。 I bought too many arrows so I had
     to use them all on the slide。 So PyCon has consumed nearly entirety of this convention
     center for the next few days。 And during that time all of the public spaces will
     be scattered with PyCon Eastons。
+  id: totrans-43
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以请留意CFP，它将在现在和下一个PyCon之间的某个时候启动。我真的用尽了箭矢，买了太多箭矢，所以我在幻灯片上用完了它们。因此，PyCon在接下来的几天内几乎占用了整个会议中心。在此期间，所有公共空间将被PyCon东部的活动覆盖。
 - en: It's not an official event but this is a happening that I never really get the
     chance to miss out on at PyCon。 There are no rules that say you have to attend
     any given event。 There are no rules that say you have to attend every， fill all
     of your time with a structured event。 So consider spending some time joining a
     table or a group and meet someone new。
+  id: totrans-44
   prefs: []
   type: TYPE_NORMAL
 - en: open a laptop and explore a problem together， spend some time catching up with
     someone you've never met in person before or an old friend。 One suggestion to
     improve the experience in the hallway track and throughout PyCon generally though
     comes from PSF board member Eric Holscher。
+  id: totrans-45
   prefs: []
   type: TYPE_NORMAL
 - en: And this is the Pac-Man rule。 When standing in a group of people always leave
     room for one person to join your group。 This suggestion can help create a physically
     welcoming space for someone to join your group and makes easy for attendees to
     identify groups that they can join。
+  id: totrans-46
   prefs: []
   type: TYPE_NORMAL
 - en: So it helps meet new people。 Throughout the space we have three gender neutral
@@ -270,6 +337,7 @@
     is inside the Expo Hall so when you're entering from registration it's on your
     left。 There are also two mothers rooms in the conference center。 These will be
     rooms 17 and 18。
+  id: totrans-47
   prefs: []
   type: TYPE_NORMAL
 - en: And instructions for access to the room are posted outside。 So if you need help
@@ -277,6 +345,7 @@
     If you find that you need to take a break， focus on some work or just breathe。
     We have a quiet room in room 24。 This room has a specific purpose so please be
     respectful of the word quiet while you're in the space。
+  id: totrans-48
   prefs: []
   type: TYPE_NORMAL
 - en: And stepping outside it's always beautiful and Cleveland。 There's never rain
@@ -284,6 +353,7 @@
     the venue there is the Pilates auction which is Saturday May 4th at 6。30pm。 That's
     in the Hope Ballroom in the connecting Hilton downtown Cleveland so you don't
     even have to go outside if you don't want to but take a walk。
+  id: totrans-49
   prefs: []
   type: TYPE_NORMAL
 - en: Last year $30，000 is raised to benefit the Pilates。 For a $5 cover charge it's
@@ -291,18 +361,21 @@
     on here even if you don't come to bid and win for an excellent pause。 Just around
     the corner from here， if you go down Lakeside and make a left on 9th and down
     to the pier。
+  id: totrans-50
   prefs: []
   type: TYPE_NORMAL
 - en: you'll find the Rock and Roll Hall of Fame and the Great Lakes Science Center。
     These are home to the Picon dinners。 One this evening at 6。30pm and one after
     the close of the conference at 6。30pm on Sunday。 And these evening events are
     both ticketed events。
+  id: totrans-51
   prefs: []
   type: TYPE_NORMAL
 - en: So when you check in at registration you should have had little tickets。 You'll
     need to bring those tickets to these events and since food has already been pre
     allocated for them。 if you did get a ticket and you don't plan to attend。 convey
     your ticket to someone else however you see fit。
+  id: totrans-52
   prefs: []
   type: TYPE_NORMAL
 - en: This helps reduce food waste and keeps the events fun and lively。 That's a lot。
@@ -310,6 +383,7 @@
     information with you。 there is a printed program。 It looks like this。 And there
     is pikon。org which can be a little bit fiddly to navigate。 And we have a guidebook
     again this year。
+  id: totrans-53
   prefs: []
   type: TYPE_NORMAL
 - en: So this is a specific app that has all of the schedule information and room
@@ -318,12 +392,14 @@
     software foundation which does take the fiscal responsibility of this conference
     is currently running a fundraiser。 We couldn't do this without them。 So if you're
     able。
+  id: totrans-54
   prefs: []
   type: TYPE_NORMAL
 - en: consider going to this URL on screen and it will take you to a page that includes
     all the information about that fundraiser and you can consider contributing。 If
     you registered for the pikon fun run and walk， that kicks off Sunday at 7。 Bussing
     begins at 6。
+  id: totrans-55
   prefs: []
   type: TYPE_NORMAL
 - en: but probably show up around 6。30 so you're not just left waiting。 But if you're
@@ -331,6 +407,7 @@
     ours。 You can run along。 I guess。 But note that if you're coming to the convention
     center， particularly by car。 this will cause some congestion。 As you see， we're
     sort of right in the middle of the route。
+  id: totrans-56
   prefs: []
   type: TYPE_NORMAL
 - en: And so from about 7 a。m。 to 11 a。m。 tomorrow morning， plan a little bit of extra
@@ -338,6 +415,7 @@
     grab those。 And inside you will find a little gadget。 So thanks to DigiKey and
     Adafruit。 all attendees will receive a circuit playground express which runs python。
     So two notes on this。
+  id: totrans-57
   prefs: []
   type: TYPE_NORMAL
 - en: One， if you're going to be traveling through something that involves security
@@ -345,6 +423,7 @@
     it is。 It will save you and them a lot of hassle and questioning and considering。
     Just a tip。 And the second one is considered bringing this with you on Sunday
     to our closing keynote。
+  id: totrans-58
   prefs: []
   type: TYPE_NORMAL
 - en: By the end of it， you might feel inspired to run out immediately and start programming
@@ -352,12 +431,14 @@
     picking up are your t-shirts。 They look like this。 But I want to take a moment
     to warn you that due to the cut and weight。 which is the same as last year， our
     choice in color doesn't quite have as much pigment。
+  id: totrans-59
   prefs: []
   type: TYPE_NORMAL
 - en: So in full transparency， these shirts are quite sheer。 So make sure that you
     try your shirt on and are comfortable wearing it before you wear it in public。
     If you have concerns about your t-shirt after picking it up， let us know。 And
     lastly。 I think almost。 There are some schedule changes。 US。py。com。
+  id: totrans-60
   prefs: []
   type: TYPE_NORMAL
 - en: the mobile guide book app I mentioned earlier and the signage have been updated。
@@ -366,12 +447,14 @@
     there has been a substitution in Grand Ballroom B on Saturday。 The elephant and
     the serpent using Mastodon with Python by Philip James replaces code review skills
     for Pythonistas by Nina。
+  id: totrans-61
   prefs: []
   type: TYPE_NORMAL
 - en: And shipping your first Python package and automating future publishing by Chris
     Wilcox substitutes code readers using Python uncover surprising patterns books
     you love at 315 in Grand Ballroom B。 That's right。 We have a professional photographer
     on site this year。
+  id: totrans-62
   prefs: []
   type: TYPE_NORMAL
 - en: If you are uncomfortable being photographed in a candid fashion。 you can go
@@ -379,9 +462,11 @@
     into it。 put your lanyard on it， and the photographer will avoid photographing
     you。 But more importantly。 in post， we'll make sure not to use any photographs
     of anybody wearing a badge that has this red banner at the bottom。
+  id: totrans-63
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/af67456081012fc3c13f5641659012bf_15.png)'
+  id: totrans-64
   prefs: []
   type: TYPE_IMG
 - en: So one last thing， which is about social media， the thing near and dear to my
@@ -389,26 +474,33 @@
     you want to tweet at the conference， this is to get the attention of the staff
     or the organizers tweet at Python。 If you want to post about the conference， we
     can look back and remember everything that occurred here。
+  id: totrans-65
   prefs: []
   type: TYPE_NORMAL
 - en: 'Tweet with the hashtag #picon2019。'
+  id: totrans-66
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/af67456081012fc3c13f5641659012bf_17.png)'
+  id: totrans-67
   prefs: []
   type: TYPE_IMG
 - en: With all that， I'm actually -- hey， how's it going， Russell？
+  id: totrans-68
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/af67456081012fc3c13f5641659012bf_19.png)'
+  id: totrans-69
   prefs: []
   type: TYPE_IMG
 - en: Hey， how are you doing？ I'm very excited to introduce our first keynote speaker，
     Dr。 Russell Keith Viggy。 A longtime community member， founder of the Beewear Project。
     which brings Python to mobile and places maybe it shouldn't go。
+  id: totrans-70
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/af67456081012fc3c13f5641659012bf_21.png)'
+  id: totrans-71
   prefs: []
   type: TYPE_IMG
 - en: And a longtime contributor to Django。 Russell， take it away。 [Applause]， Thank
@@ -416,6 +508,7 @@
     my very distinct honor to be here today。 I have been an active and visible participant
     in the Python community for over 13 years now。 And as a result， I have spoken
     at a lot of pikons and Django cons。
+  id: totrans-72
   prefs: []
   type: TYPE_NORMAL
 - en: But for those who haven't met me before， hi， you may have noticed I'm not a
@@ -423,6 +516,7 @@
     corner of the map， Perth。 Western Australia。 Perth is not usually one of the city's
     people think of when they think of Australia。 It's kind of like Cleveland in that
     regard。 It's a fine city。
+  id: totrans-73
   prefs: []
   type: TYPE_NORMAL
 - en: but not usually the one that jumps to mind when people think of the US。 Perth
@@ -430,6 +524,7 @@
     than many people realize。 Some of those stories are convenient metaphors， so today
     I would like to teach you all about Perth。 And maybe we can all learn some valuable
     lessons about life along the way。 First off。
+  id: totrans-74
   prefs: []
   type: TYPE_NORMAL
 - en: some terminology。 We are in Ohio。 Someone from Ohio is called a Buckeye。 Someone
@@ -437,6 +532,7 @@
     We are so named after this delightful fellow， and if you don't like insects， be
     warned。 you're about to see a large one。 This guy， Slind， Australia， cocky eye。
     It is a pygmy mole cricket。
+  id: totrans-75
   prefs: []
   type: TYPE_NORMAL
 - en: It's about two inches long， lives in the sand dunes at the beach。 And they're
@@ -444,18 +540,21 @@
     how you start big public events like a pike on。 Australia， like the US and Canada
     and many other colonised nations。 have a messy history where they're indigenous
     people。 And in recognition of that fact。
+  id: totrans-76
   prefs: []
   type: TYPE_NORMAL
 - en: starting in Perth in the 1970s， Australian public gatherings have， increasingly。
     started with a recognition that the land where the gathering is happening wasn't
     always white man's land。 It's called， "Acknowledgement of Country。" And in that
     spirit。 I would like to acknowledge that I come from Wajuk Nung Aabuja。
+  id: totrans-77
   prefs: []
   type: TYPE_NORMAL
 - en: And I would like to recognise the Erie Honan and Haudenosaunee peoples。 the
     traditional owners of the land where we are meeting today。 To recognise their
     continuing connection to their lands， their waters and their culture。 And to pay
     my respects to their elders past， present and future。 Also， as a content warning。
+  id: totrans-78
   prefs: []
   type: TYPE_NORMAL
 - en: I will be discussing issues of depression and self harm later in this talk。
@@ -463,6 +562,7 @@
     for self care。 I will give another warning before I get to that segment of the
     talk。 So， to the subject at hand。 we have established it， yes， I do come from
     a land down under。 But who am I？ Okay。
+  id: totrans-79
   prefs: []
   type: TYPE_NORMAL
 - en: well in my day job， I do data engineering for Savada。 Savada is a market research
@@ -470,25 +570,31 @@
     Savada gives me the flexibility to flip about the planet and meet all you lovely
     people。 But as lovely as it is to have the support of a wonderful company like
     Savada。
+  id: totrans-80
   prefs: []
   type: TYPE_NORMAL
 - en: that is not really why I am here today。
+  id: totrans-81
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/af67456081012fc3c13f5641659012bf_23.png)'
+  id: totrans-82
   prefs: []
   type: TYPE_IMG
 - en: I became involved in and I am known to the Python community through my work
     on Django。 I joined the Django core team way back in 2006。 And because I lived
     in Perth。 I did not meet another member of the Django core team until 2008。 Django
     is a big part of the Python ecosystem， but it is not the only part。
+  id: totrans-83
   prefs: []
   type: TYPE_NORMAL
 - en: Django isn't the only Python web framework and web programming isn't the only
     thing that people do with Python。
+  id: totrans-84
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/af67456081012fc3c13f5641659012bf_25.png)'
+  id: totrans-85
   prefs: []
   type: TYPE_IMG
 - en: In my current day job at Savada， I do not use Django at all。 But I do make extensive
@@ -496,6 +602,7 @@
     And there are many other uses of Python。 You can use Python on embedded devices。
     There are libraries for performing astronomical calculations， doing biotech and
     gene sequencing。
+  id: totrans-86
   prefs: []
   type: TYPE_NORMAL
 - en: It is used as a scripting language for operating system automation。 and it is
@@ -503,6 +610,7 @@
     Python as a language is 28 years old。 It took maybe 10 years for Python to gain
     any sort of significant traction in our industry。 and another 10 before it gained
     widespread support。 And as a result， we get this。 A gathering of 3。
+  id: totrans-87
   prefs: []
   type: TYPE_NORMAL
 - en: 500 people who have organised to travel from all over the planet， even Perth。
@@ -510,18 +618,21 @@
     a couple of days。 It's worth stopping for a moment to reflect on the magnitude
     of what Gito said in motion 28 years ago。 and what we collectively as a community
     have done with that since。
+  id: totrans-88
   prefs: []
   type: TYPE_NORMAL
 - en: It should be celebrated because it's no small feat。 And because this is the
     big tent of the Python community。 we have a real opportunity here to look to the
     future as well。 This weekend and into the sprints next week， we have the opportunity
     to dream big ideas。
+  id: totrans-89
   prefs: []
   type: TYPE_NORMAL
 - en: to work out what problems we need to solve， where we're going to collectively
     focus our efforts。 over the coming weeks， months and years。 And so to kickstart
     that conversation。 I would like to pose a question to everyone in this room。 Where
     do you see Python in 10 years？
+  id: totrans-90
   prefs: []
   type: TYPE_NORMAL
 - en: The one thing I am certain of is that everyone in this room will have a different
@@ -529,6 +640,7 @@
     many people for so many different things。 But if you're here in this room today，
     it's probably fair to assume that you like Python to some degree。 And in 10 years，
     you'd probably like to see Python be as least a vibrant community as it is today。
+  id: totrans-91
   prefs: []
   type: TYPE_NORMAL
 - en: I'm sure nobody here wants to have to rewrite all the libraries on PyPI or rebuild
@@ -536,10 +648,12 @@
     our ecosystem norms in a new community。 just because Python is no longer a viable
     language for new projects。 So this question。 where do you see Python in 10 years，
     is really about asking。
+  id: totrans-92
   prefs: []
   type: TYPE_NORMAL
 - en: what do we need to do today to ensure that Python remains a vibrant， relevant，
     healthy community？
+  id: totrans-93
   prefs: []
   type: TYPE_NORMAL
 - en: So time for some more sand-graper facts。 The state bird of Western Australia
@@ -547,6 +661,7 @@
     the city of Perth。 The river running through the middle of Perth is called the
     swan river。 But a black swan is also a metaphor。 Prior to the 1600s， it was well
     known that all swans are white。
+  id: totrans-94
   prefs: []
   type: TYPE_NORMAL
 - en: Swans of other colours were known to not exist。 And then in 1697。 Dutch explorer
@@ -554,72 +669,93 @@
     swans could also be black。 This radically changed the world's idea of what a swan
     was。 In 2001， SAS and statistician， Nasi M。 Nicholas Taleb， used this as a broader
     metaphor。
+  id: totrans-95
   prefs: []
   type: TYPE_NORMAL
+  zh: 其他颜色的天鹅被认为不存在。然后在1697年，荷兰探险家威廉·德·弗拉明意外地访问了西澳大利亚，并发现天鹅也可以是黑色的。这彻底改变了人们对天鹅的认识。在2001年，SAS和统计学家纳西·M·尼古拉斯·塔勒布将此作为更广泛的隐喻。
 - en: Taleb defined a black swan event as an event that is a surprise to the observer。
     that has a major effect on the world。 But in hindsight， it can be easily explained。
     In hindsight。 it's obvious that swans could be black。 But until someone visited
     Western Australia and saw one。 it never occurred to anyone to challenge the assumption。
+  id: totrans-96
   prefs: []
   type: TYPE_NORMAL
+  zh: 塔勒布将黑天鹅事件定义为对观察者来说是意外的事件，具有重大影响。但事后来看，这可以很容易地解释。回想起来，很明显天鹅可以是黑色的。但在有人访问西澳大利亚并看到了它之前，没有人想到要挑战这一假设。
 - en: Black swan events don't have to be immediate either。 The impact can be felt
     over time。 The rise of the personal computer was a black swan event。 In 1947，
     the CEO of IBM， Thomas Watson。 famously said that there was a world market for
     maybe five computers。 Today。 almost everyone in this room is carrying five computers。
     In retrospect。
+  id: totrans-97
   prefs: []
   type: TYPE_NORMAL
+  zh: 黑天鹅事件不一定是即时发生的。其影响可以随着时间逐渐显现。个人计算机的崛起就是一个黑天鹅事件。1947年，IBM的首席执行官托马斯·沃森曾著名地说，全球市场可能只需要五台计算机。如今，几乎在座的每个人都携带着五台计算机。回顾往昔。
 - en: Watson's comments are just quaintly naive。 But at the time， they weren't controversial。
     They were just the common understanding of the world。 And the change wasn't immediate。
     But in retrospect， it was inevitable。 In my opinion。 when we're thinking about
     what the future holds for Python。
+  id: totrans-98
   prefs: []
   type: TYPE_NORMAL
+  zh: 沃森的评论听起来只是天真的。但在当时，这并不具争议性。这只是对世界的普遍理解。而变化并不是立即发生的。但回过头来看，这是一种不可避免。在我看来，当我们思考Python的未来时。
 - en: we need to be thinking about Python's black swans。 Python is a popular language
     right now。 We'd like it to stay popular。 What could happen to affect that popularity？
+  id: totrans-99
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们需要考虑Python的黑天鹅事件。Python现在是一种流行的语言。我们希望它保持受欢迎。那么有什么可能影响这种受欢迎程度的因素呢？
 - en: What change could happen in the industry， in hardware。 in the community that
     could alter the popularity of Python。 that would cause Python to become that annoying
     legacy language that we have to know。 but would really rather replace at the earliest
     opportunity？
+  id: totrans-100
   prefs: []
   type: TYPE_NORMAL
+  zh: 行业内、硬件上、社区中可能发生什么变化，会影响Python的受欢迎程度，使其变成那个我们必须了解但更希望尽早替换掉的烦人遗留语言？
 - en: Black swan events are truly only obvious in hindsight。 But the best way to avoid
     them is to actively challenge your assumptions。 And the question。 "What would
     happen if those assumptions turn out to be incorrect？"。 And I think there's a
     couple we may have caused to be concerned about。 First off。
+  id: totrans-101
   prefs: []
   type: TYPE_NORMAL
+  zh: 黑天鹅事件在事后看来才显而易见。但避免这些事件的最佳方法是积极挑战你的假设。而问题是：“如果这些假设被证明是错误的，会发生什么？”我认为我们可能已经让人们对此感到担忧。有几点首先要提到。
 - en: where do you run Python？ For pretty much the entire existence of Python。 A computer
     was a large box that sat on your desk， maybe in a rack， in a server room。 Over
     time。 that box has gotten smaller。 We start throwing anywhere into our backpack。
     But you're using the same operating system， windows or a Unix derivative。 Over
     the last 10 years。
+  id: totrans-102
   prefs: []
   type: TYPE_NORMAL
+  zh: 你在哪里运行Python？在Python存在的几乎整个时间里，一台计算机是一个坐在你桌子上的大盒子，也许在机架上，在服务器房间里。随着时间的推移，这个盒子变得更小。我们开始把它放进背包里。但你使用的仍然是相同的操作系统，无论是Windows还是Unix的衍生版本。在过去的10年里。
 - en: we have seen the emergence of a whole new class of computing devices， much smaller。
     usually portable。 Phones， tablets， watches， set-top boxes。 These devices are becoming
     ubiquitous。 They are replacing laptops as primary computing devices。 My son started
     high school last year。 He doesn't have a laptop for school。 His entire educational
     experience is delivered through a tablet device。
+  id: totrans-103
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们看到了全新类别计算设备的出现，它们体积更小，通常是便携式的。手机、平板、手表、机顶盒。这些设备正变得无处不在。它们正在取代笔记本电脑，成为主要的计算设备。我儿子去年开始上高中。他没有笔记本电脑用于学习。他的整个教育体验都是通过平板设备来实现的。
 - en: If you go to Python。org， tablets， phones， set-top boxes， watches don't even
     rate a mention。 To me。 that seems like a fairly big oversight of the way the everyday
     experience of computing。 has changed over the last 10 years。 Phones and tablets
     are achieving market penetration that desktops and laptops have never seen。 Yet
     as a community， we don't have a story for how you can use Python on these devices。
+  id: totrans-104
   prefs: []
   type: TYPE_NORMAL
 - en: What happens when laptops don't exist？ There are niche devices。 There's no installer
     for Python on my tablet。 Why am I going to learn Python？
+  id: totrans-105
   prefs: []
   type: TYPE_NORMAL
 - en: Not all Python runs on laptops。 You installed Python on the server。 You made
     sure the user didn't have JavaScript enabled。 These days。 good luck finding a
     web page that works without JavaScript enabled。 As with mobile devices。 the last
     10 years has seen a dramatic shift in where code is being executed。 Increasingly。
+  id: totrans-106
   prefs: []
   type: TYPE_NORMAL
 - en: code is being run in the browser。 JavaScript has evolved from an optional client
@@ -627,6 +763,7 @@
     to a language that is replacing Python on the server。 Again。 if I'm a novice programmer
     and I'm faced with JavaScript， a language I can use to get。 a native experience
     in the browser and I can transition that on to the server and on the。
+  id: totrans-107
   prefs: []
   type: TYPE_NORMAL
 - en: other hand， there's Python， a language that only works on the server。 Why am
@@ -634,12 +771,14 @@
     to learning Python and I reach， the point where I need to install a package。 I
     have been a user of Python for 20 years and in that entire time， I don't think
     there's。
+  id: totrans-108
   prefs: []
   type: TYPE_NORMAL
 - en: been a period where I would have described Python's packaging story as stable。
     That's because information lists forever on the Internet。 Old advice continues
     to linger long after it's considered the right answer and well。 meaning that misinformed
     people spread out data advice on stack overflow， perpetuating the， problem。
+  id: totrans-109
   prefs: []
   type: TYPE_NORMAL
 - en: The situation is bad enough that it's a punch line for comics。 XKCD 1987， Randall
@@ -647,20 +786,24 @@
     laptop a toxic waste site。 Brett Cannon did a really good write-up about this
     comic trying to diagnose what has happened。 to Brando's computer。 It's a really
     enlightening autopsy and well worth to read。
+  id: totrans-110
   prefs: []
   type: TYPE_NORMAL
 - en: But one thing that Brett points out and it's the part that's most concerning
     for me from。 my perspective of looking for black swans is this。 Why can that joke
     be made at all？
+  id: totrans-111
   prefs: []
   type: TYPE_NORMAL
 - en: Good jokes always contain an element of truth and the way you respond to that
     truth matters。 This joke is part of a narrative about what Python is。 And if that
     picture isn't positive。 long term， that's an existential threat。 If I'm a new
     user。 why would I want to learn Python if everything I read about it ends up。
+  id: totrans-112
   prefs: []
   type: TYPE_NORMAL
 - en: with a joke about my computer becoming a toxic waste site？
+  id: totrans-113
   prefs: []
   type: TYPE_NORMAL
 - en: And I haven't even got to the question of how I distribute my application to
@@ -668,129 +811,172 @@
     a user space application。 Python has an ever had a consistent story for how I
     give my code to someone else， especially。 if that someone else isn't a developer
     and just wants to use my application。 Contrast that with。
+  id: totrans-114
   prefs: []
   type: TYPE_NORMAL
+  zh: 而且我甚至还没有涉及到如何将我的应用程序分发给其他人的问题。无论你是在分发Django应用程序还是用户空间应用程序，Python在如何将我的代码交给他人方面一直没有一个一致的故事，尤其是当那个他人不是开发者而只是想使用我的应用程序时。与之形成对比的是。
 - en: for example， PHP， whose distribution story is use FTP to upload all。 the files
     or go story which is here， have this executable。 Now。 I'm not saying that PHP
     or go solutions are panacea， they're not。 And I'm not saying that Python story
     could ever be as simple as those。
+  id: totrans-115
   prefs: []
   type: TYPE_NORMAL
+  zh: 例如，PHP，其发布故事是使用FTP上传所有文件，或是go故事就是在这里，提供这个可执行文件。现在，我并不是说PHP或go解决方案是万灵药，它们并不是。我也不是说Python的故事能像那些一样简单。
 - en: But we haven't got a story at all。 And we're competing against languages that
     do。 And again。 why would I want to learn Python if I can't get a clear answer
     for that basic。 question of how I give my code to my non-programmer friends？ Now。
     that's four possible black swans I've just identified。 Maybe the problem will
     be something else。
+  id: totrans-116
   prefs: []
   type: TYPE_NORMAL
+  zh: 但我们完全没有故事。而我们正在与那些有故事的语言竞争。而且，我为什么要学习Python，如果我无法清楚地回答如何将我的代码交给非程序员朋友的这个基本问题呢？现在，我刚刚识别出四个可能的黑天鹅。也许问题会是别的什么。
 - en: I know there are people in this room who will assert that Python's C API is
     a potential。 problem or the Gill or the lack of a good front end story or focusing
     on Unix and Mac to。 the exclusion of Windows。 Maybe the problem won't be technical
     at all。 Maybe it will be cultural。 Some aspect of Python's community or development
     process that drives away some segment of users。
+  id: totrans-117
   prefs: []
   type: TYPE_NORMAL
+  zh: 我知道在这个房间里有些人会声称Python的C API是一个潜在的问题，或者是Gill，或者缺乏好的前端故事，或是将重点放在Unix和Mac上而忽视Windows。也许问题根本不在技术上。也许它将是文化上的。Python社区或开发过程中的某些方面可能会驱逐某些用户群体。
 - en: or potential contributors because of perceived hostility or conflict or diverging
     interests。 Maybe it won't be any of those things at all。 The point is we can't
     predict the future。 but we can challenge our assumptions。 We can look critically
     at ourselves as a community。 We can examine trends in our industry and our society
     and make plans based on those assessments。
+  id: totrans-118
   prefs: []
   type: TYPE_NORMAL
+  zh: 或潜在贡献者因为感知到的敌意、冲突或利益不合而退缩。也许根本不会是这些问题。关键是我们无法预测未来，但我们可以挑战我们的假设。我们可以批判性地审视自己作为一个社区。我们可以检查行业和社会的趋势，并根据这些评估制定计划。
 - en: Not just reacting to problems when they're already wildfires， but proactively
     addressing。 problems before they become critical threats to our ecosystem。 I also
     want to be very。 very clear here。 This is not an accusation。 I am not blaming
     someone of not doing their job。 The Python core team and the rest of people who
     work on Python packages are doing the absolute。
+  id: totrans-119
   prefs: []
   type: TYPE_NORMAL
+  zh: 不仅仅是对已经失控的问题做出反应，而是主动解决在变成生态系统的重大威胁之前的问题。我也想在这里非常明确。这不是指控。我并不指责某人没有尽到职责。Python核心团队和其他从事Python包开发的人们正在尽最大努力。
 - en: best they can with the resources they have。 They are very limited resources。
     What I'm talking about here is trying to avoid black swans。 To start a conversation
     about longer term priorities， about how we marshal the resources that we。 as a
     community have at our disposal。 For whatever it's worth。
+  id: totrans-120
   prefs: []
   type: TYPE_NORMAL
+  zh: 他们尽其所能利用现有资源，而这些资源非常有限。我在这里谈论的是尽量避免黑天鹅。开始一个关于长期优先事项的对话，讨论我们作为一个社区如何调动可用资源。无论这有什么价值。
 - en: these existential problems are one of the reasons that I changed。 the focus
     of my open source contributions a few years ago。 As I said earlier。 I developed
     my reputation working on Django。 But these days。 I spend most of my volunteer
     time working on the B-Wear project。
+  id: totrans-121
   prefs: []
   type: TYPE_NORMAL
+  zh: 这些生存问题是我几年前改变开源贡献焦点的原因之一。正如我之前所说，我在Django上建立了自己的声誉。但现在，我将大部分志愿时间用于B-Wear项目。
 - en: For those who haven't come across it before， B-Wear is a collection of open
     source tools。 and libraries for creating native user interfaces in Python。 For
     desktop， but also for iOS。 for Android， for single page web apps and other new
     hardware， platforms。 A key part of this work is getting Python to run on phones
     and tablets at all， working。
+  id: totrans-122
   prefs: []
   type: TYPE_NORMAL
+  zh: 对于那些之前未接触过的人，B-Wear是一个用于在Python中创建本地用户界面的开源工具和库的集合。它适用于桌面，也适用于iOS、Android、单页网页应用和其他新硬件平台。这个工作的一个关键部分是让Python在手机和平板上运行。
 - en: out how to run Python code on iOS in the browser， bridging to native APIs and
     those platforms。 wrapping those APIs in a cross platform layer。 Another big part
     is developing a distribution story。 working out how to integrate with native，
     platform tools to get an application written in Python。 wrapped as an app with
     an installer， or uploaded to the app store or a play store。 Now。
+  id: totrans-123
   prefs: []
   type: TYPE_NORMAL
+  zh: 如何在iOS的浏览器上运行Python代码，连接到本地API和那些平台。将这些API封装在一个跨平台层中。另一个重要部分是开发分发方案，搞清楚如何与本地平台工具集成，以将用Python编写的应用程序封装成带安装程序的应用，或上传到应用商店或Play商店。
 - en: B-Wear is a work in progress。 It's current status compelling proof of concept。
     It's not a version one product ready to start using to develop your mission critical
     applications。 But I have been able to demonstrate that cross platform native applications
     written in Python。 is possible。 I'm also not the only person working on this problem。
     The kivi project， for example。
+  id: totrans-124
   prefs: []
   type: TYPE_NORMAL
+  zh: B-Wear仍在开发中。目前的状态是一个引人注目的概念验证。它不是一个可以开始用来开发关键任务应用程序的第一个版本产品。但我已经能够证明，用Python编写跨平台的本地应用程序是可行的。我并不是唯一一个在解决这个问题的人，例如Kivy项目。
 - en: has similar goals but with differences in their underlying， approach。 As far
     as B-Wear is concerned。 about 18 months ago， I did a live demo at PyCon Australia。
     2017 where I wrote a Fahrenheit to Celsius application， about 50 lines of Python
     code。
+  id: totrans-125
   prefs: []
   type: TYPE_NORMAL
+  zh: 具有相似的目标，但在其基础方法上有所不同。就B-Wear而言，大约18个月前，我在2017年的PyCon Australia上进行了一个现场演示，我编写了一个华氏度转摄氏度的应用程序，大约50行Python代码。
 - en: '![](img/af67456081012fc3c13f5641659012bf_27.png)'
+  id: totrans-126
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/af67456081012fc3c13f5641659012bf_27.png)'
 - en: and then deployed it on Macos as a Macos app， on Linux as a Linux app， on Windows
     as a， Windows app。 on iOS as an iOS app， on Android as an Android app and as a
     single page web。 application and all that I managed to do in the space of 17 minutes。
+  id: totrans-127
   prefs: []
   type: TYPE_NORMAL
+  zh: 然后将其部署在MacOS上作为MacOS应用，在Linux上作为Linux应用，在Windows上作为Windows应用，在iOS上作为iOS应用，在Android上作为Android应用，以及作为单页网页应用，所有这些我在17分钟内完成了。
 - en: '![](img/af67456081012fc3c13f5641659012bf_29.png)'
+  id: totrans-128
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/af67456081012fc3c13f5641659012bf_29.png)'
 - en: '[Applause]， And when I say deployed， I don''t mean I ran the code。 And on Mac。
     what you had was a standalone 。app file。 On Windows， it was an MSI and Stoller。
     On iOS and Android。 it was a packaged app running on the device simulator but
     could have。 easily been uploaded to an app store。 And it was running in the browser，
     completely client-side。'
+  id: totrans-129
   prefs: []
   type: TYPE_NORMAL
+  zh: '[掌声]，当我说部署时，我并不是说我在Mac上运行了代码。你所拥有的是一个独立的.app文件。在Windows上，是一个MSI和Stoller。在iOS和Android上，是一个打包的应用程序，运行在设备模拟器上，但可以轻松上传到应用商店。而且它是在浏览器中运行，完全在客户端。'
 - en: including doing the Fahrenheit to。
+  id: totrans-130
   prefs: []
   type: TYPE_NORMAL
+  zh: 包括在浏览器中进行华氏度到摄氏度的转换。
 - en: '![](img/af67456081012fc3c13f5641659012bf_31.png)'
+  id: totrans-131
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/af67456081012fc3c13f5641659012bf_31.png)'
 - en: Celsius conversion in Python in the browser。 Now， as you might imagine， this
     is a big project。 I have been working on B-Wear for years and there are days where
     I really do feel like。 this is a first pushing a boulder up the hill。 Unfortunately。
     there has not been a lot of visible progress since I did that demo。
+  id: totrans-132
   prefs: []
   type: TYPE_NORMAL
+  zh: 在浏览器中进行华氏度到摄氏度的转换。现在，正如你可能想象的，这是一项大工程。我已经在B-Wear上工作了几年，有些时候我确实感觉这就像是在推一块巨石上山。不幸的是，自从我进行那个演示以来，显著的进展并不多。
 - en: There have even been some regressions。 Android and web support are currently
     broken for reasons。 And that's because it's not my day job。 I am tinkering on
     this in what I am usingly refer to as my spare time。 And as a result， progress
     is slow。 But despite all this。 I am actually optimistic about Python's future。
     And to explain why。
+  id: totrans-133
   prefs: []
   type: TYPE_NORMAL
+  zh: 甚至还有一些回退。目前Android和网页支持由于某些原因出现了问题。这是因为这不是我的日常工作。我正在利用我称之为“闲暇时间”的时间来进行尝试。因此，进展很慢。但尽管如此，我对Python的未来实际上感到乐观。接下来我会解释原因。
 - en: I need to tell you about another piece of Sangerpah history， about a。 lot of
     the American's Cup race。 I need to tell you about the America's Cup。 The America's
     Cup is the world's oldest international sporting trophy。 The America's Cup race
     is held about every four years。
+  id: totrans-134
   prefs: []
   type: TYPE_NORMAL
+  zh: 我需要告诉你关于Sangerpah历史的另一部分，关于美洲杯比赛。我需要告诉你关于美洲杯的事情。美洲杯是世界上最古老的国际体育奖杯。美洲杯比赛大约每四年举行一次。
 - en: Those of you from San Francisco may remember the 2013 America's Cup race in
     San Francisco， Bay。 But from the first race in 1851 to 1980， the winner was the
     New York Yacht Club。 In 1983。 New York lost to the Royal Perth Yacht Club。 And
     it's Yacht Australia too。 breaking a 132 year winning streak。 It is difficult
     for me to understate how big a deal this was in Australia。
+  id: totrans-135
   prefs: []
   type: TYPE_NORMAL
 - en: And in Perth specifically。 This was the event that put Perth on the world stage
@@ -798,6 +984,7 @@
     1983 America's Cup without knowing why。 Some of you may have heard me drop the
     line that I come from a land down under。 That is a line from a song by Australian
     rock band Men at Work。
+  id: totrans-136
   prefs: []
   type: TYPE_NORMAL
 - en: The song was the unofficial theme song of Australia too。 And it was popular
@@ -805,22 +992,26 @@
     Dundee was conceived of and able to get financed and released in part because
     of the exposure that Australia received from the America's Cup。 Just to be clear
     though， Outback Steakhouse， we had nothing to do with that。 That's on your。
+  id: totrans-137
   prefs: []
   type: TYPE_NORMAL
 - en: But other than the Perth connection， why does the America's Cup and Australia
     to matter？
+  id: totrans-138
   prefs: []
   type: TYPE_NORMAL
 - en: Well first off， let's talk about New York's winning streak。 The Yachts in the
     1983 race are what are called 12 metre Yachts。 Despite the name。 it's actually
     got nothing to do with the length of the boat。 It describes a complex set of rules
     for the design of Yachts。 Involving sale area。
+  id: totrans-139
   prefs: []
   type: TYPE_NORMAL
 - en: water line length and more。 However， the America's Cup hasn't always been raced
     on 12 metre Yachts。 Prior to 1956， a range of different Yachts classes were used。
     According to the deed for the trophy。 the defending club must accept regular challenges。
     But they're allowed to set the rules for those challenges。 And so for many years。
+  id: totrans-140
   prefs: []
   type: TYPE_NORMAL
 - en: the New York Yacht Club would impose rules like， "The challenger must come from
@@ -828,6 +1019,7 @@
     is， a challenger from England would have to cross the Atlantic in their yacht。
     whereas the defender would just pop out from Newport Harbour。 And surprisingly。
     under those conditions， New York's Yachts were consistently lighter and faster。
+  id: totrans-141
   prefs: []
   type: TYPE_NORMAL
 - en: So lesson one from the America's Cup， it's not enough to just follow the rules。
@@ -835,6 +1027,7 @@
     any rules。 They didn't write the deed for the trophy。 They were just playing the
     hand they were given。 But nobody in their right mind would call the competition
     fair。 In a situation like that。
+  id: totrans-142
   prefs: []
   type: TYPE_NORMAL
 - en: you have a choice。 You can either keep winning the competition that's been stacked
@@ -842,6 +1035,7 @@
     But you don't get to claim you are the best in the world winning on merit。 unless
     you have levelled the playing field first。 Could this be a metaphor for the IT
     industry？
+  id: totrans-143
   prefs: []
   type: TYPE_NORMAL
 - en: You know， I think it might be， I'm just going to put that over there。 But to
@@ -849,6 +1043,7 @@
     since then。 the competition had been fair。 So why hadn't anyone else won？ Well，
     a black swan happened。 Sailing is a highly competitive activity， and the New York
     Yacht Club always filled in a strong defence。
+  id: totrans-144
   prefs: []
   type: TYPE_NORMAL
 - en: with well-designed yachts， highly capable crews。 And when you add in home harbour
@@ -856,12 +1051,14 @@
     easier to continue winning。 And the design of 12-metre yachts was essentially
     finessing a well-established design。 Yeah， okay。 sure。 There were variations between
     boats， but they were relatively well-understood tweaks of a basic design。
+  id: totrans-145
   prefs: []
   type: TYPE_NORMAL
 - en: Australia II was a black swan。 When Australia II arrived in the United States。
     the lower half of the boat was shrouded in secrecy。 This invited all sorts of
     wild theories。 especially when it started winning races。 On two separate occasions。
     the Australian team caught scuba divers trying to take a peek。
+  id: totrans-146
   prefs: []
   type: TYPE_NORMAL
 - en: There were all sorts of accusations that whatever was under that shroud， it
@@ -869,12 +1066,14 @@
     when the team owner stood on the dock， called for the boat to be raised into the
     air for all to see。 revealing， the winged keel。 On most boats， the keel is a simple
     flat surface。
+  id: totrans-147
   prefs: []
   type: TYPE_NORMAL
 - en: used to lower the centre of mass of the hull， counterbalancing sail forces。
     Ben Lexin。 the designer of Australia II thought about it differently。 He reasoned
     that the keel is a hydrodynamic surface， so let's treat it like one。 He added
     a pair of winglets to the bottom of the keel。
+  id: totrans-148
   prefs: []
   type: TYPE_NORMAL
 - en: Those winglets perform a similar role to the winglets on a jet airliner's wing。
@@ -882,6 +1081,7 @@
     same is true on a keel。 The winglets make the keel more effective at keeping the
     boat upright。 which means the sail is more effective and therefore the boat is
     faster。
+  id: totrans-149
   prefs: []
   type: TYPE_NORMAL
 - en: The blue paint was camouflage， so if you did get a photo of the boat in the
@@ -889,12 +1089,14 @@
     And the Australian Defence。 Every yacht had something secret。 They were fiberglass
     hulls， they were all sorts of keel shapes。 they were dynamic keels。 And the innovation
     has continued to this day， carbon fiber hulls。
+  id: totrans-150
   prefs: []
   type: TYPE_NORMAL
 - en: solid sails and more。 The America's Cup isn't sailed on 12 metre yachts anymore。
     The next America's Cup in 2021 will be sailed on what are called AC 75 yachts。
     which are quite literally flying boats。 They are so light。 they generate so much
     thrust from their sails， that they are able to use their keel。
+  id: totrans-151
   prefs: []
   type: TYPE_NORMAL
 - en: as a hydrophile and lift out of the water。 These boats travel at amazing speeds。
@@ -902,6 +1104,7 @@
     of 12 metre yacht design。 It was controversial， it was risky， but it worked。 And
     yacht racing has not been the same since。 And just to nail the metaphor home，
     the name of Australia 2's tender boat was the black swan。
+  id: totrans-152
   prefs: []
   type: TYPE_NORMAL
 - en: What does this have to do with Python？ Well， I think we have already seen a
@@ -909,6 +1112,7 @@
     it， Wasm is WebAssembly。 It started life as a research project trying to identify
     the set of primitive JavaScript operations。 that will execute fast in a modern
     JavaScript engine。
+  id: totrans-153
   prefs: []
   type: TYPE_NORMAL
 - en: That set of primitives is very close to the capabilities of assembly language，
@@ -916,6 +1120,7 @@
     a result。 you can use that set of primitives and compile C code to this assembly
     language target。 Wasm is the extension of this work defining a binary format for
     transmitting assembly content。
+  id: totrans-154
   prefs: []
   type: TYPE_NORMAL
 - en: rather than transmitting JavaScript than as to be parsed and interpreted。 That
@@ -923,6 +1128,7 @@
     Because at the end of the day， it is JavaScript。 Essentially。 it's separating
     JavaScript into two parts。 A fast sandboxed runtime that is almost universally
     available because it's in the browser。
+  id: totrans-155
   prefs: []
   type: TYPE_NORMAL
 - en: and a language that targets that runtime。 For the purposes of our industry。
@@ -930,21 +1136,25 @@
     language to adopt JavaScript the runtime。 That means there's an opening for Python
     and other languages， for that matter。 to be languages that are available for client-side
     logic in the browser。
+  id: totrans-156
   prefs: []
   type: TYPE_NORMAL
 - en: Wasm is still in the relatively early days。 There are still some issues being
     worked out。 one of the big ones being the interaction between the DOM and Wasm。
     And making a viable Wasm-based Python will require some work。 There have been
     some experiments done in this space， though。 But the wind keel has been revealed。
+  id: totrans-157
   prefs: []
   type: TYPE_NORMAL
 - en: What we do with this knowledge is up to us。 Are we going to dig into the technology。
     get creative with the rules， determine how we can exploit those rules to our advantage
     and sail off in a flying boat？
+  id: totrans-158
   prefs: []
   type: TYPE_NORMAL
 - en: Or are we going to continue to race on flat keel 12-meter yachts and wonder
     why we don't win races anymore？
+  id: totrans-159
   prefs: []
   type: TYPE_NORMAL
 - en: But there's more we can learn from Australia too。 Ben Lexen was a very talented
@@ -953,6 +1163,7 @@
     an amazing skipper。 Couldn't design a yacht to save himself。 And there were 14
     other people on board the boat and an entire support team on the tender and back
     at harbor。
+  id: totrans-160
   prefs: []
   type: TYPE_NORMAL
 - en: and showing those 15 sailors could be competitive。 Sailing is a team sport。
@@ -961,33 +1172,40 @@
     that you achieve success。 The same is true of software。 Although there is a historical
     narrative about great software development being done by a soul hacker tapping
     away in their basement。
+  id: totrans-161
   prefs: []
   type: TYPE_NORMAL
 - en: That is almost never the case。 What we see today as the Python community is
     the result of countless thousands of hours of effort from countless thousands
     of people。 And being primarily software engineers， code is often get the most
     attention。 And yes。
+  id: totrans-162
   prefs: []
   type: TYPE_NORMAL
 - en: writing good software takes a lot of effort and doing it well takes time and
     skill。 But that's only considering the code。 Any project， especially on the size
     of Python。 is so much more than code。 Project and team management is a skill。
     Graphic design and UI management is a skill。 Developer relations is a skill。
+  id: totrans-163
   prefs: []
   type: TYPE_NORMAL
 - en: Technical writing is a skill。 Now， okay， those skills could be broadly considered
     in the remit of a well-rounded software engineer。 But what about things that aren't
     even remotely software-related？ Who organizes community events？
+  id: totrans-164
   prefs: []
   type: TYPE_NORMAL
 - en: Who provides legal advice？ Who handles communication and public relations？
+  id: totrans-165
   prefs: []
   type: TYPE_NORMAL
 - en: Who builds the relationships with potential donors and manages fundraising？
+  id: totrans-166
   prefs: []
   type: TYPE_NORMAL
 - en: Who makes the strategic deals with the Googles and the Microsofts and the Amazon's
     of the world？
+  id: totrans-167
   prefs: []
   type: TYPE_NORMAL
 - en: To make sure that Python is a supported language on product roadmaps。 It turns
@@ -995,6 +1213,7 @@
     that are very， very useful。 And Australia too has another lesson here。 Ben Lexton
     and his team didn't do all this engineering work out of the goodness of their
     hearts。
+  id: totrans-168
   prefs: []
   type: TYPE_NORMAL
 - en: Competitive sailing has been described as the ability to stand in a cold shower
@@ -1002,6 +1221,7 @@
     gentleman named Alan Bond。 The 1993 challenge was the third challenge that Bond
     had financed。 collectively absorbing hundreds of millions of dollars。 Without
     Bond's money。
+  id: totrans-169
   prefs: []
   type: TYPE_NORMAL
 - en: the Australia 2 Challenge would not have happened。 And without a commitment。
@@ -1009,6 +1229,7 @@
     with all VINDA YOT design。 funding the research effort， it would not have culminated
     in a winged keel。 Whether it is competitive sailing or software， expertise is
     needed。
+  id: totrans-170
   prefs: []
   type: TYPE_NORMAL
 - en: but experts kind of expect to get paid。 From inside the bubble of open-source
@@ -1017,12 +1238,14 @@
     where apparently it's expected that having worked your 9-to-5 day job。 doing something
     that you are skilled at， you will go home and do some more for free and then encourage
     a multi-billion dollar organisation to benefit from your efforts。
+  id: totrans-171
   prefs: []
   type: TYPE_NORMAL
 - en: In most industries， if you're good at something， you get paid to do it。 And
     people outside software have really useful skills。 skills that many open-source
     projects badly need。 But it's true of writing software too。 People are paid well
     to write software， but there is plenty of software that should be written。
+  id: totrans-172
   prefs: []
   type: TYPE_NORMAL
 - en: but isn't。 Or isn't written in a timely fashion because we are waiting for volunteers
@@ -1031,24 +1254,28 @@
     volunteers， you are immediately constraining the amount of time and effort that
     anyone can put into the job。 And I don't want to undermine the significant contribution
     that volunteers have given to Python and the Python community。
+  id: totrans-173
   prefs: []
   type: TYPE_NORMAL
 - en: but I do want to challenge the idea that volunteering is the only way that Python
     or open-source can progress。 If you pay people for their time， they are much more
     likely to be able to maintain their attention on a problem until designs are fleshed
     out or consequences are considered。
+  id: totrans-174
   prefs: []
   type: TYPE_NORMAL
 - en: and the work gets done。 [Applause]， We saw an amazing example of this in the
     Python community with the rewrite of PyPI。 PyPI has been around for 15 years。
     It has badly needed a rewrite for almost half of its life。 Everyone agreed a rewrite
     was needed， but the work never got finished。 Why？
+  id: totrans-175
   prefs: []
   type: TYPE_NORMAL
 - en: Because nobody was being paid to work on it。 Then Mozilla gave the PSF a grant
     of $170，000。 and the work was done in six months。 Why？ Because a couple of people
     could focus on getting the job done instead of trying to fit bug fixes in on weekends
     between their kids football games。
+  id: totrans-176
   prefs: []
   type: TYPE_NORMAL
 - en: or trying to convince their boss that， "Oh， improving PyPI won't make us any
@@ -1056,19 +1283,23 @@
     is an unfortunately rare example。 What opportunities have we left on the table，
     or are we at the risk of living on the table。 because we aren't resourcing them？
     What constraints have we placed on our own growth。
+  id: totrans-177
   prefs: []
   type: TYPE_NORMAL
 - en: because nobody was enthusiastic enough to volunteer their time to address some
     gap or make the most of some opportunity？
+  id: totrans-178
   prefs: []
   type: TYPE_NORMAL
 - en: And who have we excluded from the development process because they had other
     life commitments or couldn't justify donating all their spare time to a volunteer
     effort？
+  id: totrans-179
   prefs: []
   type: TYPE_NORMAL
 - en: Or because they can't take up a short-term grant contract because they live
     in the United States and need healthcare coverage？
+  id: totrans-180
   prefs: []
   type: TYPE_NORMAL
 - en: It's not just about maintenance and existing infrastructure。 Either history
@@ -1076,6 +1307,7 @@
     term。 and groups that don't do R&D eventually get beaten。 Australia II's investment
     in the R&D led to the wind keel and kickstarted a whole generation of progress
     in yacht design。
+  id: totrans-181
   prefs: []
   type: TYPE_NORMAL
 - en: The black swans I identified earlier aren't something that can be addressed
@@ -1083,12 +1315,14 @@
     of dead ends along the way。 I have been doing what I can with B-Ware， but I'm
     really only doing that on weekends。 And the same is true of a lot of Python and
     the Python ecosystem。 For the most part。
+  id: totrans-182
   prefs: []
   type: TYPE_NORMAL
 - en: the Python we have today has been developed in a spare time of volunteers。 or
     whatever fragments of time engineers have been able to extract from their employers。
     What if it didn't have to be that way？ What if Python had an R&D division。 a permanent
     engineering group that could focus on strategic tasks for the Python ecosystem？
+  id: totrans-183
   prefs: []
   type: TYPE_NORMAL
 - en: When Bell telephones gave a bunch of engineers the resources to engineer strategically，
@@ -1096,6 +1330,7 @@
     we got Xerox Park which gave us graphical user interfaces and ethernet and laser
     printers。 When you give talented people the resources to think big， amazing things
     can happen。
+  id: totrans-184
   prefs: []
   type: TYPE_NORMAL
 - en: The Python community has talented people。 We just need to give them the resources
@@ -1104,9 +1339,11 @@
     spend half their time on one grant right in the proposal for the next grant。 And
     it could open the door to giving a high-profile paid career opportunity to groups
     that have been historically underrepresented in open source development。
+  id: totrans-185
   prefs: []
   type: TYPE_NORMAL
 - en: The underlying problem we have though is how do we pay for this？
+  id: totrans-186
   prefs: []
   type: TYPE_NORMAL
 - en: Open Source is an amazing way to do engineering， but it is not a business model。
@@ -1114,12 +1351,14 @@
     the social goals。 This problem is an area of academic economics research though。
     Eleanor Ostrom won the 2009 Nobel Prize for Economics， first study of Common Pool
     Resources or CPRs。
+  id: totrans-187
   prefs: []
   type: TYPE_NORMAL
 - en: Real world examples of CPRs are things like forests or grazing lands。 They are
     situations where anyone can access the resource。 The best individual strategy
     is to take as much as you can get from that resource。 but the best communal strategy
     is to collaborate， to limit what you take。
+  id: totrans-188
   prefs: []
   type: TYPE_NORMAL
 - en: to contribute back to maintaining the resource so that in the long run the health
@@ -1127,6 +1366,7 @@
     of Common Pool Resources that are being managed in the real world。 Some of them
     have been collectively operated and maintained for hundreds of years。 One of the
     key findings of Ostrom's work are the conditions required for sustainable CPRs。
+  id: totrans-189
   prefs: []
   type: TYPE_NORMAL
 - en: and one of those conditions is exclusion。 In order to sustain a Common Pool
@@ -1134,6 +1374,7 @@
     are committed to adhering to community principles。 The problem is that this is
     in direct opposition to the free software guidelines。 which states you can't restrict
     the ability of people to redistribute software。
+  id: totrans-190
   prefs: []
   type: TYPE_NORMAL
 - en: I don't know how we reconcile those two positions。 It may require some very
@@ -1141,6 +1382,7 @@
     long time。 or at the very least， drawing a clear distinction between the software
     and the communities around them。 But we can't avoid these discussions。 The consequences
     of this discrepancy are having had a very deep impact on people in our community。
+  id: totrans-191
   prefs: []
   type: TYPE_NORMAL
 - en: To that end， I've got one last piece of Sangrapah history I'd like to share
@@ -1148,19 +1390,23 @@
     I flagged earlier。 This dapper gentleman is Charles Yelvedin O'Connor， CYO Connor。
     Born in 1843。 he became the engineering chief of the Public Works Department of
     Western Australia in 1891。
+  id: totrans-192
   prefs: []
   type: TYPE_NORMAL
 - en: He had a wide range of responsibilities， but there were two major public works
     that he is remembered for。
+  id: totrans-193
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/af67456081012fc3c13f5641659012bf_33.png)'
+  id: totrans-194
   prefs: []
   type: TYPE_IMG
 - en: The first is Fremantle Harbor。 Perth is actually a really dumb place for a large
     city to be。 Okay。 sure， it's a long way away from everything， but cities on the
     ocean need harbors。 Perth doesn't have a natural deep water harbour， so they made
     one。 And they did that by dredging the mouth of the Swan River。
+  id: totrans-195
   prefs: []
   type: TYPE_NORMAL
 - en: and this was done under the direction and supervision of CYO Connor in the 1890s。
@@ -1168,6 +1414,7 @@
     Water Scheme。 In the early 1890s， Gold was discovered near the towns of Koolgadi
     and Kalguli。 This started the Western Australian Gold Rush。 These towns， as you
     may note from the map。
+  id: totrans-196
   prefs: []
   type: TYPE_NORMAL
 - en: are in the middle of a desert。 There is no natural water source out there， but
@@ -1175,18 +1422,21 @@
     by horse from Perth。 Adjusted for inflation， that's US$100 a gallon。 There was
     so much gold that people paid anyway。 The 1890s Goldfield， Gold Rush， doubled
     the population of Western Australia in four years。
+  id: totrans-197
   prefs: []
   type: TYPE_NORMAL
 - en: But people were still dying of first-in-disease， so the government wanted to
     do something。 CYO Connor's solution was a pipeline running 530 kilometres， 330
     miles。 from Mundaring Weir in the Perth Hills to Kalguli。 with a series of eight
     pumping stations along the route to get water to the destination。
+  id: totrans-198
   prefs: []
   type: TYPE_NORMAL
 - en: lifting the water 340 metres in altitude across its length。 It takes five days
     for a drop of water to make its way from Mundaring to Kalguli。 And again。 this
     was built in the 1890s。 Fremetel Harbour and the Goldfields pipeline were conceived。
     planned and delivered in the eras of horse-drawn carts and steam engines。
+  id: totrans-199
   prefs: []
   type: TYPE_NORMAL
 - en: They were both mammoth undertakings。 It took considerable financial commitment
@@ -1195,18 +1445,21 @@
     People who had alternate plans that had been rejected took to the presses to express
     their dismay。 Two successive editors of Perth's Sunday Times newspaper made it
     their personal mission to see O'Connor。
+  id: totrans-200
   prefs: []
   type: TYPE_NORMAL
 - en: brought to account for the way that he was wasting public funds。 They took every
     opportunity in editorials to accuse him of corruption， of ineptitude。 calling
     for a royal commission into his activities。 And all this public criticism and
     pressure took its toll on O'Connor。 One early morning in 1902。
+  id: totrans-201
   prefs: []
   type: TYPE_NORMAL
 - en: he took his own life。 These two projects， Fremetel Harbour and the Goldfields
     pipeline。 they were ambitious， but they weren't full-hardy。 They were well-designed。
     they were well-engineered， and they have shaped Western Australia。 They have both
     been in continuous operation from the day they were commissioned。 Kalguli is。
+  id: totrans-202
   prefs: []
   type: TYPE_NORMAL
 - en: to this day， an active goldmine， one of the world's largest。 And children are
@@ -1215,15 +1468,18 @@
     and his own mental health issues led to the worst possible end。 Unfortunately，
     this is a story that will sound familiar to anyone who has been around open-source
     communities for any period of time。
+  id: totrans-203
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/af67456081012fc3c13f5641659012bf_35.png)'
+  id: totrans-204
   prefs: []
   type: TYPE_IMG
 - en: I have been a part of open-source online communities for 30 years and maintainers
     for almost 15。 and I'm here to tell you dealing with people is emotionally exhausting。
     The sense of entitlement that some people bring to discussions about a toll they
     have received at no cost。 without any obligation to give back in any way is phenomenal。
+  id: totrans-205
   prefs: []
   type: TYPE_NORMAL
 - en: And dealing with the messy parts of community so that everybody else doesn't
@@ -1231,18 +1487,21 @@
     are doing all of that emotional and mental labour as a volunteer。 it makes you
     question why you bother at all。 My personal experience。 I was diagnosed as being
     in the middle of a major depressive episode in 2015。 Now。
+  id: totrans-206
   prefs: []
   type: TYPE_NORMAL
 - en: there were a number of contributing factors， but one of the big ones was the
     pressures imposed by my volunteer work dealing with the Django community。 in particular
     dealing with code of conduct issues and one particular code of conduct issue in
     particular。
+  id: totrans-207
   prefs: []
   type: TYPE_NORMAL
 - en: I burned out on the Django community。 I am still part of that community because
     of the many amazing people and friends that I've made。 but I don't actively contribute
     anywhere near as much as I once did。 I can think of dozens of others who have
     had similar experiences。 who have either scaled back their involvement in open-source。
+  id: totrans-208
   prefs: []
   type: TYPE_NORMAL
 - en: or dropped out of the community entirely because of the treatment they have
@@ -1250,15 +1509,18 @@
     the point of contemplating self-harm。 I was able to find the help that I needed
     before reaching that point， but I know people who have。 Are we， as a community，
     comfortable that we are doing this to our peers， to our leaders。
+  id: totrans-209
   prefs: []
   type: TYPE_NORMAL
 - en: or to anyone for that matter？ Do we want to build our community on the expectation
     that volunteers will give of themselves until they burn out？
+  id: totrans-210
   prefs: []
   type: TYPE_NORMAL
 - en: Are we okay with the idea of project founders marturing themselves so that the
     wider community can have access to a web framework。 or a packaging service or
     a numerical processing library？
+  id: totrans-211
   prefs: []
   type: TYPE_NORMAL
 - en: Or do we want to find a way to structure our community to make sure that people
@@ -1266,18 +1528,21 @@
     to others who can actively support them in that work。 and access to individuals
     with skills in other areas？ Ten years ago， Python 3 was released。 Despite numerous
     cries that it would kill Python， we have come out the other side as a larger。
+  id: totrans-212
   prefs: []
   type: TYPE_NORMAL
 - en: stronger community。 The transition to Python 3 required some bold vision。 bold
     technical decisions and okay， maybe some mistakes were made。 but ultimately the
     gambit appears to have worked。 That success was not inevitable。 It took planning
     and effort。 And future success isn't inevitable either。
+  id: totrans-213
   prefs: []
   type: TYPE_NORMAL
 - en: So what about the next ten years？ What can you do to help？ Well， firstly。 we
     need to start thinking about the black swans that have the potential to redefine
     us。 We can't afford to just think about the most pressing problems that are obvious
     right now。 Our immediate sources of pain， our immediate potential sources of revenue。
+  id: totrans-214
   prefs: []
   type: TYPE_NORMAL
 - en: We need to think about the problems we are going to have。 Because addressing
@@ -1286,6 +1551,7 @@
     of maintenance and R&D efforts。 We need to work out how to harness the not insignificant
     amount of money that is available in our industry to do the work that we collectively
     need to have done。
+  id: totrans-215
   prefs: []
   type: TYPE_NORMAL
 - en: And part of that discussion may mean rethinking aspects of the way our community
@@ -1293,6 +1559,7 @@
     and especially large organizations who have resources。 And third， as a community，
     we need to reevaluate the way that we value contributors and their contributions。
     And as a simplistic reading， "Yeah， okay， I mean money。
+  id: totrans-216
   prefs: []
   type: TYPE_NORMAL
 - en: Give them access to the resources they need to continue doing the work they're
@@ -1301,9 +1568,11 @@
     beings。 When you see something online and you've got some hot take that you've
     got a post。 think about whether it needs to be said。 And if it does need to be
     said。
+  id: totrans-217
   prefs: []
   type: TYPE_NORMAL
 - en: are you saying it in a constructive， empathetic way？
+  id: totrans-218
   prefs: []
   type: TYPE_NORMAL
 - en: Consider the collective effort of a thousand messages with the same tone。 being
@@ -1311,6 +1580,7 @@
     still very high-level calls to action。 Those are things that require discussion
     and planning and ongoing contemplation。 The rest of this conference is a great
     time to have those discussions。
+  id: totrans-219
   prefs: []
   type: TYPE_NORMAL
 - en: but we're not going to see a magical fix by this time next week。 You want something
@@ -1318,6 +1588,7 @@
     The Python Software Foundation currently has its May fundraising drive。 It's just
     opened。 The Django Software Foundation num-focus。 Many other organizations accept
     donations。
+  id: totrans-220
   prefs: []
   type: TYPE_NORMAL
 - en: Encourage your employer to support these organizations to a level that reflects
@@ -1325,6 +1596,7 @@
     to do maintenance and R&D work on behalf of the community。 If you would like to
     support my own work in the Beewear project。 you can join the project as a financial
     member。 I'm currently able to cover hosting costs。
+  id: totrans-221
   prefs: []
   type: TYPE_NORMAL
 - en: pay for stickers and challenge coins。 If I can get some more financial backing。
@@ -1332,6 +1604,7 @@
     other ideas about how to fund Beewear or you want to know more about the project。
     we have a booth in the main hall。 Come and have a chat。 But lastly， if you have
     the means。
+  id: totrans-222
   prefs: []
   type: TYPE_NORMAL
 - en: all your privilege allows， contribute。 Whether that's on your own time or on
@@ -1339,18 +1612,21 @@
     your level of experience。 This is a collective effort， and every little bit helps。
     The Beewear project definitely needs help。 but so do dozens of other projects
     in the Python ecosystem。
+  id: totrans-223
   prefs: []
   type: TYPE_NORMAL
 - en: And if my experience as a sand-groper proves everything， anything。 it is that
     open source really does open up the world to you。 It has taken 28 years for Python
     to get to where we are today。 and it would be a shame to have to develop it all
     over again。
+  id: totrans-224
   prefs: []
   type: TYPE_NORMAL
 - en: simply because we didn't pay attention to the way the world is changing and
     plan for how Python will fit into the world that is evolving around us。 And as
     Python the language grows and adapts， we need to make sure that our community
     grows and adapts as well。
+  id: totrans-225
   prefs: []
   type: TYPE_NORMAL
 - en: This awesome language we know and love would be nothing without the community
@@ -1358,9 +1634,11 @@
     to strength。 I hope I have been able to convince you that Python still has a vibrant
     future ahead of it。 We just need to plan for that future and work out how we're
     going to execute on those plans in a sustainable fashion。
+  id: totrans-226
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/af67456081012fc3c13f5641659012bf_37.png)'
+  id: totrans-227
   prefs: []
   type: TYPE_IMG
 - en: And if I haven't convinced you about Python's future， maybe I've convinced you
@@ -1368,24 +1646,35 @@
     it。 Not all the animals will kill you。 For example， there is the happiest animal
     on earth， the Quaka。 [Applause]。 I only found on one island， Rottenest， about
     an hour by boat from Perth。
+  id: totrans-228
   prefs: []
   type: TYPE_NORMAL
+  zh: 如果我没有说服你相信 Python 的未来，也许我已经说服你来访问珀斯。我们距离一切都很远，但我保证我们值得一游。并不是所有的动物都会杀死你。例如，地球上最快乐的动物是
+    **考拉**。[鼓掌]。我只在一个岛上发现过它，罗滕尼斯岛，距离珀斯大约一个小时的船程。
 - en: I hope I see you there someday。 Thank you。 [Applause]， [Applause]， Thank you
     so much， Russell。 Another round of applause for Russell。 [Applause]， [Applause]，
     [Applause]， All right。 So that is our first keynote。 Thanks。 Once more to Russell。
     We have a break until 10。50 this morning。 At which point talks will begin all
     throughout the talks。 We talked about earlier。
+  id: totrans-229
   prefs: []
   type: TYPE_NORMAL
+  zh: 希望有一天能在那见到你。谢谢。[鼓掌]，[鼓掌]，非常感谢你，拉塞尔。再给拉塞尔一次掌声。[鼓掌]，[鼓掌]，[鼓掌]，好的。这是我们的第一场主旨演讲。谢谢，再次感谢拉塞尔。今天早上我们有一个休息，直到
+    10:50。届时演讲将会在所有演讲中开始。我们之前谈到过。
 - en: Also at the same time， Charlie's in room 25C。 And all of those will run until
     5。40 this afternoon。 At which point lightning talks will begin in this room at
     5。40。 The art of Python is from 8 to 10 this evening in rooms 26A， B and C。 The
     open spaces。 we open until 11 p。m。 this evening。 So check those boards or check
     the site online。 And lastly。
+  id: totrans-230
   prefs: []
   type: TYPE_NORMAL
+  zh: 同时，查理在 25C 房间。所有这些活动将持续到今天下午 5:40。届时闪电演讲将在这个房间 5:40 开始。今晚 Python 艺术的活动将在 26A、B
+    和 C 房间从 8 点到 10 点进行。开放空间将在今晚 11 点关闭。所以请查看那些公告板或在线网站。最后。
 - en: the evening dinner。 So if you have a ticket for that， make sure to show up。
     There's nothing more that I had for you at this time。 Thank you and welcome to
     PyCon。 [Applause]。 (silence)。
+  id: totrans-231
   prefs: []
   type: TYPE_NORMAL
+  zh: 晚上的晚宴。所以如果你有那张票，确保准时出现。此时我没有其他内容要分享。谢谢，欢迎来到 PyCon。[鼓掌]。（安静）。

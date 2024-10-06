@@ -4,18 +4,22 @@
   prefs:
   - PREF_H1
   type: TYPE_NORMAL
+  zh: P3：**夏洛特·梅斯** - 吸引隐形贡献者 - PyCon 2019 - leosan - BV1qt411g7JH
 - en: Okay， thank everybody for coming。
   id: totrans-1
   prefs: []
   type: TYPE_NORMAL
+  zh: 好吧，感谢大家的到来。
 - en: '![](img/9e2302413b9e7589de3408aa0d75b3aa_1.png)'
   id: totrans-2
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/9e2302413b9e7589de3408aa0d75b3aa_1.png)'
 - en: '![](img/9e2302413b9e7589de3408aa0d75b3aa_2.png)'
   id: totrans-3
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/9e2302413b9e7589de3408aa0d75b3aa_2.png)'
 - en: Today we're going to be hearing about attracting the invisible contributors
     with Charlotte， Mays。 \>\> Thank you。 So before I start， I want to give a little
     bit of context to this talk。 I am one of the co-organizers of my local Pilates
@@ -24,6 +28,7 @@
   id: totrans-4
   prefs: []
   type: TYPE_NORMAL
+  zh: 今天我们将听到关于吸引隐形贡献者的主题，由**夏洛特·梅斯**分享。谢谢大家。在我开始之前，我想给这个演讲提供一些背景。我是我所在地区普拉提小组的共同组织者，因此我花了很多时间与来小组的人交谈，询问他们希望从中得到什么。
 - en: of the community and not just the Pilates group but the community general， what
     their goals， are。 that sort of thing。 I hear a lot of people saying that， well。
     I want some sort of place where I can come， and actually get into some coding。
@@ -32,6 +37,7 @@
   id: totrans-5
   prefs: []
   type: TYPE_NORMAL
+  zh: 不仅是普拉提小组，还有整个社区，他们的目标是什么，诸如此类的事情。我听到很多人说：“我想要一个地方，可以让我真正参与编码。”当然，有一些现有的资源，我通常会指引他们去看看。
 - en: existing groups that do supportive coding including our local Python group that
     isn't。 the Pilates group and that sort of thing。 And I get a lot of people talking。
     particularly when the subject of open source comes up about， well， I tried。 I
@@ -40,6 +46,7 @@
   id: totrans-6
   prefs: []
   type: TYPE_NORMAL
+  zh: 现有的支持性编码小组，包括我们的本地**Python**小组，这不是普拉提小组之类的。我听到很多人谈论，特别是在提到开源的时候，他们会说：“我尝试过，我去过这个项目，却碰到了瓶颈。”所以我有很多这样的经历，同时我也是一个项目的核心贡献者。
 - en: have contributed to a bunch of projects and I work at Red Hat where project
     maintainers。 kind of grow in trees。 And so I'm in a situation where I see a lot
     of both sides of this and there's a lot of。 things that I think project maintainers
@@ -48,6 +55,7 @@
   id: totrans-7
   prefs: []
   type: TYPE_NORMAL
+  zh: 我参与了许多项目，目前在**红帽**工作，项目维护者的成长就像树一样。因此，我处于一个能看到这两个方面的环境，我认为项目维护者和贡献者有很多事情并未考虑到，实际上这些事情在驱赶一些人。那么我所说的这些隐形贡献者是谁呢？
 - en: A lot of times they're students， they may be current students in a traditional
     bachelor's。 program or they may be students at a boot camp。 They also can often
     be self-taught coders where they don't have much structure that。 they're coming
@@ -56,6 +64,7 @@
   id: totrans-8
   prefs: []
   type: TYPE_NORMAL
+  zh: 很多时候，他们是学生，可能是传统本科学位的在读学生，或者是某个训练营的学生。他们也常常是自学成才的程序员，缺乏结构来指导他们该去哪里寻找信息。而有时候，他们只是想贡献的用户，项目的用户。
 - en: who found a bug that they would like to help fix or have a feature that they
     would like。 to see exist and they feel like they maybe have enough knowledge of
     programming to be。 able to help out。 So these are often the people who they're
@@ -64,12 +73,14 @@
   id: totrans-9
   prefs: []
   type: TYPE_NORMAL
+  zh: 他们发现了一个bug，希望能够修复，或者有一个他们希望能实现的功能，他们觉得自己也许有足够的编程知识可以提供帮助。因此，这些人通常对开源社区并不太熟悉。他们不知道大多数人可能已经默认的假设是什么。
 - en: So these are what I call the invisible contributors。 They may come look at your
     project and go， "Oh。 this looks overwhelming。 I'm going to not。"， So how can you
     use the content that I'm about to give you？
   id: totrans-10
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以这些就是我所称之为“隐形贡献者”。他们可能会来看你的项目，然后说：“哦，这看起来太复杂了。我不想参与。”那么你如何利用我接下来要给你的内容呢？
 - en: Because I'm going to warn you this is going to be a bit of a fire hose。 One
     thing is just simply for insight-centered-diverse viewpoints。 So a lot of this
     has been accumulated not just from people I've interacted with locally。 and directly，
@@ -77,6 +88,7 @@
   id: totrans-11
   prefs: []
   type: TYPE_NORMAL
+  zh: 因为我要提醒你们，这将会是一个信息轰炸。首先是基于观点多样性的洞见。所以这些内容并不是仅仅来自我在本地直接接触的人，而是我实际上还主动联系了其他人，试图去了解，“好吧，我知道这些。
 - en: little piece of this。"， What other things are going on that are pushing people
     away and really tried to collect a bunch。 of this stuff together？ So this ought
     to give you some insights into the different people who may come to look at。 your
@@ -155,6 +167,7 @@
   id: totrans-20
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以想一想，当你在公司环境中思考如何变得更加多样和包容时，这些也是你可以考虑的原则，并思考它们如何适用于那些情况。好的，所以我将定义一些我将在这个演讲中使用的术语。
 - en: I'm calling project sticky versus slippery。 And I'm not trying to define this
     as a binary。 this is a spectrum。 So projects can be anywhere from the sticky end
     of the spectrum to the slippery end of。 the spectrum。 A sticky project has multiple
@@ -163,6 +176,7 @@
   id: totrans-21
   prefs: []
   type: TYPE_NORMAL
+  zh: 我称之为项目的粘性与滑动。我并不是要将其定义为二元的，这是一种光谱。因此，项目可以在光滑端到粘性端的光谱上任何位置。一个粘性项目有多个长期贡献者。当人们查找时，他们看到沟通，即使那些人最终没有贡献。
 - en: They at least say， "Hey， I'm interested。 What can you tell me about this？"。
     A slippery project may only have a few long-term contributors， maybe just the
     maintainer and。 a couple of people who might drop in a PR blindly every now and
@@ -171,6 +185,7 @@
   id: totrans-22
   prefs: []
   type: TYPE_NORMAL
+  zh: 他们至少会说，“嘿，我感兴趣。你能告诉我一些关于这个的事吗？”一个滑动项目可能只有少数长期贡献者，也许只是维护者和几个可能偶尔无意中提交PR的人。而且它几乎没有或没有来自查找者的沟通。没有人会过来说，“嘿。”
 - en: I want to help with this。"， And so the goal of this project or the goal of this
     talk is to help your project go from。 the slippery end of the spectrum to the
     sticky end of the spectrum。 So what makes a project fall on one end or the other
@@ -178,6 +193,7 @@
   id: totrans-23
   prefs: []
   type: TYPE_NORMAL
+  zh: 我想要帮助这个项目。“因此，这个项目或谈话的目标是帮助你的项目从光滑的端点转向粘性的端点。那么，是什么让一个项目落在光滑端或粘性端呢？
 - en: There are five things I'm going to break this down into and I'm going to go
     into each of。 these in more detail。 But in brief， communication。 they need to
     be able to communicate with you documentation。 We all know the importance of documentation，
@@ -185,6 +201,7 @@
   id: totrans-24
   prefs: []
   type: TYPE_NORMAL
+  zh: 我将把这个分成五个部分，并将详细讲述每一个部分。但简而言之，沟通。他们需要能够与你进行沟通，文档。我们都知道文档的重要性，但我将详细讲解一些更多的内容。
 - en: how that relates to this kindness， basic human trait， very important in this
     context， terminology。 that's used in your project and the ever-popular code of
     conduct。 So when we're talking about communication， you want to make sure that
@@ -193,6 +210,7 @@
   id: totrans-25
   prefs: []
   type: TYPE_NORMAL
+  zh: 这与友善、基本人性特征的关系非常重要，这在上下文、术语中都很重要，这在你的项目和广受欢迎的行为规范中使用。因此，当我们谈论沟通时，你要确保让人们更容易与团队沟通。我看到很多项目，唯一的沟通方式可能是一个。
 - en: mailing list or an IRC channel。 These are not great for communication。 They're
     great to have。 They're better than nothing， especially the mailing list because
     that likely will have。 the archived interactions。 So people can go look back and
@@ -201,6 +219,7 @@
   id: totrans-26
   prefs: []
   type: TYPE_NORMAL
+  zh: 邮件列表或IRC频道。这些对于沟通并不好。它们是有用的，但总比没有好，尤其是邮件列表，因为它很可能会有存档的互动。所以人们可以回顾并查看随着时间推移的对话情况，但它并不适合实时交流。IRC适合实时交流，但没有存档。
 - en: Nobody can go and look and see anything that happened before they join that
     IRC channel。 And it can be really not accessible to new coders。 It's something
     that there's not a whole lot of information about how to set it up。 You have to
@@ -208,6 +227,7 @@
   id: totrans-27
   prefs: []
   type: TYPE_NORMAL
+  zh: 没有人可以去查看他们加入那个IRC频道之前发生的任何事情。这对新程序员来说真的很不方便。关于如何设置这一点的信息并不多。你必须浏览大量不同的信息之类的东西。
 - en: So these are the kinds of things that you want to think about when you think
     about how。 are people going to communicate with my project。 And this should be
     on the front page of every place a person might land。 Your documentation， your
