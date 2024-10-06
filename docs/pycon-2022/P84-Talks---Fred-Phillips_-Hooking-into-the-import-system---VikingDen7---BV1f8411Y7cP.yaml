@@ -395,6 +395,7 @@
   id: totrans-44
   prefs: []
   type: TYPE_NORMAL
+  zh: 从exec模块返回任何内容。它只是修改了被推送的内容。所以现在我们需要结合这个查找器，允许客户端像正常一样调用导入，然后创建一种方式，让加载器通过查看数据库来广告它可以提供哪些包。所以，一种方法是向数据库加载器添加一个新方法，我决定称之为provides。
 - en: which takes in the name and will turn true or false depending on whether there
     is some。 code if there's a module of this name in the database。 So this is not
     a part of the standard。 abstract base class that we're basing these classes on。
@@ -403,6 +404,7 @@
   id: totrans-45
   prefs: []
   type: TYPE_NORMAL
+  zh: 它接受名称，并根据数据库中是否存在此名称的模块返回true或false。这不是我们基于的标准抽象基类的一部分。这只是我们可以编写的一段自定义代码，以帮助我们使用的功能。基本上，我们有一个非常相似的。
 - en: query but we don't have to access the code so we just select one where code
     equals the。 name and this will either return a row or return a row。 So I've highlighted
     the code。 around that but basically all we need to do here is check how many rows
@@ -411,6 +413,7 @@
   id: totrans-46
   prefs: []
   type: TYPE_NORMAL
+  zh: 查询，但我们不需要访问代码，所以我们只需选择一个代码等于名称的。这将返回一行或返回一行。所以我突出显示了周围的代码。基本上我们需要做的是检查返回了多少行。如果是零，我们返回false，如果是一行，则返回true。所以现在我们有一个数据库加载器类。
 - en: which has these three methods on it。 Create module， exec module and provides。
     So now we。 need to combine that with the finder。 So we create a new finder again
     best based on the。 meta path finder abstract base class and we pass in an instance
@@ -419,6 +422,7 @@
   id: totrans-47
   prefs: []
   type: TYPE_NORMAL
+  zh: 创建模块、执行模块和提供。因此现在我们需要将其与查找器结合在一起。我们再次创建一个新的查找器，基于元路径查找器抽象基类，并传入我们创建的加载器的实例来查找，并再次将其设置为成员变量。因此现在我们可以有一个简单的。
 - en: implementation of find spec that first is going to leverage that provides method
     that。 we implemented before。 We're going to take the full name that was passed
     in and ask the。 loader are we providing do you provide this a module or of this
@@ -427,6 +431,8 @@
   id: totrans-48
   prefs: []
   type: TYPE_NORMAL
+  zh: find spec的实现首先将利用我们之前实现的provides方法。我们将获取传入的完整名称，并询问加载器我们是否提供这个名称的模块。如果是真的，我们就调用import
+    lib提供的这个有用的辅助方法，这是一个。
 - en: standard library standard library package that we can use which basically creates
     this。 module spec that we've been passing around。 So we never really need even
     need to deal with。 like what this module spec is or what kind of how we actually
@@ -435,6 +441,7 @@
   id: totrans-49
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们可以使用的标准库包，基本上创建了我们一直在传递的模块规范。所以我们甚至不需要处理模块规范是什么，或者我们实际上需要如何构建它，因为这一切都是为我们处理好的。所以我们做的是说好，创建一个新的规范，具有这三个方法。
 - en: loader assigned to it by of this name and then here's this loader that we passed
     in and the。 constructor earlier。 And then if this returns false as in the loader
     does not provide this。 all you need to do is return none to indicate the import
@@ -443,6 +450,7 @@
   id: totrans-50
   prefs: []
   type: TYPE_NORMAL
+  zh: 由这个名称指定的加载器，然后是我们之前传入的构造函数的加载器。如果这返回false，即加载器不提供此内容，你只需返回none，向导入系统指示我们不提供此名称的模块。因此，如果有任何标准库查找器，它将回退到其他查找器。
 - en: that are going to provide this or return a module not found error as we saw
     before。 And。 that's it basically。 So all in all this is about 30 lines of Python
     code and we have。 a fully working import hook which is loading code from a database
@@ -451,6 +459,7 @@
   id: totrans-51
   prefs: []
   type: TYPE_NORMAL
+  zh: 将提供此模块或返回未找到模块错误的内容，就像我们之前看到的那样。基本上就是这样。所以总的来说，这大约是30行Python代码，我们有一个完全工作的导入钩子，它从数据库加载代码，对调用者是完全透明的。所以我这里有一个小演示，展示它是如何工作的。
 - en: first we're going to import this code from the disk。 So we have to start by
     creating a。 new SQLite database。 So we're going to just import the code we just
     wrote and we're going。 to create this new SQLite database and it's creating a
