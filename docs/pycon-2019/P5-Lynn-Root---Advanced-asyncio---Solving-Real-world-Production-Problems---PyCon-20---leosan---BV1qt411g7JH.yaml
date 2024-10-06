@@ -163,6 +163,7 @@
   id: totrans-20
   prefs: []
   type: TYPE_NORMAL
+  zh: 很多服务必须进行很多，很多服务必须进行很多。HTTP请求，这些请求应该是，HTTP请求，这些请求应该是。非阻塞的，但这些服务也需要，我的这些服务也需要。响应pub/sub，他们也需要响应pub/sub。
 - en: events to measure progress of actions，events to measure progress of actions。initiated
     from those events to handle，initiated from those events to handle。any incomplete
     action or other external，any incomplete action or other external。errors deal with
@@ -170,6 +171,7 @@
   id: totrans-21
   prefs: []
   type: TYPE_NORMAL
+  zh: 用于衡量行动进展的事件，用于衡量行动进展的事件。从这些事件中启动以处理，从这些事件中启动以处理。任何未完成的行动或其他外部，任何未完成的行动或其他外部。处理与pub/sub租约相关的错误，处理与pub/sub租约相关的错误，管理和衡量服务水平。
 - en: management and measure service level，indicators and then send metrics and。indicators
     and then send metrics and，sometimes I need naane sikki Oh friendly。sometimes I
     need naane sikki Oh friendly，dependencies so for me my problem got。dependencies
@@ -177,6 +179,7 @@
   id: totrans-22
   prefs: []
   type: TYPE_NORMAL
+  zh: 管理和衡量服务水平，指标，然后发送指标和。有时我需要naane sikki 哦，友好的。有时我需要naane sikki 哦，友好的依赖关系，所以对我来说，我的问题变得。依赖关系，所以对我来说，我的问题变得迅速复杂，所以请允许我。
 - en: difficult quickly and I'm so allow me to，provide you with a real bowl example。provide
     you with a real bowl example，that actually comes from the real world。that actually
     comes from the real world，and I recently had Spotify actually a。and I recently
@@ -184,6 +187,7 @@
   id: totrans-23
   prefs: []
   type: TYPE_NORMAL
+  zh: 迅速复杂，所以请允许我，给你提供一个真实的例子。给你提供一个真实的例子，这实际上来自现实世界。实际上来自现实世界，我最近在Spotify有过。几年前在Spotify，我们构建了一个。
 - en: few years ago at Spotify and we built a，service that does periodic hard restarts。service
     that does periodic hard restarts，of our entire fleet of instance。of our entire
     fleet of instance，and that's what we're gonna do here has。and that's what we're
@@ -191,6 +195,7 @@
   id: totrans-24
   prefs: []
   type: TYPE_NORMAL
+  zh: 几年前在Spotify，我们构建了一个，定期进行硬重启的服务。我们整个实例集群的，定期进行硬重启的服务。接下来我们将在这里做的就是这样，有人听说过那个混沌猴子吗？
 - en: anyone heard of that chaos monkey yeah，alright so we're gonna build a service。alright
     so we're gonna build a service，called mayhem mandrel and it will listen。called
     mayhem mandrel and it will listen，for a pub/sub message and then restart a。for
@@ -198,6 +203,7 @@
   id: totrans-25
   prefs: []
   type: TYPE_NORMAL
+  zh: 有人听说过那个混沌猴子吗？好的，我们将构建一个服务。好的，我们将构建一个服务，叫做“混沌曼德尔”，它将监听。叫做“混沌曼德尔”，它将监听一个pub/sub消息，然后重启一个。一个基于该消息的主机，随着我们。
 - en: host based off of that message and as we，build this service I'll point out some。build
     this service I'll point out some，best practices that I have learned along。best
     practices that I have learned along，the way slash traps that I've fallen。the way
@@ -205,6 +211,7 @@
   id: totrans-26
   prefs: []
   type: TYPE_NORMAL
+  zh: 基于该消息的主机，随着我们构建这个服务，我会指出一些。随着我们构建这个服务，我会指出一些，沿途我学到的最佳实践。沿途我学到的最佳实践，以及我陷入的陷阱。这将基本上成为。
 - en: into and this will essentially become，the type of resource that pass Lin would。the
     type of resource that pass Lin would，have wanted about like three years ago。have
     wanted about like three years ago，and so we're gonna start off with some。and so
@@ -212,6 +219,7 @@
   id: totrans-27
   prefs: []
   type: TYPE_NORMAL
+  zh: 这将基本上成为，Pass Lin大约三年前想要的那种资源。Pass Lin大约三年前想要的那种资源，因此我们将从一些基础代码开始。我们将从一些基础代码开始，编写一个。
 - en: foundational code we're gonna write a，simple publisher and here's we're gonna。simple
     publisher and here's we're gonna，start we have a simple while true loop I。start
     we have a simple while true loop I，you a unique ID for each message to。you a unique
@@ -219,6 +227,7 @@
   id: totrans-28
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们将编写一个基础代码，简单的发布者，接下来我们将。简单的发布者，接下来我们将开始，我们有一个简单的while true循环。我为每个消息提供一个唯一的ID，以。为每个消息提供一个唯一的ID，发布到我们的队列中，我想强调。
 - en: publish to our queue I want to highlight，that we're not using the wait on the。that
     we're not using the wait on the，acute output of a message we're using a。acute
     output of a message we're using a，single create task because it will。single create
