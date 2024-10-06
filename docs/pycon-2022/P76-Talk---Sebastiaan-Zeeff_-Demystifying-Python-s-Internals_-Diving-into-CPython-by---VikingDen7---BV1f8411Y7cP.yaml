@@ -162,6 +162,7 @@
   id: totrans-19
   prefs: []
   type: TYPE_NORMAL
+  zh: 将是函数返回的任何值。所以这相当于以一作为参数调用double。显然这并不是很有趣，但这使我们能够构建一个管道。因此，我们可以从一个单一值开始，然后构建一个函数管道来处理这个值。所以如果你有一个数据集、一个列表或一个单一值，你需要进行多次操作。
 - en: on them。 You can do that in a very functional way。 You can pass the value from
     function to function and eventually you'll get a return value out。 of it。 So that's
     what we're going to do today。 And obviously this is not a part of Python itself
@@ -170,6 +171,7 @@
   id: totrans-20
   prefs: []
   type: TYPE_NORMAL
+  zh: 你可以以一种非常函数式的方式做到这一点。你可以将值从一个函数传递到另一个函数，最终你会得到一个返回值。所以这就是我们今天要做的。而显然这不是Python本身的一部分，并且可能永远不会成为Python的一部分。我知道这个运算符已经被提议过几次。
 - en: There are very good reasons not to add it to the language。 There are other ways
     to call functions。 We might not need the complexity。 But that's not my department。
     If you really want such an operator。 go discuss it with a core developer or with
@@ -178,6 +180,7 @@
   id: totrans-21
   prefs: []
   type: TYPE_NORMAL
+  zh: 不添加它到语言中有非常好的理由。还有其他方式调用函数。我们可能不需要这种复杂性。但那不是我的职责。如果你真的想要这样一个运算符，去和核心开发者或指导委员会讨论。但为了确保，这不在Python中。我们将在这里实现它。
 - en: And also the implementation is purely educational。 I'm going to take a few shortcuts
     maybe。 I'm going to implement it in a non-efficient way so that I can show you
     all the parts that。 we need to change。 And I'm not going to use existing opcodes
@@ -186,6 +189,7 @@
   id: totrans-22
   prefs: []
   type: TYPE_NORMAL
+  zh: 实现纯粹是为了教育目的。我可能会采取一些捷径。我将以一种非高效的方式实现它，这样我可以向你展示我们需要更改的所有部分。我不会使用现有的操作码和类似的东西，只是为了能够展示给你所有内容。所以这纯粹是教育目的。但如果你想要。
 - en: you can download the source code and try to improve it。 Cool。 So what we're
     going to do。 we're going to first start with our source code and produce。 something
     called an abstract syntax tree。 An abstract syntax tree is a different representation
@@ -194,6 +198,7 @@
   id: totrans-23
   prefs: []
   type: TYPE_NORMAL
+  zh: 你可以下载源代码并尝试改进它。酷。所以我们要做的事，我们将首先从源代码开始，产生一个称为抽象语法树的东西。抽象语法树是源代码的另一种表示形式。它是一个很好的树结构，更容易让编译器处理。
 - en: So that is the first step。 We want to take the source code with the new operator
     and we want the parser to be able。 to turn it into such an abstract syntax tree
     node。 So let's first zoom in on the source code。 So here we have a piece of source
@@ -202,6 +207,7 @@
   id: totrans-24
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以这是第一步。我们想要将源代码与新的运算符结合，并希望解析器能够将其转换为这样的抽象语法树节点。首先，让我们仔细看看源代码。在这里，我们有一段源代码。对我们人类来说，我们非常擅长分块。因此，我们立即看到10。我们可能看到名称double。
 - en: We see kind of a weird operator in the middle that's not part of Python just
     yet。 But for Python。 it just starts with a stream of characters。 So for Python，
     at first， these are just 12 characters。 Maybe there's a new line at the end。 I've
@@ -210,6 +216,7 @@
   id: totrans-25
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们看到中间有一个奇怪的运算符，这在Python中尚未出现。但对Python来说，最开始这些只是12个字符。也许最后有一个换行符。我把它省略了。这些只是12个字符，两个空格。它还不太知道该如何处理它。
 - en: The first step for Python is to turn those characters into a stream of tokens。
     And the tokenizer of Python will do that for you。 It will recognize a number token
     over here。 This is the smallest part that we can divide in our source code if
@@ -218,6 +225,7 @@
   id: totrans-26
   prefs: []
   type: TYPE_NORMAL
+  zh: Python的第一步是将这些字符转换为令牌流。Python的词法分析器将为你完成这项工作。它会在这里识别出一个数字令牌。这是我们可以在源代码中分割的最小部分，如果我们试图分离这些字符，我们就失去了意义。这里还有一个名称令牌，名为double。
 - en: And obviously if we leave out some of the characters， the name changes。 But
     then there's this weird thing here in the middle。 So the tokenizer doesn't quite
     recognize this token just yet。 And actually there are two existing tokens in there。
