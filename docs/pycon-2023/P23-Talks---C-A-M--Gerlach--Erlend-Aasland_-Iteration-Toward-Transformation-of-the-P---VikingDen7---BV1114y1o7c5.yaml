@@ -1,13 +1,16 @@
 - en: P23：Talks - C.A.M. Gerlach, Erlend Aasland_ Iteration Toward Transformation
     of the P - VikingDen7 - BV1114y1o7c5
+  id: totrans-0
   prefs:
   - PREF_H1
   type: TYPE_NORMAL
 - en: All right， welcome everyone。 I'm Jeff Hill， and I'm here with Kim and Girl Out，
     and Kim's。
+  id: totrans-1
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/688f571b32b12e6c609fdc8c848f8035_1.png)'
+  id: totrans-2
   prefs: []
   type: TYPE_IMG
 - en: going to be talking about iterations for a transformation of the Python documentation。
@@ -15,6 +18,7 @@
     appreciate and thanks to the Facebook and。 the website。 I've been waiting for
     you for $1。45， I just can't let you start about that。 I just can't tell you what
     you're talking about。 So yeah， I'm not even talking about。
+  id: totrans-3
   prefs: []
   type: TYPE_NORMAL
 - en: how we're entering into my form with the Python documentation。 It's better for
@@ -22,6 +26,7 @@
     them go out of effort and you're doing it， but there's a lot of things to do and。
     how people work。 And you're going to make it， and especially if you're using the，
     program。
+  id: totrans-4
   prefs: []
   type: TYPE_NORMAL
 - en: all of the levels to really use that， and you can also sell for a company。 Let's
@@ -29,6 +34,7 @@
     two。 things you loaded to expect on a core death， can believe it。 But yeah， that's
     better。 the most of the time they're on the docs team， I work in the patching
     stuff， 10% of my defense team。
+  id: totrans-5
   prefs: []
   type: TYPE_NORMAL
 - en: especially the patching， some experience to the enders， and most of the。 four
@@ -36,6 +42,7 @@
     them move。 out of a three- or four project， like you can talk about a number of
     them。 And back in the back。 I was actually a middle programmer， I'm actually a
     middle programmer， before I went in there。
+  id: totrans-6
   prefs: []
   type: TYPE_NORMAL
 - en: And in real life， I might be a rationalist， and I'm a lightning researcher，
@@ -43,6 +50,7 @@
     e-mail， and I'm a bi- e-mail。 so once I graduate， I get my， I'm a marathon， so
     I'm looking at it。 Really， it's a good deal。 good deal， good deal， to a team，
     so you can see this side of the map， so it's a nice， nice。
+  id: totrans-7
   prefs: []
   type: TYPE_NORMAL
 - en: big experience， because I was in the local community， and particularly the，
@@ -50,6 +58,7 @@
     over-world developer。 So hopefully that works out， and that's me with my team
     catch， and one of my team catch， and I do。 want my team catch， and do it in real
     life。 So， yeah， I'm going to be out there， also， and also。
+  id: totrans-8
   prefs: []
   type: TYPE_NORMAL
 - en: considering the presentation， as I'm in playwright， a lot of the flanks， and
@@ -57,6 +66,7 @@
     developers， who's even where the bot。 team is， is going to do the last as well，
     and so I'm going to be here with the people that。 three-moderals， which I thought
     about in a minute， and me and a lot of them have to work。
+  id: totrans-9
   prefs: []
   type: TYPE_NORMAL
 - en: together on a whole new place， so in that， I'm going to take a look at the problem。
@@ -64,6 +74,7 @@
     of what。 it's supposed to do that later in the thought。 I think there's a few
     software developers。 and inventosciating in the old one， so quite a bit of a general
     experience， this is there。
+  id: totrans-10
   prefs: []
   type: TYPE_NORMAL
 - en: But of course， most importantly， this is possible for me， and this is， on behalf
@@ -71,12 +82,14 @@
     And what we've done about it， by you。 is it was done by all the great members
     of our community， particularly， of course。 the others in the area of it， as well
     as Peter， SBO， for June， and then， to join today。
+  id: totrans-11
   prefs: []
   type: TYPE_NORMAL
 - en: on the page of you， and Ann and Claire， Daniela from the practice， before July，
     from the book。 on the other one， the second， I think， is the new guy， so I'm going
     to go ahead and say， "Oh。 you're good。" And， let's say this is what we're going
     to talk about， but first。 I'll give you a little bit of a quick look inside。
+  id: totrans-12
   prefs: []
   type: TYPE_NORMAL
 - en: because that's the only way to solve what to solve， that， and what's what things
@@ -84,6 +97,7 @@
     the things that we've made that are quite conductory facing。 roll credit， and
     then， then， then we'll do a little bit， because we're supposed to look at。 the
     particular discussion that， along with the EFII， have done on the EFI。
+  id: totrans-13
   prefs: []
   type: TYPE_NORMAL
 - en: the EFI is the only way that we're， thinking of all of it。 All of it， all of
@@ -91,6 +105,7 @@
     but， and then。 that was the question of people's day， and the video， 60， that
     was made of this type of gospel， and。 in any case， it's really， really， really，
     something like the new one， because。
+  id: totrans-14
   prefs: []
   type: TYPE_NORMAL
 - en: I'll see how they're doing that， so， so， first， we'll take a， second side。 one
@@ -98,6 +113,7 @@
     we're just feeling more connected， as in， say， the last part， because we've talked
     about。 the different distributors， and got them in theory， is this a bit， including
     the quality of。
+  id: totrans-15
   prefs: []
   type: TYPE_NORMAL
 - en: I think， I think， that's a lot of the words， but， in other words， we don't really
@@ -105,6 +121,7 @@
     if you wanted， I'll continue， so。 we think that's going to be a part of us， and，
     so， what part is going to be， well， we'd。 provide us together， and， well， that
     is more， and， that's not just， much more， we still， I think。
+  id: totrans-16
   prefs: []
   type: TYPE_NORMAL
 - en: you're actually thinking back， and， you know， I think， I'll be talking about
@@ -112,13 +129,16 @@
     always going to be。 focused， and， I think， more， and， we'll be discussing more，
     a lot of the issues， uh。 concerning a type of doctrine， and， we're both compensating，
     but， I'm going to be。
+  id: totrans-17
   prefs: []
   type: TYPE_NORMAL
 - en: I'm going to talk to you， in the best it can be， but， you know， what's more
     powerful， so， you know。
+  id: totrans-18
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/688f571b32b12e6c609fdc8c848f8035_3.png)'
+  id: totrans-19
   prefs: []
   type: TYPE_IMG
 - en: where you're going to have to run， I mean， the daily， weekly， we'd provide，
@@ -126,6 +146,7 @@
     primary to place， and。 of course， we want to justify talking， because， in other
     words， we call it， it's very， too， so。 it's important。 You just， like， just in
     other words， you know， all of our resources are， public。
+  id: totrans-20
   prefs: []
   type: TYPE_NORMAL
 - en: and， and， in other words， we're going to， it's always very， very， very。 And
@@ -133,6 +154,7 @@
     more of our bank。 Then you could use an affiliate's doors。 You could use a library
     or an affiliate's file to collaborate。 Of course， we also have a doc community
     website， in the U。S。 website。
+  id: totrans-21
   prefs: []
   type: TYPE_NORMAL
 - en: which has been submitted by this。 I mean， this site that we're taking， they
@@ -140,21 +162,25 @@
     space。 We took the documents off。 so they did not try to detect all of them， because
     they had a structure to adopt a larger， broad。 or cost-effective purchase。 We
     also have a doc population category。
+  id: totrans-22
   prefs: []
   type: TYPE_NORMAL
 - en: and then the pipeline is a bit more important， for a new vertical space。 And
     that's what we're going to discuss with the community。 before saying more or before
     the same thing。 Talk to the channel， and the Facebook document。 which is about
     the better to do。 And all 15 members of the whole group， and policy。
+  id: totrans-23
   prefs: []
   type: TYPE_NORMAL
 - en: which is completely confusing， it can help you feel that。 And we'll walk into
     a role of how two of us， have addressed those things。 So if you guys have any
     questions， feedback on the pipeline。 if it's the bar type of content you're going
     to miss you。
+  id: totrans-24
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/688f571b32b12e6c609fdc8c848f8035_5.png)'
+  id: totrans-25
   prefs: []
   type: TYPE_IMG
 - en: the doc population category might be the place to go。 So our final policy is
@@ -162,18 +188,23 @@
     question is， "Can you back， back， and forth？"， And it's also public。 and we find
     the link on our doc community on sites。 And everyone is welcome to join that as
     well。
+  id: totrans-26
   prefs: []
   type: TYPE_NORMAL
 - en: So we also need a doc population。
+  id: totrans-27
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/688f571b32b12e6c609fdc8c848f8035_7.png)'
+  id: totrans-28
   prefs: []
   type: TYPE_IMG
 - en: Well， when I joined， to bring you a little bit of the first thing。
+  id: totrans-29
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/688f571b32b12e6c609fdc8c848f8035_9.png)'
+  id: totrans-30
   prefs: []
   type: TYPE_IMG
 - en: that I told you about， and over a month， we also got them in。 and we're going
@@ -181,27 +212,33 @@
     so we'll take the other things。 And it's difficult to get work done， and we ask，
     you know。 first of all， the great examples of who we call it， or who we're still
     conducting。
+  id: totrans-31
   prefs: []
   type: TYPE_NORMAL
 - en: and we're going to get， and the other person who's going to be there。 because
     it's not a real time step to the doc， and again， everyone who's welcome to the
     doc。 and everyone who's the first one is， "Hey， I've been sitting in the community。
     and there's a deep fight in my office， and it's a real movie， but I'm very high。
+  id: totrans-32
   prefs: []
   type: TYPE_NORMAL
 - en: and I'm sitting here， and we're like， "Oh， you know， we apologize for feedback。
     from someone outside of that stuff， and we didn't do well in the majority of life。"。
+  id: totrans-33
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/688f571b32b12e6c609fdc8c848f8035_11.png)'
+  id: totrans-34
   prefs: []
   type: TYPE_IMG
 - en: So， I'm going to take a quick back， on the full of things that this is you've
     also used。 and this is what the things you've been into， and the other person
     who's been in the community。 and the other person who's been in the community。
+  id: totrans-35
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/688f571b32b12e6c609fdc8c848f8035_13.png)'
+  id: totrans-36
   prefs: []
   type: TYPE_IMG
 - en: and the other person who's been in the community， and the big team that I am
@@ -209,6 +246,7 @@
     I'm calling the diet practice framework， and the diet practice system。 and this
     is a whole bunch of the things， that I already made， and I'm going to take a little
     doc。
+  id: totrans-37
   prefs: []
   type: TYPE_NORMAL
 - en: but now I'm thinking of a kind of always an organized law， and I'm happy， but
@@ -216,12 +254,14 @@
     we hope to give them the information， and we need to navigate the type of。 and
     give better type of program。 So， you can see， because we're doing a sample of
     one of those cases。
+  id: totrans-38
   prefs: []
   type: TYPE_NORMAL
 - en: with business owners， people like the adoption of the data。 and I'll talk about
     more detail about this， and a little bit later than the talk。 I think what a lot
     of tech， and I work on， and I do a quite a long talk。 which I'll give you a little
     just a little bit。 But you also might want this to。
+  id: totrans-39
   prefs: []
   type: TYPE_NORMAL
 - en: a little bit of a difference， where we have a new doc team， saving the SDP button
@@ -229,6 +269,7 @@
     never telling you to， of course。 that's also based on your system team， so you
     can， of course， you can， of course。 do all the writing or the doc team， but， and
     that， of course， basically， thank you to the。
+  id: totrans-40
   prefs: []
   type: TYPE_NORMAL
 - en: who put a lot of work into doing this。 And also， I think anything else in the
@@ -236,6 +277,7 @@
     about， too。 Of course， real quick。 a really good scoring for a question， but very，
     some of the longer functions。 and that is a lot of the parameters， and really
     hard to navigate。
+  id: totrans-41
   prefs: []
   type: TYPE_NORMAL
 - en: Here's some of the other things that we're talking about。 We've actually used
@@ -243,6 +285,7 @@
     we're going to use a little bit of both of the final， and then we're going to
     use the same。 like the data types， the default， and then we're going to use the
     same。
+  id: totrans-42
   prefs: []
   type: TYPE_NORMAL
 - en: and then we're going to use the same， what we're going to use， and then we're
@@ -250,66 +293,78 @@
     to use the same。 and then we're going to use the same， and then we're going to
     use the same。 and then we're going to use the same， and then we're going to use
     the same。
+  id: totrans-43
   prefs: []
   type: TYPE_NORMAL
 - en: and then we're going to use the same， and then we're going to use the same。
     and then we're going to use the same， and then we're going to use the same。 and
     then we're going to use the same， and then we're going to use the same。 and then
     we're going to use the same， and then we're going to use the same。
+  id: totrans-44
   prefs: []
   type: TYPE_NORMAL
 - en: and then we're going to use the same， and then we're going to use the same。
     and then we're going to use the same， and then we're going to use the same。 and
     then we're going to use the same， and then we're going to use the same。 and then
     we're going to use the same， and then we're going to use the same。
+  id: totrans-45
   prefs: []
   type: TYPE_NORMAL
 - en: and then we're going to use the same， and then we're going to use the same。
     and then we're going to use the same， and then we're going to use the same。 and
     then we're going to use the same， and then we're going to use the same。 and then
     we're going to use the same， and then we're going to use the same。
+  id: totrans-46
   prefs: []
   type: TYPE_NORMAL
 - en: and then we're going to use the same， and then we're going to use the same。
     and then we're going to use the same， and then we're going to use the same。 and
     then we're going to use the same， and then we're going to use the same。 and then
     we're going to use the same， and then we're going to use the same。
+  id: totrans-47
   prefs: []
   type: TYPE_NORMAL
 - en: and then we're going to use the same， and then we're going to use the same。
     and then we're going to use the same， and then we're going to use the same。 and
     then we're going to use the same， and then we're going to use the same。 and then
     we're going to use the same， and then we're going to use the same。
+  id: totrans-48
   prefs: []
   type: TYPE_NORMAL
 - en: and then we're going to use the same， and then we're going to use the same。
     and then we're going to use the same， and then we're going to use the same。 and
     then we're going to use the same， and then we're going to use the same。 and then
     we're going to use the same， and then we're going to use the same。
+  id: totrans-49
   prefs: []
   type: TYPE_NORMAL
 - en: and then we're going to use the same， and then we're going to use the same。
     and then we're going to use the same， and then we're going to use the same。 and
     then we're going to use the same， and then we're going to use the same。 and then
     we're going to use the same， and then we're going to use the same。
+  id: totrans-50
   prefs: []
   type: TYPE_NORMAL
 - en: and then we're going to use the same， and then we're going to use the same。
     and then we're going to use the same， and then we're going to use the same。 and
     then we're going to use the same， and then we're going to use the same。 and then
     we're going to use the same， and then we're going to use the same。
+  id: totrans-51
   prefs: []
   type: TYPE_NORMAL
 - en: and then we're going to use the same， and then we're going to use the same。
     and then we're going to use the same， and then we're going to use the same。 and
     then we're going to use the same， and then we're going to use the same。 and then
     we're going to use the same， and then we're going to use the same。
+  id: totrans-52
   prefs: []
   type: TYPE_NORMAL
 - en: and then we're going to use the same， and then we're going to use the same。
+  id: totrans-53
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/688f571b32b12e6c609fdc8c848f8035_15.png)'
+  id: totrans-54
   prefs: []
   type: TYPE_IMG
 - en: And then we also expect the expertise to work as well。 We also have a new special
@@ -317,6 +372,7 @@
     to a file， that says。 infuse the active force parameter， when we're explaining
     something in the document。 we're adding a dead guide。 You know， here's how this
     works。
+  id: totrans-55
   prefs: []
   type: TYPE_NORMAL
 - en: Say it's when you can ever go directly to the file。 It's just， the Python would
@@ -324,6 +380,7 @@
     something changes。 And if you keep from testing all the bad， I'll think of this
     for a moment。 So that's an improvement。 We also have a quick reference for this。
     Now， here's two things that's proposed for working the docs。
+  id: totrans-56
   prefs: []
   type: TYPE_NORMAL
 - en: So since we've got some text that we really， thought about being really hard
@@ -331,15 +388,18 @@
     library。 from the rest of us working on things。 This is so， you know， some of
     the even。 in the experience that we've got all， that I'm using this is a very
     valuable theory。
+  id: totrans-57
   prefs: []
   type: TYPE_NORMAL
 - en: The quick reference for the code of examples， and the syntax for the piece of
     the comment。 that's the contrast that we've used。 And it leads to where the docs
     can get more of an impact。 And I know before I'm thinking that we won the 5。5，
     of this stuff， it's all right there。
+  id: totrans-58
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/688f571b32b12e6c609fdc8c848f8035_17.png)'
+  id: totrans-59
   prefs: []
   type: TYPE_IMG
 - en: And it's a little table。 So I worked out as I included the code， that I provided。
@@ -347,6 +407,7 @@
     of our own product and docs。 And I overhauled that。 The greatest way was to have
     a well-tared。 access to the system。 And now for the different steps， to just expand
     the command of the command。
+  id: totrans-60
   prefs: []
   type: TYPE_NORMAL
 - en: And then they also have much further， for what you do on Windows versus what
@@ -354,24 +415,28 @@
     over-tared。 We really， really， really。 really， kind of worked。 So finally， now
     that one of the biggest things。 is added added out of the funnel of the cartons，
     was basically completely overhauling。
+  id: totrans-61
   prefs: []
   type: TYPE_NORMAL
 - en: how we're doing the path。 So previously the Python test was a Python test。 And
     I think it's a kind of type of thing。 So it's a type of thing。 So you can use
     the tables for the Python language， for the Python language， for the other things。
     The user was all out。 It would cost them both a few bullets。
+  id: totrans-62
   prefs: []
   type: TYPE_NORMAL
 - en: that they're from the RSP files and to the HTML。 And it was incredibly accurate。
     In the field。 we've really， I'm saying， it's a lot of the three， four years ago。
     which is another cool kind of thing。 But not so incantable nowadays。 but it also
     involved parts of manually， complementing Python and the core website。
+  id: totrans-63
   prefs: []
   type: TYPE_NORMAL
 - en: And it also then it cost eventually。 It really hard to maintain hard for people。
     to build other people to work with。 So the problem of the first all that。 was
     a custom function question。 That really big， famous thing。 And it's also involved
     in modern things。 The thing is， in general， we need。
+  id: totrans-64
   prefs: []
   type: TYPE_NORMAL
 - en: to base it on this piece。 And I think that it involved a lot of things。 that
@@ -379,18 +444,22 @@
     I mean。 what it's been， what it's been， what it's been， what it's been， what it's
     been， what it's been。 what it's been， what it's been， what it's been， what it's
     been， what it's been， what it's been。
+  id: totrans-65
   prefs: []
   type: TYPE_NORMAL
 - en: what it's been。
+  id: totrans-66
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/688f571b32b12e6c609fdc8c848f8035_19.png)'
+  id: totrans-67
   prefs: []
   type: TYPE_IMG
 - en: And I mean， what it's been， what it's been。 And also， it's been， what it's been，
     what it's been。 what it's been。 So long， what it's been， what it's been。 And now。
     anything is for each type of community， that we're talking about， what it's been，
     what it's been。 And the system is known as the right to be provided。
+  id: totrans-68
   prefs: []
   type: TYPE_NORMAL
 - en: It'll tell you a date that will tell you the date。 It'll tell you the recognition
@@ -398,12 +467,15 @@
     the data。 And I always find it really hard to imagine， it's always related to
     customer's class。 what it's been， what it's been proved， and what these classes
     like， what it's always meant。 And now。
+  id: totrans-69
   prefs: []
   type: TYPE_NORMAL
 - en: you can cover over that。
+  id: totrans-70
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/688f571b32b12e6c609fdc8c848f8035_21.png)'
+  id: totrans-71
   prefs: []
   type: TYPE_IMG
 - en: where you can put the link， and what kind of exactly you want to think you're
@@ -411,6 +483,7 @@
     So。 and we also have an information， you go over the link， and you go over the
     link。 and you can get the API， which is based on file， you can read them easily，
     but then。
+  id: totrans-72
   prefs: []
   type: TYPE_NORMAL
 - en: all the basic information。 And it's not quite the same thing， oh， I want just
@@ -418,932 +491,1102 @@
     get you all to a test。 or the packaging test， or， say， by， by， say， getting the
     same， or whatever you want。 and it'll get you all to a test， or the same certain
     date。
+  id: totrans-73
   prefs: []
   type: TYPE_NORMAL
 - en: and you do all that with a technical test， things will actually use that。 and
     those things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。
+  id: totrans-74
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。
+  id: totrans-75
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/688f571b32b12e6c609fdc8c848f8035_23.png)'
+  id: totrans-76
   prefs: []
   type: TYPE_IMG
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-77
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long。
+  id: totrans-78
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/688f571b32b12e6c609fdc8c848f8035_25.png)'
+  id: totrans-79
   prefs: []
   type: TYPE_IMG
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-80
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-81
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-82
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-83
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-84
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-85
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-86
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-87
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-88
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-89
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-90
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-91
+  prefs: []
+  type: TYPE_NORMAL
+  zh: 和事情会花你很长时间，和事情会花你很长时间。
+- en: and things will take you so long， and things will take you so long。 and things
+    will take you so long， and things will take you so long。 and things will take
+    you so long， and things will take you so long。 and things will take you so long，
+    and things will take you so long。
+  id: totrans-92
+  prefs: []
+  type: TYPE_NORMAL
+  zh: 和事情会花你很长时间，和事情会花你很长时间。
+- en: and things will take you so long， and things will take you so long。 and things
+    will take you so long， and things will take you so long。 and things will take
+    you so long， and things will take you so long。 and things will take you so long，
+    and things will take you so long。
+  id: totrans-93
+  prefs: []
+  type: TYPE_NORMAL
+  zh: 和事情会花你很长时间，和事情会花你很长时间。
+- en: and things will take you so long， and things will take you so long。 and things
+    will take you so long， and things will take you so long。 and things will take
+    you so long， and things will take you so long。 and things will take you so long，
+    and things will take you so long。
+  id: totrans-94
+  prefs: []
+  type: TYPE_NORMAL
+  zh: 和事情会花你很长时间，和事情会花你很长时间。
+- en: and things will take you so long， and things will take you so long。 and things
+    will take you so long， and things will take you so long。 and things will take
+    you so long， and things will take you so long。 and things will take you so long，
+    and things will take you so long。
+  id: totrans-95
+  prefs: []
+  type: TYPE_NORMAL
+  zh: 和事情会花你很长时间，和事情会花你很长时间。
+- en: and things will take you so long， and things will take you so long。 and things
+    will take you so long， and things will take you so long。 and things will take
+    you so long， and things will take you so long。 and things will take you so long，
+    and things will take you so long。
+  id: totrans-96
+  prefs: []
+  type: TYPE_NORMAL
+  zh: 和事情会花你很长时间，和事情会花你很长时间。
+- en: and things will take you so long， and things will take you so long。 and things
+    will take you so long， and things will take you so long。 and things will take
+    you so long， and things will take you so long。 and things will take you so long，
+    and things will take you so long。
+  id: totrans-97
+  prefs: []
+  type: TYPE_NORMAL
+  zh: 和事情会花你很长时间，和事情会花你很长时间。
+- en: and things will take you so long， and things will take you so long。 and things
+    will take you so long， and things will take you so long。 and things will take
+    you so long， and things will take you so long。 and things will take you so long，
+    and things will take you so long。
+  id: totrans-98
+  prefs: []
+  type: TYPE_NORMAL
+  zh: 和事情会花你很长时间，和事情会花你很长时间。
+- en: and things will take you so long， and things will take you so long。 and things
+    will take you so long， and things will take you so long。 and things will take
+    you so long， and things will take you so long。 and things will take you so long，
+    and things will take you so long。
+  id: totrans-99
+  prefs: []
+  type: TYPE_NORMAL
+  zh: 和事情会花你很长时间，和事情会花你很长时间。
+- en: and things will take you so long， and things will take you so long。 and things
+    will take you so long， and things will take you so long。 and things will take
+    you so long， and things will take you so long。 and things will take you so long，
+    and things will take you so long。
+  id: totrans-100
+  prefs: []
+  type: TYPE_NORMAL
+  zh: 和事情会花你很长时间，和事情会花你很长时间。
+- en: and things will take you so long， and things will take you so long。 and things
+    will take you so long， and things will take you so long。 and things will take
+    you so long， and things will take you so long。 and things will take you so long，
+    and things will take you so long。
+  id: totrans-101
+  prefs: []
+  type: TYPE_NORMAL
+  zh: 和事情会花你很长时间，和事情会花你很长时间。
+- en: and things will take you so long， and things will take you so long。 and things
+    will take you so long， and things will take you so long。 and things will take
+    you so long， and things will take you so long。 and things will take you so long，
+    and things will take you so long。
+  id: totrans-102
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-103
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-104
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-105
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-106
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-107
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-108
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-109
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-110
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-111
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-112
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-113
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-114
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-115
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-116
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
-  prefs: []
-  type: TYPE_NORMAL
-- en: and things will take you so long， and things will take you so long。 and things
-    will take you so long， and things will take you so long。 and things will take
-    you so long， and things will take you so long。 and things will take you so long，
-    and things will take you so long。
-  prefs: []
-  type: TYPE_NORMAL
-- en: and things will take you so long， and things will take you so long。 and things
-    will take you so long， and things will take you so long。 and things will take
-    you so long， and things will take you so long。 and things will take you so long，
-    and things will take you so long。
-  prefs: []
-  type: TYPE_NORMAL
-- en: and things will take you so long， and things will take you so long。 and things
-    will take you so long， and things will take you so long。 and things will take
-    you so long， and things will take you so long。 and things will take you so long，
-    and things will take you so long。
-  prefs: []
-  type: TYPE_NORMAL
-- en: and things will take you so long， and things will take you so long。 and things
-    will take you so long， and things will take you so long。 and things will take
-    you so long， and things will take you so long。 and things will take you so long，
-    and things will take you so long。
-  prefs: []
-  type: TYPE_NORMAL
-- en: and things will take you so long， and things will take you so long。 and things
-    will take you so long， and things will take you so long。 and things will take
-    you so long， and things will take you so long。 and things will take you so long，
-    and things will take you so long。
-  prefs: []
-  type: TYPE_NORMAL
-- en: and things will take you so long， and things will take you so long。 and things
-    will take you so long， and things will take you so long。 and things will take
-    you so long， and things will take you so long。 and things will take you so long，
-    and things will take you so long。
-  prefs: []
-  type: TYPE_NORMAL
-- en: and things will take you so long， and things will take you so long。 and things
-    will take you so long， and things will take you so long。 and things will take
-    you so long， and things will take you so long。 and things will take you so long，
-    and things will take you so long。
-  prefs: []
-  type: TYPE_NORMAL
-- en: and things will take you so long， and things will take you so long。 and things
-    will take you so long， and things will take you so long。 and things will take
-    you so long， and things will take you so long。 and things will take you so long，
-    and things will take you so long。
-  prefs: []
-  type: TYPE_NORMAL
-- en: and things will take you so long， and things will take you so long。 and things
-    will take you so long， and things will take you so long。 and things will take
-    you so long， and things will take you so long。 and things will take you so long，
-    and things will take you so long。
-  prefs: []
-  type: TYPE_NORMAL
-- en: and things will take you so long， and things will take you so long。 and things
-    will take you so long， and things will take you so long。 and things will take
-    you so long， and things will take you so long。 and things will take you so long，
-    and things will take you so long。
-  prefs: []
-  type: TYPE_NORMAL
-- en: and things will take you so long， and things will take you so long。 and things
-    will take you so long， and things will take you so long。 and things will take
-    you so long， and things will take you so long。 and things will take you so long，
-    and things will take you so long。
+  id: totrans-117
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will really be helpful。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-118
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-119
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-120
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-121
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-122
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-123
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-124
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-125
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-126
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-127
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-128
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-129
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-130
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-131
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-132
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-133
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-134
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-135
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-136
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-137
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-138
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-139
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-140
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-141
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-142
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-143
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-144
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-145
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-146
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-147
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-148
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-149
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-150
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-151
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-152
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-153
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-154
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-155
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-156
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-157
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-158
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-159
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-160
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-161
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-162
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-163
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-164
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-165
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-166
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-167
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-168
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-169
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-170
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-171
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-172
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-173
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-174
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-175
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-176
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-177
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-178
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-179
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-180
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-181
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-182
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-183
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-184
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-185
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-186
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-187
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-188
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-189
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-190
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-191
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-192
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-193
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。
+  id: totrans-194
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/688f571b32b12e6c609fdc8c848f8035_27.png)'
+  id: totrans-195
   prefs: []
   type: TYPE_IMG
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-196
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-197
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-198
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long。
+  id: totrans-199
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/688f571b32b12e6c609fdc8c848f8035_29.png)'
+  id: totrans-200
   prefs: []
   type: TYPE_IMG
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-201
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-202
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-203
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-204
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-205
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-206
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-207
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-208
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-209
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-210
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-211
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-212
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-213
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-214
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-215
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-216
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-217
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-218
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-219
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-220
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-221
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-222
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-223
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-224
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-225
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-226
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you so long。 and things will take you so long，
     and things will take you so long。
+  id: totrans-227
   prefs: []
   type: TYPE_NORMAL
 - en: and things will take you so long， and things will take you so long。 and things
     will take you so long， and things will take you so long。 and things will take
     you so long， and things will take you all， for being part of the community。 and
     for part of our community， and thank you for your time。 Thank you。 [ Pause ]。
+  id: totrans-228
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/688f571b32b12e6c609fdc8c848f8035_31.png)'
+  id: totrans-229
   prefs: []
   type: TYPE_IMG
 - en: '>> Thank you。 >> Thank you。 >> Thank you。 >> Awesome。 Thank you for your work。
     and this is going to help a lot of people， and the people in the future。 You have
     a couple of minutes， of questions you''ve had about hands raised。 or any questions
     you''ve had， and if I''ll just， if I''ll， if you want to talk to them。'
+  id: totrans-230
   prefs: []
   type: TYPE_NORMAL
 - en: you want to talk to them。 >> Thank you。 >> Any other questions for them？ [ Pause
     ]， >> I， of course。 have a question about comments。 The value of human beings
     is really， effective in talking to normal。 and human beings， and that is a question
     that we're， going to be talking about。 Thank you。
+  id: totrans-231
   prefs: []
   type: TYPE_NORMAL
