@@ -3,22 +3,27 @@
   prefs:
   - PREF_H1
   type: TYPE_NORMAL
+  zh: P23：Python 指导委员会 - 主题演讲 - PyCon 2019 - Leosan - BV1qt411g7JH
 - en: \>\> Good morning， everybody。
   id: totrans-1
   prefs: []
   type: TYPE_NORMAL
+  zh: '>> 早上好，大家好。'
 - en: '![](img/02819c899e753ce75ab6f573ce3712a0_1.png)'
   id: totrans-2
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/02819c899e753ce75ab6f573ce3712a0_1.png)'
 - en: My name is nryk fake。
   id: totrans-3
   prefs: []
   type: TYPE_NORMAL
+  zh: 我叫 Nryk Fake。
 - en: '![](img/02819c899e753ce75ab6f573ce3712a0_3.png)'
   id: totrans-4
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/02819c899e753ce75ab6f573ce3712a0_3.png)'
 - en: Production engineer up in facebook Seattle。 Those who are unaware。 facebook
     is a platinum sponsor of the， Python， the psf。 We are always very grateful to
     be here at the， Python。 This is actually my second， Python。 First one was in 2010，
@@ -26,6 +31,8 @@
   id: totrans-5
   prefs: []
   type: TYPE_NORMAL
+  zh: 我是 Facebook 西雅图的生产工程师。那些不太了解的人，Facebook 是 Python 和 PSF 的白金赞助商。我们总是非常感激能在这里参与
+    Python 会议。这实际上是我的第二次 Python 会议。第一次是在 2010 年，所以我希望在接下来的十年里至少再参加一次。
 - en: For those of you unaware， facebook actually does use python， Quite a bit， not
     just a php shop。 To the less obvious， our entire configuration management system。
     We also use it quite a bit。 A little product they're， Called instagram。 Personally，
@@ -34,6 +41,8 @@
   id: totrans-6
   prefs: []
   type: TYPE_NORMAL
+  zh: 对于那些不太了解的人，Facebook 实际上使用 Python 相当多，而不仅仅是一个 PHP 商店。更不明显的是，我们整个配置管理系统也使用了 Python。我们还有一个小产品，叫做
+    Instagram。个人来说，我是一个 Instagram 的重度用户，直到我养了一只小狗。每个人都想要一个 IG 账号，我不得不去注册一个。
 - en: I use quite a few open source technologies such as celery and。 Django to help
     deliver those cute puppy photos to your， Inbox every day。 We're also proud to
     be a sponsor of， Several open source projects like pie torch。 which is a drop
@@ -41,6 +50,8 @@
   id: totrans-7
   prefs: []
   type: TYPE_NORMAL
+  zh: 我使用了相当多的开源技术，比如 Celery 和 Django，帮助将那些可爱的狗狗照片每天送到你的收件箱。我们也很自豪能够赞助几个开源项目，比如 PyTorch，它可以与
+    NumPy 无缝对接，并且实际上让你使用很多这些功能。
 - en: Juicy gpu's to get more performance out of your software。 We also provide pyre。
     which is a performance type checking， System which really speeds up your testing。
     Finally。 this is actually my favorite i just found out about， This one。 It's called
@@ -48,6 +59,8 @@
   id: totrans-8
   prefs: []
   type: TYPE_NORMAL
+  zh: 强劲的 GPU 可以让你的软件获得更高的性能。我们还提供 Pyre，这是一种性能类型检查系统，能够大大加快你的测试速度。最后，这个其实是我刚刚发现的最喜欢的，它叫做
+    Monkey Type。它允许你分析你的代码，并且实际上会提供。
 - en: Stubs or directly annotate your code to automatically add， Type hints， which
     honestly blew my mind。 Now i'm extremely proud to be at facebook。 We are very
     grateful to be here。 I'm very thankful for all of your contributions to the python。
@@ -55,16 +68,20 @@
   id: totrans-9
   prefs: []
   type: TYPE_NORMAL
+  zh: 存根或直接注释你的代码，以自动添加类型提示，老实说，这让我感到震惊。现在我非常自豪能够在 Facebook 工作。我们非常感激能在这里。对于你们对 Python
+    社区以及整个世界的贡献，我深表感谢。事不宜迟。
 - en: i want to give a brief thanks to the， Python organizers to psf。 Thank you for
     all of you guys。 For making this the best python to come。 I'm looking forward
     to seeing everybody next year at。 Pittsburgh。 Thank you。 [ Applause ]。
   id: totrans-10
   prefs: []
   type: TYPE_NORMAL
+  zh: 我想对 Python 组织者和 PSF 表达简短的感谢。感谢你们，让这次会议成为了最好的 Python 会议。我期待明年在匹兹堡见到大家。谢谢。[掌声]。
 - en: '![](img/02819c899e753ce75ab6f573ce3712a0_5.png)'
   id: totrans-11
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/02819c899e753ce75ab6f573ce3712a0_5.png)'
 - en: Thank you。 Oh， excuse me。 Sorry。 As out running this morning， so a round of
     applause for everyone。 Who took part in the 5k。 [ Applause ]， I was a little worried
     people would get lost in the fog， but。 We made it。 Quick reminder， this is our
@@ -72,18 +89,22 @@
   id: totrans-12
   prefs: []
   type: TYPE_NORMAL
+  zh: 谢谢。哦，抱歉。对不起。今早在外面跑步，所以请为所有参加 5K 的人热烈鼓掌。[掌声]，我有点担心人们会在雾中迷路，但我们成功了。快速提醒一下，这是我们的联系信息，以及你可以找到的关于行为守则的更多信息。
 - en: '![](img/02819c899e753ce75ab6f573ce3712a0_7.png)'
   id: totrans-13
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/02819c899e753ce75ab6f573ce3712a0_7.png)'
 - en: If you need to report， you can use that contact information or。
   id: totrans-14
   prefs: []
   type: TYPE_NORMAL
+  zh: 如果你需要举报，可以使用那个联系信息或者。
 - en: '![](img/02819c899e753ce75ab6f573ce3712a0_9.png)'
   id: totrans-15
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/02819c899e753ce75ab6f573ce3712a0_9.png)'
 - en: Find someone wearing one of these shirts。 Once again， there it is。 Reminder。
     mothers rooms are in room 17 and 18。 Those are continued open today。 You can find
     instructions for access at the front of that door。 Quiet room is room 24 if you
@@ -91,6 +112,7 @@
   id: totrans-16
   prefs: []
   type: TYPE_NORMAL
+  zh: 找到穿着这些衬衫的人。再一次，这里就是。提醒一下，母亲休息室在17号和18号房间。今天这些房间继续开放。你可以在那扇门的前面找到访问说明。安静房间是24号房间，如果你需要远离一下。再提醒一下，展览大厅已经完全。
 - en: Reconfigured into the posters and job fair。 That's going to begin immediately
     after this session and run。 Till 1 p。m。 Lunch will also be served in there around
     lunch time。 I don't remember exactly when。 [ Pause ]， Talks。 Talks continue today。
@@ -338,6 +360,7 @@
   id: totrans-45
   prefs: []
   type: TYPE_NORMAL
+  zh: 我从未停止担忧。这就是我目前对Python的感觉。我提名自己加入指导委员会，现在我在这里。尼克，告诉我们一些关于你自己的事情。对我来说，我是作为一个硬件和C++开发者接触Python的，因为我需要测试一些信号处理代码，而Python有单元测试模块。
 - en: It had the wave module and it had this thing called swig to let， Me wrap c plus
     plus drivers。 And so i did that for hardware control for com systems and now i。
     Do it for electric vehicle fast charges with tritium and it's。 Just this language
@@ -345,6 +368,7 @@
   id: totrans-46
   prefs: []
   type: TYPE_NORMAL
+  zh: 它有波形模块，还有一种叫做SWIG的东西，让我可以包装C++驱动程序。因此我为通信系统的硬件控制做了这件事，现在我为快速充电的电动汽车做这件事，与**Tritium**合作。这个语言让我能够触及现实。
 - en: That i was involved without having to worry about all the messy， Details。 And
     then i got involved in core dev。 This was this community of people on the internet
     that talked。 About this language and how do we make computers。 How we bridge from
@@ -353,6 +377,7 @@
   id: totrans-47
   prefs: []
   type: TYPE_NORMAL
+  zh: 我参与其中，而不必担心所有的琐碎细节。然后我参与了核心开发。这是一个在互联网上讨论这种语言的人们的社区，我们如何使计算机工作，我们如何将其与人们实际思考的方式桥接，只是让其更容易接触，让它能与计算机对话。
 - en: The way you think and have it do what you meant is kind of amazing， And a lot
     of fun。 \>\> We are all very grateful to have your experiences and， Backgrounds
     part of our community。 We don't know that you've experienced being both bead。
@@ -360,6 +385,7 @@
   id: totrans-48
   prefs: []
   type: TYPE_NORMAL
+  zh: 你思考的方式以及它能够做到你想要的事情，这真是令人惊叹且非常有趣。>> 我们都非常感激你在我们社区中的经历和背景。我们不知道你曾同时是Python的**BDFL**和指导委员会成员。
 - en: Tell us how do you think governance has changed and will， Continue to change。
     \>\> I'm sorry i did not hear the full question。 \>\> Now that you've experienced
     bead being bead Fl and also part。 Of the steering council committee how do you
@@ -368,6 +394,8 @@
   id: totrans-49
   prefs: []
   type: TYPE_NORMAL
+  zh: 告诉我们你认为治理是如何变化的，以及将如何继续变化。>> 抱歉，我没有听到完整的问题。>> 现在你体验过**BDFL**和指导委员会的一部分，你认为Python的治理是如何变化的，并将继续变化的？>>
+    好的，是的。
 - en: So while i was bead Fl sort of the way it fell to me and i think。 The way it
     fell to most other people as well was whenever there。 Was some controversial decision
     it would eventually be， Bubble up to me。 Which meant that i was always scanning
@@ -375,6 +403,7 @@
   id: totrans-50
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以当我还是**BDFL**的时候，这种责任落在我头上，我认为大多数其他人也是如此，每当有一些争议的决定时，它最终都会浮到我面前。这意味着我总是在扫描Python开发。
 - en: Python ideas for things that might become controversial and。 Trying to nip it
     in the butt if i could。 And every pep basically eventually became my responsibility。
     After the people with the greater domain knowledge and。 Expertise had sorted it
@@ -382,6 +411,7 @@
   id: totrans-51
   prefs: []
   type: TYPE_NORMAL
+  zh: 有关Python的一些想法可能会变得有争议。我试图如果可以的话提前解决这些问题。每个PEP基本上最终都成为我的责任。在具有更高领域知识和专业技能的人们将其整理到有明确的“是”或“否”问题或者选择AB之后。
 - en: And that's pretty stressful。 And so i'm very glad that sort of that responsibility
     is now， Divided。 distributed over five experts who have more of the。 Trust of
     the community because they've actually been voted in。 Rather than just become
@@ -389,6 +419,7 @@
   id: totrans-52
   prefs: []
   type: TYPE_NORMAL
+  zh: 这相当有压力。因此我非常高兴这种责任现在是分散的，分配给五位在社区中更有信任的专家，因为他们实际上是通过投票选上的，而不是通过偶然成为领导者或领袖。
 - en: So the voting has sort of voting for the steering council i think。 Creates a
     real different relationship between the steering。 Council and the core dev community
     than whatever existed， Between the core devs and myself as bdfl。 Going forward
@@ -396,6 +427,7 @@
   id: totrans-53
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以投票有点像是对指导委员会的投票。我认为这在指导委员会与核心开发社区之间创造了真正不同的关系，和我作为**BDFL**时存在的关系有所不同。往前看，我认为我们在结构上也有些不同的决策过程。
 - en: The steering council is not actually the group of people who， Decide about most
     peps anymore。 What's written in our constitution pep 13 and what we sort of。 Use
     as guidelines is that for most decisions we actually pick an。 Expert from among
