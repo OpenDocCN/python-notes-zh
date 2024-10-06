@@ -163,10 +163,12 @@
   id: totrans-19
   prefs: []
   type: TYPE_NORMAL
+  zh: 与循环复杂度密切相关。代码中分支越多，测试时需要考虑的情况也越多。这就是它被开发的原因，至今仍然存在。它作为超越函数长度的第一步猜测非常有用，但它也有其局限性。这两段代码更加相似。
 - en: But just as again rough intuition， who prefers the one on my right on your left？
   id: totrans-20
   prefs: []
   type: TYPE_NORMAL
+  zh: 但就像再次粗略的直觉，你更喜欢右边的还是左边的？
 - en: And who prefers the one on my left， your right？ Yeah。 So that leads into the
     development of。 cyclomatic complexity into our next metric。 This is called cognitive
     complexity。 And both of these nipets have a cyclomatic complexity， of three。 But
@@ -175,6 +177,7 @@
   id: totrans-21
   prefs: []
   type: TYPE_NORMAL
+  zh: 谁更喜欢左边的，右边的？好的。这就引出了循环复杂度发展到下一个指标。这被称为认知复杂度。这两个代码片段的循环复杂度都是三，但主要区别在于左边有一个嵌套结构，而右边则没有。
 - en: on the right we have exactly three top level branches。 And this。 is something
     which cyclomatic complexity doesn't make a difference of but cognitive。 complexity
     penalizing it's not just new branches but every nested structure which gives this。
@@ -183,6 +186,7 @@
   id: totrans-22
   prefs: []
   type: TYPE_NORMAL
+  zh: 右边有恰好三个顶级分支。这是循环复杂度不在乎的，但认知复杂度惩罚的不仅仅是新分支，而是每个嵌套结构，这导致了这个非常短的代码片段或认知复杂度得分为八。认知复杂度是被开发出来的。
 - en: as an improvement of cyclomatic complexity。 And one significant difference between
     the。 two metrics is the nesting which we have just presented。 Another one is that
     it also penalizes。 recursion。 And on the other hand it tries to instant device
@@ -191,6 +195,7 @@
   id: totrans-23
   prefs: []
   type: TYPE_NORMAL
+  zh: 作为循环复杂度的改进。这两个指标之间一个显著的区别是我们刚才提到的嵌套。另一个是它也惩罚递归。另一方面，它尝试鼓励良好的编码实践，称之为简短结构，能在一行中总结多行代码。
 - en: this is something that Python really shines for example with these comprehension
     and。 context managers。 And cognitive complexity is much newer。 So it was developed
     in 2016。 and I encourage you to check out the sonar's paper which has been updated
@@ -199,6 +204,7 @@
   id: totrans-24
   prefs: []
   type: TYPE_NORMAL
+  zh: 这正是Python特别擅长的地方，例如这些推导和上下文管理器。认知复杂度相对较新，于2016年开发。我鼓励你查阅自那以来定期更新的Sonar论文。在引言中提到，循环复杂度在提供方面做得很好。
 - en: testability especially branch coverage。 But maintainability is a different thing
     which。 has a lot of other components。 And one thing which they put a lot of emphasis
     on is readability。 for humans and that's why for example nesting and recursion
@@ -207,6 +213,7 @@
   id: totrans-25
   prefs: []
   type: TYPE_NORMAL
+  zh: 可测试性尤其是分支覆盖率。但可维护性是另一回事，包含许多其他组成部分。他们非常强调的是可读性，因此嵌套和递归被认为不是很好的特性。当然，循环复杂度和认知复杂度都有其局限性。
 - en: well because here both scores for this snippet would be one but probably you
     still wouldn't。 describe this as really readable。 So to motivate our next metric
     we're going。 to do a little exercise here it's not code review。 There are three
@@ -215,6 +222,7 @@
   id: totrans-26
   prefs: []
   type: TYPE_NORMAL
+  zh: 因为在这里这段代码的两个得分都是一，但你可能仍然不会形容它为真正可读。因此，为了激励我们下一个指标，我们将进行一个小练习，这不是代码审查。屏幕上有三个数字，下一张幻灯片将是空白的，我会问你在我说的时候举手。
 - en: you feel confident remembering these three numbers。 Hands up。 Good。 Expect nothing
     less。 Seven numbers on screen now。 I'm going to give you three， two， one to remember。
     Who would。 feel confident remembering those seven numbers after that。 Yeah， okay
@@ -223,6 +231,7 @@
   id: totrans-27
   prefs: []
   type: TYPE_NORMAL
+  zh: 你是否对记住这三个数字感到自信？举手。很好，期待不到别的。现在屏幕上有七个数字。我会给你三、二、一来记住。谁在那之后对记住这七个数字感到自信？好的，大约一半的人，这是我们期望的。接下来可以预见到的，二、一，谁会觉得自信。
 - en: reciting out those numbers。 I think there's 13 there。 No one。 Interesting。 We'll
     come back。 to that in a sec。 Hmm？ Oh， well， let's cheating。 So this is a very
     well known psychological。 phenomenon。 It's difficult to keep more than about seven
