@@ -1,21 +1,26 @@
 - en: P73：Talk - Roman Yurchak_Hood Chatham_ Pyodide_  A Python distribution for the
     brows - VikingDen7 - BV1f8411Y7cP
+  id: totrans-0
   prefs:
   - PREF_H1
   type: TYPE_NORMAL
 - en: Okay， hello everyone。
+  id: totrans-1
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/59c5fc8db7748b7687462940bca51cbe_1.png)'
+  id: totrans-2
   prefs: []
   type: TYPE_IMG
 - en: '![](img/59c5fc8db7748b7687462940bca51cbe_2.png)'
+  id: totrans-3
   prefs: []
   type: TYPE_IMG
 - en: Thanks for coming。 Thanks to all the organizers and all that。 So we are two
     of the PIAIDIDE maintainers and we're here to tell you about PIAIDIDE。 which you
     may have heard about in Peter's talk this morning。 We are a PIAIDIDE distribution
     for the browser。 So a quick about us。
+  id: totrans-4
   prefs: []
   type: TYPE_NORMAL
 - en: So I am a UCLA national science foundation assistant adjunct professor， which
@@ -23,6 +28,7 @@
     I've done is partially supported by NSF grant。 department of material， science
     number， whatever， mathematical sciences。 Okay， here's Roman。 And I'm Roman， so
     I'm a data scientist working mostly as an independent consultant。
+  id: totrans-5
   prefs: []
   type: TYPE_NORMAL
 - en: And I'm a core developer for at CICET Learn and PIAIDIDE， so mostly projects
@@ -30,18 +36,21 @@
     is PIAIDIDE。 We're going to review some of the most common use cases， which include
     interactive computing。 educational use cases and machine learning。 And then we'll
     discuss a bit more in detail like the technical developments that has been。
+  id: totrans-6
   prefs: []
   type: TYPE_NORMAL
 - en: going on in the last several years in PIAIDIDE。 Sorry。 So as you all know。 if
     you have a Python code and you want to run it in the browser， and。 this is also
     what we was presented in this morning's keynote， essentially the setup is。 fairly
     complicated because you have to have some front-end code in JavaScript， probably。
+  id: totrans-7
   prefs: []
   type: TYPE_NORMAL
 - en: some back-end code in Python and some infrastructure that you either need to
     maintain or configure。 if it's a cloud provider。 Right。 And so the idea is fairly
     simple。 What would we just run。 take this Python application and run it directly
     inside the browser？
+  id: totrans-8
   prefs: []
   type: TYPE_NORMAL
 - en: So this is possible with PIAIDIDE， sorry， WebAssembly。 And like the general
@@ -49,10 +58,12 @@
     PIAIDIDE。 So we're going to talk to introduce you， PIAIDIDE。 which is the distribution
     of Python in the， browser and with the focus of not so much just running the interpreter
     or like being able。
+  id: totrans-9
   prefs: []
   type: TYPE_NORMAL
 - en: to execute Python code but essentially being able to run existing packages and
     existing tools。 in the Python ecosystem。 Okay so first what is WebAssembly？
+  id: totrans-10
   prefs: []
   type: TYPE_NORMAL
 - en: So WebAssembly is the second programming language available in the browser。
@@ -60,6 +71,7 @@
     It's designed for small code sizes。 It's designed for security。 And so as part
     of that security。 it doesn't come with any sort of standard library that， it always
     has。
+  id: totrans-11
   prefs: []
   type: TYPE_NORMAL
 - en: It just defines a set of imports and it has a system for calling a function
@@ -67,69 +79,94 @@
     gets the import。 It's implemented in all modern browsers， mobile browsers。 You
     can run it in non-web environments like Node。 WebAssembly system interface。 So
     yeah。 Anyway。
+  id: totrans-12
   prefs: []
   type: TYPE_NORMAL
+  zh: 它仅定义了一组导入，并且有一个调用函数的系统，因此可以调用导入。因此，主机应用程序必须定义导入的内容。它在所有现代浏览器和移动浏览器中实现。你可以在非网络环境中运行，如
+    Node。WebAssembly 系统接口。所以，是的，总之。
 - en: so that's what WebAssembly is。 And so then we have the inscript and build tool
     change。 So as I said。 WebAssembly itself has no standard library。 It can't do
     any input or any output。 It can only do pure computation。 All contact with the
     outside world has to happen through imports。 And so the inscript and build tool
     chain is a compiler tool chain that compiles C and。
+  id: totrans-13
   prefs: []
   type: TYPE_NORMAL
+  zh: 这就是 WebAssembly 的定义。接着我们有了 inscript 和构建工具链。正如我所说，WebAssembly 本身没有标准库，无法进行任何输入或输出，只能进行纯计算。与外部世界的所有联系必须通过导入来进行。因此，inscript
+    和构建工具链是一个编译器工具链，编译 C 和。
 - en: C++ code to WebAssembly。 This uses clang so you can set up a WebAssembly target
     for clang。 But then we also need an environment that supports system calls that
     actually interact。 with the outside world。 And so it also provides JavaScript
     bindings for all the system calls that you need。 It's designed for porting POSIX
     Linux applications。
+  id: totrans-14
   prefs: []
   type: TYPE_NORMAL
+  zh: C++ 代码到 WebAssembly。这使用 clang，因此你可以为 clang 设置 WebAssembly 目标。但我们还需要一个支持与外部世界实际交互的系统调用的环境。因此，它还为你所需的所有系统调用提供
+    JavaScript 绑定。它旨在移植 POSIX Linux 应用程序。
 - en: So it has Postix Linux system calls implemented in JavaScript。 So then you can
     load this from an HTML page and serve it to a Web browser。 Yeah。 So the main components
     of Py， is really rich。 It allows for very easy usage of one language。 The other
     we'll talk more about this in a bit。 And then we take the C Python interpreter
     and our foreign function interface。
+  id: totrans-15
   prefs: []
   type: TYPE_NORMAL
+  zh: 它在 JavaScript 中实现了 Postix Linux 系统调用。然后你可以从 HTML 页面加载这个并服务于 Web 浏览器。是的，Py 的主要组件真的很丰富。它允许非常轻松地使用一种语言。另一个我们稍后会详细讨论。然后我们使用
+    C Python 解释器和我们的外部函数接口。
 - en: which is， like a C extension of Python。 We take these two things and we can
     compile them with them scripting into a WebAssembly。 binary with a JavaScript
     host that provides the operating system， all of the standard， library。 We also
     compile most of the popular Python binary extensions， including NumPy， Panda，
     SciPy。 Matplotlib。 Also we can compile cryptography。 So now we have Rust support
     very recently。
+  id: totrans-16
   prefs: []
   type: TYPE_NORMAL
+  zh: 这就像是 Python 的 C 扩展。我们将这两者结合，可以将它们编译成一个 WebAssembly 二进制文件，配合提供操作系统的 JavaScript
+    主机，所有标准库都在其中。我们还编译了大多数流行的 Python 二进制扩展，包括 NumPy、Panda、SciPy 和 Matplotlib。此外，我们还可以编译加密库。所以最近我们有了
+    Rust 支持。
 - en: And then we have a package called MicroPIP， which is for installing pure Python
     wheels from， PyP。 Yeah。 And we want to call out Michael Druhtbaum， who was a Mozilla
     employee who originally made。 Pyadide and did really great work on it。 And we've
     sort of been polishing the stuff that he set up。 Right。 So I mentioned upstream
     in RC Python patches。
+  id: totrans-17
   prefs: []
   type: TYPE_NORMAL
+  zh: 然后我们有一个叫 MicroPIP 的包，用于从 PyP 安装纯 Python wheel。是的。我们想特别提到迈克尔·德鲁特鲍姆，他是最初创建 Pyadide
+    的 Mozilla 员工，并为其做了非常出色的工作。我们一直在完善他设置的内容。对，所以我提到了 RC Python 补丁的上游。
 - en: So we used to have to patch all sorts of stuff in order to get Python to run
     because WebAssembly。 and Emscripten is a very different sort of host environment
     than x86 Linux。 And so in order to do signal handling， in order to handle certain
     extensions， we needed。 to patch a bunch of stuff。 And so Christian Himes and Brett
     Cannon and I guess Ethan Smith have been involved in a。
+  id: totrans-18
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们过去需要修补各种内容才能让 Python 运行，因为 WebAssembly 和 Emscripten 是一种与 x86 Linux 非常不同的主机环境。因此，为了进行信号处理和处理某些扩展，我们需要修补很多内容。所以克里斯蒂安·海梅斯、布雷特·卡农和以太·史密斯参与了一个。
 - en: process and many other Python maintainers have been involved in up-streaming
     a lot of。 our patches and a lot of other fixes that they're adding to see Python
     in order to add。 sort of third party support or tier three support for Pyadide
     in Python。 And so this includes upstream in our patches。 The compiler itself does
     a lot of bugs。
+  id: totrans-19
   prefs: []
   type: TYPE_NORMAL
+  zh: 处理和其他许多 Python 维护者参与了很多补丁的上游处理，他们在为 Python 添加第三方支持或第三层支持方面做出了贡献。这包括我们补丁的上游。编译器本身处理了许多错误。
 - en: It's fairly new。 There's not a huge number of maintainers for Emscripten。 And
     so we're hitting a lot of edge cases， a lot of bugs， trying to get the C Python
     test。 to beat the pass。 So over time this should make Pyad more sustainable and
     also help the ecosystem so other people。 who are trying to compile Python to WebAssembly
     might hit the same edge cases in the Emscripten。
+  id: totrans-20
   prefs: []
   type: TYPE_NORMAL
 - en: compiler and so it should help them too。 So for context。 Pyadide isn't the first
     project that builds Python for the web。 You have a number of those。 so you have
     for instance， Brighton which is a Python 3 implementation。 in JavaScript which
     implements the interpreter and parts of the standard library。 There's the PyPid。
+  id: totrans-21
   prefs: []
   type: TYPE_NORMAL
 - en: js which is essentially fairly similar to what Pyadide does but it was like。
@@ -137,6 +174,7 @@
     than WebAssembly。 and this project is no longer maintained currently。 And there
     is the Rust Python project that because it's like so it's a re-implementation
     of。
+  id: totrans-22
   prefs: []
   type: TYPE_NORMAL
 - en: the Python interpreter in Rust and because Rust has already a pretty nice toolchain
@@ -144,6 +182,7 @@
     in the browser。 So the difference， let's say what we are focused on is not so
     much having the interpreter in。 the browser but is having the whole ecosystem
     run there like the whole Python ecosystem。
+  id: totrans-23
   prefs: []
   type: TYPE_NORMAL
 - en: And what matters there is essentially very good compatibility and being able
@@ -151,6 +190,7 @@
     implement your interpreter。 from scratch because then you will have some edge
     cases you'll like for instance in Brighton。 it's difficult to have exactly the
     same behavior as the standard C Python。
+  id: totrans-24
   prefs: []
   type: TYPE_NORMAL
 - en: So by using the standard C Python we remove a lot of those compatibility issues。
@@ -158,6 +198,7 @@
     a tool called MicroPip which allows to install pure Python wheels from PIP API。
     So essentially it's like a pip but very simplified so it has very rudimentary
     dependence。
+  id: totrans-25
   prefs: []
   type: TYPE_NORMAL
 - en: And this resolution it's only allowed to load a pure Python wheels so wheels
@@ -166,6 +207,7 @@
     you have to do is use the PyRAD build system to build them specifically。 for WebAssembly。
     So we use a configuration format very highly inspired by Konda so it's a metayamel
     where。
+  id: totrans-26
   prefs: []
   type: TYPE_NORMAL
 - en: you can configure how you would need to build your package with a binary extension。
@@ -173,6 +215,7 @@
     so。 so you get Python wheels。 Those are not still very standardized because in
     particular while for instance the M script。 version doesn't have a stable EBI
     so if you update the script version your wheels are。
+  id: totrans-27
   prefs: []
   type: TYPE_NORMAL
 - en: not going to be compatible with the previous ones so that's still a significant
@@ -180,111 +223,147 @@
     recently we used。 PyPI build tool to have build desolations and we do also some
     custom post processing steps。 for instance we will unvendor tests so that the
     package that you install is a bit smaller。
+  id: totrans-28
   prefs: []
   type: TYPE_NORMAL
+  zh: 由于它们将与之前的版本不兼容，因此这仍然是一个重大问题。构建系统也有很多改进，最近我们使用PyPI构建工具来进行构建和处理，并且我们还做了一些自定义后处理步骤。例如，我们将测试从包中剔除，以便你安装的包会小一些。
 - en: because probably you don't need to have tests when you just use NumPy。 However
     you will be able to install NumPy tests as a separate package。 And so all this
     is currently distributed with a JES deliver so we have you probably heard。 like
     the scale of what is involved in distributing Python packages with PyPI。
+  id: totrans-29
   prefs: []
   type: TYPE_NORMAL
+  zh: 因为当你仅使用NumPy时，可能不需要进行测试。然而，你将能够作为单独的包安装NumPy测试。因此，所有这些目前都是由JES deliver分发的，所以你可能听说过，涉及通过PyPI分发Python包的规模。
 - en: We're clearly not at the same scale so we're much smaller but there are still
     some challenges。 in making sure that if anybody puts a Pyodid import loading Pyodid
     on some high traffic。 web page and everybody is going to download those files
     that we are able to support this。 and we're really grateful to JES deliver who
     are able to do this mostly because they're。
+  id: totrans-30
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们显然不是在同一规模上，所以我们小得多，但在确保如果任何人将Pyodide导入到一些高流量网页上，所有人都会下载这些文件时，我们仍然面临一些挑战，我们非常感谢能够做到这一点的JES
+    deliver。
 - en: supported by a number of CDN providers。 And just to mention there was also some
     related work to have a build system which is more。 closer to Conda which is to
     also build essentially packages， Python packages for Gwasm which is。 done in MScript
     and Forge project。 So to give you an overview of the packages that we currently
     can use while some of them。 were mentioned before so we have all the core scientific
     computing packages NumPy， Pandas， SyPy。
+  id: totrans-31
   prefs: []
   type: TYPE_NORMAL
+  zh: 由许多CDN提供商支持。值得一提的是，还有一些相关工作旨在构建一个更接近Conda的构建系统，实质上是为Gwasm构建Python包，这在MScript和Forge项目中完成。因此，让我给你一个关于我们目前可以使用的包的概述，虽然之前提到过一些，我们有所有核心科学计算包NumPy、Pandas、SyPy。
 - en: Matlab， and all of that。 So this also means that we can actually build for instance
     packages that you cite on。 For SyPy， SyPy was very challenging， we'll talk about
     this later but SyPy uses forthron。 That's fairly difficult to build。 It requires
     external libraries such as BLAST and LaPac for linear algebra and then with。 this
     we can also build all the downstream packages， scikit-learn， scikit-image and
     stuff， model。
+  id: totrans-32
   prefs: []
   type: TYPE_NORMAL
+  zh: Matlab，以及其他所有相关内容。这也意味着我们实际上可以构建例如你提到的包。对于SyPy，SyPy非常具有挑战性，稍后我们会谈到，但SyPy使用了forthron。这相当难以构建。它需要外部库，例如BLAST和LaPac来进行线性代数，此外，我们还可以构建所有下游包，比如scikit-learn、scikit-image等模型。
 - en: So we can load packages from PyP and MicroPip and also we have a number of different
     other。 packages that are not part of the scientific computing so Pyodide is not
     a project for。 scientific computing。 It's just that we have a lot of scientific
     computing packages because those tend to have。 a binary extensions but you for
     instance can use a scale alchemy to set up a SQLite database。
+  id: totrans-33
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们可以从PyP和MicroPip加载包，同时还有许多不同的其他包并不属于科学计算，因此Pyodide并不是一个科学计算项目。只是我们有很多科学计算包，因为这些包往往具有二进制扩展，但例如你可以使用scale
+    alchemy来设置SQLite数据库。
 - en: so that's the only type of database that currently works and use it for something
     completely unrelated。 to the scientific computing。 And since recently as we mentioned
     we also are able to compile the latest version of。 cryptography which was re-implemented
     in Rust and uses the Pyotree library to expose。 the Rust code to Python。 So overall
     we have over 120 packages in Pyodide and in addition to those you can install
     from。
+  id: totrans-34
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以这是当前唯一能够正常工作的数据库类型，并且用于一些完全与科学计算无关的事情。正如我们提到的，最近我们也能够编译最新版本的cryptography，该版本在Rust中重新实现，并使用Pyotree库将Rust代码暴露给Python。因此，总体来说，我们在Pyodide中有超过120个包，此外你还可以从中安装。
 - en: PyP that are just through Python。 Okay， so I'm going to talk about the foreign
     function interface。 So we have Python， the interpreter which you can run in the
     browser but the browser's host。 system is all in JavaScript so if you want to
     directly talk to the DOM you need JavaScript。 functionality。 And so it's important
     that we can sort of interface well with existing software that's。
+  id: totrans-35
   prefs: []
   type: TYPE_NORMAL
+  zh: 通过Python访问PyP。好的，我将讨论外部函数接口。我们有Python解释器，你可以在浏览器中运行，但浏览器的宿主系统都是JavaScript，因此如果你想直接与DOM交互，需要JavaScript功能。因此，能够良好地与现有软件接口是重要的。
 - en: already written for the web。 And so we have a very pleasantly designed foreign
     function interface that makes it very。 easy to do this。 So if you want to use
     JavaScript from Python you can import JavaScript objects that are。 in the global
     JavaScript scope directly from this sort of magic JS module。 So for instance set
     time out is a JavaScript function that calls a function at some delay。 You can。
+  id: totrans-36
   prefs: []
   type: TYPE_NORMAL
+  zh: 已经为网络编写好了。因此，我们有一个设计非常友好的外部函数接口，使其非常容易做到这一点。如果你想从Python使用JavaScript，可以直接从这种魔法JS模块导入在全局JavaScript范围内的JavaScript对象。例如，set
+    timeout是一个在一定延迟后调用函数的JavaScript函数。你可以。
 - en: it's a global in the global scope so you can import it from JS and then you
     can。 call set time out and it will call a function at 100 millisecond delay。 On
     the other hand you can also use Python from JavaScript so like at the start entry
     point。 of your application you want to call into Python to call your main method。
+  id: totrans-37
   prefs: []
   type: TYPE_NORMAL
+  zh: 它是全局范围内的，因此你可以从JS中导入它，然后你可以调用set timeout，它将在100毫秒的延迟后调用一个函数。另一方面，你也可以从JavaScript使用Python，因此在应用程序的起始入口点，你希望调用Python以调用你的主方法。
 - en: So a Python object that's in global scope can be accessed from JavaScript so
     here this。 is an example where we load the sum built in method and then we use
     it on a list and you。 know it sums the entry。 So sum accepts any iterable that
     argument is a Python。 is a JavaScript array but we can， make JavaScript arrays
     into Python iterables and so sum accepts it and successfully iterates。
+  id: totrans-38
   prefs: []
   type: TYPE_NORMAL
+  zh: 因此，处于全局范围内的Python对象可以从JavaScript访问，因此这里这是一个示例，我们加载内置的sum方法，然后在一个列表上使用它，你知道它对条目进行求和。因此，sum接受任何可迭代对象，该参数是Python中的一个，是一个JavaScript数组，但我们可以将JavaScript数组转换为Python可迭代对象，因此sum接受并成功迭代。
 - en: over it and sums the values。 So we automatically convert simple types so float，
     string， and void。 none， null。 Most other types are proxied so we just make like
     a wrapper object that like allows you。 to make sort of convenient idiomatic calls
     in the current language that go across the。 other language and do operations in
     the other language。 So here's some examples。
+  id: totrans-39
   prefs: []
   type: TYPE_NORMAL
+  zh: 对它进行操作并求和这些值。因此，我们自动转换简单类型，比如float、string和void none、null。大多数其他类型是代理，因此我们只是制作一个包装对象，使你能够在当前语言中进行方便的习惯用法调用，跨越其他语言并在其他语言中执行操作。这里有一些示例。
 - en: So here's some examples of using Python utilities from JavaScript。 So Python
     has all these great standard library utilities so for instance here is the reduce。
     function。 So the first argument is a lambda。 Now this。 this is the Python fun
     tools package we imported it and returned it so this is。
+  id: totrans-40
   prefs: []
   type: TYPE_NORMAL
+  zh: 这里有一些从JavaScript使用Python工具的示例。Python有很多优秀的标准库工具，比如这里的reduce函数。第一个参数是一个lambda。这是我们导入的Python
+    fun tools包，它返回了这个。
 - en: fun tools the Python object is a module object。 So fun tools dot reduce now
     is a method and we can call it its first argument is supposed。 to be a function
     that takes two arguments and returns one。 Now this argument is a JavaScript lambda
     expression， right， multiplies the two arguments。 This is a JavaScript array。 Reduce
     expects its second argument to be an iterable。
+  id: totrans-41
   prefs: []
   type: TYPE_NORMAL
+  zh: fun tools的Python对象是一个模块对象。因此，fun tools.reduce现在是一个方法，我们可以调用它，第一个参数应该是一个接受两个参数并返回一个的函数。这个参数是一个JavaScript
+    lambda表达式，对吧，乘以这两个参数。这是一个JavaScript数组。Reduce期望其第二个参数是一个可迭代的。
 - en: It expects its first argument to be a callable。 This is a callable， this is
     an iterable。 It successfully reduces it and gets a ten or something。 So right。
     okay here's the second example so math is like another standard library package，
     we can import it。 it returns the module， the math module and then math has a least
     common。
+  id: totrans-42
   prefs: []
   type: TYPE_NORMAL
+  zh: 它期望第一个参数是可调用的。这是一个可调用的，这是一个可迭代的。它成功地减少并得到了十或类似的值。好的，这是第二个示例，math就像另一个标准库包，我们可以导入它。它返回模块，即math模块，然后math具有最小公倍数。
 - en: multiple method and this will compute the least common multiple of four， six
     and thirteen。 from JavaScript。 So you know again another example which is a bit
     more complicated so here we import the。 random module and so now random does not
     take an iterable as it's a sort of random dot sample。 is going to sample from
     a list and it does not take an iterable as it's first argument。
+  id: totrans-43
   prefs: []
   type: TYPE_NORMAL
 - en: It needs a list。 Now this is a JavaScript array which is different from a Python
@@ -292,6 +371,7 @@
     pi dot。 dot two pi which takes the JavaScript array and converts it into a Python
     list so that。 it's acceptable for random sample。 Then this samples five random
     elements from the pair red and blue so we're going to get。
+  id: totrans-44
   prefs: []
   type: TYPE_NORMAL
 - en: like red red blue blue red or something and then but that returns a Python list
@@ -299,12 +379,14 @@
     2。js function。 So here so that previous example actually leaks a couple of Python
     objects。 They'll eventually get reclaimed by the browser garbage collector but
     it takes a while whereas。
+  id: totrans-45
   prefs: []
   type: TYPE_NORMAL
 - en: like Python garbage collector because it's reference counter tends to get called
     much， faster。 So here's an example that actually doesn't leak these objects where
     this is basically。 a wrapper function which you would use to call it from JavaScript。
     And so in general you might have like some application which does some data processing。
+  id: totrans-46
   prefs: []
   type: TYPE_NORMAL
 - en: It receives some data structure from that you collect from the user interface
@@ -312,6 +394,7 @@
     does some processing。 and it returns some data back to JavaScript for display。
     And so this shows you how you would do the translations at the boundary of the
     application。
+  id: totrans-47
   prefs: []
   type: TYPE_NORMAL
 - en: So here we have like the sample space so this would be red and blue but that
@@ -319,6 +402,7 @@
     sample space to be。 a JavaScript array。 Now sample expects again a Python list
     so first we convert space to a Python list using。 the 2Py method。 And then we
     sample from it we get a Python list and then we want to return it to the UI。
+  id: totrans-48
   prefs: []
   type: TYPE_NORMAL
 - en: potentially that's going to display it to the user in some way and so we convert
@@ -326,12 +410,14 @@
     so this is the fetch API so fetch is a way to download you。 know like URLs in
     the browser。 This would fetch example。com we can specify some options and it looks
     very much like normal。
+  id: totrans-49
   prefs: []
   type: TYPE_NORMAL
 - en: Python code but it's calling into a JavaScript method。 You'll see in some of
     this some of Peter Wang's talk if you went to it too。 So here's another example
     where this shows using low level memory buffers so NumPy has。 a multi-dimensional
     array interface so it makes like fast memory buffers and you can。
+  id: totrans-50
   prefs: []
   type: TYPE_NORMAL
 - en: actually make direct memory accesses from JavaScript。 So for instance if you
@@ -339,61 +425,78 @@
     indie array from NumPy and you can access from this buffer the strides and the。
     dimensions and all the stuff and you can hand it to a JavaScript indie array library
     and then。
+  id: totrans-51
   prefs: []
   type: TYPE_NORMAL
+  zh: 实际上可以从JavaScript直接访问内存。例如，如果你想使用JavaScript图像或视频处理库，你可以传递一个来自NumPy的独立数组，并且可以从这个缓冲区访问步幅和维度等所有内容，然后将其交给JavaScript独立数组库。
 - en: call into whatever this image processing or AI library you want to use。 So what
     we're doing is essentially we're running our Python code in the in the in the。
     inscription host environment that which we use as a VM。 So it's it's essentially
     as running Python code on any like a bit stranger VM。
+  id: totrans-52
   prefs: []
   type: TYPE_NORMAL
+  zh: 然后调用你想使用的图像处理或AI库。因此，我们所做的基本上是在“inscription”主机环境中运行我们的Python代码，这个环境我们用作虚拟机。所以，这实际上就像在任何奇怪的虚拟机上运行Python代码。
 - en: So the the the features of this one is that it's a 32-bit architecture so while
     normally。 it works but some Python packages are a bit like less well tested on
     32-bit。 We have in file in memory file system so in inscription provides this
     so you have a file。 system you can you can write files like your Python modules
     are loaded from files but it's。
+  id: totrans-53
   prefs: []
   type: TYPE_NORMAL
+  zh: 这个架构的特点是它是一个32位架构，尽管通常工作，但某些Python包在32位上测试得不太好。我们在内存文件系统中有文件，因此在“inscription”中提供这个，所以你有一个文件系统，你可以像从文件加载Python模块一样写文件。
 - en: in in memory one。 Okay so and the limitation is that you cannot use for instance
     supercesses you cannot use。 threading because those are not not not allowed by
     this VM。 You can also not use sockets and some system calls are implemented but
     not all。 So it's also difficult to use it's also difficult difficult to use some
     of the standard like。
+  id: totrans-54
   prefs: []
   type: TYPE_NORMAL
+  zh: 在内存中也是如此。好的，限制是你无法使用超进程，也无法使用线程，因为这些在这个虚拟机中是不允许的。你还不能使用套接字，某些系统调用已经实现，但并非全部。因此，使用某些标准库也是困难的。
 - en: IO streams such as SCDR， SDD， SD out because they like if you want to show something
     you。 need to render it on the HTML page not like as you would normally on the
     next。 And next we'll present some of the use cases we have that used by that。
     Right so so I guess our three main use cases that we want to talk about are interactive
     computing。
+  id: totrans-55
   prefs: []
   type: TYPE_NORMAL
+  zh: IO流如SCDR、SDD、SD输出，因为如果你想展示某些内容，你需要在HTML页面上渲染，而不是像通常那样在下一个页面上。接下来我们将展示一些我们使用的案例。对了，我想我们想讨论的三个主要用例是交互式计算。
 - en: as was discussed by Peter Wang and then education and machine learning or sort
     of special cases。 of the interactive computing that were particularly good for
     it。 It's very good for like scientific communication and that sort of stuff。 So
     we want to talk about client only architectures which is what Peter Wang again
     talked about。
+  id: totrans-56
   prefs: []
   type: TYPE_NORMAL
+  zh: 正如彼得·王讨论的那样，教育和机器学习或某种特殊情况的交互式计算非常适合它。这对科学交流等内容非常有帮助。因此，我们想讨论仅客户端架构，这正是彼得·王再次提到的。
 - en: this morning。 So the idea is that if you have a back end server you know so
     then the user is using your。 website your web application it sends data back to
     the server the server does some computations。 with it and then it sends the results
     back to the UI to be displayed。 And so the client only architecture the server's
     only role is to send a set of static files。
+  id: totrans-57
   prefs: []
   type: TYPE_NORMAL
+  zh: 今天早上。想法是，如果你有一个后端服务器，用户在使用你的网站或Web应用程序时，它会将数据发送回服务器，服务器会对其进行一些计算，然后将结果发送回UI以供显示。因此，客户端架构的唯一角色是发送一组静态文件。
 - en: to the user。 And then all of the logic all of the computation happens inside
     of the browser。 And you know so this has benefits to privacy it has benefits from
     the right I guess we'll。 talk about it here right okay so so so so so usability
     benefits right so you don't need。 to install Python so if you're like doing scientific
     computation you can share your work。
+  id: totrans-58
   prefs: []
   type: TYPE_NORMAL
+  zh: 对用户而言，所有逻辑和计算都在浏览器内进行。这对隐私有好处，我想我们会在这里谈论这个，对吧？好的，关于可用性的好处，你不需要安装Python，所以如果你在进行科学计算，你可以分享你的工作。
 - en: with other people they don't need to have Python installed。 Right so there's
     big benefits to scalability so you don't need to have a web server you。 don't
     need or you need to have a static you need to sort of static files you don't need。
     like any containerization you don't need any cloud you don't need to figure out
     how to。
+  id: totrans-59
   prefs: []
   type: TYPE_NORMAL
 - en: organize the compute because it all happens on the client side。 Yeah and generally
@@ -401,6 +504,7 @@
     so so it takes a long time on the first use but if you're using it like every。
     day as part of your like scientific computing workflow then you'll only see that
     time hit。
+  id: totrans-60
   prefs: []
   type: TYPE_NORMAL
 - en: on the first load。 Right so it also has big benefits to privacy so because all
@@ -408,6 +512,7 @@
     know good for users because their data。 is private it's good for developers because
     they don't have to fill out as much paperwork。 So for instance there's a talk
     analyzing sensitive data at scale doesn't have to be a headache。
+  id: totrans-61
   prefs: []
   type: TYPE_NORMAL
 - en: which is about analyzing you know children's financial data with Python where
@@ -415,18 +520,21 @@
     have to do to install。 software but they also cannot use software as a service
     because they cannot send out。 that private data。 So what they do is they go to
     a website they download the Python application with Pyadide。
+  id: totrans-62
   prefs: []
   type: TYPE_NORMAL
 - en: and then they can turn off the internet air gap the computer plug in a flash
     drive with。 the children's sensitive financial data and then do the analysis there。
     And so what's also interesting that lately there has been a growing ecosystem
     of tools。 that allow you to make client only Python applications。
+  id: totrans-63
   prefs: []
   type: TYPE_NORMAL
 - en: So there is PyScred which was introduced in this morning's keynote which allows
     you to。 do to create rich Python applications in the browser using HTML。 There
     is Iridium which is a tool that allows you to make interactive documents and data。
     visualizations like they use a lot of markdown so it's nice to write。
+  id: totrans-64
   prefs: []
   type: TYPE_NORMAL
 - en: There are also attempts to essentially interface react like to use react from
@@ -435,6 +543,7 @@
     a growing system of tools we can also mention all the projects that allow。 you
     to run notebooks on the client side so one of the most popular ones is Jupyter
     Lite。
+  id: totrans-65
   prefs: []
   type: TYPE_NORMAL
 - en: currently which is essentially the code base of Jupyter lab which normally requires
@@ -442,6 +551,7 @@
     and it runs， on Pyadide。 And there is also startboard notebook， there is Bastone
     which is a fork of Jupyter Lite。 with the same idea as Jupyter Lite。 So this allows
     to have interactive computing in your browser without having to stop a server。
+  id: totrans-66
   prefs: []
   type: TYPE_NORMAL
 - en: essentially。 And for instance if you go， I don't know。 if you go on the NumPy
@@ -449,63 +559,80 @@
     significant topic of applications， Pyadide applications has been education。 So
     to give an example for instance currently Python is mandatory in French high school
     curriculum。
+  id: totrans-67
   prefs: []
   type: TYPE_NORMAL
+  zh: 例如，如果你去NumPy页面，你会看到一些使用这些工具来说明NumPy的例子。Pyodide应用程序的另一个重要主题是教育。例如，目前Python在法国高中课程中是必修的。
 - en: And so the problem they face is that teachers are not really Python developers
     so they don't。 have time to install Python on students laptops。 And on the other
     side if you actually want to have some centralized infrastructure that。 allows
     you to execute Python code while this is costly both in terms of servers， compute。
     time and in terms of maintenance。 And so what they did is to essentially run one
     like to develop a notebook solution Bastone。
+  id: totrans-68
   prefs: []
   type: TYPE_NORMAL
+  zh: 他们面临的问题是教师并不是真正的Python开发者，因此没有时间在学生的笔记本电脑上安装Python。另一方面，如果你想拥有一些集中式基础设施来执行Python代码，这在服务器计算时间和维护方面都很昂贵。因此，他们的做法是基本上开发一个笔记本解决方案。
 - en: which is backed by Pyadide and they deploy this massively in high schools in
     France。 And so they have like 100，000 weekly users while only having to maintain
     a very small。 like essentially just serving static files。 And generally they have
     been a lot of different projects that try to use some of these ideas。 for either
     for education or for research。 Another use case that I'm personally interested
     in is how do we deploy machine learning models。
+  id: totrans-69
   prefs: []
   type: TYPE_NORMAL
+  zh: 这个服务由Pyodide支持，他们在法国的高中大规模部署这个服务。因此，他们每周有大约100,000名用户，而只需维护非常少的，例如仅仅提供静态文件。通常，他们已经有许多不同的项目试图利用这些想法，或用于教育或研究。另一个我个人感兴趣的用例是如何部署机器学习模型。
 - en: So the traditional way to do this is you train your model which is often Python
     code so it's。 going to be I don't know， scikit learn or TensorFlow or PyTorch。
     You can use the standard pickle format which is like the standard way to serialize
     Python。 objects or there are some specific serialization formats。 Then you develop
     a web service。
+  id: totrans-70
   prefs: []
   type: TYPE_NORMAL
+  zh: 传统的方法是训练你的模型，通常是Python代码，因此它可能是我不知道的scikit learn、TensorFlow或PyTorch。你可以使用标准的pickle格式，这是一种序列化Python对象的标准方法，或者使用一些特定的序列化格式。然后你开发一个网络服务。
 - en: you package probably in a container and then you deploy， it somewhere on some
     server。 So this is again， this is complicated。 And there are tools that actually
     work with this custom serialization formats that allow。 you to do inference in
     the browser。 So that's support to WebAssembly。 However。 they only work for a fairly
     limited set of operations。 So for instance， if you use TensorFlow， yes。
+  id: totrans-71
   prefs: []
   type: TYPE_NORMAL
+  zh: 你可能将包裹放在一个容器中，然后在某个服务器上部署它。因此，这又是复杂的。确实有一些工具可以处理这种自定义序列化格式，允许你在浏览器中进行推断。这支持WebAssembly。然而，它们仅适用于相对有限的操作集。例如，如果你使用TensorFlow，是的。
 - en: you will be able to run TensorFlow operators。 But you will not be able to run
     arbitrary Python code that you might need to pre-process your。 data or transform
     it somehow。 And so the idea is that， well。 since you now have Python running in
     the browser， you， can just use pickle。 so pickle is a standard Python serialization
     format。
+  id: totrans-72
   prefs: []
   type: TYPE_NORMAL
+  zh: 你将能够运行TensorFlow操作。但你无法运行你可能需要预处理数据或以某种方式转换的数据的任意Python代码。因此，想法是，既然你现在可以在浏览器中运行Python，你可以直接使用pickle。所以pickle是标准的Python序列化格式。
 - en: It has some disadvantages because it's a bit unsafe since you're running arbitrary
     Python， code。 It's a bit brittle to environment changes， but it's essentially
     portable and non-apac。 meaning that once you de-sterilize it， you get your original
     Python object and you can， explore it。 And so the steps to now to deploy circular
     models， for instance， with Pyodiode would be。
+  id: totrans-73
   prefs: []
   type: TYPE_NORMAL
+  zh: 它有一些缺点，因为运行任意的Python代码有点不安全。它对环境变化有点脆弱，但它本质上是可移植和非专用的。这意味着一旦你去除其消毒，你就可以得到原始的Python对象并进行探索。因此，现在部署循环模型的步骤，例如使用Pyodide，将是。
 - en: just you create the environment which needs to match between the environment
     where you。 train your model and the environment where you predict。 You pickle
     your model。 you unpickle it in the browser， and then you run an inference with，
     your Python object。 So also training can also happen directly in the browser。
+  id: totrans-74
   prefs: []
   type: TYPE_NORMAL
+  zh: 你创建的环境需要与训练模型的环境和预测的环境匹配。你将模型序列化，然后在浏览器中反序列化，然后使用你的Python对象运行推断。因此，训练也可以直接在浏览器中进行。
 - en: We can illustrate this with the following example。 Okay， that was not it。 Sorry。
     The home key is a bit of a。 Okay， so here we have an example which is a React
     application that's used to display。 a classifier decision boundaries using Matplotlib。
     It uses some example data。 it trains a model in it， and then it displays the decision
     boundary， here。 So you have。
+  id: totrans-75
   prefs: []
   type: TYPE_NORMAL
 - en: for instance， you have three classes and you see the decision boundary here
@@ -513,6 +640,7 @@
     fine。 Sorry。 Yeah。 so you can see the three boundaries， three classes that are
     categorized with this， model。 And now you can just change that， for instance，
     your model。
+  id: totrans-76
   prefs: []
   type: TYPE_NORMAL
 - en: It's going to be retrained live in the browser。 You're going to have it changed
@@ -520,6 +648,7 @@
     for instance。 And your model is going to be retrained each time you do this and
     it's going to be adapted。 and fairly very quickly。 Okay， so now I'm going to talk
     about latest developments in Outlook。
+  id: totrans-77
   prefs: []
   type: TYPE_NORMAL
 - en: There were a bunch more fancier demos at Peter Wang's talk this morning so you
@@ -527,6 +656,7 @@
     to talk about some of the technical things that have gone。 into making Piedide
     work recently which we think are really fun。 So what issue is packing SciPy and
     Fortran？ So there's not a working Fortran compiler based on LLVM。
+  id: totrans-78
   prefs: []
   type: TYPE_NORMAL
 - en: Our inscription tool chain is based on LLVM。 And so this is the problem for
@@ -534,6 +664,7 @@
     Classic。 and there's Flame。 And then， so I mean you can do even like very desperate
     things。 Like there's a GCC plugin called Dragon Egg which allows you to produce
     LLVM IR。
+  id: totrans-79
   prefs: []
   type: TYPE_NORMAL
 - en: And then you can like hand that over to LLVM and like compile it to WebAssembly。
@@ -541,6 +672,7 @@
     Fortran 77 code to C code。 One problem with this is that much of the code in SciPy
     is Fortran that's newer than， Fortran 77。 Fortran 90 even newer ones。 And FQC
     sometimes exceeds on it。 But we have lots of trouble with it。
+  id: totrans-80
   prefs: []
   type: TYPE_NORMAL
 - en: So we use a mix， we have an automatic source transformation that we do on the
@@ -548,6 +680,7 @@
     do both before and after。 conversion。 And then we also have a lot of sort of manual
     patches。 And this gets most of the SciPy tests passing but it's sort of a big
     effort。 Okay。
+  id: totrans-81
   prefs: []
   type: TYPE_NORMAL
 - en: so another big issue for us is function pointer cast。 So Python C extensions
@@ -555,6 +688,7 @@
     C standard says this is undefined behavior。 But most C compilers generate code
     that doesn't crash。 So if you define a function that takes two arguments but ignore
     the second one and then。
+  id: totrans-82
   prefs: []
   type: TYPE_NORMAL
 - en: you call it with one argument， usually on native architectures this doesn't
@@ -562,12 +696,14 @@
     and the。 runtime will validate the function pointer at runtime and check whether
     its signature。 matches the assertive signature。 If it does not it will crash with
     call indirect function pointer mismatch。
+  id: totrans-83
   prefs: []
   type: TYPE_NORMAL
 - en: So here's an example。 So here's a C extension like NumPy or something。 So we
     define the function called do something。 Now this function actually just doesn't
     do anything。 it just returns non。 And it takes a single object which is the representation
     of this function as a Python。 object。 And it's going to return non all the time。
+  id: totrans-84
   prefs: []
   type: TYPE_NORMAL
 - en: So then you need to tell the Python virtual machine the Python interpreter how
@@ -575,6 +711,7 @@
     function point that we're going to call when we want to call。 this。 And then we
     give it the calling convention which is no arcs。 Now people in the back probably
     won't see this at the bottom but in method object。c in。
+  id: totrans-85
   prefs: []
   type: TYPE_NORMAL
 - en: the interpreter it will call this function with two arguments。 See this null
@@ -582,12 +719,14 @@
     the reason we didn't take that as an argument is because it's always， null。 It
     doesn't give you useful information so C developers for Python packages forget
     about， it。
+  id: totrans-86
   prefs: []
   type: TYPE_NORMAL
 - en: But in WebAssembly this is a crash。 And there's tons of these。 So I mean all
     the solution would be to fix all of them in the packages but we don't have。 the
     maintainer effort to do that because there's so many of them。 So the solution
     that we finally found after much contemplation is that calls from JavaScript。
+  id: totrans-87
   prefs: []
   type: TYPE_NORMAL
 - en: into WebAssembly are flexible。 They can be called with the wrong number of arguments
@@ -595,6 +734,7 @@
     out to JavaScript and we say JavaScript why don't you call back。 into WebAssembly
     with this function these arguments。 And then it calls back into JavaScript and
     that accepts the wrong number of arguments， is fine。
+  id: totrans-88
   prefs: []
   type: TYPE_NORMAL
 - en: This solution has been upstreamed into Python 3。11 thanks to the encouragement
@@ -602,6 +742,7 @@
     the pull request if you want。 It's a big thing。 Okay so another issue is for running。
     So another problem that most like a lot of Python users face is that you cannot
     use essentially。
+  id: totrans-89
   prefs: []
   type: TYPE_NORMAL
 - en: a stupid client or request or all those libraries that need to interact with
@@ -609,6 +750,7 @@
     API such as fetch。 But then there is another problem that those APIs are often
     async and Python expects those。 functions to be sync。 So there is a working progress
     solution which tries to use a web worker。
+  id: totrans-90
   prefs: []
   type: TYPE_NORMAL
 - en: So web worker is essentially like a process in classical Python so it's another
@@ -616,6 +758,7 @@
     to download your。 package async and meanwhile you block your main thread with
     atomics to until that fetch， completes。 So there is a project that's being worked
     by hood called sync link which aims to make。
+  id: totrans-91
   prefs: []
   type: TYPE_NORMAL
 - en: this process easier。 And so as an example another thing is for instance because
@@ -623,6 +766,7 @@
     to security reasons。 However there is a Chrome file system API which allows you
     to essentially using this system。 to mount a mount point like a local folder inside
     the M script and file system and then。
+  id: totrans-92
   prefs: []
   type: TYPE_NORMAL
 - en: you can directly write into the host's OS file system。 Okay so we have a CTO
@@ -630,12 +774,14 @@
     with its own event loop and Python has event loops you can implement and so we。
     have a custom event loop for async IO which basically all it does to do is schedule
     tasks。
+  id: totrans-93
   prefs: []
   type: TYPE_NORMAL
 - en: on the browser event loop。 So in a certain limitations like async IO。run until
     complete cannot work as expected because。 it blocks the same process that's actually
     doing the Python computation and so it cannot， block。 And we also have no control
     over the event loop lifecycle。
+  id: totrans-94
   prefs: []
   type: TYPE_NORMAL
 - en: But one of the big benefits of this is that you don't need to control the event
@@ -643,6 +789,7 @@
     code setting up the event loop is sort of baggage。 that we have to go through
     to get to the run in the async code。 So another frequent question is how big are
     like packages you download。
+  id: totrans-95
   prefs: []
   type: TYPE_NORMAL
 - en: So for instance if you have an application on the right here that loads pandas
@@ -650,6 +797,7 @@
     numpy here and then。 you have to load CPIT on the standard library。 So in this
     example at the very bottom you can see that we in total downloaded 18 megabytes。
     and around 30 megabytes we get around 30 megabytes after it's uncompressed。
+  id: totrans-96
   prefs: []
   type: TYPE_NORMAL
 - en: So this is a significant issue because Python ecosystem was never optimized
@@ -657,6 +805,7 @@
     large packages such as SyPy which has a lot of modules that might。 maybe you're
     not going to use in the given application but they're still there when。 you install
     SyPy。 And also as you mentioned before some packages will include tests。
+  id: totrans-97
   prefs: []
   type: TYPE_NORMAL
 - en: So what can we do about this？ Well there are several possible ways。 So we could
@@ -664,6 +813,7 @@
     your dependency graph so you have new packages that are created。 and that's a
     bit difficult to manage。 A different approach is to use a bundler tool so bundler
     tool means that we have some Python。
+  id: totrans-98
   prefs: []
   type: TYPE_NORMAL
 - en: code that we need to run。 We know the code in advance。 We're going to run it
@@ -671,6 +821,7 @@
     And then we're going to recreate an archive with just those files which should
     be much。 smaller than all the files that were installed。 And finally the last
     approach is using dynamic imports so essentially fetch the file when。
+  id: totrans-99
   prefs: []
   type: TYPE_NORMAL
 - en: you import it。 However there are often like more than 50 modules that a given
@@ -678,6 +829,7 @@
     concerns。 And finally the last solution is to， well we can just wait for the average
     webpage size。 to grow larger。 I mean it's a sad situation but it turns out that
     it's a trend that goes in our favor。
+  id: totrans-100
   prefs: []
   type: TYPE_NORMAL
 - en: Okay so now we're going to talk about the roadmap。 So you know what we're up
@@ -685,6 +837,7 @@
     with inscription releases。 Currently we're stuck on an old version of inscription
     due to a bug in recent versions。 of Firefox and bind with versions of LLVM。 But
     it's a fair amount of work to keep up with inscription because of very weird bugs。
+  id: totrans-101
   prefs: []
   type: TYPE_NORMAL
 - en: We need to upstream patches so NumPy has a lot of patches。 We'd like to upstream
@@ -692,6 +845,7 @@
     more of those upstream。 Yeah support for Secret is IO and web workers as we talked
     about a couple minutes ago。 It would be nice to re-implement certain standard
     library modules that you use web。
+  id: totrans-102
   prefs: []
   type: TYPE_NORMAL
 - en: APIs like HTTP client you know could use fetch。 Reducing size packages and proving
@@ -700,12 +854,14 @@
     be very valuable to work on the inscription compiler and improve some。 of these
     weird educations that we had。 And of course to actually get this to users our
     project is very much sort of down the。
+  id: totrans-103
   prefs: []
   type: TYPE_NORMAL
 - en: trenches of doing like platform compatibility problems that we're trying to
     solve。 But we're also trying to be useful tools like downstream so there's documentation
     work。 there's all sorts of work to be done。 We love anyone that has issues。 please
     write your questions on our issue tracker， please， help with the docs。
+  id: totrans-104
   prefs: []
   type: TYPE_NORMAL
 - en: any work on our package or work downstream we're very happy to see exciting，
@@ -713,6 +869,7 @@
     things to be done and some of those。 things don't require that much work to finish。
     Yeah， yeah。 Very accessible problem。 So we'd also like to thank all the people
     who contributed to Pyodide directly or indirectly。
+  id: totrans-105
   prefs: []
   type: TYPE_NORMAL
 - en: So they're directly the Pyodide contributors starting from Michael Dordboom
@@ -720,6 +877,7 @@
     then the community。 So M-scriptin。 Pyodide wouldn't exist without M-scriptin，
     CPython for the improvements that's。 like for the support of WebAssembly that's
     happening now， all our downstream libraries that。
+  id: totrans-106
   prefs: []
   type: TYPE_NORMAL
 - en: will make creating client-side application with Python in the browser easier。
@@ -728,17 +886,22 @@
     maintainers that help us to review our patches when we try to fix， things。 So
     thank you。 We'll do a sprint at the end of PyCon if you want to work on any of
     those subjects or。
+  id: totrans-107
   prefs: []
   type: TYPE_NORMAL
 - en: related subjects on HeadState to come。 Thank you。
+  id: totrans-108
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/59c5fc8db7748b7687462940bca51cbe_4.png)'
+  id: totrans-109
   prefs: []
   type: TYPE_IMG
 - en: '[Applause]， [Applause]， [Applause]， [Applause]， (applause)， (audience applauding)。'
+  id: totrans-110
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/59c5fc8db7748b7687462940bca51cbe_6.png)'
+  id: totrans-111
   prefs: []
   type: TYPE_IMG
