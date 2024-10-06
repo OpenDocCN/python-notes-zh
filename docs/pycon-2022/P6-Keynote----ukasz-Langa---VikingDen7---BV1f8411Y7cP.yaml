@@ -330,6 +330,7 @@
   id: totrans-39
   prefs: []
   type: TYPE_NORMAL
+  zh: 例如，查看内部字典，我们可以说键是歌曲名称，值是歌词。现在内部字典歌曲的神秘之处是，我们甚至可以给整个字典一个名字，比如“歌曲到歌词”，注释神奇地变得不那么冗长。我们也可以对外部字典这样做，说明这里的键实际上是艺术家的名字。
 - en: So now with all of those annotations we have a much shorter function signature
     and also。 we can reuse those human readable names in other functions。 You can
     expect that if we are being passed a lyrics database in one function there must。
@@ -338,6 +339,7 @@
   id: totrans-40
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以现在有了这些注释，我们有了更简短的函数签名，并且我们可以在其他函数中重用这些可读性强的名称。如果我们在一个函数中传递了歌词数据库，那么必然会有其他函数生成它，并且可能还有其他函数对其进行过滤或变异。
 - en: them or what not。 So we're using the same annotations that communicate to humans
     what those things are tremendously。 useful， highly recommended。 So now we are
     moving from visual things from simple modifications to more of like code refactoring。
@@ -347,6 +349,7 @@
   id: totrans-41
   prefs: []
   type: TYPE_NORMAL
+  zh: 它们或其他的东西。所以我们使用相同的注释来向人类传达这些东西是什么，非常有用，**强烈推荐**。所以现在我们正在从可视化的简单修改转向更像代码重构的领域。我们将会进行越来越多的改动，但这一切仍然与理解手头的代码有关。例如，我会说你应该让你的函数保持小而简单。
 - en: to dispatch early to specialize the tractors of typing love to give you examples
     where。 they would use some super dynamic function the found in Python say the
     max built in and。 they will say hey try to type that and see what happens。 Well
@@ -354,6 +357,7 @@
   id: totrans-42
   prefs: []
   type: TYPE_NORMAL
+  zh: 早期调度以专门化类型的例子，喜欢给你一些使用 Python 中超动态函数的示例，比如内置的 max。他们会说，嘿，尝试给它类型并看看会发生什么。当然，这甚至不是只有一个签名的内置函数，它有两个。
 - en: are plenty dynamic here as well and they allow for some funky stuff like the
     a terrible。 in the first form doesn't have to have the same types as the optional
     default value and。 the arguments given in the second form might be of incompatible
@@ -362,6 +366,8 @@
   id: totrans-43
   prefs: []
   type: TYPE_NORMAL
+  zh: 这里也有很多动态内容，它们允许一些奇特的东西，比如第一个形式的可选默认值不必具有相同的类型，第二个形式中给定的参数也可能是兼容类型的，比如这都没问题，你可以这样做，它在
+    Python 中会神奇地工作。你在使用这样的函数吗？
 - en: like these of course you are this is the core of Python the vocabulary that
     we have that。 doesn't matter what kinds of data you're putting in the same verbs
     apply so it's wonderful to。 have this in Python but when was the last time you
@@ -370,6 +376,7 @@
   id: totrans-44
   prefs: []
   type: TYPE_NORMAL
+  zh: 当然，你在用，这就是 Python 的核心，我们拥有的词汇。这与您输入的数据类型无关，相同的动词适用，所以在 Python 中拥有这一点是美妙的，但你最后一次构建这样动态的函数是什么时候？我会说，如果你现在举手，我已经可以猜到了。
 - en: see like you're an author of some library or framework that needs this sort
     of dynamic。ism and gospel to yes that in this case static typing will be a little
     verbose but for everybody。 else for end user code it's very unlikely for you to
@@ -378,6 +385,7 @@
   id: totrans-45
   prefs: []
   type: TYPE_NORMAL
+  zh: 你像是一个需要这种动态性的库或框架的作者，而是想要在这个案例中静态类型会有点冗长，但对于其他人来说，对于最终用户的代码，你不太可能需要处理这种动态性，所以让我们把事情放在更广泛的视角。如果你确实需要，那么你会看看里面的内容。
 - en: implementation of a function like this because the documentation doesn't tell
     you that if。 you're implementing something that is tremendously dynamic the implementation
     tends to look sort。 of like this there's some dispatch there there's 20 lines
@@ -386,6 +394,8 @@
   id: totrans-46
   prefs: []
   type: TYPE_NORMAL
+  zh: 实现这样一个函数的文档没有告诉你，如果你正在实现一些非常动态的东西，实施的内容往往看起来像这样，里面有一些调度，这里有 20 行处理一种形式，那里有 10
+    行处理另一种形式，这不是你喜欢阅读的那种函数，它很难理解。
 - en: test it thoroughly right now you can talk about cyclomatic complexity whether
     you covered。 actually all paths that are possible the max built-in is wonderful
     but Python is powerful also due to。 its maturity like all the edge cases were
@@ -458,6 +468,7 @@
   id: totrans-54
   prefs: []
   type: TYPE_NORMAL
+  zh: 在我们接受的方面灵活，而在我们发出的方面严格，我们在这里并不完全是这样，因为我们要么给你一个路径，要么什么都不给，而这并不完美，因为它迫使函数的调用者总是检查他们收到的是什么，是否为None。有时人们会忘记检查，有时他们会将这个责任传递给进一步的函数，从而使得。
 - en: non proliferate in your code base which isn't something that you particularly
     want so how do you。 solve this well you can in fact use exceptions for exceptional
     states it's what python wants you to。 do in this particular case you can use a
@@ -466,6 +477,7 @@
   id: totrans-55
   prefs: []
   type: TYPE_NORMAL
+  zh: 在你的代码库中不应产生过多的非预期情况，这并不是你特别想要的。那么你该如何解决这个问题呢？你实际上可以在特殊情况下使用异常，这正是Python在这种情况下希望你做的。你可以使用查找错误，这是我最喜欢的内置异常类型之一。索引错误和键错误都继承自它，但它在我们的广泛案例中也很有用，比如。
 - en: this where we're finding something and failing so yes you should be using exceptions
     for exceptional。 states but there's another thing that you can do without having
     to modify types there so you can。 use empty values this is especially natural
@@ -474,6 +486,7 @@
   id: totrans-56
   prefs: []
   type: TYPE_NORMAL
+  zh: 这是我们发现问题并失败的地方，所以是的，你应该在特殊情况下使用异常。但是，还有另一种方法，你可以在不修改类型的情况下使用空值。当你处理集合时，这尤其自然。例如，如果你有一个列出当前登录到我们应用程序的所有用户的函数，那是完全可以的。
 - en: reasonable to return an empty list if no user happens to be logged in to your
     application at this。 point but this makes also sense depending on context to do
     for scalers so python does allow for。 full c values when we're talking about numbers
@@ -482,6 +495,7 @@
   id: totrans-57
   prefs: []
   type: TYPE_NORMAL
+  zh: 但根据上下文，对于标量类型，这也是有意义的。因此，Python确实允许在讨论数字时使用完整的C值，并且对于布尔值和空字符串等也允许完整的C值。有时候这很危险，因此你真正想要的是。
 - en: exception to inform the color that you know we actually fail to find something
     and the default。 value would hide this fact but if you ever used a default dict
     you know that there's plenty of。 cases where an empty value makes perfect sense
@@ -490,6 +504,7 @@
   id: totrans-58
   prefs: []
   type: TYPE_NORMAL
+  zh: 异常是为了通知调用者，我们实际上未能找到某个东西，而默认值会掩盖这个事实。但是，如果你曾经使用过默认字典，你会知道在很多情况下，空值是完全合理的。没有是一个特别的例子，从函数返回空值令人烦恼，但这并不是唯一的一个。实际上，在任何类型联合中，如果没有用户登录到你的应用程序，这时候返回一个空列表是合理的。
 - en: returning from your function is going to be hurting your users because they
     will be forced to check。 which one did I get and if they do this and they write
     some if lf chain and you later change your。 function we already talked about bullions
@@ -498,6 +513,7 @@
   id: totrans-59
   prefs: []
   type: TYPE_NORMAL
+  zh: 从你的函数返回的内容会伤害你的用户，因为他们将被迫检查“我得到了哪个”，如果他们这样做并写了一些if-else链，而你稍后更改了函数，我们已经讨论过布尔值是整型，但这只在任何形式的子类化中成立。看似有效的代码可能并不会按你的想法工作，因此我始终建议尽可能避免从函数返回联合类型。
 - en: returning unions from functions as much as you can help it so coming back to
     this robustness。 principle when we say that we want to be flexible in what we
     accept and strict in what we return。 what we're really saying is that we want
@@ -506,6 +522,7 @@
   id: totrans-60
   prefs: []
   type: TYPE_NORMAL
+  zh: 回到这个稳健性原则，当我们说我们想在接受的方面灵活而在返回的方面严格时，实际上我们是在说我们想在接受的方面模糊而在返回的方面具体。我所指的是，在这里的参数中，我们接受一个集合，我们并不在乎。
 - en: what it is you might give me a set you might give me a dictionary you might
     give me whatever else。 we only need a collection but when we are returning our
     list of items we should say that to the user。 not an iterable not a sequence let's
