@@ -314,10 +314,12 @@
   id: totrans-35
   prefs: []
   type: TYPE_NORMAL
+  zh: 出于安全性和可维护性的原因，我们尽力在这两个本质上相互冲突的要求之间找到平衡。我们现在要讨论一下我们通常如何做出选择，以及我们为什么会考虑这些问题，以及Rust如何改变了我们的思路。
 - en: '![](img/fabc68ceb83500e75a0be261b8a2e468_6.png)'
   id: totrans-36
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/fabc68ceb83500e75a0be261b8a2e468_6.png)'
 - en: This actually has broadly speaking four unofficial levels of support。 First
     is what we test in CI and ship via our binary wheels。 These are to use Rust's
     parlance tier one targets， which we have high confidence in。 and have thoroughly
@@ -326,6 +328,7 @@
   id: totrans-37
   prefs: []
   type: TYPE_NORMAL
+  zh: 从广义上讲，这实际上有四个非官方支持级别。第一个是我们在CI中测试并通过二进制轮子发布的。这些被称为Rust的术语一级目标，我们对此有高度信心，并进行了全面测试。加密库将永远不会为我们未在CI中测试的任何东西发布轮子。
 - en: Second， we provide best effort support for environments we can't test but we
     are aware。 have significant use in the real world。 For these。 we will accept patches
     and we'll potentially even perform significant effort。 ourselves to provide a
@@ -334,6 +337,7 @@
   id: totrans-38
   prefs: []
   type: TYPE_NORMAL
+  zh: 其次，我们为我们无法测试但在实际使用中显著存在的环境提供尽最大努力的支持。对于这些，我们会接受补丁，甚至可能自己进行重大努力，以提供合理的体验。目前的例子包括RMHF和MIPS平台。
 - en: Third， we have， yeah， sure why not。 Where we will accept patches for less important
     architectures and OS's as long as they're reasonably。 wet written and pass our
     CI gates。 And then finally。 there is the set of things we consider entirely unsupported。
@@ -342,6 +346,7 @@
   id: totrans-39
   prefs: []
   type: TYPE_NORMAL
+  zh: 第三，我们有，当然，为什么不呢？我们会接受对较不重要的架构和操作系统的补丁，只要它们编写得相当不错并且通过我们的CI测试。最后，有一组我们认为完全不受支持的东西。例如，版本过旧的OpenSSL和我们选择不支持的Python版本。
 - en: drop and arcane architectures where support would require significant modification
     of。 the code base。 A good example of this is something like S390， not S390X。 If
     you want these things to work， you're going to have to fork us， sorry。 So we have
@@ -349,6 +354,7 @@
   id: totrans-40
   prefs: []
   type: TYPE_NORMAL
+  zh: 降级和神秘的架构，其中的支持需要对代码库进行重大修改。一个好的例子是S390，而不是S390X。如果你想让这些东西工作，你将不得不分叉我们，抱歉。所以我们拥有想要使用的数据，但我们从称为PIPI统计的大火水管中获取它。
 - en: PIPI statistics。 So how do we use that？ First usage of Python versions。 We actually
     choose to drop support。 We would love to drop support when the upstream drops
     support。 This is unfortunately not practical。 We drop support as usage drops under
@@ -357,6 +363,7 @@
   id: totrans-41
   prefs: []
   type: TYPE_NORMAL
+  zh: 那么我们如何使用这些数据呢？首先是Python版本的使用情况。我们实际上选择停止支持。当上游停止支持时，我们希望停止支持。不幸的是，这在实践中并不可行。我们在使用率降到某个阈值以下时停止支持，比如5%或更低。对我们来说，停止支持一个版本是一个具体的障碍，因为当我们停止支持Python版本时。
 - en: we tend to immediately start using features from our new minimum。 This means
     that there's typically no way to run our code on an older Python。 When we began
     this work， cryptography actually still supported Python too。 But PyO3 did not。
@@ -364,6 +371,7 @@
   id: totrans-42
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们倾向于立即开始使用新最低版本中的特性。这意味着通常没有办法在较旧的Python上运行我们的代码。当我们开始这项工作时，加密库实际上仍然支持Python。然而，PyO3并不支持。我们已经选择支持Py2，远远超过CPython的支持期限。事实上。
 - en: we had made a decision early on that we would support it at least one year past。
     the final sunset date。 And PIP had dropped support as well。 But this gave us an
     even stronger reason to finish our deprecation。 Fortunately。 the statistics that
@@ -371,6 +379,7 @@
   id: totrans-43
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们早期做出决定，支持至少一年，直到最终的结束日期。而PIP也已停止支持。但这给了我们更强的理由去完成我们的弃用过程。幸运的是，我们所掌握的统计数据显示使用率迅速下降，这并不。
 - en: actually an issue for us。 Within the set of Python 3s that we were interested
     in supporting。 which was 3。6 and， above， our Rust dependency that we were adding
     through PyO3 was not affected after the work。 that Alex and the PyO3 maintainers
