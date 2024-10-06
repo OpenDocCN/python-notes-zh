@@ -395,6 +395,8 @@
   id: totrans-43
   prefs: []
   type: TYPE_NORMAL
+  zh: 多重方法将计算四、六和十三的最小公倍数，从 JavaScript 调用。所以你知道又一个更复杂的例子，在这里我们导入随机模块，因此现在 random 并不接受可迭代对象，因为它的
+    random.dot.sample 是从列表中抽样的，而不接受可迭代对象作为第一个参数。
 - en: It needs a list。 Now this is a JavaScript array which is different from a Python
     list。 So we need to convert it into a Python list so we have this converter function，
     pi dot。 dot two pi which takes the JavaScript array and converts it into a Python
@@ -403,6 +405,8 @@
   id: totrans-44
   prefs: []
   type: TYPE_NORMAL
+  zh: 这需要一个列表。现在这是一个 JavaScript 数组，和 Python 列表不同。所以我们需要将其转换为 Python 列表，因此我们有这个转换器函数，pi
+    dot。dot two pi，它接受 JavaScript 数组并将其转换为 Python 列表，以便随机抽样时可以接受。然后这个函数从成对的红色和蓝色中抽取五个随机元素，所以我们将得到。
 - en: like red red blue blue red or something and then but that returns a Python list
     but if。 we want a JavaScript array then we need to convert it back so that's this
     2。js function。 So here so that previous example actually leaks a couple of Python
@@ -411,6 +415,8 @@
   id: totrans-45
   prefs: []
   type: TYPE_NORMAL
+  zh: 像红红蓝蓝红之类的东西，然后它返回一个 Python 列表，但如果我们想要一个 JavaScript 数组，那么我们需要将其转换回来，因此这是这个 2.js
+    函数。因此，之前的示例实际上泄漏了几个 Python 对象。它们最终会被浏览器垃圾收集器回收，但需要一段时间。
 - en: like Python garbage collector because it's reference counter tends to get called
     much， faster。 So here's an example that actually doesn't leak these objects where
     this is basically。 a wrapper function which you would use to call it from JavaScript。
@@ -418,6 +424,8 @@
   id: totrans-46
   prefs: []
   type: TYPE_NORMAL
+  zh: 像 Python 垃圾收集器一样，因为它的引用计数器往往会被更快地调用。所以这是一个示例，实际上不会泄漏这些对象，这基本上是一个包装函数，你可以从 JavaScript
+    调用它。因此一般来说，你可能会有一个进行数据处理的应用程序。
 - en: It receives some data structure from that you collect from the user interface
     and then。 you call into like the main entry point of your Python application it
     does some processing。 and it returns some data back to JavaScript for display。
@@ -426,6 +434,7 @@
   id: totrans-47
   prefs: []
   type: TYPE_NORMAL
+  zh: 它接收一些你从用户界面收集的数据结构，然后你调用你的 Python 应用程序的主入口点，它进行一些处理，并将一些数据返回给 JavaScript 以供显示。因此，这向你展示了如何在应用程序边界进行翻译。
 - en: So here we have like the sample space so this would be red and blue but that
     again we're。 expecting this to be called from JavaScript so we're expecting this
     sample space to be。 a JavaScript array。 Now sample expects again a Python list
@@ -434,6 +443,9 @@
   id: totrans-48
   prefs: []
   type: TYPE_NORMAL
+  zh: 在这里我们有样本空间，这将是红色和蓝色，但我们期待这个从 JavaScript 调用，所以我们期望这个样本空间是一个 JavaScript 数组。现在样本再次期望是一个
+    Python 列表，因此首先我们使用 2Py 方法将空间转换为 Python 列表。然后我们从中抽样，我们得到一个 Python 列表，然后我们想将其返回给
+    UI。
 - en: potentially that's going to display it to the user in some way and so we convert
     the。 result list back to JavaScript at the boundary。 So here's another example
     so this is the fetch API so fetch is a way to download you。 know like URLs in
@@ -442,6 +454,8 @@
   id: totrans-49
   prefs: []
   type: TYPE_NORMAL
+  zh: 潜在地以某种方式将其显示给用户，因此我们在边界将结果列表转换回 JavaScript。这是另一个示例，这是 fetch API，fetch 是一种在浏览器中下载
+    URL 的方法。这将获取 example.com，我们可以指定一些选项，看起来很像正常的。
 - en: Python code but it's calling into a JavaScript method。 You'll see in some of
     this some of Peter Wang's talk if you went to it too。 So here's another example
     where this shows using low level memory buffers so NumPy has。 a multi-dimensional
@@ -449,6 +463,8 @@
   id: totrans-50
   prefs: []
   type: TYPE_NORMAL
+  zh: Python 代码，但它调用了一个 JavaScript 方法。如果你去过彼得·王的演讲，你会在一些内容中看到这个。所以这是另一个示例，显示使用低级内存缓冲区，NumPy
+    具有多维数组接口，因此它创建快速的内存缓冲区，你可以。
 - en: actually make direct memory accesses from JavaScript。 So for instance if you
     want to use a JavaScript image or video processing library you can pass。 it an
     indie array from NumPy and you can access from this buffer the strides and the。
@@ -674,6 +690,8 @@
   id: totrans-75
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们可以用以下示例来说明这一点。好的，那不是。抱歉。Home 键有点问题。好的，这里有一个示例，这是一个用于显示分类器决策边界的 React 应用程序，使用
+    Matplotlib。它使用一些示例数据，训练一个模型，然后在这里显示决策边界。所以你有。
 - en: for instance， you have three classes and you see the decision boundary here
     with。 the logistic regression model and then。 You switch browser tabs。 No， it's
     fine。 Sorry。 Yeah。 so you can see the three boundaries， three classes that are
@@ -682,6 +700,7 @@
   id: totrans-76
   prefs: []
   type: TYPE_NORMAL
+  zh: 例如，你有三个类，可以看到这里的决策边界与逻辑回归模型。然后，你切换浏览器标签。没事的，抱歉。是的。所以你可以看到这三个边界，三个由该模型分类的类。现在你可以更改它，例如你的模型。
 - en: It's going to be retrained live in the browser。 You're going to have it changed
     fairly quickly。 And then even here in this application you can add extra points，
     for instance。 And your model is going to be retrained each time you do this and
@@ -690,6 +709,8 @@
   id: totrans-77
   prefs: []
   type: TYPE_NORMAL
+  zh: 它将在浏览器中实时重新训练。你会很快看到它的变化。即使在这个应用中，你也可以添加额外的点。例如。你的模型将在每次执行此操作时重新训练，并且会迅速适应。好的，现在我将讨论
+    Outlook 的最新发展。
 - en: There were a bunch more fancier demos at Peter Wang's talk this morning so you
     can see more。 of the stuff that we can do with this。 Right， so it's what I'm going
     to talk about some of the technical things that have gone。 into making Piedide
@@ -698,6 +719,8 @@
   id: totrans-78
   prefs: []
   type: TYPE_NORMAL
+  zh: 今天早上彼得·王的讲座上还有更多华丽的演示，所以你可以看到我们可以做的更多事情。对，所以我将讨论一些最近使 Piedide 工作的技术内容，我们认为这些内容真的很有趣。那么，打包
+    SciPy 和 Fortran 存在什么问题？因此，目前没有基于 LLVM 的工作 Fortran 编译器。
 - en: Our inscription tool chain is based on LLVM。 And so this is the problem for
     us。 There's three work in progress compilers。 There's L Fortran， there's Flame
     Classic。 and there's Flame。 And then， so I mean you can do even like very desperate
@@ -706,6 +729,8 @@
   id: totrans-79
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们的铭文工具链基于 LLVM。这对我们来说是个问题。现在有三个正在进行中的编译器。一个是 L Fortran，另一个是 Flame Classic，还有
+    Flame。因此，我的意思是你可以做一些非常极端的事情。例如，有一个名为 Dragon Egg 的 GCC 插件，允许你生成 LLVM IR。
 - en: And then you can like hand that over to LLVM and like compile it to WebAssembly。
     But this is sort of a desperation move。 So we use FQC which is a program to convert
     Fortran 77 code to C code。 One problem with this is that much of the code in SciPy
@@ -714,6 +739,8 @@
   id: totrans-80
   prefs: []
   type: TYPE_NORMAL
+  zh: 然后你可以将其交给 LLVM，并将其编译为 WebAssembly。但这算是一种绝望的举动。因此，我们使用 FQC，这是一个将 Fortran 77 代码转换为
+    C 代码的程序。一个问题是 SciPy 中的很多代码是比 Fortran 77 更新的 Fortran 代码，甚至是 Fortran 90。FQC 有时在这方面表现不佳。但我们遇到了很多麻烦。
 - en: So we use a mix， we have an automatic source transformation that we do on the
     Fortran input。 We have automatic source transformations on the C output that we
     do both before and after。 conversion。 And then we also have a lot of sort of manual
@@ -722,6 +749,8 @@
   id: totrans-81
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以我们使用混合方法，对 Fortran 输入进行自动源转换。我们在 C 输出上进行自动源转换，这在转换前后都进行。然后我们还进行了很多手动修补。这使得大部分
+    SciPy 测试通过，但这确实是个大工程。好的。
 - en: so another big issue for us is function pointer cast。 So Python C extensions
     define C functions and then call them with the wrong number of， arguments。 The
     C standard says this is undefined behavior。 But most C compilers generate code
@@ -730,6 +759,7 @@
   id: totrans-82
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以另一个大问题是函数指针转换。Python C 扩展定义 C 函数，然后用错误数量的参数调用它们。C 标准指出这是未定义的行为。但大多数 C 编译器生成的代码不会崩溃。因此，如果你定义一个接受两个参数的函数，但忽略第二个参数，然后。
 - en: you call it with one argument， usually on native architectures this doesn't
     crash。 What other simply however puts the signature of the function into the assembly
     and the。 runtime will validate the function pointer at runtime and check whether
@@ -738,6 +768,7 @@
   id: totrans-83
   prefs: []
   type: TYPE_NORMAL
+  zh: 你用一个参数调用它，通常在本地架构上这不会崩溃。然而，其他的简单地将函数的签名放入汇编中，运行时会在运行时验证函数指针，并检查其签名是否与声明的签名匹配。如果不匹配，它会因为调用间接函数指针不匹配而崩溃。
 - en: So here's an example。 So here's a C extension like NumPy or something。 So we
     define the function called do something。 Now this function actually just doesn't
     do anything。 it just returns non。 And it takes a single object which is the representation
@@ -745,6 +776,8 @@
   id: totrans-84
   prefs: []
   type: TYPE_NORMAL
+  zh: 这就是一个例子。这是一个类似于 NumPy 的 C 扩展。我们定义一个名为 do something 的函数。这个函数实际上什么都不做，它只返回 None。它接受一个对象，表示这个函数的
+    Python 对象。并且它将始终返回 None。
 - en: So then you need to tell the Python virtual machine the Python interpreter how
     to invoke， this。 So we say its name is do something。 And we say that here's the
     function point that we're going to call when we want to call。 this。 And then we
@@ -753,6 +786,8 @@
   id: totrans-85
   prefs: []
   type: TYPE_NORMAL
+  zh: 然后你需要告诉 Python 虚拟机，也就是 Python 解释器如何调用这个函数。因此我们说它的名称是 do something。我们说这是我们在想要调用时将要调用的函数指针。然后我们给出调用约定，即没有参数。后面的人员可能在底部看不到这一点，但在
+    method object.c 中。
 - en: the interpreter it will call this function with two arguments。 See this null
     here。 So it's going to put a null in as the second argument。 You know of course
     the reason we didn't take that as an argument is because it's always， null。 It
@@ -761,6 +796,8 @@
   id: totrans-86
   prefs: []
   type: TYPE_NORMAL
+  zh: 解释器会用两个参数调用这个函数。看这个 null。在作为第二个参数传入 null。你当然知道我们不把这个当作参数的原因是因为它总是 null。它没有提供有用的信息，因此
+    Python 包的 C 开发者会忘记它。
 - en: But in WebAssembly this is a crash。 And there's tons of these。 So I mean all
     the solution would be to fix all of them in the packages but we don't have。 the
     maintainer effort to do that because there's so many of them。 So the solution
@@ -768,6 +805,8 @@
   id: totrans-87
   prefs: []
   type: TYPE_NORMAL
+  zh: 但在 WebAssembly 中这会导致崩溃。而且这样的情况有很多。因此，我的意思是，解决方案是修复所有包中的这些问题，但我们没有这样的维护资源，因为数量实在太多了。经过深思熟虑，我们最终找到的解决方案是从
+    JavaScript 调用。
 - en: into WebAssembly are flexible。 They can be called with the wrong number of arguments
     and it just works。 So we use a trampoline call。 We call from WebAssembly back
     out to JavaScript and we say JavaScript why don't you call back。 into WebAssembly
@@ -776,6 +815,8 @@
   id: totrans-88
   prefs: []
   type: TYPE_NORMAL
+  zh: 进入 WebAssembly 的函数是灵活的。它们可以用错误的参数数量调用，且仍然可以正常工作。因此我们使用跳板调用。我们从 WebAssembly 调用回
+    JavaScript，并对 JavaScript 说，为什么不使用这个函数和这些参数回调 WebAssembly。然后它回调到 JavaScript，接受错误数量的参数，这没有问题。
 - en: This solution has been upstreamed into Python 3。11 thanks to the encouragement
     from Christian。 Himes。 You know and so I have a blog post about this you can see
     the pull request if you want。 It's a big thing。 Okay so another issue is for running。
@@ -784,6 +825,8 @@
   id: totrans-89
   prefs: []
   type: TYPE_NORMAL
+  zh: 这个解决方案已经在 Python 3.11 中上游合并，这要感谢 Christian Himes 的鼓励。你知道，我有一篇关于此的博客文章，如果你想可以查看
+    pull request。这是个大事件。好吧，另一个问题是运行。因此，许多 Python 用户面临的另一个问题是，你基本上无法使用。
 - en: a stupid client or request or all those libraries that need to interact with
     the network because。 sockets。work。 So what you have to do instead is to use JavaScript
     API such as fetch。 But then there is another problem that those APIs are often
@@ -792,6 +835,8 @@
   id: totrans-90
   prefs: []
   type: TYPE_NORMAL
+  zh: 一个愚蠢的客户端或请求，或者所有需要与网络交互的库，因为 sockets 是有效的。因此，你需要做的是使用 JavaScript API，例如 fetch。但随后出现了另一个问题，这些
+    API 通常是异步的，而 Python 期望这些函数是同步的。所以有一个正在进行的解决方案，它试图使用 web worker。
 - en: So web worker is essentially like a process in classical Python so it's another
     worker you。 can run in your browser to which you can actually send their requests
     to download your。 package async and meanwhile you block your main thread with
@@ -800,6 +845,8 @@
   id: totrans-91
   prefs: []
   type: TYPE_NORMAL
+  zh: 因此，Web Worker本质上就像经典Python中的一个进程，是另一个工作线程。你可以在浏览器中运行它，并向其发送请求以异步下载你的包，同时用原子操作阻塞主线程，直到该请求完成。有一个名为sync
+    link的项目正在开发中，旨在实现。
 - en: this process easier。 And so as an example another thing is for instance because
     you are in the browser sandbox。 you cannot access files on your file system due
     to security reasons。 However there is a Chrome file system API which allows you
@@ -808,6 +855,7 @@
   id: totrans-92
   prefs: []
   type: TYPE_NORMAL
+  zh: 这使得这个过程更容易。因此，作为一个例子，由于你在浏览器沙箱中，你无法出于安全原因访问文件系统中的文件。然而，有一个Chrome文件系统API，它允许你基本上使用这个系统，在M脚本和文件系统内挂载一个本地文件夹作为挂载点。
 - en: you can directly write into the host's OS file system。 Okay so we have a CTO
     in the browser so each browser process I guess we are going to call。 it comes
     with its own event loop and Python has event loops you can implement and so we。
@@ -816,6 +864,7 @@
   id: totrans-93
   prefs: []
   type: TYPE_NORMAL
+  zh: 你可以直接写入主机的操作系统文件系统。好的，因此我们在浏览器中有一个CTO，每个浏览器进程，我想我们称之为它，配有自己的事件循环，而Python有事件循环可以实现，因此我们有一个用于异步IO的自定义事件循环，它的基本功能是调度任务。
 - en: on the browser event loop。 So in a certain limitations like async IO。run until
     complete cannot work as expected because。 it blocks the same process that's actually
     doing the Python computation and so it cannot， block。 And we also have no control
@@ -823,6 +872,7 @@
   id: totrans-94
   prefs: []
   type: TYPE_NORMAL
+  zh: 在浏览器事件循环中。因为在某些限制条件下，如异步IO，run until complete无法按预期工作，因为它会阻塞实际上执行Python计算的同一进程，因此无法阻塞。而且我们对事件循环的生命周期也没有控制权。
 - en: But one of the big benefits of this is that you don't need to control the event
     loop lifecycle。 no one wants to do that。 You really just want to run your async
     code setting up the event loop is sort of baggage。 that we have to go through
@@ -831,6 +881,7 @@
   id: totrans-95
   prefs: []
   type: TYPE_NORMAL
+  zh: 但这一点的一个重大好处是你不需要控制事件循环的生命周期。没有人想这样做。你真的只想运行你的异步代码，设置事件循环有点像包袱，是我们必须经历的过程，以便运行异步代码。因此，另一个常见问题是你下载的包有多大。
 - en: So for instance if you have an application on the right here that loads pandas
     well you。 have to load pandas and all the dependencies of pandas so including
     numpy here and then。 you have to load CPIT on the standard library。 So in this
@@ -839,6 +890,7 @@
   id: totrans-96
   prefs: []
   type: TYPE_NORMAL
+  zh: 例如，如果你在右侧有一个加载pandas的应用程序，你必须加载pandas及其所有依赖项，包括numpy，然后你必须加载标准库中的CPIT。在这个示例中，在底部你可以看到我们总共下载了18MB，解压后大约30MB。
 - en: So this is a significant issue because Python ecosystem was never optimized
     for size because。 if you install locally it doesn't really matter。 There are historical
     large packages such as SyPy which has a lot of modules that might。 maybe you're
@@ -847,6 +899,7 @@
   id: totrans-97
   prefs: []
   type: TYPE_NORMAL
+  zh: 这是一个重大问题，因为Python生态系统从未针对大小进行优化。如果你本地安装，这实际上并不重要。有历史悠久的大型包，如SyPy，其中有很多模块可能在特定应用中不会用到，但它们仍然在你安装SyPy时存在。而且正如你之前提到的，一些包会包括测试。
 - en: So what can we do about this？ Well there are several possible ways。 So we could
     try to break large packages into smaller ones。 The problem is basically it changes
     your dependency graph so you have new packages that are created。 and that's a
@@ -855,6 +908,7 @@
   id: totrans-98
   prefs: []
   type: TYPE_NORMAL
+  zh: 那么我们该如何解决这个问题呢？其实有几种可能的方式。我们可以尝试将大型包拆分成较小的包。问题在于这基本上改变了你的依赖关系图，因此会创建新的包，而这有点难以管理。另一种方法是使用打包工具，打包工具意味着我们有一些Python。
 - en: code that we need to run。 We know the code in advance。 We're going to run it
     in the Pyodeid and we're going to check at runtime which files are。 actually accessed。
     And then we're going to recreate an archive with just those files which should
