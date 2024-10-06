@@ -2070,6 +2070,8 @@
   id: totrans-234
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们正在处理的函数，这意味着我们需要在这里有一个初始化方法，它接受一个参数，而这个参数将是一个函数。看起来将这个函数存储以备后用是个好主意。因此，像这样的结构就是我们
+    count calls 的基本结构。
 - en: later that should work the same as the as the， now it's defined using a class
     instead so let's see there's of course still some details missing。 here so we'll
     add in those shortly but i'm first just going to go here in the task。 and flip
@@ -2079,6 +2081,8 @@
   id: totrans-235
   prefs: []
   type: TYPE_NORMAL
+  zh: 稍后这应该与现在定义的类一样工作，因此当然这里还有一些细节缺失。我们将很快添加这些，但我首先只是想在任务中转过来，使用 count calls。所以现在让我们看看能否重启我的终端。在我的
+    IPython 上，这看起来不错，现在我们可以看到好的，我们又回到了这个情况。
 - en: we were earlier when we were running this task let me just run it with a regular
     python here。 and see that we have no attribute name calls so let's start working
     on this one then so first of。 all we again want to have the attribute name calls
@@ -2087,6 +2091,7 @@
   id: totrans-236
   prefs: []
   type: TYPE_NORMAL
+  zh: 在我们之前运行这个任务时，让我在这里用常规的 Python 再运行一次。我们看到没有属性名称调用，因此我们开始着手这个任务。首先，我们想要的属性名称调用，既然这是一个类，我们就更自然地定义调用，而不是像我们在这里那样将其添加到函数中。
 - en: we just add it as a regular instance attributes in our init method。 so this
     should at least help us a little bit and now we can see that yeah we're back to
     the situation。 way so earlier where we have zero name calls and we get the non-returns
@@ -2095,6 +2100,7 @@
   id: totrans-237
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们只是将其作为常规实例属性添加到我们的初始化方法中。因此，这至少应该对我们有所帮助，现在我们可以看到，是的，我们回到了之前的情况。这样一来，我们的名称调用为零，并且在调用函数时我们得到了非返回值。因此，从某种意义上说，这个逻辑是可行的，但我们没有。
 - en: the function kind of running properly yet i want to add one more test just to
     my。 quick little set here as well and let's just remember that we used the functor
     tools reps。 earlier and now to get for instance a good name and so on so just
@@ -2103,6 +2109,7 @@
   id: totrans-238
   prefs: []
   type: TYPE_NORMAL
+  zh: 函数似乎还没有正常运行，我想再添加一个测试到我的小集合中。让我们记住之前使用过的函数工具 reps，现在为了得到一个好的名称等等，所以我想检查我们是否也能对这个函数做同样的事情，是的，我们可以看到有些地方出错了。
 - en: there as well okay let's see then how should we continue working with this。
     well for to get rid of this one we want to do something with the functor tools
     and now it's not。 completely clear to me where should i put the reps right probably
@@ -2111,6 +2118,7 @@
   id: totrans-239
   prefs: []
   type: TYPE_NORMAL
+  zh: 那么，我们应该如何继续进行呢？为了摆脱这个问题，我们想要做一些关于函数工具的事情，而现在我不太清楚我应该把 reps 放在哪里。也许我们在之前的函数中有它，所以也许我应该把它放在那里，或者我应该把它放在这里。
 - en: but then i need to refer to the function which is only fine there and so on
     so it's it's hard to。 use the functor tools reps like we do it here and what we
     can do instead is to just use functor tools。 remember that the functor tools reps
@@ -2119,6 +2127,8 @@
   id: totrans-240
   prefs: []
   type: TYPE_NORMAL
+  zh: 但我需要引用该函数，而这在此是可以的等等，因此使用函数工具的 reps 会很困难，就像我们在这里做的那样，而我们可以做的就是直接使用函数工具。请记住，函数工具的
+    reps 实际上只是使用名为 update wrapper 的东西在后台运行，所以我们将使用这个，并查看函数工具的 update wrapper 它接受。
 - en: both the wrapper and a wrapped and where it updates a wrapper function to look
     like the wrapped function。 and now what i want to wrap to make look like or what's
     the wrapper that's just the count class。 thing so i'll just write self there and
@@ -2127,6 +2137,8 @@
   id: totrans-241
   prefs: []
   type: TYPE_NORMAL
+  zh: 包装器和被包装函数，以及它如何更新包装函数，使其看起来像被包装的函数。现在我想要包装的内容使其看起来，或者说包装的内容就是 count 类的内容。所以我会在这里写
+    self，然后我想要包装的是函数，哦，这在这里是什么。让我们看看这个运行情况，现在我们可以看到它已经得到了名称 Fibonacci，所以我们得到了这个。
 - en: one in place and we have the syracles but now we just need to work a little
     bit on call itself。 and let's see what did we need to do with call well each time
     we call we want to increase the。 number calls so i'll add one and then yeah let's
@@ -2135,6 +2147,7 @@
   id: totrans-242
   prefs: []
   type: TYPE_NORMAL
+  zh: 在这里我们有syrcales，但现在我们只需要稍微处理一下调用本身。让我们看看我们需要对调用做什么，每次调用时我们想要增加调用的次数，所以我会加一，然后是的，我们再测试一下，确保它工作。是的，现在我们可以看到我们得到了计数和视图，然后我们想要调用函数，所以在这个情况下我。
 - en: want to return itself so now we call the function that we have in this sort
     of here or and we're just。 gonna pass through the variables that we got in call
     so hargs and hargs so let's see then。 so now if we run now it's starting to look
@@ -2143,6 +2156,7 @@
   id: totrans-243
   prefs: []
   type: TYPE_NORMAL
+  zh: 我想返回自身，所以现在我们调用我们在这里的函数，或者我们只需传递我们在调用中得到的变量，所以是hargs和hargs。让我们看看，那么现在如果我们运行，它开始看起来更好了，所以现在我们得到了某种方式，实际上以适当的方式装饰了我们的斐波那契函数。让我们一起看看这些。
 - en: and so what we see here is that the count call function decorator and the count
     calls。 class decorator they both work in the same way here and if we look at the
     code you can also see。 that it's it's very much the same so essentially all the
@@ -2151,6 +2165,7 @@
   id: totrans-244
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以我们在这里看到的是，计数调用函数装饰器和计数调用类装饰器在这里都以相同的方式工作。如果我们看看代码，你也会看到它们实际上非常相似。所以基本上我们在计数调用中所有的代码，现在都放入了调用中。这就是每次我们调用时发生的事情。
 - en: decorator function and then we had some of this other initialization function
     or methodology here。 and that stuff we put in the init of the class， okay then
     what one more thing related to decorators and classes and so let's now。 have a
@@ -2160,6 +2175,7 @@
   id: totrans-245
   prefs: []
   type: TYPE_NORMAL
+  zh: 装饰器函数，然后我们在这里有一些其他的初始化函数或方法。我们将这些内容放在类的初始化中，好吧，还有与装饰器和类相关的另外一件事，所以现在让我们来看看。是的，让我们回到我们在这里的跟踪装饰器。我就这样导入它，现在说我想用它来装饰一个类，而不是装饰一个函数。
 - en: but to decorate a class so we're kind of doing the opposite now so what you've
     seen。 with the count calls was how to use a class to decorate a function now we're
     going to see can we。 use a function to decorate a class so let's do something
@@ -2168,6 +2184,7 @@
   id: totrans-246
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以我们现在有点反过来了，你看到的关于计数调用的是如何使用一个类来装饰一个函数，现在我们要看看能否使用一个函数来装饰一个类。所以我们来做一些类似于重复使用旧的跟踪的东西。我们有某种类，对于这个例子来说，它其实并不是很重要，所以我就直接创建一个。
 - en: a quickly trivial class that was really weird but I decorated it with trace
     and now I'm able to say。 thing equals thing like this and you can here see that
     the trace kicks in together so when I。 decorated the class here it means that
@@ -2176,6 +2193,7 @@
   id: totrans-247
   prefs: []
   type: TYPE_NORMAL
+  zh: 快速创建了一个非常简单的类，它真的很奇怪，但我用跟踪装饰了它，现在我能够说。thing等于thing像这样，你可以在这里看到跟踪开始起作用。所以当我在这里装饰类时，这意味着当我基本上调用类（这意味着有点像实例化类）时，跟踪就开始工作，我可以看到它正在调用。
 - en: thing and then it this thing returned an object which is now our thing now this
     seems to just work。 out of the box but one thing has kind of changed here it seems
     like this is a thing right but now。 if I want to pick I can say is instance little
@@ -2184,6 +2202,7 @@
   id: totrans-248
   prefs: []
   type: TYPE_NORMAL
+  zh: 然后这个东西返回了一个对象，这现在就是我们的东西。现在这似乎可以直接使用，但有一件事似乎发生了变化。看起来这是一个东西，对吧，但现在如果我想检查，我可以说这个小东西是否是类的实例，我们会得到一些奇怪的错误，说这个实例参数也必须是一个类型或类型的元组，所以看起来。
 - en: like the thing here it's not the type anymore so let's have a look at see what
     it is oh thing has。 turned into a function and if we think about this a little
     bit we might be able to realize what。 has happened because how did we define thing
@@ -2398,6 +2417,7 @@
   id: totrans-271
   prefs: []
   type: TYPE_NORMAL
+  zh: 这应该是每秒米，快速计算一下，让我们看看博尔特在创下100米纪录时的速度有多快。他在98秒内跑完100米，所以这是在2009年世界锦标赛期间，我可以看到他那100米的平均速度是每秒10.4米，就像我们现在看到的。
 - en: okay so that's just some mainly using a decorator for bookkeeping maybe not
     that helpful。 but let's see how we can actually build this out a little bit to
     work with units themselves。 and to do this i'm going to use a very cool library
@@ -2406,6 +2426,7 @@
   id: totrans-272
   prefs: []
   type: TYPE_NORMAL
+  zh: 好吧，这主要是使用装饰器来做记账，也许不是很有帮助。但让我们看看如何实际构建这一点来处理单位本身。为此，我将使用一个非常酷的库，叫做pint，你的第一步就是通过pip安装pint，因此库本身。
 - en: and i already have this library installed so you can see it's already satisfied
     but if you。 doesn't don't have it you should install it for yourselves。 and let's
     just have a quick look at how pint works so you import it import pint and then
@@ -2414,6 +2435,7 @@
   id: totrans-273
   prefs: []
   type: TYPE_NORMAL
+  zh: 我已经安装了这个库，所以你可以看到它已经满足要求，但如果你没有的话，应该为自己安装它。让我们快速看看pint是如何工作的，你导入它`import pint`，然后pint有一个叫做单位注册表的东西，你可以在这里看到它只是一些。
 - en: stores definitions and relationships between units so this will be sort of like
     a global。 thing that you need to access to get to get the units so when you start
     using pint you want。 initialize it by just making an instance of the unit registry。
@@ -2422,6 +2444,7 @@
   id: totrans-274
   prefs: []
   type: TYPE_NORMAL
+  zh: 存储单位之间的定义和关系，这将像是一个全球性的东西，你需要访问才能获取单位。因此，当你开始使用pint时，你想通过仅仅创建一个单位注册表的实例来初始化它。然后你可以对单位注册表做的是，你可以添加字符串或调用它。
 - en: with a string like this meters per second and you can see here that it then
     gives us a unit。 like this and these units are able to calculate so we could for
     instance now say okay two meters。 per second then we have two meters per second
@@ -2430,6 +2453,7 @@
   id: totrans-275
   prefs: []
   type: TYPE_NORMAL
+  zh: 使用像这样的字符串，每秒米，你可以在这里看到它给了我们一个单位。像这样，这些单位能够计算，所以我们现在可以说，好的，每秒两米，那么我们有每秒两米，但我也可以把这个乘以像三秒的东西。如果我这样做，现在我说，好的，如果我以每秒两米的速度移动。
 - en: for three seconds how far can I move that and we can see here then let's okay
     that's six meters。 so it's able to essentially just multiply two times three and
     it's able to multiply meters per。 second times seconds and figure out that that's
@@ -2438,6 +2462,7 @@
   id: totrans-276
   prefs: []
   type: TYPE_NORMAL
+  zh: 三秒我能移动多远，我们可以在这里看到，好的，六米。因此，它能够本质上只是将两乘以三，并能够将每秒米乘以秒，得出这是米，但我们也可以做其他单位，所以让我们尝试。例如，顺便提一下，我们并不是在用每秒米来测量速度，我们在。
 - en: measuring it in miles per hour for instance and then if we move for two miles
     per hour for three。 seconds how far do we move and now pint has also calculated
     well this might not be that。 satisfactory but it's calculated okay in this case
@@ -2446,6 +2471,7 @@
   id: totrans-277
   prefs: []
   type: TYPE_NORMAL
+  zh: 例如，以每小时英里为单位进行测量，然后如果我们移动两英里每小时，持续三秒，我们移动了多远，现在pint也计算了，这可能不是很令人满意，但它计算了，在这种情况下，我们计算得出每小时移动了六英里。这可能不是很有帮助，每小时六英里是多少？这不是我知道的距离。
 - en: but actually we can have pint simplified as far as using something we call two
     base units。 and this we can get out the result it will kind of simplify everything
     down to。 the base units and we can see that okay we move 2。7 meters more or less
@@ -2453,6 +2479,7 @@
   id: totrans-278
   prefs: []
   type: TYPE_NORMAL
+  zh: 但实际上，我们可以将pint简化为使用我们称之为基本单位的东西。这样我们可以得出结果，它会将所有内容简化到基本单位，我们可以看到，好的，我们大约移动了2.7米，或者我们也可以指定。
 - en: here what do we actually want to see this and so maybe we want to。 okay so that's
     just the basics of pint so let's now combine our decorator with pint and see how。
     that works so let's go back to our meters per second decorator and what we need
@@ -2461,6 +2488,7 @@
   id: totrans-279
   prefs: []
   type: TYPE_NORMAL
+  zh: 这里我们实际上想看到这个，所以也许我们想要。好的，这只是pint的基础，现在让我们将装饰器与pint结合起来，看看它是如何工作的。让我们回到我们的米每秒装饰器，现在我们需要做的是，我希望这个返回的不仅仅是函数本身，而是我想要。
 - en: actually multiply in the unit into the return value of the function so the first
     thing we need。 to do right was to have the unit registry so I want to find unit
     registry and I want to instantiate it。 and now we could do what we did earlier
@@ -2469,6 +2497,7 @@
   id: totrans-280
   prefs: []
   type: TYPE_NORMAL
+  zh: 实际上将单位乘入函数的返回值中。所以我们首先需要做的是拥有单位注册表，我想找到单位注册表并实例化它。现在我们可以做我们之前做的，只是拥有一个全局变量来指向单位注册表，但为了保持我们的命名空间干净，我会添加这个。
 - en: kind of global unit registry just on the decorator here itself。 and then yeah
     we can just keep the unit here and let's now。 instead of saying unit there I'll
     just say that the unit this time is， I'm yours。 and I'm sorry I will just keep
@@ -2476,6 +2505,7 @@
   id: totrans-281
   prefs: []
   type: TYPE_NORMAL
+  zh: 一种全局单位注册表，就在装饰器本身上。然后，是的，我们可以在这里保持单位，现在而不是说单位在那儿，我会说这次单位是，我的。抱歉，我会保持这样，然后我现在想要有。
 - en: so then I'll do my inverse per second underscore and this one takes in arcs
     and quarks as usual。 and this and now I return the function called with the arcs
     and quarks and I multiply this。 meters per second year eggs of the unit registry
@@ -2484,6 +2514,7 @@
   id: totrans-282
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以我会做我的逆每秒下划线，这个与通常的弧和夸克一起接受。现在我返回用弧和夸克调用的函数，并且我将这个米每秒的单位乘以单位注册表的单位。让我们看看，现在我们不返回函数本身，而是返回快速函数。
 - en: so now you can see this looks more like they are critical decorators where we
     have a rapid function。 that we return back here okay and now let's just apply
     this one on the first function that we had。 earlier and let's see what happens
@@ -2492,6 +2523,7 @@
   id: totrans-283
   prefs: []
   type: TYPE_NORMAL
+  zh: 现在你可以看到这看起来更像是我们有一个快速函数的关键装饰器，我们在这里返回。好的，现在让我们将这个应用到我们之前的第一个函数上，看看会发生什么。所以早些时候我们计算了平均速度，现在我们将做一些更有趣的事情，我将把这个保存为。
 - en: variable bolts like this and first of all we can now just look at this violation
     bolt and we can。 see that it's still 10。4 and now we have the unit right here
     right so we can start playing with it。 so first of all just to show we could say
@@ -2500,6 +2532,7 @@
   id: totrans-284
   prefs: []
   type: TYPE_NORMAL
+  zh: 像这样的可变螺栓，首先我们可以看看这个违规螺栓，看到它仍然是10.4，现在我们有单位在这里，所以我们可以开始玩这个。首先，假设我们说如果螺栓的速度是原来的两倍会发生什么，那么在这种情况下，它将持续运行一秒钟，但更有趣的是了解如何。
 - en: fast did he actually run we can see here that we can convert this to kilometers
     per hour。 oh 3738 kilometers per hour that's recently fast or we could also do。
     a minute hour something like this and that will give us a number and it's also
@@ -2508,6 +2541,7 @@
   id: totrans-285
   prefs: []
   type: TYPE_NORMAL
+  zh: 他实际上跑得快吗？我们可以在这里看到我们可以将其转换为公里每小时。哦，3738公里每小时，最近很快，或者我们也可以做。每分钟小时，类似这样的事情，这将给我们一个数字，并且也可以。提取出来，如果你现在需要将其存储为一个普通的浮动数字，如果你这样做。
 - en: it and that will kind of give you a little， okay so now we have defined ourselves
     a decorator that can add in the unit meters per second。 and now let's say that
     we have another function and that is not returning speed it's returning a。 distance
@@ -2517,6 +2551,7 @@
   id: totrans-286
   prefs: []
   type: TYPE_NORMAL
+  zh: 这样会给你一点，好的，所以现在我们定义了一个可以添加米每秒单位的装饰器。现在假设我们有另一个函数，它不返回速度，而是返回一个距离，在这种情况下，我们不能真正用米每秒来装饰它，我们需要一个新的装饰器，具有距离单位，所以我们创建米装饰器，并且我们逐步进行。
 - en: the same motions and we can see that that's not really working out too well
     for us so what we really。 want to do here is to create ourselves a decorator but
     it we want to be able to use it。 let's see so if you look at this one I want to
@@ -2525,6 +2560,8 @@
   id: totrans-287
   prefs: []
   type: TYPE_NORMAL
+  zh: 但同样的动作，我们可以看到这并没有为我们提供太好的效果，所以我们真正想要做的是创建一个装饰器，但我们希望能够使用它。让我们看看，所以如果你看看这个，我希望能够写一些类似use
+    unit的东西，然后将单位作为参数传递给装饰器，这样我就可以使用相同的装饰器。
 - en: for many different types of units and essentially creating that decorator is
     our task number five。 so how can we create a decorator that will be able to be
     used in this way and give us something。 reasonable and let's see here this works
@@ -2533,6 +2570,7 @@
   id: totrans-288
   prefs: []
   type: TYPE_NORMAL
+  zh: 对于许多不同类型的单位，创建这个装饰器是我们的第五个任务。那么，我们如何能创建一个能够以这种方式使用并给我们一些合理结果的装饰器呢？让我们看看这是否可行，所以让我们来看看。这单位尚未定义，但我还没有做练习，只是看看我们的。
 - en: our file I can see here now that we have we're importing something called use
     unit。 and in this case the task here will be actually， comparing the speed of
     a runner and of a plane so just to show you how this can end up working。 let's
@@ -2542,6 +2580,7 @@
   id: totrans-289
   prefs: []
   type: TYPE_NORMAL
+  zh: 在我们的文件中，我现在可以看到我们导入了一些叫做use unit的东西。在这种情况下，这个任务实际上是比较跑步者和飞机的速度。所以为了向你展示这如何能运作，让我们运行这个任务文件。现在我可以像之前一样找到博尔特，但现在他是一个能在9.58秒内跑完100米的跑者，而飞机我假装是一架从鸟那里起飞的飞机。
 - en: there are no direct routes but if there were that plane would be flying something
     like 6，261。 kilometers more or less in 9 hours so you can see here now I define
     two different things that can。 move and now if you have a look over here in the
@@ -2550,6 +2589,7 @@
   id: totrans-290
   prefs: []
   type: TYPE_NORMAL
+  zh: 虽然没有直接的航线，但如果有的话，那架飞机大约在9小时内飞行6261公里，所以你可以看到，我现在定义了两个不同的东西，它们可以移动。现在如果你看看任务，我们看到类Runner输入了距离和时间，并可以计算每秒米的平均速度，而飞机。
 - en: also takes in distance and duration but calculates its average speed in kilometers
     per hour。 so that means that now if I ask both for what's your average speed，
     I can see that that is 10。4 meters per second as we have seen before and I can
@@ -2558,6 +2598,7 @@
   id: totrans-291
   prefs: []
   type: TYPE_NORMAL
+  zh: 同时还需要输入距离和时间，但计算其平均速度为每小时公里数。这意味着如果我问博尔特你的平均速度是多少，我可以看到这是10.4米每秒，正如我们之前所看到的，我可以问我的飞机，你的平均速度是多少，它会是大约696，几乎700公里每小时。
 - en: and now something possibly interesting would then would be to see how many times
     faster。 I assume the plane is faster how many times faster is the plane then you
     say in bolt when it's running。 so to do that we can take this and divide by both
@@ -2566,6 +2607,7 @@
   id: totrans-292
   prefs: []
   type: TYPE_NORMAL
+  zh: 现在可能有趣的是看看飞机到底快多少倍。我假设飞机更快，那么飞机到底比博尔特快多少倍呢？所以为了做到这一点，我们可以将这个速度除以博尔特的平均速度，我将在这种情况下得到一个更好的比率。如果你现在看看这个比率，似乎飞机的速度是66.6公里。
 - en: seconds per hour meters faster than bolt again we get this completely crazy
     unit that doesn't really。 tell as much so let's try to see by looking at the base
     units。 and now we can see we've done something correctly because we end up with
@@ -2574,6 +2616,7 @@
   id: totrans-293
   prefs: []
   type: TYPE_NORMAL
+  zh: 秒每小时、米比博尔特快，我们又得到了这个完全疯狂的单位，它并没有提供太多信息。所以让我们试着通过查看基本单位来解决这个问题。现在我们可以看到我们做对了一些事情，因为我们得到了一个无量纲的结果。现在很容易看出，飞机的速度实际上比博尔特快一点点，少于20倍。
 - en: bolt so I guess that means that bolt it feels like it's fairly faster。 okay
     so this is kind of the calculation that we one end up being able to do at the
     end of this task。 so how do you actually create this use unit decorator。 so let's
@@ -2582,6 +2625,7 @@
   id: totrans-294
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以我想这意味着博尔特感觉上相对更快。好的，这就是我们最终能够在这个任务结束时进行的计算。那么，如何实际创建这个使用单位的装饰器呢？让我们看看，正如我们简要提到的那样，我们希望能够做一些事情。
 - en: something like this it's kind of the idea here and if you remember so essentially
     when when trying。 to figure out how a decorator work it's always useful to go
     back to what what does the notation。 mean what does this thing appear mean and
@@ -2590,6 +2634,7 @@
   id: totrans-295
   prefs: []
   type: TYPE_NORMAL
+  zh: 这就是这里的核心思想，如果你记得的话，基本上在试图理解装饰器是如何工作的时，回顾一下符号的含义总是很有帮助。这个符号出现的意义是什么，请记住，这会类似于如果我们先定义我们的平均速度。虽然我不打算写出来，但我们已经定义了。
 - en: and then we decorate it by saying something like okay average speed is the same
     as and then we look。 at what is this here because it's the same as doing that
     and apply it to average。 let's move this over a little bit so you can see and
@@ -2598,6 +2643,8 @@
   id: totrans-296
   prefs: []
   type: TYPE_NORMAL
+  zh: 然后我们通过说类似于“平均速度是相同的”来装饰它，然后我们看看这里是什么，因为这与这样做是相同的，并应用于平均速度。我们把这个稍微移过来一点，这样你就能看到。然后让我们看看，如果我们现在盯着这个看一段时间，你会看到调用
+    `use unit` 与“米每秒”结合，这部分应该返回。
 - en: a decorator so the use unit will actually not be a decorator itself it will
     be a decorator factory。 it will be something that can create decorators for us
     so it will be a different decorator depending。 on the unit and so what that actually
@@ -2606,6 +2653,8 @@
   id: totrans-297
   prefs: []
   type: TYPE_NORMAL
+  zh: 作为一个装饰器，`use unit` 实际上并不是一个装饰器本身，而是一个装饰器工厂。它将会是一个可以为我们创建装饰器的东西，因此它会是一个根据单位不同而不同的装饰器。实际上，这意味着你将会得到类似于
+    `def use unit` 的东西，这个东西应该只接收一个单位，然后在这里你要做一些事情。
 - en: something and then essentially you want to hear define some kind of decorator
     that you will then。 return from use unit so that they call use unit meters per
     second is a decorator so that's what。 we need to return from use unit and then
@@ -2614,25 +2663,31 @@
   id: totrans-298
   prefs: []
   type: TYPE_NORMAL
+  zh: 然后基本上，你想在这里定义某种装饰器，你将从 `use unit` 返回这个装饰器。所以它叫 `use unit meters per second`
+    是一个装饰器，这就是我们需要从 `use unit` 返回的内容。然后这个装饰器将是一个可以接收一个函数的函数，然后再次包装这个函数。因此我们在这里所做的其实是添加了一个层。
 - en: of inner functions to what we already have been doing okay so then that's the
     task can we make it。 run on the run run clean code here and i'm just gonna say
     good luck with that and then i'll be back。
   id: totrans-299
   prefs: []
   type: TYPE_NORMAL
+  zh: 内部函数的用途，我们已经在做的事情。好吧，那么这个任务就是我们能否让它在干净的代码上运行。我会说祝你好运，然后我会回来。
 - en: '![](img/13dc3ed458136a286215705708b44e8c_25.png)'
   id: totrans-300
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/13dc3ed458136a286215705708b44e8c_25.png)'
 - en: shortly with with one solution for it， okay i hope you enjoyed that task so
     now let's see how can we make the use unit decorator。
   id: totrans-301
   prefs: []
   type: TYPE_NORMAL
+  zh: 简单来说，这里有一个解决方案，我希望你喜欢这个任务。那么现在我们来看看如何使用 `use unit` 装饰器。
 - en: '![](img/13dc3ed458136a286215705708b44e8c_27.png)'
   id: totrans-302
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/13dc3ed458136a286215705708b44e8c_27.png)'
 - en: and so that you can take in arguments and as before i've gone in here now and
     just added a。 the test case to to our file here so that we can see where we're
     at just by running running this。 task with python and first of all let's just
@@ -2641,6 +2696,8 @@
   id: totrans-303
   prefs: []
   type: TYPE_NORMAL
+  zh: 这样你就可以传入参数，和之前一样，我现在已经在这里添加了一个测试用例到我们的文件中，这样我们可以通过运行这个任务来查看我们目前的进展。首先，让我们看看现在我们甚至无法从装饰器中导入
+    `use unit`。所以我们需要先定义它，然后我们再来看。
 - en: my python decorators i'm just here all the way at the bottom and i'm gonna define。
     use unit decorator and in this case let's see this was now as we mentioned this
     will be a decorator。 not really a decorator itself it will be a decorator factory
@@ -2649,6 +2706,7 @@
   id: totrans-304
   prefs: []
   type: TYPE_NORMAL
+  zh: 我的 Python 装饰器就在这里，最底部，我将定义 `use unit` 装饰器。在这种情况下，正如我们提到的，这将是一个装饰器，实际上并不是真正的装饰器，而是一个装饰器工厂，返回装饰器的东西。那么这实际上意味着什么呢？这意味着对于这个。
 - en: let's first actually just say here that this decorator will register， or add
     units to return values。 what i'm gonna do here is that i'm gonna define the use
     unit decorator that will be the thing that i。 want to return and since this is
@@ -2657,6 +2715,7 @@
   id: totrans-305
   prefs: []
   type: TYPE_NORMAL
+  zh: 首先，我们先说这个装饰器将注册，或将单位添加到返回值。我要做的是定义一个使用单位的装饰器，这将是我。想要返回的东西，由于这是一个装饰器，它会接受一个函数，然后它将。返回一些函数，我只是会返回相同的函数。
 - en: and my decorator factory and then needs to return for the crater so if we do
     something like this。 now we have created a i guess trivial decorator factory so
     whatever the value of unit here i just。 return decorator that does nothing it
@@ -2665,6 +2724,7 @@
   id: totrans-306
   prefs: []
   type: TYPE_NORMAL
+  zh: 我的装饰器工厂需要为创造者返回值，所以如果我们做这样的事情。现在我们创建了一个我想是微不足道的装饰器工厂，所以无论这里单位的值是什么，我只是。返回一个什么都不做的装饰器，它只会返回函数本身，但这只是为了检查。我们正在做的后勤工作，所以现在调用我们的任务，我们可以看到它开始运行。
 - en: it's able now to calculate the average speed of our both it's able to calculate
     the average speed of our。 plane but you can see there's no units here and then
     we get an error when we start to actually use。 the units here by calling to base
@@ -2674,6 +2734,7 @@
   id: totrans-307
   prefs: []
   type: TYPE_NORMAL
+  zh: 现在能够计算我们两个的平均速度，它能够计算我们。飞机的平均速度，但你可以看到这里没有单位，然后当我们开始实际使用。这里的单位时会出现错误，但这很有希望，我们在某种程度上正在取得进展。所以现在我们想要实际建立我们的装饰器工厂，所以我现在要做的第一件事是。
 - en: we did earlier i need to instantiate this unit registry and i'm just gonna store
     it on my。 function as an attribute so here we're gonna do unit registry and now
     we can see that。 my flake 8 is hopefully pointing out that i haven't defined a
@@ -2682,6 +2743,7 @@
   id: totrans-308
   prefs: []
   type: TYPE_NORMAL
+  zh: 像之前一样，我需要实例化这个单位注册表，我只是要把它存储在我的。函数作为一个属性，所以在这里我们将做单位注册表，现在我们可以看到。我的`flake8`希望指出我没有定义一个点，所以让我们在这里运行一下。然后我们很高兴我们的代码风格检查工具正常工作，所以现在我们有了单位注册表，这意味着我们应该。
 - en: able to start returning some functions here or adding in some units i guess
     so now we should kind。 of focus on this part because on the outside we now have
     a decorator factory but so far we've。 just been thinking about decorators so the
@@ -2691,6 +2753,7 @@
   id: totrans-309
   prefs: []
   type: TYPE_NORMAL
+  zh: 能够开始在这里返回一些函数或者添加一些单位，我想现在我们应该有点。专注于这部分，因为在外部我们现在有一个装饰器工厂，但到目前为止我们只是在思考装饰器。所以工厂有点像是部分干扰了我们的思维，所以现在我们想要以我们通常写装饰器的方式来写这个，稍微忘掉它。
 - en: what's on the outside and so how do we write our decorators well we define an。
     a wrapper function so the wrapper function i'll just call use units with。 for
     as usual and remember that these things usually then take in the harks and quarks
@@ -2699,6 +2762,7 @@
   id: totrans-310
   prefs: []
   type: TYPE_NORMAL
+  zh: 外部的内容，那么我们如何编写我们的装饰器呢？我们定义一个。包装函数，我将这个包装函数称为使用单位，像往常一样。并记住，这些东西通常会接受函数的参数和夸克。我们可以直接传递过去，并且在某个时候我们将返回参数的函数。
 - en: and quarks and so that's more or less what we're doing there but then the decorator
     itself should。 now return this rapid function so here we want to return use unit
     like this and now we should also。 remember to apply the fun tools wraps of and
@@ -2707,6 +2771,7 @@
   id: totrans-311
   prefs: []
   type: TYPE_NORMAL
+  zh: 夸克，所以我们大致上就是在做这个，但是装饰器本身应该。现在返回这个快速函数，所以在这里我们想要返回使用单位，像这样，现在我们还应该。记得应用`functools.wraps`，所以现在我们有了一些至少是某种的。创造者，它修正了一些我们现在能看到的东西，我仍然没有做到我承诺的事情。
 - en: doing which was actually multiplied by units so let's fix that part as well
     and so that means that。 i need to take the unit unit registry and the unit from
     it。 oh like this and let's see yeah so we can try to run this and see now it seems
@@ -2790,6 +2855,7 @@
   id: totrans-320
   prefs: []
   type: TYPE_NORMAL
+  zh: 注意这里有一些警告输出，你可以看到调用随机问候的地方得到了警告前缀，这来自于日志记录的警告方法，因此实际上并没有打印到屏幕上，而是通过日志记录的警告方法进行了记录，所以超级跟踪可以作为装饰器工作，正如你所看到的，以及我们上次看到的，我们是装饰器。
 - en: factories so essentially your task for task number six will be how can you implement
     this。 and again i'm just going to give a few small hints if you want to work completely
     without hints。 just take a break now but one little hint that i'm kind of going
@@ -2798,6 +2864,7 @@
   id: totrans-321
   prefs: []
   type: TYPE_NORMAL
+  zh: 工厂，所以基本上，你第六个任务的任务是你如何实现这一点，我再给几个小提示，如果你想完全没有提示地工作，那就现在休息一下，但我将给出的一个小提示，你可能听过几次，现在让我们试着看看这个表示法。
 - en: here really mean right so we have now both something that we can write as super
     trace。 or we can write it with the with the arguments and if we remember what
     that means is that we have some。 we have some function but we want to create and
@@ -2806,6 +2873,7 @@
   id: totrans-322
   prefs: []
   type: TYPE_NORMAL
+  zh: 这里真正的意思是什么，所以我们现在有一些可以作为超级跟踪编写的内容，或者我们可以带有参数进行编写，如果我们记住这意味着我们有一个函数，但我们想创建，这实际上意味着我们要么在做超级跟踪，要么在做f等于超级跟踪的日志记录。
 - en: warning， of us and we need this super trace function to be able to handle both
     of these cases。 and the trick there to kind of get you started is that it is in
     general it will be hard to be able。 to support the creators with taking positional
@@ -2814,6 +2882,7 @@
   id: totrans-323
   prefs: []
   type: TYPE_NORMAL
+  zh: 警告，我们需要这个超级跟踪函数来处理这两种情况。要开始的诀窍是，通常很难支持使用位置参数的创建者，所以让我现在深入讲讲这一点。现在我们无法做到这一点，这将不会按预期工作，所以我会说。
 - en: we want to only use keyword arguments here and the reason is just that we need
     to somehow recognize。 that the argument we're getting is a function that we're
     going to decorate so in the easiest way to。 do that is just to say okay the first
@@ -2822,6 +2891,7 @@
   id: totrans-324
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们想在这里仅使用关键字参数，原因是我们需要以某种方式识别我们获取的参数是一个我们要装饰的函数，因此最简单的方法就是，如果第一个位置参数是一个函数，那么我们将与此进行处理，但你可以看到，如果没有记录器，这样做将会遗漏那个函数。
 - en: warning would be a callable it will be a function and it would be very hard
     to differentiate this。 so we're gonna put this limitation on that we're gonna
     use a。 the keyword arguments and that kind of gives you then some starting point
@@ -2830,6 +2900,7 @@
   id: totrans-325
   prefs: []
   type: TYPE_NORMAL
+  zh: 警告将是一个可调用的，它将是一个函数，并且很难区分这一点，所以我们将对此施加限制，我们将使用关键字参数，这样给你一个起点，这意味着首先，它应该能够像往常一样接受一个函数作为参数，它也应该能够。
 - en: to leave out that function right so what we're doing here relieving that function
     out so let's see。 what that actually means then um so that means that when you
     define your super trace that's both。 a clear and a decorative factory and the
@@ -2839,6 +2910,7 @@
   id: totrans-326
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以我们在这里做的是排除那个函数，让我们看看这实际上意味着什么，所以这意味着当你定义超级跟踪时，它既是一个清晰的又是一个装饰工厂，这个签名大概是这样的：它可以接受一个函数或一个记录器，但这两者必须是可选的，所以我们需要指定。
 - en: some default values for them for the sense to just say that if we're not giving
     a function we'll just。 use none to say that and then i'm just also just gonna
     force or use the star here just means that。 everything after this meets the keyword
@@ -2847,6 +2919,7 @@
   id: totrans-327
   prefs: []
   type: TYPE_NORMAL
+  zh: 对于这些默认值的设置，意思是如果我们不提供一个函数，我们就用`none`来表示，然后我还会强制使用星号，这意味着后面的所有内容都被视为关键字参数。将它放在这里并不是绝对必要的，但指出这一点还是挺好的。
 - en: arguments and since we want super trace to work also with just the function
     we need logger here to be。 optional as well so this should then take a also have
     an optional value and the value of this would be。 what do we use for logging in
@@ -2856,6 +2929,7 @@
   id: totrans-328
   prefs: []
   type: TYPE_NORMAL
+  zh: 由于我们希望super trace能够正常工作，因此logger这里也需要是可选的。这应该也接受一个可选值，这个值就是在默认情况下我们用来记录的内容。所以我将说我们的默认打印是logger。这将是你的装饰器/装饰器函数的签名，现在你需要做的就是。
 - en: do is to essentially have this one behave either like a decorator or a decorator
     factory depending on。 the value of funk whether funk is none if funk is none then
     this will be a decorator factory and。 it should create different decorators based
@@ -2864,25 +2938,30 @@
   id: totrans-329
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们的目标是让这个函数根据funk的值表现得像一个装饰器或装饰器工厂。如果funk是none，那么这将是一个装饰器工厂，并且应该基于logger创建不同的装饰器。如果funk实际上是一个函数，那么我们就已经处于装饰阶段，所以这应该作为一个装饰器正常工作，并返回一个封装。
 - en: function so that's a hint that hopefully is enough to get you started and then
     i'll just say good luck。 on this last task and then i'll see you in a minute with
     a suggestion for a solution。
   id: totrans-330
   prefs: []
   type: TYPE_NORMAL
+  zh: 这个函数是一个提示，希望能帮助你入门，然后我会祝你在最后的任务中好运，稍后再见面，给你一个解决方案的建议。
 - en: '![](img/13dc3ed458136a286215705708b44e8c_29.png)'
   id: totrans-331
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/13dc3ed458136a286215705708b44e8c_29.png)'
 - en: okay i hope you enjoyed that little task so now let's see how we can solve this
     uh super trace。
   id: totrans-332
   prefs: []
   type: TYPE_NORMAL
+  zh: 好吧，我希望你喜欢这个小任务。那么现在我们来看一下如何解决这个super trace。
 - en: '![](img/13dc3ed458136a286215705708b44e8c_31.png)'
   id: totrans-333
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/13dc3ed458136a286215705708b44e8c_31.png)'
 - en: the decorator and um what i've gone ahead and done here i'm more or less as
     usual is that i've。 added a few just just cases down here uh some both printing
     out the greet printing along line and。 then the random greet and i'll see if we
@@ -2891,6 +2970,8 @@
   id: totrans-334
   prefs: []
   type: TYPE_NORMAL
+  zh: 装饰器方面，我在这里所做的和往常一样，我添加了一些打印输出的用例，包括打印问候语、打印一行内容，然后是随机问候。我将看看是否能让super greeter正常工作。请记住，我们希望这里使用打印，super
+    trace，对随机问候函数进行记录。
 - en: and um now let's just start out by testing this this thing uh work and see now
     that it's okay i can't。 import super trace because i haven't defined it yet so
     let's start by doing that and um now one。 one thing i'm gonna do here since as
@@ -2900,6 +2981,7 @@
   id: totrans-335
   prefs: []
   type: TYPE_NORMAL
+  zh: 现在我们开始测试这个东西，看看它是否正常。我无法导入super trace，因为我还没有定义它，所以我们先来做这个。就像我提到的，super trace基本上就是trace的创建者。所以我将使用我的复制粘贴功能，再包含一次trace。
 - en: we also so have we want to use the super trace decorator or the creator factory
     will have the。 following signature so it will either take a function which will
     be known if the function is not given。 or it will take a logger which has the
@@ -2908,6 +2990,7 @@
   id: totrans-336
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们还想使用super trace装饰器，或者说创建工厂将具有以下签名。它将接受一个函数，如果没有提供函数则会被识别，或者接受一个logger，默认值为print。因此默认值是print，其他情况下将使用提供的任何内容，然后我们在这里有实际的trace，我只是。
 - en: gonna indent it so now this trace is just i mean let's define internally in
     um inside of here and。 also just to kind of be consistent with the notation that
     we're usually using i'll call this the super trace。 uh greater so let me give
@@ -2986,6 +3069,7 @@
   id: totrans-345
   prefs: []
   type: TYPE_NORMAL
+  zh: 超级追踪工厂作为新的记录器，然后以某种方式使用它作为记录器，这一切变得相当混乱，这不是我们想要的。因此，我们这里有funk现在是一个星号。我们看到的基本上是如果funk是无。
 - en: what does that actually mean well it means that there was no function that was
     passed in。 instead we were given a logger argument or possibly even let's see
     where did we have it。 up here or possibly even this case but in either way there
@@ -2994,6 +3078,7 @@
   id: totrans-346
   prefs: []
   type: TYPE_NORMAL
+  zh: 这实际上意味着什么？这意味着没有函数被传入。相反，我们给出了一个记录器参数，或者可能看看我们在哪里有它。在这种情况下，没有函数被传入。这实际上是我们已经解决的情况，所以我们就这样做。
 - en: so we could do this and now if we just restart this。 we heard some error message
     from calling greet and just to taking out of this we'll now see that。 this super
     trace， in this this will still work while as we saw from the output above if we
@@ -3002,6 +3087,7 @@
   id: totrans-347
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以我们可以这样做，现在如果我们重启这个，我们从调用问候中听到了一些错误消息。将其取出后，我们现在看到这个超级追踪器仍然有效，而如上面输出所示，如果我们不使用任何括号，我调用的东西现在变成了奇怪的无类型对象不可调用，这就是问候。
 - en: there is no hello it seems if I actually print out hello you can see that this
     is none。 and that is because we ran into here super trace is none if function
     is none we do this。 but then we just fall off the end here so then if function
@@ -3010,6 +3096,7 @@
   id: totrans-348
   prefs: []
   type: TYPE_NORMAL
+  zh: 如果我打印出问候，似乎没有任何输出，你可以看到这是无。因为我们进入了这里，如果函数是无，我们就这样做。但是如果函数不是无，在这种情况下，我们并没有定义发生了什么，所以问候实际上在这个情况下被替换成了无。
 - en: that's clearly not good enough so instead what do we need to do well now what
     we really would love。 to happen is to just go back to the old trace decorator
     right that's kind of what we。 that's the behavior we're interested in here and
@@ -3018,6 +3105,7 @@
   id: totrans-349
   prefs: []
   type: TYPE_NORMAL
+  zh: 这显然不够好。那么我们真正想要的是什么呢？就是回到旧的追踪器装饰器，这就是我们感兴趣的行为。那么旧的追踪器装饰器是什么呢？那就是我们在这里复制过来的那个超级追踪器装饰器。
 - en: what happened really there so it seems like again I want to take this thing
     but now I want to kind。 of skip a step I want to just apply this directly to my
     function and for this to behave like for。 for this super trace here to behave
@@ -3026,6 +3114,7 @@
   id: totrans-350
   prefs: []
   type: TYPE_NORMAL
+  zh: 发生了什么呢？我想再次处理这个问题，但现在我想跳过一步，直接将其应用到我的函数上，使得这个超级追踪器像一个装饰器一样工作，这需要定义或返回被包装的函数，这正是超级装饰器所做的。
 - en: if I send it funk right so that's funk into the super trace decorator it will。
     okay let's just open up everything here here again um so super trace decorator
     it starts up there。 and it goes down here so if I send in super trace decorator
@@ -3034,6 +3123,7 @@
   id: totrans-351
   prefs: []
   type: TYPE_NORMAL
+  zh: 如果我将funk传入超级追踪器装饰器，它会……好的，让我们打开所有内容。超级追踪器装饰器从上面开始，然后向下走。所以如果我发送超级追踪器装饰器并传递funk，它会返回我超级追踪，这个包装函数将帮助我们。
 - en: and and take that necessary step that we're looking at and first let's actually
     run this to see if。 that theory works so we'll just run over here and now you
     can see。 let's just make it be enough and that if I run now the greet thing actually
@@ -3042,6 +3132,7 @@
   id: totrans-352
   prefs: []
   type: TYPE_NORMAL
+  zh: 让我们先运行一下，看看这个理论是否成立。我们现在运行，看到结果。如果我现在运行，问候函数实际上是有效的，所以让我们回顾一下，这里打印出问候世界，这只是超级追踪器没有任何参数。
 - en: so that part works and our random greet where you super trace with the logging
     that also works so now。 the the things the the magical if else thing we we made
     here actually works and just to have。 one more explanation on why this thing works
@@ -3050,6 +3141,7 @@
   id: totrans-353
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以那部分有效，我们的随机问候和超级追踪的日志记录也有效，现在这些神奇的**if-else**结构确实有效，并且有一个额外的解释，说明这个东西为什么有效，让我们再回忆一下，我有点重复，这就是我希望你能记住的咒语。
 - en: you realize is kind of the key takeaway here is that to figure out how these
     decorators work。 it's always useful to kind of unwrap temptation and see what
     actually happens here。 so say that we have some function I'll just call it f again
@@ -3058,10 +3150,12 @@
   id: totrans-354
   prefs: []
   type: TYPE_NORMAL
+  zh: 你意识到这里的关键要点是，弄清楚这些装饰器如何工作总是很有用的，解开一些复杂的概念，看看这里实际发生了什么。假设我们有一个函数，我再称它为`f`，并且我们对其应用超级追踪。因此，如果我像这样使用超级追踪的`f`，这实际上是相同的。
 - en: '![](img/13dc3ed458136a286215705708b44e8c_33.png)'
   id: totrans-355
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/13dc3ed458136a286215705708b44e8c_33.png)'
 - en: if we instead just define f and then we say that f equals super trace of f right。
     and what are we now done over here is that okay if we do this then we're passing
     in f there so f。 becomes a funk over here so funk is not none so that means that
@@ -3070,6 +3164,7 @@
   id: totrans-356
   prefs: []
   type: TYPE_NORMAL
+  zh: 如果我们直接定义`f`，然后说`f`等于超级追踪的`f`，那么我们现在所做的是，如果这样做，那么我们就将`f`传入，所以`f`在这里变成了一个函数。因此，函数不是空的，这意味着我们在说`f`等于下划线超级追踪创建的函数。
 - en: so this is what happens in the case where we have。 we're passing in without
     any arguments or without any parentheses。 what happens in the case where we use
     arguments so say that we're doing super trace parentheses。 equals logging that
@@ -3078,6 +3173,7 @@
   id: totrans-357
   prefs: []
   type: TYPE_NORMAL
+  zh: 这是当我们没有任何参数或没有括号传入时发生的情况。当我们使用参数时，会发生什么情况？假设我们正在做超级追踪的括号等于记录警告，并且此函数的内容。那么如果我们详细描述一下，现在我们在做`f`。
 - en: equals super trace of logger equals logging that warning of f。 right this is
     kind of the translation of of this notation now what does that mean if we start
     looking。 into here well in that case there is no funk that's defined right here
@@ -3086,6 +3182,7 @@
   id: totrans-358
   prefs: []
   type: TYPE_NORMAL
+  zh: 等于超级追踪的日志记录器等于记录警告`f`。对吧，这就是这种符号的翻译。那么这意味着什么呢？如果我们开始观察这里，实际上这里没有定义函数。因此，这意味着函数取默认值，即空值。所以在这种情况下。
 - en: and in that case super trace is just essentially replaced by super trace decorator。
     so then we will end up with the notation f equals underscore super trace。 decorator
     and that's just all of this has been replaced by super trace decorator。 and then
@@ -3093,6 +3190,7 @@
   id: totrans-359
   prefs: []
   type: TYPE_NORMAL
+  zh: 在这种情况下，超级追踪本质上被超级追踪装饰器替代。因此，我们最终得到的符号是`f`等于下划线超级追踪装饰器，而这一切都被超级追踪装饰器所替代。然后我们在最后有括号`f`，这样就取到了我们正在处理的这个函数对象。
 - en: returning here and applying it to f and as you can see now is that in both cases
     super trace。 and super trace with this thing happening we end up at the exact
     same place where f has been decorated。 by super trace decorator so that's exactly
@@ -3101,6 +3199,7 @@
   id: totrans-360
   prefs: []
   type: TYPE_NORMAL
+  zh: 在这里返回并应用到`f`，如你所见，在这两种情况下，超级追踪和超级追踪都在发生，我们最终到达了完全相同的地方，`f`被超级追踪装饰器装饰，这正是我们想要的，对吧，这就是我们的目标。这两种情况下唯一的区别是日志记录器的值发生了变化。
 - en: so in the second case we are changing the value of logger and that logger is
     used inside of our trace。 wrapper function to say how we are printing out the
     trace so this is definitely a mouthful but。 if you wrap your head around this
@@ -3109,6 +3208,7 @@
   id: totrans-361
   prefs: []
   type: TYPE_NORMAL
+  zh: 在第二种情况下，我们正在改变日志记录器的值，这个日志记录器在我们的追踪包装函数内部使用，以说明我们是如何打印追踪的。这确实很复杂，但如果你理解这个，你应该足够了解，基本上可以理解Python语言中任何装饰器。因此，希望这对你有所帮助。
 - en: something that you have enjoyed and have learned something from now that actually。
     around the exercises that we're going to do so now i'm just gonna end with the
     small。 kind of recap of what we have been learning so first of all in this advanced
@@ -3117,6 +3217,7 @@
   id: totrans-362
   prefs: []
   type: TYPE_NORMAL
+  zh: 你应该享受并从中学习到一些东西，现在实际上围绕着我们要做的练习，所以我就以一个小总结结束我们所学的内容。首先，在这个高级装饰器部分，我们讨论的是如何通过装饰器保持状态的一些内容。
 - en: and we saw how we can either use function attributes to remember things from。
     invocation to invocation or classes which are probably better fitted for this。
     then we saw a little bit on how do we decorate classes and especially how can
@@ -3125,6 +3226,7 @@
   id: totrans-363
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们看到了如何使用函数属性来记住从一次调用到下一次调用的内容，或者使用类，这通常可能更适合。然后我们看了一点如何装饰类，尤其是如何确保我们保留类型信息，因为通常在装饰某样东西时。
 - en: replacing the original function or class with your wrapper function but if you
     need to kind of。 keep the type hierarchy that's not really possible you need to
     do some other tricks instead。 then for our what was the fifth task we saw how
@@ -3133,6 +3235,7 @@
   id: totrans-364
   prefs: []
   type: TYPE_NORMAL
+  zh: 用你的包装函数替换原始函数或类，但如果你需要保持类型层次结构，这实际上是不可能的，你需要做一些其他的技巧。而对于我们之前提到的第五个任务，我们看到了如何使用带参数的装饰器。这是一个练习，我们向方法或函数添加了单位，现在在最后的部分。
 - en: task we looked at how we can have optional arguments where we can call the decorator
     both。 without the parentheses and with the parentheses just to kind of。 one more
     time repeat the key takeaways and is that in general a decorator is any function
@@ -3141,6 +3244,7 @@
   id: totrans-365
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们的任务是看到了如何使用可选参数，我们可以同时以不带括号和带括号的方式调用装饰器，再次重申一下关键要点，通常装饰器是任何接受函数并返回函数的函数。我们在这里看到的是，这就是。
 - en: concept is actually more general than this decorators really any callable thing
     that accepts a callable。 and returns a callable I guess and so it could be classes
     for instance。 and then the one thing that I hope that you definitely take from
@@ -3149,15 +3253,18 @@
   id: totrans-366
   prefs: []
   type: TYPE_NORMAL
+  zh: 这个概念实际上比这更为普遍，装饰器实际上是任何接受可调用对象并返回可调用对象的东西。我想，这也可以是类实例。然后我希望你一定能从中记住的一件事是，我们用于装饰器的这种语法实际上只是写出这个内容的语法糖。
 - en: and once it's more noted I'll just kind of point out to say we had if we go
     back here。
   id: totrans-367
   prefs: []
   type: TYPE_NORMAL
+  zh: 一旦更详细的内容被记录下来，我会指出，如果我们回到这里。
 - en: '![](img/13dc3ed458136a286215705708b44e8c_35.png)'
   id: totrans-368
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/13dc3ed458136a286215705708b44e8c_35.png)'
 - en: so let's see if we first I'll just do from our Python decorators I'll import
     the count calls。 now say that I want to for instance yeah we're not gonna do too
     much about this but say that for。 instance we have a math factorial function for
@@ -3166,6 +3273,8 @@
   id: totrans-369
   prefs: []
   type: TYPE_NORMAL
+  zh: 让我们先从我们的 Python 装饰器中导入计数调用。现在假设我想，比如说，我们不会对此做太多，但假设我们有一个数学阶乘函数，这里我们将得到一些数字，我们可以说你可以逼近
+    e 的值。
 - en: do something like this by taking the sum of the inverse of factorial numbers。
     so just to show you here first， so we can take math factorial of let's see zero
     that's one one still one two is two。 so this doesn't seem too interesting with
@@ -3174,6 +3283,7 @@
   id: totrans-370
   prefs: []
   type: TYPE_NORMAL
+  zh: 做一些像这样通过求和阶乘数的倒数。首先给你展示一下，我们可以计算数学阶乘，零的阶乘是1，一的阶乘还是1，二的阶乘是2。所以这看起来并没有太大意思，三的阶乘是6，因此阶乘数实际上就是将小于或等于该数字的所有数字相乘的结果，所以三的阶乘。
 - en: factorial is six because one times two times three is six then four factorial
     will be 24 for instance。 that's four times two times three times four and now
     there is a mathematical formula that says。 that the number e which is approximately
@@ -3182,6 +3292,8 @@
   id: totrans-371
   prefs: []
   type: TYPE_NORMAL
+  zh: 阶乘是六，因为1乘以2乘以3等于六，四的阶乘则是24。例如，四乘以二乘以三乘以四，现在有一个数学公式表明，数字e大约是七点一八，这也恰好是python
+    d的最后一个版本，并且可以用这些阶乘数字进行计算，因此如果我取总和。
 - en: of one divided by math factorial let's see of n for n in range of let's give
     ourselves a little。 and if we let's see we should probably return， okay like this
     and now we can see that if I calculate this for instance with using five numbers。
@@ -3191,6 +3303,7 @@
   id: totrans-372
   prefs: []
   type: TYPE_NORMAL
+  zh: 一除以math factorial，让我们看看n的范围，让我们给自己一点时间。如果我们看看，我们可能应该返回，好的，就这样，现在我们可以看到，如果我用五个数字计算这个，我得到接近2.718，但并不极其接近。如果我使用更多的数字，我得到更接近。现在假设我想弄清楚我们对math的调用次数。
 - en: pictorial during this method now I what I like to want to do is then something
     like cat calls。 and then I want to do that at the definition of factorial but
     if I'm in the standard library。 so that doesn't really help me so we do instead
@@ -3199,14 +3312,17 @@
   id: totrans-373
   prefs: []
   type: TYPE_NORMAL
+  zh: 在这种方法中，我想做的是像cat calls这样的东西。然后我想在阶乘的定义中做到这一点，但如果我在标准库中，这并没有真的帮助我。所以我们做相反的，而在这种情况下，你可以做的是实际使用你的非常规糖版本的装饰。
 - en: '![](img/13dc3ed458136a286215705708b44e8c_37.png)'
   id: totrans-374
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/13dc3ed458136a286215705708b44e8c_37.png)'
 - en: '![](img/13dc3ed458136a286215705708b44e8c_38.png)'
   id: totrans-375
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/13dc3ed458136a286215705708b44e8c_38.png)'
 - en: and see the factorial is count calls of math。f pictorial like this and now if
     we do。 math factorial factorial and then calls we can see that this has not been
     called yet but if we do。 calculate this e of 25 we can see that factorial has
@@ -3215,10 +3331,12 @@
   id: totrans-376
   prefs: []
   type: TYPE_NORMAL
+  zh: 查看阶乘调用次数，像这样math.f pictorial。现在如果我们进行math factorial factorial，然后调用，我们可以看到这尚未被调用，但如果我们计算这个e的25，我们可以看到阶乘确实被调用了25次。所以这只是一个快速的例子，表明实际上可能装饰甚至你没有定义的函数。
 - en: '![](img/13dc3ed458136a286215705708b44e8c_40.png)'
   id: totrans-377
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/13dc3ed458136a286215705708b44e8c_40.png)'
 - en: yourself and so this will actually last time that I mentioned how these things
     are different。 and this is kind of what you can actually think that we're doing
     if you need to figure out how。 decoration actually works。 Then just a few notes
@@ -3227,6 +3345,7 @@
   id: totrans-378
   prefs: []
   type: TYPE_NORMAL
+  zh: 你自己，这实际上是我提到这些东西不同的最后一次。这就是你可以想象我们在做什么，如果你需要弄清楚装饰器是如何工作的。然后，关于我们从前一部分看到的一些注意事项，我们可以使用函数属性或类来保持状态。装饰器可以接收参数并进行实现。
 - en: this you will be using decorator factories which are just functions that create
     decorators and we。 could also have decorators optionally use arguments and in
     that case your decorator factory。 should return either a decorator or a wrapped
@@ -3235,6 +3354,7 @@
   id: totrans-379
   prefs: []
   type: TYPE_NORMAL
+  zh: 你将使用装饰器工厂，它们只是创建装饰器的函数。我们也可以让装饰器可选地使用参数，在这种情况下，你的装饰器工厂应该根据如何调用返回一个装饰器或一个封装的函数。这就是我们看到的任务6。这里有一些你可能熟悉的装饰器的快速列表。
 - en: already。 So there's a few decorators in the standard library where probably
     the most well-knowns。 at least if you use object-oriented programming would be
     property and class method probably。 So what property does is that it can just
@@ -3243,6 +3363,7 @@
   id: totrans-380
   prefs: []
   type: TYPE_NORMAL
+  zh: 已经有一些标准库中的装饰器，其中可能最著名的，至少如果你使用面向对象编程的话，就是属性和类方法。属性的作用是将类中的方法转换为属性，以便通过属性访问获取，而不是调用它。类方法创建。
 - en: class methods in your classes and static method can create static methods on
     your classes。 The functor wraps decorator we have used heavily today so hopefully。
     you have a feeling for what that one does。 Then there was in Python 3。7 there
@@ -3251,6 +3372,8 @@
   id: totrans-381
   prefs: []
   type: TYPE_NORMAL
+  zh: 你类中的类方法和静态方法可以在你的类上创建静态方法。我们今天大量使用的functor wraps装饰器，希望你对它的功能有一些了解。然后在Python
+    3.7中，有一个称为数据类的东西，这是一种构造类的新方式。它在某种程度上简化了。
 - en: a lot of the boilerplate that you often want to use for classes and this is
     a decorator that you。 apply directly to a class and it will work a little bit
     similar to what we did when we decorated。 classes in that it kind of builds a
@@ -3259,6 +3382,7 @@
   id: totrans-382
   prefs: []
   type: TYPE_NORMAL
+  zh: 你经常想要在类中使用的许多样板代码，这实际上是一个装饰器，你可以直接应用于类，它的工作方式与我们装饰类时有些相似，构建一个类并为其添加属性。最后，库中有一个叫做contextlib的库，它用于处理上下文管理器，还有一个。
 - en: decorator that can simplify the creation of new context managers which is actually
     quite cool。 But the decorators are probably more common in different libraries
     and I'm not going to。 even attempt to list all the different ways they can be
@@ -3267,6 +3391,7 @@
   id: totrans-383
   prefs: []
   type: TYPE_NORMAL
+  zh: 装饰器可以简化新上下文管理器的创建，这实际上非常酷。但这些装饰器在不同的库中可能更为常见，我甚至不会尝试列出它们在第三方包中的所有不同用法，仅仅列出你可能熟悉的一些。因此，有一个叫做number的装饰器。
 - en: which is a really cool project for speeding up especially computation heavy
     code and it has。 a JIT decorator so that means just in time or where it does just
     in time compilation so。 on the fly compilation essentially of your code which
@@ -3275,6 +3400,7 @@
   id: totrans-384
   prefs: []
   type: TYPE_NORMAL
+  zh: 这是一个非常酷的项目，特别是加速计算密集型代码，并且它有一个JIT装饰器，这意味着即时编译，因此在你的代码的飞行编译上，如果代码非常CPU密集，这可以极大地加速你的代码。然后flask是一个Web框架，使用装饰器来指定。
 - en: functions as handlers essentially or as an endpoints for your website using
     the app that。 route is one of the decorators it's using and then click is a command
     line interface library。 that you can use to create command line programs essentially
@@ -3283,6 +3409,7 @@
   id: totrans-385
   prefs: []
   type: TYPE_NORMAL
+  zh: 本质上作为处理程序或作为你网站的端点的函数，使用的装饰器之一是route，click是一个命令行界面库，你可以用它从Python脚本创建命令行程序，它使用装饰器来指定你命令行程序中不同的命令。
 - en: arguments different options and so on。 So all of these ease decorators in a
     very nice fashion。 Then there are some further resources and as I mentioned at
     the beginning of the course。 I have written an article for the website real Python
@@ -3291,6 +3418,7 @@
   id: totrans-386
   prefs: []
   type: TYPE_NORMAL
+  zh: 参数、不同选项等。因此，所有这些装饰器都以非常优雅的方式简化了工作。还有一些进一步的资源，正如我在课程开始时提到的。我为real Python网站写了一篇文章，其中详细介绍了我们在这里所做的许多相同内容，如果你查看那篇文章，你会认识到一些。
 - en: examples we've done some examples that are new but it's a good resource to kind
     of look back to。 if there's something you need to remember from this tutorial。
     On real Python there's also a video。 course that kind of covers mostly of the
@@ -3299,6 +3427,7 @@
   id: totrans-387
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们做了一些新例子的示例，但这是一个很好的资源，可以回顾一下，如果你需要记住这个教程中的某些内容。在real Python上，还有一个视频课程，主要覆盖基本装饰器部分，因此它没有像我们在这里所做的那样深入。还有一些其他很酷的资源，有一个包。
 - en: pipi called decorator and if you're going to work with decorators this one kind
     of takes a lot of。 the work that we have been putting into creating our decorators
     and I'm kind of abstracted away a。 little bit so especially when we come to things
@@ -3307,6 +3436,8 @@
   id: totrans-388
   prefs: []
   type: TYPE_NORMAL
+  zh: pipi 中有一个称为 decorator 的包，如果你要使用装饰器，这个包简化了我们在创建装饰器时的许多工作，尤其是在处理带可选参数的装饰器时，使用
+    decorator 包会更容易，因此我推荐你看看这个。
 - en: The Python Cookbook it's a book that was published by Orile something like seven
     years ago I think now。 and it's a fantastic book with many small recipes that
     kind of tell you how to do stuff and in chapter。 nine of that on the Python Cookbook
@@ -3315,6 +3446,7 @@
   id: totrans-389
   prefs: []
   type: TYPE_NORMAL
+  zh: 《Python Cookbook》是一本大约七年前由 O'Reilly 出版的书，书中有许多小食谱，告诉你如何做各种事情，在这本书的第九章中，有一个关于元编程的章节，里面有很多使用装饰器的不同食谱，所以如果你能找到这本书，我强烈推荐你看看。
 - en: check it out。 The source code so the kind of the recipes themselves are available
     on the David Beasley's。 homepage so you could also just head over to this guitar
     batteries here and have a look at。 some other ways that they're doing things there
@@ -3323,6 +3455,8 @@
   id: totrans-390
   prefs: []
   type: TYPE_NORMAL
+  zh: 请查看一下源代码，这些食谱本身可在大卫·比斯利的主页上找到，你也可以直接访问这个吉他电池，看看他们其他的实现方式。如果你真的想深入了解，装饰器是通过 Python
+    增强提案（PEP）添加到 Python 语言中的。
 - en: and pep 318 was the one that was the one that kind of introduced the creators。
     quite a few years ago now but there's actually something happening in decorated
     land so for Python。 three nine which is now very close to being in beta there
@@ -3331,16 +3465,20 @@
   id: totrans-391
   prefs: []
   type: TYPE_NORMAL
+  zh: PEP 318 是引入创作者的提案，已经过去好几年了，但实际上在装饰器领域发生了一些新变化，所以对于即将进入 beta 阶段的 Python 3.9，确实有一个新的装饰器提案，称为
+    PEP 614，而 PEP 614 的作用是。
 - en: actually allows it kind of relaxes a little bit on some of the restrictions
     that are on decorators。 and let's have a look at how that actually works so let's
     see we'll use one and then we'll go over。
   id: totrans-392
   prefs: []
   type: TYPE_NORMAL
+  zh: 其实它放宽了一些对装饰器的限制，我们来看一下这实际上是如何工作的，所以我们将先使用一个，然后再继续。
 - en: '![](img/13dc3ed458136a286215705708b44e8c_42.png)'
   id: totrans-393
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/13dc3ed458136a286215705708b44e8c_42.png)'
 - en: here to them just a little piece of code that I prepared for for this example。
     and what we used to is that we have this is a decorator all right we have here
     the most trivial。 decorator we can have it's a do nothing decorator that takes
@@ -3349,6 +3487,8 @@
   id: totrans-394
   prefs: []
   type: TYPE_NORMAL
+  zh: 这是我为这个示例准备的一小段代码。我们有这个装饰器，这是我们能拥有的最简单的装饰器，它是一个什么也不做的装饰器，接受函数并直接返回它。因此，使用 do
+    nothing 装饰任何东西都不会改变任何事情。
 - en: trace decorator here i'm just saying that we're calling the function not trying
     to say anything。 about the arguments and return values and so on but it's another
     decorator right we have trace。 funk returning the wrap function here and so how
@@ -3357,6 +3497,8 @@
   id: totrans-395
   prefs: []
   type: TYPE_NORMAL
+  zh: 这里的 trace 装饰器只是说我们在调用函数时并不打算讨论任何参数和返回值等等，但这也是一个装饰器，对吧？我们有 trace 函数返回包装函数，所以我们通常会这样使用：我们只需说类似于
+    add do nothing 的东西，如果我们尝试这个，你可以看到这里的 flake 报错了。
 - en: about this syntax error happening here because here i'm not decorating with
     the function or。 callable i actually put in some expression here and you can see
     here i've added just this if else。 statement or if else expression i guess where
@@ -3365,6 +3507,8 @@
   id: totrans-396
   prefs: []
   type: TYPE_NORMAL
+  zh: 关于这里发生的语法错误，因为我并没有使用函数或可调用对象进行装饰，而是放入了一些表达式，你可以看到我添加了这个 if else 语句，或者说是 if else
+    表达式，我在这里使用的 prod 变量当前被设置为 false，然后我说好的，如果 prod 为真，那么就不做任何事情。
 - en: production i don't want to do anything with this one but if we're not running
     in production then i。 want to decorate my little hello world function here with
     the trace decorator and in um， python 3。8 so the current python and this is a
@@ -3373,6 +3517,8 @@
   id: totrans-397
   prefs: []
   type: TYPE_NORMAL
+  zh: 在生产环境中，我不想和这个打交道，但如果我们不在生产环境中，我想用trace装饰器装饰我的小hello world函数，在Python 3.8中，这是一个语法错误，我们实际上不能这样做，但PEP
+    6.14说，实际上没有理由不允许这样。
 - en: this is one example where this might be useful and that you can kind of easily
     turn on and off。 some debugging flags when you're running outside of production
     and so essentially it。 means that you can have any expression here that evaluates
@@ -3381,6 +3527,7 @@
   id: totrans-398
   prefs: []
   type: TYPE_NORMAL
+  zh: 这是一个可能有用的例子，你可以轻松地在非生产环境中开启和关闭一些调试标志，所以这基本上意味着你可以在这里使用任何可调用的表达式作为装饰器。让我们看看这实际上是如何运行的，如果我现在运行，让我先给你展示一下这个。
 - en: doesn't work at all right it's a syntax error if i just use my regular python
     but if i run this。 with python 3。9 see here that okay and down here i'm printing
     the value prod which is false and then。 i'm calling greet there which the trace
@@ -3389,6 +3536,7 @@
   id: totrans-399
   prefs: []
   type: TYPE_NORMAL
+  zh: 完全不起作用，对吧？这是一个语法错误，如果我只是用常规Python，但如果我用Python 3.9运行，看到这里好的，在这里我打印出值prod为false，然后我调用greet，trace告诉我在这里调用greet，因此我们可以看到，在这种情况下，它使用trace装饰。
 - en: for fstrings that was introduced in python 3。8 that you can use an equal sign
     like this。 together with a variable and it will print out both the name of the
     variable and the value of the。 variable so that was an enhancement in python 3。8
@@ -3397,6 +3545,7 @@
   id: totrans-400
   prefs: []
   type: TYPE_NORMAL
+  zh: 对于在Python 3.8中引入的fstrings，你可以像这样使用等号与变量结合，它会打印出变量的名称和变量的值，这在Python 3.8中是一个增强功能。好的，这似乎有效，它能够识别出在这种情况下可以使用trace，所以我们尝试将其更改为在。
 - en: production so now we're setting some flag and we're running in production instead。
     and from this now we can see okay prod equals true which i assumed and it's still
     called greet。 i believe let's actually test that as well so we'll add a print
@@ -3405,15 +3554,18 @@
   id: totrans-401
   prefs: []
   type: TYPE_NORMAL
+  zh: 生产环境中现在我们设置了一些标志，并且在生产中运行。由此我们可以看到prod等于true，这我假设并且仍然调用greet。我相信我们也可以测试这一点，所以我们添加一个打印语句在那里，但它调用greet，但没有追踪任何内容，因此在这种情况下，它使用的是不做任何事的模式。
 - en: decorator that's only calls the function as usual。 so that's somewhat exciting
     at least and it of course。
   id: totrans-402
   prefs: []
   type: TYPE_NORMAL
+  zh: 这是一个仅调用函数的装饰器，和往常一样。因此这至少有点令人兴奋，当然。
 - en: '![](img/13dc3ed458136a286215705708b44e8c_44.png)'
   id: totrans-403
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/13dc3ed458136a286215705708b44e8c_44.png)'
 - en: gives you many opportunities to probably abuse this so use it twice but it's
     i guess fun to see that。 something is happening also to decorators they've kind
     of been。 fairly solid means they in the language for a long time now。 so with
@@ -3421,6 +3573,7 @@
   id: totrans-404
   prefs: []
   type: TYPE_NORMAL
+  zh: 这给了你许多滥用的机会，所以可以使用两次，但我想看看确实有些事情在发生，装饰器在语言中已经相当稳定很长时间了，所以我推荐你查看这些额外的资源。
 - en: and then i'm just gonna end here by thanking you so much for your attention
     hopefully。 this was useful and if you have any questions do please contact me
     so you could。 reach me either at yeah yeah at twitter you can find some information
@@ -3429,19 +3582,25 @@
   id: totrans-405
   prefs: []
   type: TYPE_NORMAL
+  zh: 然后我想在这里结束，感谢你们的关注，希望这对你有帮助，如果你有任何问题，请随时联系我。你可以在Twitter上找到我，也可以在GitHub上找到一些信息，关于这篇文章和Real
+    Python等更多信息。
 - en: so yeah thank you so much bye bye。
   id: totrans-406
   prefs: []
   type: TYPE_NORMAL
+  zh: 非常感谢你，再见。
 - en: '![](img/13dc3ed458136a286215705708b44e8c_46.png)'
   id: totrans-407
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/13dc3ed458136a286215705708b44e8c_46.png)'
 - en: you， you， (buzzing)， You。
   id: totrans-408
   prefs: []
   type: TYPE_NORMAL
+  zh: 你， 你， （嗡嗡声），你。
 - en: '![](img/13dc3ed458136a286215705708b44e8c_48.png)'
   id: totrans-409
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/13dc3ed458136a286215705708b44e8c_48.png)'
