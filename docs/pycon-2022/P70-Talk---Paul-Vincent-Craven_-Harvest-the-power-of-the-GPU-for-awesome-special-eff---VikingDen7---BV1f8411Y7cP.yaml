@@ -292,6 +292,7 @@
   id: totrans-33
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们创建着色器并进行渲染。接下来，我们将把着色器分部分编写，这样你可以看到这个过程的进展。我喜欢从极其简单的地方开始写，然后从那里逐步发展。这个着色器，再次提醒，有一个小程序会为每个像素运行。这个像素将确定我离原点有多远。
 - en: coordinate？ That zero， zero coordinate。 If I'm close to the origin， the zero，
     zero。 I'm going to make， myself white。 If I'm not， I'm going to draw black。 And
     furthermore， basically。 this is what it's going， to output。 The origin is in the
@@ -300,6 +301,7 @@
   id: totrans-34
   prefs: []
   type: TYPE_NORMAL
+  zh: 坐标？那个零零坐标。如果我靠近原点，即零零坐标。我将使自己变为白色。如果我不是，我将绘制黑色。此外，基本上这就是它的输出。原点位于左下角。你可能熟悉一些坐标系将原点放在左上角。在这种情况下。
 - en: we use like standard mathematics where the y goes up and， it's when it's positive。
     The other thing that we're going to do， which most shaders will do， is we're。
     going to normalize the coordinates。 Which just is a really fancy word for saying。
@@ -308,6 +310,8 @@
   id: totrans-35
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们使用标准数学，其中y轴向上，当y值为正时。我们要做的另一件事是，正如大多数着色器所做的那样，我们将规范化坐标。这只是一个非常 fancy 的说法，意味着我将把所有坐标从
+    0.0 转换，从像 0 到 800 或 0 到 1920。
 - en: I'm going to switch， them from that to 0 to 1。0。 Floating point coordinates。
     The reason we do this。 I can then make the window， 4K window。 I can make it a
     small 800 by 600 window。 But after I normalize the coordinates， everything's going
@@ -315,6 +319,7 @@
   id: totrans-36
   prefs: []
   type: TYPE_NORMAL
+  zh: 我将把它们从 0 转换为 1.0 的浮点坐标。我们这样做的原因是，我可以把窗口做成 4K 窗口。我可以把它做成一个小的 800x600 窗口。但是在我规范化坐标之后，一切都会一样。因此，这个着色器看起来像这样。如果你是。
 - en: at all familiar with any of those evil curly brace semicolon languages， it should
     look familiar。 But we won't have to make much of a shader to get our stuff up
     on the screen。 It's going to call。 this main image function for every pixel that
@@ -323,6 +328,7 @@
   id: totrans-37
   prefs: []
   type: TYPE_NORMAL
+  zh: 如果你对那些邪恶的花括号分号语言有一点了解，那么这应该看起来很熟悉。但是我们不需要编写很多着色器就能把我们的内容显示在屏幕上。它会为我所有的每个像素调用这个主图像函数。它会接受我正在渲染的坐标。因此，如果我当前想弄清楚在坐标800处应该显示什么。
 - en: 200， I'm going to get a vector of two elements。 Vector is just a really fancy
     name again for a list。 of stuff。 So a list of two items， an x， y coordinate。 I
     know that this is coming in because it's got an， in keyword on it。 I'm going to
@@ -330,6 +336,8 @@
   id: totrans-38
   prefs: []
   type: TYPE_NORMAL
+  zh: 我将得到一个包含两个元素的向量。向量只是一种 fancy 的名称，用于表示一个物品列表。因此，这是一个包含两个项的列表，一个 x 和一个 y 坐标。我知道这是因为它带有一个
+    in 关键字。我将输出我希望那个像素的颜色。输出将会是。
 - en: to be a vector of four numbers。 You're probably， if you at all have worked with
     web or graphics。 with the red， green， blue， whole framework of how you specify
     colors。 So how much red。 how much green， and how much blue should I have？ Those
@@ -338,6 +346,7 @@
   id: totrans-39
   prefs: []
   type: TYPE_NORMAL
+  zh: 将是一个包含四个数字的向量。如果你曾经与网页或图形打过交道，你可能熟悉如何指定颜色的红、绿、蓝整个框架。那么我应该有多少红色、多少绿色和多少蓝色呢？这些是三个元素。第四个是透明度，以便你可以将额外的渲染层叠在一起。
 - en: So this is the input。 And this is the， output。 It's weird because you are used
     to perhaps using the return statement when you want to return。 something out。
     And instead we simply specify that the out is here by using the out keyword。 So
@@ -347,6 +356,8 @@
   id: totrans-40
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以这是输入。这是输出。很奇怪，因为你可能习惯于在想返回某样东西时使用 return 语句。相反，我们只是通过使用 out 关键字来指定输出在这里。因此，这有点不同。我们可以规范化一个坐标，通过除以屏幕分辨率将其转换为整个
+    1.0 的样子。所以我们从上面获得输入片段。
 - en: And we divide that by the resolution of the screen。 We're given that automatically
     by the。 shader toy framework。 And we can divide both the x and the y at the same
     time， which is pretty cool。 because we're working with vectors。 So now I've got
