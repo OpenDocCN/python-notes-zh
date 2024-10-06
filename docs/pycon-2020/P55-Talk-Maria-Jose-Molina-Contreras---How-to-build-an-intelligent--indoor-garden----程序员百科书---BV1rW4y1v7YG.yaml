@@ -448,15 +448,18 @@
   id: totrans-59
   prefs: []
   type: TYPE_NORMAL
+  zh: 设置一个机器人很简单，我有一些朋友也有一个，所以我上网查找，教程真的很简单。你告诉机器人爸爸，Telegram，告诉他你想要一个新的机器人，就这样。他给你一个令牌，当然Python又一次帮助了我，因为有一个模型可以在Python中为你的机器人添加功能，就像你在幻灯片中看到的那样，这就是故事，希望你喜欢。
 - en: was also a bot。 There are many many crazy ideas on topics that I want to start
     researching but of。
   id: totrans-60
   prefs: []
   type: TYPE_NORMAL
+  zh: 这也是一个机器人。我有很多疯狂的想法，关于我想开始研究的话题，但……
 - en: '![](img/de28c605e7563fbe12ada5d4ee4412d5_26.png)'
   id: totrans-61
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/de28c605e7563fbe12ada5d4ee4412d5_26.png)'
 - en: course one thing at a time。 At the moment I'm trying to understand where the
     pipertal boards。 since I am starting having a screen will improve the system a
     lot but also I am thinking if I should。 buy a screen for the Raspberry Pi and
@@ -465,6 +468,8 @@
   id: totrans-62
   prefs: []
   type: TYPE_NORMAL
+  zh: 当然，一次只做一件事。目前我正在尝试理解哪里是pipertal板。因为我开始拥有一个屏幕将大大改善系统，但我也在考虑是否应该购买一个Raspberry
+    Pi的屏幕，并尝试将其集成到我的系统中，但这需要我慢慢考虑。同时，我仍然在处理几个附近的数据，所以我不相信云服务。
 - en: will improve my current situation but in some case I have reviewed a couple
     in case I need a better。 infrastructure。 I try google cloud storage and other
     fruit I/O。 Let's see what happened in the。 future but at the moment I think that
@@ -473,6 +478,7 @@
   id: totrans-63
   prefs: []
   type: TYPE_NORMAL
+  zh: 这将改善我当前的状况，但在某些情况下我已经审查了一些，以防我需要更好的基础设施。我尝试了谷歌云存储和其他水果I/O。让我们看看未来会发生什么，但目前我认为我不需要它。由于隔离，我无法建立我设计的外壳基础设施，但相信我，很快就会准备好。
 - en: Currently I am working in an efficient watering system using a parallel system
     with all。 the relays and moisture sensors。 You can see on the right parallel system
     that this is still a prototype。 but this is coming soon。 I already have two or
@@ -481,6 +487,7 @@
   id: totrans-64
   prefs: []
   type: TYPE_NORMAL
+  zh: 目前我正在使用一个并行系统建立高效的浇水系统，所有的继电器和湿度传感器都在其中。你可以在右侧的并行系统中看到这仍然是一个原型，但很快就会推出。我已经有两个或三个令牌，所以请保持关注。我会尽量通过触发器与大家沟通所有新内容。相信我，我已经准备好了，有很多传感器。
 - en: and I haven't had the time to even try them。 Hopefully you come by a couple
     of components。 get the gold and start playing with it but the most important thing
     is let's make our plants happy。 Thanks for watching my talk。 I hope now you are
@@ -489,24 +496,30 @@
   id: totrans-65
   prefs: []
   type: TYPE_NORMAL
+  zh: 我甚至没有时间去尝试它们。希望你能找到几个组件。获取金属并开始玩耍，但最重要的是让我们的植物快乐。感谢观看我的演讲。我希望现在你能有动力开始在家中为你的植物自动化更多系统。如果你有更多问题或评论，请告诉我。
 - en: Check my gift card if you want to see the code the components and implementation
     details。
   id: totrans-66
   prefs: []
   type: TYPE_NORMAL
+  zh: 如果你想查看代码、组件和实施细节，请查看我的礼品卡。
 - en: '![](img/de28c605e7563fbe12ada5d4ee4412d5_28.png)'
   id: totrans-67
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/de28c605e7563fbe12ada5d4ee4412d5_28.png)'
 - en: Thank you so much。 Thank you。 (buzzing)。
   id: totrans-68
   prefs: []
   type: TYPE_NORMAL
+  zh: 非常感谢。谢谢。(嗡嗡声)
 - en: '![](img/de28c605e7563fbe12ada5d4ee4412d5_30.png)'
   id: totrans-69
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/de28c605e7563fbe12ada5d4ee4412d5_30.png)'
 - en: '[buzzer beeps]。'
   id: totrans-70
   prefs: []
   type: TYPE_NORMAL
+  zh: '[蜂鸣器响]'
