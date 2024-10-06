@@ -1281,6 +1281,7 @@
   id: totrans-143
   prefs: []
   type: TYPE_NORMAL
+  zh: 唯一的事情是，这部分将打印出字符串的引号，通常在我们这里的情况，对于关键字参数，我希望将它们表示为字符串，显示为key=值，对于k和v在关键字参数中。最后，我可以说我的签名，也就是函数的签名。
 - en: function I can get now by just joining together all of these things with a comma。
     and now if I print out here the signature， we can see how that looks so now you
     can see we get something that looks more like。 the actual function called here
@@ -1289,6 +1290,7 @@
   id: totrans-144
   prefs: []
   type: TYPE_NORMAL
+  zh: 现在我可以通过用逗号将这些东西连接在一起，获得函数签名。现在如果我在这里打印出签名，我们可以看到它的样子，现在你可以看到我们得到了更像实际函数调用的东西，还有一件小事需要修复，就是这里的字符串缺少引号。
 - en: just using the string representation and not the wrapper representation like
     we did there。 so I could here just do a wrapper of v as well let's quickly see
     that that then adds in your。 quotes there and there's also a shortcut to doing
@@ -1297,6 +1299,7 @@
   id: totrans-145
   prefs: []
   type: TYPE_NORMAL
+  zh: 这又给我们一个不错的追踪装饰器，它遵循了我们使用的相同模式，只是使用字符串表示，而不是像我们之前那样使用包装器表示。因此，我也可以在这里做一个v的包装器，快速看看这样就能添加引号。而且在F字符串中还有一个快捷方式，如果你只需使用一个叹号和R，那意味着使用包装器表示而不是字符串表示。
 - en: as well and I'll just do the same here for the value here since we're dealing
     with strings that。 mostly just puts quotes around the actual string values to
     make them easier to see。 let's do this one up so here for instance you can see
@@ -1305,6 +1308,7 @@
   id: totrans-146
   prefs: []
   type: TYPE_NORMAL
+  zh: 同样，我会对这里的值做相同的处理，因为我们处理的是字符串，这主要是将实际字符串值加上引号以便于查看。比如说，你可以看到返回值也有字符串。
 - en: doing something before we call the function and we're doing we're calling the
     function。 and then we're doing something after calling the function so the main
     kind of takeaways。 here we're that okay we can also use these arcs and quarks
@@ -1313,6 +1317,7 @@
   id: totrans-147
   prefs: []
   type: TYPE_NORMAL
+  zh: 在调用函数之前做一些事情，然后我们正在调用函数，然后在调用函数后做一些事情，所以主要的要点是，我们也可以使用这些参数和关键字参数，并且如果我们提取的内容仅依赖于函数而不是参数，那么你甚至可以这样做。
 - en: stuff up here in the so in the decorator function and the kind of convenience
     or the nice thing about。 doing it here is that this only happens once when you
     actually decorate the function。 while whatever you do down here needs to happen
@@ -1321,6 +1326,7 @@
   id: totrans-148
   prefs: []
   type: TYPE_NORMAL
+  zh: 在装饰器函数中，上面的内容和便利之处在于，这个操作只会在你实际装饰函数时发生一次，而下面所做的每次调用装饰器时都需要执行，所以如果这是一个耗时的操作，能只做一次是很不错的。
 - en: okay then one more thing I want to show you before we move on is that it's also
     possible to stack。 decorators so for instance if I now have the timer decorator
     defined right and so we could。 use that together with the trace decorator so as
@@ -1329,6 +1335,7 @@
   id: totrans-149
   prefs: []
   type: TYPE_NORMAL
+  zh: 好的，在继续之前我想再展示一件事，那就是可以堆叠装饰器，比如说我现在定义了定时器装饰器，我们可以将其与追踪装饰器一起使用，所以作为例子，我就把它放在这里，时间运行追踪，然后为了看到更新，我们现在可以再次运行我们的函数。
 - en: and you'll now see that every time a random greet is called we also get one
     of these elapsed time。 outputs， and so what happens here is that we have put the
     timer around the trace random greet function。 and this is kind of when one of
