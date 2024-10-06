@@ -171,6 +171,7 @@
   id: totrans-20
   prefs: []
   type: TYPE_NORMAL
+  zh: 周围的代码。我在这种情况下并不关心它是位置参数还是关键字参数。所以我可能甚至不需要做那个注释。如果这些事情不成立，最好将你的解决方法封装到一个包装函数中。因此，我在这里稍微将那个小解决方法进行了通用化处理。
 - en: and I've wrapped it in a function that is kind of a drop-in replacement for
     data frame。 for data frames ag function。 And what that does is it just sort of
     takes whatever。 it takes arguments the way that we're， expecting the arguments
@@ -179,6 +180,8 @@
   id: totrans-21
   prefs: []
   type: TYPE_NORMAL
+  zh: 我把它封装在一个函数中，这个函数可以作为 `dataframe` 的 `dataframe.ag` 函数的替代品。它的作用是接收我们期望的参数方式，然后将所有位置参数转换为关键字参数，并将它们传递给
+    `dataframe.ag`。
 - en: So this is useful because it can help you encapsulate any like complicated workaround，
     logic。 It also provides an easy target for removal。 So what you can do is you
     take all the places in your code where you're calling dataframe。ag， and you replace
@@ -187,6 +190,8 @@
   id: totrans-22
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以这很有用，因为它可以帮助你封装任何复杂的解决方法和逻辑。它还提供了一个简单的删除目标。你可以做的是，把你代码中调用 `dataframe.ag` 的所有地方替换为
+    `dataframe_ag`。然后，稍后当你在 1.1.4 修复了主要问题时，你去搜索并替换，恢复原始代码。
 - en: Okay， so we can all say that we're going to clean up this technical debt that
     we've just。 incurred but in reality this workaround function is going to last
     forever。 Or maybe。 So one strategy you can use to sort of make it less of a hack
@@ -196,6 +201,7 @@
   id: totrans-23
   prefs: []
   type: TYPE_NORMAL
+  zh: 好吧，我们都可以说我们要清理刚刚产生的技术债务，但实际上这个解决方法函数可能会永远存在。或者可能。你可以使用的一种策略是将其变得不那么 hack，并最小化范围，我称之为机会升级。这里的想法是，在我们的包装函数中，而不是无条件地应用这个。
 - en: hack I will just write a little function or something that says if this pandas
     bug is。 currently active do this otherwise just return the original thing。 So
     now we have this sort of thing which says we're applying our workaround if and
@@ -204,6 +210,8 @@
   id: totrans-24
   prefs: []
   type: TYPE_NORMAL
+  zh: 我只需写一个小函数，或者其他东西，说明如果这个 pandas bug 目前活跃，就执行这个；否则，返回原始内容。所以现在我们有这样的东西，说明如果且仅如果
+    bug 存在，我们才应用我们的解决方法。我认为有两种广泛的策略来判断这个 bug 是否存在。
 - en: present。 One is by feature detection。 So you can in this case it's fairly easy
     to trigger this bug so I just have this minimal。 reproducing I can just run it
     and if I've triggered the bug I return true and if I didn't。 trigger the bug I
@@ -213,6 +221,8 @@
   id: totrans-25
   prefs: []
   type: TYPE_NORMAL
+  zh: 现在。一个方法是通过特征检测。在这种情况下，触发这个 bug 是相当简单的，所以我只需有这个最小的复现。我可以直接运行它，如果我触发了 bug，就返回
+    true；如果没有触发 bug，就返回 false。实际上我只需运行一次，因为 pandas 版本不会改变，bug 要么存在，要么不存在。所以我可以实际缓存这个。
 - en: I can also you can also check the version because in this case I know that the
     bug is， fixed in 1。1。4 and I also happen to know that the bug wasn't present in
     1。1。0 so I can。 just check the versions and then I'll know whether or not the
@@ -221,6 +231,8 @@
   id: totrans-26
   prefs: []
   type: TYPE_NORMAL
+  zh: 我还可以检查版本，因为在这种情况下，我知道这个 bug 在 1.1.4 中已经修复，而我也恰好知道这个 bug 在 1.1.0 中并不存在，所以我可以检查版本，这样我就知道这个
+    bug 是否存在。这两者都有利有弊。我倾向于更喜欢特征检测版本，因为它不需要确切的知识。
 - en: which versions are affected most of the time you don't know that you've got
     a released。 bug fix up somewhere and you can just opportunistically upgrade when
     the version hits a certain。 number you just sort of are like well if they ever
@@ -229,6 +241,7 @@
   id: totrans-27
   prefs: []
   type: TYPE_NORMAL
+  zh: 大多数情况下，你并不知道哪些版本受到影响，你可能在某个地方有一个发布的错误修复，只需在版本达到某个数字时机会性地升级。你可能会想，如果他们最终修复了这个问题，这将开始有效。你可能也并不总是拥有准确的版本信息，而且这个错误可能很简单。
 - en: to check for like in this case but it might be hard to describe in terms of
     versions and。 platforms so if you really want it tightly scoped and you're only
     triggering it on Debian。 on 64 bit architectures with Python 3。9。7 and Pandas
@@ -237,6 +250,8 @@
   id: totrans-28
   prefs: []
   type: TYPE_NORMAL
+  zh: 在这种情况下进行检查，但在版本和平台方面可能难以描述，因此如果你真的想要严格限制，并且仅在 64 位架构的 Debian 上触发它，使用 Python
+    3.9.7 和 Pandas 1.1.4，这很难封装到你的版本检测中，并且很容易触发错误。
 - en: Whereas the version checking version works when the bug is kind of hard to detect
     so if。 the bug is a memory leak right you're not just gonna like wait until your
     computer runs out。 of memory and you're like oh yeah I should use the workaround
@@ -245,6 +260,7 @@
   id: totrans-29
   prefs: []
   type: TYPE_NORMAL
+  zh: 而版本检查功能在一些难以检测的错误时才能发挥作用，所以如果错误是内存泄漏，你不会只是等到计算机内存耗尽后才意识到，哦对，我应该使用解决方法。如果是段错误，那是无法恢复的，另外这一点的优势在于。
 - en: relatively simple to implement especially if the minimal reproducer can be a
     little complicated。 So once you've written your opportunistic upgrading function
     you can either incorporate。 it into the wrapper function or you can actually conditionally
@@ -253,6 +269,8 @@
   id: totrans-30
   prefs: []
   type: TYPE_NORMAL
+  zh: 相对简单的实现，尤其是如果最小重现者可能有点复杂。因此，一旦你写好了你的机会升级函数，可以将其纳入包装函数，或者根据是否触发错误有条件地定义包装函数。如果在导入时调用
+    `hasPANAsBug` 的成本足够低，你可以说定义这个包装函数。
 - en: function if the bug is present otherwise define the wrapper function to be the
     original function。 that I'm replacing and then and then you're good to go and
     this really minimizes the scope。 because you're not even defining an unusual function。
@@ -261,6 +279,7 @@
   id: totrans-31
   prefs: []
   type: TYPE_NORMAL
+  zh: 如果错误存在，则定义包装函数为我正在替换的原始函数，然后你就可以开始使用了，这样确实最小化了范围，因为你甚至不需要定义一个不寻常的函数。所以，对于这些策略中的每一个，我将给出几个现实生活中的例子。
 - en: applied probably the most prominent thing that you would see these in is something
     like。 feature backports so import live resources is only in Python it started
     in Python 3。9 almost。 everything in the backport names face these are basically
@@ -269,6 +288,7 @@
   id: totrans-32
   prefs: []
   type: TYPE_NORMAL
+  zh: 应用的可能性，最显著的地方就是在特性回归中，例如 `import lib.resources` 只存在于 Python 中，它始于 Python 3.9，几乎所有的回归名称基本上都是包装函数或解决方法。因为你想要从未来版本中获取新特性。
 - en: you can use these backports to to sort of simulate and most of the time these
     do use。 opportunistic upgrading right it's a very common idiom to say like try
     import import， lib。resources except import error import import lib_resources。
@@ -277,6 +297,8 @@
   id: totrans-33
   prefs: []
   type: TYPE_NORMAL
+  zh: 你可以使用这些回归版本来模拟，而大多数情况下它们确实会使用。机会升级，没错，这是一种非常常见的说法，比如尝试导入 `lib.resources`，除了导入错误，导入
+    `lib_resources`。许多人可能熟悉的 Six 包曾广泛用于使 Python 2。
 - en: and 3 compatible that used essentially the same strategy and when I first wrote
     this talk。 it was number two on the on the most downloaded pipi packages interestingly
     in the two years。 since then it has now dropped to nine so maybe my little joke
@@ -285,6 +307,8 @@
   id: totrans-34
   prefs: []
   type: TYPE_NORMAL
+  zh: 与 3 兼容的策略基本上是一样的，当我第一次写这个演讲时，它在下载量最多的 pipi 包中排名第二。有趣的是，在这两年中，它现在已经降到第九位，所以我关于我们永远不会删除待办事项注释的小笑话并不完全准确，所以感谢大家停止使用
+    Python 2。
 - en: The last example is just kind of a pitch so I'm not going to talk about it but
     check out。 the slides and you can you can check out pi tz deprecation shim if
     you want to know more。 about that。 Alright so let's get into the next strategy
@@ -742,6 +766,7 @@
   id: totrans-83
   prefs: []
   type: TYPE_NORMAL
+  zh: 当我们转向更危险的策略时，猴子补丁允许你进行更有针对性的全局修复，它不会引入其他策略所面临的相同打包和部署问题，但它可能很难理解，并且会导致我提到的所有问题，还有供应管理，这可能会…
 - en: unblock your dependency resolution issues and isolate your changes from the
     wider system。 but it's you know it has a lot of the same problems as monkey patching
     and then there's。 maintaining a fork which I did put a pro column on this even
@@ -750,10 +775,12 @@
   id: totrans-84
   prefs: []
   type: TYPE_NORMAL
+  zh: 解锁你的依赖解析问题，并将你的更改与更广泛的系统隔离开来。但这有许多与猴子补丁相同的问题。接下来是维护一个分支，尽管我对这一点并不喜欢，但我在此列出了优点，它相对容易实现，而且有很多工具可以帮助实现。
 - en: '![](img/11eb9fc727230ac9346c52d93cda4808_4.png)'
   id: totrans-85
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/11eb9fc727230ac9346c52d93cda4808_4.png)'
 - en: the end of my that is the end of my talk I'm gonna leave you with a couple of
     final thoughts。 the first one is that I really think that patience is an underrated
     virtue here each。 of these strategies involves incurring some technical debt and
@@ -762,6 +789,7 @@
   id: totrans-86
   prefs: []
   type: TYPE_NORMAL
+  zh: 我演讲的结束就是我的演讲结束，我想给大家留下几个最后的思考。第一个是我真的认为耐心是一种被低估的美德。每一种策略都涉及到一些技术债务，其中一些还涉及到对整个组织施加技术债务，所以你应该考虑制定一些组织策略，让你能耐心等待上游的修复部署。
 - en: strategies that would allow you to patiently wait for upstream to to for upstream
     fixes。 to be deployed and some of those strategies could be strategies for making
     it faster right。 so developing good relationships with your with the maintainers
@@ -770,6 +798,7 @@
   id: totrans-87
   prefs: []
   type: TYPE_NORMAL
+  zh: 其中一些策略可能是加速的策略。因此，建立与依赖项维护者的良好关系，以便你能及时提交你的补丁。最后我想给你们的思考是，尽可能快地解决问题是非常诱人的。
 - en: to say well we're in for a penny in for a pound right we're already patching
     this this。 is a thing and that's not going away so we may as well patch a whole
     bunch of other things。 as well but you should consider that the that each one
@@ -778,6 +807,7 @@
   id: totrans-88
   prefs: []
   type: TYPE_NORMAL
+  zh: 我想说，我们已经开始了，就应该继续下去，对吧？我们已经在修补这个问题了，这个问题不会消失，所以我们不妨也修补其他许多问题。但是你应该考虑到，每一个这样的破解都代表着技术债务，你应该谨慎地积累，不要过多，并且要偿还它。
 - en: as quickly as possible so with that I will leave you with those thoughts I will
     I'm gonna。 run to another talk right after this but I'll be around the conference
     for all the way。 until the end of sprints so find me anytime I'd be happy to talk
@@ -785,3 +815,4 @@
   id: totrans-89
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以我将这些思考留给大家，我接下来要赶去另一个演讲，但在会议期间我会一直在场，直到冲刺结束，所以随时找我，我很乐意和你谈论这个或是D时间，或者你想讨论的其他任何事情。[掌声]（applause）。
