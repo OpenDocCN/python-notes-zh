@@ -1875,6 +1875,7 @@
   id: totrans-223
   prefs: []
   type: TYPE_NORMAL
+  zh: 大多数情况下是因为你不知道自己在做什么。这就是你参加课程的原因。你还不知道自己在做什么。另一件我尝试做的事情，如果我们有一个练习，比如说你有两个列表，你想要制作一个包含这个列表中所有元素的新列表。
 - en: this one together。 Some people are eventually going to find out you can use
     the plus operator。 You can catenate two lists together。 A lot of people that are
     going to try to use， you know。 extend or a lot of people are going， to try to
@@ -1883,6 +1884,7 @@
   id: totrans-224
   prefs: []
   type: TYPE_NORMAL
+  zh: 有些人最终会发现你可以使用加号操作符。你可以将两个列表连接在一起。很多人会尝试使用，嗯，扩展，或者很多人会尝试使用笔。然后他们可能会发现某些事情能或不能工作。我喜欢在这样的练习中提出问题。
 - en: what did you try to do that didn't work？ You thought it might work。 You tried
     it and you went， oh。 turns out this doesn't work because then we start with wrong。
     answers because we always like to start with right answers。 You finally got the
@@ -1891,6 +1893,7 @@
   id: totrans-225
   prefs: []
   type: TYPE_NORMAL
+  zh: 你试图做什么却没有成功？你觉得它可能会成功。你试了，然后你发现，哦，结果这行不通，因为我们总是喜欢从正确答案开始。你终于得到了正确答案。这是你感到骄傲的事情。你想大声喊出来。所以我最初会忽略那些人。
 - en: We try to focus on what didn't work that you thought might work and we work
     our way through。 to something， some things that do work。 Usually there's multiple
     right answers。 So all of these types of ways of doing things are interactive in
@@ -1899,6 +1902,7 @@
   id: totrans-226
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们试图专注于那些你认为可能会有效但没有成功的部分，并努力找到一些能够成功的东西。通常会有多种正确答案。所以所有这些方式都是以一种你无法通过幻灯片实现的互动方式进行的。并不是说你不应该使用幻灯片，但你知道的。
 - en: a teaching setup that's based entirely， around slides is going to be missing
     out on those interactive parts of teaching that。 you get through， you know， group
     settings or you get when you're working in groups in person。 or as an entire room
@@ -1907,11 +1911,13 @@
   id: totrans-227
   prefs: []
   type: TYPE_NORMAL
+  zh: 一个完全基于幻灯片的教学设置将会错失那些通过小组设置或面对面合作时获得的互动教学部分。或者作为一个整个房间在协作，几乎像集体编程一样，我的手在电脑上。其他所有人告诉我该输入什么。
 - en: There was one more question earlier than that。 It was。 is it advisable to do
     collaborative line coding with student teaching platforms， like Replit？
   id: totrans-228
   prefs: []
   type: TYPE_NORMAL
+  zh: 之前还有一个问题。就是，是否可取在教学平台上与学生进行协作编码，比如Replit？
 - en: I'm going to answer this question because is it advisable is something I don't
     feel qualified。 to answer to do collage。 So I've heard of the fact that Replit
     has now collaborative live coding。 I haven't tried it myself。 And the reason is
@@ -1920,12 +1926,14 @@
   id: totrans-229
   prefs: []
   type: TYPE_NORMAL
+  zh: 我会回答这个问题，因为我觉得是否可取是我不觉得有资格回答的事情。所以我听说Replit现在有协作实时编码。我自己还没试过。原因是我不知道会发生什么。我有点担心给所有学生权限来输入内容。
 - en: Now maybe I could have a kind of a social contract where I type things and then
     I say， you know。 someone says， but what if we do this and I don't quite understand
     your question？
   id: totrans-230
   prefs: []
   type: TYPE_NORMAL
+  zh: 现在也许我可以有一种社交契约，我输入内容，然后我说，嗯，有人问，但如果我们这样做，我不太明白你的问题？
 - en: Could you type it out？ But I feel like that would put my students on the spot
     where then we're back to we're。 waiting for typing speed。 And there's a lot of
     people who show up to my classes who do not type very quickly。 At least almost
@@ -1934,6 +1942,7 @@
   id: totrans-231
   prefs: []
   type: TYPE_NORMAL
+  zh: 你能把它打出来吗？但我觉得这会让我的学生感到压力，因为我们又回到了等待打字速度的问题。到我班上的很多人打字速度都不快。至少几乎每个人的打字速度都没有我快，因为我在讲台上带了一种特殊的人体工学键盘，因为我在上面打字很快。
 - en: And I'm in Devorak， which is weird。 And you know， I'm optimizing for my typing
     speed because I want to get through as much。 material as possible。 And so that
     really puts my students on the spot there if they're not typing as fast。 as me，
