@@ -112,6 +112,8 @@
   id: totrans-14
   prefs: []
   type: TYPE_NORMAL
+  zh: 我推荐用它来构建你的 GitHub 机器人。我将分享一些与这个教程相关的资源，比如文档链接和额外学习资料。然后我们将开始使用 GitHub 在命令行上进行
+    API 调用。在那之后，我们将一起构建一个 GitHub 应用程序。我将展示步骤。
 - en: One step at a time， I will show you how to create the app on GitHub。 I will
     show how to deploy your code to Heroku and all the details。 And then we will be
     building a webhook event handle that is to react to events that occurred。 on GitHub
@@ -119,26 +121,33 @@
   id: totrans-15
   prefs: []
   type: TYPE_NORMAL
+  zh: 一步一步来，我将向你展示如何在 GitHub 上创建应用程序。我会展示如何将你的代码部署到 Heroku 以及所有细节。然后我们将构建一个 webhook
+    事件处理程序，以响应在 GitHub 上发生的事件，这样你的机器人就会自动回应。这将会完成。是的。
 - en: let's get started。 Before starting with this tutorial， because we will be using
     Python 3。7。 make sure you， do have Python 3。7。 I provided a link to very in-depth
     tutorial of how to install Python in a real Python guide。
   id: totrans-16
   prefs: []
   type: TYPE_NORMAL
+  zh: 让我们开始吧。在开始这个教程之前，因为我们将使用 Python 3.7，确保你有 Python 3.7。我提供了一个链接，包含如何在真实 Python
+    指南中安装 Python 的详细教程。
 - en: '![](img/3c3588b77123e82a29264958f5086ce4_7.png)'
   id: totrans-17
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/3c3588b77123e82a29264958f5086ce4_7.png)'
 - en: So if you have trouble with installation， go check this out。 So just make sure
     that you do have Python 3。7。 So if you type in Python 3。7 in your 3。0。 it should
     work like that。
   id: totrans-18
   prefs: []
   type: TYPE_NORMAL
+  zh: 如果你在安装时遇到问题，可以查看这个。确保你有 Python 3.7。如果你在你的环境中输入 Python 3.7，它应该可以正常工作。
 - en: '![](img/3c3588b77123e82a29264958f5086ce4_9.png)'
   id: totrans-19
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/3c3588b77123e82a29264958f5086ce4_9.png)'
 - en: And you will need a GitHub account。 That's where we will be creating the app。
     And make sure you are able to log in to GitHub。 Since we will be deploying this
     to Heroku。 you will need a Heroku account as well。 And because we are just testing
@@ -147,6 +156,8 @@
   id: totrans-20
   prefs: []
   type: TYPE_NORMAL
+  zh: 你将需要一个 GitHub 账户。这是我们将创建应用程序的地方。确保你能够登录 GitHub。由于我们将把它部署到 Heroku，你还需要一个 Heroku
+    账户。因为我们只是测试和玩耍，所以你应该能够使用 Heroku 的免费 dyno。
 - en: So you shouldn't need to pay for anything。 And then another useful thing is
     the Heroku 2 belt。 which will be useful for like it has， a CLI to Heroku。 It can
     be useful for debugging later。 Like you can view the logs using the CLI， the Heroku
@@ -155,6 +166,8 @@
   id: totrans-21
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以你不需要支付任何费用。另一个有用的工具是 Heroku 2 belt，它具有一个 CLI，可以用于调试。你可以使用 CLI 查看 Heroku 日志。所以确保你已经设置好这些。现在关于
+    GitHub 机器人，它们是什么？
 - en: These are applications that runs automation on GitHub using GitHub web hooks
     and APIs。 You can do a lot of things with GitHub bots。 It can automatically respond
     to users。 It can automatically apply labels， close these issues， create issues。
@@ -162,6 +175,8 @@
   id: totrans-22
   prefs: []
   type: TYPE_NORMAL
+  zh: 这些是使用 GitHub web hooks 和 APIs 进行自动化的应用程序。你可以通过 GitHub 机器人做很多事情。它可以自动回应用户，自动应用标签，关闭这些问题，创建问题，甚至可以自动处理多个请求。GitHub
+    APIs 通常非常广泛。
 - en: And I truly recommend you look into it and start automating your workflow。 So
     why would you even want to use bots？ If you're maintainer。 you can do all of this
     by yourselves by going to GitHub。 Because you're a person。 you're not on GitHub
@@ -170,6 +185,8 @@
   id: totrans-23
   prefs: []
   type: TYPE_NORMAL
+  zh: 我真心推荐你研究一下并开始自动化你的工作流程。那么你为什么要使用机器人呢？如果你是维护者，你可以自己去 GitHub 完成所有这些。因为你是个人，不可能
+    24/7 待在 GitHub 上。因此，有时如果你可以自动回复贡献者，那就很好。
 - en: prompt response instead of waiting until you're back。 Yeah。 I can show you briefly
     of some of the bots that we have in CPython project。 If you rely on automation
     a lot， we even have four different bots to help us。 Here。 let me show you the
@@ -177,6 +194,8 @@
   id: totrans-24
   prefs: []
   type: TYPE_NORMAL
+  zh: 提供快速响应，而不是等待你回来。是的。我可以简要展示一下我们在 CPython 项目中的一些机器人。如果你非常依赖自动化，我们甚至有四个不同的机器人来帮助我们。让我给你展示一下
+    CPython 仓库。基本上这四个机器人帮助我们处理很多事情。
 - en: So one of the bots is a bot called the Knights who says need。 Whenever somebody
     opens a pull request on GitHub， it will check if they have signed the CLA。 So
     it will automatically apply whether the CLA signed or not signed label。 So this
