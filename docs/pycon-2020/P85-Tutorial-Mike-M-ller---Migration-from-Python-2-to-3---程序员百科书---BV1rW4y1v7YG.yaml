@@ -1224,6 +1224,7 @@
   id: totrans-137
   prefs: []
   type: TYPE_NORMAL
+  zh: 你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。
 - en: And you have to be able to do something。 And you have to be able to do something。
     And you have to be able to do something。 And you have to be able to do something。
     And you have to be able to do something。 And you have to be able to do something。
@@ -1231,6 +1232,7 @@
   id: totrans-138
   prefs: []
   type: TYPE_NORMAL
+  zh: 你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。
 - en: And you have to be able to do something。 And you have to be able to do something。
     And you have to be able to do something。 And you have to be able to do something。
     And you have to be able to do something。 And you have to be able to do something。
@@ -1238,6 +1240,7 @@
   id: totrans-139
   prefs: []
   type: TYPE_NORMAL
+  zh: 你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。
 - en: And you have to be able to do something。 And you have to be able to do something。
     And you have to be able to do something。 And you have to be able to do something。
     And you have to be able to do something。 And you have to be able to do something。
@@ -1245,6 +1248,7 @@
   id: totrans-140
   prefs: []
   type: TYPE_NORMAL
+  zh: 你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。
 - en: And you have to be able to do something。 And you have to be able to do something。
     And you have to be able to do something。 And you have to be able to do something。
     And you have to be able to do something。 And you have to be able to do something。
@@ -1252,6 +1256,7 @@
   id: totrans-141
   prefs: []
   type: TYPE_NORMAL
+  zh: 你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。
 - en: And you have to be able to do something。 And you have to be able to do something。
     And you have to be able to do something。 And you have to be able to do something。
     And you have to be able to do something。 And you have to be able to do something。
@@ -1259,6 +1264,7 @@
   id: totrans-142
   prefs: []
   type: TYPE_NORMAL
+  zh: 你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。
 - en: And you can see some of the things that are very obvious。 You can exception。
     It's very easy to fix。 Some of the things still work。 But the result is different。
     And that's way harder。 So you have to be really careful。 But this key thing with
@@ -1267,6 +1273,7 @@
   id: totrans-143
   prefs: []
   type: TYPE_NORMAL
+  zh: 你可以看到一些非常明显的事情。你可以例外。这很容易修复。有些事情仍然有效。但结果不同。而这要困难得多。所以你必须非常小心。但这里与字典相关的关键事情可能是一个问题。如果你遇到异常，那么你需要修复它。否则你的问题就无法运行。
 - en: It runs through with them。 And stately coming out。 You need to really check
     them。 Okay。 That's an exercise。 And you have to be able to do something。 And you
     have to be able to do something。 And you have to be able to do something。 And
@@ -1274,6 +1281,7 @@
   id: totrans-144
   prefs: []
   type: TYPE_NORMAL
+  zh: 这与他们息息相关。并且庄重地出来。你需要认真检查它们。好的。这是一个练习。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。
 - en: And you have to be able to do something。 And you have to be able to do something。
     And you have to be able to do something。 And you have to be able to do something。
     And you have to be able to do something。 And you have to be able to do something。
@@ -1281,6 +1289,7 @@
   id: totrans-145
   prefs: []
   type: TYPE_NORMAL
+  zh: 你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。你必须能够做到某些事情。
 - en: And you have to be able to do something。 And you have to be able to do something。
     And you have to be able to do something。 And you have to be able to do something。
     And you have to be able to do something。 And you have to be able to do something。
@@ -1514,6 +1523,8 @@
   id: totrans-171
   prefs: []
   type: TYPE_NORMAL
+  zh: 我想让大家了解这一点。所以`reduce`仍然存在。在这里使用`reduce`。这样你就可以在`reduce`中用一点。这在Python 3中不存在。回到Python
+    3。现在只是为了保持一致。其他更改。没有这样的工作。像`reduce`一样，如果我尝试使用`reduce`，它告诉我没有这样的工作。我可以从`fun_tools`导入。导入。`reduce`。然后你就有了。现在你可以使用`reduce`。
 - en: I move to fun tools。 Another thing is you could use apply。 If I have a function
     then you can use apply。 For instance。 I have a function。 Get sums。 The arguments。
     I have my arcs。 I can put my arcs in the list。 And now I could say apply。 And
@@ -1521,6 +1532,7 @@
   id: totrans-172
   prefs: []
   type: TYPE_NORMAL
+  zh: 我转到`fun_tools`。另一个事情是你可以使用`apply`。如果我有一个函数，那么你可以使用`apply`。例如。我有一个函数。获取`sum`。参数。我有我的`arcs`。我可以把我的`arcs`放入列表中。现在我可以说`apply`。我放入我的函数。与其拼写我的参数，我只是将其作为一个元组给出。
 - en: And then it would work in the ads or these numbers。 I can use my style syntax。
     I can say my sum。 And I use this style here。 And I give my arcs。 And this works。
     This works in Python。 So we also took just to show。 So Python 3。 I was not just
@@ -1529,6 +1541,8 @@
   id: totrans-173
   prefs: []
   type: TYPE_NORMAL
+  zh: 然后它将在广告或这些数字中工作。我可以使用我的风格语法。我可以说我的`sum`。我在这里使用这个风格。我给出我的`arcs`。这有效。这在Python中有效。所以我们也只是展示一下。所以Python
+    3。我并不是只是在说应用，如果我尝试，但你可以使用风格语法。我可以先使用`arcs`。先指定`arcs`。现在它有效。这就是做到这一点的方式。
 - en: Another thing is the raw input。 You do have raw input and Python。 So I can create
     a prompt which will be translated to window here。 And you see whatever I type
     into raw input。 So I type 1 plus 1 which will be written back as the string。 1
@@ -1536,6 +1550,8 @@
   id: totrans-174
   prefs: []
   type: TYPE_NORMAL
+  zh: 另一个事情是`raw input`。你确实有`raw input`和Python。因此我可以创建一个提示，它会转换为这里的窗口。你会看到我在`raw input`中输入的任何内容。所以我输入`1
+    plus 1`，这将被写回作为字符串。`1 plus 1`。与`input`相对。`input`。如果我做`input`。
 - en: I look the same superficially but if I say 1 plus 1， it will evaluate my expression。
     And I get back。 That's not nice。 So if you use input， then you potentially execute
     code somebody type in your program。 You really don't want to do this。 Therefore，
@@ -1544,6 +1560,8 @@
   id: totrans-175
   prefs: []
   type: TYPE_NORMAL
+  zh: 表面上看起来是一样的，但如果我说`1 plus 1`，它会评估我的表达式。然后我得到结果。这并不好。所以如果你使用`input`，你可能会执行别人输入的代码。你真的不想这样做。因此，他们改变了Python
+    3的`input`。如果我请求`input`并输入`1 plus 1`，那么它会给我字符串。
 - en: And if I want to have the same effect， I have to write a value around it explicitly
     and。 do something like this。 And there's no raw input anymore。 It's gone。 So you
     need to change your program。 Of course you can rename these things。 You can rename
@@ -1551,6 +1569,8 @@
   id: totrans-176
   prefs: []
   type: TYPE_NORMAL
+  zh: 如果我想要相同的效果，我必须明确地写一个值围绕它，并做一些这样的事情。`raw input`不再存在了。它消失了。所以你需要改变你的程序。当然，你可以重命名这些东西。你可以重命名或将`raw
+    input`命名为`input`，然后你可以这样做。
 - en: Another thing is you have a reload module。 It's not too much recommended to
     use it but you can reload things at runtime。 This one doesn't exist。 It's passing
     2。 This one doesn't exist in Python 3。 If I try reload here。 reload， then it doesn't
@@ -1559,6 +1579,8 @@
   id: totrans-177
   prefs: []
   type: TYPE_NORMAL
+  zh: 另一个事情是你有一个`reload`模块。虽然不太推荐使用它，但你可以在运行时重新加载东西。这个不存在。它传递2。这个在Python 3中不存在。如果我在这里尝试`reload`，那么它不存在。但你可以说从`import
+    lib`导入`reload`，这样就有了。现在是同样的`reload`。如果有一堆这样的东西，它们发生了变化。
 - en: There are some ways to work around it but you have to be a part of it。 Next
     is an exercise。 So please go to the directory for the exercises which will be，
     the extra exercises。 And there you'll find a file called old style。 It looks like
@@ -1567,6 +1589,8 @@
   id: totrans-178
   prefs: []
   type: TYPE_NORMAL
+  zh: 有一些方法可以解决这个问题，但你必须参与其中。接下来是一个练习。所以请去练习的目录，那里有额外的练习。在那里你会找到一个名为`old style`的文件。它看起来像这样。请使这个文件更现代。所以如果一切保持在Python
+    3中，但请使这个文件更现代。
 - en: please make this file more modern。 And keep it in。 Everything stays Python 2。
     Of course。 make it modern Python 2。 And make it modern Python 3。 Okay。 Let's have
     a look at some steps we can do here。 Some solutions。 We have our exercise。 You
@@ -1652,6 +1676,7 @@
   id: totrans-187
   prefs: []
   type: TYPE_NORMAL
+  zh: 你采用了一种新的做事方式。就这样。好的，不太好。其实下一个。这现在可以工作，因为它正在执行下一个。你可以做很多事情，可以慢慢浏览代码，看看这里是否还有其他可以做的。所以这里，是的，没问题。我们有这个决定。我们有这个。我们有下一个。
 - en: You can use the width syntax。 So this would be another one。 Here， this is old。
     You might inherit old code like this， but you could also use width open to open
     and close。 which is always a good thing。 So that's what I'm going to do here now。
@@ -1660,6 +1685,8 @@
   id: totrans-188
   prefs: []
   type: TYPE_NORMAL
+  zh: 你可以使用`with`语法。所以这将是另一个选择。在这里，这是旧的。你可能会继承这样的旧代码，但你也可以使用`with open`来打开和关闭，这总是一个好事。所以这就是我现在要做的。我说`with
+    open`。是的。我们使用`with open`，我只是复制代码，再来一次。
 - en: So you can see step by step， how this goes and it just do here with open。 And
     then we even save this one line and it's going。 So step by step， you can improve
     the code。 make it more modern and this makes it easier later on to move to Python
@@ -1668,6 +1695,8 @@
   id: totrans-189
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以你可以一步一步看到，这个过程是如何进行的，只需在这里用`open`打开。然后我们甚至可以保存这一行，它正在进行。所以一步一步，你可以改进代码。让它更现代，这使得稍后迁移到Python
+    3更容易。很好。没有改变。在Python 2中运行。使这些东西现代化。如果你有一点闲暇时间，可以看看并做一下。
 - en: Makes your life easier later on and also makes the Python code better without
     changing anything in Python 2 and then you're ready to go into Python 3。 So， I'm
     going to go into the Python 3。 Our next topic are converting strategies。 So we'll
@@ -1677,6 +1706,8 @@
   id: totrans-190
   prefs: []
   type: TYPE_NORMAL
+  zh: 让你将来的生活更轻松，也使Python代码更好，而不需要在Python 2中进行任何更改，然后你就可以准备进入Python 3了。那么，我将进入Python
+    3。我们的下一个主题是转换策略。因此，我们将有不同的转换策略。你可以自己完成一切。所以你可以制作自己的小库。这可能对加载某些内容非常有用。
 - en: If you have only a small project， it might be okay。 You don't have any dependencies
     and you have full control of the process。 Of course you have also full responsibility
     and you can do it quite a bit。 If it gets bigger。 it can be a lot of work and
@@ -1685,6 +1716,7 @@
   id: totrans-191
   prefs: []
   type: TYPE_NORMAL
+  zh: 如果你只有一个小项目，那可能可以。你没有任何依赖，完全控制这个过程。当然，你也有完全的责任，可以做很多事情。如果项目变得更大，这可能会是很多工作，当然你可能会错过很多你不知道的事情，而且很容易犯错误。
 - en: Another strategy would be using external libraries。 The two most prominent ones
     are six in the future。 So six has been around for quite a while and backward compatible
     with Python 2。5。 The thing is you have to modify your code and you have to put
@@ -1693,6 +1725,8 @@
   id: totrans-192
   prefs: []
   type: TYPE_NORMAL
+  zh: 另一个策略是使用外部库。两个最突出的库是six和future。因此，six已经存在了很长时间，并且向后兼容Python 2.5。问题是你必须修改你的代码，并且必须在里面放入特殊的函数调用，这使得你的代码与Python
+    3兼容。
 - en: So you have the single source thing but you have to modify the code。 Another
     tool is Future。 You'll find it at Python Future or and we actually can look at
     this a little bit more。 This is the interesting tool that allows you pretty much
@@ -1701,6 +1735,8 @@
   id: totrans-193
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以你有单一源的东西，但你必须修改代码。另一个工具是Future。你可以在Python Future找到它，实际上我们可以稍微深入看看。这是一个有趣的工具，允许你几乎可以在Python
+    2中用Python 3的风格编程。因此，你可以在Python 2中运行更或少的Python 3代码。
 - en: Of course you cannot use all the latest features but a lot of things can be
     done and that's really much better。 And using this tool they are different options。
     You can start from scratch。 You develop a new library and you want to modify C2
@@ -1709,6 +1745,8 @@
   id: totrans-194
   prefs: []
   type: TYPE_NORMAL
+  zh: 当然，你不能使用所有最新的功能，但可以做很多事情，这真的要好得多。而使用这个工具有不同的选项。你可以从头开始。你开发一个新的库，同时想要修改C2和C3。这可以是一个选择。或者你有一个Python
+    2的库，想要迁移到Python 3，这可能是最常见的情况。
 - en: Or you have a Python 3 library that you would like to backport to make a block
     with your old Python 2 code if you needed。 All those 3 things can be done and
     you look at some examples。 So the first thing is writing your small own como tibilator。
@@ -2290,6 +2328,8 @@
   id: totrans-264
   prefs: []
   type: TYPE_NORMAL
+  zh: 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。
+    而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。
 - en: And it's not the same thing。 And it's not the same thing。 And it's not the same
     thing。 And it's not the same thing。 And it's not the same thing。 And it's not
     the same thing。 And it's not the same thing。 And it's not the same thing。 And
@@ -2298,6 +2338,8 @@
   id: totrans-265
   prefs: []
   type: TYPE_NORMAL
+  zh: 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。
+    而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。
 - en: And it's not the same thing。 And it's not the same thing。 And it's not the same
     thing。 And it's not the same thing。 And it's not the same thing。 And it's not
     the same thing。 And it's not the same thing。 And it's not the same thing。 And
@@ -2306,6 +2348,8 @@
   id: totrans-266
   prefs: []
   type: TYPE_NORMAL
+  zh: 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。
+    而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。
 - en: And it's not the same thing。 And it's not the same thing。 And it's not the same
     thing。 And it's not the same thing。 And it's not the same thing。 And it's not
     the same thing。 And it's not the same thing。 And it's not the same thing。 And
@@ -2314,6 +2358,8 @@
   id: totrans-267
   prefs: []
   type: TYPE_NORMAL
+  zh: 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。
+    而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。
 - en: And it's not the same thing。 And it's not the same thing。 And it's not the same
     thing。 And it's not the same thing。 And it's not the same thing。 And it's not
     the same thing。 And it's not the same thing。 And it's not the same thing。 And
@@ -2322,6 +2368,8 @@
   id: totrans-268
   prefs: []
   type: TYPE_NORMAL
+  zh: 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。
+    而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。
 - en: And it's not the same thing。 And it's not the same thing。 And it's not the same
     thing。 And it's not the same thing。 And it's not the same thing。 And you specify
     what's fixed in one fixes。 Fix next。 So this will only fix next。 And then I specify
@@ -2330,6 +2378,8 @@
   id: totrans-269
   prefs: []
   type: TYPE_NORMAL
+  zh: 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且这不是同一件事。 而且你指定一个修复中固定的内容。 修复下一个。
+    所以这只会修复下一个。 然后我指定我的真实样本。 文件。 然后只修复这个自己的内容。 是的。 所以不需要修改。 由。
 - en: Probably I'm in the wrong directory。 Yeah， so I have to check。 Add the price
     sample。 I must have fixed it in place。 It tells me it doesn't need nothing to
     be modified。 Because it's obviously modified already。 Yeah。 Yeah。 There's a modified
@@ -2338,6 +2388,8 @@
   id: totrans-270
   prefs: []
   type: TYPE_NORMAL
+  zh: 可能我在错误的目录。 是的，所以我必须检查。 添加价格样本。 我一定已经固定了它。 它告诉我不需要任何修改。 因为它显然已经被修改了。 是的。 是的。
+    这个已经被修改了。 这是一个已修改的文件。 我一定在这个已修改的文件中覆盖了它。 在这个地方。
 - en: But we still have。 We still have it。 We still have this original file。 And now
     I can save this one。 And save this file。 And I can save this one。 So I have to
     save this。 So 12。 Okay。 I have this now a safe cell 12 in the new file。 And then
@@ -2346,6 +2398,8 @@
   id: totrans-271
   prefs: []
   type: TYPE_NORMAL
+  zh: 但是我们仍然有。 我们仍然有它。 我们仍然有这个原始文件。 现在我可以保存这个。 并保存这个文件。 我可以保存这个。 所以我必须保存这个。 所以12。
+    好的。 我现在在新文件中安全地保存了12。 然后如果我对这个文件做同样的事情。 如果你这样做会发生什么。 是的，我做派。 它看起来像这样。 好的。 现在我可以使用未来的米饭。
 - en: And I use my pie too。 And then it tells you what it did。 And then。 Yeah。 It
     tells you it has to change only the next。 It doesn't leave the other things alone。
     So you can go fix by fix if you like。 And there's many fixes。 You can go through
@@ -2354,6 +2408,7 @@
   id: totrans-272
   prefs: []
   type: TYPE_NORMAL
+  zh: 并且我使用我的Python工具。然后它告诉你它所做的事情。然后。是的。它告诉你必须更改的内容。它不会干扰其他内容。因此，如果你愿意，可以逐一修复。而且有许多修复。你可以逐个修复所有这些修复。这是可能的。或者你可以修复第一阶段、第二阶段。然后第一阶段就是。
 - en: All the things to make pricing to seven more modern。 And then。 Stage two actually
     make it prices free。 Compose。 Good。 Of course if you do this。 you see it's still
     important to have tests in place。 You should have your source could cover this
@@ -2365,6 +2420,8 @@
   id: totrans-273
   prefs: []
   type: TYPE_NORMAL
+  zh: 所有这些都是为了让定价更现代化。然后，第二阶段实际上使其无价。编排。好的。当然，如果你这样做，你会发现保持测试很重要。你应该有源代码覆盖这些测试。否则，你可能会在某些问题中看到它。而这些工具并不完美。你必须有核心环境。我在这里联系了，你可以使用Python工具和Python
+    3进行测试。当然。你可以控制你能做的事情。我们可以在后续撤销操作。你可以逐步修复，或者逐阶段进行。
 - en: So these are the strategies you can apply。 And what works for you。 If you want
     to do all files in one or just one file at a time。 They're different ways of doing
     it。 Okay。 Let's do an exercise。 So。 If you go to the PDF， you will find an exercise。
@@ -2372,6 +2429,7 @@
   id: totrans-274
   prefs: []
   type: TYPE_NORMAL
+  zh: 这些是你可以应用的策略。适合你的方法。如果你想一次处理所有文件，或者逐个文件处理，都有不同的方式。好的。让我们做一个练习。如果你查看PDF，你会发现一个练习。那么，使用未来语法并进行转换。是手动的旧式文件，逐步进行。
 - en: So we use two stages approaches。 Apply stage on first and then the next one。
     Then also apply both stages and check if it works。 And if there's any needs。 just
     we need to edit later by hand。 It's anything missing。 Okay。 Let's have a look
@@ -2380,6 +2438,7 @@
   id: totrans-275
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以我们采用两阶段的方法。先应用第一阶段，然后再进行下一步。接着同时应用两个阶段，检查是否有效。如果还有需要，之后我们只需手动编辑。是否有任何遗漏。好的。让我们看看解决方案。解决方案非常简单。你只需使用未来语法，并且只需要使用它。
 - en: These commands。 So the future rights command for。 Stage one would be minus one
     switch to your eyes command for stage two is minus two。 And future is proposed
     stage is zero。 So if you do this and you just apply it。 To those files， then。
@@ -2388,6 +2447,7 @@
   id: totrans-276
   prefs: []
   type: TYPE_NORMAL
+  zh: 这些命令。因此，第一阶段的未来语法命令是减一，第二阶段的未来语法命令是减二。而未来的提议阶段是零。所以如果你这样做，只需应用到那些文件，然后。它在你指定的情况下有效。如果我这样做，我只需。将其放在这里，然后进入终端。然后。我需要去。
 - en: And then just copy the files over and you can apply。 Yeah， so。 I have my。 File
     here。 And it just need to futureize my。 After good exercise first， correct。 So
     in exercises you have exercises files and you can do this directly。 Yeah。 And
@@ -2396,6 +2456,7 @@
   id: totrans-277
   prefs: []
   type: TYPE_NORMAL
+  zh: 然后只需复制文件，你就可以应用。是的，所以。我这里有我的文件。只需将我的文件进行未来化。首先，正确完成练习。因此在练习中你有练习文件，可以直接进行。是的。你可能想先创建这个目录，如果你尝试这个。是的。它显然创建了一个目录。
 - en: So now you can go inside to directory and you can have your memory。 And it creates
     it。 Now it created the value file in stage one。 As you can see here by applying
     this command。 And you see what it's did。 Yeah， it changed it。 It changed the print。
@@ -2404,6 +2465,7 @@
   id: totrans-278
   prefs: []
   type: TYPE_NORMAL
+  zh: 现在你可以进入目录，获取你的记忆。它创建了。现在在第一阶段创建了值文件。如你所见，通过应用这个命令。你可以看到它所做的。是的，它改变了。它改变了打印。并且从未来打印。现在当然你可以为第二阶段做同样的事情。所以这个菜单用于打开。
 - en: You can also do this。 Yeah， stage two。 And apply it to。 And then you go and
     then you have your stage。 Stage two， and of course you have to say。 Specify stage
     one。 And you did take the bond。 And you can do it to stage two。 And the addition。
@@ -2411,6 +2473,7 @@
   id: totrans-279
   prefs: []
   type: TYPE_NORMAL
+  zh: 你也可以这样做。是的，第二阶段。并应用它。然后你去，然后你有你的阶段。第二阶段，当然你必须说。指定第一阶段。你确实进行了绑定。你可以将其应用于第二阶段。然后增加。例如，现在将你的键转换为列表。还有许多其他效果。
 - en: You can do the same thing。 For this old。 Style file。 Yeah。 and then it's controlling
     it to stage one。 And it will tell you what it did。 So the print is mounting。 And
     also it does a next。 And it gets rid of the。 Unequal sign here and there's also
@@ -2418,6 +2481,7 @@
   id: totrans-280
   prefs: []
   type: TYPE_NORMAL
+  zh: 你可以为这个旧。样式文件做同样的事情。是的。然后它控制到第一阶段。它会告诉你它做了什么。所以打印正在挂载。并且它还进行下一步。并且去掉了这里的不等号，还进行了。选项编号的更改。所以我们做的一切。
 - en: By hand before。 It was doing it for you and even more because it knows more
     about it。 And has more fixes。 It has more fixes than we have here。 And because
     there's a lot of small corner case things。 You might not think about it and that
@@ -2425,6 +2489,8 @@
   id: totrans-281
   prefs: []
   type: TYPE_NORMAL
+  zh: 之前手动进行。它为你做了更多，因为它了解得更多。并且有更多的修复。它的修复比我们这里多。因为有很多小角落情况的事情。你可能不会考虑到，它也发生了变化。这就是方法。使用futurize
+    apply。
 - en: It's always good to know what you're doing。 That's why it's really helpful to
     have a basic understanding of the main changes。 And there are more than 50 different
     fixes。 So read up on the fixes。 But they actually need。 Okay。 so we moved our
@@ -2433,6 +2499,8 @@
   id: totrans-282
   prefs: []
   type: TYPE_NORMAL
+  zh: 知道你在做什么总是好的。这就是为什么对主要更改有基本了解非常有帮助。并且有超过50种不同的修复。所以阅读一下这些修复。但它们实际上是需要的。好的，所以我们将代码从Python迁移到Pi
+    three。还有另一种方法，你有Pi three代码，可能想让Pi three库可用。
 - en: Pison to we can。 Actually start from Pisces three。 That's that's going to work。
     So I made a new notebook and we say from starting from Pisces three。 That's maybe
     not that common but not。 Impossible。 That's why I show you how to do it。 Starting
@@ -2440,6 +2508,7 @@
   id: totrans-283
   prefs: []
   type: TYPE_NORMAL
+  zh: Pison到我们可以。实际上从Pi three开始。这样会有效。所以我做了一个新的笔记本，我们说从Pi three开始。这可能不是很常见，但也不是。 不可能。这就是为什么我教你怎么做。从三开始。所以我们有一个非常简单。非常简单的文件。
 - en: There's into file and this is simply fine。 You would like to convert。 Oh， it's
     kept me in this。 So we should。 We go to this source directory again and then we
     have a file。 Which is very。 very simple。 It is a。 Pi three。 Yeah。 So actually
@@ -2448,6 +2517,8 @@
   id: totrans-284
   prefs: []
   type: TYPE_NORMAL
+  zh: 文件中有内容，这没问题。你可能想进行转换。哦，这让我停留在这里。所以我们应该。我们再去这个源目录，然后我们有一个文件。非常，非常简单。它是一个。Pi three。是的。实际上就是这样。我开始这个，所以Pi
+    three示例看起来像这样。这真的非常简单。
 - en: very simple file and Pisces three。 And now I want to show you there's another
     tool called pasteurize and this pasteurize file。 It's actually doing something
     with this file。 It's converting it in a way that it also runs the same in Pisces
@@ -2457,6 +2528,8 @@
   id: totrans-285
   prefs: []
   type: TYPE_NORMAL
+  zh: 非常简单的文件和Pi three。现在我想给你展示另一个叫做pasteurize的工具，这个pasteurize文件。它实际上正在处理这个文件。它以一种方式转换，使其在Pi
+    three中运行也一样。所以让我们看看这是如何工作的。你需要做什么。所以我。Miss pasteurize。首先。我去终端。是的，我这样做是在终端，然后我上移一个目录，复制我的。
 - en: Pi three sample start。 It was a good in place to。 Pi three sample。 Oh， good。
     So I now I can use。 The pasteurize command。 Which is adding all kinds of stuff
     and I use write。 So it writes it directly in there and I say， Pisces three sample。
@@ -2464,6 +2537,8 @@
   id: totrans-286
   prefs: []
   type: TYPE_NORMAL
+  zh: Pi three示例开始。这里是个不错的地方。Pi three示例。哦，太好了。现在我可以使用。Pasteurize命令。它添加各种内容，我使用写入。这样它就直接写入这里，我说，Pi
+    three示例。Dot D.Y。现在它告诉你正在做什么。所以它添加了一堆东西。
 - en: it runs a lot of from future import statements。 It imports a bit in sip and
     it ports the range。 the sound library and so on。 It seems quite a bit， but you
     don't have to do it yourself。 And now when you run the program， it does exactly
@@ -2472,6 +2547,8 @@
   id: totrans-287
   prefs: []
   type: TYPE_NORMAL
+  zh: 它从future导入了很多语句。它在sip中导入了一些内容，并导入了范围、声音库等。这看起来有点多，但你不需要自己去做。现在，当你运行程序时，它在Pisces
+    2和Pisces 3中表现完全相同。是的，所以pasteurize会添加所有需要的东西。你可以自己去做。
 - en: but this one will only add the needed changes。 Yeah， so it only imports it if
     you need it。 if you don't need simply one important。 Yeah， and so kind of things。
     So this one can be useful。 Maybe not the common case， the common case is moving
@@ -2480,6 +2557,7 @@
   id: totrans-288
   prefs: []
   type: TYPE_NORMAL
+  zh: 但这个只会添加所需的更改。是的，它只在需要时导入。如果你不需要，那么就不需要导入。是的，还有其他类似的情况。所以这个工具可能有用。也许不是常见情况，常见情况是从2迁移到3。但在这里，如果你需要，也可以从3迁移到2。所以这就结束了这个教程。
 - en: I hope you learned something。 So we covered quite a few things here。 So we looked
     at the look that although all these features or many features that change from
     two to three。 we spent a little bit of time doing it by hand， which I think is
@@ -2487,6 +2565,7 @@
   id: totrans-289
   prefs: []
   type: TYPE_NORMAL
+  zh: 我希望你学到了些什么。我们在这里覆盖了很多内容。我们观察到，虽然许多功能从2到3有变化，但我们花了一点时间手动处理，我认为这是好的。我们也看到了几款工具，未来的前景似乎是最好的。
 - en: There's my opinion and you can apply it and you still need to know what you're
     doing。 And those tools are pretty good to help you converting your Pisces two
     to Pisces three。 So I hope you don't have to convert too much and you will have
@@ -2495,11 +2574,15 @@
   id: totrans-290
   prefs: []
   type: TYPE_NORMAL
+  zh: 这是我的观点，你可以应用它，但你仍然需要知道自己在做什么。那些工具非常适合帮助你将Pisces 2转换为Pisces 3。所以我希望你不需要转换太多，并且将来能够完全使用Pisces
+    3。希望你在教程中学到了些什么，并祝你在达拉斯的Pisces一切顺利。
 - en: '[BLANK_AUDIO]， [BLANK_AUDIO]， [BLANK_AUDIO]。'
   id: totrans-291
   prefs: []
   type: TYPE_NORMAL
+  zh: '[空音频]， [空音频]， [空音频]。'
 - en: '![](img/91b215d5b38cdccc024726453d81019b_26.png)'
   id: totrans-292
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/91b215d5b38cdccc024726453d81019b_26.png)'
