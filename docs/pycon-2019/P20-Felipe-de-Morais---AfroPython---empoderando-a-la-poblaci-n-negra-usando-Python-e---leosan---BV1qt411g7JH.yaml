@@ -1,355 +1,588 @@
 - en: P20：Felipe de Morais - AfroPython - empoderando a la población negra usando
     Python e - leosan - BV1qt411g7JH
+  id: totrans-0
   prefs:
   - PREF_H1
   type: TYPE_NORMAL
+  zh: P20：Felipe de Morais - AfroPython - 使用 Python 赋能黑人社区 e - leosan - BV1qt411g7JH
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-1
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]。'
 - en: '![](img/2f58e130fc4da37afb5b0100303b0af2_1.png)'
+  id: totrans-2
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/2f58e130fc4da37afb5b0100303b0af2_1.png)'
 - en: '[LAUGHTER]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [APPLAUSE]， [SPEAKING SPANISH]。
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-3
   prefs: []
   type: TYPE_NORMAL
+  zh: '[笑声]， [说西班牙语]， [说西班牙语]， [掌声]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-4
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-5
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-6
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-7
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-8
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-9
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-10
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-11
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-12
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-13
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。'
 - en: '![](img/2f58e130fc4da37afb5b0100303b0af2_3.png)'
+  id: totrans-14
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/2f58e130fc4da37afb5b0100303b0af2_3.png)'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-15
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。'
 - en: '![](img/2f58e130fc4da37afb5b0100303b0af2_5.png)'
+  id: totrans-16
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/2f58e130fc4da37afb5b0100303b0af2_5.png)'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-17
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。'
 - en: '![](img/2f58e130fc4da37afb5b0100303b0af2_7.png)'
+  id: totrans-18
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/2f58e130fc4da37afb5b0100303b0af2_7.png)'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-19
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]。'
 - en: '![](img/2f58e130fc4da37afb5b0100303b0af2_9.png)'
+  id: totrans-20
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/2f58e130fc4da37afb5b0100303b0af2_9.png)'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-21
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-22
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING
     SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-23
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-24
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-25
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING]， [SPEAKING SPANISH]。'
+  id: totrans-26
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-27
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-28
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-29
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-30
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING]， [SPEAKING SPANISH]， [SPEAKING
     SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING
     SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING
     SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-31
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING
     SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING
     SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-32
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-33
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-34
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-35
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-36
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING]， [SPEAKING SPANISH]。'
+  id: totrans-37
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-38
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-39
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-40
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING]， [SPEAKING
     SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING
     SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING
     SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING
     SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-41
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING]。 [SPEAKING]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-42
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说]。 [说]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。
+    [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-43
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-44
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-45
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-46
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-47
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-48
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING]， [SPEAKING
     SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING
     SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING
     SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING
     SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-49
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-50
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-51
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-52
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [APPLAUSE]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-53
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [鼓掌]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-54
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[LAUGHTER]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [LAUGHTER]，
     [SPEAKING]。 [LAUGHTER]， [SPEAKING]， [SPEAKING]， [SPEAKING]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-55
+  prefs: []
+  type: TYPE_NORMAL
+  zh: '[笑声]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [笑声]， [说]。 [笑声]， [说]， [说]， [说]， [说西班牙语]， [说西班牙语]。
+    [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。'
+- en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
+    [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
+    [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
+    [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
+    [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-56
+  prefs: []
+  type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
+- en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
+    [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
+    [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
+    [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
+    [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-57
+  prefs: []
+  type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
+- en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
+    [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
+    [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
+    [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
+    [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-58
   prefs: []
   type: TYPE_NORMAL
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
@@ -357,6 +590,7 @@
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-59
   prefs: []
   type: TYPE_NORMAL
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
@@ -364,6 +598,7 @@
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-60
   prefs: []
   type: TYPE_NORMAL
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
@@ -371,6 +606,7 @@
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-61
   prefs: []
   type: TYPE_NORMAL
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
@@ -378,6 +614,7 @@
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-62
   prefs: []
   type: TYPE_NORMAL
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
@@ -385,6 +622,7 @@
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-63
   prefs: []
   type: TYPE_NORMAL
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
@@ -392,6 +630,7 @@
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-64
   prefs: []
   type: TYPE_NORMAL
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
@@ -399,90 +638,111 @@
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-65
   prefs: []
   type: TYPE_NORMAL
-- en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
-    [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
-    [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
-    [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
-    [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
-  prefs: []
-  type: TYPE_NORMAL
-- en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
-    [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
-    [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
-    [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
-    [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
-  prefs: []
-  type: TYPE_NORMAL
-- en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
-    [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
-    [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
-    [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
-    [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
-  prefs: []
-  type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING]。'
+  id: totrans-66
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说]。'
 - en: '[SPEAKING SPANISH]。'
+  id: totrans-67
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]。'
 - en: '![](img/2f58e130fc4da37afb5b0100303b0af2_11.png)'
+  id: totrans-68
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/2f58e130fc4da37afb5b0100303b0af2_11.png)'
 - en: '![](img/2f58e130fc4da37afb5b0100303b0af2_12.png)'
+  id: totrans-69
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/2f58e130fc4da37afb5b0100303b0af2_12.png)'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-70
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-71
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING]， [SPEAKING SPANISH]， [SPEAKING
     SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING
     SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING
     SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING
     SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-72
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING
     SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING
     SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING
     SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-73
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]，
     [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。'
+  id: totrans-74
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [说西班牙语]， [说西班牙语]。'
 - en: '[SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]，
     [SPEAKING]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING SPANISH]， [SPEAKING
     SPANISH]， [SPEAKING SPANISH]， [SPEAKING SPANISH]。 [SPEAKING SPANISH]， [SPEAKING
     SPANISH]， [SPEAKING SPANISH]， [APPLAUSE]， [SPEAKING SPANISH]。'
+  id: totrans-75
   prefs: []
   type: TYPE_NORMAL
+  zh: '[说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说]，
+    [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]， [说西班牙语]。 [说西班牙语]， [说西班牙语]， [说西班牙语]，
+    [掌声]， [说西班牙语]。'
 - en: '[APPLAUSE]， [SPEAKING SPANISH]， [APPLAUSE]， [SPEAKING SPANISH]， [APPLAUSE]。'
+  id: totrans-76
   prefs: []
   type: TYPE_NORMAL
+  zh: '[掌声]， [说西班牙语]， [掌声]， [说西班牙语]， [掌声]。'
 - en: '![](img/2f58e130fc4da37afb5b0100303b0af2_14.png)'
+  id: totrans-77
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/2f58e130fc4da37afb5b0100303b0af2_14.png)'
