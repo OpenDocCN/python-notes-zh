@@ -1,16 +1,20 @@
 - en: P76：Talk - Sebastiaan Zeeff_ Demystifying Python’s Internals_ Diving into CPython
     by - VikingDen7 - BV1f8411Y7cP
+  id: totrans-0
   prefs:
   - PREF_H1
   type: TYPE_NORMAL
 - en: It's my pleasure to introduce Sebastian Safe， who will be talking about demonstrating
     Python's。
+  id: totrans-1
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/5632ecbf70ba85f31442fabbf3c785c2_1.png)'
+  id: totrans-2
   prefs: []
   type: TYPE_IMG
 - en: '![](img/5632ecbf70ba85f31442fabbf3c785c2_2.png)'
+  id: totrans-3
   prefs: []
   type: TYPE_IMG
 - en: internals， diving into C Python by implementing a pipe operator。 Yes， well，
@@ -18,6 +22,7 @@
     Python and my first in-person Python talk。 I gave a talk last year， but it was
     online。 I'm really happy to be here and to just be able to see you all。 I'm also
     really happy for all of the people who are joining us from home online。
+  id: totrans-4
   prefs: []
   type: TYPE_NORMAL
 - en: It's really like a birthday present。 And in fact， today is my birthday。 So this
@@ -25,6 +30,7 @@
     birthday party today。 So before we dive into Python， I'm first briefly going to
     introduce myself so you， know who I am。 And then we're going to dive right into
     the talk。 So my name is Sebastian。
+  id: totrans-5
   prefs: []
   type: TYPE_NORMAL
 - en: You can see my Twitter handle over there。 If you have any angry corrections
@@ -32,6 +38,7 @@
     that I would really appreciate it is photos。 I don't have a lot of photos of me
     speaking， especially in the past two years。 Everything has been online， staring
     into a webcam。 So if you do make a photo。
+  id: totrans-6
   prefs: []
   type: TYPE_NORMAL
 - en: it doesn't matter if it's from close by or far away， please， tweet it at me。
@@ -39,30 +46,35 @@
     last Saturday。 We had a nice road trip here to Salt Lake City。 And in the Netherlands。
     I worked for the Ordina Python years。 And what we do is we use Python and we go
     out to our customers and we help them with。
+  id: totrans-7
   prefs: []
   type: TYPE_NORMAL
 - en: their problems。 We implement solutions。 We do enterprise development。 We do
     a lot of artificial intelligence and machine learning。 I'm more in the web development
     and the enterprise side of things。 But that's part of what we do。 And I'm also
     part of the codesmith group of the Ordina software development， which means。
+  id: totrans-8
   prefs: []
   type: TYPE_NORMAL
 - en: I get to be here。 I get to do stuff with innovation and education。 It's all
     really nice and I really like that。 In my spare time， I'm a volunteer for Europe，
     Python。 which is another great conference。 It's happening in Dublin this year。
     which might be a little bit far away for a lot of， you， but there are hybrid options。
+  id: totrans-9
   prefs: []
   type: TYPE_NORMAL
 - en: So do consider coming or joining online。 It's going to be awesome。 And I'm also
     one of the founders or owners of Python Discord， which is a large online。 Python
     community。 So right。 Let's dive into the talk itself。 What we're going to do today。
     we're going to take a journey all the way from source code， to execution。
+  id: totrans-10
   prefs: []
   type: TYPE_NORMAL
 - en: So what we're going to see， we're going to see a lot of topics like tokens，
     grammar。 the pack parser。 We're going to talk about abstract syntax trees。 We're
     going to talk a little bit about the compiler that Python has byte code and upcodes。
     or the instructions。 And finally， we will see the evaluation loop。
+  id: totrans-11
   prefs: []
   type: TYPE_NORMAL
 - en: And this is where really the magic happens。 And I'm not just going to give you
@@ -70,12 +82,14 @@
     going to implement a new operator in Python， a pipe operator。 And it will very
     naturally take us all the way from source code to execution。 There are also some
     time constraints。 So please excuse me。
+  id: totrans-12
   prefs: []
   type: TYPE_NORMAL
 - en: This talk will feature blatant emissions and gross oversimplifications。 So if
     you'd like to know more after this very broad introductions， there are a few great，
     resources。 There's the Python dev guide that you can find online。 It's an excellent
     resource and it has everything you need to get you started with developing and。
+  id: totrans-13
   prefs: []
   type: TYPE_NORMAL
 - en: contributing to see Python。 There's also a guide written by Victor Stinner。
@@ -83,6 +97,7 @@
     the C Python internals book written by Anthony Schull and the real。 Python crew。
     Definitely check out that book as well。 So for today。 we're going to take the
     entire journey from source code all the way to execution。
+  id: totrans-14
   prefs: []
   type: TYPE_NORMAL
 - en: But there's a lot of details in here， a lot of code。 There are a lot of slides。
@@ -90,6 +105,7 @@
     on my GitHub， page。 It's over there， Sebastian Z/Python。 I thought it was a nice
     name for the repository。 And basically you will find everything that I tell you
     today。
+  id: totrans-15
   prefs: []
   type: TYPE_NORMAL
 - en: You will also find it in there so you can play around with this new implementation
@@ -97,18 +113,21 @@
     It's a new binary operator。 And this means that it takes two operands， one on
     the left-hand side and one on the right-hand。 side。 And then it does something
     with those two values。 And our pipe operator。
+  id: totrans-16
   prefs: []
   type: TYPE_NORMAL
 - en: it works with very simple functions。 So you have this double function here。
     It just takes a single argument and it returns something。 Internally。 the function
     can be quite complex， but it has to take a single argument and it。 has to return
     something， while not returning something， it's very difficult in Python。
+  id: totrans-17
   prefs: []
   type: TYPE_NORMAL
 - en: So this is the kind of functions that we'll work with。 What we'll be able to
     do is to call the function in a new way。 So what we can do is we can first specify
     the argument， one in this case， use the operator。 and then name the function。
     And then the argument will be passed to the function and the result of this operation。
+  id: totrans-18
   prefs: []
   type: TYPE_NORMAL
 - en: will be whatever value the function returns。 So it's equivalent to calling double
@@ -117,6 +136,7 @@
     a single value and then build a pipeline of functions to process that。 value。
     So if you have a data set or a list or a single value， you need to do a number
     of operations。
+  id: totrans-19
   prefs: []
   type: TYPE_NORMAL
 - en: on them。 You can do that in a very functional way。 You can pass the value from
@@ -124,6 +144,7 @@
     what we're going to do today。 And obviously this is not a part of Python itself
     and it probably will never be a part。 of Python。 I know this operator has been
     proposed a few times。
+  id: totrans-20
   prefs: []
   type: TYPE_NORMAL
 - en: There are very good reasons not to add it to the language。 There are other ways
@@ -131,6 +152,7 @@
     If you really want such an operator。 go discuss it with a core developer or with
     the steering， council。 But just to be sure。 this is not in Python。 We're going
     to implement it here。
+  id: totrans-21
   prefs: []
   type: TYPE_NORMAL
 - en: And also the implementation is purely educational。 I'm going to take a few shortcuts
@@ -138,6 +160,7 @@
     all the parts that。 we need to change。 And I'm not going to use existing opcodes
     and things like that just to be able to show。 you everything。 So it's purely educational。
     But if you want。
+  id: totrans-22
   prefs: []
   type: TYPE_NORMAL
 - en: you can download the source code and try to improve it。 Cool。 So what we're
@@ -145,6 +168,7 @@
     called an abstract syntax tree。 An abstract syntax tree is a different representation
     of your source code。 It's a nice tree structure which is much easier for the compiler
     to work with。
+  id: totrans-23
   prefs: []
   type: TYPE_NORMAL
 - en: So that is the first step。 We want to take the source code with the new operator
@@ -152,6 +176,7 @@
     node。 So let's first zoom in on the source code。 So here we have a piece of source
     code。 And for us humans， we are very good at chunking stuff。 So we immediately
     see a 10。 We maybe see the name double。
+  id: totrans-24
   prefs: []
   type: TYPE_NORMAL
 - en: We see kind of a weird operator in the middle that's not part of Python just
@@ -159,6 +184,7 @@
     at first， these are just 12 characters。 Maybe there's a new line at the end。 I've
     left it out。 These are just 12 characters， two spaces。 and it doesn't quite know
     what to do with it， yet。
+  id: totrans-25
   prefs: []
   type: TYPE_NORMAL
 - en: The first step for Python is to turn those characters into a stream of tokens。
@@ -166,6 +192,7 @@
     over here。 This is the smallest part that we can divide in our source code if
     we try to separate these。 characters we lose meaning。 There's a name token over
     here， the name double。
+  id: totrans-26
   prefs: []
   type: TYPE_NORMAL
 - en: And obviously if we leave out some of the characters， the name changes。 But
@@ -176,12 +203,14 @@
     is just a configuration file。 So if you look in the Python repository， there's
     a folder called grammar。 And in there。 there's a file called tokens。 And this
     is just a text file。
+  id: totrans-27
   prefs: []
   type: TYPE_NORMAL
 - en: And it maps the name of the token to the character sequence that makes up the
     token。 So you find a lot of tokens in there。 These are just a few。 And the only
     thing that we need to do is we need to add a token of our own。 So I'm calling
     it the V-Bar Grader because they're not really semantics at this point。
+  id: totrans-28
   prefs: []
   type: TYPE_NORMAL
 - en: They just follow the naming convention in here。 And this V-Bar Grader is mapped
@@ -189,6 +218,7 @@
     the tokenizer won't actually use it。 Because the tokenizer won't continuously
     read in this file。 It's actually generated using this file。 So for the tokenizer
     to actually use this， we have to regenerate it。
+  id: totrans-29
   prefs: []
   type: TYPE_NORMAL
 - en: And this is going to be something that we'll see a lot in this talk。 We'll have
@@ -196,12 +226,14 @@
     there's a build。bat file in the PC build folder。 And you can run the --regen command。
     which will actually regenerate a whole bunch of， other stuff as well。 And once
     you've done this。
+  id: totrans-30
   prefs: []
   type: TYPE_NORMAL
 - en: now you have a tokenizer that knows the token， that's aware。 of the token and
     can finally parse it and put it in a stream of tokens。 So after this simple change。
     we've already went from source code to a stream of tokens。 And this stream of
     tokens is the input for the parser。
+  id: totrans-31
   prefs: []
   type: TYPE_NORMAL
 - en: And this makes the pack parser in Python a little bit weird。 Most pack parsers
@@ -209,6 +241,7 @@
     we know。 And this stream of tokens will be put into the parser。 And the parser
     will output the abstract syntax tree。 And if you've looked at the parser in the
     past。
+  id: totrans-32
   prefs: []
   type: TYPE_NORMAL
 - en: the old parser that was in Python， it， actually used an intermediate step called
@@ -216,6 +249,7 @@
     the parser can immediately translate。 this stream of tokens that it parses into
     the abstract syntax tree。 So that's what we need to do。 So we now need to add
     support in the parser for our new token。
+  id: totrans-33
   prefs: []
   type: TYPE_NORMAL
 - en: And that's obviously very important because there currently is no syntax that
@@ -223,24 +257,28 @@
     finally。 we also need to add support for this new operator in the abstract syntax，
     tree。 It needs to have a node on its own。 So that's what we're going to do next。
     And to do that。
+  id: totrans-34
   prefs: []
   type: TYPE_NORMAL
 - en: we're going to add a new grammar rule to Python for our new operator。 And as
     I just said。 Python now uses a pack parser。 So we're going to use the parsing
     expression grammar syntax to define our token。 Now， I'm not going to explain all
     of this syntax to you。 There's an excellent chapter in the dev guide online。
+  id: totrans-35
   prefs: []
   type: TYPE_NORMAL
 - en: But I am going to zoom in on just a little bit of the parts that we need for
     our new， operator。 So first of all， here's a very simplified piece of pack grammar。
     And you can assume that there are some other statements above there that define
     statements。 but these are the only two expressions in my simplified mini language。
+  id: totrans-36
   prefs: []
   type: TYPE_NORMAL
 - en: And I've left out some noise that we don't need right now。 So and let me just
     color code it for you because that's important。 In this language defined by this
     small piece of grammar， there are just two expressions。 There's a sum expression
     which has two alternatives that it might match。
+  id: totrans-37
   prefs: []
   type: TYPE_NORMAL
 - en: You can tell that they are alternatives by the vertical bar at the front。 So
@@ -248,6 +286,7 @@
     for the sum rule is an atom on its own。 Well， what is an atom？ Well。 the atom
     is actually another rule in our very minified grammar， which is just a number，
     token。
+  id: totrans-38
   prefs: []
   type: TYPE_NORMAL
 - en: We're not going to go into how Python recognizes number tokens， but we can just
@@ -255,6 +294,7 @@
     at the bottom。 And that's how our grammar kind of flows down。 That's how we get
     all the alternatives that we might try to parse at a specific point that。 we're
     trying to parse。 So if you have these rules。
+  id: totrans-39
   prefs: []
   type: TYPE_NORMAL
 - en: it's fairly trivial to see that if we have a very simple one， this。 will match
@@ -262,6 +302,7 @@
     this as a single number。 It's also very easy to see that if we have one plus one
     with the literal plus in the middle。 that we can parse this one as well。 This
     is the first rule of the sum rule。
+  id: totrans-40
   prefs: []
   type: TYPE_NORMAL
 - en: But now what about this one？ So this is an interesting one。 So once the parser
@@ -269,12 +310,14 @@
     first part。 and we're not going to worry about the， actual order of matching here。
     So that we'll have consumed these characters for our need sum rule， and then it's
     left。
+  id: totrans-41
   prefs: []
   type: TYPE_NORMAL
 - en: with plus three。 There's no rule that matches plus three， so it's not able to
     parse this expression。 So what should we do？ We can obviously add another rule
     for atom plus atom plus atom。 but what about four pluses， or three or six or eight
     pluses in an expression？
+  id: totrans-42
   prefs: []
   type: TYPE_NORMAL
 - en: So we have to add a rule for each number of pluses that we have。 Luckily， we
@@ -282,6 +325,7 @@
     first atom by sum itself。 and this will make the rule recursive。 So as you can
     see now， it's able to match a sum。 but it's also able to match a sum nested， in
     another sum。 And obviously。
+  id: totrans-43
   prefs: []
   type: TYPE_NORMAL
 - en: this is a recursive relationship。 So you can now match an arbitrary number of
@@ -289,6 +333,7 @@
     our pipe operator。 We want to be able to build pipelines。 So we're going to use
     this recursive rule in our new grammar rule。 So let's add it。 So this is a section
     in Python's grammar。 You can find it in grammar/python。gram。
+  id: totrans-44
   prefs: []
   type: TYPE_NORMAL
 - en: Just took out a small portion， and I'm going to insert a new grammar rule between
@@ -296,6 +341,7 @@
     stuff， but this is。 a very easy way for me to add a new rule， and I'll show you
     why in a minute。 And again。 if you'd like to improve on this， do download the
     source code and just try to。
+  id: totrans-45
   prefs: []
   type: TYPE_NORMAL
 - en: make it better yourself。 So what am I going to do？ I'm going to add a new grammar
@@ -303,6 +349,7 @@
     Here， in the middle。 we have our recursive rule。 So pipe includes pipe itself，
     and it includes the sum。 which is the rule just below it。 Now， we're nearly done。
     There's just one problem left。
+  id: totrans-46
   prefs: []
   type: TYPE_NORMAL
 - en: and that is that our grammar rule isn't referenced by， any other grammar rule。
@@ -310,24 +357,28 @@
     will step。 over our rule。 It's not actually used。 So we have to change those references。
     And that's what I'm going to do next。 I'm just going to make the shift expression
     refer to our new rule and then make that rule。
+  id: totrans-47
   prefs: []
   type: TYPE_NORMAL
 - en: refer to sum。 And this is why I inserted it here。 Here I only have to change
     a few references。 I don't have to change a lot of references。 So now。 this means
     that we can now parse this bit of syntax。 That's very cool。 But what about the
     last step？
+  id: totrans-48
   prefs: []
   type: TYPE_NORMAL
 - en: We haven't actually told the parser how it can convert what it has just parsed
     into an。 AST node that you see on the right-hand side here。 So a bin of node is
     the representation of our operation。 It has a left-hand side。 the ten in this
     case。 It has the operation in the middle。
+  id: totrans-49
   prefs: []
   type: TYPE_NORMAL
 - en: and it has the name double on the right-hand side。 There's probably going to
     be a load below that as well， but I just kept it simple。 So we have to tell the
     parser how it can get from parsing the syntax to making such an， AST node。 And
     with the new pack parser， there's a very convenient way to do that。
+  id: totrans-50
   prefs: []
   type: TYPE_NORMAL
 - en: And it's called grammar actions。 And grammar actions are basically just small
@@ -335,6 +386,7 @@
     two curly braces。 And within there。 there's just a tiny bit of C code。 This is
     calling a function。 and it will pass in some information and the function will
     construct， the AST node for us。
+  id: totrans-51
   prefs: []
   type: TYPE_NORMAL
 - en: So as mentioned， we'll need the left-hand side and the right-hand side。 That's
@@ -342,6 +394,7 @@
     in there。 And that's assigning names to the left-hand side and the right-hand
     side so we can pass。 it into this pi bin of function。 There's also an add in the
     middle。
+  id: totrans-52
   prefs: []
   type: TYPE_NORMAL
 - en: We know that this is an add operator because this is the plus rule， so we just
@@ -349,6 +402,7 @@
     them today。 Things like line number。 column offset， things like that。 We're just
     going to assume that they're taking care of for us。 So this is how we can tell
     the parser how to create a AST node。
+  id: totrans-53
   prefs: []
   type: TYPE_NORMAL
 - en: So we just copy this approach for our pipe rule。 The only thing that we really
@@ -357,18 +411,21 @@
     operation。 Just one tiny problem。 There's now a call pipe node in my AST。 but
     it doesn't exist yet。 So we have to create that one as well。 Well， it sounds kind
     of difficult。
+  id: totrans-54
   prefs: []
   type: TYPE_NORMAL
 - en: but actually this is just another configuration file。 If you open the parser/python。asdl。
     which stands for abstract syntax definition language。 this is a file that defines
     all of the AST nodes that are in Python and Python。 And you can actually generate
     all of the necessary types from this file。
+  id: totrans-55
   prefs: []
   type: TYPE_NORMAL
 - en: So you don't really need to write all the classes or types yourself。 You can
     have them generated for you。 As you can see here。 I picked a bit that includes
     operator and operator has a lot of alternatives。 One here is add。 And what the
     generator will do， it will make a C enum for us that has a number of members。
+  id: totrans-56
   prefs: []
   type: TYPE_NORMAL
 - en: or fields and add is one of those fields。 So the only thing that we need to
@@ -376,6 +433,7 @@
     the AST nodes with this file。 And then we will magically get another member of
     field in the C enum with a new integer。 assigned to it。 And then we can use the
     call pipe。 So after we've done this。
+  id: totrans-57
   prefs: []
   type: TYPE_NORMAL
 - en: we have the grammar rule。 We can now regenerate the parser itself。 And now we
@@ -383,12 +441,14 @@
     actually be able to build an AST。 that includes a bin of operation and a call
     pipe operator， as you can see here。 This is all very handy， but this doesn't do
     anything yet。
+  id: totrans-58
   prefs: []
   type: TYPE_NORMAL
 - en: Now we have a nice tree-like representation of our code， but there's no execution
     yet。 And that's what we're going to see in part two。 So what we're going to do
     in part two。 we're going to take the AST， pass it into the compiler。 and then
     the compiler will pass something to the evaluation loop and then we'll get magic。
+  id: totrans-59
   prefs: []
   type: TYPE_NORMAL
 - en: And I call this magic because it's always been magic to me。 I type in some magic
@@ -396,6 +456,7 @@
     magic to me。 Cool。 So let's zoom in on that second part。 So we have the AST as
     the input。 We will put it into the compiler and the compiler will generate something
     for us called bytecode。
+  id: totrans-60
   prefs: []
   type: TYPE_NORMAL
 - en: And this is like an intermediate language and it's just a long list of instructions。
@@ -403,12 +464,14 @@
     these are really the instructions that the evaluation loop will then perform。
     And for those of you who like the discussion about is Python a compiled language
     or not。
+  id: totrans-61
   prefs: []
   type: TYPE_NORMAL
 - en: just think about this and then ignore the discussion because it always gets
     very toxic。 So first of all， we're going to add some support to the compiler。
     And each instruction that we are able to perform has its own upcode or operation
     code。 What I'm going to do is I'm going to add a new upcode for our new operator。
+  id: totrans-62
   prefs: []
   type: TYPE_NORMAL
 - en: Some of you may wonder there's already about the fact that there is already
@@ -417,12 +480,14 @@
     So right， this is the first and probably the only Python file that we'll see today。
     in my， talk at least， and it's in lib/upcode。py。 And this defines all the operation
     codes that we have。
+  id: totrans-63
   prefs: []
   type: TYPE_NORMAL
 - en: And it basically specifies a name and then the byte or the integer that we have
     for the。 operation code。 Now ours doesn't have taken argument or upcode。 It works
     with values that are already on the value stack。 More about that later。 So we
     need to add it 40 half argument constant or the value defined in there。
+  id: totrans-64
   prefs: []
   type: TYPE_NORMAL
 - en: So just going to add it here with the new integer of 90 and then increment all
@@ -430,12 +495,14 @@
     with sequential numbers。 So once we've defined our operation code here， we can
     regenerate all the upcodes and now we。 have a new upcode。 Which is cool but the
     compiler still doesn't know when to use it。
+  id: totrans-65
   prefs: []
   type: TYPE_NORMAL
 - en: So that's what we'll do next。 We're now going to teach the compiler when to
     write this upcode into the bytecode。 So in the compiler， in a file called Python/compile。c。
     there are a lot of functions that get cold whenever。 the compiler encounters a
     specific type of AST node。 And in our case。
+  id: totrans-66
   prefs: []
   type: TYPE_NORMAL
 - en: we're dealing with an expression。 So we're going to modify the compiler visit
@@ -444,6 +511,7 @@
     a large switch case statement and it has a case for。 bin up kind， the binary operations。
     And that's the one that will take care of writing our upcodes for our new binary
     operation。
+  id: totrans-67
   prefs: []
   type: TYPE_NORMAL
 - en: And what's important to note here is that there are two visits first。 So it's
@@ -451,6 +519,7 @@
     that it will first write all the instructions to evaluate the left-hand。 side
     of our operator to get that value。 Then it will do the same for the right-hand
     side。
+  id: totrans-68
   prefs: []
   type: TYPE_NORMAL
 - en: So it will write all the instructions it needs to evaluate the right-hand side
@@ -458,6 +527,7 @@
     actually perform the operation。 before we can write out the new upcode that we
     have。 Well。 taking care of the new upcode is the add up a macro that we see here
     to just write， a single upcode。
+  id: totrans-69
   prefs: []
   type: TYPE_NORMAL
 - en: Now， how does it know which one？ Well， it calls a helper function， calls bin
@@ -465,6 +535,7 @@
     the operators defined in the ASD。 Here we have the add。 And it will just simply
     return the upcode associated with that operator。 So all we have to do is modify
     and add another case of our own， case call pipe， return our。
+  id: totrans-70
   prefs: []
   type: TYPE_NORMAL
 - en: new operator to binary pipe call。 And now the compiler knows that whenever it
@@ -473,31 +544,38 @@
     effect。 I'm going to show you the value stack in a minute， but we have to specify
     that our operation。 pops one value out of the value stack。 So after performing
     our operation。
+  id: totrans-71
   prefs: []
   type: TYPE_NORMAL
 - en: there's one value less on the value stack， which is， the same as a lot of other
     binary operations。 So that's why I've added it here。
+  id: totrans-72
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/5632ecbf70ba85f31442fabbf3c785c2_4.png)'
+  id: totrans-73
   prefs: []
   type: TYPE_IMG
 - en: And this is just something to make the compiler work as well。 So after we've
     done this。 the compiler can now turn the ASD into that intermediate byte， code
     language。 And now we get to the magical part， the evaluation loop。 And the evaluation
     loop really is the main loop of Python。 And it's an enormous loop。
+  id: totrans-74
   prefs: []
   type: TYPE_NORMAL
 - en: And inside of it is an enormous switch case statement。 And it has a case for
     most of the-- or all of the upcodes that it needs to be able to， perform。 And
     then it has the code that will actually handle that instruction。 That will actually
     perform that operation。 And just to show you one。
+  id: totrans-75
   prefs: []
   type: TYPE_NORMAL
 - en: I've picked the case for the binary subtract operation code。
+  id: totrans-76
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/5632ecbf70ba85f31442fabbf3c785c2_6.png)'
+  id: totrans-77
   prefs: []
   type: TYPE_IMG
 - en: And this is just a case within that huge loop that we have。 And this will perform
@@ -505,36 +583,44 @@
     actually need to know the things。 I just cannot do thing minus thing without knowing
     what the thing is。 So first， within this case， we need to get the value for the
     right-hand side and the value。
+  id: totrans-78
   prefs: []
   type: TYPE_NORMAL
 - en: for the left-hand side。 And that is what happens here。 But where are those values
     coming from？
+  id: totrans-79
   prefs: []
   type: TYPE_NORMAL
 - en: As I told you earlier， whenever we have a binary operation， Python will first
     write the。
+  id: totrans-80
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/5632ecbf70ba85f31442fabbf3c785c2_8.png)'
+  id: totrans-81
   prefs: []
   type: TYPE_IMG
 - en: instructions to evaluate the left-hand side of that operator。 It will evaluate
     it and it will finally get a value。 And it will put it on the stack so it can
     keep track of it。 So this for will be evaluated。 It will be on the stack。 Then
     it will evaluate the three on the right-hand side。
+  id: totrans-82
   prefs: []
   type: TYPE_NORMAL
 - en: It will put it on the stack as well。 And just to be sure。 there can be a lot
     of other values on the stack as well below that。 And once we've evaluated the
     left-hand side and the right-hand side， we now have three on， top。 the right-hand
     side and the four below that， the left-hand side。
+  id: totrans-83
   prefs: []
   type: TYPE_NORMAL
 - en: So this is our value stack when we're evaluating the two operands， the left-hand
     side and the。
+  id: totrans-84
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/5632ecbf70ba85f31442fabbf3c785c2_10.png)'
+  id: totrans-85
   prefs: []
   type: TYPE_IMG
 - en: right-hand side。 So when we get to here， we can， for the right-hand side。 we
@@ -542,6 +628,7 @@
     right-hand side value。 For the left-hand side， we're going to do something similar。
     But we're going to peek at the top of the value stack， which is what the top macro
     does。
+  id: totrans-86
   prefs: []
   type: TYPE_NORMAL
 - en: and now left points to the four on the value stack。 So now we have right pointing
@@ -549,6 +636,7 @@
     pi number subtract。 pass in the two values， and then we get a result back and
     we will make rest point to the result of that pi number。 subtract。 Now we're done
     with the left-hand side and the right-hand side。
+  id: totrans-87
   prefs: []
   type: TYPE_NORMAL
 - en: so we decrease the reference， count， but we still only have the result within
@@ -556,6 +644,7 @@
     But instead of putting it as an additional value on the value stack， we're going
     to use， set top。 which replaces the four that we already have。 So this one will
     move over and it will replace the four that we have。
+  id: totrans-88
   prefs: []
   type: TYPE_NORMAL
 - en: This also explains the minus one with the stack effect that we saw earlier because
@@ -563,6 +652,7 @@
     Then there's some error handling and then finally we have dispatch with which
     tells the。 evaluation loop to continue to the next instruction。 So this is binary
     subtract。
+  id: totrans-89
   prefs: []
   type: TYPE_NORMAL
 - en: That's copy and paste。 This one and changes for our new operator。 We have to
@@ -570,13 +660,16 @@
     but there's a very convenient new function， within the C API starting from Python
     3。9 by object call one arc。 And we can pass in the function and the value and
     remember the function was on the right。
+  id: totrans-90
   prefs: []
   type: TYPE_NORMAL
 - en: hand side and the value on the left hand side of the operator。 Then we get the
     result。 we set it back on the value stack and now our operator works。
+  id: totrans-91
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/5632ecbf70ba85f31442fabbf3c785c2_12.png)'
+  id: totrans-92
   prefs: []
   type: TYPE_IMG
 - en: And we can actually show that， but because the only thing that we now need to
@@ -584,6 +677,7 @@
     slide。 And now we've completed the entire journey from source code to magic。 The
     only thing left to do is compiling our new version of Python。 There are a few
     comments for that。
+  id: totrans-93
   prefs: []
   type: TYPE_NORMAL
 - en: I'm using two cores to compile it。 But the important message is I can now define
@@ -591,19 +685,27 @@
     and remarks。 A lot of Python internals do check out the resources so you can have
     a deep dive into， them。 The source code in the slides are available and if you
     get weird errors while working on， CPython。
+  id: totrans-94
   prefs: []
   type: TYPE_NORMAL
+  zh: 我正在使用两个核心来编译它。但重要的信息是我现在可以定义一个函数。使用新的操作符，实际上可以从中获取值。所以总结一下和备注。很多Python内部实现，请查看资源，以便深入了解它们。幻灯片中的源代码是可用的，如果在使用CPython时遇到奇怪的错误。
 - en: try running may clean or clean all on windows just to get rid of all the intermediate。
     and compiled files that might give you issues and look into the magic number that
     versions。 the byte code because we've changed the byte code so all the old precompiled
     pi C files。 need to be recompiled。 And that's it。 Before we go， you're a Python。
+  id: totrans-95
   prefs: []
   type: TYPE_NORMAL
+  zh: 尝试在Windows上运行`may clean`或`clean all`，以清除所有可能导致问题的中间和编译文件，并查看版本的魔法数字。字节码因为我们更改了字节码，所以所有旧的预编译`.pi`文件都需要重新编译。就这样。在我们离开之前，你是一个Python。
 - en: Check it out and double in this year， go there， either in person or online。
     Check it out。 Really cool conference。 And that was it。 Thank you very much。 [APPLAUSE]，
     (applause)。
+  id: totrans-96
   prefs: []
   type: TYPE_NORMAL
+  zh: 查看一下并在今年加倍，去那里，无论是亲自还是在线。真的很酷的会议。就这样。非常感谢。[掌声]，（鼓掌）。
 - en: '![](img/5632ecbf70ba85f31442fabbf3c785c2_14.png)'
+  id: totrans-97
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/5632ecbf70ba85f31442fabbf3c785c2_14.png)'

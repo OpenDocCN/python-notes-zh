@@ -3,15 +3,18 @@
   prefs:
   - PREF_H1
   type: TYPE_NORMAL
+  zh: P75：谈话 - Sangarshanan_ 用Python构建数据库 - VikingDen7 - BV1f8411Y7cP
 - en: So before we start， just a small story， so imagine me as an intern in my first
     company。
   id: totrans-1
   prefs: []
   type: TYPE_NORMAL
+  zh: 在我们开始之前，先讲个小故事，想象一下我作为我第一家公司的一名实习生。
 - en: '![](img/31a0123927beac156dca1c36db1e34f8_1.png)'
   id: totrans-2
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/31a0123927beac156dca1c36db1e34f8_1.png)'
 - en: I'm just in the meeting room and we are discussing how to build a good back
     end application and。 database comes into the topic。 And me being an intern， I
     got all excited and I was like。 you know what？ We should use Google Spanner， we
@@ -20,6 +23,8 @@
   id: totrans-3
   prefs: []
   type: TYPE_NORMAL
+  zh: 我就在会议室里，我们讨论如何构建一个良好的后端应用程序，数据库成为了话题。作为实习生，我非常兴奋，我想，我们应该使用Google Spanner，我们应该使用Cockroach
+    TV，我们应该使用一些当时非常酷的小众数据库。
 - en: And that made everyone aware that I was the intern in the room。 But apart from
     that。 after the meeting， this person who I like to think of as my mentor。 kind
     of like pull me aside and he gave me this advice that kind of stuck around。 So
@@ -28,6 +33,7 @@
   id: totrans-4
   prefs: []
   type: TYPE_NORMAL
+  zh: 这让每个人都意识到我在会议室里是个实习生。但除此之外，会议结束后，我很喜欢称之为我导师的人把我拉到一边，给了我一个一直铭记在心的建议。他告诉我，每当你想为项目选择一个数据库时。
 - en: think of three reasons why you should not use Postgres。 And if you can give
     me three solid reasons。 then yeah， go ahead and think of another one， or else
     just use Postgres。 And that actually confused me a bit。 I always thought developers
@@ -36,6 +42,7 @@
   id: totrans-5
   prefs: []
   type: TYPE_NORMAL
+  zh: 想想三个你不应该使用Postgres的理由。如果你能给我三个有力的理由，那就继续想一个，或者直接使用Postgres。这让我有点困惑。我一直以为开发者喜欢玩玩具，喜欢使用市场上的新工具和小众新事物。
 - en: But with databases， I always saw that people just like to keep it safe， they
     always go。 with the default option。 And that made database kind of mystical for
     me because it's like this black box machine。 that kind of just works， right？ Like
@@ -44,6 +51,7 @@
   id: totrans-6
   prefs: []
   type: TYPE_NORMAL
+  zh: 但在数据库方面，我总是看到人们喜欢保持安全，他们总是选择默认选项。这让我觉得数据库有点神秘，因为它就像这个黑匣子机器，似乎可以正常工作，几乎可以做我们想做的所有事情。我们只需调整它，让它执行操作，而我们有我们的数据工程师。
 - en: database administrators who kind of take care of things for us。 So we just，
     you know。 have fun with it。 But what made it mystical also made me curious about
     it。 So I wanted to kind of break down what it all meant。 So why build your own
@@ -51,6 +59,7 @@
   id: totrans-7
   prefs: []
   type: TYPE_NORMAL
+  zh: 数据库管理员负责为我们处理这些事情。所以我们只需，知道就好。与此神秘性相对，我也对它产生了好奇。所以我想弄清楚这一切意味着什么。那么，为什么要自己构建数据库，对吧？
 - en: That's the first question。 And the fact that it's mystical is not a good enough
     reason for。 you know， sane people。 So it essentially kind of helps break down
     the abstractions that， you know。 make up the， database， the black box that it
@@ -59,6 +68,7 @@
   id: totrans-8
   prefs: []
   type: TYPE_NORMAL
+  zh: 这是我问自己的第一个问题。而且它神秘的事实对理智的人来说并不是一个足够好的理由。所以它实际上帮助我们打破了构成数据库的抽象，那个黑匣子。你也可以推理出在创建数据库时可能遇到的性能问题和错误。
 - en: There are actually a lot of concurrency bugs that happen even in like production，
     create。 Postgres databases。 But the timing has to be exactly right for you to
     face those bugs。 They are really cool though。 And then you can actually write
@@ -67,20 +77,24 @@
   id: totrans-9
   prefs: []
   type: TYPE_NORMAL
+  zh: 实际上，即使在生产环境中，也会发生很多并发错误，比如创建Postgres数据库。但是，时机必须完全正确才能遇到这些错误。不过它们真的很酷。如果你了解你的数据库是如何工作的，你实际上可以写出更好的查询，对吧？就像它内部是如何获取数据的。
 - en: You can write good queries that don't take an ask to execute。 And also it's
     fun， you know。 Cool。 So as the Victorian man once said， what to make it a database？
   id: totrans-10
   prefs: []
   type: TYPE_NORMAL
+  zh: 你可以写出不需要太多时间执行的良好查询。而且这也很有趣，你知道的。很酷。因此，正如维多利亚时代的人所说，什么才算数据库？
 - en: So that's the first question I asked myself when I went to help to build the
     database， right？
   id: totrans-11
   prefs: []
   type: TYPE_NORMAL
+  zh: 这就是我在去帮助构建数据库时问自己的第一个问题，对吧？
 - en: And fair warning， I was an intern during this time， right？
   id: totrans-12
   prefs: []
   type: TYPE_NORMAL
+  zh: 需要提醒的是，那时候我还是个实习生，对吧？
 - en: So I did not have a good idea on how databases， you know， what are they made
     of， what do they。 even do？ So this was what I had in my mind， you know。 So you，
     this is me。 And then I just talked to the database and there is a base。 I don't
@@ -88,6 +102,7 @@
   id: totrans-13
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以我对数据库的构成、功能没有一个好的概念。这是我心中的想法。所以这是我。然后我只是与数据库对话，那里有一个基础。我不知道。那是一个基础吗？
 - en: And then I consider a base to be how you talk to your database。 So it can be
     like your， you know。 Python， SQL， I can be engine， it can be your PGCLI， you，
     know， CLI tool， it can be， you know。 table plus literally anything， right？ And
@@ -97,6 +112,8 @@
   id: totrans-14
   prefs: []
   type: TYPE_NORMAL
+  zh: 然后我认为基础就是你与数据库交互的方式。所以它可以是你的，知道的。Python、SQL，我可以是引擎，它可以是你的PGCLI，知道的CLI工具，可以是，知道的。table
+    plus，几乎任何东西，对吧？然后基础就与内部的数据交谈，并返回结果给你，对吧？这就是我想象中的数据库。
 - en: which is not actually completely wrong。 But it has a lot of things inside and
     there are a bunch of utilities that are in the background。 and a lot of crazy
     things which I'm going to discuss later。 But this is essentially what I thought
@@ -104,6 +121,7 @@
   id: totrans-15
   prefs: []
   type: TYPE_NORMAL
+  zh: 这其实并不是完全错误的。但它内部有很多东西，还有一堆后台实用程序，以及很多疯狂的事情，我会稍后讨论。但这基本上是我认为它的样子。所以首先是基础，对吧？
 - en: The part of the database that you can use to talk to your database initially。
     And you know。 fun fact， the database that I built is a good listener。 So you know，
     you can talk to it really well。 Cool。 So I don't know， the code might be a little
@@ -112,6 +130,7 @@
   id: totrans-16
   prefs: []
   type: TYPE_NORMAL
+  zh: 这是最初用于与数据库交互的部分。你知道的。有趣的是，我构建的数据库是个好听众。所以你知道，你可以很好地与它交谈。酷。所以我不知道，代码可能有点小。如果你能看到，应该在repo里找到。太棒了。很好。所以我选择repo作为我的，你知道的。
 - en: weapon of choice to talk to the database。 Initially I thought of sending it
     pigeons， but you know。 repo worked out well for me。 You can use this really cool
     Python library called Prom Toolkit that I used to kind of。 build a very simple
@@ -120,6 +139,7 @@
   id: totrans-17
   prefs: []
   type: TYPE_NORMAL
+  zh: 与数据库交互的选择武器。最初我考虑过用鸽子发送信息，但你知道的。repo对我来说效果很好。你可以使用这个非常酷的Python库，叫做Prom Toolkit，我用它构建了一个非常简单的CLI，作为与数据库交互的接口。因此，我在这里所做的本质上只是定义一个无限的`true`循环，让我的终端保持运行。
 - en: keeps running。 And then I have a session that I start。 Oh， and by the way， I
     call my database。 yeetdb because it's a throwaway database and you， know， you
     call it yeet。 Cool。 So。 so after we define the session， we have a query executor
@@ -128,6 +148,7 @@
   id: totrans-18
   prefs: []
   type: TYPE_NORMAL
+  zh: 一直在运行。然后我开始了一个会话。哦，顺便说一下，我把我的数据库叫做yeetdb，因为它是一个临时数据库，你知道的，就叫它yeet。酷。所以在我们定义会话后，我们有一个查询执行器，你知道的，你可以把SQL查询传递给它。我们会讨论那是什么。一旦你运行它，它就会给你结果。
 - en: It kind of gives you the time it took to run it。 It kind of gives you what operation
     you ran。 It kind of returns the results if it can or if it faces any error in
     between the steps。 It's just going to say， you know， I can't do it。 It is an error。
@@ -136,11 +157,13 @@
   id: totrans-19
   prefs: []
   type: TYPE_NORMAL
+  zh: 它会告诉你运行所需的时间。它会告诉你你执行了什么操作。如果能返回结果的话，它会返回结果；如果在步骤之间遇到任何错误，它就会说，你知道的，我无法执行。这是一个错误。是的。所以我们将讨论在这里定义的类究竟发生了什么。
 - en: but this is the general structure。 Okay。 So we talked， I briefly mentioned SQL，
     right？
   id: totrans-20
   prefs: []
   type: TYPE_NORMAL
+  zh: 但这就是一般结构。好的。所以我们谈到，我简要提到SQL，对吧？
 - en: This is how you talk to your database。 So SQL is your databases second language
     of choice。 First being love。 So SQL can be used， talk to your database。 And there
     are several dialects of SQL that are present， like really， really crazy dialects。
@@ -149,6 +172,7 @@
   id: totrans-21
   prefs: []
   type: TYPE_NORMAL
+  zh: 这就是你与数据库交互的方式。所以SQL是你数据库的第二语言选择。第一是爱。所以SQL可以用于与数据库交谈。存在几种SQL方言，真的非常疯狂，有很多语法，试图研究时让我困倦。
 - en: There was like so much。 So I decided to keep it really simple and I kind of
     define really like took part of this。 syntax， kind of defined a grammar for SQL
     by myself。 So it's no longer a structured query language for me。 This structure
@@ -229,6 +253,7 @@
   id: totrans-30
   prefs: []
   type: TYPE_NORMAL
+  zh: 你还可以在你的查询上执行解释，比如。获得一些Postgres的内容，你可以实际可视化这个树状图。对于你写的任何查询。对于这个简单的查询，只是选择所有，你有客户引用时，你有一个条件语句，并且你有这个操作在一个列名上的常量。
 - en: Right？ So once I have a plan， I know exactly what to do because there's a order
     defined by SQL。 standard， like how I have to kind of execute a query。 So I just
     go ahead and run it。 But you know the query that I wrote is really bad。 You cannot
@@ -236,6 +261,7 @@
   id: totrans-31
   prefs: []
   type: TYPE_NORMAL
+  zh: 对吧？所以一旦我有了计划，我就知道确切该做什么，因为SQL标准定义了一个顺序，说明我该如何执行查询。所以我就直接运行它。但你知道，我写的查询真的很糟糕。你不能仅仅选择所有数据，因为你不知道数据的数量。
 - en: querying。 And when you query a lot of data， you're going to face some problems。
     Cool。 So now our base part is kind of sorted。 We can talk to our database。 Now
     we get to the fun part。 you know， the data part where we're going to actually，
@@ -244,6 +270,7 @@
   id: totrans-32
   prefs: []
   type: TYPE_NORMAL
+  zh: 查询。当你查询大量数据时，你会面临一些问题。很酷。所以现在我们的基础部分有点理顺了。我们可以与数据库对话。现在进入有趣的部分，你知道，数据部分，我们将实际构建数据。很好。所以首先，我决定，你知道，我会保持简单。
 - en: write all my data into memory。 So what I've defined here is a simple database
     class that kind of creates a new hash map or。 a dictionary in Python words for
     every single table。 And what I mean by an insert is just inserting a new key and
@@ -252,6 +279,7 @@
   id: totrans-33
   prefs: []
   type: TYPE_NORMAL
+  zh: 将我所有的数据写入内存。所以我在这里定义的是一个简单的数据库类，它创建一个新的哈希映射，或者用Python的话说，每个表都有一个字典。我所说的插入只是为特定ID的表插入一个新键和记录。对吧？所以这只是字典插入，字典获取。
 - en: and a delete is just a dictionary pop。 And this kind of worked for me， you know。
     it's crazy how easy it is， but it works。 And I can just define my database。 I
     could define a table which is test。 I can insert named Barry who is 35 and I can
@@ -260,6 +288,7 @@
   id: totrans-34
   prefs: []
   type: TYPE_NORMAL
+  zh: 删除只是字典弹出。这对我来说有点效果，你知道。这真是太简单了，但确实有效。我可以定义我的数据库。我可以定义一个名为测试的表。我可以插入名为巴里、35岁的人，然后我可以说，你知道，选择姓名和，从测试表中选择年龄，结果会给我。
 - en: And I can also delete age。 I've never done a select。 It's going to give me like
     a key error。 which means， you know， there's no agent that is， immortal。 But one
     thing is missing。 which is persistence because when my database closes or if I
@@ -268,6 +297,7 @@
   id: totrans-35
   prefs: []
   type: TYPE_NORMAL
+  zh: 我也可以删除年龄。我从未进行过选择。这会给我一个键错误，这意味着没有不朽的代理。但缺少一件事，那就是持久性，因为当我的数据库关闭或者我关闭会话时，一切都消失了，你知道，*扑通*。所以我需要某种帮助。为此，你始终记得要刷新。
 - en: which I do by flushing it to the desk。 So for every insert that happens to the
     dictionary。 I just write it to a file and deletes are， kind of a spend operations。
     I'm going to insert something called tombstones。 So for tombstone。 I just use
@@ -276,10 +306,12 @@
   id: totrans-36
   prefs: []
   type: TYPE_NORMAL
+  zh: 我通过将其刷新到磁盘来实现。因此，对于字典中发生的每次插入，我都将其写入文件，而删除是相对耗时的操作。我将插入一种称为墓碑的东西。对于墓碑，我只是使用墓碑表情符号数据库，这样做很糟糕，因为它占用很多空间。
 - en: But you know， I want to have fun。 So， uh， apparently locks are nuts， right？
   id: totrans-37
   prefs: []
   type: TYPE_NORMAL
+  zh: 但你知道，我想玩得开心。所以，呃，显然锁是疯狂的，对吧？
 - en: Because it's so simple and sequential rights on disk are like performance， like
     super fast。 It's like one of the best operations you can do in the disk to a file。
     You know。 it's really happy about that。 But you have this issue when you move
@@ -288,6 +320,7 @@
   id: totrans-38
   prefs: []
   type: TYPE_NORMAL
+  zh: 因为它如此简单，顺序写入磁盘的性能超快。这是你可以对文件执行的最佳操作之一。你知道。我对此非常满意。但当你从内存转移到磁盘时，你会遇到这个问题，对吧？因为当你想选择某样东西时，你必须遍历每一个键。
 - en: your disk， which gives you an off and worst case select complexity， which is
     like that。 And you also have the issue of like when you kind of flush to a disk，
     what if something， happens。 you just flush partial records or where did it go。
@@ -380,6 +413,7 @@
   id: totrans-50
   prefs: []
   type: TYPE_NORMAL
+  zh: 我的数据是这样的，以便可以快速查找。当我执行获取操作时，我只是在用这些来提取数据。当我执行删除操作时，我只是寻找那个索引。如果它是一个墓碑，我就会说，数据不再存在。很好。所以我们实际上解决了速度的问题，对吧？
 - en: Because now we have indexes and data is super fast。 But we still have the problem
     of running out of disk。 So we're going to solve that problem by breaking our logs
     into segments， which is going to。 be very easy because we're going to be defining
@@ -387,6 +421,7 @@
   id: totrans-51
   prefs: []
   type: TYPE_NORMAL
+  zh: 因为现在我们有索引，数据访问速度非常快。但是我们仍然面临磁盘空间不足的问题。所以我们将通过将日志拆分为多个段来解决这个问题，这将非常简单，因为我们将为每个段定义固定的大小。
 - en: So if you have-- so this is from DDIA， by the way。 So if you have two segments
     where we have these append only logs， right， you're going。 to have repetition
     of keys that happen。 Because for every insert， you're going to perform an append。
@@ -394,10 +429,12 @@
   id: totrans-52
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以如果你有——顺便说一句，这是来自《设计数据密集型应用》。如果你有两个段，我们有这些追加日志，你会遇到键的重复。因为对于每次插入，你都会执行追加操作。一个键可以有成千上万的插入发生。
 - en: And you just want the latest insert that happens for a key， right？
   id: totrans-53
   prefs: []
   type: TYPE_NORMAL
+  zh: 你只需要获取某个键的最新插入，对吧？
 - en: You don't care about what happened like 10 inserts before。 So what you do is
     you perform this operation called compaction that happens in the background。 that
     you don't have to care about。 So what compaction does is it takes these older
@@ -406,6 +443,7 @@
   id: totrans-54
   prefs: []
   type: TYPE_NORMAL
+  zh: 你并不关心像之前10次插入发生的事情。所以你所做的是在后台执行一种称为压缩的操作，而你无需关心。所以压缩的作用是，它将旧的段块结合到一个新的段中。并且创建一个新的段。
 - en: It doesn't replace anything。 It just takes the older segments， creates segments。
     creates a new segment， and then just， updates the mapping。 So when a look up happens。
     the database just looks up the newer segments。 And this is actually quite optimal
@@ -414,6 +452,7 @@
   id: totrans-55
   prefs: []
   type: TYPE_NORMAL
+  zh: 它并不会替代任何东西。它只是处理旧的段，创建新的段，然后更新映射。所以当查找发生时，数据库只查找较新的段。这实际上是相当优化的，因为这一切都在后台进行。当你在文件和磁盘上执行合并操作时，它们是相当高效的。
 - en: And then you have now smaller segments that keep incrementally getting smaller
     as you。 keep writing data， right？ So you don't have to worry about ever running
     out of this size if you have these operations。 running。 And when I say the segments
@@ -423,6 +462,7 @@
   id: totrans-56
   prefs: []
   type: TYPE_NORMAL
+  zh: 然后你现在有了较小的段，这些段随着你不断写入数据而逐渐变小，对吧？所以如果你进行这些操作，你就不必担心会耗尽这个大小。当我说这些段被删除时，我们并不会实际删除它们。我们只是说，标记它们为删除。而实际上，在我们的数据库中，有一个后台操作会发生。
 - en: which I like to call vacuum， which is a really cool name for a process， which
     kind of does。 exactly what it says。 It kind of cleans up all these segments that
     are marked for deletes。 Cool。 So we solved both the problems， right？ We have speed
@@ -431,6 +471,7 @@
   id: totrans-57
   prefs: []
   type: TYPE_NORMAL
+  zh: 我称之为清理，这个名字听起来很酷，实际上它正好做了它所说的事情。它清理所有标记为删除的段。很好。所以我们解决了两个问题，对吧？我们有速度，并且不会耗尽这个空间。所以我们通过索引进行超级快速的查找。
 - en: We have append only writes that happen through logs。 Both of them are awesome。
     And we have compaction happening in the background。 We are not running out of
     this space。 And because of the presence of both these structures。 we have crash
@@ -438,12 +479,14 @@
   id: totrans-58
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们通过日志执行追加写入。这两者都很棒。我们在后台进行压缩。我们并没有耗尽这个空间。因为这两种结构的存在，我们有崩溃恢复，因为每当数据库崩溃时。
 - en: we can generate the state of our index directly from our data。 And we also have
     concurrency because you just have one writer in your append only logs。 And the
     tree can have multiple writer threads that kind of run simultaneously， right？
   id: totrans-59
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们可以直接从数据生成索引的状态。而且我们还具备并发性，因为在你的追加日志中只有一个写入者。树结构可以有多个同时运行的写入线程，对吧？
 - en: So we have concurrency too。 But there is an issue by issue with our hash indexes。
     which is if you have a lot of keys， in your hash index， you can no longer have
     it in memory。 So it kind of fits well when you have less number of keys， but more
@@ -452,6 +495,7 @@
   id: totrans-60
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以我们也有并发问题。但我们的哈希索引存在一个问题，那就是如果你有很多键在哈希索引中，就无法将其全部保存在内存中。因此，当键的数量较少时，这种方式还算合适，但更多的键意味着更多的内存，你就会失败。而且，对于范围查询，你的性能也会非常糟糕。
 - en: You want to look up data from like， you know， index ID one to ID hundred or
     to look them。 up individually， right？ Which is like， I don't want to do that。
     That's cool。 Cool。 So we're going to solve this by introducing a very simple concept，
@@ -460,6 +504,7 @@
   id: totrans-61
   prefs: []
   type: TYPE_NORMAL
+  zh: 你想从索引ID一查到ID一百，或者单独查找它们，对吧？我不想这样做。这很好，酷！所以我们将通过引入一个非常简单的概念来解决这个问题，那就是排序。面试官会很高兴，知道我们在使用排序。
 - en: sorting here。 So what you're going to do is rather than just storing it as in
     an append only format sequentially。 we're going to make sure that what we write
     to the disk is sorted so that when we're going。 to look up a range key， we just
@@ -468,6 +513,7 @@
   id: totrans-62
   prefs: []
   type: TYPE_NORMAL
+  zh: 在这里进行排序。因此，你要做的是，不仅仅以追加的方式顺序存储，我们将确保写入磁盘的内容是排序的，这样当我们查找一个范围键时，我们就知道它在什么范围内。同时，我们也不需要存储每个键的内存映射。
 - en: We can just have like a key that's kind of like we can just have a sparse representation。
     of the key so that if there is any key between the two keys， we know exactly where
     it is。 because it's sorted， right？ So we can just quickly look it up。 So we don't
@@ -475,6 +521,7 @@
   id: totrans-63
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们可以有一个键，它就像是一个稀疏表示。如果在这两个键之间有任何键，我们就知道它确切的位置。因为它是排序的，对吧？所以我们可以快速查找。因此，我们也不需要一个庞大的索引文件来占用我们的桌面空间。
 - en: So an example of an in memory balance tree that we can use to replace our hash
     index is。 going to be red black tree。 We also have like a lot of other sorted
     balance trees that you can use。 but I just picked， this。 So red black tree can
@@ -483,6 +530,7 @@
   id: totrans-64
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们可以用来替换哈希索引的内存平衡树的一个例子是红黑树。我们还有很多其他的排序平衡树可以使用，但我就选这个。红黑树，我不会解释这个数据结构是如何工作的，因为互联网上还有其他人会这样做。
 - en: So red black tree essentially just have really simple rules that it follows。
     So you can just have a black key， a black node in the root or the leaf and red
     cannot。 have red children or parents， right？ So these are these two rules that
@@ -491,6 +539,7 @@
   id: totrans-65
   prefs: []
   type: TYPE_NORMAL
+  zh: 红黑树本质上遵循非常简单的规则。所以你可以在根节点或叶子节点有一个黑色节点，而红色节点不能有红色的子节点或父节点，对吧？这就是它遵循的这两个规则。当你插入或删除时，你只需确保我们做的。
 - en: sure to update your node so that the rules still apply。 And when you do that。
     your tree is going to be as balanced as it can and it's going， to have a log in
     complexity。 which is like really cool。 So now again， there is no persistence because
@@ -499,12 +548,14 @@
   id: totrans-66
   prefs: []
   type: TYPE_NORMAL
+  zh: 确保更新你的节点，以便规则依然适用。当你这样做时，你的树将尽可能平衡，并且会有对数复杂度，这真的很酷。所以现在再次提醒，由于我们在内存中，所以没有持久性。我们需要将这棵红黑树写入磁盘。
 - en: So to do that， we're going to introduce what's being the standard in the industry
     since the， 1970s。 which is like a crazy time for an algorithm or like a software
     to kind of live， on， right？
   id: totrans-67
   prefs: []
   type: TYPE_NORMAL
+  zh: 为了做到这一点，我们将引入自1970年代以来业界的标准。这是一个算法或软件生存的疯狂时代，对吧？
 - en: And that is B trees。 So in B trees， we just take out these nodes that we had
     in red black trees and we just。 make them into pages。 And pages kind of work well
     with our OS because the data in the disk is also arranged in the。 form of pages。
@@ -514,6 +565,7 @@
   id: totrans-68
   prefs: []
   type: TYPE_NORMAL
+  zh: 这就是 B 树。因此在 B 树中，我们只是把红黑树中的这些节点拿出来，然后将它们。制作成页面。页面与我们的操作系统非常契合，因为磁盘中的数据也是以页面的形式排列的。所以这就有效了。因此我们所做的是，如果我们有这个，这里也是一种介质。顺便提一下。所以我们只需要这些，我们只需有一个页面，其中包含我们想要的已排序的键。
 - en: order and it has a reference to the keys that kind of move around like a tree。
     So for example。 we have 100 to 500 and there is a reference for keys that lie
     between 100， and 200， right。 which goes down and the keys less than 100。 There's
@@ -522,6 +574,8 @@
   id: totrans-69
   prefs: []
   type: TYPE_NORMAL
+  zh: 顺序并且它有对键的引用，这些键像树一样移动。例如，我们有 100 到 500 之间的键，并且存在对介于 100 和 200 之间的键的引用，对吧？它向下查找，并且小于
+    100 的键有另一个向下查找的引用。因此，如果你想查找，比如说，键 51，我们只需通过第三个引用。
 - en: then we know to 50s there。 Between 250 and 270， we just go down and we find
     it， right。 So we have a fixed size for these segments and in certain update operations
     kind of happen。 depending on the file size。 And yeah， this kind of just works。
@@ -529,6 +583,8 @@
   id: totrans-70
   prefs: []
   type: TYPE_NORMAL
+  zh: 然后我们知道到 50 之间的情况。在 250 和 270 之间，我们直接向下查找，对吧？所以这些段有一个固定的大小，而某些更新操作则会根据文件大小发生。是的，这种方式确实有效。那么，如何对这个
+    B 树执行操作呢，对吧？再次。
 - en: I'm not going to completely go into the details of insertion and deletion， on
     a tree。 So again。 there are a lot of videos for you to check it out or， you know，
     on the internet， it's all there。 So in general， if you just need a key， you just
@@ -537,6 +593,7 @@
   id: totrans-71
   prefs: []
   type: TYPE_NORMAL
+  zh: 我不会完全详细讲解树上的插入和删除。因此再次强调，有很多视频供你查看，或者你知道的，网络上都有。所以一般来说，如果你只需要一个键，你只需检查段中是否有空间。因为段是固定大小的，对吧？所以你必须有空间才能插入。如果有空间。
 - en: you insert， if you don't have space， you split the key。 That's it。 And with
     deletions。 it's a bit more complex。 It depends on if you want to delete what's
     in the leaf or what's internal and if it's。 leaf， it depends on the number of
@@ -545,6 +602,7 @@
   id: totrans-72
   prefs: []
   type: TYPE_NORMAL
+  zh: 你插入时，如果没有空间，就拆分这个键。就这样。至于删除，情况就复杂一些。这取决于你想删除的是叶子中的内容还是内部内容，如果是叶子，那就取决于键的数量；如果是内部内容，那就取决于键和它的子节点。因此本质上，你要么执行这个操作，要么你知道。
 - en: split the tree， change it around and then do the operation。 And again。 B trees
     have existed for a long time and it's a standard implementation in。 almost every
     relational database and even non-relational databases use it as an index。 And
@@ -553,10 +611,12 @@
   id: totrans-73
   prefs: []
   type: TYPE_NORMAL
+  zh: 拆分树，改变它的位置，然后执行操作。再一次。B 树存在了很长时间，并且在几乎每个关系型数据库中都是标准实现，甚至非关系型数据库也将其用作索引。而且它具有，另外，执行这些操作的复杂度为对数级，并保持。
 - en: the tree in a balanced way。 So， B trees are old， right？
   id: totrans-74
   prefs: []
   type: TYPE_NORMAL
+  zh: 以平衡的方式组织树。因此，B 树是古老的，对吧？
 - en: But we're going to have a lot of improvements that can happen on top of B trees。
     So one thing that we can do is copy on right， which is rather than updating a
     page in a， tree。 we're just going to create a new page and then reference the
@@ -565,6 +625,7 @@
   id: totrans-75
   prefs: []
   type: TYPE_NORMAL
+  zh: 但我们可以在 B 树的基础上进行很多改进。所以我们可以做的一件事是写时复制，也就是不直接更新树中的页面，而是创建一个新页面，然后引用新页面，而不是更新现有页面，对吧？而我们从中获得的东西是超级酷的。
 - en: which is really good concurrency， because for example， if someone is running
     a query at 8 a。m。 and they look at the tree， state at 8 a。m。 They look at page
     at 8 a。m。 And after 8 a。m。 there are several updates that happen to that tree，
@@ -573,6 +634,7 @@
   id: totrans-76
   prefs: []
   type: TYPE_NORMAL
+  zh: 这真的很好地支持并发，因为例如，如果有人在早上 8 点运行查询并查看树，状态是早上 8 点。他们在早上 8 点查看页面。而在早上 8 点之后，树上发生了几次更新，对吧？所以引用会不断变化。但是由于采用写时复制，新的页面将引用新的查询。
 - en: So the query that you run at 8 o'clock， it's going to return the result of the
     database。 at 8 o'clock。 It's not going to change as time moves， even if your query
     takes a long time to run。 And this happens with every query that runs at every
@@ -580,6 +642,7 @@
   id: totrans-77
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以你在8点运行的查询，将返回数据库在8点的结果。即使你的查询运行时间很长，这个结果也不会随时间变化。这适用于每一个在任何时间点运行的查询。我们称之为快照隔离。既然我们有这个。
 - en: we can actually-- so this is what databases call MBCC or multi-version。 concurrency
     control where you can have several versions of a single data so that you have。
     snapshot isolation in your database。 There is also the concept of wall logs where
@@ -588,6 +651,7 @@
   id: totrans-78
   prefs: []
   type: TYPE_NORMAL
+  zh: 实际上，我们可以这样做——这就是数据库所称的MBCC或多版本并发控制，可以有多个单一数据的版本，这样你的数据库中就有快照隔离。还有一种称为墙日志的概念，仅有追加的B3操作日志，这样如果你的基础设施崩溃，你可以重新生成B3，同时你还有锁和日志。
 - en: So if a write happens， you can just lock a tree saying that there's a write
     happening。 so that concurrent reads don't read dirty data。 Cool。 So just a quick
     plug。 Euro pattern is another awesome conference that is happening in 11th and
@@ -596,13 +660,16 @@
   id: totrans-79
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以，如果发生写入，你可以锁定一棵树，表示正在发生写入，以防并发读取脏数据。酷。所以简单提一下，Euro Pattern 是一个很棒的会议，将于7月11日至17日在爱尔兰都柏林举行，同时也提供远程参与。下周会发布程序安排。
 - en: There is also a really amazing stuff called Make a Summit。 We have transcored
     awesome stuff happening。 So just check it out。 And thank you so much for coming。
     I'm going to wrap this talk up。 Yeah。 [APPLAUSE]， [APPLAUSE]。
   id: totrans-80
   prefs: []
   type: TYPE_NORMAL
+  zh: 还有一个非常棒的东西叫做Make a Summit。我们正在进行一些很酷的事情。所以请去看看。非常感谢大家的参与。我将结束这个演讲。是的。[掌声]，[掌声]。
 - en: '![](img/31a0123927beac156dca1c36db1e34f8_7.png)'
   id: totrans-81
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/31a0123927beac156dca1c36db1e34f8_7.png)'
