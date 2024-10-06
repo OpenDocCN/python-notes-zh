@@ -3,26 +3,32 @@
   prefs:
   - PREF_H1
   type: TYPE_NORMAL
+  zh: P3：Charla Eric Nahuel Horvat - Integraciones con Asyncio - 程序员百科书 - BV1rW4y1v7YG
 - en: (speaking in foreign language)。
   id: totrans-1
   prefs: []
   type: TYPE_NORMAL
+  zh: (讲外语)。
 - en: '![](img/a5bd61a95ab6e1bc2d339ba61d46b7fb_1.png)'
   id: totrans-2
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/a5bd61a95ab6e1bc2d339ba61d46b7fb_1.png)'
 - en: (speaking in foreign language)。
   id: totrans-3
   prefs: []
   type: TYPE_NORMAL
+  zh: (讲外语)。
 - en: '![](img/a5bd61a95ab6e1bc2d339ba61d46b7fb_3.png)'
   id: totrans-4
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/a5bd61a95ab6e1bc2d339ba61d46b7fb_3.png)'
 - en: '![](img/a5bd61a95ab6e1bc2d339ba61d46b7fb_4.png)'
   id: totrans-5
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/a5bd61a95ab6e1bc2d339ba61d46b7fb_4.png)'
 - en: (speaking in foreign language)， (speaking in foreign language)， (speaking in
     foreign language)。 (speaking in foreign language)， (speaking in foreign language)，
     (speaking in foreign language)。 (speaking in foreign language)， (speaking in foreign
@@ -31,6 +37,8 @@
   id: totrans-6
   prefs: []
   type: TYPE_NORMAL
+  zh: (讲外语)， (讲外语)， (讲外语)。 (讲外语)， (讲外语)， (讲外语)。 (讲外语)， (讲外语)， (讲外语)。 (讲外语)， (讲外语)，
+    (讲外语)。
 - en: (speaking in foreign language)， (speaking in foreign language)， (speaking in
     foreign language)。 (speaking in foreign language)， (speaking in foreign language)，
     (speaking in foreign language)。 (speaking in foreign language)， (speaking in foreign
@@ -39,6 +47,8 @@
   id: totrans-7
   prefs: []
   type: TYPE_NORMAL
+  zh: (讲外语)， (讲外语)， (讲外语)。 (讲外语)， (讲外语)， (讲外语)。 (讲外语)， (讲外语)， (讲外语)。 (讲外语)， (讲外语)，
+    (讲外语)。
 - en: (speaking in foreign language)， (speaking in foreign language)， (speaking in
     foreign language)。 (speaking in foreign language)， (speaking in foreign language)，
     (speaking in foreign language)。 (speaking in foreign language)， (speaking in foreign
@@ -47,6 +57,8 @@
   id: totrans-8
   prefs: []
   type: TYPE_NORMAL
+  zh: (讲外语)， (讲外语)， (讲外语)。 (讲外语)， (讲外语)， (讲外语)。 (讲外语)， (讲外语)， (讲外语)。 (讲外语)， (讲外语)，
+    (讲外语)。
 - en: (speaking in foreign language)， (speaking in foreign language)， (speaking in
     foreign language)。 (speaking in foreign language)， (speaking in foreign language)，
     (speaking in foreign language)。 (speaking in foreign language)， (speaking in foreign
@@ -55,6 +67,8 @@
   id: totrans-9
   prefs: []
   type: TYPE_NORMAL
+  zh: (讲外语)， (讲外语)， (讲外语)。 (讲外语)， (讲外语)， (讲外语)。 (讲外语)， (讲外语)， (讲外语)。 (讲外语)， (讲外语)，
+    (讲外语)。
 - en: service。 The security is not an example because of the communication environment。
     The issue can be created in the array of services， which is made by the server。
     Now we don't want to calculate the communication and server to implement it。 I
@@ -62,6 +76,7 @@
   id: totrans-10
   prefs: []
   type: TYPE_NORMAL
+  zh: 服务。由于通信环境，安全性不是一个例子。问题可以在由服务器创建的服务数组中产生。现在我们不想计算通信和服务器来实现它。我必须确保这不是一个可以使用的地方。
 - en: I have to make sure that it is not a place to use。 I have to make sure that
     it is a place to use。 I have to make sure that it is not a place to use。 I have
     to make sure that it is not a place to use。 I have to make sure that it is not
@@ -71,6 +86,7 @@
   id: totrans-11
   prefs: []
   type: TYPE_NORMAL
+  zh: 我必须确保这不是一个可以使用的地方。我必须确保这是一个可以使用的地方。我必须确保这不是一个可以使用的地方。我必须确保这不是一个可以使用的地方。我必须确保这不是一个可以使用的地方。我必须确保这不是一个可以使用的地方。我必须确保这不是一个可以使用的地方。我必须确保这不是一个可以使用的地方。我必须确保这不是一个可以使用的地方。
 - en: I have to make sure that it is not a place to use。 I have to make sure that
     it is not a place to use。 I have to make sure that it is not a place to use。 I
     have to make sure that it is not a place to use。 I have to make sure that it is
@@ -80,6 +96,7 @@
   id: totrans-12
   prefs: []
   type: TYPE_NORMAL
+  zh: 我必须确保这不是一个可以使用的地方。我必须确保这不是一个可以使用的地方。我必须确保这不是一个可以使用的地方。我必须确保这不是一个可以使用的地方。我必须确保这不是一个可以使用的地方。我必须确保这不是一个可以使用的地方。我必须确保这不是一个可以使用的地方。我必须确保这不是一个可以使用的地方。
 - en: I have to make sure that it is not a place to use。 I have to make sure that
     it is not a place to use。 I have to make sure that it is not a place to use。 I
     have to make sure that it is not a place to use。 I have to make sure that it is
