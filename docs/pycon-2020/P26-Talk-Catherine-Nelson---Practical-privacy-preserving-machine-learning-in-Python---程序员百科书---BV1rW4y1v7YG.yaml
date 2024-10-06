@@ -1,15 +1,19 @@
 - en: P26：Talk Catherine Nelson - Practical privacy-preserving machine learning in
     Python - 程序员百科书 - BV1rW4y1v7YG
+  id: totrans-0
   prefs:
   - PREF_H1
   type: TYPE_NORMAL
 - en: '[silence]。'
+  id: totrans-1
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/a45ae89f522de28987158e0b61b63946_1.png)'
+  id: totrans-2
   prefs: []
   type: TYPE_IMG
 - en: '![](img/a45ae89f522de28987158e0b61b63946_2.png)'
+  id: totrans-3
   prefs: []
   type: TYPE_IMG
 - en: So， hi and welcome to my PyCon talk， Practical Privacy Preserving Machine Learning
@@ -17,48 +21,56 @@
     work and clear communication this year。 And also thanks for the opportunity to
     still give this talk。 even though we don't get together in Pittsburgh。 [silence]，
     So。
+  id: totrans-4
   prefs: []
   type: TYPE_NORMAL
 - en: I'd like to introduce myself because it's going to be a。 while before you actually
     get to meet in person。 In my day job。 I'm a senior data scientist at Concur Labs，
     part of SAP Concur。 I work in a small team that drives innovation at SAP Concur，
     which is SAP's business。
+  id: totrans-5
   prefs: []
   type: TYPE_NORMAL
 - en: travel and expense tool。 And we evaluate new technologies and recommend them
     to the rest of the company。 In the past， we've built Concur， travel and expense。
     and all sorts of alternative interfaces from Slack and Outlook。 to Alexa and even
     expenses from a car。 And now we have a big focus on machine learning。
+  id: totrans-6
   prefs: []
   type: TYPE_NORMAL
 - en: and how we can recommend machine learning tools and technologies to the rest
     of Concur。 I'm also a co-organizer for Seattle PILADES。 I'd like to give a big
     shout out to Ms。 Meetop。 for getting me started in Python in the first place。
     And I'm also co-authoring an arrayly book called Building Machine Learning Pipelines。
+  id: totrans-7
   prefs: []
   type: TYPE_NORMAL
 - en: and I'm a Google developer expert in machine learning。 But today I want to talk
     about one thing that I'm really interested in。 that is privacy preserving machine
     learning。 I first got interested in data privacy in early 2018。 when everyone
     was thinking and talking a lot about the GDPR， the general data protection regulation。
+  id: totrans-8
   prefs: []
   type: TYPE_NORMAL
 - en: as these laws were being introduced。 But privacy issues definitely haven't gone
     away。 We're still talking about a lot， particularly in the current situation。
     as you can see by all these headlines from the past few weeks。 And machine learning
     is deeply involved in issues around privacy。
+  id: totrans-9
   prefs: []
   type: TYPE_NORMAL
 - en: As you can see from this tweet from back in 2016 from Andrew。 the standard view
     is that more data is better， especially when it comes to deep neural networks。
     But let's not be so abstract about data， let's be specific。 What data should we
     be worrying about when we talk about data privacy？ Well。
+  id: totrans-10
   prefs: []
   type: TYPE_NORMAL
 - en: we can divide this into two categories。 There's private data。 which is personally
     identifiable information， such as your name， address， your email。 And then there's
     quasi identifying data that partially identifies someone。 if you bring enough
     of it together。 So things like location， credit card transactions。
+  id: totrans-11
   prefs: []
   type: TYPE_NORMAL
 - en: And there's also a lot of private data in user inputs。 If there's free text
@@ -66,15 +78,18 @@
     numbers。 And then there's sensitive data that has some kind of consequences if
     it leaks out。 So this could be things like health related personal data or company
     proprietary data。
+  id: totrans-12
   prefs: []
   type: TYPE_NORMAL
 - en: So when we're dealing with private or sensitive data。 the simplest way to keep
     it private is to just not even collect it in the first place。 We have a project
     that helps us with this。 It's called the Data Washing Machine。 It removes personal
     data from natural language， such as names， addresses。
+  id: totrans-13
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/a45ae89f522de28987158e0b61b63946_4.png)'
+  id: totrans-14
   prefs: []
   type: TYPE_IMG
 - en: all that kind of thing。 We deal with a lot of receipt data and concur。 and that
@@ -82,6 +97,7 @@
     we provide。 So we use machine learning models to identify the different parts
     of PII that we might find。 in the receipt， such as names， addresses， phone numbers
     and so on。 And then we can remove this data。
+  id: totrans-15
   prefs: []
   type: TYPE_NORMAL
 - en: So that works well for us in our situation， but often there are use cases where
@@ -89,6 +105,7 @@
     collect sensitive data such as people's genders or their ages。 we don't know if
     our model is fair to all of our users。 So we do need to collect that sensitive
     data。 And it seems like privacy and machine learning are opposed。
+  id: totrans-16
   prefs: []
   type: TYPE_NORMAL
 - en: because data privacy is knowing less about you， but machine learning wants to
@@ -96,6 +113,7 @@
     goals。 In many cases。 the idea is that we want to learn about a population not
     about a single individual。 Both of these technologies want to generalize， not
     personalize。
+  id: totrans-17
   prefs: []
   type: TYPE_NORMAL
 - en: And my motivation with this talk is to show how it's still possible to build
@@ -104,6 +122,7 @@
     of these appear in research papers。 How do I do this practically in Python？ To
     do this。 the most important question to ask is， who do you trust with your personal
     data？
+  id: totrans-18
   prefs: []
   type: TYPE_NORMAL
 - en: And to put this into perspective， I'll talk about a very simplified machine
@@ -111,6 +130,7 @@
     our simple machine learning system。 the data is collected from the user， put into
     some central storage system。 And then it's transferred from that storage system
     to a machine learning model。
+  id: totrans-19
   prefs: []
   type: TYPE_NORMAL
 - en: and it's used to train that model。 And then the model makes some predictions。
@@ -118,6 +138,7 @@
     ways of providing privacy in our machine learning system。 First one of these is
     differential privacy。 If you want to ensure that there's no personal data in your
     model predictions。
+  id: totrans-20
   prefs: []
   type: TYPE_NORMAL
 - en: then this is the one to use。 Machine learning models and in particular deep
@@ -125,6 +146,7 @@
     And this gives users a loss of privacy。 And the definition of differential privacy
     is a formalization of the idea。 that a query should not reveal whether a person
     is in a data set。
+  id: totrans-21
   prefs: []
   type: TYPE_NORMAL
 - en: So the probability that a query or a transformation gives a certain result。
@@ -132,6 +154,7 @@
     and the other one doesn't。 The idea is that if your personal data doesn't affect
     the result of something。 then you're happy to include it in a data set， because
     there's some kind of deniability。
+  id: totrans-22
   prefs: []
   type: TYPE_NORMAL
 - en: Or to put it another way， this gives you the ability to say that for any possible
@@ -139,6 +162,7 @@
     And the way differential privacy is achieved is by some kind of randomization。
     that masks an individual's data values。 There's many different ways to achieve
     differential privacy。
+  id: totrans-23
   prefs: []
   type: TYPE_NORMAL
 - en: but I'll briefly talk through one of the simplest， which is the concept of randomized
@@ -146,6 +170,7 @@
     that has some kind of sensitive answers。 such as did you stay out late last night，
     then you can flip a coin。 And if the coin comes up heads。 then the person taking
     the survey answers truthfully， if it comes up tails。
+  id: totrans-24
   prefs: []
   type: TYPE_NORMAL
 - en: then they flip again and select randomly from yes or no。 And because we know
@@ -153,6 +178,7 @@
     we can back calculate the proportion of people who answered yes or no to this
     question。 And this gives people some deniability。 They could say， oh， it was just
     the。
+  id: totrans-25
   prefs: []
   type: TYPE_NORMAL
 - en: I just gave the random answer。 And that way they don't lose privacy。 But what's
@@ -160,6 +186,7 @@
     one of the ways that we can have differential privacy in machine learning。 is
     provided in the TensorFlow Privacy Library， which lets us train differentially
     private models。
+  id: totrans-26
   prefs: []
   type: TYPE_NORMAL
 - en: And it offers us a strong mathematical guarantee that it prevents the user's
@@ -167,12 +194,14 @@
     And this technology is particularly useful because it fits in really easy to our
     existing workflows。 So if we start with a classic simple TensorFlow Keras model，
     we've got three layers here。
+  id: totrans-27
   prefs: []
   type: TYPE_NORMAL
 - en: two fully connected dense layers and a sigmoid output layer。 And we want to
     add privacy。 add differential privacy to the simple Keras model。 What we have
     to do is provide a new optimizer and a new loss。 So in TensorFlow Privacy。 there's
     this gradient descent Gaussian optimizer。 And this takes stochastic gradient descent。
+  id: totrans-28
   prefs: []
   type: TYPE_NORMAL
 - en: but adds Gaussian noise to it。 And there's a couple of really important new
@@ -180,6 +209,7 @@
     non-clip and this noise multiplier。 So what this means is it clips the gradients
     so that they don't get too large。 and it varies the amount of noise that goes
     into the model。 So what's going on here？ Well。
+  id: totrans-29
   prefs: []
   type: TYPE_NORMAL
 - en: instead of the normal batch of data that we send to the model， we split them
@@ -187,6 +217,7 @@
     the gradients。 we cut off the largest values， because we don't want the model
     to be affected by outliers。 because that would break the differential privacy
     promise of the transformation not being affected。
+  id: totrans-30
   prefs: []
   type: TYPE_NORMAL
 - en: too much by one individual。 We then average the gradients after their clips
@@ -194,6 +225,7 @@
     And then we pass these to the model。 And then once we've done that， we can pass
     our new optimizer。 and our new loss to the model and then compile it and fit it
     as normal。
+  id: totrans-31
   prefs: []
   type: TYPE_NORMAL
 - en: This is just a standard Keras training setup， but we passed in that new optimizer
@@ -201,6 +233,7 @@
     measure the amount of privacy。 that we've produced here？ So we have this concept
     called epsilon。 epsilon is one of the parameters in differential privacy that
     measures how excluding or including。
+  id: totrans-32
   prefs: []
   type: TYPE_NORMAL
 - en: an individual point is going to change the probability of any particular transformation
@@ -208,6 +241,7 @@
     outcome of two transformations。 or two model predictions in this case。 And if
     epsilon is small， we've added more noise。 we've clicked the gradients more， then
     the transformation is more private。
+  id: totrans-33
   prefs: []
   type: TYPE_NORMAL
 - en: And there's a smaller probability of the model changing if one person's data
@@ -215,6 +249,7 @@
     methods in TensorFlow privacy。 In particular。 we use this compute_db_sdd_privacy。
     Sdd is stochastic gradient descent。 the optimizer that we used in the model。 And
     we pass in the batch size that we used and the noise multiplier。
+  id: totrans-34
   prefs: []
   type: TYPE_NORMAL
 - en: we tell it the number， of epochs that we trained for。 and we give it a value
@@ -222,6 +257,7 @@
     we can get a calculation of epsilon and know how private our model is。 Differential
     privacy is particularly useful when you don't want to expose predictions from
     the model。
+  id: totrans-35
   prefs: []
   type: TYPE_NORMAL
 - en: But to do this， you still need to collect the data in the first place。 You still
@@ -229,6 +265,7 @@
     because it provides mathematical definitions and guarantees of privacy。 The second
     piece of privacy preserving technology I'd like to talk about today is encrypted
     machine learning。
+  id: totrans-36
   prefs: []
   type: TYPE_NORMAL
 - en: There's two ways we can use this in our machine learning system。 And the first
@@ -236,12 +273,14 @@
     and before the model is trained。 And then the predictions are decrypted and then
     passed back to the user。 And we can do this in Python with TF encrypted which
     handles all the encryption part for us。
+  id: totrans-37
   prefs: []
   type: TYPE_NORMAL
 - en: It keeps the basic Keras interface。 And it allows us to share previously unused
     data。 so data that is normally too sensitive for us to touch。 Because it can be
     encrypted before it even leaves its original location。 To do this。 we just define
     a function that provides batches of training data。 And then add the data at tfe。
+  id: totrans-38
   prefs: []
   type: TYPE_NORMAL
 - en: localcomputation。 Tfe in this case is TF encrypted。 And this handles the encryption
@@ -249,9 +288,11 @@
     as tfe。 And continue as normal。 We build our model， define it using the Keras
     sequential API， add our encrypted layers to it。 And then we can go ahead and train
     and make predictions on that encrypted data。
+  id: totrans-39
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/a45ae89f522de28987158e0b61b63946_6.png)'
+  id: totrans-40
   prefs: []
   type: TYPE_IMG
 - en: The second way of using encryption in our machine learning system is to encrypt
@@ -259,12 +300,14 @@
     And in this case。 we collect the raw data from the user and transfer that to a
     central storage。 train the model on raw data， encrypt the model， and then the
     predictions are encrypted。
+  id: totrans-41
   prefs: []
   type: TYPE_NORMAL
 - en: And we can also do this in TF encrypted。 We can use the tfe。keras。models。clone
     model argument and this will give us encrypted predictions。 There's a few more
     steps to it in this。 So what's going on here is that first of all。 we load and
     preprocess the data locally on the client。 Then the data is encrypted on the client。
+  id: totrans-42
   prefs: []
   type: TYPE_NORMAL
 - en: The encrypted data is sent to the service。 And they will make a prediction on
@@ -273,6 +316,7 @@
     a very nice way of taking a model that you've already trained and turning it into
     something that's more private。 So when should we use encrypted machine learning？
     There's two options encrypting the training data or just the model。
+  id: totrans-43
   prefs: []
   type: TYPE_NORMAL
 - en: We can encrypt the data if the model owner is not trusted。 And we can encrypt
@@ -280,6 +324,7 @@
     us the possibility of training models on data that's too sensitive to share。 So
     there's lots of medical applications here。 The third technology I want to talk
     about today is federated learning。
+  id: totrans-44
   prefs: []
   type: TYPE_NORMAL
 - en: And this is suitable for when data is spread across lots of different devices
@@ -287,18 +332,21 @@
     to preserve privacy。 In federated learning， the raw data never leaves a user's
     device。 And instead。 the model weights are sent to each device。 The weights are
     updated。
+  id: totrans-45
   prefs: []
   type: TYPE_NORMAL
 - en: And then they return to some secure aggregation service。 And then they're combined
     together into the model。 And the model can make predictions that are returned
     to the user。 And this gives users privacy because the model owner can never see
     their raw data。 In Python。
+  id: totrans-46
   prefs: []
   type: TYPE_NORMAL
 - en: federated learning is provided by the Pysys project。 And this is for PyTorch
     and TensorFlow。 And by TensorFlow federated。 I'm not going to give a code example
     here because it gets really complex with all the different bits of infrastructure
     that you need。
+  id: totrans-47
   prefs: []
   type: TYPE_NORMAL
 - en: But I'll walk through all the steps that make a very simple federated learning
@@ -306,12 +354,14 @@
     device。 Then we make a set of pointers that point to the training data that's
     already living on each worker。 This might be what you typed into your keyboard
     or something like that。
+  id: totrans-48
   prefs: []
   type: TYPE_NORMAL
 - en: Then we send the model weights from the model owner to each worker。 The model
     is trained on each worker device。 And then the workers send the weights back to
     the model owner after they've been updated。 And they also send the loss back to
     the model owner。 And then the model owner combines the model into the new model。
+  id: totrans-49
   prefs: []
   type: TYPE_NORMAL
 - en: which has been improved by the addition of the new data。 What's missing from
@@ -319,12 +369,14 @@
     in privacy yet。 We can often infer the original data from the model weights。 So
     we need to add some secure way of averaging the model weights before they can
     reach the model owner。
+  id: totrans-50
   prefs: []
   type: TYPE_NORMAL
 - en: And this is what you do in a full-blown system。 And also scale。 you need something
     that's going to increase in size with many， many devices。 Federated learning is
     particularly useful when we want to build personalized models。 like in the keyboard
     example I mentioned already。 It's good when the data is already decentralized。
+  id: totrans-51
   prefs: []
   type: TYPE_NORMAL
 - en: so it's being collected on users' devices or on a browser， and obviously sensitive
@@ -332,18 +384,21 @@
     we can't look at the data after it's been collected。 So privacy preserving machine
     learning really comes down to who do you trust。 who gets to see the raw data。
     And if you trust the model owner。
+  id: totrans-52
   prefs: []
   type: TYPE_NORMAL
 - en: then they can use the raw data but offer private predictions。 and we can do
     this with differential privacy or encryption。 And then if you don't trust the
     model owner with your data。 you can encrypt the data or keep it on each user's
     device。 And just a few caveats here。
+  id: totrans-53
   prefs: []
   type: TYPE_NORMAL
 - en: Right now there's always a cost to adding privacy to make your machine learning
     model。 whether that's lower accuracy， longer training times， or a more complex
     infrastructure。 Don't assume that just because you're using one of these technologies。
     you're still providing complete privacy for your users。
+  id: totrans-54
   prefs: []
   type: TYPE_NORMAL
 - en: And this isn't going to save you from all ethical issues。 If the product that
@@ -351,14 +406,19 @@
     help。 If you'd like to learn more about the technologies I mentioned today。 you
     can read about them in the book that I'm currently co-authoring with Hannah's
     Hacker。
+  id: totrans-55
   prefs: []
   type: TYPE_NORMAL
 - en: Building Machine Learning Pipeline， which is out through O'Reilly。 I'd also
     encourage you to support the open source project I've mentioned， TF encrypted。
     PIPF and TensorFlow privacy。 And if you've got questions， you can find me on Twitter。
     Thank you very much for listening。 [BLANK_AUDIO]。
+  id: totrans-56
   prefs: []
   type: TYPE_NORMAL
+  zh: 构建机器学习管道，这本书由O'Reilly出版。我还鼓励你支持我提到的开源项目，TF加密、PIPF和TensorFlow隐私。如果你有问题，可以在Twitter上找到我。非常感谢你的聆听。[BLANK_AUDIO]。
 - en: '![](img/a45ae89f522de28987158e0b61b63946_8.png)'
+  id: totrans-57
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/a45ae89f522de28987158e0b61b63946_8.png)'
