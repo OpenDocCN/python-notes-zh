@@ -1,417 +1,595 @@
 - en: '[PyCon 2020 会议笔记](README.md)'
+  id: totrans-0
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[PyCon 2020 会议笔记](README.md)'
 - en: '[P1：Charla Cristina Muñoz - Detección automatizada de archivos maliciosos en
     el repo - 程序员百科书 - BV1rW4y1v7YG](P1-Charla-Cristina-Mu-oz---Detecci-n-automatizada-de-archivos-maliciosos-en-el-repo---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-1
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P1：查尔拉·克里斯蒂娜·穆尼奥斯 - 在repo中自动检测恶意文件 - 程序员百科书 - BV1rW4y1v7YG](P1-Charla-Cristina-Mu-oz---Detecci-n-automatizada-de-archivos-maliciosos-en-el-repo---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P10：Sponsor Workshop Capital One Steven Lott - Type Hints Putting more Buzz
     in your - 程序员百科书 - BV1rW4y1v7YG](P10-Sponsor-Workshop-Capital-One-Steven-Lott---Type-Hints-Putting-more-Buzz-in-your---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-2
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P10：赞助研讨会Capital One 史蒂文·洛特 - 类型提示让你的 - 程序员百科书 - BV1rW4y1v7YG](P10-Sponsor-Workshop-Capital-One-Steven-Lott---Type-Hints-Putting-more-Buzz-in-your---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P11：Sponsor Workshop Google Charles Engelke - Serverless Python Applications
     with Go - 程序员百科书 - BV1rW4y1v7YG](P11-Sponsor-Workshop-Google-Charles-Engelke---Serverless-Python-Applications-with-Go---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-3
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P11：赞助研讨会谷歌 查尔斯·恩格尔克 - 无服务器的Python应用与Go - 程序员百科书 - BV1rW4y1v7YG](P11-Sponsor-Workshop-Google-Charles-Engelke---Serverless-Python-Applications-with-Go---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P12：Sponsor Workshop Heroku - Casey Faist From Project to Productionized on
     Heroku - 程序员百科书 - BV1rW4y1v7YG](P12-Sponsor-Workshop-Heroku---Casey-Faist-From-Project-to-Productionized-on-Heroku---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-4
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P12：赞助研讨会Heroku - 凯西·法伊斯 从项目到在Heroku上生产化 - 程序员百科书 - BV1rW4y1v7YG](P12-Sponsor-Workshop-Heroku---Casey-Faist-From-Project-to-Productionized-on-Heroku---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P13：Sponsor Workshop Jason Lantz - Salesforce How Python Powers Salesforce.org''s
     Uni - 程序员百科书 - BV1rW4y1v7YG](P13-Sponsor-Workshop-Jason-Lantz---Salesforce-How-Python-Powers-Salesforce-org-s-Uni---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-5
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P13：赞助研讨会杰森·兰茨 - Salesforce：Python如何支持Salesforce.org的Uni - 程序员百科书 - BV1rW4y1v7YG](P13-Sponsor-Workshop-Jason-Lantz---Salesforce-How-Python-Powers-Salesforce-org-s-Uni---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P14：Sponsor Workshop Keith Kraus, Bartley Richardson - NVIDIA GPU-Accelerated
     Data A - 程序员百科书 - BV1rW4y1v7YG](P14-Sponsor-Workshop-Keith-Kraus--Bartley-Richardson---NVIDIA-GPU-Accelerated-Data-A---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-6
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P14：赞助研讨会基思·克劳斯、巴特利·理查森 - NVIDIA GPU加速的数据A - 程序员百科书 - BV1rW4y1v7YG](P14-Sponsor-Workshop-Keith-Kraus--Bartley-Richardson---NVIDIA-GPU-Accelerated-Data-A---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P15：Sponsor Workshop Louise Grandjonc - Optimize Python & Django apps with
     Postgres - 程序员百科书 - BV1rW4y1v7YG](P15-Sponsor-Workshop-Louise-Grandjonc---Optimize-Python---Django-apps-with-Postgres---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-7
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P15：赞助研讨会路易斯·格朗顿 - 用Postgres优化Python和Django应用 - 程序员百科书 - BV1rW4y1v7YG](P15-Sponsor-Workshop-Louise-Grandjonc---Optimize-Python---Django-apps-with-Postgres---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P16：Sponsor Workshop Mark Ibrahim - Facebook Machine Learning on Encrypted
     Data with - 程序员百科书 - BV1rW4y1v7YG](P16-Sponsor-Workshop-Mark-Ibrahim---Facebook-Machine-Learning-on-Encrypted-Data-with---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-8
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P16：赞助研讨会马克·易卜拉欣 - Facebook上的加密数据机器学习 - 程序员百科书 - BV1rW4y1v7YG](P16-Sponsor-Workshop-Mark-Ibrahim---Facebook-Machine-Learning-on-Encrypted-Data-with---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P17：Sponsor Workshop Xilinx, Inc. Patrick Lysaght - Extending the Python Ecosystem
     t - 程序员百科书 - BV1rW4y1v7YG](P17-Sponsor-Workshop-Xilinx--Inc--Patrick-Lysaght---Extending-the-Python-Ecosystem-t---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-9
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P17：赞助研讨会赛灵思，帕特里克·利萨特 - 扩展Python生态系统 - 程序员百科书 - BV1rW4y1v7YG](P17-Sponsor-Workshop-Xilinx--Inc--Patrick-Lysaght---Extending-the-Python-Ecosystem-t---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P19：Talk Alexandra Sunderland - From 0 to 60 in 2,592,000 seconds - 程序员百科书
     - BV1rW4y1v7YG](P19-Talk-Alexandra-Sunderland---From-0-to-60-in-2-592-000-seconds---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-10
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P19：谈论亚历珊德拉·桑德兰 - 从0到60的2592000秒 - 程序员百科书 - BV1rW4y1v7YG](P19-Talk-Alexandra-Sunderland---From-0-to-60-in-2-592-000-seconds---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P2：Charla David Mauricio Delgado Ruiz - Datos, Python y humanos - 程序员百科书 -
     BV1rW4y1v7YG](P2-Charla-David-Mauricio-Delgado-Ruiz---Datos--Python-y-humanos---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-11
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P2：查尔拉·大卫·毛里西奥·德尔加多·鲁伊斯 - 数据、Python与人类 - 程序员百科书 - BV1rW4y1v7YG](P2-Charla-David-Mauricio-Delgado-Ruiz---Datos--Python-y-humanos---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P20：Talk Aly Sivji - If Statements are a Code Smell - 程序员百科书 - BV1rW4y1v7YG](P20-Talk-Aly-Sivji---If-Statements-are-a-Code-Smell---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-12
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P20：谈论艾莉·西维吉 - 如果语句是一种代码异味 - 程序员百科书 - BV1rW4y1v7YG](P20-Talk-Aly-Sivji---If-Statements-are-a-Code-Smell---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P21：Talk Andrew Knight - East Meets West When Translating Django Apps - 程序员百科书
     - BV1rW4y1v7YG](P21-Talk-Andrew-Knight---East-Meets-West-When-Translating-Django-Apps---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-13
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P21：谈论安德鲁·奈特 - 东方与西方在翻译Django应用时的相遇 - 程序员百科书 - BV1rW4y1v7YG](P21-Talk-Andrew-Knight---East-Meets-West-When-Translating-Django-Apps---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P22：Talk Anthony Shaw - Why is Python slow - 程序员百科书 - BV1rW4y1v7YG](P22-Talk-Anthony-Shaw---Why-is-Python-slow---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-14
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P22：谈论安东尼·肖 - 为什么Python慢 - 程序员百科书 - BV1rW4y1v7YG](P22-Talk-Anthony-Shaw---Why-is-Python-slow---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P23：Talk Brian K Okken - Multiply your Testing Effectiveness with Parameterized
     Test - 程序员百科书 - BV1rW4y1v7YG](P23-Talk-Brian-K-Okken---Multiply-your-Testing-Effectiveness-with-Parameterized-Test---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-15
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P23：演讲 Brian K Okken - 通过参数化测试提升你的测试效果 - 程序员百科书 - BV1rW4y1v7YG](P23-Talk-Brian-K-Okken---Multiply-your-Testing-Effectiveness-with-Parameterized-Test---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P24：Talk Calvin Hendryx-Parker - Finite State Machine (FSM) in Django - 程序员百科书
     - BV1rW4y1v7YG](P24-Talk-Calvin-Hendryx-Parker---Finite-State-Machine--FSM--in-Django---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-16
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P24：演讲 Calvin Hendryx-Parker - Django 中的有限状态机（FSM） - 程序员百科书 - BV1rW4y1v7YG](P24-Talk-Calvin-Hendryx-Parker---Finite-State-Machine--FSM--in-Django---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P25：Talk Carol J. Smith - Implementing Ethics Developing Trustworthy AI -
     程序员百科书 - BV1rW4y1v7YG](P25-Talk-Carol-J--Smith---Implementing-Ethics-Developing-Trustworthy-AI---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-17
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P25：演讲 Carol J. Smith - 实施伦理，开发值得信赖的人工智能 - 程序员百科书 - BV1rW4y1v7YG](P25-Talk-Carol-J--Smith---Implementing-Ethics-Developing-Trustworthy-AI---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P26：Talk Catherine Nelson - Practical privacy-preserving machine learning
     in Python - 程序员百科书 - BV1rW4y1v7YG](P26-Talk-Catherine-Nelson---Practical-privacy-preserving-machine-learning-in-Python---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-18
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P26：演讲 Catherine Nelson - Python 中的实用隐私保护机器学习 - 程序员百科书 - BV1rW4y1v7YG](P26-Talk-Catherine-Nelson---Practical-privacy-preserving-machine-learning-in-Python---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P27：Talk Chris Seto - Big O No Django ORM runtime complexity and how to avoid
     it usi - 程序员百科书 - BV1rW4y1v7YG](P27-Talk-Chris-Seto---Big-O-No-Django-ORM-runtime-complexity-and-how-to-avoid-it-usi---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-19
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P27：演讲 Chris Seto - Big O：避免 Django ORM 运行时复杂度 - 程序员百科书 - BV1rW4y1v7YG](P27-Talk-Chris-Seto---Big-O-No-Django-ORM-runtime-complexity-and-how-to-avoid-it-usi---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P28：Talk Colin Carroll - Getting started with automatic differentiation -
     程序员百科书 - BV1rW4y1v7YG](P28-Talk-Colin-Carroll---Getting-started-with-automatic-differentiation---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-20
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P28：演讲 Colin Carroll - 自动微分入门 - 程序员百科书 - BV1rW4y1v7YG](P28-Talk-Colin-Carroll---Getting-started-with-automatic-differentiation---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P29：Talk Conor Hoekstra - Beautiful Python Refactoring - 程序员百科书 - BV1rW4y1v7YG](P29-Talk-Conor-Hoekstra---Beautiful-Python-Refactoring---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-21
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P29：演讲 Conor Hoekstra - 优雅的 Python 重构 - 程序员百科书 - BV1rW4y1v7YG](P29-Talk-Conor-Hoekstra---Beautiful-Python-Refactoring---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P3：Charla Eric Nahuel Horvat - Integraciones con Asyncio - 程序员百科书 - BV1rW4y1v7YG](P3-Charla-Eric-Nahuel-Horvat---Integraciones-con-Asyncio---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-22
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P3：演讲 Eric Nahuel Horvat - 与 Asyncio 的集成 - 程序员百科书 - BV1rW4y1v7YG](P3-Charla-Eric-Nahuel-Horvat---Integraciones-con-Asyncio---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P30：Talk Daniel Imberman - Bridging Data Science and Data Infrastructure with
     Apache - 程序员百科书 - BV1rW4y1v7YG](P30-Talk-Daniel-Imberman---Bridging-Data-Science-and-Data-Infrastructure-with-Apache---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-23
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P30：演讲 Daniel Imberman - 利用 Apache 构建数据科学与数据基础设施的桥梁 - 程序员百科书 - BV1rW4y1v7YG](P30-Talk-Daniel-Imberman---Bridging-Data-Science-and-Data-Infrastructure-with-Apache---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P31：Talk Dean Wampler - Ray A System for High-performance, Distributed Python
     Applic - 程序员百科书 - BV1rW4y1v7YG](P31-Talk-Dean-Wampler---Ray-A-System-for-High-performance--Distributed-Python-Applic---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-24
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P31：演讲 Dean Wampler - Ray：一个高性能分布式 Python 应用系统 - 程序员百科书 - BV1rW4y1v7YG](P31-Talk-Dean-Wampler---Ray-A-System-for-High-performance--Distributed-Python-Applic---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P32：Talk Deepak Kumar Gupta - Saved by In-Memory NoSQL - 程序员百科书 - BV1rW4y1v7YG](P32-Talk-Deepak-Kumar-Gupta---Saved-by-In-Memory-NoSQL---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-25
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P32：演讲 Deepak Kumar Gupta - 由内存中 NoSQL 拯救 - 程序员百科书 - BV1rW4y1v7YG](P32-Talk-Deepak-Kumar-Gupta---Saved-by-In-Memory-NoSQL---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P33：Talk Dr. Cristián Maureira-Fredes - C++ ♥ Python from modules to hybrid
     applicat - 程序员百科书 - BV1rW4y1v7YG](P33-Talk-Dr--Cristi-n-Maureira-Fredes---C-----Python-from-modules-to-hybrid-applicat---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-26
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P33：演讲 Dr. Cristián Maureira-Fredes - C++ ♥ Python 从模块到混合应用 - 程序员百科书 - BV1rW4y1v7YG](P33-Talk-Dr--Cristi-n-Maureira-Fredes---C-----Python-from-modules-to-hybrid-applicat---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P34：Talk Dustin Ingram - Static Typing in Python - 程序员百科书 - BV1rW4y1v7YG](P34-Talk-Dustin-Ingram---Static-Typing-in-Python---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-27
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P34：演讲 Dustin Ingram - Python 中的静态类型 - 程序员百科书 - BV1rW4y1v7YG](P34-Talk-Dustin-Ingram---Static-Typing-in-Python---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P35：Talk Elizaveta Shashkova - The Hidden Power of the Python Runtime - 程序员百科书
     - BV1rW4y1v7YG](P35-Talk-Elizaveta-Shashkova---The-Hidden-Power-of-the-Python-Runtime---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-28
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P35：演讲 Elizaveta Shashkova - Python 运行时的隐秘力量 - 程序员百科书 - BV1rW4y1v7YG](P35-Talk-Elizaveta-Shashkova---The-Hidden-Power-of-the-Python-Runtime---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P36：Talk Emmanuelle Gouillart - Building interactive applications for image
     data - 程序员百科书 - BV1rW4y1v7YG](P36-Talk-Emmanuelle-Gouillart---Building-interactive-applications-for-image-data---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-29
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P36：演讲 Emmanuelle Gouillart - 为图像数据构建互动应用 - 程序员百科书 - BV1rW4y1v7YG](P36-Talk-Emmanuelle-Gouillart---Building-interactive-applications-for-image-data---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P37：Talk Eric J. Ma - A careful walk through probability distributions, using
     Python - 程序员百科书 - BV1rW4y1v7YG](P37-Talk-Eric-J--Ma---A-careful-walk-through-probability-distributions--using-Python---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-30
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P37：谈论埃里克·J·马 - 小心地走过概率分布，使用Python - 程序员百科书 - BV1rW4y1v7YG](P37-Talk-Eric-J--Ma---A-careful-walk-through-probability-distributions--using-Python---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P38：Talk Flávio Juvenal da Silva Junior - 1 + 1 = 1 or Record Deduplication
     with Pyt - 程序员百科书 - BV1rW4y1v7YG](P38-Talk-Fl-vio-Juvenal-da-Silva-Junior---1---1---1-or-Record-Deduplication-with-Pyt---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-31
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P38：谈论弗拉维奥·朱维纳尔·达·席尔瓦·朱尼尔 - 1 + 1 = 1 或记录去重与Pyt - 程序员百科书 - BV1rW4y1v7YG](P38-Talk-Fl-vio-Juvenal-da-Silva-Junior---1---1---1-or-Record-Deduplication-with-Pyt---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P39：Talk Hank Preston - Introduction to Writing Network Tests with pyATS -
     程序员百科书 - BV1rW4y1v7YG](P39-Talk-Hank-Preston---Introduction-to-Writing-Network-Tests-with-pyATS---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-32
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P39：谈论汉克·普雷斯顿 - 使用pyATS编写网络测试介绍 - 程序员百科书 - BV1rW4y1v7YG](P39-Talk-Hank-Preston---Introduction-to-Writing-Network-Tests-with-pyATS---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P4：Charla Luis Diego Conejo Alpizar - Historias de debug en clase de Python
     Avanzad - 程序员百科书 - BV1rW4y1v7YG](P4-Charla-Luis-Diego-Conejo-Alpizar---Historias-de-debug-en-clase-de-Python-Avanzad---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-33
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P4：谈论路易斯·迭戈·科内霍·阿尔皮萨尔 - Python高级课程中的调试故事 - 程序员百科书 - BV1rW4y1v7YG](P4-Charla-Luis-Diego-Conejo-Alpizar---Historias-de-debug-en-clase-de-Python-Avanzad---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P40：Talk Hannah Stepanek - Let''s talk Databases in Python SQLAlchemy and
     Alembic - 程序员百科书 - BV1rW4y1v7YG](P40-Talk-Hannah-Stepanek---Let-s-talk-Databases-in-Python-SQLAlchemy-and-Alembic---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-34
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P40：谈论汉娜·斯特帕内克 - 让我们讨论Python中的数据库SQLAlchemy和Alembic - 程序员百科书 - BV1rW4y1v7YG](P40-Talk-Hannah-Stepanek---Let-s-talk-Databases-in-Python-SQLAlchemy-and-Alembic---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P41：Talk Harry Percival - Stop Using Mocks (for a while) - 程序员百科书 - BV1rW4y1v7YG](P41-Talk-Harry-Percival---Stop-Using-Mocks--for-a-while----程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-35
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P41：谈论哈里·珀西瓦尔 - 暂时停止使用模拟 - 程序员百科书 - BV1rW4y1v7YG](P41-Talk-Harry-Percival---Stop-Using-Mocks--for-a-while----程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P42：Talk Igor T. Ghisi - Write Less and Test More with Data Regression Testing
     - 程序员百科书 - BV1rW4y1v7YG](P42-Talk-Igor-T--Ghisi---Write-Less-and-Test-More-with-Data-Regression-Testing---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-36
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P42：谈论伊戈尔·T·吉西 - 少写多测与数据回归测试 - 程序员百科书 - BV1rW4y1v7YG](P42-Talk-Igor-T--Ghisi---Write-Less-and-Test-More-with-Data-Regression-Testing---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P43：Talk Itamar Turner-Trauring - Small Big Data using NumPy and Pandas when
     your da - 程序员百科书 - BV1rW4y1v7YG](P43-Talk-Itamar-Turner-Trauring---Small-Big-Data-using-NumPy-and-Pandas-when-your-da---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-37
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P43：谈论伊塔玛尔·特纳-特劳林 - 使用NumPy和Pandas处理小型大数据 - 程序员百科书 - BV1rW4y1v7YG](P43-Talk-Itamar-Turner-Trauring---Small-Big-Data-using-NumPy-and-Pandas-when-your-da---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P44：Talk James Bennett - A 🐍''s guide to Unicode - 程序员百科书 - BV1rW4y1v7YG](P44-Talk-James-Bennett---A---s-guide-to-Unicode---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-38
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P44：谈论詹姆斯·贝内特 - 一只🐍的Unicode指南 - 程序员百科书 - BV1rW4y1v7YG](P44-Talk-James-Bennett---A---s-guide-to-Unicode---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P45：Talk Javier Jorge Cano - “Sorry, Could you repeat that again” - Speech
     Recogniti - 程序员百科书 - BV1rW4y1v7YG](P45-Talk-Javier-Jorge-Cano----Sorry--Could-you-repeat-that-again----Speech-Recogniti---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-39
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P45：谈论哈维尔·豪尔赫·卡诺 - “抱歉，你能再重复一遍吗？” - 语音识别 - 程序员百科书 - BV1rW4y1v7YG](P45-Talk-Javier-Jorge-Cano----Sorry--Could-you-repeat-that-again----Speech-Recogniti---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P46：Talk Jeff Bass - Yin Yang Ranch Building a Distributed Computer Vision
     Pipeline - 程序员百科书 - BV1rW4y1v7YG](P46-Talk-Jeff-Bass---Yin-Yang-Ranch-Building-a-Distributed-Computer-Vision-Pipeline---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-40
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P46：谈论杰夫·巴斯 - 阴阳牧场构建分布式计算机视觉管道 - 程序员百科书 - BV1rW4y1v7YG](P46-Talk-Jeff-Bass---Yin-Yang-Ranch-Building-a-Distributed-Computer-Vision-Pipeline---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P47：Talk Jessica Garson - How I Solved my NYC Parking Problem with Python
     - 程序员百科书 - BV1rW4y1v7YG](P47-Talk-Jessica-Garson---How-I-Solved-my-NYC-Parking-Problem-with-Python---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-41
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P47：谈论杰西卡·加尔森 - 我是如何用Python解决我的纽约停车问题的 - 程序员百科书 - BV1rW4y1v7YG](P47-Talk-Jessica-Garson---How-I-Solved-my-NYC-Parking-Problem-with-Python---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P48：Talk Jon Crall - Developing With Doctests - Using Xdoctest As A Backend
     - 程序员百科书 - BV1rW4y1v7YG](P48-Talk-Jon-Crall---Developing-With-Doctests---Using-Xdoctest-As-A-Backend---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-42
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P48：谈论乔恩·克拉尔 - 使用Xdoctest作为后端进行开发 - 程序员百科书 - BV1rW4y1v7YG](P48-Talk-Jon-Crall---Developing-With-Doctests---Using-Xdoctest-As-A-Backend---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P49：Talk Kathryn Lingel - Pyambic Pentameter generating rhyming and metered
     poems - 程序员百科书 - BV1rW4y1v7YG](P49-Talk-Kathryn-Lingel---Pyambic-Pentameter-generating-rhyming-and-metered-poems---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-43
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P49：谈论凯瑟琳·林格尔 - 生成押韵和有韵律的诗歌的五音步 - 程序员百科书 - BV1rW4y1v7YG](P49-Talk-Kathryn-Lingel---Pyambic-Pentameter-generating-rhyming-and-metered-poems---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P5：Charla Renne Silva Gomes de Oliveira Rocha - Si no está documentado, su
     proyecto - 程序员百科书 - BV1rW4y1v7YG](P5-Charla-Renne-Silva-Gomes-de-Oliveira-Rocha---Si-no-est--documentado--su-proyecto---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-44
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P5：演讲 Charla Renne Silva Gomes de Oliveira Rocha - 如果没有文档，你的项目 - 程序员百科书 -
+    BV1rW4y1v7YG](P5-Charla-Renne-Silva-Gomes-de-Oliveira-Rocha---Si-no-est--documentado--su-proyecto---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P50：Talk Katie McLaughlin - What is deployment, anyway - 程序员百科书 - BV1rW4y1v7YG](P50-Talk-Katie-McLaughlin---What-is-deployment--anyway---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-45
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P50：演讲 Katie McLaughlin - 部署到底是什么 - 程序员百科书 - BV1rW4y1v7YG](P50-Talk-Katie-McLaughlin---What-is-deployment--anyway---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P51：Talk Kim-Adeline Miguel - Decoding bias and narrative in competitive video
     games - 程序员百科书 - BV1rW4y1v7YG](P51-Talk-Kim-Adeline-Miguel---Decoding-bias-and-narrative-in-competitive-video-games---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-46
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P51：演讲 Kim-Adeline Miguel - 解码竞争视频游戏中的偏见与叙事 - 程序员百科书 - BV1rW4y1v7YG](P51-Talk-Kim-Adeline-Miguel---Decoding-bias-and-narrative-in-competitive-video-games---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P52：Talk Lorena Mesa, Elaine Wong, Mariatta - 9 Years of PyLadies Lessons
     Learned an - 程序员百科书 - BV1rW4y1v7YG](P52-Talk-Lorena-Mesa--Elaine-Wong--Mariatta---9-Years-of-PyLadies-Lessons-Learned-an---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-47
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P52：演讲 Lorena Mesa, Elaine Wong, Mariatta - 9 年 PyLadies 学习的经验教训 - 程序员百科书
+    - BV1rW4y1v7YG](P52-Talk-Lorena-Mesa--Elaine-Wong--Mariatta---9-Years-of-PyLadies-Lessons-Learned-an---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P53：Talk Łukasz Langa - AsyncIO + Music - 程序员百科书 - BV1rW4y1v7YG](P53-Talk--ukasz-Langa---AsyncIO---Music---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-48
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P53：演讲 Łukasz Langa - AsyncIO + 音乐 - 程序员百科书 - BV1rW4y1v7YG](P53-Talk--ukasz-Langa---AsyncIO---Music---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P54：Talk Manojit Nandi - The Limitations and Danger of Facial Recognition
     - 程序员百科书 - BV1rW4y1v7YG](P54-Talk-Manojit-Nandi---The-Limitations-and-Danger-of-Facial-Recognition---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-49
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P54：演讲 Manojit Nandi - 人脸识别的局限性与危险 - 程序员百科书 - BV1rW4y1v7YG](P54-Talk-Manojit-Nandi---The-Limitations-and-Danger-of-Facial-Recognition---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P55：Talk Maria Jose Molina-Contreras - How to build an intelligent “indoor
     garden” - 程序员百科书 - BV1rW4y1v7YG](P55-Talk-Maria-Jose-Molina-Contreras---How-to-build-an-intelligent--indoor-garden----程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-50
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P55：演讲 Maria Jose Molina-Contreras - 如何构建一个智能的“室内花园” - 程序员百科书 - BV1rW4y1v7YG](P55-Talk-Maria-Jose-Molina-Contreras---How-to-build-an-intelligent--indoor-garden----程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P56：Talk Marlene Mhangami - Leadership and Identity in the Pan-African Python
     moveme - 程序员百科书 - BV1rW4y1v7YG](P56-Talk-Marlene-Mhangami---Leadership-and-Identity-in-the-Pan-African-Python-moveme---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-51
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P56：演讲 Marlene Mhangami - 泛非洲 Python 运动中的领导力与身份 - 程序员百科书 - BV1rW4y1v7YG](P56-Talk-Marlene-Mhangami---Leadership-and-Identity-in-the-Pan-African-Python-moveme---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P57：Talk Mason Egger - Building Docs like Code Continuous Integration for
     Documentat - 程序员百科书 - BV1rW4y1v7YG](P57-Talk-Mason-Egger---Building-Docs-like-Code-Continuous-Integration-for-Documentat---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-52
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P57：演讲 Mason Egger - 像代码一样构建文档：文档的持续集成 - 程序员百科书 - BV1rW4y1v7YG](P57-Talk-Mason-Egger---Building-Docs-like-Code-Continuous-Integration-for-Documentat---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P58：Talk Matthew Knapp Bachmann - Transitioning from developing software to
     developi - 程序员百科书 - BV1rW4y1v7YG](P58-Talk-Matthew-Knapp-Bachmann---Transitioning-from-developing-software-to-developi---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-53
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P58：演讲 Matthew Knapp Bachmann - 从开发软件转向开发 - 程序员百科书 - BV1rW4y1v7YG](P58-Talk-Matthew-Knapp-Bachmann---Transitioning-from-developing-software-to-developi---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P59：Talk Matthew Rocklin - Deploying Python at Scale with Dask - 程序员百科书 -
     BV1rW4y1v7YG](P59-Talk-Matthew-Rocklin---Deploying-Python-at-Scale-with-Dask---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-54
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P59：演讲 Matthew Rocklin - 使用 Dask 在大规模上部署 Python - 程序员百科书 - BV1rW4y1v7YG](P59-Talk-Matthew-Rocklin---Deploying-Python-at-Scale-with-Dask---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P6：Easy Data Processing With Azure Fun -Tania Allard - Sponsor Workshop Microsoft
     - 程序员百科书 - BV1rW4y1v7YG](P6-Easy-Data-Processing-With-Azure-Fun--Tania-Allard---Sponsor-Workshop-Microsoft---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-55
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P6：轻松使用 Azure Fun 进行数据处理 - Tania Allard - 赞助工作坊 Microsoft - 程序员百科书 - BV1rW4y1v7YG](P6-Easy-Data-Processing-With-Azure-Fun--Tania-Allard---Sponsor-Workshop-Microsoft---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P60：Talk Neeraj Pandey - The joy of creating art with code - 程序员百科书 - BV1rW4y1v7YG](P60-Talk-Neeraj-Pandey---The-joy-of-creating-art-with-code---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-56
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P60：演讲 Neeraj Pandey - 用代码创造艺术的乐趣 - 程序员百科书 - BV1rW4y1v7YG](P60-Talk-Neeraj-Pandey---The-joy-of-creating-art-with-code---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P61：Talk Nina Zakharenko - Goodbye Print, Hello Debugger! - 程序员百科书 - BV1rW4y1v7YG](P61-Talk-Nina-Zakharenko---Goodbye-Print--Hello-Debugger----程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-57
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P61：演讲 Nina Zakharenko - 再见打印，您好调试器！ - 程序员百科书 - BV1rW4y1v7YG](P61-Talk-Nina-Zakharenko---Goodbye-Print--Hello-Debugger----程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P62：Talk Pratyush Das - Python in High Energy Physics - 程序员百科书 - BV1rW4y1v7YG](P62-Talk-Pratyush-Das---Python-in-High-Energy-Physics---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-58
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P62：演讲 Pratyush Das - 高能物理中的 Python - 程序员百科书 - BV1rW4y1v7YG](P62-Talk-Pratyush-Das---Python-in-High-Energy-Physics---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P63：Talk Rebeca Sarai - Privacy-preserving methods Building secure projects
     - 程序员百科书 - BV1rW4y1v7YG](P63-Talk-Rebeca-Sarai---Privacy-preserving-methods-Building-secure-projects---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-59
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P63：与瑞贝卡·萨拉伊的对话 - 隐私保护方法，构建安全项目 - 程序员百科书 - BV1rW4y1v7YG](P63-Talk-Rebeca-Sarai---Privacy-preserving-methods-Building-secure-projects---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P64：Talk Reuven M. Lerner - Function dissection lab -- learn how functions
     - 程序员百科书 - BV1rW4y1v7YG](P64-Talk-Reuven-M--Lerner---Function-dissection-lab----learn-how-functions---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-60
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P64：与鲁文·M·莱尔纳的对话 - 函数解剖实验室 - 学习函数的工作原理 - 程序员百科书 - BV1rW4y1v7YG](P64-Talk-Reuven-M--Lerner---Function-dissection-lab----learn-how-functions---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P65：Talk Robson Luis Monteiro Junior - Polyglot data with python Introducing
     Pandas - 程序员百科书 - BV1rW4y1v7YG](P65-Talk-Robson-Luis-Monteiro-Junior---Polyglot-data-with-python-Introducing-Pandas---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-61
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P65：与罗布森·路易斯·蒙泰罗·朱尼尔的对话 - 使用 Python 处理多语种数据，介绍 Pandas - 程序员百科书 - BV1rW4y1v7YG](P65-Talk-Robson-Luis-Monteiro-Junior---Polyglot-data-with-python-Introducing-Pandas---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P66：Talk Russell Keith-Magee - Snakes in a case Packaging Python apps for
     distributi - 程序员百科书 - BV1rW4y1v7YG](P66-Talk-Russell-Keith-Magee---Snakes-in-a-case-Packaging-Python-apps-for-distributi---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-62
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P66：与拉塞尔·基思-马基的对话 - 装包 Python 应用的 Snakes in a case - 程序员百科书 - BV1rW4y1v7YG](P66-Talk-Russell-Keith-Magee---Snakes-in-a-case-Packaging-Python-apps-for-distributi---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P67：Talk Shauna Gordon-McKeon - Organizing To Improve Your Workplace Know
     Your Right - 程序员百科书 - BV1rW4y1v7YG](P67-Talk-Shauna-Gordon-McKeon---Organizing-To-Improve-Your-Workplace-Know-Your-Right---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-63
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P67：与肖娜·戈登-麦基昂的对话 - 组织以改善你的工作场所，了解你的权利 - 程序员百科书 - BV1rW4y1v7YG](P67-Talk-Shauna-Gordon-McKeon---Organizing-To-Improve-Your-Workplace-Know-Your-Right---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P68：Talk Shreya Khurana - How multilingual is your NLP model - 程序员百科书 - BV1rW4y1v7YG](P68-Talk-Shreya-Khurana---How-multilingual-is-your-NLP-model---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-64
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P68：与施蕾亚·库拉纳的对话 - 你的 NLP 模型有多语言能力 - 程序员百科书 - BV1rW4y1v7YG](P68-Talk-Shreya-Khurana---How-multilingual-is-your-NLP-model---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P69：Talk Takanori Suzuki - Automate the Boring Stuff with Slackbot - 程序员百科书
     - BV1rW4y1v7YG](P69-Talk-Takanori-Suzuki---Automate-the-Boring-Stuff-with-Slackbot---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-65
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P69：与铃木高纪的对话 - 使用 Slackbot 自动化无聊的工作 - 程序员百科书 - BV1rW4y1v7YG](P69-Talk-Takanori-Suzuki---Automate-the-Boring-Stuff-with-Slackbot---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P7：Education Summit 2020 - 程序员百科书 - BV1rW4y1v7YG](P7-Education-Summit-2020---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-66
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P7：2020 教育峰会 - 程序员百科书 - BV1rW4y1v7YG](P7-Education-Summit-2020---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P70：Talk Tania Allard - Docker and Python making them play nicely and securely
     for D - 程序员百科书 - BV1rW4y1v7YG](P70-Talk-Tania-Allard---Docker-and-Python-making-them-play-nicely-and-securely-for-D---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-67
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P70：与塔尼亚·阿拉德的对话 - Docker 和 Python 的协同工作与安全性 - 程序员百科书 - BV1rW4y1v7YG](P70-Talk-Tania-Allard---Docker-and-Python-making-them-play-nicely-and-securely-for-D---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P71：Talk Terri Oda - Using Python to Detect Vulnerabilities in Binaries -
     程序员百科书 - BV1rW4y1v7YG](P71-Talk-Terri-Oda---Using-Python-to-Detect-Vulnerabilities-in-Binaries---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-68
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P71：与特里·奥达的对话 - 使用 Python 检测二进制文件中的漏洞 - 程序员百科书 - BV1rW4y1v7YG](P71-Talk-Terri-Oda---Using-Python-to-Detect-Vulnerabilities-in-Binaries---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P72：Talk Trey Hunner - Comprehensible Comprehensions - 程序员百科书 - BV1rW4y1v7YG](P72-Talk-Trey-Hunner---Comprehensible-Comprehensions---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-69
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P72：与特雷·哈纳的对话 - 易懂的推导 - 程序员百科书 - BV1rW4y1v7YG](P72-Talk-Trey-Hunner---Comprehensible-Comprehensions---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P73：Talk Vinayak Mehta - The Hitchhiker''s Guide to CLIs in Python - 程序员百科书
     - BV1rW4y1v7YG](P73-Talk-Vinayak-Mehta---The-Hitchhiker-s-Guide-to-CLIs-in-Python---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-70
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P73：与维纳亚克·梅塔的对话 - 《Python CLI 指南》 - 程序员百科书 - BV1rW4y1v7YG](P73-Talk-Vinayak-Mehta---The-Hitchhiker-s-Guide-to-CLIs-in-Python---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P74：Talk Wendi Dreesen - Mixing a Raspberry Pi with Python into a 5th Grade
     Science - 程序员百科书 - BV1rW4y1v7YG](P74-Talk-Wendi-Dreesen---Mixing-a-Raspberry-Pi-with-Python-into-a-5th-Grade-Science---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-71
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P74：与温迪·德里森的对话 - 将树莓派与 Python 结合应用于五年级科学 - 程序员百科书 - BV1rW4y1v7YG](P74-Talk-Wendi-Dreesen---Mixing-a-Raspberry-Pi-with-Python-into-a-5th-Grade-Science---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P75：Tutorial Allison Parrish - Nonsense verse with Python and machine learning
     - 程序员百科书 - BV1rW4y1v7YG](P75-Tutorial-Allison-Parrish---Nonsense-verse-with-Python-and-machine-learning---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-72
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P75：教程与艾莉森·帕里什 - 使用 Python 和机器学习创作无意义的诗歌 - 程序员百科书 - BV1rW4y1v7YG](P75-Tutorial-Allison-Parrish---Nonsense-verse-with-Python-and-machine-learning---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P76：Tutorial Andrew Knight - Hands-On Web App Test Automation - 程序员百科书 - BV1rW4y1v7YG](P76-Tutorial-Andrew-Knight---Hands-On-Web-App-Test-Automation---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-73
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P76：教程与安德鲁·奈特 - 实践性的 Web 应用测试自动化 - 程序员百科书 - BV1rW4y1v7YG](P76-Tutorial-Andrew-Knight---Hands-On-Web-App-Test-Automation---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P77：Tutorial Eric J. Ma - Demystifying Deep Learning for Data Scientists -
     程序员百科书 - BV1rW4y1v7YG](P77-Tutorial-Eric-J--Ma---Demystifying-Deep-Learning-for-Data-Scientists---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-74
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P77：教程 Eric J. Ma - 让深度学习对数据科学家不再神秘 - 程序员百科书 - BV1rW4y1v7YG](P77-Tutorial-Eric-J--Ma---Demystifying-Deep-Learning-for-Data-Scientists---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P78：Tutorial Geir Arne Hjelle - Introduction to Decorators Power Up Your Python
     Code - 程序员百科书 - BV1rW4y1v7YG](P78-Tutorial-Geir-Arne-Hjelle---Introduction-to-Decorators-Power-Up-Your-Python-Code---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-75
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P78：教程 Geir Arne Hjelle - 装饰器简介 提升你的 Python 代码 - 程序员百科书 - BV1rW4y1v7YG](P78-Tutorial-Geir-Arne-Hjelle---Introduction-to-Decorators-Power-Up-Your-Python-Code---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P79：Tutorial Husni Almoubayyed - Effective Data Visualization - 程序员百科书 - BV1rW4y1v7YG](P79-Tutorial-Husni-Almoubayyed---Effective-Data-Visualization---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-76
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P79：教程 Husni Almoubayyed - 有效的数据可视化 - 程序员百科书 - BV1rW4y1v7YG](P79-Tutorial-Husni-Almoubayyed---Effective-Data-Visualization---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P8：Python Trainers Summit - Hatchery 2020 - 程序员百科书 - BV1rW4y1v7YG](P8-Python-Trainers-Summit---Hatchery-2020---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-77
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P8：Python 培训师峰会 - Hatchery 2020 - 程序员百科书 - BV1rW4y1v7YG](P8-Python-Trainers-Summit---Hatchery-2020---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P80：Tutorial Katie McLaughlin - Deploying Django on Serverless Infrastructure
     - 程序员百科书 - BV1rW4y1v7YG](P80-Tutorial-Katie-McLaughlin---Deploying-Django-on-Serverless-Infrastructure---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-78
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P80：教程 Katie McLaughlin - 在无服务器基础设施上部署 Django - 程序员百科书 - BV1rW4y1v7YG](P80-Tutorial-Katie-McLaughlin---Deploying-Django-on-Serverless-Infrastructure---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P81：Tutorial Keith Galli - Natural Language Processing (NLP) in Python - From
     Zero t - 程序员百科书 - BV1rW4y1v7YG](P81-Tutorial-Keith-Galli---Natural-Language-Processing--NLP--in-Python---From-Zero-t---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-79
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P81：教程 Keith Galli - Python 中的自然语言处理 (NLP) - 从零开始 - 程序员百科书 - BV1rW4y1v7YG](P81-Tutorial-Keith-Galli---Natural-Language-Processing--NLP--in-Python---From-Zero-t---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P82：Tutorial Kimberly Fessel - It''s Officially Legal so Let''s Scrape the
     Web - 程序员百科书 - BV1rW4y1v7YG](P82-Tutorial-Kimberly-Fessel---It-s-Officially-Legal-so-Let-s-Scrape-the-Web---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-80
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P82：教程 Kimberly Fessel - 这确实是合法的，所以让我们来抓取网页 - 程序员百科书 - BV1rW4y1v7YG](P82-Tutorial-Kimberly-Fessel---It-s-Officially-Legal-so-Let-s-Scrape-the-Web---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P83：Tutorial Mariatta - Say it with Bots! - 程序员百科书 - BV1rW4y1v7YG](P83-Tutorial-Mariatta---Say-it-with-Bots----程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-81
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P83：教程 Mariatta - 用机器人表达！ - 程序员百科书 - BV1rW4y1v7YG](P83-Tutorial-Mariatta---Say-it-with-Bots----程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P84：Tutorial Matt Harrison - Hands-on Python for Programmers - 程序员百科书 - BV1rW4y1v7YG](P84-Tutorial-Matt-Harrison---Hands-on-Python-for-Programmers---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-82
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P84：教程 Matt Harrison - 为程序员提供实践 Python - 程序员百科书 - BV1rW4y1v7YG](P84-Tutorial-Matt-Harrison---Hands-on-Python-for-Programmers---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P85：Tutorial Mike Müller - Migration from Python 2 to 3 - 程序员百科书 - BV1rW4y1v7YG](P85-Tutorial-Mike-M-ller---Migration-from-Python-2-to-3---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-83
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P85：教程 Mike Müller - 从 Python 2 迁移到 3 - 程序员百科书 - BV1rW4y1v7YG](P85-Tutorial-Mike-M-ller---Migration-from-Python-2-to-3---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P86：Tutorial Santiago Basulto - Python Concurrency from beginner to pro -
     程序员百科书 - BV1rW4y1v7YG](P86-Tutorial-Santiago-Basulto---Python-Concurrency-from-beginner-to-pro---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-84
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P86：教程 Santiago Basulto - Python 并发 从初学者到专家 - 程序员百科书 - BV1rW4y1v7YG](P86-Tutorial-Santiago-Basulto---Python-Concurrency-from-beginner-to-pro---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P87：Tutorial Sebastian Witowski - Modern Python Developer''s Toolkit - 程序员百科书
     - BV1rW4y1v7YG](P87-Tutorial-Sebastian-Witowski---Modern-Python-Developer-s-Toolkit---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-85
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P87：教程 Sebastian Witowski - 现代 Python 开发者工具包 - 程序员百科书 - BV1rW4y1v7YG](P87-Tutorial-Sebastian-Witowski---Modern-Python-Developer-s-Toolkit---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P88：Tutorial Sergio Sanchez - Geospatial Public Policy Analysis with GeoPandas
     - 程序员百科书 - BV1rW4y1v7YG](P88-Tutorial-Sergio-Sanchez---Geospatial-Public-Policy-Analysis-with-GeoPandas---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-86
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P88：教程 Sergio Sanchez - 使用 GeoPandas 进行地理空间公共政策分析 - 程序员百科书 - BV1rW4y1v7YG](P88-Tutorial-Sergio-Sanchez---Geospatial-Public-Policy-Analysis-with-GeoPandas---程序员百科书---BV1rW4y1v7YG.md)'
 - en: '[P9：Sponsor Workshop ActiveState - Shaun Lowry - We need to talk about Windows
     - 程序员百科书 - BV1rW4y1v7YG](P9-Sponsor-Workshop-ActiveState---Shaun-Lowry---We-need-to-talk-about-Windows---程序员百科书---BV1rW4y1v7YG.md)'
+  id: totrans-87
   prefs:
   - PREF_UL
   type: TYPE_NORMAL
+  zh: '[P9：赞助研讨会 ActiveState - Shaun Lowry - 我们需要谈谈 Windows - 程序员百科书 - BV1rW4y1v7YG](P9-Sponsor-Workshop-ActiveState---Shaun-Lowry---We-need-to-talk-about-Windows---程序员百科书---BV1rW4y1v7YG.md)'
