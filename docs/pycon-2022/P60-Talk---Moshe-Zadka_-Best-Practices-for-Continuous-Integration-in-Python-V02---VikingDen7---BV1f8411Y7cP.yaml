@@ -4,14 +4,17 @@
   prefs:
   - PREF_H1
   type: TYPE_NORMAL
+  zh: P60：演讲 - Moshe Zadka_ Python中的持续集成最佳实践 V02 - VikingDen7 - BV1f8411Y7cP
 - en: So I want to cover what are the steps I'm going to go through in this talk。
   id: totrans-1
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以我想要讲述在这个演讲中我将要经历的步骤。
 - en: '![](img/0b9fcf17d06e5a70dccca14da249704e_1.png)'
   id: totrans-2
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/0b9fcf17d06e5a70dccca14da249704e_1.png)'
 - en: I'll start by diving into what are the functional bits that make up a continuous
     integration。 system because those are the functional bits that we want to apply
     the best practices to。 Then before we talk about how to apply those best practices
@@ -20,6 +23,7 @@
   id: totrans-3
   prefs: []
   type: TYPE_NORMAL
+  zh: 我将开始探讨构成持续集成系统的功能部分，因为这些功能部分是我们希望应用最佳实践的地方。在我们讨论如何应用这些最佳实践之前，我们将讨论为什么要应用最佳实践。那么，究竟是什么使一个持续集成的设置好，而另一个不好呢？
 - en: So what are the criteria we're going to evaluate？ And finally。 after we've all
     agreed about what bits we can control and what are the targets。 we'll actually
     come to what I promised I'm going to talk about and explain how to make。 your
@@ -28,6 +32,7 @@
   id: totrans-4
   prefs: []
   type: TYPE_NORMAL
+  zh: 那么我们要评估的标准是什么？最后，当我们都同意可以控制的部分和目标时。我们将真正进入我承诺要谈论的内容，并解释如何让你的持续集成真正有效。因此，在你甚至谈论为项目进行持续集成之前。
 - en: you usually are， going to have some sort of a local way of building your project。
     So。 basically the interpreted language， we don't have a traditional build step，
     we don't need。 to compile anything， you know， usually。 But we do have steps that
@@ -36,6 +41,8 @@
   id: totrans-5
   prefs: []
   type: TYPE_NORMAL
+  zh: 你通常会有某种本地构建项目的方式。因此，基本上，作为一种解释性语言，我们没有传统的构建步骤，我们不需要编译任何东西，你知道的，通常。但是我们确实有一些相当传统的步骤要执行，我将其视为构建。我们通常想要某种代码检查过程。Pilate、flakeate，有时是my
+    pie。在代码检查之下。
 - en: I cover anything that will look at your code but will not run it。 So anything
     that analyzes your code statically。 Obviously。 the other thing that you can do
     is run your code and the other thing you can， do is test your code。 Test is anything
@@ -43,6 +50,7 @@
   id: totrans-6
   prefs: []
   type: TYPE_NORMAL
+  zh: 我涵盖了任何可以查看你的代码但不会运行它的内容。因此，任何静态分析你的代码的内容。显然，另一件你可以做的事情是运行你的代码，另外一件你可以做的是测试你的代码。测试是任何运行你的代码或部分代码的内容，并查看输出。
 - en: if the output is okay。 So， we usually do that when we want CI and before we
     have a CI。 you usually want to already， have some way of running your tests locally。
     And we usually have some sort of packaging。 Now， sometimes you'll package it into
@@ -51,6 +59,7 @@
   id: totrans-7
   prefs: []
   type: TYPE_NORMAL
+  zh: 如果输出没问题。那么，我们通常在想要进行持续集成（CI）时这样做，并且在拥有CI之前。你通常会希望已有某种方式在本地运行你的测试。而且我们通常会有某种打包方式。现在，有时你会将其打包成一个wheel或S-dist，但这并不是必须的。有时你会想要将其打包成PEX，或者也许是Debian包或RPM包。
 - en: or very commonly a Docker container image。 But these three things。 they're not
     always present but very frequently you'll find that。 most projects will have all
     of these three。 And before we even run CI。 we want to make sure that the project
@@ -58,6 +67,7 @@
   id: totrans-8
   prefs: []
   type: TYPE_NORMAL
+  zh: 或者非常常见的是Docker容器镜像。但这三件事并不总是存在，但你会发现大多数项目通常会有这三者。在我们甚至运行CI之前，我们想要确保项目知道如何进行代码检查。
 - en: to test itself and to package itself。 So let's assume we already have a project
     that does that。 Well， we can start doing CI。 And so， I kind of gave the thing
     away， right？ I said， well， you know。 you run it locally， it's not the CI。 So clearly
@@ -66,6 +76,7 @@
   id: totrans-9
   prefs: []
   type: TYPE_NORMAL
+  zh: 为了测试自身并进行自我打包。因此，让我们假设我们已经有一个能做到这一点的项目。那么，我们可以开始进行CI。所以，我有点提前说出结论了，对吧？我说，嗯，你知道。你在本地运行，它不是CI。因此显然，CI应该是在服务器上远程运行的东西。当你在本地运行时，答案要么非常简单，要么。
 - en: very complicated。 The simple answer is when you wanted and the complicated answer
     is human psychology is。 really complicated。 I don't know when you wanted to do
     it。 But at the end of the day， you know。 it's at least obvious。 When you wanted
@@ -74,6 +85,7 @@
   id: totrans-10
   prefs: []
   type: TYPE_NORMAL
+  zh: 非常复杂。简单的答案是，当你想做的时候，而复杂的答案是人类心理真的很复杂。我不知道你想什么时候做。但归根结底，你知道。至少是显而易见的。当你想做的时候，你就去做。当你在服务器上运行它时，服务器必须有某种明确的算法，来决定何时运行这个构建。
 - en: And that will have to be defined via code， so that has to be very clear。 In
     the old old data。 like let's say circa 2006， having a nightly build was considered。
     this is where the term continuous integration came for。 You continuously， every
@@ -81,11 +93,13 @@
   id: totrans-11
   prefs: []
   type: TYPE_NORMAL
+  zh: 而这必须通过代码来定义，所以这必须非常明确。在老旧的数据中，比如说2006年，拥有一个夜间构建被视为。这就是持续集成一词的来源。你每晚持续地运行构建，团队这样做是很复杂的。
 - en: They have an automated build process that runs every night on a server。 That
     was like the height of sophistication in 2006。 And then it was good， right？
   id: totrans-12
   prefs: []
   type: TYPE_NORMAL
+  zh: 他们有一个每晚在服务器上运行的自动构建过程。在2006年，这被视为复杂性的巅峰。然后，那是好的，对吧？
 - en: Because then in the morning you can come in and say， okay， oh， something broke。
     It was one of the things that were done during the day。 You should remember that
     2006 is a long time ago and most teams were very local and like。 there was a specific
@@ -93,6 +107,7 @@
   id: totrans-13
   prefs: []
   type: TYPE_NORMAL
+  zh: 因为这样早上你可以进来并说，好的，哦，有东西坏了。这是白天做的事情之一。你应该记住2006年是很久以前的事，大多数团队都是非常本地化的，并且有一个具体的时间定义，对吧？就像是本地团队的时区。
 - en: So the night is like whenever the team is asleep。 And so they would come in
     the morning。 see that something broke。 One of the things that happened during
     the day。 it might be difficult to figure out which， of the things during the day。
@@ -101,6 +116,7 @@
   id: totrans-14
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以晚上就像是团队在睡觉的时候。因此，他们早上进来时，会发现有什么东西坏了。白天发生的事情之一，可能很难确定是哪个事情导致的。所以有人说，嗯。我有一个主意。要不我们不等到晚上。
 - en: as soon as they've emerged to the main， branch， we'll run it。 Then if it's broken。
     we'll know that that's probably whatever that merges。 This is like， let's say
     in 2008。 if you had that， you were like in the top 95th percentile， of development
@@ -109,6 +125,7 @@
   id: totrans-15
   prefs: []
   type: TYPE_NORMAL
+  zh: 一旦它们合并到主分支，我们就会运行它。如果它坏了，我们就知道这可能是合并的某个东西。这就像是，假设在2008年，如果你有这样的系统，你就处于开发复杂性前95个百分点的行列。人们会说，哦，那是我想加入的团队。他们显然很重视他们的代码，对吧？
 - en: But we keep updating our standards。 And nowadays， we usually think of what we
     want to run the contingency regression on or。 something I want to think of as
     suggested patch。 Different systems will have different names for that。 In GitHub，
@@ -117,6 +134,7 @@
   id: totrans-16
   prefs: []
   type: TYPE_NORMAL
+  zh: 但我们不断更新我们的标准。现在，我们通常会考虑我们想在应急回归上运行的内容，或者。某些我想作为建议补丁来考虑的东西。不同的系统会有不同的名称。在GitHub中，它将被称为拉取请求。在GitHub中，它将被称为合并请求。如果你使用审核板，它就是审核请求。但不管是什么。
 - en: it's the thing that you ask your colleagues to review as people will。 also be
     the thing that you're going to run the CI before you merge。 So if it's broken。
     you don't know that fact after you have merged。 And now you have to fix something
@@ -125,6 +143,7 @@
   id: totrans-17
   prefs: []
   type: TYPE_NORMAL
+  zh: 这是你请同事审查的东西，因为人们会。也是你在合并之前要运行持续集成的东西。因此，如果它出错，你在合并后就不知道这个事实。现在你必须为每个人修复一些已经坏掉的东西。但你知道，提前了解这一点，这就像是，嗯，开始有点像一种标准实践。
 - en: of standard practice， sometime between 2013 to 2015。 And by now。 every reasonable
     system that you use will have that as a built-in feature。 The situation hasn't
     stopped。 Right？ This is already kind of 10 to 7 years ago。 There's like more things
@@ -132,6 +151,7 @@
   id: totrans-18
   prefs: []
   type: TYPE_NORMAL
+  zh: 大约在2013到2015年之间。这种情况并没有停止，对吧？这已经是大约7到10年前的事了。现在还有更多可以做的事情。人们谈论的东西比如合并列车。
 - en: something called not-wacket science， which is， a very weird name for something。
     All kinds of stuff。 I'm not going to dive too much into that。 Another thing I'm
     not going to dive too much into that is continuous delivery and deployment。 That's
@@ -140,6 +160,7 @@
   id: totrans-19
   prefs: []
   type: TYPE_NORMAL
+  zh: 有一种叫做“非严谨科学”的东西，名字非常奇怪，涉及各种内容。我不会深入探讨这个。另一个我不会深入探讨的主题是持续交付和部署。这并不是因为这些事情不重要，而是这次演讲时间有限。如果我尝试涵盖所有内容，会花费太长时间。所以在这次演讲中。
 - en: I'm going to focus on these suggested patch builds。 And the reason I'm going
     to focus on these suggested patch builds is that in a typical， project。 your continuous
     integration system， CPU cycle for CPU cycle， will be spending most。 of its time
@@ -147,6 +168,7 @@
   id: totrans-20
   prefs: []
   type: TYPE_NORMAL
+  zh: 我将重点关注这些建议的补丁构建。之所以关注这些建议的补丁构建，是因为在一个典型的项目中，你的持续集成系统，按CPU周期计算，通常会在这个流程中花费大部分时间，对吧？当然，这最终会合并到主分支中。
 - en: and it will run CI on that merge to main。 But usually a patch takes a few iterations。
     So on average。 most of the flows that go through your CI are going to be on that
     suggested， patch build。 Which means that the main thing you're going to want to
@@ -155,11 +177,13 @@
   id: totrans-21
   prefs: []
   type: TYPE_NORMAL
+  zh: 它将在合并到主分支上时运行CI。但通常一个补丁需要经过几次迭代。因此，平均而言，大多数经过CI的流程都将在这些建议的补丁构建上。这意味着你最想要优化的主要内容就是这个流程。所以我将整个演讲的重点放在如何优化这个特定的补丁构建上。
 - en: And to come back to like， why are we doing that， we usually run it as an automated
     gate。 Right？
   id: totrans-22
   prefs: []
   type: TYPE_NORMAL
+  zh: 说回我们为什么这么做，我们通常将其作为一个自动化的门来运行，对吧？
 - en: We have a human gate。 Why is the human approval process that will usually mark
     off as approved。 Why is it this code looks good to me？ And the goal of the CI
     is usually to look for regressions。 Right？ It can't really say if the patch is
@@ -167,6 +191,7 @@
   id: totrans-23
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们有一个人工门。为什么人类审核流程通常会标记为已批准？为什么这段代码在我看来不错？CI的目标通常是寻找回归问题，对吧？它真的不能说这个补丁是否在抽象上达成了它的目标，对吧？
 - en: That's not something you can really implement in a computerized manner。 Right？
     What a CI system。 the goal of it in a， one of the suggested patch build is， is
     this making。 any of our things worse than they were before？ And so this is useful
@@ -175,12 +200,14 @@
   id: totrans-24
   prefs: []
   type: TYPE_NORMAL
+  zh: 这不是你可以以计算机化方式真正实现的，对吧？CI系统的目标之一是，在这些建议的补丁构建中，是否让我们的任何事情比之前更糟？这很有用，因为这意味着任何通过这个门的东西至少不会让事情变得更糟。因此，这是这个建议系统的一个目标。
 - en: So now we know what it's supposed to do and we know what we're talking about。
     So this is what we're going to focus about。 How do you make your CI system be
     a better automated gate for patch being not regressions？
   id: totrans-25
   prefs: []
   type: TYPE_NORMAL
+  zh: 现在我们知道它应该做什么，也知道我们在谈论什么。那么这就是我们要关注的内容。你如何让你的CI系统成为一个更好的自动化门，以防补丁不出现回归？
 - en: So how does it do that？ Well， your CI system is usually made of a coordinator
     that look at suggested patches。 and decides， okay， that suggested patch has now，
     I should really do like these ones on， it。 And then the CI runners will actually
@@ -189,6 +216,7 @@
   id: totrans-26
   prefs: []
   type: TYPE_NORMAL
+  zh: 那它是如何做到的呢？你的CI系统通常由一个协调者组成，它会查看建议的补丁并决定，“好吧，这个建议的补丁现在可以进行，我应该真的做这些。”然后CI运行器将实际执行流程，运行你的测试，运行你的代码检查工具，并发送输出。在大多数现代框架中，无论你使用哪个框架，这个输出都是可用的。
 - en: that output will be， consumable via two ways and both of these are important
     and it's going to be really relevant。 in the， you know， press of the talk。 One
     is that they're going to be collected live from the runners。 So as the build is
@@ -197,6 +225,7 @@
   id: totrans-27
   prefs: []
   type: TYPE_NORMAL
+  zh: 该输出将以两种方式被处理，这两种方式都很重要，并且在这个演讲中非常相关。第一种是它们将从运行器中实时收集。因此，当构建正在运行时，你可以看到输出，这意味着如果有测试失败，你可以立即看到，但这不仅仅是实时的，它也是有文档记录的。
 - en: It's also retained forever。 Now forever is obviously like somewhat of a nebulous
     concept exactly when it's backed。 up， what's going to be paid。 But it's usually
     considered in most systems a reasonably long term place。 right？ You can have a
@@ -206,6 +235,7 @@
   id: totrans-28
   prefs: []
   type: TYPE_NORMAL
+  zh: 它也会永远保留。现在“永远”显然是一个模糊的概念，确切的备份时间、支付情况是什么。但在大多数系统中，通常被认为是一个相对长期的存储，对吧？你可以在其中有一个永久链接，可以在讨论中引用，并说这个构建向你展示了这个测试做了某事，对吧？所以这是一个关于持续构建日志需要记住的重要事项。
 - en: integration system。 So now that we understand what the continuous integration
     system is made of and what it's。 supposed to do， let's figure out what we can
     do to， what kind of continuous integration。 systems are better than others， right？
@@ -213,6 +243,7 @@
   id: totrans-29
   prefs: []
   type: TYPE_NORMAL
+  zh: 集成系统。那么现在我们明白持续集成系统的构成以及它应该做什么后，让我们来弄清楚我们能做什么，哪些持续集成系统比其他系统更好，对吧？我们如何使它变得更好，对吧？
 - en: Even if we don't know how to make it good， what we make people say this is a
     good system。 you have improved the situation。 Well， there's a few different pretty
     orthogonal criteria that you can apply。 So one criterion that you can apply is
@@ -220,10 +251,12 @@
   id: totrans-30
   prefs: []
   type: TYPE_NORMAL
+  zh: 即使我们不知道如何做好它，我们所做的也会让人们说这是一个好的系统。你改善了情况。好吧，有几个不同且相对独立的标准可以应用。那么，一个可以应用的标准是准确性，对吧？
 - en: We said that its goal is to say does the patch introduce a regression？
   id: totrans-31
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们说它的目标是判断补丁是否引入了回归。
 - en: So accuracy means that the answer is correct。 If it says that the patch introduces
     a regression。 it introduces a regression and if it says that， the patch does not
     introduce a regression。 the patch does not introduce a regression。 Any time that
@@ -231,6 +264,7 @@
   id: totrans-32
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以准确性意味着答案是正确的。如果它说补丁引入了回归，那么它确实引入了回归；如果它说补丁没有引入回归，那么补丁就没有引入回归。任何时候它给出错误答案，那就是不准确的答案。
 - en: Clearly the perfect continuous integration system is 100% accurate。 A system
     that is more accurate is better than a system that is less accurate。 So this is
     a criteria。 right？ This is something that is good to have。 But another orthogonal
@@ -239,6 +273,7 @@
   id: totrans-33
   prefs: []
   type: TYPE_NORMAL
+  zh: 显然，完美的持续集成系统是100%准确的。一个更准确的系统比一个不那么准确的系统要好。所以这是一个标准，对吧？这是一个值得拥有的东西。但另一个相对独立的标准是可操作性。再次强调，CPU周期对CPU周期而言，大多数时候当你运行CI系统时，它会说。
 - en: that most of the patches are bad。 That's reasonable， right？ Otherwise。 why would
     you have a CI system？ If most of the time it would approve。 then you should probably
     run it less， right？ It's probably doing a lot of redundant work。 So in general，
@@ -246,10 +281,12 @@
   id: totrans-34
   prefs: []
   type: TYPE_NORMAL
+  zh: 大多数补丁都是坏的。这是合理的，对吧？否则，你为什么要有一个CI系统？如果大多数时候它都会批准，那么你可能应该少运行它，对吧？它可能在做很多冗余工作。所以通常来说，很多时候补丁都是坏的。
 - en: '![](img/0b9fcf17d06e5a70dccca14da249704e_3.png)'
   id: totrans-35
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/0b9fcf17d06e5a70dccca14da249704e_3.png)'
 - en: That's okay， right？ This is why we have this automated system to give us feedback。
     But this means that when the patch is not good， it's really useful if that system
     gave。 you good information about how to fix it。 Now， the optimum here is something
@@ -257,6 +294,7 @@
   id: totrans-36
   prefs: []
   type: TYPE_NORMAL
+  zh: 这样可以吗，对吧？这就是我们拥有这个自动化系统以获取反馈的原因。但这意味着当补丁不好时，如果这个系统能提供给你关于如何修复它的有用信息，那是非常有用的。现在，这里的最佳选择是像black那样的工具，它实际上会为你生成一个diff。但这可能是无法实现的。
 - en: So what kind of an attainable criterion we can have here？ Well。 the best of
     all system tells you exactly how to reproduce it locally。 Once you can reproduce
     it locally， the CI system is not in the picture anymore。 Right now。 how actionable
@@ -264,11 +302,13 @@
   id: totrans-37
   prefs: []
   type: TYPE_NORMAL
+  zh: 那么我们可以在这里获得什么样的可实现标准呢？好吧，所有系统中最好的那个确切告诉你如何在本地重现它。一旦你能在本地重现它，CI系统就不再是问题了。现在，多少可操作性取决于你的本地开发环境。
 - en: You can use local debuggers， you can put in print statements。 Whatever used
     to debug your local code is up to you， right？
   id: totrans-38
   prefs: []
   type: TYPE_NORMAL
+  zh: 你可以使用本地调试器，也可以放入打印语句。用来调试你本地代码的方法由你决定，对吧？
 - en: That's already like a language stack issue or a development stack issue， not
     a CI issue。 So best of all， if a CI system tells you how to reproduce it locally，
     if for some reason。 it's very hard to reproduce locally， it should probably give
@@ -277,6 +317,7 @@
   id: totrans-39
   prefs: []
   type: TYPE_NORMAL
+  zh: 这已经类似于语言堆栈问题或开发堆栈问题，而不是 CI 问题。所以最理想的是，如果一个 CI 系统告诉你如何在本地重现它，如果出于某种原因，它很难在本地重现，它应该提供大量有用的信息。另一个，再次，正交的标准是回答所需的时间，及时性，对吧？
 - en: Imagine that you had a system that is perfectly accurate and perfectly actionable，
     meaning。 that it always gives you the correct answer。 And when the answer tells
     you like this is a bad patch。 like you can either reproduce， it locally， but it
@@ -285,6 +326,7 @@
   id: totrans-40
   prefs: []
   type: TYPE_NORMAL
+  zh: 想象一下，你有一个完全准确且可操作的系统，意味着它总是给你正确的答案。当答案告诉你这是一个坏补丁时，你可以在本地重现，但运行需要整整一天。这不是一个好的系统，对吧？即使它在前两个标准上是完美的，对吧。
 - en: that's not a good system because you， wouldn't be able to develop effectively
     with it。 So promptness is an orthogonal criterion here。 And the final criterion
     I'm going to talk about is costs。 Right？ Again， imagine that you had a system
@@ -293,6 +335,7 @@
   id: totrans-41
   prefs: []
   type: TYPE_NORMAL
+  zh: 这不是一个好的系统，因为你无法有效地进行开发。所以及时性在这里是一个正交标准。而我将要谈的最终标准是成本。对吧？再想象一下，你有一个在其他三个方面都完美的系统，但成本非常高。好吧，我们生活在资本主义社会，对吧？我们必须为这些东西付钱。
 - en: Basically， the most money you spend in kind of a modern， kind of flexible， cloudish
     environment。 is the one-on-the-compute cost。 If you're spending more money than
     your product brings in。 then this becomes an affordable， system， right？ And that's
@@ -301,6 +344,7 @@
   id: totrans-42
   prefs: []
   type: TYPE_NORMAL
+  zh: 基本上，在现代灵活的云环境中，你花费的最多的钱是计算成本。如果你花的钱超过了你的产品收入，那么这就变成了一个不可承受的系统，对吧？这就像是一个极限案例。显然，在理想情况下，你希望尽量减少成本，因为这就是你的利润空间。
 - en: on whatever product DCI system supports。 So now that we know what our goals
     are， finally。 we can talk about how to actually， improve them。 So well， you can
     improve the accuracy。 You can improve the actionability。 You can improve the promptness。
@@ -309,6 +353,7 @@
   id: totrans-43
   prefs: []
   type: TYPE_NORMAL
+  zh: 关于 DCI 系统支持的任何产品。因此现在我们知道我们的目标是什么，最后。我们可以谈谈如何真正改善它们。那么，嗯，你可以提高准确性。你可以提高可操作性。你可以提高及时性。你可以降低成本。所以你可以提高准确性的一项重要措施是使用容器。
 - en: And the reason is because remember that we said that CI， the goal here in the
     gate function。 is to tell you the regression。 Now if you update to a new Python
     version， right。 even if it exposes a hidden problem， with your code， right。 even
@@ -316,6 +361,8 @@
   id: totrans-44
   prefs: []
   type: TYPE_NORMAL
+  zh: 之所以如此，是因为我们记得我们说过 CI，这里的目标是告知你回归。现在如果你更新到一个新的 Python 版本，对吧。即使它暴露了代码中的隐藏问题，对吧。即使是一个使用更宽字符的新
+    Python 构建。
 - en: it exposes like some problematic stuff with your code， it's not a regression
     in your patch。 That patch should not be not allowed to come in。 So you want to
     use container image that has a specific version of Python and a specific。 build
@@ -325,6 +372,8 @@
   id: totrans-45
   prefs: []
   type: TYPE_NORMAL
+  zh: 它暴露了代码中一些问题的内容，并不是你补丁中的回归。这个补丁不应该被拒绝。因此，你想使用具有特定版本的 Python 和特定构建的容器镜像。以及任何其他非
+    Python 的依赖关系。然后你想固定镜像标签，对吧？如果你做到这一切然后固定到最新，你就抵消了所有的努力和艰辛。
 - en: you've done。 Because as soon as a new image is released， you've upgraded to
     the new image。 And again， you might fail perfectly valid patches。 Now a typical
     Python program has dependencies。 Even pretty small things can have like 10， in
@@ -333,6 +382,8 @@
   id: totrans-46
   prefs: []
   type: TYPE_NORMAL
+  zh: 一旦发布新镜像，你就已经升级到新镜像。而且你可能会拒绝完全有效的补丁。现在一个典型的 Python 程序有依赖关系。即使是比较小的东西，也可能有像 10
+    个这样的递归依赖关系。中等的可能有数百个。我见过确实有数千个依赖的情况。
 - en: If any of those versions update and that somehow causes a problem， again， it
     doesn't。 matter if the problem is in the library or in your code。 This is not
     a problem with a patch。 You should test against the pin dependencies because otherwise

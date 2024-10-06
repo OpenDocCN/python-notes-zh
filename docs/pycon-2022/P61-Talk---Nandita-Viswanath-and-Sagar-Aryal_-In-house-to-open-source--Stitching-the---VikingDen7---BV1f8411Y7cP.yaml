@@ -1,13 +1,16 @@
 - en: P61：Talk - Nandita Viswanath and Sagar Aryal_ In house to open source  Stitching
     the - VikingDen7 - BV1f8411Y7cP
+  id: totrans-0
   prefs:
   - PREF_H1
   type: TYPE_NORMAL
 - en: Welcome everyone， you're in room 355 A， B， C。 And we have Nandita， Vyswanath，
     and Sagar。
+  id: totrans-1
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/34317168f3c1eed0d8c15494197d3d54_1.png)'
+  id: totrans-2
   prefs: []
   type: TYPE_IMG
 - en: Ariel。 And they're going to talk about in-house to open source， stitching the
@@ -16,6 +19,7 @@
     going to be presenting our talk in-house to open source。 stitching the past to
     the future， with Python。 So today we're going to be discussing how you can leverage
     open source software when thinking。
+  id: totrans-3
   prefs: []
   type: TYPE_NORMAL
 - en: about migrating away from legacy code。 Our talk is loosely broken up into four
@@ -24,12 +28,14 @@
     open source candidate into your existing， tech stack。 and then we'll wrap up with
     some conclusions。 So before we jump into why you should think about open source
     for migrations from legacy。
+  id: totrans-4
   prefs: []
   type: TYPE_NORMAL
 - en: code， let's first understand what legacy code even is。 Legacy code is typically
     code that's no longer engineered but is just patched for fixes。 So it becomes
     nearly impossible to add new features which makes them great candidates。 for migrations。
     So when you're thinking about migrating software。
+  id: totrans-5
   prefs: []
   type: TYPE_NORMAL
 - en: I think open source should be one of the first， things that come to mind。 And
@@ -37,6 +43,7 @@
     software。 Transcents are there's already software within the open source community
     that can address。 your needs even if not entirely to an extent large enough that
     it would take minimal effort。
+  id: totrans-6
   prefs: []
   type: TYPE_NORMAL
 - en: for you to go in and tailor it to your specific needs。 Which brings me to the
@@ -44,6 +51,7 @@
     what's going on。 you can maybe just add a， plugin to tailor it to your requirement
     or go in and modify the code base yourself。 Another advantage is that in some
     way you have access to latest innovation。
+  id: totrans-7
   prefs: []
   type: TYPE_NORMAL
 - en: As more and more people start adopting that open source software， more people
@@ -51,6 +59,7 @@
     of the cutting edge technology。 And it's not just me saying this we're all at
     PyCon。 Surveys have also found that IT leaders think the usage of open source
     is going to boom over。
+  id: totrans-8
   prefs: []
   type: TYPE_NORMAL
 - en: the next couple years。 But even while open source is great。 there are some things
@@ -58,6 +67,7 @@
     be available。 But there are some companies and enterprises that offer maintenance
     at an additional fee。 So that's something to keep in mind。 The other thing to
     keep in mind especially when you're building critical applications。
+  id: totrans-9
   prefs: []
   type: TYPE_NORMAL
 - en: is the maturity and the stability of the software。 If there is an issue。 you
@@ -65,6 +75,7 @@
     it yourself。 So that's an added consideration。 And the last is that usage of open
     source does not eliminate hardware costs。 You have to budget for hardware if you
     want to adopt open source at scale。
+  id: totrans-10
   prefs: []
   type: TYPE_NORMAL
 - en: At this point I want to introduce a case study that we're going to be walking
@@ -72,12 +83,14 @@
     framework。 So let's think of a really complex framework that has to use some metadata
     to decide to。 schedule some processes and then has to account for process dependencies，
     monitor events and。
+  id: totrans-11
   prefs: []
   type: TYPE_NORMAL
 - en: then finally write some data to a database。 Let's build a little more clarity
     around that。 So say we have some metadata based on which we decide we need a scheduler
     process。 Our process is that little red circle you see there。 Triggering that
     one red circle can actually set off a bunch of other processes or purple。
+  id: totrans-12
   prefs: []
   type: TYPE_NORMAL
 - en: circles which can in turn set off another set of processes or orange circles。
@@ -85,6 +98,7 @@
     is， complete。 And like I said earlier， what these processes are doing is just
     writing data and we're looking。 at data in the range of about 50 million data
     points。
+  id: totrans-13
   prefs: []
   type: TYPE_NORMAL
 - en: But this is when the complexity really kicks in。 We don't want to just schedule
@@ -93,6 +107,7 @@
     like to talk to you about how it is that you can actually go about identifying。
     the software that you want to migrate towards。 We're going to go through this
     in a three phase approach。
+  id: totrans-14
   prefs: []
   type: TYPE_NORMAL
 - en: The first being understanding your requirements， identifying what it is that
@@ -101,6 +116,7 @@
     want to narrow down the potential solutions that you've come up with to one final
     system。 So in terms of understanding your requirements in our use case， we had
     to first get rid of。
+  id: totrans-15
   prefs: []
   type: TYPE_NORMAL
 - en: all the business logic as well as the specific intricacies that were unique
@@ -109,12 +125,14 @@
     automated coordination of events and data streams leveraging domain specific metadata。
     to intelligently schedule and trigger processes。 It's a bit of a mouthful but
     from this we can derive these three keywords that describe。
+  id: totrans-16
   prefs: []
   type: TYPE_NORMAL
 - en: the system and that is scheduler， orchestration and dependencies。 Now we came
     up with a list of must haves as well as nice to haves。 In terms of the must haves。
     obviously modeling dependencies， that's the first and primary， goal。 We want processes
     to be able to trigger other processes。
+  id: totrans-17
   prefs: []
   type: TYPE_NORMAL
 - en: We also want to be able to do this for historical runs and obviously we want
@@ -122,6 +140,7 @@
     no vulnerabilities。 This is also another consideration。 Like I mentioned on a
     production cluster we don't want it to take up all the resources。 In terms of
     nice to haves， we did say that a user interface as well as the ability to。
+  id: totrans-18
   prefs: []
   type: TYPE_NORMAL
 - en: monitor all these processes would be nice to have， not necessary though。 Parallelization。
@@ -129,6 +148,7 @@
     when it came time to research， obviously the first thing everyone does is goes
     to the， internet。 You put keywords and you post them into search engines and you
     try to come up with potential。
+  id: totrans-19
   prefs: []
   type: TYPE_NORMAL
 - en: options。 Going about this we eventually landed on Apache's website where most
@@ -136,12 +156,14 @@
     for。 The namely Apache NIFI as well as Apache Airflow。 Another way that we were
     going about doing research was word of mouth。 You can see conferences like PyCon
     can give you potential solutions that might fit your， use case。
+  id: totrans-20
   prefs: []
   type: TYPE_NORMAL
 - en: As well as networking from which internally at Bloomberg we support ARGO that's
     another。 solution that we came across。 We have these three potential options。
     We want to first figure out the evaluation criteria。 How can we narrow it down
     to a specific system？
+  id: totrans-21
   prefs: []
   type: TYPE_NORMAL
 - en: We broadly categorize it into these four different metrics。 Just being adoption
@@ -149,6 +171,7 @@
     questions will be answered quicker。 Any bugs that come up will be fixed sooner。
     That's a very important one。 Then compatibility。 Does this system meet your technical
     requirements？
+  id: totrans-22
   prefs: []
   type: TYPE_NORMAL
 - en: Does it address the problem that you're trying to solve？ Then of course extendability。
@@ -156,6 +179,7 @@
     evolve。 into something more。 Then it address other problems that you haven't particularly
     foreseen until you start using。 it。 Then finally ease of customization。 No system
     is a perfect match but if something is flexible and easy to customize for your。
+  id: totrans-23
   prefs: []
   type: TYPE_NORMAL
 - en: specific use case that's obviously better。 This is what we ended up categorizing
@@ -164,12 +188,14 @@
     them。 It's very flexible with permission and control and very easy to adapt。 It's
     actually pure pipe。 Apache NIFI also a great solution but it didn't match our
     use case specifically because it's。
+  id: totrans-24
   prefs: []
   type: TYPE_NORMAL
 - en: very data pipeline focused。 We do already have the ETL infrastructure。 That's
     not the part we're trying to replace。 It didn't exactly match what we were looking
     for。 Argo again it was supported internally at Bloomberg so that communication
     link is even， more direct。 That's why it adds such a high rating on adoption。
+  id: totrans-25
   prefs: []
   type: TYPE_NORMAL
 - en: But it's focused on containerized applications whereas we're looking for more
@@ -178,12 +204,14 @@
     Airflow like I mentioned it's based around the directed acyclic graph for short。
     It's pure Python like I mentioned。 It didn't support every particular use case
     that we had but it had a lot of support for。
+  id: totrans-26
   prefs: []
   type: TYPE_NORMAL
 - en: plugins and we did find plugins that were very useful。 And of course a very
     nice and easy to navigate Web UI。 Now with that I like to hand it off to my colleague
     Nanda。 Okay great。 So now Sagar has helped us pick Airflow and we know Airflow
     is what we want to migrate。
+  id: totrans-27
   prefs: []
   type: TYPE_NORMAL
 - en: to but where do we even start？ We have this huge complex framework that's been
@@ -191,6 +219,7 @@
     features to it。 It's doing a lot of things it's monitoring for dependencies， it's
     writing billions of， data points。 There's so much scope for error。 So before we
     even move further let's break this down into independent but connected components。
+  id: totrans-28
   prefs: []
   type: TYPE_NORMAL
 - en: What are we really dealing with here？ We have a scheduler that uses some metadata
@@ -199,6 +228,7 @@
     a let's say a job management system that monitors the dependent processes that。
     were kicked off。 These are the three independent chunks of this huge framework
     that we're trying to migrate。
+  id: totrans-29
   prefs: []
   type: TYPE_NORMAL
 - en: from。 If we want to move away from all of these three in one big bang there's
@@ -207,6 +237,7 @@
     scheduler and the orchestration engine。 So we can just try removing the scheduler
     and the orchestration engine out of that framework。 and replacing that with air
     flow。 But how？ The scheduler， orchestration engine。
+  id: totrans-30
   prefs: []
   type: TYPE_NORMAL
 - en: job management system all worked perfectly together because。 they were all natively
@@ -214,6 +245,7 @@
     to be compatible with each other。 But then when we integrate with an open source
     solution like air flow it's not been built。 for our specific use case but it still
     works really great。
+  id: totrans-31
   prefs: []
   type: TYPE_NORMAL
 - en: So we need a way to really make air flow and our job management system kind
@@ -221,12 +253,15 @@
     this。 We're at PyCon。 So this is where we want to introduce PyHero， our Python
     component that's going to help。 stitch together air flow and our legacy job management
     system。
+  id: totrans-32
   prefs: []
   type: TYPE_NORMAL
 - en: And we have a lot of superheroes out there so why should we think of PyHero？
+  id: totrans-33
   prefs: []
   type: TYPE_NORMAL
 - en: There are essentially three superpowers that we're really looking for right？
+  id: totrans-34
   prefs: []
   type: TYPE_NORMAL
 - en: We want to be able to integrate easily with our existing code base。 So it should
@@ -234,6 +269,7 @@
     The second superpower that we want is we need to be able to write this component
     really， quickly。 Eventually in the future our job management system is going to
     go away too and air flow。
+  id: totrans-35
   prefs: []
   type: TYPE_NORMAL
 - en: is going to take over everything。 So at that point of time PyHero will unfortunately
@@ -241,6 +277,7 @@
     It's eventually just going to go away。 And the third thing that we're looking
     for is production quality by hero。 Even though PyHero is temporary it still has
     to be production quality because we wanted。
+  id: totrans-36
   prefs: []
   type: TYPE_NORMAL
 - en: to run in production we cannot cut corners in terms of its performance。 So let's
@@ -248,10 +285,12 @@
     with how we can use it to integrate with an existing stack。 So let's assume the
     worst case scenario。 Our job management system is not Python at all。 It's built
     in a completely new language。
+  id: totrans-37
   prefs: []
   type: TYPE_NORMAL
 - en: Now we need Python to kind of interface with it。 What are the different ways
     that we can go about this？
+  id: totrans-38
   prefs: []
   type: TYPE_NORMAL
 - en: The first is like I said an interface approach where we want to directly use
@@ -259,6 +298,7 @@
     multiple options。 We can let's if you had like a C or C++ library that you wanted
     to use you can compile it， into a 。sor。dll file and then import that within your
     Python code。
+  id: totrans-39
   prefs: []
   type: TYPE_NORMAL
 - en: An alternative would be to use the Python API to expose our C C++ libraries
@@ -266,6 +306,7 @@
     modify your libraries themselves。 There is another easier non-intrusive approach
     that you can take。 Wherein your non-Python components are treated as independent
     entities in themselves。
+  id: totrans-40
   prefs: []
   type: TYPE_NORMAL
 - en: You modularize them and package them as executables and you just invoke them
@@ -274,6 +315,7 @@
     have things within let's say our job management system that we want to reuse even。
     after our migration is complete。 So let's say we had a C++ library that was super
     powerful that we intend on using even。
+  id: totrans-41
   prefs: []
   type: TYPE_NORMAL
 - en: after we fully moved to a flow。 It might make sense to just go with the first
@@ -282,6 +324,7 @@
     case it was just easier for us to modularize it and package it as an executable。
     and invoke it as a subprocess。 So now that we've discussed how we can integrate
     Python with an existing stack let's move on。
+  id: totrans-42
   prefs: []
   type: TYPE_NORMAL
 - en: to discussing how Python can help us write production quality code quickly。
@@ -289,6 +332,7 @@
     And one of the most important things that that comes with is a when is when something，
     goes wrong。 When something goes wrong you don't want to find out let's say hours
     later or days later。
+  id: totrans-43
   prefs: []
   type: TYPE_NORMAL
 - en: you want to know as soon as Pihiro went down in production。 And to do this we
@@ -296,6 +340,7 @@
     aware of。 I learned about it in theory too but this is how we could really see
     it being used in。 while writing production quality code。 So we have a decorator
     that we use within our group that takes in three arguments。
+  id: totrans-44
   prefs: []
   type: TYPE_NORMAL
 - en: It takes in a severity， a group and the name of the component。 And based on
@@ -303,6 +348,7 @@
     and routes it to the correct group。 So all it does is really just wrap the function
     code in a try catch block and create a get。 based on the input parameters and
     routed when something goes wrong and execution fails。
+  id: totrans-45
   prefs: []
   type: TYPE_NORMAL
 - en: But this was great when I was trying to come up with this component quickly
@@ -310,6 +356,7 @@
     worrying about the bells。 and whistles around alarming because it really just
     came for free。 But it's not just sufficient for us to be able to write our code
     quickly。
+  id: totrans-46
   prefs: []
   type: TYPE_NORMAL
 - en: It's also important that we're able to debug this code quickly especially when
@@ -317,6 +364,7 @@
     an example of a bug that we faced when trying to implement。 air flow and how the
     PDB as a super power of Pi here really came in to help and save， us。 So here we
     have a screen， the login screen for air flow and as you can see there's an error。
+  id: totrans-47
   prefs: []
   type: TYPE_NORMAL
 - en: message at the top。 So the way that we generated this was we tried to sign in
@@ -324,6 +372,7 @@
     back here。 Now we knew the credentials were correct so that wasn't the issue at
     hand but we didn't。 really have much other information on this page about what's
     causing this。
+  id: totrans-48
   prefs: []
   type: TYPE_NORMAL
 - en: Now the first place anyone really starts to debug is by checking the logs and
@@ -331,6 +380,7 @@
     any relevance。 It was this error message right here。 Now we see that there's some
     issue with OAuth and we see something about an invalid audience。 but it's still
     fairly abstract。 It doesn't give us much information。
+  id: totrans-49
   prefs: []
   type: TYPE_NORMAL
 - en: However we do know exactly what line and what file this error is being raised。
@@ -338,6 +388,7 @@
     we went to that file and these are the lines that the error was being thrown from。
     as you can see the log message right there on that fourth line there and we put
     a break， point。
+  id: totrans-50
   prefs: []
   type: TYPE_NORMAL
 - en: Now with this break point we are able to halt execution of the program while
@@ -345,190 +396,258 @@
     we're able to observe。 the variables including these abstract variables like app
     builder or 。sm。 Now what we realized by observing these variables live is that
     these were actually instances。
+  id: totrans-51
   prefs: []
   type: TYPE_NORMAL
+  zh: 现在有了这个断点，我们能够在尝试在 web 服务器上登录时暂停程序执行，并从那里观察变量，包括这些抽象变量，如 app builder 或 .sm。通过实时观察这些变量，我们意识到它们实际上是实例。
 - en: of classes that we had defined in the web server config。py。 So let's dig into
     this rabbit hole a bit further and see where it leads us。 After that we put another
     break point in web server config。py and while the rest of the。 code is in too
     important we step through line by line to get to this line。
+  id: totrans-52
   prefs: []
   type: TYPE_NORMAL
+  zh: 这是我们在 web server config.py 中定义的类。所以让我们更深入地挖掘这个问题，看看它将引导我们到哪里。在这之后，我们在 web server
+    config.py 中放置了另一个断点，虽然其余代码并不重要，但我们逐行走过，以到达这一行。
 - en: This is where the error was really being raised and so that invalid audience
     makes a bit。 more sense as you can see the issue is in that key airflow right
     there。 Now the great thing about PDB is that while the execution has been paused
     you can retry。 code lines of code with that environment and so you could retry
     other keys until you find。
+  id: totrans-53
   prefs: []
   type: TYPE_NORMAL
+  zh: 这是错误真正被抛出的地方，所以那个无效的受众变得更有意义，正如你所看到的问题就在于那个关键的 airflow。现在 PDB 的一个伟大之处是，当执行被暂停时，你可以在那个环境中重试代码行，因此你可以重试其他关键字，直到找到。
 - en: the correct one。 Needless to say that is what we did and it helped us solve
     this issue but an issue that。 was rather abstract to begin with could be solved
     in matter of a couple of minutes using， PDB。 So this really goes to highlight
     some of the advantages of PDB and first and foremost is。 that you don't have to
     rebuild your software every time you put in a new break point you。
+  id: totrans-54
   prefs: []
   type: TYPE_NORMAL
+  zh: 这是正确的做法。不必说，这确实帮助我们解决了这个问题，但一个原本相当抽象的问题可以通过使用 PDB 在几分钟内解决。所以这突显了 PDB 一些优势，首先是你不必每次添加新的断点时都重建你的软件。
 - en: simply have to restart and so that's one of the great powers of Python is that
     it's much。 quicker to put in a break point and to then start debugging。 There's
     also command line interface which allows for remote debugging。 The issue that
     we showed earlier was debugged on a server。
+  id: totrans-55
   prefs: []
   type: TYPE_NORMAL
+  zh: 你只需重启，这就是 Python 的一大强项，它使得放置断点和开始调试变得更快。还有命令行接口，允许进行远程调试。我们之前展示的问题是在服务器上调试的。
 - en: And then it also comes default with the Python language so you don't have to
     install it separately。 or anything like that。 There's two ways that you can invoke
     it。 The first one we already showed you in our example is just by adding it into
     the script。 directly and the second one is calling it via the command line which
     is very similar。
+  id: totrans-56
   prefs: []
   type: TYPE_NORMAL
+  zh: 并且它默认与 Python 语言一起提供，因此你不需要单独安装它。调用它有两种方式。第一种我们在示例中已经展示过，就是直接将其添加到脚本中，第二种是通过命令行调用，这两者非常相似。
 - en: to other debuggers you might have encountered in the past。 Another aspect of
     Python that really enables rapid development is how easy it is to customize， it。
     And so I'm going to walk you through one specific use case that we had with air
     flow to really。 highlight this point。 And so by default air flow uses SMTP for
     email。
+  id: totrans-57
   prefs: []
   type: TYPE_NORMAL
+  zh: 与你可能在过去遇到的其他调试器相比。Python 的另一个方面确实促进了快速开发的是它的自定义简单性。因此，我将带你了解我们在 Airflow 中遇到的一个特定用例，以真正强调这一点。因此，Airflow
+    默认使用 SMTP 进行电子邮件发送。
 - en: And as you can see in the email。py file it's using some SMTP lib which under
     the hood uses， SMTP。 Now SMTP wasn't ideal for our use case。 It's not important
     why but there is an alternative and that's what we're going to try to implement。
     as a plugin in air flow。 So what we did was we copied this email。py file and we
     modified it to use the mailx command。
+  id: totrans-58
   prefs: []
   type: TYPE_NORMAL
+  zh: 正如你在 email.py 文件中看到的，它使用了一些 SMTP 库，而这些库在底层使用了 SMTP。现在，SMTP 对我们的用例并不理想。原因不重要，但有一个替代方案，我们将尝试将其作为插件实现到
+    Airflow 中。所以我们做的是复制了这个 email.py 文件，并将其修改为使用 mailx 命令。
 - en: which is something we already had code for written somewhere else in our tech
     stack。 And all it required on air flow side was a simple configuration modification
     as you can， see here。 It's air flow utils。mailx and this is actually a file path
     to the actual plugin that we've， defined。 And with Python since you can use dynamic
     importing of libraries air flow doesn't need anything。
+  id: totrans-59
   prefs: []
   type: TYPE_NORMAL
+  zh: 这是我们在技术栈中的其他地方已经编写的代码。Airflow 方面所需的只是简单的配置修改，如你所见。这是 airflow.utils.mailx，实际上是我们定义的插件的文件路径。由于
+    Python 允许动态导入库，Airflow 不需要任何额外的东西。
 - en: else than this configuration change as well as this file being copied into the
     correct。 directory from which it's able to pick it up and on restart seamlessly
     integrate and use。 it for emails going forward。 Now that's the function definition
     that you see there。 This was simply copied from the other email。py file but that
     was essentially it。
+  id: totrans-60
   prefs: []
   type: TYPE_NORMAL
+  zh: 除了这个配置更改以及这个文件被复制到正确的目录以便它能够被提取，重新启动时无缝整合并用于未来的邮件发送。现在你看到的就是这个函数定义。这只是从另一个 email.py
+    文件中复制过来的，但基本上就是这样。
 - en: And that really goes to highlight how easy it is to integrate your own code
     into Python， code bases。 And that's why another major advantage of a pure Python
     system like air flow for open。 source migrations。 Great。 So now we've spoke to
     you about some of the things about Python that make it really easy。 for rapid
     development。 So let's go on to how Python makes it easy to create production quality
     software。
+  id: totrans-61
   prefs: []
   type: TYPE_NORMAL
+  zh: 这真是突显了将你自己的代码集成到 Python 代码库中是多么简单。这也是像 Airflow 这样的纯 Python 系统在开源迁移中的另一个主要优势。太棒了。所以现在我们和你谈了一些
+    Python 使快速开发变得容易的事情。接下来，让我们看看 Python 如何使创建生产质量的软件变得容易。
 - en: In the case of any open source system you don't really know the extent to which
     it's。 valuable to you until you actually start using it。 So the best way to actually
     learn about an open source system is to use it and to do。 that you have to be
     able to deploy it into your production system quick。
+  id: totrans-62
   prefs: []
   type: TYPE_NORMAL
+  zh: 对于任何开源系统而言，直到你实际开始使用它，你才能真正了解它对你有多大价值。因此，了解开源系统的最佳方法就是使用它，而为此你必须能够迅速将其部署到你的生产系统中。
 - en: In our case we were able to deploy it air flow into our production system in
     an isolated。 manner using virtual environments。 And therefore we didn't have to
     modify any configurations or touch any other part of。 our production cluster。
     All you really need is one isolated file path where all your dependencies。 even
     the， language itself， are going to be stored。
+  id: totrans-63
   prefs: []
   type: TYPE_NORMAL
+  zh: 在我们的案例中，我们能够以隔离的方式将 Airflow 部署到我们的生产系统中，使用虚拟环境。因此，我们不需要修改任何配置或触碰生产集群的其他部分。你真正需要的只是一个隔离的文件路径，用于存储所有的依赖项，甚至包括语言本身。
 - en: And tomorrow if you don't want to use this system anymore you simply delete
     that directory。 and it's gone without leaving a trace。 Now in the case of air
     flow it's fairly simple since all you。 the only overhead was really， creating
     this requirements file which as you can see doesn't have too much extra。 After
     that you create an isolated build and it runs on your production cluster and that's，
     it。
+  id: totrans-64
   prefs: []
   type: TYPE_NORMAL
+  zh: 如果明天你不想再使用这个系统，只需删除那个目录，它就会毫无痕迹地消失。对于 Airflow 来说，这相对简单，因为你所需要的唯一开销就是创建这个需求文件，而如你所见，里面并没有太多额外内容。之后，你创建一个隔离的构建，它在你的生产集群上运行，这就是全部。
 - en: Another thing that I'd like to highlight is PyTest is what we use for creating
     unit tests。 and so in production environment you want to make sure that code changes
     don't break。 it and so before any release we're able to use PyTest to determine
     that previously working。 behavior hasn't been affected。 Great。 So now we have
     a half new system and a half old system and we have Python stitching them。
+  id: totrans-65
   prefs: []
   type: TYPE_NORMAL
+  zh: 我想强调的另一点是，PyTest 是我们用来创建单元测试的工具。在生产环境中，你要确保代码更改不会破坏它，因此在任何发布之前，我们都能使用 PyTest
+    来确定之前正常工作的行为没有受到影响。太棒了。现在我们有一个半新和半旧的系统，Python 正在将它们结合起来。
 - en: together but we still want to make sure that this half new system hasn't broken
     anything。 So we want to go about， we want to figure out how we can reconcile it。
     With that I'd like to hand it back to my colleague。 Okay great。 So now we have
     like Sagar said a half old and half new system up and running it's churning。
+  id: totrans-66
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们仍然希望确保这个半新系统没有破坏任何东西。因此，我们想要找出如何进行调和。接下来我想把话筒交给我的同事。好的，很好。现在正如 Sagar 所说，我们有一个半旧和半新的系统正在运行，它在运转。
 - en: out some data but how do we make sure that our old system and our new system
     are really。 doing the same thing。 One level of sanity check could be to just check
     what processes are kicked off by the。 old system and the new system and then compare
     it and see if they tie out。 But this does leave room for error because if we don't
     capture a failure correctly or。
+  id: totrans-67
   prefs: []
   type: TYPE_NORMAL
+  zh: 我们提取了一些数据，但如何确保我们的旧系统和新系统确实在执行相同的任务呢？一种简单的检查方法是查看旧系统和新系统启动了哪些进程，然后进行比较，看看它们是否一致。但这样做仍然可能出现错误，因为如果我们没有正确捕获失败或者。
 - en: a stalled process correctly in the new system we won't ever catch it。 And that's
     when you really have to ask the question what is really the output of your。 system
     and like we discussed earlier the output of our system was data and it was columnar。
     data to be more specific。 So the best way for us to ensure that our migration
     has gone through correctly and that。
+  id: totrans-68
   prefs: []
   type: TYPE_NORMAL
+  zh: 如果我们在新系统中没有正确捕获一个停滞的过程，我们将无法发现它。这时你真的需要问自己，系统的输出到底是什么？正如我们之前讨论的，我们系统的输出是数据，具体来说是列式数据。所以确保我们的迁移正确完成的最佳方法就是。
 - en: our old system and new system are doing the same thing is to compare the data
     that was。 generated from the old system and the new system and make sure that
     they tie out。 But we're again looking at the scale of millions of data points
     here and it can be very intensive。 to make sure that every one of these million
     data points tie out correctly。
+  id: totrans-69
   prefs: []
   type: TYPE_NORMAL
+  zh: 确保我们的旧系统和新系统在执行相同操作的方法是比较从旧系统和新系统生成的数据，并确保它们一致。但我们这里又面临着数百万数据点的规模，确保每一个百万数据点都能正确对应会非常繁重。
 - en: But to help with that we have a data reconciliation framework that we use within
     our team which。 is built on top of pandas。 And if you want to learn more about
     that definitely stop by our booth we'd be happy to chat。 So we used that tool
     to compare the data that was being produced by our old system and our。 new system
     to ensure that there were no differences in terms of the output that was being
     generated。
+  id: totrans-70
   prefs: []
   type: TYPE_NORMAL
+  zh: 为此，我们在团队内部有一个数据对账框架，它是建立在 pandas 之上的。如果你想了解更多，欢迎来我们的展位，我们很乐意交流。所以我们使用这个工具来比较旧系统和新系统产生的数据，以确保它们在输出上没有差异。
 - en: So quickly wrapping up on everything that we discussed so far let's do a quickly
     count。 So we started with this complex orchestration framework that we wanted
     to migrate from。 We identified keywords and then identified our three options
     that we could potentially。 integrate with three open source options。 We brainstormed
     came up with an evaluation criteria based on which airflow one。
+  id: totrans-71
   prefs: []
   type: TYPE_NORMAL
+  zh: 所以快速总结一下我们到目前为止讨论的所有内容，我们来快速计数一下。我们从想要迁移的复杂编排框架开始。我们识别了关键词，然后确定了我们可以与三个开源选项集成的三个选项。我们进行了头脑风暴，并提出了一个评估标准，基于此
+    airflow 获胜。
 - en: And then we broke down our existing architecture into independent but connected
     components to。 start integrating with airflow。 And instead of integrating everything
     big bang we first replaced the easily replaceable。 components which in our case
     were the scheduler and the orchestration engine。 But we still needed a way to
     connect airflow to a job management system and that's where。
+  id: totrans-72
   prefs: []
   type: TYPE_NORMAL
+  zh: 然后，我们将现有架构拆分为独立但相互连接的组件，以便开始与 airflow 集成。而不是一次性整合所有内容，我们首先替换了那些容易更换的组件，在我们的案例中是调度器和编排引擎。但我们仍然需要一种方法将
+    airflow 连接到作业管理系统，这就是关键所在。
 - en: Pihiro stepped in。 And while integrating with existing code with our existing
     code base we had two options。 We could either interface directly with the code
     components and use them within our Python。 module or we could just invoke them
     as subprocessors。 And we went with the second approach。 And then added some test
     cases like Sagar said using PyTest packaged it with a virtual environment。
+  id: totrans-73
   prefs: []
   type: TYPE_NORMAL
+  zh: Pihiro 介入了。在与现有代码和我们的代码库进行集成时，我们有两个选择。我们可以直接与代码组件接口，并在我们的 Python 模块中使用它们，或者我们可以将它们作为子进程调用。我们选择了第二种方法。然后，正如
+    Sagar 所说，我们添加了一些测试用例，使用 PyTest，将其打包在一个虚拟环境中。
 - en: and then came up with this half-world half-new system that was churning out
     some data。 But at this point it was important for us to ensure that the data that
     we were churning。 out was in fact correct。 And we used a data reconciliation framework
     built on top of pandas to ensure that correctness。 Okay， so in conclusion open
     source is a great option for software migrations。
+  id: totrans-74
   prefs: []
   type: TYPE_NORMAL
+  zh: 然后我们想出了这个半世界半新系统，它正在产生一些数据。但此时确保我们所生成的数据确实是正确的，这一点对我们来说非常重要。我们使用了建立在pandas之上的数据对账框架来确保正确性。好的，最后，开源是软件迁移的一个绝佳选择。
 - en: But remember integration doesn't have to be a big bang。 Small steps are usually
     better。 Now once you have integrated your system don't forget you want to customize，
     enhance and extend， it。 And once all of that is said and done don't forget to
     contribute and give back to the， community。 On that note Bloomberg has recently
     opened source I think as early as two days ago。
+  id: totrans-75
   prefs: []
   type: TYPE_NORMAL
+  zh: 但请记住，集成不必是一次性完成的。小步骤通常更好。现在，一旦你集成了系统，别忘了你想要自定义、增强和扩展它。一旦所有这些都完成，别忘了为社区贡献和回馈。在此提到，彭博社最近开源了，应该是在两天前。
 - en: A new memory profiler for Python on Linux and this can also help you debug the
     memory usage。 of your C extensions as well。 So if you decide to ever integrate
     with your code base by exposing your C libraries via。 Python interfaces this could
     even help with that。 We'd like to thank everyone here for helping us with our
     talk and helping with all the。 work that went into this presentation。 Special
     shout out to our manager， Mihir。
+  id: totrans-76
   prefs: []
   type: TYPE_NORMAL
+  zh: 一个用于Linux上Python的新内存分析器，这也可以帮助你调试C扩展的内存使用情况。所以如果你决定通过Python接口将C库暴露给代码库，这甚至可以帮助到你。我们想感谢在座的每一个人，感谢你们帮助我们进行演讲，并为这次演示所做的所有工作。特别感谢我们的经理，Mihir。
 - en: who is with us here today。
+  id: totrans-77
   prefs: []
   type: TYPE_NORMAL
+  zh: 今天在场的有谁。
 - en: '![](img/34317168f3c1eed0d8c15494197d3d54_3.png)'
+  id: totrans-78
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/34317168f3c1eed0d8c15494197d3d54_3.png)'
 - en: These are their references and thank you so much for attending our talk。 We
     are hiring and please do stop by our booth later。 Thank you。 [APPLAUSE]。
+  id: totrans-79
   prefs: []
   type: TYPE_NORMAL
+  zh: 这些是他们的参考资料，非常感谢你们参加我们的演讲。我们正在招聘，请稍后到我们的展位看看。谢谢。[APPLAUSE]
