@@ -397,6 +397,7 @@
   id: totrans-46
   prefs: []
   type: TYPE_NORMAL
+  zh: 你来解决这个问题。好吧。我在时间上做得怎么样？接下来是地区模块。再次，你可以阅读“man set locale”，这将允许你在Linux手册页中了解地区是如何工作的。但这使你能够处理代码中的所有文化特定性。在这里，我将给出一个例子，说明你如何使用地区解析。
 - en: string for 43， 210 into a float。 And you can see that you get different results
     whether you're using the US locale or the。 Spanish locales。 All programs start
     with what's called like the legacy C locale。 But you can change that once you
@@ -405,6 +406,7 @@
   id: totrans-47
   prefs: []
   type: TYPE_NORMAL
+  zh: 将字符串“43, 210”转换为浮点数。你可以看到，无论使用美国地区设置还是西班牙地区设置，结果都不同。所有程序都以所谓的遗留C地区设置开始。但你可以在这里通过更改地区设置来更改它。当你处理本地特定程序时，你使用的是更高级的。
 - en: modules。 But it's always good to know what's behind the hoods on this basically
     what allows you。 is to read that information from the OS。 If you wanted to add
     more locales。 what you need to do is basically install the interiors。 some language
@@ -412,6 +414,7 @@
   id: totrans-48
   prefs: []
   type: TYPE_NORMAL
+  zh: 但了解背后的机制总是好的，这基本上允许你从操作系统读取信息。如果你想添加更多地区设置，你需要做的就是安装一些语言包，这会给你这个。好吧。所以时间。这个主题我喜欢。
 - en: If you might be wondering， "What's so hard about time？ Why do I need the OS
     to give time？"。 To give you the time。 Well， the thing is time is not hopefully
     this is not new to you。 But time is a complex concept to it's just hard to know
@@ -420,6 +423,7 @@
   id: totrans-49
   prefs: []
   type: TYPE_NORMAL
+  zh: 如果你在想，“时间有什么难的？我为什么需要操作系统来给我时间？”给你时间。实际上，时间不是希望这对你来说是新的。但时间是一个复杂的概念，知道现在是什么时间很难。这听起来多么疯狂。但事实是，在Python中，时间是由操作系统提供的。
 - en: And the OS actually works with some hard work code which is just using Quartz
     because that。 provides， that gives you something that gives you a periodic event
     that you can check and， then the。 you know， your PC is going to check is going
@@ -428,6 +432,7 @@
   id: totrans-50
   prefs: []
   type: TYPE_NORMAL
+  zh: 操作系统实际上使用一些硬编码的代码，这只是使用Quartz，因为它提供了一个周期性事件，你可以检查，然后，你知道，PC将能够跟踪秒数的流逝，通过使用Quartz。然后你的操作系统能够读取这个并将其与所有模块的时间结合起来。
 - en: the PCs which is being given to you via NTP。 At the end， the time is just giving
     to you。 is actually being provided by some atomic， clocks that you don't have
     to worry about。 But it's good to know that whenever you are asking Python for
@@ -436,6 +441,7 @@
   id: totrans-51
   prefs: []
   type: TYPE_NORMAL
+  zh: 通过NTP提供给你的PC。最后，时间只是给你的。实际上是由一些原子钟提供的，你不必担心。但知道每当你向Python询问现在几点时，所有这些事情都在发生，这很好。我之所以这么说，是因为你可能开始对周围的事物建立一些假设。
 - en: it that you should not。 Like for example， that the time is monotonic and extending。
     So that's something you can actually not rely on time。 So yeah。 like this basically
     allows us to call to the OS and get the time that it is。 And you might wondering，
@@ -443,6 +449,7 @@
   id: totrans-52
   prefs: []
   type: TYPE_NORMAL
+  zh: 你不应该这样做。例如，时间是单调的并且是扩展的。因此，这意味着你实际上不能依赖时间。所以，基本上这允许我们调用操作系统并获取当前时间。你可能会想，没错，但我从不使用时间。我使用的是白天时间。好吧，如果你阅读代码。
 - en: it's actually the same thing。 All time in Python is actually being provided
     by the OS by just calling time。time。time。 Here is the underscontang which is the
     extension that's actually calling them to the OS。 You cannot see the main pages
@@ -451,6 +458,8 @@
   id: totrans-53
   prefs: []
   type: TYPE_NORMAL
+  zh: 实际上是同样的事情。在Python中，所有时间实际上都是由操作系统提供的，只需调用`time.time`。这里是“underscontang”，它实际上是调用操作系统的扩展。你无法在这里看到手册页，但这里实际上说的是“man
+    and TPD”。它使你了解这个协议如何与所有PC同步时间。
 - en: Because probably many of you here will have a watch。 And it's important to realize
     that your watch will have a different time from my watch。 And even if we were
     to synchronize them right now after a day or a month or a year because。 your watch
