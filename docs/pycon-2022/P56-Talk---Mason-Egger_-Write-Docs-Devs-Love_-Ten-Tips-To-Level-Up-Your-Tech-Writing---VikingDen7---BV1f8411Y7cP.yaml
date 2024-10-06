@@ -4,18 +4,22 @@
   prefs:
   - PREF_H1
   type: TYPE_NORMAL
+  zh: P56：演讲 - Mason Egger_ 编写开发者喜爱的文档_ 提升技术写作的十个技巧 - VikingDen7 - BV1f8411Y7cP
 - en: All right， folks， thank you very much for the last talk of this session。
   id: totrans-1
   prefs: []
   type: TYPE_NORMAL
+  zh: 好的，各位，非常感谢这场会议的最后一场演讲。
 - en: '![](img/7fb412e9cd3a788de3d78d39723b5295_1.png)'
   id: totrans-2
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/7fb412e9cd3a788de3d78d39723b5295_1.png)'
 - en: '![](img/7fb412e9cd3a788de3d78d39723b5295_2.png)'
   id: totrans-3
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/7fb412e9cd3a788de3d78d39723b5295_2.png)'
 - en: If you get a chance， download the QR code。 That's the download。 Photograph it，
     take a picture of it。 These slides are amazing。 So you'll want to have an extra
     copy。 You can peruse them while you're watching the talk。 Zoom in on them if you'd
@@ -24,6 +28,7 @@
   id: totrans-4
   prefs: []
   type: TYPE_NORMAL
+  zh: 如果你有机会，下载二维码。这是下载链接。拍下来，拍张照片。这些幻灯片很精彩，所以你会想要有一份额外的副本。你可以在观看演讲时翻阅它们。如果你想，可以放大查看。但我会给你额外的一分钟，希望你不会让Wi-Fi超负荷。
 - en: And with that being said， I'm going to do Smase and Edgar and he's going to
     teach us。 how to write Doc's Dev's love。 Ten tricks to level up your tech writing。
     Take it away。 Awesome。 Thank you， everyone。 How's everyone going？ This is my first
@@ -32,6 +37,7 @@
   id: totrans-5
   prefs: []
   type: TYPE_NORMAL
+  zh: 说到这一点，我要请Mason和Edgar来教我们如何编写开发者喜爱的文档。提升技术写作的十个技巧。接下来请。太棒了。谢谢大家。大家过得怎么样？这是我自2019年以来第一次在现场会议上演讲。很高兴能回来。是的，这些幻灯片内容丰富。我在上面有很多信息。
 - en: So if you want to follow along， I know that it's going to be hard to see from
     the back。 to be able to follow along from there。 So yeah， first， who am I？ My
     name is Mason Edgar。 I am a developer advocate at Gretel， which is a synthetic
@@ -40,6 +46,7 @@
   id: totrans-6
   prefs: []
   type: TYPE_NORMAL
+  zh: 如果你想跟着我，我知道从后面看会很难跟上。所以，首先，我是谁？我叫Mason Edgar。我是Gretel的开发者倡导者，Gretel是一家合成数据公司。稍后会谈到这个。在加入Gretel之前，我是数字海洋的开发者倡导者和社区作者。
 - en: which is where I learned a lot of everything that I'm about to teach you today。
     If you've never seen or used digital ocean tutorials， they're fantastic。 There
     was a lot of great people there that taught me a lot about documentation， and。
@@ -48,6 +55,7 @@
   id: totrans-7
   prefs: []
   type: TYPE_NORMAL
+  zh: 这就是我学习到的所有知识。如果你从未见过或使用过数字海洋的教程，它们非常棒。那里有很多优秀的人教会了我很多关于文档的知识。我想和你分享。因此，为了稍微设置一下背景，我们先开始。
 - en: let's talk about what is tech writing。 So think about that feeling you get when
     you follow an online tutorial。 you know， you're， copying and pasting the code
     blocks， you're executing stuff。 and it just magically works， on the first run。
@@ -56,6 +64,7 @@
   id: totrans-8
   prefs: []
   type: TYPE_NORMAL
+  zh: 让我们谈谈什么是技术写作。所以想想你在跟随在线教程时的感觉。你知道，你正在复制和粘贴代码块，执行各种操作。它在第一次运行时就神奇地工作。你无需去寻找任何东西。它就是有效的。你会想，哇，太棒了。
 - en: And then think about all the time you've wasted hunting down documentation that
     doesn't， work。 You know， it forgot a step。 Something's missing。 You just doesn't
     work at all。 And now you're frustrated and you don't know what to do and you have
@@ -64,10 +73,12 @@
   id: totrans-9
   prefs: []
   type: TYPE_NORMAL
+  zh: 然后想想你花了多少时间去寻找那些不起作用的文档。你知道，它漏掉了一步。缺少了什么。你就是没法使用。而现在你感到沮丧，不知道该怎么办，只能去谷歌一下。这就是糟糕的文档。那么这两者之间有什么区别呢？你知道的。
 - en: what made one successful and what made the other one unsuccessful？
   id: totrans-10
   prefs: []
   type: TYPE_NORMAL
+  zh: 是什么让一个成功而另一个失败呢？
 - en: And we're going to talk about that in this talk today。 And just a quick high
     level overview。 I like defining things。 Technical writing is instructional or
     informative writing that focuses on how to accomplish a。 task using a specific
@@ -76,6 +87,7 @@
   id: totrans-11
   prefs: []
   type: TYPE_NORMAL
+  zh: 今天我们将在这个演讲中讨论这个。简单快速地概述一下。我喜欢定义事物。技术写作是以指导或信息为目的的写作，专注于如何使用特定工具完成任务。那么为什么技术写作很重要呢？嗯，技术写作非常重要，因为它通常是给人的第一印象。
 - en: someone has of your project。 If someone goes to your project， tries to use it。
     can't figure out the docs， usually， within a couple of minutes， they're going
     to go somewhere else。 There are very few libraries in the world that are the only
@@ -155,6 +167,7 @@
   id: totrans-20
   prefs: []
   type: TYPE_NORMAL
+  zh: 你的文档。没有人会愿意听那场演讲。我也不会留在那里。我会起身离开。所以今天我们将讲第十条，希望他们能帮助你改善你的文档。因此，第十个建议是，让你的最终目标清晰明确。在文档的第一段、最开始时要有一个清晰简洁的目标。
 - en: saying this is what I want you to do。 This library will allow you to do X in
     this tutorial。 You will do X by using this。 Be very upfront with the end goal
     as soon as you start writing your documentation。 If you're writing a tutorial，
@@ -163,6 +176,7 @@
   id: totrans-21
   prefs: []
   type: TYPE_NORMAL
+  zh: 说清楚这是我希望你做的事情。这个库将允许你在本教程中做X。你将通过使用这个来做到X。在你开始撰写文档时，务必要清楚地表达最终目标。如果你在写教程，不要在开头花费一千个字来告诉用户这项技术有多么伟大。他们已经知道了。他们是在学习你的内容。
 - en: You don't need to spend the first paragraph， you know， on this network library。
     Well in 1976 or '67 they decided to build DARPA。 And like no， you went too far
     back。 That's a waste of time and effort。 Don't spend time grandiosing over your
@@ -170,6 +184,7 @@
   id: totrans-22
   prefs: []
   type: TYPE_NORMAL
+  zh: 你不需要在第一段花时间讲这个网络库。好吧，在1976年或67年，他们决定建立DARPA。没错，你回得太远了。这是浪费时间和精力。不要花时间去美化你的技术。如果他们想读小说，他们会去读小说。
 - en: Developers are here to get things done and they're just going to skip over that
     anyway。 Make it blatantly obvious what the reader is going to learn from this。
     Make it like in this tutorial you will set up a Apache web server and you will
@@ -178,6 +193,7 @@
   id: totrans-23
   prefs: []
   type: TYPE_NORMAL
+  zh: 开发者来这里是为了完成任务，他们反正会跳过那些内容。让读者清楚他们将从中学到什么。在这个教程中，你将设置一个Apache web服务器，并使用Hugo作为静态网站生成器来部署一个静态网站。要明确告诉他们这就是他们将要得到的内容。
 - en: That way people can know what they're doing and get going with it。 So we're
     re-effrasing that。 Tip number nine， don't be overly verbose。 Technical documentation
     should be concise， not a novel。 There are plenty of really good software engineering
@@ -186,6 +202,7 @@
   id: totrans-24
   prefs: []
   type: TYPE_NORMAL
+  zh: 这样人们可以知道自己在做什么，并迅速开始。因此我们重新表述一下。第九个建议是，不要过于冗长。技术文档应该简洁，而不是小说。有很多很好的软件工程小说。我建议你去看看。但技术文档不应该是一部小说。SAT词汇在这里是不必要的。
 - en: If you're unaware of the SAT it's a collegiate preparatory exam where they ask
     you if you。 know of these words that are in English that nobody uses in regular
     vernacular anymore， at all。 vernacular。 Great word there。 SAT words here。 Always
@@ -194,6 +211,7 @@
   id: totrans-25
   prefs: []
   type: TYPE_NORMAL
+  zh: 如果你不知道SAT，那是一个大学入学考试，询问你是否知道这些英语单词，而这些单词在日常用语中已经没有人使用。日常用语。这个词不错。SAT词汇在这里。永远假设你的读者并不使用与你相同的语言。永远假设他们可能是英语非母语者，并且使用非常复杂的词汇。
 - en: or using words that are not common in everyday speech is going to slow them
     down。 It's not that they won't know them but it's a waste of time。 Aim for a low
     reading level。 You can use apps like this。 This is a picture on the side of the
@@ -202,6 +220,7 @@
   id: totrans-26
   prefs: []
   type: TYPE_NORMAL
+  zh: 使用不常见的日常用语会拖慢他们的速度。并不是说他们不知道这些词，而是浪费时间。目标是低阅读水平。你可以使用这样的应用程序。这是海明威编辑器的侧面截图。Grammarly也能做到。目标是让阅读水平非常低，以便人们能够轻松阅读你的文档。
 - en: quickly and not spend time trying to figure out what the docs say and more how
     to do what。 the docs say。 I personally aim for a third grade reading level。 You
     should not have to put that much effort into figuring out these docs。 Sometimes
@@ -210,6 +229,7 @@
   id: totrans-27
   prefs: []
   type: TYPE_NORMAL
+  zh: 快速而不是花时间去弄清楚文档所说的内容，更重要的是如何去做。我的个人目标是达到三年级的阅读水平。你不应该花太多精力去理解这些文档。有时候会很困难，所以我会允许自己提高到六年级的阅读水平。
 - en: this goes back up to my previous point。 This really helps non-native speakers
     with your documentation。 Tip number eight。 Use inclusive language。 Avoid using
     things like gendered pronouns and go for more gender neutral pronouns。 Don't be
@@ -646,6 +666,7 @@
   id: totrans-76
   prefs: []
   type: TYPE_NORMAL
+  zh: 你永远不知道这可能会激励你去做其他事情。你可能会写关于某个主题的东西，六个月后忘记了，但你会想，哦，对，我写过这个，这样你就可以重新翻阅自己的笔记。那你如何开始技术写作呢？在工作中写文档。
 - en: I guarantee you your manager will love you。 Every single promotion I've ever
     gotten while I was an engineer was because I decided to。 take on the task of documenting
     everything I could find in my site。 There's always something to be documented。
@@ -655,6 +676,7 @@
   id: totrans-77
   prefs: []
   type: TYPE_NORMAL
+  zh: 我保证你的经理会喜欢你。在我作为工程师期间，获得的每一次晋升都是因为我决定记录下我能找到的一切。有总有东西可以记录。如果你工作在一个没有任何可记录内容的地方，永远不要离开。如果你必须像水泥一样固定在大楼里，因为你在一家独角兽公司工作。
 - en: Start a blog。 This is a great way to do it。 The best part about blogs is it
     can be free。 Okay it can be free。 I didn't even know my own word there。 If someone
     is paying you to write or you're writing at your company you're kind of limited。
@@ -662,6 +684,7 @@
   id: totrans-78
   prefs: []
   type: TYPE_NORMAL
+  zh: 开始一个博客。这是一个很好的方法。博客最好的地方是它可以是免费的。好吧，它可以是免费的。我甚至不知道自己在说什么。如果有人支付你写作，或者你在公司写作，你的主题可能会受到限制。而当你拥有自己的博客时，你可以写任何东西。
 - en: You can write about tech。 You can write about not tech stuff。 I write about
     a mixture of both if you ever go check out my blog。 So it's a lot freer。 Great
     for practicing。 And then another thing you can do is you can contribute to open
@@ -670,6 +693,7 @@
   id: totrans-79
   prefs: []
   type: TYPE_NORMAL
+  zh: 你可以写关于技术的内容。你也可以写非技术的东西。如果你去看看我的博客，我写的是两者的混合。所以这非常自由，非常适合练习。还有另一件事是，你可以为开源项目做贡献。许多开源项目总是需要文档方面的帮助。
 - en: It's very rarely perfect and it's very rarely ever complete。 And even still
     they always need examples。 Examples are a great thing for documentation。 Hacktoberfest
     is a great place to start and it's where I started。 So I worked at DigitalOcean
@@ -677,6 +701,8 @@
   id: totrans-80
   prefs: []
   type: TYPE_NORMAL
+  zh: 它很少是完美的，也很少是完整的。即便如此，它们总是需要示例。示例是文档的一个重要部分。Hacktoberfest 是一个很好的起点，也是我开始的地方。我在
+    DigitalOcean 工作了两年半，最近离开了。
 - en: Hacktoberfest is a great program in the month of October where you just get
     incentivized。 to try to commit pull requests and get them accepted by maintainers。
     And I've the last two years I've used my Hacktoberfest contributions to just make
@@ -685,6 +711,7 @@
   id: totrans-81
   prefs: []
   type: TYPE_NORMAL
+  zh: Hacktoberfest 是十月一个很棒的活动，你可以通过提交拉取请求并让维护者接受来获得激励。在过去两年里，我利用 Hacktoberfest 的贡献改善了一些文档和我认为可以更好的项目。我相信你，相信我，他们会喜欢的。
 - en: And there are a lot of people here who have gotten their start in Hacktoberfest
     and are。 now amazing amazing contributors。 And can I can I point you out？ Can
     I？ Yes。 Marietta。 the amazing CPython developer， got part of her start in Hacktoberfest。
@@ -692,6 +719,8 @@
   id: totrans-82
   prefs: []
   type: TYPE_NORMAL
+  zh: 这里有很多人都是在 Hacktoberfest 起步的，现在都是了不起的贡献者。我可以指出你吗？可以吗？是的。Marietta，这位杰出的 CPython
+    开发者，她的部分起步就是在 Hacktoberfest。她就坐在我演讲的这里。她是第一位女性 CPython 贡献者。
 - en: Love her to death。 She's now on the Hacktoberfest board。 She got started doing
     that。 You can all start in the exact same way。 You have to start somewhere。 It's
     a great place to start。 That's all I have for this time。 You can follow me on
@@ -700,6 +729,8 @@
   id: totrans-83
   prefs: []
   type: TYPE_NORMAL
+  zh: 我非常喜欢她。她现在在 Hacktoberfest 董事会工作。她就是这样开始的。你们都可以以完全相同的方式开始。你必须从某个地方开始。这是一个很好的起点。这就是我这次的全部内容。如果你愿意，可以在
+    Twitter 上关注我。你可以给我发推，我会回答问题。我在 250 A/B 有一个关于合成数据的开放空间，正好在这之后。
 - en: But if you want to come talk to me about documentation， totally fine。 You can
     find the slides on the QR code again or they're on my website。 Thank you for your
     time。 And I hope that you'll make your docs better。 [APPLAUSE]， (audience clapping)。
