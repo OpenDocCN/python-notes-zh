@@ -1,14 +1,18 @@
 - en: P79：Talk - Trey Hunner_ Python Oddities Explained - VikingDen7 - BV1f8411Y7cP
+  id: totrans-0
   prefs:
   - PREF_H1
   type: TYPE_NORMAL
 - en: All right， so is everyone awake？
+  id: totrans-1
   prefs: []
   type: TYPE_NORMAL
 - en: '![](img/9addb404724cae11b257bae92a9e8761_1.png)'
+  id: totrans-2
   prefs: []
   type: TYPE_IMG
 - en: '![](img/9addb404724cae11b257bae92a9e8761_2.png)'
+  id: totrans-3
   prefs: []
   type: TYPE_IMG
 - en: Sort of。 Okay。 So my name is Trey and I help folks level up their Python skills
@@ -16,6 +20,7 @@
     for obvious reasons。 And with Python morsels which helps experience programmers
     develop a habit of deepening your。 Python skills every single week through hands-on
     learning because you don't learn by putting。
+  id: totrans-4
   prefs: []
   type: TYPE_NORMAL
 - en: information into your head by trying to retrieve information from your head
@@ -23,6 +28,7 @@
     code because my students are playing。 with Python which is lovely because playing
     is a wonderful way to learn。 Sometimes though when I'm trying to explain something
     that Python is doing， I realize that。
+  id: totrans-5
   prefs: []
   type: TYPE_NORMAL
 - en: I don't really know what Python is doing or at least I don't understand why
@@ -30,6 +36,7 @@
     who asked me weird and confusing questions。 while I was holding a Python workshop
     at your company。 So thank you for your confusion。 This is a Python 3 only talk。
     If this was a Python 2 oddities talk。
+  id: totrans-6
   prefs: []
   type: TYPE_NORMAL
 - en: it would be much longer and much funnier。 Feel free to ask me questions about
@@ -38,24 +45,29 @@
     that is equal to zero and let's say we have a variable numbers。 and that variable
     points to a list of numbers。 If we loop over this list of numbers and assign y
     to the square of each of these numbers。
+  id: totrans-7
   prefs: []
   type: TYPE_NORMAL
 - en: what do you think y will be after this loop？ What's your guess？ Who thinks it
     will be zero？
+  id: totrans-8
   prefs: []
   type: TYPE_NORMAL
 - en: Who thinks it will be eight？ Who thinks it will be 64？ Who thinks it's an error？
+  id: totrans-9
   prefs: []
   type: TYPE_NORMAL
 - en: We can't see what y is。 So it turns out we can see what y is。 It's 64。 And if
     we access x。 who thinks it's zero？ X is still zero。 Who thinks it's eight？ Who
     thinks it's something else？
+  id: totrans-10
   prefs: []
   type: TYPE_NORMAL
 - en: No it's not something else。 I'm not sure what you were thinking it was though。
     It's eight。 And it's eight because inside of a loop variables leak their scope。
     Loops don't have their own separate scope。 So this 4x in numbers。 this is actually
     an assignment that happens during each iteration， of our loop。
+  id: totrans-11
   prefs: []
   type: TYPE_NORMAL
 - en: It works the same way that an assignment statement happens with an equal sign。
@@ -63,10 +75,12 @@
     hand。 side of an equal sign。 So if we take those same x and the same numbers variables
     and we make a list comprehension。 representing the squares of these numbers and
     we use that x as our looping variable， what。
+  id: totrans-12
   prefs: []
   type: TYPE_NORMAL
 - en: do you think x will be after we've executed this code？ Who thinks it's zero
     this time？
+  id: totrans-13
   prefs: []
   type: TYPE_NORMAL
 - en: Wasn't zero before。 Who thinks it's eight this time？ Still eight。 So it was
@@ -74,58 +88,76 @@
     has their own scope。 That's the last time I'm going to mention Python 2。 It's
     just Python 3 from here on out。 So let's say we have a global variable numbers
     and we want to add more numbers to that by。
+  id: totrans-14
   prefs: []
   type: TYPE_NORMAL
+  zh: 之前是零。这次谁觉得是八？还是八。所以在Python 2中是八，但在Python 3中是零，这其实挺好的。列表推导有自己的作用域。这是我最后一次提到Python
+    2。从现在开始只讨论Python 3。假设我们有一个全局变量numbers，我们想通过它添加更多的数字。
 - en: using the plus equals operator。 What do you think will happen if we call add
     numbers this function here with the list。 4， 5， 6。 Now it could modify numbers。
     It could just give us an error。 It could make a local variable number。 So who
     thinks it's going to give us an error？
+  id: totrans-15
   prefs: []
   type: TYPE_NORMAL
+  zh: 使用加等于操作符。如果我们用列表4，5，6来调用add numbers这个函数，你认为会发生什么？现在它可能会修改numbers。也可能只是给我们一个错误。也可能会创建一个局部变量number。谁认为它会给我们一个错误？
 - en: Who thinks it's going to make a local variable numbers？ It won't modify the
     global。 Who thinks it's going to modify that global variable numbers？ So very
     mixed here。 Most of you seem a little bit confused about what it's going to do。
     As you should be。 this is a strange thing to do。 It turns out it gives us an error。
+  id: totrans-16
   prefs: []
   type: TYPE_NORMAL
+  zh: 谁认为它会创建一个局部变量numbers？它不会修改全局变量。谁认为它会修改那个全局变量numbers？这里的意见很分歧。你们大多数人似乎对它的效果有点困惑。你们应该困惑。这是个奇怪的事情。结果是它给我们一个错误。
 - en: It gives us an error because this plus equals operator both reads from and assigns
     to the。 variable that's on the left hand side。 So we're trying to read from a
     global variable and assign to a global variable and Python。 doesn't like that
     but it's not because of the plus equals， not in particular。 If instead we used
     an equals with a plus we would still get an error。 When we defined this function。
+  id: totrans-17
   prefs: []
   type: TYPE_NORMAL
+  zh: 它给我们一个错误，因为这个加等于操作符同时读取和赋值给左侧的变量。所以我们试图从全局变量读取并赋值给全局变量，Python对此不喜欢，但这并不是因为加等于，尤其不是。如果我们用一个等号加一个加号，我们仍然会得到错误。当我们定义这个函数时，
 - en: Python actually parsed all of the assignment operations and。 claimed all of
     those variable names as local variables。 Since numbers is a local variable。 we
     can't read from it before we've written into it。 That doesn't make sense。 So let's
     look at one more example of the same thing。 If you don't believe me yet。
+  id: totrans-18
   prefs: []
   type: TYPE_NORMAL
+  zh: Python实际上解析了所有的赋值操作，并将所有这些变量名称声明为局部变量。由于numbers是一个局部变量，我们不能在写入之前读取它。这没道理。所以让我们再看一个类似的例子。如果你还不相信我。
 - en: hopefully you'll believe me after this next one。 If we make a similar function
     that prints the global variable numbers and then assigns。 to it right afterward，
     calling that function gives us an error。 Variable names in Python cannot be both
     local and global in the same scope。 So we're allowed to read a global variable
     and we're allowed to write to a local variable。
+  id: totrans-19
   prefs: []
   type: TYPE_NORMAL
+  zh: 希望在接下来的例子中你能相信我。如果我们做一个类似的函数来打印全局变量numbers，然后紧接着为它赋值，调用那个函数会给我们一个错误。Python中的变量名称在同一作用域内不能既是局部又是全局。因此我们可以读取全局变量，也可以写入局部变量。
 - en: but not with the same name。 Python doesn't allow that because that would probably
     be a bug in our code。 This really doesn't make sense to do。 We're allowed to read
     from global variables without writing to them but once you assign。 to a variable
     that variable magically becomes local。 So if we swap these two lines of code。
     our function will not give us an error。 This function actually does what's expected
     but our global numbers variable hasn't changed。
+  id: totrans-20
   prefs: []
   type: TYPE_NORMAL
+  zh: 但不能使用相同的名称。Python不允许这样，因为那可能会导致我们代码中的错误。这样做真的没有意义。我们可以读取全局变量，但不能写入。一旦你对变量进行赋值，它就神奇地变成了局部变量。所以如果我们交换这两行代码，我们的函数就不会给我们错误。这个函数实际上做了预期的事情，但我们的全局变量numbers没有改变。
 - en: because we're assigning to a local variable here and then we're reading from
     that local， variable。 So the global numbers variable and the local numbers variable
     both have the same name but。 they're different variables pointing to different
     objects。 Assignments in Python only change the local scope。
+  id: totrans-21
   prefs: []
   type: TYPE_NORMAL
+  zh: 因为我们在这里为一个局部变量赋值，然后读取那个局部变量。所以全局变量numbers和局部变量numbers同名，但它们是指向不同对象的不同变量。Python中的赋值只会改变局部作用域。
 - en: You can't change the global scope with an assignment。 Actually you can。 there's
     an escape hatch to do so I'm not going to mention it though。 because you shouldn't
     change the global scope with Python。 You could only change the local scope with
     Python。 All variable assignments are local。
+  id: totrans-22
   prefs: []
   type: TYPE_NORMAL
 - en: So this will always assign to a local variable here inside of a function。 Now
@@ -133,9 +165,11 @@
     extend。 method on this list。 How is this any different？ So when we call this function。
     Python might print out 123456 or it could give us an error， or it could do something
     else。
+  id: totrans-23
   prefs: []
   type: TYPE_NORMAL
 - en: So who thinks this will give us an error？ Who thinks this will print out 123456？
+  id: totrans-24
   prefs: []
   type: TYPE_NORMAL
 - en: Who thinks it's also going to change the global variable numbers？ All right。
@@ -143,12 +177,14 @@
     changes numbers。 Now what's going on here？ The reason this works and a lot of
     you had some intuition about this is that the word。 change is tricky in Python。
     It's an ambiguous term。 What are you changing？
+  id: totrans-25
   prefs: []
   type: TYPE_NORMAL
 - en: You can change a variable or you can change an object。 So assignment statements
     change a variable that is which object a variable is pointing， to。 That's what
     we talk about when we talk about scope。 That's what we've been talking about。
     This isn't an assignment though。 This is changing an object。
+  id: totrans-26
   prefs: []
   type: TYPE_NORMAL
 - en: We're not changing which object a variable is pointing to with an assignment。
@@ -156,12 +192,14 @@
     a global variable but we can mutate any object that we can get our。 hands on as
     long as it's a mutable object。 So you're allowed to read from global variables
     in Python but you can only write to local variables。
+  id: totrans-27
   prefs: []
   type: TYPE_NORMAL
 - en: every assignment statement assigns to a local variable。 There are some escape
     hatches in Python to get around that limitation but you shouldn't， use them。 List
     comprehensions have their own scope but for loops do not because Python is function。
     level scoped。 It's function scoped not block scoped。
+  id: totrans-28
   prefs: []
   type: TYPE_NORMAL
 - en: We don't really have blocks in Python and Python scope rules are entirely about
@@ -169,10 +207,12 @@
     and mutations。 Number two is about changing variables which object those variables
     point to。 Mutability is about changing objects。 So let's say we have a list of
     numbers and we assign numbers to numbers。
+  id: totrans-29
   prefs: []
   type: TYPE_NORMAL
 - en: If we append to numbers to how many elements will numbers to contain？ So who
     thinks three？
+  id: totrans-30
   prefs: []
   type: TYPE_NORMAL
 - en: Who thinks four elements？ I think something else。 There's a couple something
@@ -180,6 +220,7 @@
     It's four elements。 There's numbers。 What is numbers at this point？ We append
     it to numbers two。 Who thinks it's three still at this point？ Who thinks it's
     four at this point？ You're right。
+  id: totrans-31
   prefs: []
   type: TYPE_NORMAL
 - en: It is four and it's four because these two variables are referencing the same
@@ -187,6 +228,7 @@
     are not two different objects。 Mutating one of these lists mutates the other because
     they're the exact same list。 Using objects and changing variables are distinct
     things。
+  id: totrans-32
   prefs: []
   type: TYPE_NORMAL
 - en: Assignment statements change which object a variable is pointing to。 But mutations
@@ -194,18 +236,21 @@
     variables that might be pointing to。 that object。 So can we make a tuple with
     a list inside it in Python？ It's a weird thing to do。 Is it possible？ Who thinks
     you can do this？ Python will allow it even though it's weird。
+  id: totrans-33
   prefs: []
   type: TYPE_NORMAL
 - en: Who thinks this is an error because it doesn't really make sense？ So Python
     does allow this。 We can do it。 What if we call the append method on the first
     item in this list？ Well。 Python will allow this。 Who thinks it will allow it？
     Who thinks this is not possible？
+  id: totrans-34
   prefs: []
   type: TYPE_NORMAL
 - en: Shouldn't be possible。 So Python allows this。 It does allow us to append to
     this list。 It doesn't give us an error at least。 The first item in this list has
     now changed。 Now tuples are immutable， meaning we can't change them。 It seems
     like we've changed this tuple though。 But we haven't。
+  id: totrans-35
   prefs: []
   type: TYPE_NORMAL
 - en: We haven't actually changed the tuple， not technically， not from the tuples
@@ -213,6 +258,7 @@
     variable to it and then we append。 to that variable， we've changed the list that
     that variable is pointing to but we've。 also changed every other reference to
     that variable because we changed an object。
+  id: totrans-36
   prefs: []
   type: TYPE_NORMAL
 - en: And not a variable。 Variables don't store objects。 They're not like this bottle
@@ -220,18 +266,21 @@
     They point to something。 So variables are more like pointers or references。 They
     don't actually contain objects。 Now what would happen if we make a new list and
     then we try to append the list to itself？
+  id: totrans-37
   prefs: []
   type: TYPE_NORMAL
 - en: Who thinks this is possible to do in Python？ You think some weird things are
     possible in Python。 I like you people。 This works。 You can append the list to
     itself。 Now this makes an infinitely recursive data structure with Python represents
     a bit strangely。 at the REPL。 It does this to not break our machine。
+  id: totrans-38
   prefs: []
   type: TYPE_NORMAL
 - en: Otherwise it would be an infinite amount of square brackets。 So Python represents
     this strangely but it is possible to do。 And this really demonstrates that analogy
     of a variable being a bucket that contains an。 object doesn't make sense because
     a bucket can't contain itself。
+  id: totrans-39
   prefs: []
   type: TYPE_NORMAL
 - en: A bucket can have a piece of paper in it though that refers back to itself。
@@ -239,6 +288,7 @@
     that reference the memory locations of an object。 Data structures， lists， dictionaries，
     tuples， anything else that might contain something。 They don't actually contain
     objects。 They contain references to objects。
+  id: totrans-40
   prefs: []
   type: TYPE_NORMAL
 - en: Variables also don't contain objects。 They just refer to or point to objects
@@ -246,6 +296,7 @@
     a variable is pointing to with an assignment statement or we can。 mutate an object
     which actually changes the object itself regardless of what variables。 or data
     structures might be pointing to that object。
+  id: totrans-41
   prefs: []
   type: TYPE_NORMAL
 - en: Now if you feel rusty on this topic I wrote an article on it recently called
@@ -253,6 +304,7 @@
     And I highly recommend Ned Batchilder's talk from years ago at Python called Facts
     and。 Mists about Python names and values and Brandon Rhodes' talk from quite a
     while ago called， Names。
+  id: totrans-42
   prefs: []
   type: TYPE_NORMAL
 - en: Objects and Plumbing from the Clif which actually goes into quite a bit more
@@ -260,6 +312,7 @@
     a list called Duck List。 What do you think would happen if we used the plus equals
     operator to add a tuple of two。 values to this list？ Well Python let us do this。
     Who thinks this will work？ It'll do something。
+  id: totrans-43
   prefs: []
   type: TYPE_NORMAL
 - en: Who thinks this will give us an error？ Doesn't make sense to do。 So Python actually
@@ -267,13 +320,16 @@
     tuple and adds each。 of the values to our list。 Let's make a tuple called Duck
     tuple that has two strings in it。 Will Python allow us to use plus equals to do
     the same thing but with a list to a tuple？
+  id: totrans-44
   prefs: []
   type: TYPE_NORMAL
 - en: So we're trying to add these two items in our list to the tuple。 So who thinks
     this will work？
+  id: totrans-45
   prefs: []
   type: TYPE_NORMAL
 - en: Still works。 Who thinks we get an error at this point？
+  id: totrans-46
   prefs: []
   type: TYPE_NORMAL
 - en: We do get an error at this point but the error isn't because we can't use plus
@@ -281,18 +337,21 @@
     tuples。 We're allowed to use plus equals on tuples as long as it's with another
     tuple。 So plus equals on tuples only works with other tuples。 It doesn't work
     with lists。
+  id: totrans-47
   prefs: []
   type: TYPE_NORMAL
 - en: That's the weird thing。 And in fact tuples aren't actually the odd one here。
     Lists are the odd one。 Let's take an empty list and try to use a plus equals operator
     with a string。 Who thinks this will work？ It'll do something。 Who thinks this
     is an error？
+  id: totrans-48
   prefs: []
   type: TYPE_NORMAL
 - en: So this does actually work but it might not do what you think it does。 It loops
     over the string and adds each of the characters to the list because the plus equals。
     operator on a list accepts any iterable of strings。 As long as it can loop over
     it。 it will loop over it and as long as it gets strings it。
+  id: totrans-49
   prefs: []
   type: TYPE_NORMAL
 - en: will add those strings to the list individually。 So plus equals on lists does
@@ -301,12 +360,14 @@
     So plus equals on lists is consistent but not with plus equals on tuples it's
     consistent。 with the extend method on lists。 The list extend method and this plus
     equals operator on lists。
+  id: totrans-50
   prefs: []
   type: TYPE_NORMAL
 - en: they're not an isolated， issue。 Many other operations in Python accept any iterable。
     For example。 the string join method accepts a list but it also accepts a tuple
     and even， accepts strings。 But again it might not do what you expect it to do。
     What happens when you loop over strings？
+  id: totrans-51
   prefs: []
   type: TYPE_NORMAL
 - en: What do you get？ It's technically strings that represent characters because
@@ -315,12 +376,14 @@
     We're joining together each of the characters in this string with space which
     is a strange。 thing to do。 So if we give the dictionary constructor in Python
     an iterable of two item iterables it。
+  id: totrans-52
   prefs: []
   type: TYPE_NORMAL
 - en: will accept whatever we give to it as long as there are two item iterables and
     make the。 first thing a key and the second thing a value。 Lots of things in Python
     accept any iterable as long as it fits the shape and the style。 they're looking
     for。 They don't really care what you give to it。 What's the word for this？
+  id: totrans-53
   prefs: []
   type: TYPE_NORMAL
 - en: What's the animal that we use to describe this？ I'm sure someone knows。 A duck。
@@ -328,6 +391,7 @@
     So the idea behind duck typing is when we're trying to identify an animal we don't
     check。 its DNA to see whether it's a duck。 Instead we observe it。 We observe it
     and say， you know。
+  id: totrans-54
   prefs: []
   type: TYPE_NORMAL
 - en: if it looks like a duck， it walks like a duck， maybe it， sounds kind of like
@@ -335,6 +399,7 @@
     of checking what the actual。 class of that object is。 We don't check its type，
     its class， we check its behavior。 So we don't usually care whether something is
     a list。
+  id: totrans-55
   prefs: []
   type: TYPE_NORMAL
 - en: We care whether it's a sequence or maybe whether it's an iterable。 And we don't
@@ -342,6 +407,7 @@
     to use generic words for describing behaviors of objects instead of discussing。
     the types of those objects。 All right。 So the list extend method accepts any iterable
     and the plus equals operator on lists works。
+  id: totrans-56
   prefs: []
   type: TYPE_NORMAL
 - en: the same way as the extend method。 It's consistent with extend。 But the plus
@@ -349,30 +415,35 @@
     And in many cases， Python doesn't do type checking at all。 Because it's practicing
     duck typing。 It's checking the behavior， it's trying something out and hoping
     for the best。
+  id: totrans-57
   prefs: []
   type: TYPE_NORMAL
 - en: So if you embrace duck typing in your own code by thinking in terms of behaviors
     like。 an iterable instead of a type like a list， you'll better understand what
     Python is doing。 But you'll also probably write better Python code。 Your code
     will fit in better in the Python ecosystem。
+  id: totrans-58
   prefs: []
   type: TYPE_NORMAL
 - en: So familiarize yourself with terms like iterable and callable and hashable sequence
     mapping these。 generic terms that describe behavior instead of the type of something。
     And if you're interested in specifically how iterables work in Python， I gave
     a talk on。 this some while back called loop better a deeper look at iteration。
+  id: totrans-59
   prefs: []
   type: TYPE_NORMAL
 - en: Though it really dives into how iterables work deeply。 You don't really need
     to understand it。 But it's nice to embrace these generic terms when you're talking
     about types。 Because in Python we think in terms of behavior not in terms of concrete
     types。 Okay so we're going to take a very quick mental break before an accession。
+  id: totrans-60
   prefs: []
   type: TYPE_NORMAL
 - en: Here is a dog in a mailbox。 A chip monk enjoying some tea。 And a cat debugging
     its code。 Alright that's a long enough break。 Let's look at the plus equals operator
     again。 Let's take two variables and assign them to the same tuple。 Then let's
     try to use the plus equals operator to modify one of these tuples。
+  id: totrans-61
   prefs: []
   type: TYPE_NORMAL
 - en: Does Python allow plus equals on tuples？ Who thinks Python allows plus equals
@@ -380,6 +451,7 @@
     tuples。 We just saw it。 So Python does allow plus equals on tuples。 And we can
     use it with another tuple。 So A at this point has four things in it。 How many
     things does B have？ Two or four。
+  id: totrans-62
   prefs: []
   type: TYPE_NORMAL
 - en: what do you think？ Two things， four things。 So it turns out it has two things。
@@ -387,6 +459,7 @@
     B。 So plus equals on tuples is really the same as a plus operator followed by
     an equal sign。 We're not mutating the tuple。 We're just making a new tuple and
     then reassigning our variable to it。
+  id: totrans-63
   prefs: []
   type: TYPE_NORMAL
 - en: So X plus equals something is the same as X plus something followed by an equal
@@ -394,10 +467,12 @@
     point our variable to that。 new object。 Alright let's take two variables and do
     the same thing。 We'll assign them to the same list。 Now let's use the plus equals
     operator to modify the first list。
+  id: totrans-64
   prefs: []
   type: TYPE_NORMAL
 - en: So our first list now has four things in it。 How many things does our second
     list have？
+  id: totrans-65
   prefs: []
   type: TYPE_NORMAL
 - en: Two or four at this point。 Yeah， this point our list has four things different
@@ -405,6 +480,7 @@
     mutate lists。 Now I find this interesting because that means that on lists A plus
     equals something does。 a mutation but A equals A plus something creates a new
     object and then reassigns the。
+  id: totrans-66
   prefs: []
   type: TYPE_NORMAL
 - en: variable to that new object。 So in Python A plus equals B is not always the
@@ -412,6 +488,7 @@
     the same on strings。 on numbers and on tuples but they do different， things on
     lists。 Now this seems a little bit inconsistent but from Python's perspective
     it's perfectly， consistent。
+  id: totrans-67
   prefs: []
   type: TYPE_NORMAL
 - en: So this is because lists are mutable and plus equals is an in place addition
@@ -419,6 +496,7 @@
     to do a plus operation in place on mutable objects。 It's actually supposed to
     mutate in place if it can but it's convenient to use plus equals。 on immutable
     types like tuples and strings and numbers。
+  id: totrans-68
   prefs: []
   type: TYPE_NORMAL
 - en: This is a convenience for us because we don't want to have to type plus and
@@ -427,6 +505,7 @@
     place assignments mutate the object and on immutable types they return。 a new
     object to us。 Now if we take a tuple with a list inside it who thinks we can put
     a list inside of a。
+  id: totrans-69
   prefs: []
   type: TYPE_NORMAL
 - en: tuple。 Okay so we've stuck a list inside of a tuple you remember that we've
@@ -434,6 +513,7 @@
     equals a list three four。 Now we've got a list in this tuple who thinks it will
     mutate this list。 It's actually going to mutate the list。 Okay who thinks that
     this won't work we're going to get an error。
+  id: totrans-70
   prefs: []
   type: TYPE_NORMAL
 - en: Who doesn't know what this is going to do？ Okay so that was most of you here。
@@ -441,6 +521,7 @@
     going， on。 It actually does give us an error but it also mutates the list。 So
     everyone's happy at this point right。 Now this is probably the most obscure Python
     oddity I've seen and it's never going to。
+  id: totrans-71
   prefs: []
   type: TYPE_NORMAL
 - en: bite you in real code because why are you trying to mutate a list that's inside
@@ -448,6 +529,7 @@
     but we're going。 to take a look at what's going on anyway。 So whenever we use
     the plus equals operator in Python Python will try to call the dunder。 iad method
     on the object that we're pointing to and in that case it's our list。
+  id: totrans-72
   prefs: []
   type: TYPE_NORMAL
 - en: After that it will do an assignment。 So the exception happened because the assignment
@@ -456,6 +538,7 @@
     of that assignment statement but we're not allowed to assign into a tuple。 so
     we get an error at this point。 Now this isn't ever going to bite you in real code
     because again why are you doing this。
+  id: totrans-73
   prefs: []
   type: TYPE_NORMAL
 - en: in your code。 What's the situation with this makes sense but this is an implementation
@@ -463,6 +546,7 @@
     The plus equals operator always performs an assignment but plus equals and other
     augmented。 assignment operators or in place operators as they're all also called
     are also allowed。
+  id: totrans-74
   prefs: []
   type: TYPE_NORMAL
 - en: to mutate the object that they're called with if that object chooses to mutate
@@ -470,55 +554,82 @@
     don't。 Now this might seem inconsistent but consistency is really about your frame
     of reference。 According to the Python documentation in place additions are supposed
     to do their operation。
+  id: totrans-75
   prefs: []
   type: TYPE_NORMAL
+  zh: 如果对象选择自我改变，调用它们的函数可以对该对象进行变更。如果它是一个可变对象，列表会用加等号进行自我改变，但元组则不会。现在这看起来可能不一致，但一致性实际上与您的参考框架有关。根据
+    Python 文档，就地添加应该执行它们的操作。
 - en: in place whenever possible and lists just happen to be the most common data
     structure。 where it's actually possible to do that。 So if Python doesn't do what
     you expect it to do that doesn't necessarily mean you found。 a bug in Python。
     It does mean that what Python's doing doesn't match up with your own sense of
     reality the。 way Python sees the world isn't the way you see the world。
+  id: totrans-76
   prefs: []
   type: TYPE_NORMAL
+  zh: 在可能的情况下使用就地操作，而列表恰好是最常见的数据结构，在那里实际上可以做到这一点。因此，如果 Python 的行为与预期不符，并不一定意味着你发现了
+    Python 中的 bug。这确实意味着 Python 的行为与您自己的现实感受不匹配，Python 看世界的方式并不等同于你看世界的方式。
 - en: So I'd like to leave you with a few closing thoughts。 Regardless of what programming
     language you're in it's important to understand how the fundamentals。 of your
     programming language are different from other languages。 How do function calls
     work？
+  id: totrans-77
   prefs: []
   type: TYPE_NORMAL
+  zh: 我想给你留下几个结束思考。不管你使用什么编程语言，理解你的编程语言的基本原理与其他语言有何不同是很重要的。函数调用是如何工作的？
 - en: How do variables work at a fundamental level？ And how do objects work？
+  id: totrans-78
   prefs: []
   type: TYPE_NORMAL
+  zh: 变量在基本层面上是如何工作的？对象又是如何工作的？
 - en: Also what is an object in your language？ It's important to understand the way
     that your programming language thinks about the world。 and more importantly thinks
     about itself。 What does the world look like through the eyes of the Python interpreter？
+  id: totrans-79
   prefs: []
   type: TYPE_NORMAL
+  zh: 另外，在你的语言中对象是什么？理解你的编程语言如何看待世界以及更重要的是如何看待自身是很重要的。从 Python 解释器的角度看，世界是什么样子的？
 - en: And if you think you found a bug in Python it might just be that you're misunderstanding。
     what trade-offs the Python core developers were taking when they were implementing
     the。 particular bit of functionality that you're using。 So if you see something
     odd going on in your code before you fix that bug poke around and。
+  id: totrans-80
   prefs: []
   type: TYPE_NORMAL
+  zh: 如果你认为在 Python 中发现了一个 bug，可能只是你误解了 Python 核心开发人员在实现你正在使用的特定功能时所做的权衡。因此，如果你在代码中发现了奇怪的现象，在修复那个
+    bug 之前，先探究一下。
 - en: see what there is to learn from it because breaking things is one of the best
     ways to， learn。 Also if you find a Python audio of your own use the Python audio
     hashtag if you're going。 to tweet it or put it on social media。 Over the last
     many years I've probably put out over a hundred of these because there's。 lots
     of little weird things hiding in every programming language。 So join me。
+  id: totrans-81
   prefs: []
   type: TYPE_NORMAL
+  zh: 看看从中可以学到什么，因为打破事物是学习的最佳方式之一。如果你找到自己的 Python 音频，使用 Python 音频标签，如果你要在推特或社交媒体上发布的话。在过去的很多年里，我可能已经发布了超过一百个这样的内容，因为每种编程语言中都有许多小奇怪的东西隐藏着。所以加入我吧。
 - en: Tweet out a Python audio if you find one。
+  id: totrans-82
   prefs: []
   type: TYPE_NORMAL
+  zh: 如果你发现一个 Python 音频，请发推特分享。
 - en: '![](img/9addb404724cae11b257bae92a9e8761_4.png)'
+  id: totrans-83
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/9addb404724cae11b257bae92a9e8761_4.png)'
 - en: Also if you would like Python morsel stickers because my logo is adorable find
     me in the。 hallway afterward。
+  id: totrans-84
   prefs: []
   type: TYPE_NORMAL
+  zh: 另外，如果你想要 Python 的小贴纸，因为我的标志非常可爱，可以在会后找到我。
 - en: '![](img/9addb404724cae11b257bae92a9e8761_6.png)'
+  id: totrans-85
   prefs: []
   type: TYPE_IMG
+  zh: '![](img/9addb404724cae11b257bae92a9e8761_6.png)'
 - en: Thank you。 Thank you。 [APPLAUSE]。
+  id: totrans-86
   prefs: []
   type: TYPE_NORMAL
+  zh: 谢谢。谢谢。[掌声]。
